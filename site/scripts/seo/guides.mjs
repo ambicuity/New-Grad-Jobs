@@ -14,11 +14,31 @@ export const GUIDES_ROOT = 'guides';
 const META_DESCRIPTION_CHARS = 155;
 const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+const DEFAULT_ORDER = 999;
+
+/** Index sections, in display order. A guide's `section` front matter must be one of these to be grouped. */
+export const SECTION_ORDER = Object.freeze([
+  'Getting started', 'Understanding jobs', 'Résumé and applications', 'International students', 'Interviews', 'Offers', 'NGJ data',
+]);
+const OTHER_SECTION = 'More';
+
+/** Sort key inside a section: explicit `order`, then title. */
+const byOrderThenTitle = (a, b) => (a.order - b.order) || a.title.localeCompare(b.title);
+
+/** Group guides by section in SECTION_ORDER; unknown or missing sections go last under "More". */
+export function groupGuides(guides) {
+  const known = new Set(SECTION_ORDER);
+  const sections = [...SECTION_ORDER, OTHER_SECTION].map((name) => ({
+    name,
+    guides: guides.filter((g) => (known.has(g.section) ? g.section : OTHER_SECTION) === name).sort(byOrderThenTitle),
+  }));
+  return sections.filter((s) => s.guides.length);
+}
 
 /**
  * Load every guide. A file is skipped (with a warning) when its name is not a
  * slug or its front matter lacks a title — never fail the build over content.
- * @returns {Promise<{slug: string, title: string, description: string, updated: string, html: string, headings: object[]}[]>}
+ * @returns {Promise<{slug: string, title: string, description: string, updated: string, section: string, order: number, html: string, headings: object[]}[]>}
  */
 export async function loadGuides(contentDir, log = console) {
   let names;
@@ -40,6 +60,8 @@ export async function loadGuides(contentDir, log = console) {
       title: meta.title,
       description: meta.description || '',
       updated: DATE_RE.test(meta.updated || '') ? meta.updated : '',
+      section: meta.section || '',
+      order: /^\d+$/.test(meta.order || '') ? Number(meta.order) : DEFAULT_ORDER,
       html,
       headings,
     });
@@ -91,7 +113,10 @@ export function renderGuidePage(guide, { siteUrl, siblings = [] }) {
     ...(guide.updated ? { dateModified: guide.updated } : {}),
     author: { '@type': 'Organization', name: 'NGJ · New Grad Jobs', url: `${siteUrl}/` },
   };
-  const more = siblings.filter((g) => g.slug !== guide.slug);
+  const others = siblings.filter((g) => g.slug !== guide.slug);
+  const sameSection = guide.section ? others.filter((g) => g.section === guide.section).sort(byOrderThenTitle) : [];
+  const more = sameSection.length ? sameSection : others;
+  const moreTitle = sameSection.length ? `MORE IN ${escapeHtml(guide.section.toUpperCase())}` : 'MORE GUIDES';
   return `${head({ title: `${guide.title} · NGJ`, description, canonical, siteUrl, root, jsonLd })}
 <body>
 <main>
@@ -105,7 +130,7 @@ ${guide.html}
 <a class="btn primary" href="${root}?">OPEN THE JOB BOARD</a>
 <a class="btn ghost" href="${root}jobs/">BROWSE BY ROLE, COMPANY, CITY</a>
 </div>
-${more.length ? `<h2>MORE GUIDES</h2>\n<div class="list"><ul>\n${more.map((g) => `<li><a href="${root}${guidePath(g.slug)}">${escapeHtml(g.title)}</a></li>`).join('\n')}\n</ul></div>` : ''}
+${more.length ? `<h2>${moreTitle}</h2>\n<div class="list"><ul>\n${more.map((g) => `<li><a href="${root}${guidePath(g.slug)}">${escapeHtml(g.title)}</a></li>`).join('\n')}\n</ul></div>` : ''}
 ${footer(root)}
 </main>
 </body>
@@ -117,9 +142,10 @@ ${footer(root)}
 export function renderGuidesIndex(guides, { siteUrl }) {
   const root = '../';
   const canonical = `${siteUrl}/${GUIDES_ROOT}/`;
-  const description = 'Short, practical guides for the new grad job search: reading a posting, visa and citizenship flags, ATS-friendly résumés, hiring timelines and how to work this board.';
-  const items = guides.map((g) => (
-    `<li><a href="${root}${guidePath(g.slug)}">${escapeHtml(g.title)}</a>${g.description ? ` <span class="dim">— ${escapeHtml(g.description)}</span>` : ''}</li>`
+  const description = 'Short, practical guides for the new grad job search: what counts as a new grad job, reading postings, résumés, visas and OPT, interviews, offers, and how this board collects and classifies its data.';
+  const item = (g) => `<li><a href="${root}${guidePath(g.slug)}">${escapeHtml(g.title)}</a>${g.description ? ` <span class="dim">— ${escapeHtml(g.description)}</span>` : ''}</li>`;
+  const sections = groupGuides(guides).map((s) => (
+    `<h2>${escapeHtml(s.name.toUpperCase())}</h2>\n<div class="list"><ul>\n${s.guides.map(item).join('\n')}\n</ul></div>`
   ));
   return `${head({ title: 'New Grad Job Search Guides · NGJ', description, canonical, siteUrl, root, jsonLd: null })}
 <body>
@@ -127,9 +153,7 @@ export function renderGuidesIndex(guides, { siteUrl }) {
 <nav class="crumb" aria-label="Breadcrumb"><a class="brand" href="${root}" aria-label="NGJ, New Grad Jobs, home">NGJ</a> › guides</nav>
 <h1>New grad job search guides</h1>
 <p>${escapeHtml(description)}</p>
-<div class="list"><ul>
-${items.join('\n')}
-</ul></div>
+${sections.join('\n')}
 ${footer(root)}
 </main>
 </body>

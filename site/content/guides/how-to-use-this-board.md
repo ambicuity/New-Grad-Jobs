@@ -2,6 +2,8 @@
 title: How to use this board
 description: Filters, alerts, saved and applied lists, keyboard shortcuts and the data behind every count.
 updated: 2026-09-25
+section: Getting started
+order: 1
 ---
 
 NGJ is a live list of new grad and entry-level jobs pulled straight from company career sites. It refreshes about every 30 minutes, and every number on it is computed from the published data. This guide is the two-minute tour.

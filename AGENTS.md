@@ -117,8 +117,9 @@ After `make run`, restore the two files that a local scrape rewrites:
   retries, pooling, domain limits and the 403 cooldown apply.
 - **Site:** keep data logic in `site/src/lib/` as pure, unit-tested functions. Components
   use inline styles and the `useIsMobile` hook for responsiveness.
-- **Guides:** add a Markdown file to `site/content/guides/` with `title`, `description` and
-  `updated` front matter; the build renders it. Use only headings, paragraphs, lists,
+- **Guides:** add a Markdown file to `site/content/guides/` with `title`, `description`,
+  `updated`, `section` (one of `SECTION_ORDER` in `site/scripts/seo/guides.mjs`) and `order`
+  front matter; the build renders it and groups the index by section. Use only headings, paragraphs, lists,
   quotes, bold, italics, code and links (the renderer supports nothing else) and claim
   nothing you cannot back.
 
