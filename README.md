@@ -57,19 +57,19 @@ Experience an advanced career journey with us! 🚀
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->0<!-- /COUNT --> |
-| [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->0<!-- /COUNT --> |
-| [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->0<!-- /COUNT --> |
-| [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->0<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->0<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->0<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->0<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->948<!-- /COUNT --> |
+| [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->14<!-- /COUNT --> |
+| [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->17<!-- /COUNT --> |
+| [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->66<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->147<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->49<!-- /COUNT --> |
 | [Data Analyst](#data-analyst) | <!-- COUNT:data_analyst -->0<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->0<!-- /COUNT --> |
-| [Product Management](#product-management) | <!-- COUNT:product_management -->0<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->202<!-- /COUNT --> |
+| [Product Management](#product-management) | <!-- COUNT:product_management -->2<!-- /COUNT --> |
 | [Project Management](#project-management) | <!-- COUNT:project_management -->0<!-- /COUNT --> |
-| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->0<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->0<!-- /COUNT --> |
+| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->9<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->79<!-- /COUNT --> |
 | [Engineering and Development](#engineering-and-development) | <!-- COUNT:engineering -->0<!-- /COUNT --> |
 | [Creatives and Design](#creatives-and-design) | <!-- COUNT:design -->0<!-- /COUNT --> |
 | [Business Analyst](#business-analyst) | <!-- COUNT:business_analyst -->0<!-- /COUNT --> |
@@ -86,7 +86,7 @@ Experience an advanced career journey with us! 🚀
 | [Public Sector and Government](#public-sector-and-government) | <!-- COUNT:public_sector -->0<!-- /COUNT --> |
 | [Arts and Entertainment](#arts-and-entertainment) | <!-- COUNT:arts_entertainment -->0<!-- /COUNT --> |
 | [Management and Executive](#management-and-executive) | <!-- COUNT:management -->0<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->0<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->524<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
