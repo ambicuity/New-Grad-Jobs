@@ -11,6 +11,12 @@ const JOB_ID_RE = /^[A-Za-z0-9_-]{1,80}$/;
 const CURRENCY_RE = /^[A-Z]{3}$/;
 // Ranges whose upper bound is below this are hourly rates, not annual salaries.
 const HOURLY_MAX = 1000;
+// validThrough = datePosted + this. Mirrors filtering.max_age_days in
+// config.yml: the scraper drops a posting after 60 days, so the page is gone by then.
+export const VALID_DAYS = 60;
+const DAY_MS = 24 * 3600 * 1000;
+
+export const validThrough = (posted) => new Date(posted.getTime() + VALID_DAYS * DAY_MS).toISOString();
 
 /** Job ids become directory names — only allow a strict, path-safe charset. */
 export const isSafeJobId = (id) => typeof id === 'string' && JOB_ID_RE.test(id);
@@ -123,6 +129,7 @@ export function buildJobPosting(job, description, pageUrl) {
     title,
     description: html,
     datePosted: posted.toISOString(),
+    validThrough: validThrough(posted),
     hiringOrganization: { '@type': 'Organization', name: company },
     ...location,
     directApply: false,

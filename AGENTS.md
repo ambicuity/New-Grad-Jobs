@@ -35,7 +35,7 @@ scripts/url_safety.py      publish-time URL gate (public http(s) only)
 scripts/sync_readme_*.py   rewrite README COUNT markers / CATEGORY-LISTINGS / COMPANY-LISTINGS blocks
 tests/                     pytest; network blocked by tests/conftest.py
 site/                      Vite + React 18 app (src/components, src/lib, src/hooks, src/data)
-site/scripts/seo/          Vite plugin: CSP, /job/<job_id>/ pages with JobPosting JSON-LD, sitemap, robots, prerender
+site/scripts/seo/          Vite plugin: CSP, /job/<job_id>/ pages with JobPosting JSON-LD, /jobs/… landing pages (landing.mjs), sitemap, robots, prerender
 data/market-history.json   daily snapshots (committed by CI, 90-day retention)
 docs/                      architecture.md, operations.md, adr/, removed-companies.md
 ```

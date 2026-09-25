@@ -54,6 +54,18 @@ const CA_PROVINCES = {
 
 const US_STATE_NAMES = new Set(Object.values(US_STATES));
 const CA_PROVINCE_NAMES = new Set(Object.values(CA_PROVINCES));
+const REGION_CODE_BY_NAME = new Map([
+  ...Object.entries(US_STATES).map(([code, name]) => [name, code]),
+  ...Object.entries(CA_PROVINCES).map(([code, name]) => [name, code]),
+]);
+
+/** Two-letter US state / Canadian province code for a code or full name, else null. */
+export function regionCode(region) {
+  if (typeof region !== 'string' || !region.trim()) return null;
+  const upper = region.trim().toUpperCase();
+  if (upper.length === 2 && (US_STATES[upper] || CA_PROVINCES[upper])) return upper;
+  return REGION_CODE_BY_NAME.get(region.trim().toLowerCase()) || null;
+}
 const WORK_MODE_WORDS = /\b(remote|hybrid|on-?site|in[- ]office|flexible|friendly|hq|preferred|select locations|amer|apac|emea|latam)\b/gi;
 
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -123,7 +135,12 @@ export function parseSegment(segment) {
     // "Toronto, ON, CA": trailing "CA" after a province is Canada, not California.
     if (country === 'US' && isProvince && !isState) country = 'CA';
   }
-  // A locality that is really a state/province name ("New York, New York") stays locality.
+  // "New York, NY": the city shares its name with the state, so the first token
+  // was read as the region and the code as the locality. Put them back.
+  if (locality && region && locality.length === 2 && locality === locality.toUpperCase()
+    && (US_STATES[locality] || CA_PROVINCES[locality]) && region.length > 2) {
+    [locality, region] = [region, locality];
+  }
   const out = { remote };
   if (locality) out.locality = locality;
   if (region) out.region = region;

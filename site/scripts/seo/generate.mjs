@@ -1,6 +1,8 @@
 // Build-time SEO generation. Reads the scraper output from public/ (jobs.json
 // or jobs-index.json + descriptions/<shard>.json) and writes into dist/:
 //   - job/<job_id>/index.html   static page + JobPosting JSON-LD per open job
+//   - jobs/…/index.html         landing pages by category, company, metro,
+//                               country, remote, visa, new-this-week + hub (landing.mjs)
 //   - index.html                crawlable list of the newest jobs inside #root
 //   - sitemap.xml, robots.txt
 // Missing or malformed data never fails the build: generation is skipped with
@@ -10,6 +12,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { descriptionShard, lookupDescription } from '../../src/lib/descriptions.js';
 import { buildJobPosting, isSafeJobId, parsePostedAt } from './jobposting.mjs';
+import { buildLandingPages, landingPageUrl, renderLandingHub, renderLandingPage } from './landing.mjs';
 import {
   injectPrerender, jobPageUrl, renderJobPage, renderPrerenderList, renderRobots, renderSitemap,
 } from './render.mjs';
@@ -80,7 +83,7 @@ export async function generateSeo({
   publicDir, distDir, siteUrl = DEFAULT_SITE_URL, prerenderLimit = DEFAULT_PRERENDER_LIMIT, log = console,
 }) {
   const site = siteUrl.replace(/\/+$/, '');
-  const stats = { jobPages: 0, jsonLd: 0, jsonLdSkipped: {}, sitemapUrls: 1, prerendered: 0, source: null };
+  const stats = { jobPages: 0, jsonLd: 0, jsonLdSkipped: {}, landingPages: 0, sitemapUrls: 1, prerendered: 0, source: null };
   await mkdir(distDir, { recursive: true });
   await writeFile(join(distDir, 'robots.txt'), renderRobots(site));
 
@@ -116,12 +119,29 @@ export async function generateSeo({
   stats.jobPages = entries.length;
 
   const generatedAt = parsePostedAt(data.meta.generated_at) || (entries[0] && entries[0].posted) || null;
-  await writeFile(join(distDir, 'sitemap.xml'), renderSitemap(site, generatedAt, entries));
-  stats.sitemapUrls = entries.length + 1;
+  const { hub, pages } = buildLandingPages(entries, { generatedAt });
+  await writeInBatches(pages.map((page) => async () => {
+    const dir = join(distDir, page.path);
+    await mkdir(dir, { recursive: true });
+    await writeFile(join(dir, 'index.html'), renderLandingPage(page, { siteUrl: site, generatedAt, siblings: pages }));
+  }));
+  if (hub) {
+    await mkdir(join(distDir, hub.path), { recursive: true });
+    await writeFile(join(distDir, hub.path, 'index.html'), renderLandingHub(hub, { siteUrl: site, generatedAt, totalJobs: entries.length }));
+  }
+  const landing = hub ? [hub, ...pages] : [];
+  stats.landingPages = landing.length;
+
+  const extraUrls = landing.map((page) => ({ loc: landingPageUrl(site, page.path), lastmod: generatedAt }));
+  await writeFile(join(distDir, 'sitemap.xml'), renderSitemap(site, generatedAt, entries, extraUrls));
+  stats.sitemapUrls = 1 + landing.length + entries.length;
 
   if (indexHtml) {
     const top = entries.slice(0, prerenderLimit);
-    const { html, injected } = injectPrerender(indexHtml, renderPrerenderList(top, entries.length));
+    const browse = pages
+      .filter((p) => ['category', 'remote', 'visa', 'new'].includes(p.kind))
+      .map((p) => ({ path: p.path, label: p.name, count: p.entries.length }));
+    const { html, injected } = injectPrerender(indexHtml, renderPrerenderList(top, entries.length, browse));
     if (!injected) log.warn('[seo] prerender marker missing from dist/index.html — crawlable list not injected');
     else stats.prerendered = top.length;
     await writeFile(indexPath, html);

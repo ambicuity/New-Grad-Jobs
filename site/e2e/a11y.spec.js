@@ -34,4 +34,14 @@ test.describe('axe (WCAG 2.2 AA)', () => {
 
     await expectNoSeriousA11yViolations(page, testInfo);
   });
+
+  test('landing page and hub', async ({ page }, testInfo) => {
+    await page.goto('/jobs/software-engineering/');
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expectNoSeriousA11yViolations(page, testInfo);
+
+    await page.goto('/jobs/');
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expectNoSeriousA11yViolations(page, testInfo);
+  });
 });

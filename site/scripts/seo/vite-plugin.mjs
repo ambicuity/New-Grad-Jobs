@@ -65,7 +65,7 @@ export function ngjSeo({
       const skipped = Object.entries(stats.jsonLdSkipped).map(([k, v]) => `${k}: ${v}`).join(', ');
       logger.info(
         `[seo] ${stats.jobPages} job pages (${stats.jsonLd} with JobPosting JSON-LD${skipped ? `; skipped — ${skipped}` : ''}), `
-        + `${stats.sitemapUrls} sitemap URLs, ${stats.prerendered} jobs prerendered into index.html`,
+        + `${stats.landingPages} landing pages, ${stats.sitemapUrls} sitemap URLs, ${stats.prerendered} jobs prerendered into index.html`,
       );
     },
   };

@@ -93,7 +93,11 @@ A Vite + React 18 single-page app ([ADR-0005](adr/0005-vite-site-and-actions-dep
 - `src/components/` contains `shell/` (top bar, footer, sponsor, error boundary),
   `hiring/` (list, filters, detail, dashboard) and `contributors/`.
 - `scripts/seo/vite-plugin.mjs` (build only) injects the CSP meta tag and generates
-  `job/<job_id>/index.html` for every open job, with `JobPosting` JSON-LD. It also
+  `job/<job_id>/index.html` for every open job, with `JobPosting` JSON-LD (`validThrough`
+  = posted + 60 days). `scripts/seo/landing.mjs` adds script-free landing pages under
+  `jobs/`: one per category, the top 30 companies (`jobs/at/<slug>/`), the top 20 metros
+  and Canada / India (`jobs/in/<slug>/`), plus `remote/`, `no-visa-restriction/`,
+  `new-this-week/` and a `jobs/` hub, each with live counts and `ItemList` JSON-LD. It also
   generates `sitemap.xml` and `robots.txt`, and prerenders the newest jobs into
   `index.html` for crawlers. Missing data never fails the build.
 

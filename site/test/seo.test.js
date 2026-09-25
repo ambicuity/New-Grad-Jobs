@@ -93,6 +93,11 @@ describe('location parsing', () => {
     expect(parseLocation('Bengaluru, Karnataka, India').places[0]).toMatchObject({ locality: 'Bengaluru', country: 'IN' });
   });
 
+  it('keeps a city that shares its name with the state as the locality', () => {
+    expect(parseLocation('New York, NY').places[0]).toEqual({ locality: 'New York', region: 'NY', country: 'US' });
+    expect(parseLocation('New York, New York, United States').places[0]).toEqual({ locality: 'New York', region: 'New York', country: 'US' });
+  });
+
   it('detects remote roles and their applicant countries', () => {
     expect(parseLocation('Remote - US')).toEqual({ remote: true, places: [], remoteCountries: ['US'] });
     expect(parseLocation('Remote, Canada; Remote, United Kingdom').remoteCountries).toEqual(['CA', 'GB']);
@@ -163,6 +168,11 @@ describe('buildJobPosting', () => {
     expect(parsed.employmentType).toBeUndefined();
     // Description is HTML with escaped text — no raw tags from the source.
     expect(parsed.description).toBe('<p>Build things &amp; ship. Grow .</p>');
+  });
+
+  it('sets validThrough 60 days after datePosted (the scraper max age)', () => {
+    const { posting } = buildJobPosting(JOB, 'Desc', `${SITE}/job/job_a1b2c3/`);
+    expect(posting.validThrough).toBe('2026-11-19T10:00:00.123Z');
   });
 
   it('falls back to a generated description and omits undisclosed salary', () => {
@@ -270,7 +280,8 @@ describe('generateSeo', () => {
     await writeFile(join(publicDir, 'descriptions', 'a.json'), JSON.stringify({ job_a1b2c3: 'From the shard &amp; more.' }));
 
     const stats = await generateSeo({ publicDir, distDir, siteUrl: `${SITE}/`, prerenderLimit: 2, log: quiet });
-    expect(stats).toMatchObject({ jobPages: 3, jsonLd: 2, jsonLdSkipped: { 'unresolvable location': 1 }, sitemapUrls: 4, prerendered: 2 });
+    // Landing pages: hub + company (Acme, 3 roles) + remote (2) + new-this-week (3) = 4.
+    expect(stats).toMatchObject({ jobPages: 3, jsonLd: 2, jsonLdSkipped: { 'unresolvable location': 1 }, landingPages: 4, sitemapUrls: 8, prerendered: 2 });
     expect((await readdir(join(distDir, 'job'))).sort()).toEqual(['job_a1b2c3', 'job_b00001', 'job_d00003']);
 
     const page = await readFile(join(distDir, 'job', 'job_a1b2c3', 'index.html'), 'utf8');
@@ -284,7 +295,8 @@ describe('generateSeo', () => {
     // Newest first: the remote job (09-22) precedes JOB (09-20).
     expect(index.indexOf('job_b00001')).toBeLessThan(index.indexOf('job_a1b2c3'));
     const sitemap = await readFile(join(distDir, 'sitemap.xml'), 'utf8');
-    expect(sitemap.match(/<url>/g)).toHaveLength(4);
+    expect(sitemap.match(/<url>/g)).toHaveLength(8);
+    expect(sitemap).toContain(`<loc>${SITE}/jobs/at/acme-corp/</loc>`);
     expect(sitemap).toContain(`<loc>${SITE}/</loc><lastmod>2026-09-24T00:00:00.000Z</lastmod>`);
     expect(existsSync(join(distDir, 'robots.txt'))).toBe(true);
   });
