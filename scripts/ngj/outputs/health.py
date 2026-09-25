@@ -18,6 +18,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from ngj.filters import NEAR_MISS_REASONS
 from ngj.models import KIND_COOLDOWN, SourceResult
 from ngj.registry import configured_company_apis, source_registry
 
@@ -89,8 +90,9 @@ def build_health(
     config: Mapping[str, Any],
     url_blocked_count: int = 0,
     now: datetime | None = None,
+    near_misses: Sequence[dict[str, Any]] = (),
 ) -> dict[str, Any]:
-    """Build the health payload.
+    """Build the health payload. ``near_misses`` are the jobs-extended.json entries (counted, not judged).
 
     Status values:
       - failed: total job count is 0
@@ -129,7 +131,18 @@ def build_health(
         'run_duration_seconds': round(time.time() - start_time, 1),
         'sources': sources,
         **compute_display_metrics(jobs, raw_source_counts, config),
+        'near_miss_jobs': len(near_misses),
+        'near_miss_reasons': _near_miss_reason_counts(near_misses),
     }
+
+
+def _near_miss_reason_counts(near_misses: Sequence[dict[str, Any]]) -> dict[str, int]:
+    counts = dict.fromkeys(NEAR_MISS_REASONS, 0)
+    for job in near_misses:
+        for reason in (job.get('near_miss') or {}).get('reasons', []):
+            if reason in counts:
+                counts[reason] += 1
+    return counts
 
 
 def validate_health(payload: Any) -> list[str]:
@@ -164,6 +177,7 @@ def generate_health_json(
     config: Mapping[str, Any],
     output_dir: Path,
     url_blocked_count: int = 0,
+    near_misses: Sequence[dict[str, Any]] = (),
 ) -> dict[str, Any] | None:
     """Write ``output_dir/health.json``; returns the payload, or None if the write failed.
 
@@ -171,7 +185,7 @@ def generate_health_json(
     safety gate (scripts/url_safety.py), surfaced so monitoring can alert when
     unsafe links start appearing upstream.
     """
-    health = build_health(jobs, source_results, start_time, config, url_blocked_count)
+    health = build_health(jobs, source_results, start_time, config, url_blocked_count, near_misses=near_misses)
     health_path = Path(output_dir) / "health.json"
     try:
         health_path.parent.mkdir(parents=True, exist_ok=True)

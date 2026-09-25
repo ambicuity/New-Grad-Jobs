@@ -7,13 +7,16 @@ import { BBG } from '../../lib/theme.js';
 import { RMT_ORDER, TIER_LABEL, TIER_ORDER, TYPE_LABEL, TYPE_ORDER } from '../../lib/taxonomy.js';
 import { activeFilterCount, companyCounts, countryCounts, metroCounts } from '../../lib/filters.js';
 import { COUNTRY_FACET } from '../../lib/location.js';
+import { NEAR_MISS_INFO, NEAR_MISS_REASONS, reasonCounts } from '../../lib/near-miss.js';
 import { Chip, ChipGroup, DrawerToggle, MIN_TARGET, sectionLabel } from '../ui.jsx';
 
 const MAX_METROS_LISTED = 15;
 
 export function FilterRail({
   isMobile, open, onToggleOpen, filters, onToggle, onVisa, onClearNew, jobs, preCompanyFiltered, preLocationFiltered = preCompanyFiltered,
+  extended = { jobs: [], status: 'idle' },
 }) {
+  const nearMissCounts = useMemo(() => new Map(reasonCounts(extended.jobs)), [extended.jobs]);
   // Countries present in the feed, as [code, label, count].
   const countries = useMemo(() => {
     const counts = new Map(countryCounts(jobs));
@@ -87,6 +90,16 @@ export function FilterRail({
             noun="job"
           />
           <HiringNow jobs={preCompanyFiltered} selected={filters.company} onToggle={(co) => onToggle('company', co)} isMobile={isMobile} />
+          {/* Opt-in near misses (jobs-extended.json). Counts appear once the tier has loaded; a row is shown only when every one of its reasons is on. */}
+          <ChipGroup title="WIDEN SCOPE">
+            {NEAR_MISS_REASONS.map((r) => {
+              const n = nearMissCounts.get(r);
+              const label = extended.status === 'ready' ? `${NEAR_MISS_INFO[r].label} (${n})` : NEAR_MISS_INFO[r].label;
+              return <Chip key={r} on={filters.include.has(r)} onClick={() => onToggle('include', r)} label={label} />;
+            })}
+            {extended.status === 'loading' && <span style={{ color: BBG.dim, fontSize: 11, alignSelf: 'center' }}>loading…</span>}
+            {extended.status === 'error' && <span style={{ color: BBG.warn, fontSize: 11, alignSelf: 'center' }}>near misses unavailable</span>}
+          </ChipGroup>
         </>
       )}
     </div>

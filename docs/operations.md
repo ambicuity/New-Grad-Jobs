@@ -21,7 +21,7 @@ running always gets to finish and deploy.
    1. `pip install --require-hashes -r requirements.txt`
    2. `python scripts/update_jobs.py` fetches every enabled source, dedupes, filters and
       enriches the jobs, then writes `site/public/{jobs.json, jobs-index.json, descriptions/,
-      feed.xml, feeds/, health.json}`. It also updates `README.md` (COUNT markers and the
+      jobs-extended.json, feed.xml, feeds/, health.json}`. It also updates `README.md` (COUNT markers and the
       CATEGORY-LISTINGS / COMPANY-LISTINGS blocks only) and `data/market-history.json`.
    3. `python scripts/check_integrity.py` validates every artifact against the others. It
       checks the jobs.json contract, index/shard/feed/health consistency and URL safety.

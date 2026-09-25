@@ -87,6 +87,7 @@ describe('mapJob', () => {
       jobId: 'job_4e67aada0c997e69c1a7',
       desc: '',
       closed: false,
+      nearMiss: [],
       hay: 'palantir forward deployed software engineer - us government kitsap, wa',
     });
   });

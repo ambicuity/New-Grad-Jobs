@@ -27,7 +27,8 @@ from pathlib import Path
 from typing import Any
 from xml.etree import ElementTree as ET
 
-from contracts import JOBS_SCHEMA_VERSION, validate_jobs_json_contract
+from contracts import JOBS_SCHEMA_VERSION, REQUIRED_JOB_KEYS, validate_jobs_json_contract
+from ngj.filters import NEAR_MISS_REASONS
 from ngj.outputs.health import validate_health
 from ngj.outputs.rss import feed_variants
 from publish import DESCRIPTION_SHARD_KEYS, description_shard
@@ -162,6 +163,55 @@ def check_feed(feed_path: Path, jobs: list[Any]) -> list[str]:
     return errors
 
 
+def check_extended(path: Path, curated_jobs: list[Any]) -> list[str]:
+    """jobs-extended.json (near-miss tier): optional, but when present it must be sound.
+
+    Every entry needs the jobs.json required keys (minus description, which
+    must be absent), unique ids that never overlap the curated set, and one or
+    more known near-miss reasons.
+    """
+    if not path.exists():
+        return []
+    errors: list[str] = []
+    payload = _load_json(path, errors)
+    if payload is None:
+        return errors
+    if not isinstance(payload, dict) or not isinstance(payload.get("jobs"), list):
+        return ["jobs-extended.json must be an object with a jobs list"]
+    jobs = payload["jobs"]
+    if (payload.get("meta") or {}).get("total_jobs") != len(jobs):
+        errors.append("jobs-extended meta.total_jobs does not match its jobs list")
+    curated_ids = set(_job_ids(curated_jobs))
+    seen: set[str] = set()
+    for index, job in enumerate(jobs):
+        if not isinstance(job, dict):
+            errors.append(f"jobs-extended job {index} is not an object")
+            continue
+        missing = sorted((REQUIRED_JOB_KEYS - {"description"}) - job.keys())
+        if missing:
+            errors.append(f"jobs-extended job {index} missing keys: {', '.join(missing)}")
+        if "description" in job:
+            errors.append(f"jobs-extended job {index} must not carry description")
+        job_id = job.get("job_id")
+        if isinstance(job_id, str):
+            if job_id in seen:
+                errors.append(f"jobs-extended duplicate job_id: {job_id}")
+            if job_id in curated_ids:
+                errors.append(f"jobs-extended overlap with jobs.json: {job_id}")
+            seen.add(job_id)
+        reasons = (job.get("near_miss") or {}).get("reasons") if isinstance(job.get("near_miss"), dict) else None
+        if not isinstance(reasons, list) or not reasons:
+            errors.append(f"jobs-extended job {index} has no near-miss reasons")
+        else:
+            for reason in reasons:
+                if reason not in NEAR_MISS_REASONS:
+                    errors.append(f"jobs-extended job {index} unknown near-miss reason: {reason!r}")
+        url = job.get("url")
+        if isinstance(url, str) and url and not is_safe_url(url):
+            errors.append(f"jobs-extended job {index} unsafe url: {url}")
+    return errors
+
+
 def check_feeds_dir(feeds_dir: Path, jobs: list[Any]) -> list[str]:
     """Every sliced feed under ``feeds/`` must pass the same checks as feed.xml, and the slices must exist."""
     errors: list[str] = []
@@ -213,6 +263,7 @@ def run_integrity_checks(artifacts_dir: Path) -> tuple[bool, dict[str, Any]]:
         errors.extend(check_urls(jobs))
         errors.extend(check_feed(artifacts_dir / "feed.xml", jobs))
         errors.extend(check_feeds_dir(artifacts_dir / "feeds", jobs))
+        errors.extend(check_extended(artifacts_dir / "jobs-extended.json", jobs))
 
     if errors:
         report["status"] = "failed"

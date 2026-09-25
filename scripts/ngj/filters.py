@@ -11,18 +11,26 @@ boundaries — never as a raw substring — so "ai" does not match "Maintenance"
 from __future__ import annotations
 
 import re
+from dataclasses import dataclass
+from datetime import datetime
 from functools import lru_cache
 from typing import Any
 
-from ngj.dates import is_recent_job
+from ngj.dates import extract_sort_date, is_recent_job
 from ngj.locations import is_valid_location
 from ngj.taxonomy import is_engineering_network_title
 
 __all__ = [
     'DEFAULT_EXCLUSION_SIGNALS',
+    'DEFAULT_INTERNSHIP_SIGNALS',
     'DEFAULT_LEVEL_SIGNALS',
     'DEFAULT_STRONG_NEW_GRAD_SIGNALS',
+    'NEAR_MISS_REASONS',
+    'Verdict',
+    'classify_job',
     'filter_jobs',
+    'is_internship_title',
+    'partition_jobs',
     'find_padded_signals',
     'has_excluded_level',
     'has_new_grad_signal',
@@ -32,12 +40,29 @@ __all__ = [
     'is_valid_location',
 ]
 
-# Used when config.yml has no filtering.exclusion_signals.
+# Used when config.yml has no filtering.exclusion_signals. Hard exclusions:
+# a title carrying one is neither curated nor a near miss.
 DEFAULT_EXCLUSION_SIGNALS: tuple[str, ...] = (
     'senior', 'sr.', 'sr', 'staff', 'principal', 'lead', 'manager',
     'director', 'vp', 'vice president', 'head of', 'architect',
-    'distinguished', 'fellow', 'intern', 'internship',
+    'distinguished', 'fellow',
 )
+
+# Used when config.yml has no filtering.internship_signals. Soft: an
+# internship/co-op is never curated but becomes a near miss (intern_or_coop).
+DEFAULT_INTERNSHIP_SIGNALS: tuple[str, ...] = (
+    'intern', 'internship', 'co-op', 'co op', 'coop', 'student',
+    'summer analyst', 'summer associate',
+)
+
+# Soft rules, in the order their reasons are recorded on a near miss.
+REASON_INTERN = 'intern_or_coop'
+REASON_LEVEL = 'level_iii_plus'
+REASON_LOCATION = 'outside_target_countries'
+REASON_AGE = 'older_than_max_age'
+NEAR_MISS_REASONS: tuple[str, ...] = (REASON_INTERN, REASON_LEVEL, REASON_LOCATION, REASON_AGE)
+DEFAULT_NEAR_MISS_MAX_AGE_DAYS = 120
+DEFAULT_MAX_NEAR_MISSES = 4000
 
 # Used when config.yml has no filtering.strong_new_grad_signals. Phrases strong
 # enough to pass without a track signal. Generic role titles are deliberately
@@ -235,34 +260,97 @@ def has_track_signal(title: str, signals: list[str]) -> bool:
     return _matches_any(title, plain, _TRACK_SUFFIX)
 
 
-def filter_jobs(jobs: list[dict[str, Any]], config: dict[str, Any]) -> list[dict[str, Any]]:
-    """Return the jobs that pass every inclusion rule (input list is not modified)."""
-    filters = config.get('filtering', config.get('filters', {}))
-    exclusion_signals = filters.get('exclusion_signals', list(DEFAULT_EXCLUSION_SIGNALS))
-    return [job for job in jobs if _passes_filters(job, filters, exclusion_signals)]
+def is_internship_title(title: str, signals: list[str] | tuple[str, ...] | None) -> bool:
+    """True for internship / co-op / student / summer-program titles; ``None`` means the defaults."""
+    return is_title_excluded(title, list(DEFAULT_INTERNSHIP_SIGNALS if signals is None else signals))
 
 
-def _passes_filters(job: dict[str, Any], filters: dict[str, Any], exclusion_signals: list[str]) -> bool:
+@dataclass(frozen=True)
+class Verdict:
+    """Where one posting lands: curated (``kept``), near miss (``near_miss`` with ``reasons``), or out."""
+
+    kept: bool
+    reasons: tuple[str, ...]
+
+    @property
+    def near_miss(self) -> bool:
+        return not self.kept and bool(self.reasons)
+
+
+_OUT = Verdict(kept=False, reasons=())
+
+
+def _filtering(config: dict[str, Any]) -> dict[str, Any]:
+    return config.get('filtering', config.get('filters', {}))
+
+
+def classify_job(job: dict[str, Any], config: dict[str, Any], *, now: datetime | None = None) -> Verdict:
+    """Apply the hard rules, then record which soft rules a posting fails.
+
+    Hard (fail = out): an exclusion word (senior, staff, manager, ...), no
+    early-career signal (a new-grad phrase, a level token, or an internship
+    word), or no role word (a strong phrase or a track word).
+    Soft (fail = near miss, with a reason): internship/co-op, level III+,
+    a location outside the target countries, posted between ``max_age_days``
+    and ``near_miss_max_age_days`` ago. Older than that is out.
+    """
+    filters = _filtering(config)
     title = job.get('title', '')
+    exclusion_signals = filters.get('exclusion_signals', list(DEFAULT_EXCLUSION_SIGNALS))
+    if is_title_excluded(title, exclusion_signals):
+        return _OUT
 
-    # FIRST: exclusion signals (filter OUT senior/staff/intern roles and III+ levels)
-    if is_title_excluded(title, exclusion_signals) or has_excluded_level(title):
-        return False
-
-    new_grad_signals = list(filters['new_grad_signals']) + list(
-        filters.get('level_signals', DEFAULT_LEVEL_SIGNALS)
-    )
-    if not has_new_grad_signal(title, new_grad_signals):
-        return False
-
-    # Accept if: strong new-grad signal OR (new-grad signal AND track signal)
+    internship = is_internship_title(title, filters.get('internship_signals'))
+    new_grad_signals = list(filters['new_grad_signals']) + list(filters.get('level_signals', DEFAULT_LEVEL_SIGNALS))
+    if not internship and not has_new_grad_signal(title, new_grad_signals):
+        return _OUT
     if not (
         has_strong_new_grad_signal(title, filters.get('strong_new_grad_signals'))
         or has_track_signal(title, filters['track_signals'])
     ):
-        return False
+        return _OUT
 
-    if not is_recent_job(job.get('posted_at', ''), filters['max_age_days']):
-        return False
+    posted = job.get('posted_at', '')
+    max_age = filters['max_age_days']
+    near_max_age = filters.get('near_miss_max_age_days', DEFAULT_NEAR_MISS_MAX_AGE_DAYS)
+    recent = is_recent_job(posted, max_age, now=now)
+    if not recent and not is_recent_job(posted, max(near_max_age, max_age), now=now):
+        return _OUT
 
-    return is_valid_location(job.get('location', ''))
+    reasons: list[str] = []
+    if internship:
+        reasons.append(REASON_INTERN)
+    if has_excluded_level(title):
+        reasons.append(REASON_LEVEL)
+    if not is_valid_location(job.get('location', '')):
+        reasons.append(REASON_LOCATION)
+    if not recent:
+        reasons.append(REASON_AGE)
+    return Verdict(kept=not reasons, reasons=tuple(reasons))
+
+
+def partition_jobs(
+    jobs: list[dict[str, Any]], config: dict[str, Any], *, now: datetime | None = None,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Split into (curated, near_misses). Inputs are never mutated.
+
+    Near misses carry ``job['near_miss'] = {'reasons': [...]}`` on a copy and
+    are capped at ``filtering.max_near_misses`` newest first, so the extra
+    payload stays bounded.
+    """
+    curated: list[dict[str, Any]] = []
+    near: list[dict[str, Any]] = []
+    for job in jobs:
+        verdict = classify_job(job, config, now=now)
+        if verdict.kept:
+            curated.append(job)
+        elif verdict.near_miss:
+            near.append({**job, 'near_miss': {'reasons': list(verdict.reasons)}})
+    limit = _filtering(config).get('max_near_misses', DEFAULT_MAX_NEAR_MISSES)
+    near = sorted(near, key=extract_sort_date, reverse=True)[:max(0, int(limit))]
+    return curated, near
+
+
+def filter_jobs(jobs: list[dict[str, Any]], config: dict[str, Any]) -> list[dict[str, Any]]:
+    """Return the curated jobs: the ones that pass every rule (input list is not modified)."""
+    return partition_jobs(jobs, config)[0]

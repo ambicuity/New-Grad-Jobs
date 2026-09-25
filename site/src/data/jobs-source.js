@@ -6,6 +6,8 @@ import { normalizeJobsPayload } from '../lib/jobs.js';
 
 export const JOBS_INDEX_URL = './jobs-index.json';
 export const JOBS_FULL_URL = './jobs.json';
+/** The near-miss tier (scripts/ngj/outputs/jobs_json.py generate_extended_json); fetched only when a WIDEN SCOPE toggle is on. */
+export const JOBS_EXTENDED_URL = './jobs-extended.json';
 
 export async function fetchJson(url, fetchImpl = fetch) {
   const r = await fetchImpl(url, { cache: 'no-cache' });
@@ -38,6 +40,22 @@ export async function loadJobs(fetchImpl = fetch) {
     return { jobs, meta, error: null };
   } catch (err) {
     console.error('[terminal] failed to load jobs.json:', err);
+    return { jobs: [], meta: {}, error: (err && err.message) || String(err) };
+  }
+}
+
+/**
+ * Load the near-miss tier. Never rejects: a missing file (older deploy) or a
+ * failure resolves with `error` set and no jobs, so the toggles degrade to
+ * "nothing extra" instead of breaking the view.
+ * @returns {Promise<JobsState>}
+ */
+export async function loadExtendedJobs(fetchImpl = fetch) {
+  try {
+    const { jobs, meta } = normalizeJobsPayload(await fetchJson(JOBS_EXTENDED_URL, fetchImpl));
+    return { jobs, meta, error: null };
+  } catch (err) {
+    console.warn('[terminal] jobs-extended.json unavailable:', err);
     return { jobs: [], meta: {}, error: (err && err.message) || String(err) };
   }
 }

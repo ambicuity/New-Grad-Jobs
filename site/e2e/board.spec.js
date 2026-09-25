@@ -172,6 +172,28 @@ test.describe('location facets', () => {
   });
 });
 
+test.describe('WIDEN SCOPE (near misses)', () => {
+  test('near misses are hidden by default and appear only for the toggled reasons', async ({ page }) => {
+    await openBoard(page);
+    await expectResults(page, FIXTURE.total);
+    const interns = chip(page, 'WIDEN SCOPE', 'internships & co-ops');
+
+    await interns.click();
+
+    // The intern (1 reason) appears; the co-op abroad (2 reasons) needs both toggles.
+    await expectResults(page, FIXTURE.total + 1, FIXTURE.total + 3);
+    await expectParams(page, { include: ['intern_or_coop'] });
+    await expect(page.getByRole('group', { name: 'WIDEN SCOPE' }).getByRole('button', { name: 'internships & co-ops (2)' })).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.locator('[role="option"][data-job-id="job_e001ffffffffffffffff"]')).toContainText('intern');
+
+    await chip(page, 'WIDEN SCOPE', 'outside US / CA / IN (1)').click();
+    await expectResults(page, FIXTURE.total + 2, FIXTURE.total + 3);
+
+    await page.keyboard.press('Escape');
+    await expectResults(page, FIXTURE.total);
+  });
+});
+
 test.describe('applied tracking and alerts', () => {
   test('the APPLIED button and the a key track the job in localStorage and mark the row', async ({ page }) => {
     await openBoard(page);

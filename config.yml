@@ -224,16 +224,27 @@ filtering:
     - "7+ years"
     - "6+ years"
     - "5+ years"
+
+  # Internships, co-ops, student placements and banking summer programs.
+  # Never in the curated board; published as a "near miss" (reason
+  # intern_or_coop) in jobs-extended.json so the site can offer an opt-in
+  # toggle. Defaults live in DEFAULT_INTERNSHIP_SIGNALS in scripts/ngj/filters.py.
+  internship_signals:
     - "intern"
     - "internship"
-    # Co-ops, student placements and banking summer programs are internships
-    # by another name; a "2027" cohort year alone must not let them through.
     - "co-op"
     - "co op"
     - "coop"
     - "student"
     - "summer analyst"
     - "summer associate"
+
+  # Near-miss tier (jobs-extended.json): postings that pass every hard rule
+  # but fail a soft one — internship/co-op, level III+, outside US/CA/IN, or
+  # posted between max_age_days and near_miss_max_age_days ago. Capped at
+  # max_near_misses, newest first, so the extra payload stays bounded.
+  near_miss_max_age_days: 120
+  max_near_misses: 4000
 apis:
   greenhouse:
     companies:

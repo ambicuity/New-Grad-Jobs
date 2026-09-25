@@ -2,6 +2,7 @@
 // every "toggle" returns a new filters object with new Sets.
 
 import { searchHaystack } from './jobs.js';
+import { passesScope } from './near-miss.js';
 
 /**
  * @typedef {object} JobFilters
@@ -12,6 +13,7 @@ import { searchHaystack } from './jobs.js';
  * @property {Set<string>} company
  * @property {Set<string>} metro    "City, ST" labels (lib/location.js metroOf).
  * @property {Set<string>} country  ISO codes: US, CA, IN.
+ * @property {Set<string>} include  Near-miss reasons the viewer opted into (WIDEN SCOPE); empty = curated only.
  * @property {number|null} newWithinHours  Only roles first seen in the last N hours (the ?new= link); null = any.
  */
 
@@ -24,7 +26,7 @@ import { searchHaystack } from './jobs.js';
 export function EMPTY_FILTERS() {
   return {
     type: new Set(), rmt: new Set(), visa: null, tier: new Set(), company: new Set(),
-    metro: new Set(), country: new Set(), newWithinHours: null,
+    metro: new Set(), country: new Set(), include: new Set(), newWithinHours: null,
   };
 }
 
@@ -55,7 +57,7 @@ export function clearNewWindow(filters) {
 export function activeFilterCount(filters) {
   return filters.type.size + filters.rmt.size + (filters.visa !== null ? 1 : 0)
     + filters.tier.size + filters.company.size + filters.metro.size + filters.country.size
-    + (filters.newWithinHours ? 1 : 0);
+    + filters.include.size + (filters.newWithinHours ? 1 : 0);
 }
 
 const HOUR_MS = 3600e3;
@@ -99,6 +101,7 @@ const COMPANY_ONLY = new Set(['company']);
 export function filterJobsExcept(jobs, { filters, q = '', saved = new Set(), savedOnly = false, now = Date.now() }, ignore = COMPANY_ONLY) {
   const skip = (name) => ignore.has(name);
   return jobs.filter((j) => {
+    if (!passesScope(j, filters.include)) return false;
     if (savedOnly && !saved.has(j.id)) return false;
     if (filters.type.size && !filters.type.has(j.type)) return false;
     if (filters.rmt.size && !filters.rmt.has(j.rmt)) return false;

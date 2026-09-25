@@ -6,6 +6,7 @@ import { memo } from 'react';
 import { BBG } from '../../lib/theme.js';
 import { RMT_LABEL, TIER_LABEL, TYPE_LABEL } from '../../lib/taxonomy.js';
 import { fmtComp, rowNumber } from '../../lib/format.js';
+import { NEAR_MISS_INFO } from '../../lib/near-miss.js';
 import { MIN_TARGET, ellipsis } from '../ui.jsx';
 
 export const JOB_GRID_COLUMNS = '32px 120px 1fr 150px 100px 64px 28px';
@@ -25,6 +26,7 @@ export function jobLabel(j, isSaved, isApplied = false) {
     j.posted !== '—' ? `posted ${j.posted} ago` : null,
     j.visaNote ? VISA_SHORT[j.visaNote] : null,
     j.closed ? 'closed' : null,
+    j.nearMiss && j.nearMiss.length ? `near miss: ${j.nearMiss.map((r) => NEAR_MISS_INFO[r].label).join(', ')}` : null,
     isSaved ? 'saved' : null,
     isApplied ? 'applied' : null,
   ].filter(Boolean).join(', ');
@@ -51,6 +53,7 @@ function MetaLine({ j }) {
     <>
       {TYPE_LABEL[j.type]}{sep}{RMT_LABEL[j.rmt]}{sep}{TIER_LABEL[j.tier]}
       {j.visaNote && <>{sep}<span style={{ color: BBG.warn }}>{VISA_SHORT[j.visaNote]}</span></>}
+      {j.nearMiss && j.nearMiss.map((r) => <span key={r}>{sep}<span style={{ color: BBG.acc2 }}>{NEAR_MISS_INFO[r].tag}</span></span>)}
     </>
   );
 }

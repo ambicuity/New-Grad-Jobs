@@ -21,7 +21,14 @@ import yaml
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 
 from ngj.dedup import deduplicate_jobs  # noqa: E402
-from ngj.filters import filter_jobs, has_new_grad_signal, has_track_signal, is_title_excluded  # noqa: E402
+from ngj.filters import (  # noqa: E402
+    filter_jobs,
+    has_new_grad_signal,
+    has_track_signal,
+    is_internship_title,
+    is_title_excluded,
+    partition_jobs,
+)
 
 
 def _make_job(
@@ -799,6 +806,11 @@ class TestExclusionSignalWordBoundaries:
         "Engineering Fellow",
         "Software Engineer (10+ years)",
         "Backend Engineer, 5+ years experience",
+    ])
+    def test_senior_titles_still_excluded(self, title):
+        assert is_title_excluded(title, self._live_signals()) is True
+
+    @pytest.mark.parametrize("title", [
         "Software Engineer Intern",
         "Software Engineering Internship",
         "Summer Internships 2027 - SWE",
@@ -807,8 +819,16 @@ class TestExclusionSignalWordBoundaries:
         "Software Engineer - Intern/Co-op",
         "Software Engineer (Internship)",
     ])
-    def test_senior_and_intern_titles_still_excluded(self, title):
-        assert is_title_excluded(title, self._live_signals()) is True
+    def test_intern_titles_are_near_misses_never_curated(self, title):
+        """Internships left the hard exclusion list: they are published as near misses instead."""
+        root = os.path.join(os.path.dirname(__file__), '..')
+        with open(os.path.join(root, 'config.yml'), encoding='utf-8') as f:
+            config = yaml.safe_load(f)
+        assert is_internship_title(title, config["filtering"]["internship_signals"]) is True
+        assert is_title_excluded(title, self._live_signals()) is False
+        curated, near = partition_jobs([_make_job(title=title)], config)
+        assert curated == []
+        assert [j["near_miss"]["reasons"] for j in near] == [["intern_or_coop"]]
 
     def test_filter_jobs_keeps_internal_tools_new_grad(self):
         jobs = [_make_job(title="Software Engineer, Internal Tools - New Grad")]

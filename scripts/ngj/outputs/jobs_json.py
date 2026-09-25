@@ -1,4 +1,5 @@
-"""jobs.json payload (public API), jobs-index.json and description shards."""
+"""jobs.json payload (public API), jobs-index.json, description shards and the
+jobs-extended.json near-miss tier."""
 
 from __future__ import annotations
 
@@ -10,9 +11,10 @@ from typing import Any
 
 from contracts import JOBS_SCHEMA_VERSION, compute_job_id
 from ngj.dates import extract_sort_date, get_iso_date
+from ngj.filters import NEAR_MISS_REASONS
 from ngj.taxonomy import CATEGORY_PATTERNS
 from ngj.text import clean_description
-from publish import write_site_artifacts
+from publish import write_extended_artifact, write_site_artifacts
 
 logger = logging.getLogger(__name__)
 
@@ -140,6 +142,44 @@ def generate_jobs_json(
     }
 
 
+def generate_extended_json(
+    near_misses: Sequence[dict[str, Any]],
+    *,
+    previous_first_seen: Mapping[str, str] | None = None,
+    now: datetime | None = None,
+) -> dict[str, Any]:
+    """Build the jobs-extended.json payload: near misses with their reasons, no descriptions.
+
+    Same job shape as jobs.json minus ``description`` (the site loads this file
+    only when a "widen scope" toggle is on, so it must stay small), plus
+    ``near_miss.reasons``. ``meta.reasons`` counts every reason, zero included.
+    """
+    now = now or datetime.now(UTC)
+    first_seen_now = get_iso_date(now) or now.isoformat()
+    ordered = sort_jobs_newest_first(near_misses)
+    previous_first_seen = previous_first_seen or {}
+    reason_counts = {reason: 0 for reason in NEAR_MISS_REASONS}
+    jobs: list[dict[str, Any]] = []
+    for job_id, job in ordered:
+        reasons = [r for r in (job.get('near_miss') or {}).get('reasons', []) if r in reason_counts]
+        for reason in reasons:
+            reason_counts[reason] += 1
+        public = _public_job(job_id, job, resolve_first_seen(job_id, job, previous_first_seen, first_seen_now))
+        del public['description']
+        public['near_miss'] = {'reasons': reasons}
+        jobs.append(public)
+    return {
+        'meta': {
+            'schema_version': JOBS_SCHEMA_VERSION,
+            'tier': 'near_miss',
+            'generated_at': now.isoformat(),
+            'total_jobs': len(jobs),
+            'reasons': reason_counts,
+        },
+        'jobs': jobs,
+    }
+
+
 def build_full_descriptions(jobs: Sequence[dict[str, Any]]) -> dict[str, str]:
     """Map job_id → full cleaned "About the role" text for the description shards.
 
@@ -156,10 +196,18 @@ def build_full_descriptions(jobs: Sequence[dict[str, Any]]) -> dict[str, str]:
     return texts
 
 
-def write_jobs_artifacts(output_dir: Path, jobs_json: dict[str, Any], jobs: Sequence[dict[str, Any]]) -> None:
-    """Write jobs.json, jobs-index.json and descriptions/<shard>.json into ``output_dir``."""
+def write_jobs_artifacts(
+    output_dir: Path,
+    jobs_json: dict[str, Any],
+    jobs: Sequence[dict[str, Any]],
+    extended_json: dict[str, Any] | None = None,
+) -> None:
+    """Write jobs.json, jobs-index.json, descriptions/<shard>.json and (when given) jobs-extended.json."""
     write_site_artifacts(Path(output_dir), jobs_json, build_full_descriptions(jobs))
     logger.info(
         "jobs.json, jobs-index.json and description shards updated with %s jobs → %s",
         len(jobs_json.get('jobs', [])), output_dir,
     )
+    if extended_json is not None:
+        write_extended_artifact(Path(output_dir), extended_json)
+        logger.info("jobs-extended.json written with %s near misses", extended_json['meta']['total_jobs'])

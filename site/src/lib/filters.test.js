@@ -8,7 +8,7 @@ import { searchHaystack } from './jobs.js';
 const job = (over) => {
   const j = {
     id: 'x', co: 'Acme', role: 'Software Engineer', loc: 'Austin, TX',
-    type: 'SWE', rmt: 'onsite', visa: true, tier: 'other', metro: 'Austin, TX', country: 'US', ...over,
+    type: 'SWE', rmt: 'onsite', visa: true, tier: 'other', metro: 'Austin, TX', country: 'US', nearMiss: [], ...over,
   };
   return { ...j, hay: searchHaystack(j) };
 };
@@ -27,7 +27,7 @@ describe('EMPTY_FILTERS', () => {
     const b = EMPTY_FILTERS();
     expect(a).not.toBe(b);
     expect(a.company).not.toBe(b.company);
-    expect(Object.keys(a).sort()).toEqual(['company', 'country', 'metro', 'newWithinHours', 'rmt', 'tier', 'type', 'visa']);
+    expect(Object.keys(a).sort()).toEqual(['company', 'country', 'include', 'metro', 'newWithinHours', 'rmt', 'tier', 'type', 'visa']);
     expect(a.visa).toBeNull();
   });
 });
@@ -121,6 +121,19 @@ describe('filterJobsExceptCompany', () => {
     let both = toggleFacet(EMPTY_FILTERS(), 'metro', 'New York, NY');
     both = toggleFacet(both, 'metro', 'Toronto, ON');
     expect(run(both)).toEqual(['b', 'd']);
+  });
+});
+
+describe('WIDEN SCOPE (near misses)', () => {
+  const withNear = [...JOBS, job({ id: 'n1', nearMiss: ['intern_or_coop'] }), job({ id: 'n2', nearMiss: ['intern_or_coop', 'level_iii_plus'] })];
+  const run = (filters) => ids(filterJobsExceptCompany(withNear, { filters }));
+
+  it('hides every near miss by default and shows only fully opted-in ones', () => {
+    expect(run(EMPTY_FILTERS())).toEqual(['a', 'b', 'c', 'd']);
+    expect(run(toggleFacet(EMPTY_FILTERS(), 'include', 'intern_or_coop'))).toEqual(['a', 'b', 'c', 'd', 'n1']);
+    const both = toggleFacet(toggleFacet(EMPTY_FILTERS(), 'include', 'intern_or_coop'), 'include', 'level_iii_plus');
+    expect(run(both)).toEqual(['a', 'b', 'c', 'd', 'n1', 'n2']);
+    expect(activeFilterCount(both)).toBe(2);
   });
 });
 

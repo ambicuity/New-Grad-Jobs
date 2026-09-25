@@ -17,6 +17,7 @@ import { copyText, jobShareUrl } from '../../lib/share.js';
 import { useIsMobile } from '../../hooks/useIsMobile.js';
 import { useToast } from '../../hooks/useToast.js';
 import { useSavedJobs } from '../../hooks/useSavedJobs.js';
+import { useExtendedJobs } from '../../hooks/useExtendedJobs.js';
 import { useDashboardKeys } from '../../hooks/useDashboardKeys.js';
 import { MobileOverlay } from '../ui.jsx';
 import { StatsStrip } from './StatsStrip.jsx';
@@ -40,8 +41,14 @@ const LOCATION_FACETS = new Set(['company', 'metro', 'country']);
  *   updateView: (fn: Function, opts?: object) => void,
  * }} props
  */
-export function DashboardView({ jobs, meta, view, updateView }) {
+export function DashboardView({ jobs: curated, meta, view, updateView }) {
   const { q, filters, sort, savedOnly } = view;
+  // Near misses are fetched the first time a WIDEN SCOPE toggle is on and merged behind the curated rows.
+  const extended = useExtendedJobs(filters.include.size > 0);
+  const jobs = useMemo(
+    () => (filters.include.size && extended.jobs.length ? [...curated, ...extended.jobs] : curated),
+    [curated, extended.jobs, filters.include.size],
+  );
   const isMobile = useIsMobile();
   const [saved, toggleSave] = useSavedJobs();
   const [applied, toggleApplied] = useSavedJobs(undefined, APPLIED_STORAGE_KEY);
@@ -56,7 +63,8 @@ export function DashboardView({ jobs, meta, view, updateView }) {
   // ~1.9k rows runs at lower priority on the deferred query.
   const deferredQ = useDeferredValue(q);
   const jobsById = useMemo(() => new Map(jobs.map((j) => [j.id, j])), [jobs]);
-  const stats = useMemo(() => computeStats(jobs, loadedAt), [jobs, loadedAt]);
+  // The headline strip always describes the curated set.
+  const stats = useMemo(() => computeStats(curated, loadedAt), [curated, loadedAt]);
 
   // Every facet except company — also feeds HIRING NOW so picking a company
   // doesn't collapse the company list.
@@ -181,6 +189,7 @@ export function DashboardView({ jobs, meta, view, updateView }) {
           jobs={jobs}
           preCompanyFiltered={preCompanyFiltered}
           preLocationFiltered={preLocationFiltered}
+          extended={extended}
         />
         <JobList
           isMobile={isMobile}

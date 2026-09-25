@@ -25,7 +25,8 @@ scripts/ngj/               the scraper package
   registry.py              which sources are enabled (shared by pipeline, health.json, validate_config)
   http.py                  shared requests session, per-domain concurrency limits, 403 cooldown hooks
   sources/                 one adapter per source; each returns a SourceResult
-  filters.py locations.py  inclusion gate: exclusions, level III+, new-grad/track signals, recency, US/CA/IN
+  filters.py locations.py  inclusion gate: hard rules (exclusions, new-grad/track signals) and soft rules
+                           (intern/co-op, level III+, recency, US/CA/IN) whose failures become near misses
   dedup.py                 same-posting (job_id) + cross-source dedup
   taxonomy.py enrich.py    CATEGORY_PATTERNS, company tiers, sponsorship/closed flags
   outputs/                 jobs_json, rss, health, market_history, previous (last published run)
@@ -87,6 +88,11 @@ After `make run`, restore the two files that a local scrape rewrites:
 - **Identity:** `job_id = "job_" + sha256(source + canonical URL)[:20]`. Tracking params
   are stripped, and there is a company/title/location fallback when a job has no URL.
   `id == job_id`. `first_seen` carries forward from the previous published run.
+- **Near-miss tier:** `partition_jobs` splits postings into the curated set (jobs.json) and
+  near misses that fail only soft rules (`jobs-extended.json`, capped by
+  `filtering.max_near_misses`, each with `near_miss.reasons`). The site fetches that file only
+  when a WIDEN SCOPE toggle is on and shows a row only when every reason is toggled on. Counts
+  on the board, landing pages, feeds and README are always the curated set.
 - **Collapse guard:** refuses to publish if the total drops more than 40% versus the
   previous run, or if a source that had more than 100 jobs returns 0. Override with
   `NGJ_ALLOW_DROP=1`.
@@ -139,7 +145,7 @@ After `make run`, restore the two files that a local scrape rewrites:
 1. **Honesty.** Never show invented, estimated or placeholder numbers on the site or in the
    README. Every count and stat must come from the published data.
 2. **Never commit generated data:** `site/public/{jobs.json, jobs-index.json, descriptions/,
-   feed.xml, feeds/, health.json}` are gitignored and exist only in the Pages deployment.
+   jobs-extended.json, feed.xml, feeds/, health.json}` are gitignored and exist only in the Pages deployment.
 3. **README:** edit only outside `<!-- COUNT:* -->…<!-- /COUNT -->` and the
    `<!-- CATEGORY-LISTINGS:START … -->`…`<!-- CATEGORY-LISTINGS:END -->` and
    `<!-- COMPANY-LISTINGS:START … -->`…`<!-- COMPANY-LISTINGS:END -->` blocks, which the

@@ -8,6 +8,7 @@ import { fmtComp } from '../../lib/format.js';
 import { safeHttpUrl } from '../../lib/safe-url.js';
 import { extractRequirements } from '../../lib/requirements.js';
 import { similarJobs } from '../../lib/similar.js';
+import { nearMissNote } from '../../lib/near-miss.js';
 import { useJobDescription } from '../../hooks/useJobDescription.js';
 import { MIN_TARGET, Metric, ellipsis, sectionLabel } from '../ui.jsx';
 import { ClosedBadge } from './JobRow.jsx';
@@ -90,6 +91,9 @@ export function JobDetail({ job, jobs, saved, onSave, applied = false, onApplied
         <div style={{ color: BBG.dim, fontSize: 11.5, marginTop: 4 }}>
           {job.co} · {job.loc} · {RMT_LABEL[job.rmt]}
         </div>
+        {job.nearMiss.length > 0 && (
+          <div role="note" style={{ color: BBG.acc2, fontSize: 11.5, marginTop: 6 }}>{nearMissNote(job)}</div>
+        )}
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', borderBottom: `1px solid ${BBG.rule2}` }}>

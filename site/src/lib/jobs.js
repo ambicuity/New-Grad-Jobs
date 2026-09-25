@@ -5,6 +5,7 @@ import { CATEGORY_TYPE, TIER_ORDER } from './taxonomy.js';
 import { ageString, parseTimestamp } from './time.js';
 import { safeHttpUrl } from './safe-url.js';
 import { countryOf, metroOf } from './location.js';
+import { nearMissReasons } from './near-miss.js';
 
 /**
  * A job as published in jobs-index.json (jobs.json adds `description`).
@@ -49,6 +50,7 @@ import { countryOf, metroOf } from './location.js';
  * @property {string} jobId           `job_<hex>` or '' — keys the description shards.
  * @property {string} desc            Full description when the payload carries one (jobs.json fallback), else ''.
  * @property {boolean} closed         `is_closed` from the feed.
+ * @property {string[]} nearMiss      Near-miss reasons (jobs-extended.json); [] for a curated job.
  * @property {string} hay             Lower-cased search text (company, role, location).
  */
 
@@ -130,6 +132,7 @@ export function mapJob(j, now = Date.now()) {
       ? raw.description
       : '',
     closed: raw.is_closed === true,
+    nearMiss: nearMissReasons(raw),
   };
   return { ...base, hay: searchHaystack(base) };
 }
