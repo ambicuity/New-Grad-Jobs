@@ -66,6 +66,9 @@ test.describe('explore', () => {
     await expect(count(page)).toContainText('1 / 10');
     await expectParams(page, { xc: ['IN'] });
     await page.getByRole('group', { name: 'COUNTRY' }).getByRole('button', { name: /^india \(/ }).click();
+    // The list filters on a deferred copy of the facets; wait for it to settle before navigating it.
+    await expect(count(page)).toContainText('7 / 10');
+    await expect(list(page)).not.toHaveAttribute('aria-busy', 'true');
 
     // Keyboard: j moves the selection and the detail pane follows.
     await list(page).focus();
@@ -93,6 +96,19 @@ test.describe('explore', () => {
     await expect(page).toHaveURL(/xi=engineer\+ii/);
     await page.reload();
     await expect(count(page)).toContainText('1 / 10 postings');
+  });
+
+  test('rail, list and detail pane fit a 1280px viewport with no horizontal overflow', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.goto('/?tab=explore');
+    await expect(count(page)).toContainText('10 / 10');
+    await expect(detail(page)).toContainText('OPEN ON EMPLOYER SITE');
+    const box = await detail(page).boundingBox();
+    expect(box).not.toBeNull();
+    expect(box.x + box.width).toBeLessThanOrEqual(1280);
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(overflow).toBe(0);
+    await expect(page.getByRole('button', { name: /^Export \d+ postings as CSV/ })).toBeInViewport();
   });
 
   test('is accessible', async ({ page }, testInfo) => {
