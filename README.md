@@ -57,11 +57,11 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from the scraper output jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->3026<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->2971<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1043<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1026<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->13<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->17<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
@@ -76,20 +76,20 @@ Experience an advanced career journey with us! 🚀
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->78<!-- /COUNT --> |
 | [Engineering and Development](#engineering-and-development) | <!-- COUNT:engineering -->312<!-- /COUNT --> |
 | [Creatives and Design](#creatives-and-design) | <!-- COUNT:design -->23<!-- /COUNT --> |
-| [Business Analyst](#business-analyst) | <!-- COUNT:business_analyst -->86<!-- /COUNT --> |
+| [Business Analyst](#business-analyst) | <!-- COUNT:business_analyst -->85<!-- /COUNT --> |
 | [Marketing](#marketing) | <!-- COUNT:marketing -->19<!-- /COUNT --> |
-| [Sales](#sales) | <!-- COUNT:sales -->124<!-- /COUNT --> |
-| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->162<!-- /COUNT --> |
+| [Sales](#sales) | <!-- COUNT:sales -->84<!-- /COUNT --> |
+| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->163<!-- /COUNT --> |
 | [Consulting](#consulting) | <!-- COUNT:consulting -->52<!-- /COUNT --> |
 | [Human Resources](#human-resources) | <!-- COUNT:human_resources -->69<!-- /COUNT --> |
 | [Legal and Compliance](#legal-and-compliance) | <!-- COUNT:legal -->45<!-- /COUNT --> |
 | [Customer Service and Support](#customer-service-and-support) | <!-- COUNT:customer_support -->79<!-- /COUNT --> |
-| [Supply Chain](#supply-chain) | <!-- COUNT:supply_chain -->108<!-- /COUNT --> |
+| [Supply Chain](#supply-chain) | <!-- COUNT:supply_chain -->109<!-- /COUNT --> |
 | [Healthcare](#healthcare) | <!-- COUNT:healthcare -->124<!-- /COUNT --> |
 | [Education and Training](#education-and-training) | <!-- COUNT:education -->6<!-- /COUNT --> |
 | [Public Sector and Government](#public-sector-and-government) | <!-- COUNT:public_sector -->2<!-- /COUNT --> |
 | [Arts and Entertainment](#arts-and-entertainment) | <!-- COUNT:arts_entertainment -->4<!-- /COUNT --> |
-| [Management and Executive](#management-and-executive) | <!-- COUNT:management -->61<!-- /COUNT --> |
+| [Management and Executive](#management-and-executive) | <!-- COUNT:management -->62<!-- /COUNT --> |
 | [Other](#other) | <!-- COUNT:other -->86<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
@@ -97,7 +97,7 @@ Experience an advanced career journey with us! 🚀
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from the scraper output jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **3,026** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **2,971** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -109,14 +109,14 @@ Experience an advanced career journey with us! 🚀
 | Leidos | Software Engineer | Huntsville, AL | Today | [Apply](<https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/Software-Engineer_R-00193127>) |
 | CACI | Field Systems Engineer \(Radar/C-UAS\) | Sterling, VA, US | Today | [Apply](<https://caci.wd1.myworkdayjobs.com/job/Sterling-VA-US/Field-Systems-Engineer--Radar-C-UAS-_332639>) |
 | Leidos | Systems Engineer | Huntsville, AL | Today | [Apply](<https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/Systems-Engineer_R-00192918>) |
-| Accenture | Junior Java Developer | — | Today | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Riga/Junior-Java-Developer_R00360077>) |
 | CACI | Systems Engineer - DevOps Kubernetes Support | Hanover, MD, US | Today | [Apply](<https://caci.wd1.myworkdayjobs.com/job/Hanover-MD-US/Systems-Engineer---DevOps-Kubernetes-Support_332617>) |
 | Leidos | Systems Engineer – HPC &amp; GPU Infrastructure | Bethesda, MD | Today | [Apply](<https://leidos.wd5.myworkdayjobs.com/job/Bethesda-MD/Systems-Engineer---HPC---GPU-Infrastructure_R-00191588-1>) |
 | Raytheon | Systems Engineer I \(Onsite\) | US-GA-ATLANTA-100 ~ 100 Galleria Pkwy SE ~ GALLERIA | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-GA-ATLANTA-100--100-Galleria-Pkwy-SE--GALLERIA/Systems-Engineer-I--Onsite-_01877600>) |
 | Leidos | Software Engineer | Huntsville, AL | Today | [Apply](<https://leidos.wd5.myworkdayjobs.com/job/Huntsville-AL/Software-Engineer_R-00193129>) |
 | Raytheon | Software Engineer I \(Onsite\) | US-UT-WEST VALLEY CITY-338 ~ 1127 &amp; 1128 w 2400 S ~ BLDG 338 | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-UT-WEST-VALLEY-CITY-338--1127--1128-w-2400-S--BLDG-338/Software-Engineer-I--Onsite-_01875568>) |
+| Raytheon | Radar Systems Engineer I- Onsite | US-MA-TEWKSBURY-TB1 ~ 50 Apple Hill Dr ~ ASSABET BLDG | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-MA-TEWKSBURY-TB1--50-Apple-Hill-Dr--ASSABET-BLDG/Radar-Systems-Engineer-I--Onsite_01874483>) |
 
-**[View all 1,043 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 1,026 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -249,7 +249,6 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | CACI | Network Engineer \(SD-WAN\) | High Point, NC, US | Today | [Apply](<https://caci.wd1.myworkdayjobs.com/job/High-Point-NC-US/Network-Engineer--SD-WAN-_332655>) |
-| Accenture | Junior DevOps specialist | — | Today | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Riga/Junior-DevOps-specialist_R00360083>) |
 | Leidos | Network Engineer | Bethesda, MD | Today | [Apply](<https://leidos.wd5.myworkdayjobs.com/job/Bethesda-MD/Network-Engineer_R-00192160>) |
 | Raytheon | Infrastructure Engineer I \(Onsite\) | US-UT-WEST VALLEY CITY-338 ~ 1127 &amp; 1128 w 2400 S ~ BLDG 338 | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/job/US-UT-WEST-VALLEY-CITY-338--1127--1128-w-2400-S--BLDG-338/Software-Engineer-I--Onsite-_01875372>) |
 | General Dynamics | Network Engineer | USA MD Annapolis Junction | Today | [Apply](<https://gdit.wd5.myworkdayjobs.com/job/USA-MD-Annapolis-Junction/Network-Engineer_RQ229127>) |
@@ -258,6 +257,7 @@ Experience an advanced career journey with us! 🚀
 | SpaceX | Site Reliability Engineer, Kubernetes Platform \(Top Secret Clearance\) | Hawthorne, CA | Today | [Apply](<https://boards.greenhouse.io/spacex/jobs/8843951002?gh_jid=8843951002>) |
 | JPMorganChase | Site Reliability Engineer II - Java/Python, Kubernetes, AWS, Terraform | KA, IN | 1 day ago | [Apply](<https://in.indeed.com/viewjob?jk=8e9c8f82ae16fd19>) |
 | Infor | Development Operations Engineer, Associate | Atlanta, GA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=d67c5b9b91aecc55>) |
+| Commonwealth of Massachusetts | Telecommunication Analyst I | Boston, MA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=5b58010239e0ca48>) |
 
 **[View all 190 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -384,7 +384,7 @@ Experience an advanced career journey with us! 🚀
 | Texas Department of Transportation | Budget Analyst II/III | Austin, TX, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=1e11b707a5c80396>) |
 | ABeam Consulting USA | Oracle GL Business Analyst | Irving, TX, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=e24ef8ccf7edfe15>) |
 
-**[View all 86 Business Analyst roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 85 Business Analyst roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Marketing
 
@@ -422,7 +422,7 @@ Experience an advanced career journey with us! 🚀
 | Capital One | Emerging Sales Associate - August 2027 | Plano, TX | 1 day ago | [Apply](<https://capitalone.wd12.myworkdayjobs.com/job/Plano-TX/Emerging-Sales-Associate---August-2027_R244419-1>) |
 | Johnson &amp; Johnson | Sales Associate, Trauma \(Biloxi, MS/Gulfport, MS\) – Johnson &amp; Johnson MedTech - Orthopaedics | Gulfport, Mississippi, United States | 1 day ago | [Apply](<https://jj.wd5.myworkdayjobs.com/job/Gulfport-Mississippi-United-States/Sales-Associate--Trauma--Biloxi--MS-Gulfport--MS----Johnson---Johnson-MedTech---Orthopaedics_R-100861>) |
 
-**[View all 124 Sales roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 84 Sales roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Accounting and Finance
 
@@ -441,7 +441,7 @@ Experience an advanced career journey with us! 🚀
 | Sacred Heart University | Business Office - Accountant II | Fairfield, CT, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=ebdb6a0a9e43f93e>) |
 | Intact | Analyst II, Treasury | Saint-Hyacinthe, QC, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=50d4686cea16cac9>) |
 
-**[View all 162 Accounting and Finance roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 163 Accounting and Finance roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Consulting
 
@@ -536,7 +536,7 @@ Experience an advanced career journey with us! 🚀
 | Leidos | Cyberspace Operations Planner, Junior | Fort Meade, MD | Today | [Apply](<https://leidos.wd5.myworkdayjobs.com/job/Fort-Meade-MD/Cyberspace-Operations-Planner--Junior_R-00193122>) |
 | Pfizer | Associate Scientist, Sample Logistics | United States - New York - Pearl River | Today | [Apply](<https://pfizer.wd1.myworkdayjobs.com/job/United-States---New-York---Pearl-River/Associate-Scientist--Sample-Logistics_4964023-3>) |
 
-**[View all 108 Supply Chain roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 109 Supply Chain roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Healthcare
 
@@ -607,7 +607,7 @@ Experience an advanced career journey with us! 🚀
 | CIBC | Career Programs Networking Event, October 28th 2026 Graduate Leadership Development Program \(GLDP\)-Risk Management | Toronto, ON, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=46b4a2b48a02df41>) |
 | Diageo | Customer Operations Associate | Mississauga, ON, CA | 2 days ago | [Apply](<https://ca.indeed.com/viewjob?jk=c04bbf300e672d1d>) |
 
-**[View all 61 Management and Executive roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 62 Management and Executive roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -756,4 +756,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-09-26 01:09:50 UTC*
+*Last updated: 2026-09-26 01:17:29 UTC*
