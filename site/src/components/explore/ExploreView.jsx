@@ -250,7 +250,8 @@ export function ExploreView({ view, updateView }) {
       <label htmlFor="explore-q" style={{ color: BBG.acc, fontSize: 11, letterSpacing: 0.7 }}>CMD&gt;</label>
       <input id="explore-q" value={explore.q} onChange={(e) => setQuery(e.target.value)} placeholder="search company / title / location" aria-label="Search all postings" style={{ ...inputStyle, flex: 1, minWidth: 160 }} />
       <span id="explore-result-count" aria-live="polite" style={{ color: BBG.dim, fontSize: 11, whiteSpace: 'nowrap' }}>
-        {countLabel}{corpus.encoding ? ` · ${corpus.encoding}` : ''}
+        {/* Only the native-Brotli path is known for sure; the plain file's transfer encoding is the edge's choice. */}
+        {countLabel}{corpus.encoding === 'br' ? ' · br' : ''}
       </span>
       <button type="button" onClick={() => downloadCsv(filtered, (corpus.meta.generated_at || new Date().toISOString()).slice(0, 10))} disabled={!ready || !filtered.length} aria-label={`Export ${filtered.length} postings as CSV`} style={{ ...btnStyle(false), opacity: ready && filtered.length ? 1 : 0.5 }}>
         ⤓ EXPORT CSV
@@ -259,7 +260,7 @@ export function ExploreView({ view, updateView }) {
   );
 
   const list = (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: 0 }}>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: 0, minWidth: 0 }}>
       {header}
       {!isMobile && (
         <div aria-hidden="true" style={{ display: 'grid', gridTemplateColumns: GRID, gap: 8, padding: '4px 14px', color: BBG.dim, fontSize: 11, letterSpacing: 0.6, background: BBG.panel2 }}>
@@ -329,7 +330,9 @@ export function ExploreView({ view, updateView }) {
   );
 
   return (
-    <div style={{ height: '100%', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '260px 1fr 420px', gridTemplateRows: isMobile ? 'auto 1fr auto' : '1fr', minHeight: 0 }}>
+    // minmax(0, 1fr): a grid `1fr` track cannot shrink below its content's min width, so the search
+    // header + list columns would push the detail pane past the viewport at 1280px.
+    <div style={{ height: '100%', display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '260px minmax(0, 1fr) 420px', gridTemplateRows: isMobile ? 'auto 1fr auto' : '1fr', minHeight: 0 }}>
       {rail}
       {list}
       <DetailPane row={selected} include={explore.include} isMobile={isMobile} />
