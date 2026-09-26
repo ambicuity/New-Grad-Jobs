@@ -57,11 +57,11 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from the scraper output jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->3011<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->3015<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1045<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1044<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->13<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->17<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
@@ -69,35 +69,35 @@ Experience an advanced career journey with us! 🚀
 | [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->133<!-- /COUNT --> |
 | [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->38<!-- /COUNT --> |
 | [Data Analyst](#data-analyst) | <!-- COUNT:data_analyst -->9<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->184<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->186<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->5<!-- /COUNT --> |
 | [Project Management](#project-management) | <!-- COUNT:project_management -->18<!-- /COUNT --> |
-| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->18<!-- /COUNT --> |
+| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->19<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->73<!-- /COUNT --> |
-| [Engineering and Development](#engineering-and-development) | <!-- COUNT:engineering -->313<!-- /COUNT --> |
+| [Engineering and Development](#engineering-and-development) | <!-- COUNT:engineering -->316<!-- /COUNT --> |
 | [Creatives and Design](#creatives-and-design) | <!-- COUNT:design -->22<!-- /COUNT --> |
 | [Business Analyst](#business-analyst) | <!-- COUNT:business_analyst -->92<!-- /COUNT --> |
 | [Marketing](#marketing) | <!-- COUNT:marketing -->18<!-- /COUNT --> |
 | [Sales](#sales) | <!-- COUNT:sales -->123<!-- /COUNT --> |
-| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->168<!-- /COUNT --> |
+| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->169<!-- /COUNT --> |
 | [Consulting](#consulting) | <!-- COUNT:consulting -->51<!-- /COUNT --> |
-| [Human Resources](#human-resources) | <!-- COUNT:human_resources -->63<!-- /COUNT --> |
-| [Legal and Compliance](#legal-and-compliance) | <!-- COUNT:legal -->45<!-- /COUNT --> |
+| [Human Resources](#human-resources) | <!-- COUNT:human_resources -->62<!-- /COUNT --> |
+| [Legal and Compliance](#legal-and-compliance) | <!-- COUNT:legal -->46<!-- /COUNT --> |
 | [Customer Service and Support](#customer-service-and-support) | <!-- COUNT:customer_support -->80<!-- /COUNT --> |
 | [Supply Chain](#supply-chain) | <!-- COUNT:supply_chain -->103<!-- /COUNT --> |
-| [Healthcare](#healthcare) | <!-- COUNT:healthcare -->117<!-- /COUNT --> |
+| [Healthcare](#healthcare) | <!-- COUNT:healthcare -->116<!-- /COUNT --> |
 | [Education and Training](#education-and-training) | <!-- COUNT:education -->6<!-- /COUNT --> |
 | [Public Sector and Government](#public-sector-and-government) | <!-- COUNT:public_sector -->2<!-- /COUNT --> |
 | [Arts and Entertainment](#arts-and-entertainment) | <!-- COUNT:arts_entertainment -->4<!-- /COUNT --> |
 | [Management and Executive](#management-and-executive) | <!-- COUNT:management -->73<!-- /COUNT --> |
-| [Other](#other) | <!-- COUNT:other -->78<!-- /COUNT --> |
+| [Other](#other) | <!-- COUNT:other -->77<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
 ---
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from the scraper output jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **3,011** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **3,015** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -116,7 +116,7 @@ Experience an advanced career journey with us! 🚀
 | Anduril Industries | Systems Engineer, Space Emerging Talent | Costa Mesa, California, United States | Today | [Apply](<https://boards.greenhouse.io/andurilindustries/jobs/5236296007?gh_jid=5236296007>) |
 | Instacart | Software Engineer II, Advertiser Optimization | Canada - Remote \(ON, AB, BC, or NS Only\) | Today | [Apply](<https://instacart.careers/job/?gh_jid=8233716>) |
 
-**[View all 1,045 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 1,044 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -222,7 +222,7 @@ Experience an advanced career journey with us! 🚀
 | Accenture | Data Engineer | — | 3 days ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Hyderabad/Data-Engineer_ATCI-5765994-S2068784-1>) |
 | The Walt Disney Company | Software Data Engineer | Burbank, CA, USA | 4 days ago | [Apply](<https://disney.wd5.myworkdayjobs.com/job/Burbank-CA-USA/Software-Data-Engineer_10160911>) |
 | General Dynamics | Data Engineer | USA VA Falls Church | 4 days ago | [Apply](<https://gdit.wd5.myworkdayjobs.com/job/USA-VA-Falls-Church/Data-Engineer_RQ225443-1>) |
-| Orion Innovation | Azure Data Engineer | Montvale, New Jersey, United States | 4 days ago | [Apply](<https://www.orioninc.com/careers/job/?gh_jid=4714763006>) |
+| Orion Innovation | Azure Data Engineer | Montvale, New Jersey, United States | 5 days ago | [Apply](<https://www.orioninc.com/careers/job/?gh_jid=4714763006>) |
 | General Dynamics | NCIS Data Engineer / Active Secret clearance | USA VA Quantico | 6 days ago | [Apply](<https://gdit.wd5.myworkdayjobs.com/job/USA-VA-Quantico/NCIS-Data-Engineer---Active-Secret-clearance_RQ228816-1>) |
 
 **[View all 38 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
@@ -249,6 +249,8 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Deloitte | End User Support - Associate Services Specialist I - Hyderabad | TS, IN | Today | [Apply](<https://in.indeed.com/viewjob?jk=22a6a56eb3d9d646>) |
+| Deloitte | End User Support - Associate Services Specialist I - Bangalore | KA, IN | Today | [Apply](<https://in.indeed.com/viewjob?jk=3638a746b168277b>) |
 | SpaceX | Network Engineer \(Starlink Maritime\) | Redmond, WA | Today | [Apply](<https://boards.greenhouse.io/spacex/jobs/8842743002?gh_jid=8842743002>) |
 | SpaceX | Site Reliability Engineer, Kubernetes Platform \(Top Secret Clearance\) | Hawthorne, CA | 1 day ago | [Apply](<https://boards.greenhouse.io/spacex/jobs/8843951002?gh_jid=8843951002>) |
 | CACI | Network Engineer \(SD-WAN\) | High Point, NC, US | 1 day ago | [Apply](<https://caci.wd1.myworkdayjobs.com/job/High-Point-NC-US/Network-Engineer--SD-WAN-_332655>) |
@@ -257,10 +259,8 @@ Experience an advanced career journey with us! 🚀
 | CALVIN KLEIN | Network Engineer | KA, IN | 1 day ago | [Apply](<https://in.indeed.com/viewjob?jk=64ccb8d9cf63e6ae>) |
 | Workday | Software Development Engineer, SRE \(US Federal\) | USA.VA.Reston | 1 day ago | [Apply](<https://workday.wd5.myworkdayjobs.com/job/USAVAReston/Software-Development-Engineer--SRE--US-Federal-_JR-0110178>) |
 | Leidos | Network Engineer | Bethesda, MD | 1 day ago | [Apply](<https://leidos.wd5.myworkdayjobs.com/job/Bethesda-MD/Network-Engineer_R-00192160>) |
-| Northeastern University | Assistant/Associate/Full Professor - College of Engineering - Civil and Environmental Engineering - Intelligent Infrastructure - Boston | Boston, MA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=b30b0ab1e639c572>) |
-| Unity Health Toronto | Research Coordinator I, Knowledge Translation Wellness Hub | Toronto, ON, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=06e87f07307af8f2>) |
 
-**[View all 184 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 186 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -308,9 +308,9 @@ Experience an advanced career journey with us! 🚀
 | Belvedere Trading | Early Career Talent Partner - Trading | Chicago, IL, US | 4 days ago | [Apply](<https://www.indeed.com/viewjob?jk=7faf7993eca13a65>) |
 | Old Mission Capital | Floor Trader - 2027 Graduate Program \(August Start\) | Chicago, IL, United States | 2026-09-16 | [Apply](<https://www.oldmissioncapital.com/careers/?gh_jid=7993756003>) |
 | Fidelity | AM Quantitative Analyst II | Boston, MA | 2026-09-09 | [Apply](<https://fmr.wd1.myworkdayjobs.com/job/Boston-MA/AM-Quantitative-Analyst-II_2134861>) |
-| Point72 | Compliance Associate, Trading Compliance | Stamford, CT | 2026-09-04 | [Apply](<https://boards.greenhouse.io/point72/jobs/8784664002?gh_jid=8784664002>) |
+| RBC | Associate - Quantitative Analyst | TORONTO, Ontario, Canada | 2026-09-08 | [Apply](<https://rbc.wd3.myworkdayjobs.com/job/TORONTO-Ontario-Canada/Associate---Quantitative-Analyst_R-0000178962-1>) |
 
-**[View all 18 Quantitative Finance roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 19 Quantitative Finance roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Hardware Engineering
 
@@ -348,7 +348,7 @@ Experience an advanced career journey with us! 🚀
 | Arup | Graduate Mechanical Engineer \(Available 2027\) | Toronto, ON, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=a51a3f5e3cbd8f68>) |
 | NASA Jet Propulsion Laboratory | Mechatronics Engineer II | Pasadena, CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=885505493014d368>) |
 
-**[View all 313 Engineering and Development roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 316 Engineering and Development roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Creatives and Design
 
@@ -443,7 +443,7 @@ Experience an advanced career journey with us! 🚀
 | Western Alliance Bank | 2027 Commercial Banking Development Program - Credit Analyst - Phoenix, AZ - Credit Approval C&amp;I | Phoenix, AZ, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=ce5c0c45d4b8fe83>) |
 | Western Alliance Bank | 2027 Commercial Banking Development Program - Credit Analyst - Beverly Hills, CA - Technology &amp; Innovation Banking | Beverly Hills, CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=d6b62ea0653fa864>) |
 
-**[View all 168 Accounting and Finance roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 169 Accounting and Finance roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Consulting
 
@@ -481,7 +481,7 @@ Experience an advanced career journey with us! 🚀
 | Datadog | Recruiter II, Technical Solutions | Boston, Massachusetts, USA; New York, New York, USA | 3 days ago | [Apply](<https://careers.datadoghq.com/detail/8162548/?gh_jid=8162548>) |
 | Ivey Business School | MSc Recruiting Associate | London, ON, CA | 3 days ago | [Apply](<https://ca.indeed.com/viewjob?jk=7f77bfb78be2f4de>) |
 
-**[View all 63 Human Resources roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 62 Human Resources roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Legal and Compliance
 
@@ -490,6 +490,7 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | City and County of Denver | Paralegal I- Employment &amp; Labor Law | Denver, CO, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=5c4435b154be3f37>) |
+| County Of Mendocino | Legal Secretary II | Ukiah, CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=d43b66ba44939d76>) |
 | Shasta County | Legal Process Clerk I/II | Redding, CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=ac1fc903ad897551>) |
 | Accenture | Regulatory Compliance New Associate | — | 1 day ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Bengaluru/Regulatory-Compliance-New-Associate_AIOC-S01667647-1>) |
 | The Dale Law Firm | Legal Administrative Assistant \(Entry-Level\) | Pacheco, CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=045f0e265bbba517>) |
@@ -498,9 +499,8 @@ Experience an advanced career journey with us! 🚀
 | Goldman Sachs | 2027 / Americas / Dallas Metro Area / Legal / New Analyst | Dallas, TX, US | 3 days ago | [Apply](<https://www.indeed.com/viewjob?jk=ccfab0bbba2ac837>) |
 | Accenture | Regulatory Compliance New Associate | — | 4 days ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Bengaluru/Regulatory-Compliance-New-Associate_AIOC-S01667080-1>) |
 | Accenture | Regulatory Compliance New Associate | — | 4 days ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Bengaluru/Regulatory-Compliance-New-Associate_AIOC-S01667075-1>) |
-| Accenture | Regulatory Compliance New Associate | — | 4 days ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Bengaluru/Regulatory-Compliance-New-Associate_AIOC-S01667078-1>) |
 
-**[View all 45 Legal and Compliance roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 46 Legal and Compliance roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Customer Service and Support
 
@@ -551,13 +551,13 @@ Experience an advanced career journey with us! 🚀
 | Tenet Healthcare | New Grad Registered Nurse \(RN\) - Telemetry | San Antonio, TX, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=392db34e7c3f6d22>) |
 | Atlantic Health | Patient Care Technician I, Per Diem Variable Shift, Operating Room, Atlantic Health Overlook Medical Center | Summit, NJ, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=2ca833e5fe15ddfb>) |
 | Fresenius Medical Care | New Graduate Nurse | Hampton, VA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=1bd8d054016e3519>) |
-| Mountain View Hospital | New Grad RN Orthopedic Specialty Center | Payson, UT, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=0b1172c1a990d5b7>) |
 | UNC Health | RN Clinical Nurse I - New to Preop/PACU Training Program | Hillsborough, NC, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=172d0ecb5622d63b>) |
 | Atlantic Health | Physical Therapist I: Full Time: M/W 11a-7p, T, TH, F 7a-3p, Atlantic Rehab New Providence | New Providence, NJ, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=fdce79bdbe7665ba>) |
 | Fresenius Medical Care | New Graduate Nurse | Newport News, VA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=e891f7fc78354e44>) |
 | Merck | Clinical Research Associate \(CRA\) - Vaccine/Infectious Disease \(Remote\) | USA - New Jersey - Rahway | 2 days ago | [Apply](<https://msd.wd5.myworkdayjobs.com/job/USA---New-Jersey---Rahway/Clinical-Research-Associate--CRA----Vaccine-Infectious-Disease--Remote-_R418700-1>) |
+| Accenture | Health Operations New Associate | — | 2 days ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/job/Chennai/Health-Operations-New-Associate_AIOC-S01667407-1>) |
 
-**[View all 117 Healthcare roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 116 Healthcare roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Education and Training
 
@@ -619,16 +619,16 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | Astranis | RF Validation Associate \(Winter 2027\) | San Francisco | Today | [Apply](<https://job-boards.greenhouse.io/astranis/jobs/4716835006>) |
 | Astranis | RF Validation Associate \(Summer 2027\) | San Francisco | Today | [Apply](<https://job-boards.greenhouse.io/astranis/jobs/4716826006>) |
-| City of Vallejo | Housing Specialist I/II | Vallejo, CA, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=c4bc18a2608246c9>) |
 | National Security Agency | Cryptanalysis Development Program \(CADP\) | Fort Meade, MD, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=995071ecf59c54ac>) |
-| Illinois State University | GA Pre-Professional - Center for Child Welfare &amp; Adoption Studies - Spring 2027 | Normal, IL, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=15587aafd274e095>) |
 | Unknown | Integration Coordinator - Level I | Denver, CO, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=e9ea59dad074809b>) |
 | State of Nevada | CORRECTIONAL CASE WORKER SPECIALIST TRAINEE | Ely, MN, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=883ed7feb28fa665>) |
+| County Of Mendocino | Eligibility Specialist I | CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=ccee2cc4c2571dfc>) |
 | Hackensack Meridian Health | PA \(First Assist\) / NP \(RNFA\)- Neurosurgery Inpatient \(Multi-Campus\) NIGHT | Neptune City, NJ, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=a88679fdf7e5f44c>) |
 | UC San Francisco Academic | Junior Specialist \(Ruggero Lab, UCSF\) | San Francisco, CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=8c16de65f61a3fca>) |
 | Episcopal Health Services | Residency Coordinator II | Far Rockaway, NY, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=fa2d6808fe255926>) |
+| University of Ottawa | CUPE - Research Assistant - Tya Collins - Fall 2026 - 50h | Ottawa, ON, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=4c47b01dd38e9d91>) |
 
-**[View all 78 Other roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 77 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
 <!-- CATEGORY-LISTINGS:END -->
 ---
@@ -758,4 +758,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-09-26 13:14:15 UTC*
+*Last updated: 2026-09-26 14:24:30 UTC*
