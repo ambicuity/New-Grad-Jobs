@@ -57,11 +57,11 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from the scraper output jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->3005<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->3003<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1040<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->1039<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->13<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->17<!-- /COUNT --> |
 | [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->7<!-- /COUNT --> |
@@ -72,24 +72,24 @@ Experience an advanced career journey with us! 🚀
 | [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->188<!-- /COUNT --> |
 | [Product Management](#product-management) | <!-- COUNT:product_management -->5<!-- /COUNT --> |
 | [Project Management](#project-management) | <!-- COUNT:project_management -->19<!-- /COUNT --> |
-| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->19<!-- /COUNT --> |
+| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->18<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->74<!-- /COUNT --> |
 | [Engineering and Development](#engineering-and-development) | <!-- COUNT:engineering -->314<!-- /COUNT --> |
 | [Creatives and Design](#creatives-and-design) | <!-- COUNT:design -->22<!-- /COUNT --> |
-| [Business Analyst](#business-analyst) | <!-- COUNT:business_analyst -->88<!-- /COUNT --> |
+| [Business Analyst](#business-analyst) | <!-- COUNT:business_analyst -->87<!-- /COUNT --> |
 | [Marketing](#marketing) | <!-- COUNT:marketing -->18<!-- /COUNT --> |
 | [Sales](#sales) | <!-- COUNT:sales -->125<!-- /COUNT --> |
-| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->170<!-- /COUNT --> |
+| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->168<!-- /COUNT --> |
 | [Consulting](#consulting) | <!-- COUNT:consulting -->51<!-- /COUNT --> |
 | [Human Resources](#human-resources) | <!-- COUNT:human_resources -->63<!-- /COUNT --> |
 | [Legal and Compliance](#legal-and-compliance) | <!-- COUNT:legal -->45<!-- /COUNT --> |
-| [Customer Service and Support](#customer-service-and-support) | <!-- COUNT:customer_support -->78<!-- /COUNT --> |
+| [Customer Service and Support](#customer-service-and-support) | <!-- COUNT:customer_support -->79<!-- /COUNT --> |
 | [Supply Chain](#supply-chain) | <!-- COUNT:supply_chain -->103<!-- /COUNT --> |
 | [Healthcare](#healthcare) | <!-- COUNT:healthcare -->113<!-- /COUNT --> |
 | [Education and Training](#education-and-training) | <!-- COUNT:education -->6<!-- /COUNT --> |
 | [Public Sector and Government](#public-sector-and-government) | <!-- COUNT:public_sector -->2<!-- /COUNT --> |
 | [Arts and Entertainment](#arts-and-entertainment) | <!-- COUNT:arts_entertainment -->4<!-- /COUNT --> |
-| [Management and Executive](#management-and-executive) | <!-- COUNT:management -->70<!-- /COUNT --> |
+| [Management and Executive](#management-and-executive) | <!-- COUNT:management -->72<!-- /COUNT --> |
 | [Other](#other) | <!-- COUNT:other -->75<!-- /COUNT --> |
 <!-- COUNTS:END -->
 
@@ -97,7 +97,7 @@ Experience an advanced career journey with us! 🚀
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from the scraper output jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **3,005** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **3,003** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -114,9 +114,9 @@ Experience an advanced career journey with us! 🚀
 | SpaceX | Software Engineer \(Starlink Ground Network\) | Redmond, WA | Today | [Apply](<https://boards.greenhouse.io/spacex/jobs/8841324002?gh_jid=8841324002>) |
 | Roblox | Software Engineer, GenAI Platform | San Mateo, CA, United States | Today | [Apply](<https://careers.roblox.com/jobs/8171283?gh_jid=8171283>) |
 | Anduril Industries | Systems Engineer, Space Emerging Talent | Costa Mesa, California, United States | Today | [Apply](<https://boards.greenhouse.io/andurilindustries/jobs/5236296007?gh_jid=5236296007>) |
-| Instacart | Software Engineer II, Advertiser Optimization | Canada - Remote \(ON, AB, BC, or NS Only\) | Today | [Apply](<https://instacart.careers/job/?gh_jid=8233716>) |
+| Instacart | Software Engineer II, Advertiser Optimization | Canada - Remote \(ON, AB, BC, or NS Only\) | 1 day ago | [Apply](<https://instacart.careers/job/?gh_jid=8233716>) |
 
-**[View all 1,040 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 1,039 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -308,9 +308,9 @@ Experience an advanced career journey with us! 🚀
 | Belvedere Trading | Early Career Talent Partner - Trading | Chicago, IL, US | 4 days ago | [Apply](<https://www.indeed.com/viewjob?jk=7faf7993eca13a65>) |
 | Old Mission Capital | Floor Trader - 2027 Graduate Program \(August Start\) | Chicago, IL, United States | 2026-09-16 | [Apply](<https://www.oldmissioncapital.com/careers/?gh_jid=7993756003>) |
 | Fidelity | AM Quantitative Analyst II | Boston, MA | 2026-09-09 | [Apply](<https://fmr.wd1.myworkdayjobs.com/job/Boston-MA/AM-Quantitative-Analyst-II_2134861>) |
-| RBC | Associate - Quantitative Analyst | TORONTO, Ontario, Canada | 2026-09-08 | [Apply](<https://rbc.wd3.myworkdayjobs.com/job/TORONTO-Ontario-Canada/Associate---Quantitative-Analyst_R-0000178962-1>) |
+| Point72 | Compliance Associate, Trading Compliance | Stamford, CT | 2026-09-04 | [Apply](<https://boards.greenhouse.io/point72/jobs/8784664002?gh_jid=8784664002>) |
 
-**[View all 19 Quantitative Finance roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 18 Quantitative Finance roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Hardware Engineering
 
@@ -386,7 +386,7 @@ Experience an advanced career journey with us! 🚀
 | Coloplast | Business Analyst \(6 months\) | UP, IN | 1 day ago | [Apply](<https://in.indeed.com/viewjob?jk=b05f497e780f05aa>) |
 | Texas Department of Transportation | Budget Analyst II/III | Austin, TX, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=1e11b707a5c80396>) |
 
-**[View all 88 Business Analyst roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 87 Business Analyst roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Marketing
 
@@ -443,7 +443,7 @@ Experience an advanced career journey with us! 🚀
 | Western Alliance Bank | 2027 Commercial Banking Development Program - Credit Analyst - Phoenix, AZ - Credit Approval C&amp;I | Phoenix, AZ, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=ce5c0c45d4b8fe83>) |
 | Western Alliance Bank | 2027 Commercial Banking Development Program - Credit Analyst - Beverly Hills, CA - Technology &amp; Innovation Banking | Beverly Hills, CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=d6b62ea0653fa864>) |
 
-**[View all 170 Accounting and Finance roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 168 Accounting and Finance roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Consulting
 
@@ -519,7 +519,7 @@ Experience an advanced career journey with us! 🚀
 | Sanofi | Source-to-Pay Strategic Support Associate | TS, IN | 2 days ago | [Apply](<https://in.indeed.com/viewjob?jk=31bfa22a4790294f>) |
 | Replit | Support Engineer I \(NYC, Weekend Shift\) | New York City, New York, United States | 3 days ago | [Apply](<https://jobs.ashbyhq.com/replit/4e64e46f-f69d-4454-89b6-bd27302a464d>) |
 
-**[View all 78 Customer Service and Support roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 79 Customer Service and Support roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Supply Chain
 
@@ -609,7 +609,7 @@ Experience an advanced career journey with us! 🚀
 | Perdue | Operations Management Trainee | Milford, DE, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=37db67a8ac6bdede>) |
 | Perdue | Engineering Management Trainee | Rockingham, NC, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=543d32d9f3655bec>) |
 
-**[View all 70 Management and Executive roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 72 Management and Executive roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Other
 
@@ -758,4 +758,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-09-26 17:49:34 UTC*
+*Last updated: 2026-09-26 18:01:11 UTC*

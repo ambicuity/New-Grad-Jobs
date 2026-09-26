@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-26T17:49:39.296074+00:00",
+    "last_updated": "2026-09-26T18:01:19.823677+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-06-28",
@@ -3632,27 +3632,27 @@
     },
     {
       "date": "2026-09-26",
-      "total_jobs": 3005,
+      "total_jobs": 3003,
       "categories": {
         "security": 94,
-        "software_engineering": 1040,
+        "software_engineering": 1039,
         "data_ml": 135,
-        "quant_finance": 19,
-        "business_analyst": 88,
+        "quant_finance": 18,
+        "business_analyst": 87,
         "frontend": 13,
         "backend": 17,
         "other": 75,
-        "accounting_finance": 170,
+        "accounting_finance": 168,
         "hardware": 74,
         "engineering": 314,
         "sales": 125,
         "infrastructure_sre": 188,
         "supply_chain": 103,
-        "management": 70,
+        "management": 72,
         "data_engineering": 38,
         "legal": 45,
         "data_analyst": 9,
-        "customer_support": 78,
+        "customer_support": 79,
         "human_resources": 63,
         "marketing": 18,
         "design": 22,
@@ -3666,14 +3666,14 @@
         "arts_entertainment": 4
       },
       "tiers": {
-        "other": 1781,
+        "other": 1779,
         "unicorn": 611,
         "faang_plus": 613
       },
       "top_companies": [
         {
           "company": "Accenture",
-          "jobs": 486
+          "jobs": 489
         },
         {
           "company": "SpaceX",
@@ -3712,9 +3712,9 @@
           "jobs": 70
         }
       ],
-      "unique_companies": 455,
-      "avg_jobs_per_company": 6.6,
-      "timestamp": "2026-09-26T17:49:39.296074+00:00"
+      "unique_companies": 454,
+      "avg_jobs_per_company": 6.61,
+      "timestamp": "2026-09-26T18:01:19.823677+00:00"
     }
   ]
 }
