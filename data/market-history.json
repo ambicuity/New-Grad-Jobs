@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-26T14:24:36.138622+00:00",
+    "last_updated": "2026-09-26T17:49:39.296074+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-06-28",
@@ -3632,52 +3632,52 @@
     },
     {
       "date": "2026-09-26",
-      "total_jobs": 3015,
+      "total_jobs": 3005,
       "categories": {
-        "security": 93,
-        "software_engineering": 1044,
-        "data_ml": 133,
+        "security": 94,
+        "software_engineering": 1040,
+        "data_ml": 135,
         "quant_finance": 19,
-        "business_analyst": 92,
+        "business_analyst": 88,
         "frontend": 13,
         "backend": 17,
-        "other": 77,
-        "accounting_finance": 169,
-        "hardware": 73,
-        "engineering": 316,
-        "sales": 123,
-        "infrastructure_sre": 186,
+        "other": 75,
+        "accounting_finance": 170,
+        "hardware": 74,
+        "engineering": 314,
+        "sales": 125,
+        "infrastructure_sre": 188,
         "supply_chain": 103,
-        "management": 73,
+        "management": 70,
         "data_engineering": 38,
-        "legal": 46,
+        "legal": 45,
         "data_analyst": 9,
-        "customer_support": 80,
-        "human_resources": 62,
+        "customer_support": 78,
+        "human_resources": 63,
         "marketing": 18,
         "design": 22,
         "mobile": 7,
         "consulting": 51,
-        "project_management": 18,
+        "project_management": 19,
         "product_management": 5,
         "public_sector": 2,
+        "healthcare": 113,
         "education": 6,
-        "healthcare": 116,
         "arts_entertainment": 4
       },
       "tiers": {
-        "other": 1790,
-        "unicorn": 612,
+        "other": 1781,
+        "unicorn": 611,
         "faang_plus": 613
       },
       "top_companies": [
         {
           "company": "Accenture",
-          "jobs": 489
+          "jobs": 486
         },
         {
           "company": "SpaceX",
-          "jobs": 152
+          "jobs": 151
         },
         {
           "company": "Raytheon",
@@ -3712,9 +3712,9 @@
           "jobs": 70
         }
       ],
-      "unique_companies": 453,
-      "avg_jobs_per_company": 6.66,
-      "timestamp": "2026-09-26T14:24:36.138622+00:00"
+      "unique_companies": 455,
+      "avg_jobs_per_company": 6.6,
+      "timestamp": "2026-09-26T17:49:39.296074+00:00"
     }
   ]
 }
