@@ -6,6 +6,100 @@ This changelog is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-09-26
+
+The board now covers every profession, not only tech, and publishes everything it
+knows: the curated board, a near-miss tier, and the full corpus of every posting the
+scraper saw, filterable in the browser with your own signals. Static landing pages,
+per-filter feeds and a guides section give search engines and readers something to
+land on. `jobs.json` stays at schema **1.1**; the new data files are additive.
+
+### Scraper and data
+
+- **Every profession:** the taxonomy grows from a tech-only list to 30 categories
+  (software, data, infrastructure, hardware, product, design, marketing, sales,
+  finance, consulting, HR, legal, support, supply chain, healthcare, education, public
+  sector, arts, management, …). Categories are decided title-first with title
+  fallbacks and a last resort before `other`. Track signals name a role word per
+  profession, and the JobSpy/Indeed search terms cover non-tech roles too.
+- **Precision:** internships, co-ops, student placements and summer analyst /
+  associate programs are excluded from the board (`filtering.internship_signals`);
+  level III+ titles stay out; "associate product / program / project manager" is
+  exempt from the seniority exclusion.
+- **Near-miss tier:** `partition_jobs` keeps postings that pass every hard rule but
+  fail exactly one soft rule (internship, level III+, outside US/CA/IN, posted 60–120
+  days ago) and publishes them as `jobs-extended.json` with `near_miss.reasons`,
+  capped by `filtering.max_near_misses` (newest first). Counts on the board, feeds,
+  landing pages and README are always the curated set.
+- **Corpus index:** `corpus-index.json` lists every unique posting the run fetched as
+  compact rows (company, title, location, source, posted, category, tier, URL), tagged
+  curated / near miss / out. `health.json` gains `near_miss_jobs`, `near_miss_reasons`
+  and `corpus_jobs`; `check_integrity.py` validates both new files and the feeds.
+- **Per-filter RSS:** `feed.xml` plus `feeds/<category>.xml`, `feeds/remote.xml` and
+  `feeds/no-visa-restriction.xml`.
+- **Boards:** 38 companies added from a live probe of the four ATS APIs (310
+  configured boards). README board counts and the company listings are generated
+  from `config.yml` by `scripts/sync_readme_companies.py`, so they can no longer drift
+  from the configuration.
+- **Signal parity:** `scripts/export_signal_parity.py` exports the scraper's
+  token-boundary signal and exclusion matcher as a fixture that the site's JavaScript
+  port is tested against (`tests/test_signal_parity.py`, `site/src/lib/signals.test.js`).
+
+### Website
+
+- **EXPLORE tab:** every posting the run saw, laid out like HIRING: include / exclude
+  signal chips and free words, presets, tier / posted / country / source / role facets,
+  a detail pane that explains which rule decided the tier and which words matched, CSV
+  export, keyboard navigation, and the whole state in the URL. The corpus is fetched
+  only when the tab opens.
+- **WIDEN SCOPE:** opt-in toggles show the near-miss tier behind the board, one per
+  reason; a row appears only when every rule it fails is toggled on, and near misses
+  are never counted.
+- **Landing pages:** `/jobs/` hub with a static page per category, company (`/jobs/at/`),
+  metro and country (`/jobs/in/`), plus `/jobs/remote/`, `/jobs/no-visa-restriction/` and
+  `/jobs/new-this-week/`, each with live counts, the matching feed and a link into the
+  filtered board. All in the sitemap.
+- **Facets:** LOCATION (busiest metros) and COUNTRY (US / Canada / India), a parser in
+  `site/src/lib/location.js`; a `?new=<hours>` link and chip for roles first seen
+  recently ([#364](https://github.com/ambicuity/New-Grad-Jobs/pull/364)).
+- **Applied tracking and sharing:** the APPLIED button (`a` key) and saved star persist
+  in the browser; LINK copies the job's stable page; the status bar links the RSS feed
+  for the current filter and Feedly / RSS-to-email alerts.
+- **Guides:** `/guides/` renders Markdown from `site/content/guides/` with an in-repo
+  renderer (no dependency, script-free pages, Article JSON-LD). 32 guides in seven
+  sections: getting started, understanding jobs, résumé and applications, international
+  students, interviews, offers and NGJ data. Front matter carries `section` and `order`;
+  the index groups by section. Interview and project guides link the maintainer's free
+  Computer Science and Computer Networks courses.
+- **About page** (`/about/`) generated from `health.json`: sources, rules, last run.
+- **Closed-job pages** are kept as `noindex` pages so shared links explain themselves.
+- **Logo:** the original amber `NGJ` badge is the single brand mark in the top bar,
+  favicon, static-page breadcrumbs and the social card; LIVE is a word rather than a
+  dot, and the RSS link is shown once.
+- **Brotli:** the build writes `.br` siblings of the three data files, fetched first
+  when the browser can decode Brotli natively, with the plain (gzip) file as fallback.
+- **Fixes:** the static pages' CSP allows same-origin fetches; the EXPLORE detail pane
+  fits a 1280 px viewport; the result count no longer claims `gzip` when the edge
+  served something else.
+
+### CI and tooling
+
+- The scraper's `persist` job pushes README and market history with a deploy key so
+  `main` can require status checks ([#362](https://github.com/ambicuity/New-Grad-Jobs/pull/362)).
+  When two runs queue back to back, the second one's persist step fails its rebase by
+  design and the next scheduled run regenerates the files.
+- Tests at release: 1,562 pytest (96% coverage), 431 Vitest, 70 Playwright (desktop +
+  mobile, axe). New suites cover the near-miss tier, corpus index, signal parity, README
+  company sync, guides / about rendering, landing pages and the EXPLORE tab.
+- Dependabot bumps for `actions/setup-python` 7, `codecov/codecov-action` 7 and the
+  minor/patch actions group.
+
+### Documentation
+
+- `AGENTS.md`, `docs/architecture.md` and the README data section describe the
+  near-miss tier, the corpus index, the feeds directory, the guides front matter and
+  the new gitignored data files.
+
 ## [1.0.1] - 2026-09-24
 
 A full overhaul driven by a codebase and live-site audit: the job filter is more
@@ -205,5 +299,6 @@ longer bloats git, and every stage is tested. The public `jobs.json` schema move
 * **wiki:** init local project wiki structure (home, roadmap, sidebar) ([f08fbf2](https://github.com/ambicuity/New-Grad-Jobs/commit/f08fbf25116ba0dae837a72be745b1d46364b4df))
 * **wiki:** upgrade to gold-standard solo-maintainer framework ([756e758](https://github.com/ambicuity/New-Grad-Jobs/commit/756e758fe201f5398f6ad6d3c3a88424124fef5a))
 
-[Unreleased]: https://github.com/ambicuity/New-Grad-Jobs/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/ambicuity/New-Grad-Jobs/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/ambicuity/New-Grad-Jobs/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/ambicuity/New-Grad-Jobs/compare/v1.0.0...v1.0.1

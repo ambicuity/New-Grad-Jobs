@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "new-grad-jobs"
-version = "1.0.1"
+version = "1.0.2"
 description = "Automated new grad job aggregator scraping Greenhouse, Lever, Google Careers, and more."
 requires-python = ">=3.11"
 # Single source of truth for runtime dependencies. Compatible ranges live here;
