@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-09-26T09:52:00.378369+00:00",
+    "last_updated": "2026-09-26T13:14:25.199822+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-06-28",
@@ -3632,29 +3632,29 @@
     },
     {
       "date": "2026-09-26",
-      "total_jobs": 2997,
+      "total_jobs": 3011,
       "categories": {
-        "security": 92,
-        "software_engineering": 1042,
+        "security": 93,
+        "software_engineering": 1045,
         "data_ml": 133,
-        "quant_finance": 20,
-        "business_analyst": 89,
+        "quant_finance": 18,
+        "business_analyst": 92,
         "frontend": 13,
         "backend": 17,
-        "other": 77,
-        "accounting_finance": 170,
+        "other": 78,
+        "accounting_finance": 168,
         "hardware": 73,
-        "engineering": 304,
-        "sales": 128,
-        "infrastructure_sre": 185,
-        "supply_chain": 106,
-        "management": 59,
+        "engineering": 313,
+        "sales": 123,
+        "infrastructure_sre": 184,
+        "supply_chain": 103,
+        "management": 73,
         "data_engineering": 38,
         "legal": 45,
         "data_analyst": 9,
-        "customer_support": 82,
-        "human_resources": 66,
-        "marketing": 17,
+        "customer_support": 80,
+        "human_resources": 63,
+        "marketing": 18,
         "design": 22,
         "mobile": 7,
         "consulting": 51,
@@ -3666,9 +3666,9 @@
         "arts_entertainment": 4
       },
       "tiers": {
-        "other": 1785,
+        "other": 1788,
         "unicorn": 612,
-        "faang_plus": 600
+        "faang_plus": 611
       },
       "top_companies": [
         {
@@ -3681,7 +3681,7 @@
         },
         {
           "company": "Raytheon",
-          "jobs": 136
+          "jobs": 145
         },
         {
           "company": "Northrop Grumman",
@@ -3712,9 +3712,9 @@
           "jobs": 70
         }
       ],
-      "unique_companies": 454,
-      "avg_jobs_per_company": 6.6,
-      "timestamp": "2026-09-26T09:52:00.378369+00:00"
+      "unique_companies": 455,
+      "avg_jobs_per_company": 6.62,
+      "timestamp": "2026-09-26T13:14:25.199822+00:00"
     }
   ]
 }
