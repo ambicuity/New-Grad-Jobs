@@ -61,3 +61,7 @@ If the funnel is at or near the baseline and you are still not getting the outco
 - **Geography is too narrow.** A remote-only or one-metro search is harder than a regional search. Read the location filters on the board and consider widening.
 
 The funnel tells you what to fix; the broader search tells you when to stop fixing and start waiting.
+
+## From funnel math to per-interview learning
+
+The four numbers above (applications, screens, interviews, offers) tell you where to look. The detail at each stage comes from a per-interview postmortem. See [How to learn from every interview](../interview-postmortem/) for a copyable template, and [AI-assisted interviews and modern hiring assessments](../ai-assisted-interviews/) for the modern format landscape that produces those interviews.

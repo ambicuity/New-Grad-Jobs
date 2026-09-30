@@ -38,7 +38,7 @@ Diagnose before changing everything:
 - **Responses but no interviews past the recruiter screen**: the story is the problem. Practice the two-minute summary of who you are and what you want.
 - **Interviews but no offers**: the preparation is the problem. See [The interview process](../interview-process/) and [Getting interviews but no offers](../getting-interviews-but-no-offers/) for which round is breaking.
 
-For a fuller view of where the funnel is leaking, read [How to diagnose your job-search funnel](../diagnose-your-job-search-funnel/).
+For a fuller view of where the funnel is leaking, read [How to diagnose your job-search funnel](../diagnose-your-job-search-funnel/). And after each interview, fill in a postmortem so the next attempt is informed by the last one — see [How to learn from every interview](../interview-postmortem/).
 
 ## Pace
 

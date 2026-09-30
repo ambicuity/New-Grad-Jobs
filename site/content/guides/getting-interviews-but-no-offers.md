@@ -54,3 +54,7 @@ This is the hardest pattern. You are clearing individual bars but not aggregatin
 If three loops in a row end with "we went with another candidate", the issue may be your interview presence, not any single round. Ask a friend to do a full mock loop with you, then sit with you for the feedback. The fix is usually one of: pace (too fast or too slow), confidence (you apologise more than you explain), or specificity (your answers are general when they should be about you).
 
 If the data says you have done five loops with no offers, change something material. The loop is a numbers game at your level; five is enough signal.
+
+## After each interview
+
+Use a per-interview postmortem to capture what happened and what you would do differently. See [How to learn from every interview](../interview-postmortem/) for a copyable template. Do not try to fix everything at once; pick one to three improvements and change one cycle before the next attempt.

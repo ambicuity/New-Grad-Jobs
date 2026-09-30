@@ -1,145 +1,396 @@
 ---
-title: AI-assisted interviews for new grads
-description: How AI is used in interviews today, how to identify the format you've been given, the rules each employer sets, and how to prepare without becoming dependent on the tool.
+title: AI-assisted interviews and modern hiring assessments
+description: How the new-grad interview is changing, how to identify the format you have been given, how to prepare for that format, and how to learn from every attempt.
 updated: 2026-09-30
 section: Interviews
 order: 9
 ---
 
-Hiring teams use AI in interviews in many different ways, and each employer defines its own rules. The single most important principle is:
+The new-grad hiring process is changing.
 
-> **Every company and platform can set its own rules. Follow the instructions in the specific assessment you were given rather than assuming any AI tool is allowed.**
+You may still encounter LeetCode, coding interviews, behavioral interviews and traditional recruiter screens. But you may also encounter asynchronous video interviews, AI-generated follow-up questions, conversational screening, work-sample assessments, AI-enabled coding environments, take-home assignments and interviews where the employer explicitly tells you which AI tools you may use.
 
-This guide explains what to expect, how to read the invitation, and how to prepare without misrepresenting how you work.
+That creates a different preparation problem.
 
-## How AI shows up in interviews today
+You cannot prepare for every company's process by memorizing one interview format. **You need to learn how to understand the evaluation first, prepare for that evaluation, perform under its rules, and learn from the result.** This guide is about that process.
 
-A few distinct formats, which often appear together in one loop:
+> **Every company and platform can define its own rules. The candidate must follow the specific assessment instructions rather than assume that an AI tool is allowed.**
 
-- **AI-scored interviews.** You record answers; a model scores them. Output is a score and sometimes a transcript the recruiter reads.
-- **AI-moderated interviews.** A chatbot asks the questions in real time, possibly with adaptive follow-ups based on your last answer.
-- **AI-generated follow-ups.** A human interviewer runs the loop, but the system suggests the next question based on what you said.
-- **Asynchronous recorded interviews.** No live interviewer. You see a question, record an answer, and the next question adapts.
-- **AI coding environments.** A coding platform (CoderPad, HackerRank, CodeSignal, etc.) where AI assistance may or may not be allowed.
-- **Coding assessments with permitted AI.** Some employers now explicitly allow ChatGPT, Copilot, or Gemini; others explicitly prohibit them.
-- **Coding assessments with prohibited AI.** The instruction is usually one line; treat it as binding.
-- **Take-home and work-sample assessments.** Open-ended deliverables with a stated time budget and allowed-resources list.
-- **Human + AI hybrid.** A human interviewer plus an AI tool on screen that the interviewer can see.
-- **Live coding without AI.** The traditional format, still common at large companies.
+## First: do not assume what the interview will be
 
-These can co-exist within the same loop: a recruiter screen, an AI-scored asynchronous round, and a human-led final are all common together.
+When you receive an interview or assessment invitation, do not immediately start solving LeetCode problems. First determine what you are actually being evaluated on.
 
-## Step 1: identify the format
+- Is this live or asynchronous?
+- Is it human-led, AI-mediated, or a combination?
+- Is the response spoken, written, video, code, or a work sample?
+- Is the interview adaptive?
+- Can the system ask follow-up questions?
+- Is the session recorded?
+- Is screen sharing required?
+- Is a webcam required?
+- Is a microphone required?
+- How much time do you have?
+- Can you pause?
+- Can you restart?
+- Are external websites allowed?
+- Is documentation allowed?
+- Is an IDE allowed?
+- Is ChatGPT allowed?
+- Is GitHub Copilot allowed?
+- Are other AI tools allowed?
+- Does the employer provide an AI tool inside the assessment?
+- What happens if the platform fails?
 
-Before you prepare, name what you have. The invitation email, the assessment URL, the candidate instructions page, and the assessment UI itself all tell you. Read them in order.
+The instructions for your specific assessment are the source of truth. Do not assume that because one company permits AI, another company does too. Do not assume that because an assessment uses AI, you are allowed to use AI yourself. Do not assume that because an interview is technical, it will be a LeetCode interview.
 
-The questions to answer:
+## The modern interview preparation loop
 
-- Is this **live** with a human, **live with AI**, or **asynchronous** (you record, no one is on the other end)?
-- Is the interview being **recorded**? If yes, the recording notice usually says so.
-- What **platform** is it on? (HireVue, Modern Hire, Pymetrics, CoderPad, HackerRank, CodeSignal, Workday, Greenhouse, an internal tool.)
-- **Is AI allowed?** Some invitations say explicitly. Others don't, which usually means no.
-- **Is ChatGPT / Copilot / Gemini allowed?** Look for the named tools.
-- **Are external websites allowed?** Some platforms block browser navigation.
-- **Can you use documentation?** (Language docs, library docs, but not solutions to the problem.)
-- **Can you run code locally?** Some platforms let you use your own editor.
-- **Is the webcam required?** Is the **microphone** required?
-- **Are there time limits? Can you pause? Can you restart?**
-- **Are follow-up questions adaptive?** (The platform changes the next question based on your answer.)
-- **What happens if the platform fails?** Who do you contact?
-
-If an item is not stated, do not assume the answer that is convenient for you. Ask the recruiter.
-
-## Step 2: the pre-assessment checklist
-
-Run this list one day before (or earlier) and again one hour before. Each row is a yes/no or a fix:
+Use this process for every interview.
 
 ```text
-□ Platform identified and tested in a non-production preview
-□ Browser updated; no extensions that block camera/mic
-□ Camera, speakers, microphone tested on the same machine
-□ Internet connection stable; backup hotspot noted
-□ Quiet, well-lit space for camera if the format requires it
-□ Allowed tools and only allowed tools installed
-□ Disallowed tools closed and notifications muted
-□ Notes scratchpad ready (paper is usually allowed; some platforms prohibit it)
-□ Calendar cleared for the duration plus 30 minutes
-□ Recruiter contact saved in case the platform fails
+1. IDENTIFY the format
+       ↓
+2. READ THE RULES
+       ↓
+3. UNDERSTAND WHAT IS BEING EVALUATED
+       ↓
+4. PREPARE FOR THAT FORMAT
+       ↓
+5. PRACTICE UNDER THE SAME CONSTRAINTS
+       ↓
+6. COMPLETE THE ASSESSMENT
+       ↓
+7. RECORD WHAT HAPPENED
+       ↓
+8. IDENTIFY THE WEAKNESS
+       ↓
+9. CHANGE YOUR PREPARATION
+       ↓
+10. TRY AGAIN
 ```
 
-If you cannot check any of these, that is the item to fix first.
+This is the part most candidates skip. They receive a rejection and immediately start another 50 LeetCode problems. If the previous interview was actually a behavioral interview, an AI screening interview, a system-design discussion, or a communication problem, those 50 problems may not address what went wrong.
 
-## Step 3: prepare for the actual format
+## Step 1: identify the interview format
 
-A common mistake is to prepare for "an interview" when you have been given a specific evaluation mechanism. The moves below are different for each:
+Create a small record for every interview before you prepare.
 
-- **AI-scored / recorded:** write out your answer first, then record. Read the question twice. Most platforms let you re-record a small number of times; use them, not all on one take.
-- **AI-moderated / adaptive:** the system may follow up on something you said in a way you cannot predict. The only robust prep is to know the material — STAR stories, the project on your résumé, your two-minute summary. See [Behavioral interviews](../behavioral-interviews/).
-- **AI coding environment, AI allowed:** use the allowed tool deliberately — to check edge cases, look up APIs, and explore alternatives — but write the first draft unassisted, because the platform can usually tell.
-- **AI coding environment, AI prohibited:** close the tabs. The platform often records browser activity; a disallowed tab open during the assessment is a misrepresentation.
-- **Take-home / work sample:** read the brief end to end before starting. Read the allowed-resources list twice. Match the deliverable to the format the employer asked for (PDF, repo, recording).
-- **Human-led:** the rules of [Behavioral interviews](../behavioral-interviews/) and [Coding interviews](../coding-interviews/) still apply.
+| Field                      | Your answer |
+| -------------------------- | ----------- |
+| Company                    |             |
+| Role                       |             |
+| Interview stage            |             |
+| Platform                   |             |
+| Live / asynchronous        |             |
+| Human / AI / hybrid        |             |
+| Duration                   |             |
+| Questions                  |             |
+| Coding required            |             |
+| AI allowed                 |             |
+| External resources allowed |             |
+| Recording                  |             |
+| Webcam required            |             |
+| Screen sharing             |             |
+| Preparation deadline       |             |
 
-## How to answer when the AI interviewer asks an unexpected follow-up
+The purpose is simple: **prepare for the interview you actually have, not the interview you had at another company.** See [Interview tool policies](../interview-tool-policies/) for how to find the rules for each platform.
 
-Treat the follow-up as the question it is. Do not pivot to a prepared answer; the system may be scoring whether you can answer what was actually asked.
+## Step 2: read every instruction
 
-- Restate the follow-up out loud in your own words.
-- Name what you do know that is close.
-- Reason from there. See [How to handle an interview question you don't know](../how-to-handle-an-interview-question-you-dont-know/).
-- If the prompt is ambiguous, say so: "I want to make sure I'm answering the right question — are you asking X or Y?"
+Read the entire invitation. Then read the assessment instructions again immediately before starting.
 
-## How to explain reasoning when the AI keeps probing
+Look for:
 
-The platform is usually testing whether you can sustain a coherent thread of thought across turns. Keep one explicit thread:
+- permitted tools
+- prohibited tools
+- AI policy
+- recording requirements
+- monitoring requirements
+- time limits
+- browser requirements
+- system requirements
+- accessibility information
+- rescheduling rules
+- technical-support instructions
 
-- Start each answer with one sentence that names the prior answer's point you are extending.
-- Use the same vocabulary across turns; do not rename the same thing.
-- State your assumption before you reason from it.
-- End with what you would do if the assumption were wrong.
+If the employer explicitly says that AI is allowed, follow the scope they specify. If the employer says AI is not allowed, do not use it. If the instructions are unclear, ask the recruiter or assessment contact before beginning. **Do not guess.** See [AI coding assessments](../ai-coding-assessments/) for what AI use in coding assessments looks like.
 
-## How to recover from a misunderstood AI question
+## Step 3: understand what is actually being evaluated
 
-If the platform asks something that does not match what you thought the question was, do not pretend. The recovery move is to ask once:
+An AI-assisted assessment may still be evaluating skills that have nothing to do with whether you can use an AI tool. Depending on the role, the evaluation may include:
 
-> "I want to make sure I understand — are you asking [X] or [Y]?"
+- technical knowledge
+- problem solving
+- communication
+- reasoning
+- debugging
+- ability to explain decisions
+- ability to evaluate information
+- ability to identify mistakes
+- ability to work with incomplete information
+- ability to use tools effectively
+- ability to validate an answer
+- behavioral judgment
+- role-specific knowledge
 
-If the system does not clarify, name your interpretation and answer that. Then in the debrief (below), note that the prompt was unclear.
+AI can change the interface without changing the underlying skill being evaluated. For example, "Build this feature with an AI coding assistant" is different from "Build this feature without external assistance." But both can still evaluate whether you understand the code you produce.
 
-## How to handle ambiguous prompts
+## Step 4: practice the actual format
 
-Ambiguity is a feature of some AI interviews: the system is testing how you decide. Name the ambiguity, then commit to one interpretation and answer it. Do not stall.
+This is where preparation needs to change. Do not only practice the subject. Practice the environment.
 
-## Adaptive interviews
+### If it is an asynchronous video interview
 
-Some platforms change the difficulty of the next question based on how you did. The only useful prep is to keep your pace consistent. Trying to "dumb down" so the questions stay easy backfires in most systems; trying to bluff and getting reset wastes time. Solve the question you have, then take the next one.
+Practice:
 
-## What to do when the platform behaves unexpectedly
+- answering within the time limit
+- looking at the camera
+- organizing your answer quickly
+- speaking clearly
+- avoiding unnecessary repetition
+- answering without seeing an interviewer react
+- recovering when you make a mistake
 
-- Browser freeze or crash: reload, re-enter if the platform allows, otherwise email the recruiter immediately.
-- Question does not load: take a screenshot, do not guess at the missing part, contact the recruiter.
-- Audio or video fails: most have a phone-in number; use it rather than quitting.
-- A tool you are allowed to use does not work: document the issue and continue; ask for a retake only when a workaround exists.
+### If it is an AI conversational interview
 
-## How to practice with AI without becoming dependent
+Practice:
 
-AI is a useful practice partner if you keep two rules:
+- answering the initial question directly
+- handling unexpected follow-ups
+- explaining your reasoning
+- giving concrete examples
+- avoiding memorized answers
+- correcting misunderstandings
+- maintaining consistency across answers
 
-- Use the model the way you would use a peer who can read your code, not the way you would use a calculator. Ask it to challenge your reasoning, not to write it for you.
-- Practice the parts you can fail at. A rep with the model where you succeed does not train the muscle that fails on the day. See [How to handle an interview question you don't know](../how-to-handle-an-interview-question-you-dont-know/) for the moves you should be able to do without help.
+### If it is an AI-assisted coding assessment
 
-## Post-interview debrief
+Practice:
 
-Within an hour of finishing, write down:
+- understanding the requirement
+- planning before coding
+- using permitted tools efficiently
+- reviewing generated code
+- testing the implementation
+- explaining trade-offs
+- identifying errors in AI-generated code
+- modifying the solution when requirements change
 
-- The platform and format.
-- The questions you were asked, in your own words.
-- What you would answer differently, and why.
-- Whether you complied with the rules (no disallowed tabs, no AI where prohibited, no paper where prohibited).
-- Whether the platform behaved as advertised.
+### If it is a traditional coding interview
 
-The format and rules tell you what to prepare for next time. The questions tell you what to study. The behavior tells you whether to take the platform seriously.
+Practice:
 
-## The line
+- clarifying requirements
+- thinking aloud
+- choosing an approach
+- discussing complexity
+- coding cleanly
+- testing
+- responding to hints
+- explaining trade-offs
 
-The line is the same as [AI-assisted applications: what not to automate](../ai-applications-what-not-to-automate/): you can defend every claim and every action in the interview. If a tool helped you in a way the assessment prohibited, you cannot. If you used only the tools the assessment allowed, you can. The first is dangerous; the second is fine.
+### If it is a work-sample assessment
+
+Practice the actual workflow:
+
+```text
+Understand
+    ↓
+Plan
+    ↓
+Execute
+    ↓
+Validate
+    ↓
+Explain
+```
+
+For the take-home specifically, see [Take-home and work-sample assessments](../take-home-assessments/).
+
+## AI is not a substitute for understanding
+
+This is one of the most important rules for new graduates.
+
+If an employer permits AI during an assessment, that does not mean "let AI solve everything." It means: **use the permitted tool to increase your effectiveness while remaining responsible for the result.**
+
+If AI produces code, you should be able to explain it, test it, modify it, debug it, identify its limitations, and explain why you chose that approach. If AI produces an answer, ask yourself: **would I know whether this answer was wrong?** If the answer is no, you have a knowledge problem to work on.
+
+## The most important preparation technique: AI-free practice
+
+Even when an employer allows AI, practice some sessions without it. Why? Because you need to know what you can do yourself. Use two modes:
+
+### Mode A — independent
+
+Solve the problem without AI. Measure time, correctness, communication, mistakes, and the concepts you forgot.
+
+### Mode B — AI-assisted
+
+Solve a similar problem using only the tools permitted by the employer. Measure how quickly you understand the output, how well you verify it, how effectively you correct it, and whether you can explain the final solution.
+
+The goal is not to become dependent on AI. The goal is to become **better at working with AI while retaining your own technical judgment.**
+
+## What if the AI interviewer asks a question you did not expect?
+
+Do not panic. Use the same structure you would use with a human interviewer:
+
+1. Pause.
+2. Restate the question.
+3. Identify what is being asked.
+4. Break the problem into parts.
+5. Answer the part you understand.
+6. State assumptions.
+7. Explain uncertainty where appropriate.
+8. Continue.
+
+For example: "Let me make sure I understand the scenario. You're asking how I would handle X when Y is already happening. I'll start with the immediate constraint, then I'll explain the longer-term approach."
+
+You are not being graded on producing a perfect sentence immediately. You are demonstrating how you think.
+
+## What if you fail?
+
+This is where the process matters most. A rejection does not automatically tell you why you failed. Do not write "I failed because the market is bad." Do not write "The AI interviewer rejected me." Do not write "I need to do more LeetCode." Instead record what you actually know.
+
+A reusable postmortem template is in [How to learn from every interview](../interview-postmortem/). Use it after every assessment, including ones you passed. Choose one to three improvements and do not try to fix everything at once.
+
+## Build your own interview dataset
+
+After ten to twenty interviews and assessments, you should have your own data. Track:
+
+```text
+Applications
+    ↓
+Recruiter screens
+    ↓
+Assessments
+    ↓
+Technical interviews
+    ↓
+Behavioral interviews
+    ↓
+Final rounds
+    ↓
+Offers
+```
+
+Then calculate where the funnel is breaking. For example, 100 applications → 12 recruiter screens → 7 assessments → 4 technical interviews → 2 final loops → 0 offers tells you something very different from "I cannot get a job." It tells you that you are getting through the application funnel but need to investigate what happens later.
+
+If instead you have 100 applications → 2 recruiter screens, your next improvement area is probably earlier in the funnel.
+
+The point is not to blame yourself. The point is to find the **next controllable improvement.** See [Diagnose your job-search funnel](../diagnose-your-job-search-funnel/) for the wider funnel math and [Getting interviews but no offers](../getting-interviews-but-no-offers/) for the specific case.
+
+## Do not measure yourself only by offers
+
+An offer is the final outcome, but it is not the only useful measurement. Track:
+
+- applications submitted
+- response rate
+- recruiter-screen rate
+- assessment completion rate
+- technical interview rate
+- final-round rate
+- offer rate
+- average time between stages
+- interview format
+- recurring technical gaps
+- recurring behavioral gaps
+- communication problems
+- questions you repeatedly struggle with
+
+That creates a feedback loop:
+
+```text
+Attempt
+  ↓
+Evidence
+  ↓
+Diagnosis
+  ↓
+Practice
+  ↓
+Better attempt
+  ↓
+New evidence
+```
+
+That is how you improve during a difficult market.
+
+## The market is part of the equation
+
+A difficult hiring market can reduce the number of available positions, increase competition, slow hiring, or increase the number of qualified candidates competing for the same opening. That means **good preparation does not guarantee an offer.** Two candidates can follow the same process and receive different outcomes.
+
+Therefore, the goal of this guide is not "follow these steps and you will get hired." The goal is: **follow a disciplined process that gives you the best opportunity to improve while producing useful information from every stage of the search.**
+
+You control preparation, application quality, interview practice, communication, technical learning, networking, tracking, learning from feedback, and adapting your strategy. You do not control headcount, hiring freezes, internal candidates, recruiter workload, competing candidates, changing requirements, requisition cancellations, company strategy, or whether another candidate happens to have a closer match. Understanding that distinction is important.
+
+## Your job search is an experiment
+
+Treat it like engineering. Define:
+
+```text
+Input → Process → Output → Evidence → Change
+```
+
+For example:
+
+```text
+INPUT
+50 targeted applications
+
+PROCESS
+Tailored résumé + referral outreach
+
+OUTPUT
+3 recruiter screens
+
+EVIDENCE
+6% screen rate
+
+CHANGE
+Improve targeting + networking
+
+NEXT EXPERIMENT
+50 new targeted applications
+```
+
+Or:
+
+```text
+INPUT
+5 technical interviews
+
+OUTPUT
+0 offers
+
+EVIDENCE
+Repeated weakness in debugging questions
+
+CHANGE
+Add debugging practice
+
+NEXT EXPERIMENT
+10 debugging-focused sessions
+```
+
+Do not randomly change everything after every rejection. **Change one or two variables, measure again, and learn.**
+
+## Your objective is progress, not perfection
+
+You may follow the entire process and still receive rejection after rejection. That does not automatically mean the process failed. Ask:
+
+> **What did I learn that I did not know before the interview?**
+
+If the answer is something useful, record it. Then improve.
+
+The strongest candidates are not necessarily the people who never struggle. They are the people who can turn each attempt into better preparation for the next one.
+
+## Related guides
+
+- [The new grad interview process](../interview-process/) — the stages, and the format matrix
+- [Interview tool policies](../interview-tool-policies/) — how to read each platform's tool rules
+- [AI coding assessments](../ai-coding-assessments/) — the rules for AI in coding assessments specifically
+- [Take-home and work-sample assessments](../take-home-assessments/) — for work-sample rounds
+- [Behavioral interviews](../behavioral-interviews/) — for behavioral rounds, live or AI-scored
+- [Coding interviews](../coding-interviews/) — for live coding rounds
+- [How to learn from every interview](../interview-postmortem/) — the post-interview postmortem template
+- [Diagnose your job-search funnel](../diagnose-your-job-search-funnel/) — the wider funnel math
+- [Application strategy](../application-strategy/) — the upstream funnel that feeds these interviews
