@@ -48,6 +48,22 @@ export const JOB_PAGE_CSS = [
   '.desc ul,.desc ol{padding-left:22px;margin:0 0 12px}',
   '.desc li{margin:0 0 6px}',
   'blockquote{border-left:2px solid #ff9d3d;margin:0 0 12px;padding:0 0 0 12px;color:#8a8a8a}',
+  // Evidence-level callouts (::: evidence <level>). The badge swatch colour is
+  // set inline per-level via data-evidence so the palette can be tweaked
+  // without changing the renderer.
+  '.evidence{display:block;margin:0 0 14px;padding:10px 12px 12px;border:1px solid #2a2a2a;background:#0a0a0a;font-size:13px;line-height:1.55;overflow-wrap:anywhere}',
+  '.evidence .evidence-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.7px;padding:2px 8px;border:1px solid currentColor;color:#e8e8e8;margin-bottom:6px}',
+  '.evidence .evidence-swatch{display:inline-block;width:8px;height:8px;border-radius:50%;background:currentColor}',
+  '.evidence .evidence-body p{margin:0 0 4px;color:#e8e8e8}',
+  '.evidence .evidence-desc{display:block;font-size:11px;color:#8a8a8a;margin-top:4px}',
+  '.evidence[data-evidence=official]{color:#5fd28a}',
+  '.evidence[data-evidence=primary]{color:#62a3ff}',
+  '.evidence[data-evidence=observational]{color:#e8c443}',
+  '.evidence[data-evidence=practical]{color:#ff9d3d}',
+  '.evidence[data-evidence=candidate]{color:#c084fc}',
+  // Legal-disclaimer footer (auto-appended for immigration guides).
+  '.legal-notice{border:1px solid #2a2a2a;border-left:2px solid #ff9d3d;padding:10px 12px;margin:18px 0 0;background:#0a0a0a;font-size:12px;line-height:1.55;color:#8a8a8a}',
+  '.legal-notice strong{color:#e8e8e8}',
   'code{background:#0a0a0a;border:1px solid #2a2a2a;padding:0 4px}',
   'footer{margin-top:32px;font-size:12px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:12px}',
 ].join('');

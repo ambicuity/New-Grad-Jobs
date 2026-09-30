@@ -4,7 +4,8 @@ import { existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
-import { SECTION_ORDER, groupGuides, loadGuides, renderGuidePage, renderGuidesIndex } from '../scripts/seo/guides.mjs';
+import { SECTION_ORDER, groupGuides, legalDisclaimerHtml, loadGuides, renderGuidePage, renderGuidesIndex } from '../scripts/seo/guides.mjs';
+import { renderMarkdown } from '../scripts/seo/markdown.mjs';
 import { aboutFacts, renderAboutPage } from '../scripts/seo/about.mjs';
 import { generateSeo } from '../scripts/seo/generate.mjs';
 import { PRERENDER_MARKER } from '../scripts/seo/render.mjs';
@@ -35,14 +36,24 @@ describe('published guide content', () => {
         || new Date(meta.updated).toISOString().slice(0, 10) !== meta.updated) {
         issues.push(`${name}: invalid updated date`);
       }
-      if (/^\s*(?:`{3}|~{3}|\||#{4,}\s)/m.test(body)) issues.push(`${name}: unsupported Markdown`);
+      // markdown.mjs supports fenced code, pipe tables (|) and headings up to
+      // ### only. Anything more elaborate is rejected so the validator catches
+      // accidental syntax that will silently disappear at build.
+      if (/^\s*(?:`{3}|~{3}|#{4,}\s)/m.test(body)) issues.push(`${name}: unsupported Markdown`);
+      // Headings now have slugified ids, so fragment links can resolve within
+      // the same guide. Verify the target exists; reject otherwise.
+      const headings = renderMarkdown(body).headings.map((h) => h.text);
+      const slugifyHeading = (text) => text.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+      const localIds = new Set(headings.map(slugifyHeading).filter(Boolean));
       for (const [, target] of body.matchAll(/\]\(([^\s)]+)\)/g)) {
         const url = new URL(target, `https://jobs.example.test/guides/${name.slice(0, -3)}/`);
         if (url.origin !== 'https://jobs.example.test' || !url.pathname.startsWith('/guides/')) continue;
         const slug = url.pathname.slice('/guides/'.length).replace(/\/$/, '');
         if (slug && !slugs.has(slug)) issues.push(`${name}: missing guide ${slug}`);
-        // Guide headings currently have no ids, so fragment links cannot resolve.
-        if (url.hash) issues.push(`${name}: unsupported guide fragment ${url.hash}`);
+        if (url.hash) {
+          const id = url.hash.slice(1);
+          if (slug === '' && !localIds.has(id)) issues.push(`${name}: unknown fragment ${url.hash}`);
+        }
       }
     }
     expect(issues).toEqual([]);
@@ -131,6 +142,32 @@ describe('guide rendering', () => {
     expect(html).toContain('<h2>MORE</h2>');
     const grouped = renderGuidesIndex([{ ...guide, section: 'Offers' }, other], { siteUrl: SITE });
     expect(grouped.indexOf('<h2>OFFERS</h2>')).toBeLessThan(grouped.indexOf('<h2>MORE</h2>'));
+  });
+});
+
+describe('legal disclaimer footer', () => {
+  it('renders a note with a strong disclaimer and the official source list', () => {
+    const html = legalDisclaimerHtml();
+    expect(html).toContain('<aside class="legal-notice"');
+    expect(html).toContain('<strong>Important:</strong>');
+    expect(html).toContain('educational information, not legal advice');
+    expect(html).toContain('https://www.uscis.gov/');
+    expect(html).toContain('https://www.bls.gov/');
+    expect(html).toContain('https://studyinthestates.dhs.gov/');
+  });
+
+  it('appends the footer to International-students guides and only that section', () => {
+    const sample = { slug: 'reading-a-posting', title: 'Reading a posting', description: 'd', updated: '2026-09-25', html: '<h1>x</h1>', headings: [] };
+    const immigration = { ...sample, slug: 'opt-and-stem-opt', section: 'International students' };
+    const offer = { ...sample, slug: 'evaluating-an-offer', section: 'Offers' };
+    const immigrationHtml = renderGuidePage(immigration, { siteUrl: SITE, siblings: [immigration, offer] });
+    const offerHtml = renderGuidePage(offer, { siteUrl: SITE, siblings: [immigration, offer] });
+    expect(immigrationHtml).toContain('<aside class="legal-notice"');
+    expect(immigrationHtml).toContain('USCIS');
+    expect(offerHtml).not.toContain('<aside class="legal-notice"');
+    // The disclaimer sits inside the article body, not in the CSS.
+    expect(immigrationHtml.indexOf('<aside class="legal-notice"')).toBeGreaterThan(immigrationHtml.indexOf('<article'));
+    expect(immigrationHtml.indexOf('<aside class="legal-notice"')).toBeLessThan(immigrationHtml.indexOf('</article>'));
   });
 });
 
