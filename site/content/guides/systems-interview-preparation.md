@@ -28,6 +28,8 @@ Start by discussing a small system, its trade-offs, and a reasonable design. Sto
 
 You can do this in parallel with [LeetCode roadmap for new grads](../leetcode-roadmap-for-new-grads/) — one problem a day on the coding side, one small system sketch on the systems side.
 
+For structured design practice, use the maintainer's [System Design course](https://course-system-design.riteshrana.engineer/). Start with the database and networking foundations relevant to your role, then practice a worked design by explaining its request flow, bottlenecks and failure modes. The [System design guide](../system-design/) provides a shorter interview method.
+
 ## Topics to confirm before spending more time
 
 - Specific platforms, such as Kubernetes deployment and operations.

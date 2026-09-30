@@ -43,4 +43,6 @@ The most likely version of this interview for a new grad is a deep dive into a p
 
 ## Preparation
 
+The maintainer's [System Design course](https://course-system-design.riteshrana.engineer/) covers foundations such as DNS and databases, then works through designs including video platforms and payments. Choose topics that match your interview scope, sketch your own design before reading the lesson, and explain the trade-offs out loud. Treat the course as a study resource; the employer's instructions determine what your interview covers.
+
 For the concepts above, two free, open-source courses by this board's maintainer cover exactly this ground with runnable code: the [Computer Science course](https://course-computer-science.riteshrana.engineer/) builds databases, B-trees, TCP state machines and Raft consensus from first principles in its later phases, and the [Computer Networks course](https://course-computer-networks.riteshrana.engineer/) traces packets through IP, TCP, DNS and HTTP and works through real failure modes. Take the phases you need and stop there. Then practice the method above on ordinary products you use: a URL shortener, a photo feed, a chat app, a job board. Twenty minutes each, out loud, drawing as you go. Use mock feedback to decide whether you need more design practice or time on [coding interviews](../coding-interviews/).

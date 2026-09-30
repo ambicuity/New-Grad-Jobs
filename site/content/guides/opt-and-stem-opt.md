@@ -59,6 +59,7 @@ For authoritative, current information, use the official pages directly. The lin
 - **[USCIS I-9 Central](https://www.uscis.gov/i-9-central).** The employment eligibility verification form every U.S. employer uses.
 - **[myE-Verify](https://www.e-verify.gov/employees/mye-verify).** The employee-facing side of E-Verify for self-checks.
 - **[USCIS Processing Times](https://egov.uscis.gov/processing-times/).** Current processing times for OPT, STEM OPT, and related applications.
+- **[USCIS H-1B Employer Data Hub](https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub).** Research historical H-1B petition decisions by employer and fiscal year. Past petitions do not establish current sponsorship policy, OPT eligibility or willingness to sponsor a particular new-grad role; confirm those with the employer.
 
 Bookmark these pages and re-read them when something changes in your situation; the rules update more often than you would expect.
 

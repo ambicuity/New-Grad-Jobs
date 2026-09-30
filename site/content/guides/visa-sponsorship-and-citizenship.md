@@ -19,6 +19,8 @@ A job with neither flag shows "no restriction stated". That means the text conta
 
 Sponsorship language is usually near the end of the posting, in the equal-opportunity or "additional information" block, and is often the same paragraph across every job at that employer. Search the page for "sponsor", "visa", "citizen" and "clearance" before you spend time on the application.
 
+Use the [USCIS H-1B Employer Data Hub](https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub) to research an employer's past H-1B petition decisions by fiscal year. Check the employer's legal name and distinguish initial from continuing employment records. These are historical petition decisions, not open jobs, new-grad hiring counts or a promise that the employer will sponsor your role. Confirm the current policy with the recruiter.
+
 ## Terms worth knowing
 
 - **OPT** can authorize eligible F-1 students to work in their field of study, generally for up to twelve months; eligible STEM graduates can apply for a further twenty-four months subject to additional requirements. A "no sponsorship" policy may exclude OPT candidates. Ask whether the employer accepts your current authorization and future sponsorship needs. See [OPT and STEM OPT](../opt-and-stem-opt/) for requirements and official sources.
