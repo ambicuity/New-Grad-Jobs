@@ -15,6 +15,8 @@ The most common mistake in a new grad search is treating it as one big session. 
 3. If you need visa sponsorship, add the "no restriction stated" chip. It hides every posting that states a restriction. Read [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/) for what it does and does not mean.
 4. Bookmark the URL. Every filter lives in the address bar, so the bookmark is your saved search.
 
+If you do not already have a short list of companies you would apply to, write one before you start the routine. See [How to build a target-company list](../build-a-target-company-list/).
+
 ## Once: subscribe
 
 The status bar shows an RSS link for the feed closest to your view: one per category, plus remote and "no visa restriction stated". Put it in a feed reader or an RSS-to-email service. New postings then reach you within about half an hour of the scraper seeing them, which is as early as anyone sees them.

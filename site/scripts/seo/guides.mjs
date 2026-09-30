@@ -18,7 +18,20 @@ const DEFAULT_ORDER = 999;
 
 /** Index sections, in display order. A guide's `section` front matter must be one of these to be grouped. */
 export const SECTION_ORDER = Object.freeze([
-  'Getting started', 'Understanding jobs', 'Résumé and applications', 'International students', 'Interviews', 'Offers', 'NGJ data',
+  'Getting started',
+  'Job search strategy',
+  'Understanding jobs',
+  'Résumé and applications',
+  'LinkedIn and networking',
+  'GitHub and portfolio',
+  'International students',
+  'Interviews',
+  'Technical preparation',
+  'AI and job search',
+  'Rejections and recovery',
+  'Offers',
+  'Starting your job',
+  'NGJ data',
 ]);
 const OTHER_SECTION = 'More';
 

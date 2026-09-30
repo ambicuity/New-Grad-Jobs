@@ -10,7 +10,7 @@ Applying is a numbers problem and a quality problem at once. Too few application
 
 ## Three tiers
 
-- **Targets**: roles and companies you would accept tomorrow. Tailor the résumé, write a short cover note if the form has one, and look for a referral. A handful a week.
+- **Targets**: roles and companies you would accept tomorrow. Tailor the résumé, write a short cover note if the form has one, and look for a referral. A handful a week. See [How to build a target-company list](../build-a-target-company-list/).
 - **Good fits**: roles that match your profile at companies you know little about. Base résumé, quick review of the posting, apply. Most of your applications.
 - **Long shots**: roles slightly above your profile or at very selective employers. Base résumé, no extra effort, no expectations. Apply when they appear; the cost is minutes.
 
@@ -28,15 +28,17 @@ Review the tracker weekly. Applications older than a month with no response are 
 
 ## Referrals
 
-A referral moves an application from the pile to a person. Ask alumni, former internship colleagues and people you have actually talked to, and make it easy: send the job link and a two-line summary of why you fit. Do not ask strangers for referrals in a first message; the response rate is near zero and it costs goodwill.
+A referral moves an application from the pile to a person. Ask alumni, former internship colleagues and people you have actually talked to, and make it easy: send the job link and a two-line summary of why you fit. Do not ask strangers for referrals in a first message; the response rate is near zero and it costs goodwill. Read [How to ask for a referral](../how-to-ask-for-a-referral/) for the full playbook.
 
 ## When nothing comes back
 
 Diagnose before changing everything:
 
-- **No responses at all across many good fits**: the résumé is the problem. Test it against [An ATS-friendly résumé](../ats-friendly-resume/) and have two people read it for ten seconds and tell you what they remember.
+- **No responses at all across many good fits**: the résumé is the problem. Test it against [An ATS-friendly résumé](../ats-friendly-resume/) and have two people read it for ten seconds and tell you what they remember. If the funnel is silent past a hundred applications, read [No interviews after 100 applications](../no-interviews-after-100-applications/).
 - **Responses but no interviews past the recruiter screen**: the story is the problem. Practice the two-minute summary of who you are and what you want.
-- **Interviews but no offers**: the preparation is the problem. See [The interview process](../interview-process/).
+- **Interviews but no offers**: the preparation is the problem. See [The interview process](../interview-process/) and [Getting interviews but no offers](../getting-interviews-but-no-offers/) for which round is breaking.
+
+For a fuller view of where the funnel is leaking, read [How to diagnose your job-search funnel](../diagnose-your-job-search-funnel/).
 
 ## Pace
 

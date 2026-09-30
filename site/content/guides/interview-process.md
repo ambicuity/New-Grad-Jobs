@@ -10,12 +10,12 @@ Entry-level interview loops are more standardized than any other kind, because e
 
 ## The stages
 
-1. **Application review.** A recruiter or a rule screens the résumé against the posting. Days to weeks. [An ATS-friendly résumé](../ats-friendly-resume/) and [Tailoring your résumé](../tailoring-your-resume/) are about this stage.
+1. **Application review.** A recruiter or a rule screens the résumé against the posting. Days to weeks. [An ATS-friendly résumé](../ats-friendly-resume/) and [Tailoring your résumé](../tailoring-your-resume/) are about this stage. If the funnel is silent past a hundred applications, see [No interviews after 100 applications](../no-interviews-after-100-applications/).
 2. **Online assessment.** Common for software, data and quantitative roles at large employers; a timed problem set sent by link. Sometimes it is sent to everyone who applies, before any human has read the résumé. See [Coding assessments](../coding-assessments/).
 3. **Recruiter screen.** A short call about eligibility, timeline, location and interest. Judged: can you explain yourself in two minutes, and are there blockers. Bring your questions on sponsorship and start dates here.
-4. **Technical screen.** One interview, often remote, on the core skill: a coding problem for engineers, a case or a data exercise for analysts, a portfolio walk-through for designers. See [Coding interviews](../coding-interviews/).
-5. **Final round.** Several interviews in one day or across a week: more technical rounds, a [behavioral interview](../behavioral-interviews/), sometimes a light [system design](../system-design/) conversation, and a hiring-manager chat.
-6. **Decision and offer.** Days to weeks. Then the process in the [Offers](../evaluating-an-offer/) guides begins.
+4. **Technical screen.** One interview, often remote, on the core skill: a coding problem for engineers, a case or a data exercise for analysts, a portfolio walk-through for designers. See [Coding interviews](../coding-interviews/) and [How to handle an interview question you don't know](../how-to-handle-an-interview-question-you-dont-know/).
+5. **Final round.** Several interviews in one day or across a week: more technical rounds, a [behavioral interview](../behavioral-interviews/), sometimes a light [system design](../system-design/) conversation, and a hiring-manager chat. See [How to prepare for a multi-round interview loop](../how-to-prepare-for-a-multi-round-interview-loop/) for how to pace across the day.
+6. **Decision and offer.** Days to weeks. Then the process in the [Offers](../evaluating-an-offer/) guides begins. For the last week before the loop, see [How to prepare for an interview in 7 days](../how-to-prepare-for-an-interview-in-7-days/).
 
 Startups compress this to two or three conversations, sometimes with a take-home in place of the assessment; see [Startup vs enterprise](../startup-vs-enterprise/). Non-technical fields swap the technical rounds for a case, a writing sample, a presentation or a work-sample task, but the shape is the same.
 

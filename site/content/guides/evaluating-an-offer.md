@@ -42,4 +42,4 @@ None of these is necessarily fatal, but each is a question to ask before you sig
 
 ## Accepting
 
-When you accept, tell every other employer in your pipeline the same day, briefly and gratefully. Reneging on an accepted offer is remembered; keep looking only until you accept, then stop.
+When you accept, tell every other employer in your pipeline the same day, briefly and gratefully. Reneging on an accepted offer is remembered; keep looking only until you accept, then stop. After you sign, see [What to do after accepting a new grad offer](../after-accepting-a-new-grad-offer/) for the four weeks between signing and starting.

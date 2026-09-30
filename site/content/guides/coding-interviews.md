@@ -32,11 +32,11 @@ Talk throughout, but not constantly. "Let me think for a moment" followed by sil
 
 ## Taking hints
 
-A hint is not a failure. Interviewers give them to keep the interview moving and score how you use them. Acknowledge it, think about it, apply it. Ignoring a hint to pursue your own approach is the one thing that reliably ends interviews badly.
+A hint is not a failure. Interviewers give them to keep the interview moving and score how you use them. Acknowledge it, think about it, apply it. Ignoring a hint to pursue your own approach is the one thing that reliably ends interviews badly. See [How to handle an interview question you don't know](../how-to-handle-an-interview-question-you-dont-know/) for the moves that recover an interview when you are stuck.
 
 ## Preparation
 
-The content is the same as [Coding assessments](../coding-assessments/): arrays, strings, hashing, sorting, recursion, basic dynamic programming, trees and graphs. The added skill is doing it out loud. Practice with another person, or alone by speaking to the screen and recording it. Three sessions a week of one problem each, over two months, is enough for most new grad loops; more than that has diminishing returns compared with sleep.
+The content is the same as [Coding assessments](../coding-assessments/): arrays, strings, hashing, sorting, recursion, basic dynamic programming, trees and graphs. The added skill is doing it out loud. Practice with another person, or alone by speaking to the screen and recording it. Three sessions a week of one problem each, over two months, is enough for most new grad loops; more than that has diminishing returns compared with sleep. For the patterns to study in order, see the [LeetCode roadmap for new grads](../leetcode-roadmap-for-new-grads/).
 
 Know one language well: its standard collections, string handling and sorting API without looking them up. Interviewers allow any mainstream language; fluency in one matters more than the choice.
 

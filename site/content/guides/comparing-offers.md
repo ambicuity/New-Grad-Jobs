@@ -37,7 +37,7 @@ A competing offer is the strongest lever in [Negotiation](../negotiation/). Use 
 
 Prefer the offer that is better on learning and not worse than the bar on money. Prefer the offer whose people you would rather ask for help. If everything is close, prefer the one where the manager was clearest about what you would do in the first three months; clarity at the offer stage predicts clarity on the job.
 
-Then decide once, tell both employers the same day, and stop comparing. The worst outcome is not choosing the wrong offer; it is spending the first month at the new job still weighing the other one.
+Then decide once, tell both employers the same day, and stop comparing. The worst outcome is not choosing the wrong offer; it is spending the first month at the new job still weighing the other one. Once you have signed, [What to do after accepting a new grad offer](../after-accepting-a-new-grad-offer/) walks through the four weeks between accepting and starting.
 
 ## A note on names
 

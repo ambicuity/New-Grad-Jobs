@@ -20,7 +20,7 @@ They come in a few families, whatever the wording:
 - Ambiguity: a task with no clear instructions
 - Feedback: criticism you received and what changed
 
-Employers that publish values (and many large ones do) ask questions mapped to them. Read the values page before the interview.
+Employers that publish values (and many large ones do) ask questions mapped to them. Read the values page before the interview. For the wider loop, see [How to prepare for a multi-round interview loop](../how-to-prepare-for-a-multi-round-interview-loop/).
 
 ## Six stories
 
