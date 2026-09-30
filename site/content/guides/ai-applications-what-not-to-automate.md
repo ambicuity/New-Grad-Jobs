@@ -47,3 +47,7 @@ The line is whether you can defend every claim in the interview that follows. If
 ## If you used AI
 
 If an interviewer asks "did you use AI to help with this?" the honest answer is the right one. "I used it to rewrite my bullets for clarity and I verified every line" is a stronger answer than "I didn't use any tools". Most interviewers are not looking to disqualify a candidate who prepared well; they are looking to disqualify a candidate who cannot defend their own résumé.
+
+## A note about AI in the interview itself
+
+This guide is about the application. AI use *during* the interview — coding, behavioral, take-home, or otherwise — is governed by the rules of the specific assessment. The line is the same: every employer and platform sets its own rules, and the candidate must follow the specific assessment instructions. See [AI-assisted interviews](../ai-assisted-interviews/) and [Interview tool policies](../interview-tool-policies/) for how to read those rules and prepare accordingly.

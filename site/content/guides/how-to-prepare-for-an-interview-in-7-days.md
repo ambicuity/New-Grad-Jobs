@@ -15,6 +15,7 @@ Pull up the posting, the team page, and any blog posts or talks the team has pub
 - The exact words the posting uses for skills, level, and responsibilities
 - Two or three projects from your résumé that match each of those areas
 - Two or three things you do not know yet that are likely to come up
+- The **format** of each interview round: live with a human, AI-moderated, AI-scored recorded, take-home, coding assessment, hybrid. If the format is not clear from the posting, ask the recruiter. See [AI-assisted interviews](../ai-assisted-interviews/) for the format matrix.
 
 That page is your reference for the week. Everything else is built on it.
 

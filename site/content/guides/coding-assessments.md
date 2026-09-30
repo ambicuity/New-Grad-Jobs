@@ -42,6 +42,8 @@ Most new grad assessments do not go beyond this. The harder problem at the end i
 
 Assessments come with rules, and employers enforce them: plagiarism checks across candidates, proctoring, and follow-up interviews that ask you to explain your submission. Solve it yourself. A pass you cannot explain in the next round costs more than a fail.
 
+AI tools are not allowed in most coding assessments unless the platform says so. See [AI coding assessments](../ai-coding-assessments/) for the format-specific guidance and [Interview tool policies](../interview-tool-policies/) for how to read the rules.
+
 ## After
 
 Note the problems you saw in your tracker; patterns repeat within a company and across a hiring season. If you fail, the same employer often allows another attempt next cycle, and the categories above are exactly what to practice. The [Coding interviews](../coding-interviews/) guide covers the live version.

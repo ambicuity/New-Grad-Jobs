@@ -46,6 +46,10 @@ When the honest result was bad, say so and go straight to the reflection. A fail
 
 The last five minutes are yours. Ask about the team's work, how new graduates are onboarded, what the first three months look like, and how performance is reviewed. Avoid questions the careers page answers. The [Questions before accepting](../questions-before-accepting/) guide has more for the offer stage.
 
+## When the behavioral round is recorded
+
+Some companies run the behavioral round as an AI-scored or AI-moderated recorded interview rather than live. The same stories work — STAR with reflection — but the pacing is different: you usually have a fixed window per question, no follow-up, and a small number of re-takes. See [AI-assisted interviews](../ai-assisted-interviews/) for the format-specific prep, including the pre-assessment checklist and the debrief.
+
 ## Common mistakes
 
 - Answering a "time when" question with a general description of how you usually behave

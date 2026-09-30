@@ -1,52 +1,74 @@
 ---
 title: Background checks and pre-employment verification
-description: What employers check, when they check it, and how to handle the parts that slow you down.
+description: What most pre-employment screenings cover, how the steps interact with work authorization, and where to find authoritative guidance.
 updated: 2026-09-30
 section: Starting your job
 order: 1
 ---
 
-Most new-grad offers are contingent on a background check and, for international students, a work-authorization verification. Both run after you accept, both can take longer than you expect, and both can delay your start date if you do not move on them.
+Most new-grad offers are contingent on a pre-employment screening that includes identity, education, and employment verification, sometimes a criminal background check, and a work-authorization verification for international hires. The exact scope and timing vary by employer, screening vendor, role, and jurisdiction, so treat the specifics here as orientation rather than a universal timeline.
 
-## What employers check
+## What most pre-employment screenings cover
 
-A standard background check covers:
+The components vary. A typical new-grad screening includes some combination of:
 
-- **Identity verification.** Government ID and SSN (or ITIN for new grads without one yet).
+- **Identity verification.** Government ID and, where applicable, SSN (or ITIN for new grads without an SSN yet).
 - **Education verification.** The school confirms degree, major, and graduation date.
 - **Employment verification.** Past internships and jobs confirm title and dates.
-- **Criminal background.** A county or federal check; specifics vary by state and by role.
-- **Credit check.** For some finance and senior roles; rare for new grad engineering.
-- **Reference checks.** Some employers treat this as part of the background check rather than the loop.
+- **Criminal background.** A county or federal check; specifics vary by state, by role, and by employer policy.
+- **Credit check.** Uncommon for new-grad engineering roles; more common in finance and certain senior roles.
+- **Reference checks.** Some employers treat this as part of the screening rather than the interview loop.
 
-The check is run by a third party (Checkr, HireRight, Sterling are the common ones). The employer sees a pass / fail / consider verdict; you can request a copy of the report.
+The screening is usually run by a third-party vendor. The exact deliverable back to the employer (a pass/fail/consider verdict, a risk tier, an adjudicated report) depends on the vendor and the employer's policy. You can typically request a copy of the report under the Fair Credit Reporting Act if a vendor was used.
 
-## How long it takes
+## Timing
 
-Two to four weeks is typical; some finish in five business days, others drag to four weeks. Delays usually come from:
+There is no single "typical" timeline. Some screenings complete in a few business days; others take several weeks. Specific timing depends on:
 
-- A university registrar that takes two weeks to respond. Tell your school you have an offer pending verification.
-- A previous employer who does not respond to verification emails. Have a manager's email and phone ready.
-- A common name that produces noise in criminal databases. Provide middle name and SSN on the form.
+- The employer's policy on when to initiate the screening (some initiate at offer, others after acceptance; some wait for a specific document).
+- The vendor's process and queue.
+- The responsiveness of the institutions being checked (registrars, prior employers).
+- Whether anything needs to be re-verified because of name or address mismatches.
 
-## What to do during the check
+If you have an offer with a known deadline (relocation, visa cap, lease start), tell the recruiter early. Most will move parts of the process in parallel; a few will not, and that is information about how the employer operates.
 
-- **Reply to every email from the background-check vendor within one business day.** Most delays are missing paperwork, not slow vetting.
-- **Tell your university career center.** Many schools have a process for "employer verification" requests; using it shortens the wait.
-- **Do not change your legal name, address, or SSN during the check.** Any of these can reset the verification.
+## What to do during the screening
 
-## Work-authorization checks (F-1, OPT, STEM OPT)
+- **Reply to every email from the screening vendor quickly.** Most delays are missing paperwork or unconfirmed details, not slow vetting.
+- **Tell your university career center or registrar.** Many schools have a process for "employer verification" requests; using it shortens the wait.
+- **Have your prior manager's contact ready.** A previous employer who does not respond to verification emails is one of the most common delays.
+- **Avoid changes that re-trigger verification.** A legal-name change, a new address on file, or a new SSN can require the vendor to restart parts of it.
 
-If you are on F-1 OPT or STEM OPT, the employer (and the vendor) will run an E-Verify check in addition to the background check. See [OPT and STEM OPT](../opt-and-stem-opt/) for what E-Verify does and how it interacts with your EAD card.
+If your employment authorization is relevant to the role, the employer will have its own process for completing required work-authorization verification. Follow the employer's instructions and use official USCIS and DHS guidance for questions about your status. See [OPT and STEM OPT](../opt-and-stem-opt/) and the [official sources section](../opt-and-stem-opt/#official-dhs-and-uscis-sources) at the bottom of that guide.
 
-The most common delay: the EAD card has not been issued yet. Most employers will not start the background check until you have your EAD in hand, even if you have an offer.
+## Work-authorization checks
+
+If the role requires work authorization in the United States, the employer will run a verification appropriate to the case. For F-1 students on OPT or STEM OPT, this typically involves Form I-9 and, for STEM OPT, an E-Verify check through the employer. The employer (not the candidate) initiates E-Verify. See [OPT and STEM OPT](../opt-and-stem-opt/) for the broader context and the official USCIS and Study in the States sources.
+
+What candidates can do:
+
+- Have the relevant document (EAD card, I-20, passport, visa) ready when the employer asks for it.
+- Respond quickly to questions about dates and document numbers.
+- For STEM OPT, expect a Form I-983 training plan to be part of the onboarding; your DSO and the employer both have roles here.
 
 ## If something flags
 
-A flag is not a fail. Most flags are address mismatches or common-name false positives. The vendor will tell you what was flagged and ask you to confirm or correct. Reply with the corrected information; the check continues.
+A flag is not a fail. Many flags are address mismatches, common-name false positives, or minor discrepancies that the vendor will ask you to confirm. Reply with the corrected information; the screening continues.
 
-If you have a record that you disclosed to the employer earlier, the check will surface it. Disclose it again, in writing, before the vendor asks. Surprises cost you the offer; disclosed items rarely do.
+If you have a record or a prior discrepancy that you disclosed to the employer earlier, the screening will surface it. Disclose it again, in writing, before the vendor asks. Surprises cost you the offer; disclosed items rarely do. For legal questions about a record, use a qualified attorney rather than guessing.
 
 ## What this means for your start date
 
-Build a two-week buffer between accepting and your planned start, especially if your start date is the first of the month. Most new-grad start dates allow a one- to two-week delay for verification; the offer letter says so. Read [What to do after accepting a new grad offer](../after-accepting-a-new-grad-offer/) for the rest of the pre-start checklist.
+Build a buffer between accepting and your planned start, especially if your start date is the first of the month or tied to a lease, visa, or relocation window. Most new-grad start dates allow some adjustment for the screening; the offer letter says so. Read [What to do after accepting a new grad offer](../after-accepting-a-new-grad-offer/) for the rest of the pre-start checklist.
+
+## Where to get authoritative answers
+
+For immigration and work-authorization questions:
+
+- **USCIS (US Citizenship and Immigration Services).** Forms, policy manual, processing times.
+- **DHS Study in the States.** F-1, OPT, STEM OPT, Form I-983.
+- **E-Verify (USCIS).** Employer-side program information; employee rights and myE-Verify.
+- **Your university's Designated School Official (DSO).** Case-specific interpretation for your program.
+- **A qualified immigration attorney.** For case-specific legal questions.
+
+The board flags stated sponsorship and citizenship restrictions in postings. See [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/) for what the flags mean, and [Sponsorship language](../sponsorship-language/) for the phrases that show up in postings.

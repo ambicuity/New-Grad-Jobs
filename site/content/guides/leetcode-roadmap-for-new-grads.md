@@ -6,7 +6,11 @@ section: Technical preparation
 order: 1
 ---
 
-Most new-grad coding interviews test the same fifteen to twenty patterns, not the same three hundred problems. A new-grad roadmap covers those patterns, plus the language-specific gotchas you will trip on. Anything beyond that is research, not interview prep.
+LeetCode-style practice is the right preparation for interviews that test algorithmic problem solving under time pressure, and it is one of several preparation paths. Some loops use it; others use take-homes, domain cases, work samples, or system design conversations instead. Follow the format the employer gave you. See [AI-assisted interviews](../ai-assisted-interviews/) for how to read the invitation and identify the actual evaluation, and [The new grad interview process](../interview-process/) for where this fits in the loop.
+
+For data engineers and analysts, also see [SQL interview preparation](../sql-interview-preparation/). For ML/AI roles, see [ML/AI interview preparation](../ml-ai-interview-preparation/). For backend or platform roles, see [Systems interview preparation](../systems-interview-preparation/). For roles that emphasize debugging or reading unfamiliar code, see [Debugging interview preparation](../debugging-interview-preparation/).
+
+Where LeetCode is the right prep, most new-grad coding interviews test the same fifteen to twenty patterns, not the same three hundred problems. A new-grad roadmap covers those patterns, plus the language-specific gotchas you will trip on. Anything beyond that is research, not interview prep.
 
 ## Phase 1: arrays, hash maps, strings (2–3 weeks)
 

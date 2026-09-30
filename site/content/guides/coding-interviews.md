@@ -36,7 +36,7 @@ A hint is not a failure. Interviewers give them to keep the interview moving and
 
 ## Preparation
 
-The content is the same as [Coding assessments](../coding-assessments/): arrays, strings, hashing, sorting, recursion, basic dynamic programming, trees and graphs. The added skill is doing it out loud. Practice with another person, or alone by speaking to the screen and recording it. Three sessions a week of one problem each, over two months, is enough for most new grad loops; more than that has diminishing returns compared with sleep. For the patterns to study in order, see the [LeetCode roadmap for new grads](../leetcode-roadmap-for-new-grads/).
+The content is the same as [Coding assessments](../coding-assessments/): arrays, strings, hashing, sorting, recursion, basic dynamic programming, trees and graphs. The added skill is doing it out loud. Practice with another person, or alone by speaking to the screen and recording it. Three sessions a week of one problem each, over two months, is enough for most new grad loops; more than that has diminishing returns compared with sleep. For the patterns to study in order, see the [LeetCode roadmap for new grads](../leetcode-roadmap-for-new-grads/). Not every loop uses LeetCode-style coding; see [AI-assisted interviews](../ai-assisted-interviews/) for the broader format landscape and [Role-specific technical preparation](../role-specific-technical-preparation/) for non-coding tracks.
 
 Know one language well: its standard collections, string handling and sorting API without looking them up. Interviewers allow any mainstream language; fluency in one matters more than the choice.
 
@@ -49,3 +49,5 @@ Expect a few questions about the language you used and about fundamentals: how a
 ## On the day
 
 Set up the environment ten minutes early. Have paper. If it is remote, close everything else. If you get stuck, say what you are stuck on; that is a question, and questions get answers. After the interview, write down the problem and what you would do differently, while you remember. A [behavioral interview](../behavioral-interviews/) is often in the same loop; prepare it separately.
+
+Confirm the format and the AI rules before you start. Many live coding platforms now include built-in AI tooling whose allowed/disallowed status is not obvious from the editor. See [AI-assisted interviews](../ai-assisted-interviews/) for how to read the invitation and the platform's tools policy.

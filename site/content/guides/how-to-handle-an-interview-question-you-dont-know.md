@@ -36,3 +36,10 @@ If you cannot solve the whole thing, solve the part you can. "Let me start with 
 > I haven't worked with that. Let me think through what I do know. [Pause.] If X is similar to Y, then I would expect Z — but I'm not sure that's right. Can you tell me whether I'm on the right track?
 
 The last sentence is the move. Interviewers can hand you a hint if you ask for one. Candidates who never ask for help are the ones who go silent.
+
+## When the interviewer is an AI
+
+The same moves apply to AI-moderated and AI-scored interviews, with two adjustments:
+
+- The AI may follow up on something you said in a way you cannot predict. The robust prep is to know the material — STAR stories, the project on your résumé, your two-minute summary — not to memorize answers. See [Behavioral interviews](../behavioral-interviews/) and [How to prepare for an interview in 7 days](../how-to-prepare-for-an-interview-in-7-days/).
+- The AI may not give you a hint, or it may give you a different kind of hint (a follow-up question that narrows the scope). If you cannot get clarification, name your interpretation, commit to it, and reason from there. See [AI-assisted interviews](../ai-assisted-interviews/) for the broader format-specific playbook.

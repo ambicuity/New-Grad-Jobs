@@ -43,3 +43,7 @@ If the recruiter gives you names, look each person up on LinkedIn. Two minutes p
 If they do not give you names, ask. "Is there anything I can read to prepare for who I'll meet?" is a normal question and recruiters usually answer it.
 
 Read [The interview process](../interview-process/) for the broader funnel and [Behavioral interviews](../behavioral-interviews/) for what the bar-raiser round is actually scoring.
+
+## When some rounds are AI and some are human
+
+It is increasingly common for one round of the loop to be AI-scored or AI-moderated while another is human-led. Treat each round with its own rules: the AI round's format-specific prep (read the invitation, run the pre-assessment checklist, debrief afterwards) and the human round's behavioral and technical prep. Don't optimize for the format you wish the company used. Optimize for the format they actually gave you. See [AI-assisted interviews](../ai-assisted-interviews/) for the workflow.
