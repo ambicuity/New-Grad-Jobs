@@ -1,18 +1,18 @@
 ---
 title: Why applications get rejected
-description: The eight most common reasons, what each one looks like from the employer's side, and what to fix.
+description: Possible reasons, what each one looks like from the employer's side, and what to fix.
 updated: 2026-09-30
 section: Résumé and applications
 order: 7
 ---
 
-A rejection email that says "we decided not to move forward" is usually honest but useless. Here are the most common reasons, in rough order of how often they happen, with what each one looks like from the employer's side and what to actually change.
+A rejection email that says "we decided not to move forward" is usually honest but useless. These are possible explanations and useful checks. A generic rejection does not identify the cause, and the list is not a ranking by frequency.
 
-## 1. The ATS filtered you out
+## 1. An eligibility answer did not meet the employer's rule
 
-The applicant tracking system never showed your résumé to a person. The most common triggers: missing the exact job title the system was searching for, a graduation date outside the window, or a work-authorization answer that did not match the role.
+Some employers configure automatic rejection from application answers, such as a required license or graduation window. [Greenhouse documents this mechanism](https://support.greenhouse.io/hc/en-us/articles/360000653472-Auto-reject); it is separate from résumé parsing. A missing exact title is not evidence that an ATS automatically rejected you.
 
-**Fix:** read the posting and mirror its exact words for skills, degree, and titles. Re-check the work-auth checkbox. See [An ATS-friendly résumé](../ats-friendly-resume/) and [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/).
+**Fix:** read the posting, describe relevant skills accurately, and check your eligibility answers. Do not change an honest answer to evade a screening rule. See [An ATS-friendly résumé](../ats-friendly-resume/) and [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/).
 
 ## 2. The résumé did not match the role
 
@@ -28,15 +28,15 @@ Many new grad programs hire on a rolling basis and close the requisition when th
 
 ## 4. The bar was higher than your profile
 
-Some companies only interview candidates with a target school, a specific prior internship, or a graduate degree. It is not personal; the role was not designed for you.
+An employer may need experience, a credential or a specialization you have not yet demonstrated. Another candidate may also fit the same requirements better. Check stated requirements rather than assuming an unpublished school filter.
 
 **Fix:** track where you actually get responses and weight your effort there. [Diagnose your job-search funnel](../diagnose-your-job-search-funnel/) explains how to read the pattern.
 
 ## 5. The résumé was hard to parse
 
-Two-column layouts, text boxes, scanned PDFs, missing dates, headings the parser did not recognize. The fields came out wrong and the recruiter saw gaps or "Other".
+Two-column layouts, text boxes, scanned PDFs, missing dates, headings the parser did not recognize. These can introduce extraction errors. Review autofilled fields; a parsing error does not necessarily prevent review of the attached résumé.
 
-**Fix:** export a plain PDF from a text editor, single column, standard headings.
+**Fix:** use the requested file type with selectable text, a simple layout and clear headings; review autofilled fields.
 
 ## 6. You did not follow the application instructions
 
@@ -52,4 +52,4 @@ Requisitions close, get put on hold, or get cancelled. Sometimes the rejection i
 
 ## What to take from a rejection email
 
-Almost nothing specific. The useful information is whether the rejection came from a person (slower, often with a sentence) or from the system (faster, often one line). System rejections on a well-tailored résumé are not data; rejections after a phone screen are. Keep applying.
+Record the outcome and the last stage reached. Email speed and template wording cannot reliably distinguish automatic screening from a human decision. Ask for feedback when appropriate, and use repeated patterns as hypotheses to investigate rather than proof of one cause.

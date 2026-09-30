@@ -6,7 +6,7 @@ section: AI and job search
 order: 2
 ---
 
-The fastest way to lose a job offer is to have the interviewer discover you cannot defend what you wrote. AI is fine when it speeds up something you would have done anyway; it is dangerous when it writes something you would not.
+Claims you cannot explain or verify can undermine your application. AI is fine when it speeds up something you would have done anyway; it is dangerous when it writes something you would not.
 
 ## What to delegate to AI
 
@@ -22,11 +22,11 @@ These are preparation and drafting tasks. The work is yours; the typing is share
 
 ### The résumé itself
 
-Do not have AI write your résumé from a blank prompt. It will invent metrics, projects, and tools you never used, and you will not catch them because you did not write them. Recruiters read a lot of résumés; AI-generated résumés have a tell. See [An ATS-friendly résumé](../ats-friendly-resume/) for what the parser and the recruiter both want.
+Do not have AI write your résumé from a blank prompt. It may invent metrics, projects, or tools. Start with your own evidence and verify every claim rather than relying on assumptions about whether a recruiter can detect AI writing. See [An ATS-friendly résumé](../ats-friendly-resume/) for what the parser and the recruiter both want.
 
 ### Job applications sent without reading them
 
-Bulk-applying through AI is the worst of both: more applications of lower quality. The data consistently shows mass applications get a much lower response rate, because recruiters see the same patterns. See [Application strategy](../application-strategy/) for what to spend your time on.
+Review each application before submission. Automation can send unsuitable applications, inaccurate eligibility answers, or duplicate submissions; application volume alone does not establish quality or explain response rates. See [Application strategy](../application-strategy/) for what to spend your time on.
 
 ### Cover letters that are not yours
 
@@ -34,7 +34,7 @@ A cover letter that is not in your voice is not a cover letter; it is a letter f
 
 ### Answers in interviews
 
-AI-assisted coding tools during an interview, where you are not allowed to use them, is misrepresentation. The tools employers permit are spelled out in advance; the ones they do not are easy to detect. If the loop says "no AI tools," that means you.
+AI-assisted coding tools during an interview, where you are not allowed to use them, is misrepresentation. Check the employer's instructions and ask when permission is unclear; detection capabilities vary and do not determine whether conduct is permitted. If the loop says "no AI tools," that means you.
 
 ### Sponsorship and visa answers
 
@@ -46,7 +46,7 @@ The line is whether you can defend every claim in the interview that follows. If
 
 ## If you used AI
 
-If an interviewer asks "did you use AI to help with this?" the honest answer is the right one. "I used it to rewrite my bullets for clarity and I verified every line" is a stronger answer than "I didn't use any tools". Most interviewers are not looking to disqualify a candidate who prepared well; they are looking to disqualify a candidate who cannot defend their own résumé.
+If an interviewer asks "did you use AI to help with this?" the honest answer is the right one. "I used it to rewrite my bullets for clarity and I verified every line" is a stronger answer than "I didn't use any tools". The employer's policy governs permitted use and any disclosure requirements. [Microsoft](https://careers.microsoft.com/v2/global/en/hiring-tips.html) and [Anthropic](https://www.anthropic.com/candidate-ai-guidance) publish examples of how preparation differs from assistance during assessments.
 
 ## A note about AI in the interview itself
 

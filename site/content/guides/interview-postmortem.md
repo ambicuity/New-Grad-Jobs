@@ -22,54 +22,40 @@ Fill it in after every interview and assessment — including ones you passed. P
 
 Copy this into your tracker (a spreadsheet, a note, a doc). One row per interview.
 
-```text
-COMPANY
-ROLE
-DATE
-STAGE                     (recruiter screen / assessment / technical / behavioral / final)
-FORMAT                    (live human / AI-scored recorded / AI conversational /
-                            live coding / take-home / work sample / mixed)
-PLATFORM                  (HireVue / HackerRank / CoderPad / Zoom / other)
-DURATION
-
-WHAT I EXPECTED
-What I thought this interview would be.
-
-WHAT ACTUALLY HAPPENED
-The format, the questions, the pacing, the rules.
-
-QUESTIONS THAT SURPRISED ME
-List them. Note why each was a surprise.
-
-WHERE I HESITATED
-Moments I stalled, gave a vague answer, or went silent.
-
-RECURRING TECHNICAL GAPS
-Concepts I forgot, APIs I had to look up, data structures I couldn't recall.
-
-COMMUNICATION
-Did I explain my reasoning clearly? Was I too fast or too slow?
-
-TIME MANAGEMENT
-Did I run out of time? Did I finish too early?
-
-WHAT I MISUNDERSTOOD
-Prompts I read wrong, constraints I missed, instructions I followed incorrectly.
-
-RULES I FOLLOWED
-Tools I used. Tools I avoided. Whether I complied with the AI policy and rules.
-
-WHAT I WOULD DO DIFFERENTLY
-Specific moves, not vague goals.
-
-ONE TO THREE IMPROVEMENTS
-1.
-2.
-3.
-
-WHAT I WILL PRACTICE NEXT
-Concrete sessions, with a count or a deadline.
-```
+- COMPANY
+- ROLE
+- DATE
+- STAGE                     (recruiter screen / assessment / technical / behavioral / final)
+- FORMAT                    (live human / AI-scored recorded / AI conversational /
+- live coding / take-home / work sample / mixed)
+- PLATFORM                  (HireVue / HackerRank / CoderPad / Zoom / other)
+- DURATION
+- WHAT I EXPECTED
+- What I thought this interview would be.
+- WHAT ACTUALLY HAPPENED
+- The format, skill areas, pacing, and rules. Respect confidentiality restrictions on retaining question text.
+- QUESTIONS THAT SURPRISED ME
+- List them. Note why each was a surprise.
+- WHERE I HESITATED
+- Moments I stalled, gave a vague answer, or went silent.
+- RECURRING TECHNICAL GAPS
+- Concepts I forgot, APIs I had to look up, data structures I couldn't recall.
+- COMMUNICATION
+- Did I explain my reasoning clearly? Was I too fast or too slow?
+- TIME MANAGEMENT
+- Did I run out of time? Did I finish too early?
+- WHAT I MISUNDERSTOOD
+- Prompts I read wrong, constraints I missed, instructions I followed incorrectly.
+- RULES I FOLLOWED
+- Tools I used. Tools I avoided. Whether I complied with the AI policy and rules.
+- WHAT I WOULD DO DIFFERENTLY
+- Specific moves, not vague goals.
+- ONE TO THREE IMPROVEMENTS
+- 1.
+- 2.
+- 3.
+- WHAT I WILL PRACTICE NEXT
+- Concrete sessions, with a count or a deadline.
 
 The fields below the line are the ones that drive improvement. The fields above it are the ones that let you spot patterns across interviews.
 
@@ -83,30 +69,22 @@ Choose one to three improvements from the bottom of the template. Do not try to 
 
 Look across the rows. Patterns emerge that no single interview can show:
 
-- **Same format, different outcomes.** If you are doing well on live human rounds but poorly on AI conversational ones, the format is the variable. Practice that format specifically.
+- **Same format, different outcomes.** If outcomes differ across formats, investigate format practice alongside role difficulty, eligibility, and other differences. Practice that format specifically.
 - **Same stage, same reason for rejection.** If you reach the technical round repeatedly and lose it on the same type of problem, that is a concrete practice target.
 - **Same communication gap across interviews.** If "where I hesitated" is consistently "when I had to explain trade-offs", that is a single STAR-interview fix, not twelve.
-- **Time-management pattern.** If you consistently run out of time on the last problem, that is a sequencing fix, not a knowledge fix.
+- **Time-management pattern.** If you consistently run out of time on the last problem, try sequencing and time-management practice, while checking whether knowledge gaps also contributed.
 
 ### After ten to twenty interviews
 
 Build the funnel from the data. See [Diagnose your job-search funnel](../diagnose-your-job-search-funnel/) for what to do with it. The basic counts:
 
-```text
-Applications
-    ↓
-Recruiter screens
-    ↓
-Assessments
-    ↓
-Technical interviews
-    ↓
-Behavioral interviews
-    ↓
-Final rounds
-    ↓
-Offers
-```
+- Applications
+- Recruiter screens
+- Assessments
+- Technical interviews
+- Behavioral interviews
+- Final rounds
+- Offers
 
 The conversion rate between each stage tells you where the work should go. A 2% screen rate with a 50% technical-to-offer rate is a different problem from a 20% screen rate with a 0% technical-to-offer rate. The fix for each is different.
 
@@ -117,7 +95,7 @@ The conversion rate between each stage tells you where the work should go. A 2% 
 - Whether the recruiter went on leave
 - Whether the format was a bad match for you
 
-These are real reasons a search is hard in 2026, and they are not under your control. Do not mistake them for things to fix. See [The market is part of the equation](../ai-assisted-interviews/#the-market-is-part-of-the-equation) in the AI-assisted interviews guide for the wider framing.
+These are real reasons a search is hard in 2026, and they are not under your control. Do not mistake them for things to fix. See [The market is part of the equation](../ai-assisted-interviews/) in the AI-assisted interviews guide for the wider framing.
 
 ## What you can learn from a rejection
 
@@ -132,24 +110,17 @@ These are under your control. They are the parts to record.
 
 ## The interview postmortem as a habit
 
-The first postmortem you do will feel slow. The tenth will take five minutes. Keep doing them. The candidates who improve fastest are the candidates who have a record of what happened and what they changed. The candidates who improve slowest are the ones who try to remember it all from a feeling.
+The first postmortem you do will feel slow. The tenth will take five minutes. Keep doing them. A written record helps you compare observations and check whether your changes addressed a recurring gap.
 
 ## Where this connects
 
 The loop below is the message of this guide section, applied end to end:
 
-```text
-Application strategy
-    ↓
-Interview
-    ↓
-Post-interview postmortem
-    ↓
-Diagnose funnel
-    ↓
-Adjust preparation
-    ↓
-Next application / interview
-```
+- Application strategy
+- Interview
+- Post-interview postmortem
+- Diagnose funnel
+- Adjust preparation
+- Next application / interview
 
 Each arrow is a thing you do, not a thing you hope for. See [Application strategy](../application-strategy/) for the upstream funnel and [AI-assisted interviews and modern hiring assessments](../ai-assisted-interviews/) for the broader philosophy.

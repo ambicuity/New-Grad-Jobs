@@ -14,11 +14,11 @@ The core areas:
 
 - **Classical ML fundamentals.** Bias-variance, train/validation/test splits, regularization, what cross-validation does and does not tell you. When to use which model family.
 - **Applied ML.** Feature engineering for tabular data, evaluation metrics for the problem (not the model), the data leakage patterns that quietly inflate your validation score.
-- **Statistics.** Probability, sampling, hypothesis tests, confidence intervals. The level tested is "what does this number actually mean", not "derive this from scratch".
+- **Statistics.** Probability, sampling, hypothesis tests, confidence intervals. Be able to interpret results; mathematical derivations may also matter for research and modeling roles.
 - **Coding.** SQL for data manipulation, Python for prototyping, sometimes a small algorithms question. See [SQL interview preparation](../sql-interview-preparation/) and [LeetCode roadmap for new grads](../leetcode-roadmap-for-new-grads/).
 - **Communication.** Translating a vague business question into an ML problem, and translating an ML answer back into a decision.
 
-## What is not usually tested at new grad level
+## Topics whose depth depends on the role
 
 - Deriving backprop from scratch on the whiteboard.
 - Reciting transformer architecture from memory.
@@ -26,6 +26,8 @@ The core areas:
 - Specific vendor products.
 
 If the role is research-oriented (foundations, applied research, post-training), the depth shifts toward the theoretical side; ask the recruiter what the round actually scores.
+
+For LLM-focused roles, also prepare evaluation datasets, baselines, hallucination and grounding checks, retrieval quality, privacy, prompt injection, latency, and cost. Treat these as role-dependent topics rather than requirements for every ML interview.
 
 ## How to prepare
 
@@ -35,7 +37,7 @@ If the role is research-oriented (foundations, applied research, post-training),
 
 ## How to talk about projects
 
-Interviewers at this level care about whether you can reason about a model in production, not whether you can recite its loss function. For each project, prepare:
+Prepare both the fundamentals behind your model and the decisions needed to evaluate and operate it. For each project, prepare:
 
 - The business question, in plain English.
 - The data you had, what was missing, and what you would do differently.
@@ -43,4 +45,4 @@ Interviewers at this level care about whether you can reason about a model in pr
 - The failure mode that worried you most.
 - What you would change with two more weeks.
 
-That last sentence — "what I would change" — is the strongest signal at new grad level. See [Behavioral interviews](../behavioral-interviews/) for the broader STAR structure when you have a non-ML story to tell.
+Explaining what you would change helps demonstrate reflection and technical judgment. See [Behavioral interviews](../behavioral-interviews/) for the broader STAR structure when you have a non-ML story to tell.

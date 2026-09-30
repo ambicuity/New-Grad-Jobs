@@ -1,7 +1,7 @@
 ---
 title: New grad projects that count
 description: What a hiring team actually looks for in a project, how to present one, and the kinds that do not help.
-updated: 2026-09-25
+updated: 2026-09-30
 section: Résumé and applications
 order: 4
 ---
@@ -16,7 +16,7 @@ Finished beats ambitious. A small tool that works, has a README, and handles the
 
 ## Kinds that help
 
-- **Something you or someone else actually uses.** A script that runs weekly, a tool a club uses, a site with real visitors. Use is the strongest signal, and it gives you honest numbers for the résumé.
+- **Something you or someone else actually uses.** A script that runs weekly, a tool a club uses, a site with real visitors. Real use gives useful evidence, and it gives you honest numbers for the résumé.
 - **A contribution to an existing project.** A merged change to an open-source project shows you can read other people's code, follow conventions and take review. Even a small fix counts; link the pull request.
 - **A project in the target role's domain.** For data roles, a real dataset with a written-up analysis. For infrastructure, something deployed with monitoring. For design, a case study with the decisions explained.
 - **A hard thing you understood.** Implementing a known algorithm or protocol from a specification, with tests, shows depth. The [Computer Science course](https://course-computer-science.riteshrana.engineer/) and the [Computer Networks course](https://course-computer-networks.riteshrana.engineer/), both free and open source from this board's maintainer, are built around this: each lesson has you implement a real system (an allocator, a B-tree, a TCP state machine, a DNS resolver) and compare it with production source, and a finished phase is a project you can explain in depth.
@@ -32,7 +32,7 @@ Finished beats ambitious. A small tool that works, has a README, and handles the
 
 On the résumé: name, one line on what it does and for whom, the stack, and one bullet on a decision or a result. See [Résumé bullet points](../resume-bullet-points/).
 
-In the repository: a README that says what it is, how to run it, and what you would do next. A screenshot if there is a screen. Tests if there is logic. A license. Commit history that shows the work happened over time, because a single "initial commit" of a whole project looks like a copy.
+In the repository: a README that says what it is, how to run it, and what you would do next. A screenshot if there is a screen. Tests if there is logic. A suitable license if you intend to permit reuse, subject to ownership and third-party requirements. Commit history that shows the work happened over time, when it helps explain your decisions. A single initial commit alone does not establish whether work is original.
 
 In an interview: be ready to draw the architecture, explain the hardest bug, and say what you would change. Interviewers pick the project on the résumé they find most interesting and go deep; choose projects you would enjoy being questioned on.
 

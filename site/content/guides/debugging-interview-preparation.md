@@ -28,16 +28,18 @@ Debugging rounds are common at backend, platform, infrastructure, and ML-platfor
 ## How to practice without a real codebase
 
 - Pick any open-source repo in a language you know. Open a file at random. Read it out loud as if you were about to debug it. State what it does in one sentence. State what you would test first.
-- Use [The Python Bug Fixer](https://www.codewars.com/) or similar small programs that contain one deliberate bug. Time yourself: ten minutes per bug.
+- Use small buggy programs you or a practice partner create; keep the expected behavior and a reproducible failing case. Time yourself: ten minutes per bug.
 - Read other people's bug reports on GitHub Issues. Most issues are debugging write-ups in disguise. Note the structure: problem, repro, hypothesis, fix, regression test.
 - Pair with another candidate. Take a program, swap it for a buggy version, and time-box the other person to find the bug.
 
-## What is not on the test
+## Topics that depend on the role
 
 - Deep knowledge of a specific debugger.
 - Reading hex dumps.
 - Production tracing systems.
-- Recompiling or building anything.
+- Build-system and dependency failures.
+
+Any of these may appear in a systems, embedded, or production-support interview. Check the brief rather than excluding them automatically.
 
 ## How this connects to the rest of the prep
 

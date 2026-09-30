@@ -47,51 +47,38 @@ The instructions for your specific assessment are the source of truth. Do not as
 
 Use this process for every interview.
 
-```text
-1. IDENTIFY the format
-       ↓
-2. READ THE RULES
-       ↓
-3. UNDERSTAND WHAT IS BEING EVALUATED
-       ↓
-4. PREPARE FOR THAT FORMAT
-       ↓
-5. PRACTICE UNDER THE SAME CONSTRAINTS
-       ↓
-6. COMPLETE THE ASSESSMENT
-       ↓
-7. RECORD WHAT HAPPENED
-       ↓
-8. IDENTIFY THE WEAKNESS
-       ↓
-9. CHANGE YOUR PREPARATION
-       ↓
-10. TRY AGAIN
-```
+- 1. IDENTIFY the format
+- 2. READ THE RULES
+- 3. UNDERSTAND WHAT IS BEING EVALUATED
+- 4. PREPARE FOR THAT FORMAT
+- 5. PRACTICE UNDER THE SAME CONSTRAINTS
+- 6. COMPLETE THE ASSESSMENT
+- 7. RECORD WHAT HAPPENED
+- 8. IDENTIFY THE WEAKNESS
+- 9. CHANGE YOUR PREPARATION
+- 10. TRY AGAIN
 
-This is the part most candidates skip. They receive a rejection and immediately start another 50 LeetCode problems. If the previous interview was actually a behavioral interview, an AI screening interview, a system-design discussion, or a communication problem, those 50 problems may not address what went wrong.
+Review the previous interview before choosing your next practice task. If it assessed behavior, communication or system design, more algorithm problems may not address the skill you need to improve. A rejection alone does not identify that skill; use your observations and any feedback.
 
 ## Step 1: identify the interview format
 
 Create a small record for every interview before you prepare.
 
-| Field                      | Your answer |
-| -------------------------- | ----------- |
-| Company                    |             |
-| Role                       |             |
-| Interview stage            |             |
-| Platform                   |             |
-| Live / asynchronous        |             |
-| Human / AI / hybrid        |             |
-| Duration                   |             |
-| Questions                  |             |
-| Coding required            |             |
-| AI allowed                 |             |
-| External resources allowed |             |
-| Recording                  |             |
-| Webcam required            |             |
-| Screen sharing             |             |
-| Preparation deadline       |             |
+- Company: fill in before starting.
+- Role: fill in before starting.
+- Interview stage: fill in before starting.
+- Platform: fill in before starting.
+- Live / asynchronous: fill in before starting.
+- Human / AI / hybrid: fill in before starting.
+- Duration: fill in before starting.
+- Questions: fill in before starting.
+- Coding required: fill in before starting.
+- AI allowed: fill in before starting.
+- External resources allowed: fill in before starting.
+- Recording: fill in before starting.
+- Webcam required: fill in before starting.
+- Screen sharing: fill in before starting.
+- Preparation deadline: fill in before starting.
 
 The purpose is simple: **prepare for the interview you actually have, not the interview you had at another company.** See [Interview tool policies](../interview-tool-policies/) for how to find the rules for each platform.
 
@@ -193,17 +180,11 @@ Practice:
 
 Practice the actual workflow:
 
-```text
-Understand
-    ↓
-Plan
-    ↓
-Execute
-    ↓
-Validate
-    ↓
-Explain
-```
+- Understand
+- Plan
+- Execute
+- Validate
+- Explain
 
 For the take-home specifically, see [Take-home and work-sample assessments](../take-home-assessments/).
 
@@ -244,7 +225,7 @@ Do not panic. Use the same structure you would use with a human interviewer:
 
 For example: "Let me make sure I understand the scenario. You're asking how I would handle X when Y is already happening. I'll start with the immediate constraint, then I'll explain the longer-term approach."
 
-You are not being graded on producing a perfect sentence immediately. You are demonstrating how you think.
+Focus on giving a clear answer within the stated constraints. The scoring rubric and whether the system supports clarification vary.
 
 ## What if you fail?
 
@@ -256,21 +237,13 @@ A reusable postmortem template is in [How to learn from every interview](../inte
 
 After ten to twenty interviews and assessments, you should have your own data. Track:
 
-```text
-Applications
-    ↓
-Recruiter screens
-    ↓
-Assessments
-    ↓
-Technical interviews
-    ↓
-Behavioral interviews
-    ↓
-Final rounds
-    ↓
-Offers
-```
+- Applications
+- Recruiter screens
+- Assessments
+- Technical interviews
+- Behavioral interviews
+- Final rounds
+- Offers
 
 Then calculate where the funnel is breaking. For example, 100 applications → 12 recruiter screens → 7 assessments → 4 technical interviews → 2 final loops → 0 offers tells you something very different from "I cannot get a job." It tells you that you are getting through the application funnel but need to investigate what happens later.
 
@@ -298,19 +271,12 @@ An offer is the final outcome, but it is not the only useful measurement. Track:
 
 That creates a feedback loop:
 
-```text
-Attempt
-  ↓
-Evidence
-  ↓
-Diagnosis
-  ↓
-Practice
-  ↓
-Better attempt
-  ↓
-New evidence
-```
+- Attempt
+- Evidence
+- Diagnosis
+- Practice
+- Better attempt
+- New evidence
 
 That is how you improve during a difficult market.
 
@@ -326,50 +292,15 @@ You control preparation, application quality, interview practice, communication,
 
 Treat it like engineering. Define:
 
-```text
-Input → Process → Output → Evidence → Change
-```
+1. Record your inputs and target roles.
+2. Describe the approach you used.
+3. Record actual outcomes.
+4. Review the evidence and its limits.
+5. Choose one change to test next.
 
-For example:
+For applications, record which eligible roles you targeted, how you tailored the résumé and whether you used a referral. Record actual recruiter responses and application ages. Compare comparable groups before changing your targeting or outreach; there is no universal screen-rate benchmark.
 
-```text
-INPUT
-50 targeted applications
-
-PROCESS
-Tailored résumé + referral outreach
-
-OUTPUT
-3 recruiter screens
-
-EVIDENCE
-6% screen rate
-
-CHANGE
-Improve targeting + networking
-
-NEXT EXPERIMENT
-50 new targeted applications
-```
-
-Or:
-
-```text
-INPUT
-5 technical interviews
-
-OUTPUT
-0 offers
-
-EVIDENCE
-Repeated weakness in debugging questions
-
-CHANGE
-Add debugging practice
-
-NEXT EXPERIMENT
-10 debugging-focused sessions
-```
+For interviews, record the actual formats and outcomes. If your notes repeatedly show difficulty with debugging questions, choose a debugging practice task and evaluate it in your next mock. An outcome alone cannot prove why an employer rejected you.
 
 Do not randomly change everything after every rejection. **Change one or two variables, measure again, and learn.**
 
@@ -381,7 +312,7 @@ You may follow the entire process and still receive rejection after rejection. T
 
 If the answer is something useful, record it. Then improve.
 
-The strongest candidates are not necessarily the people who never struggle. They are the people who can turn each attempt into better preparation for the next one.
+Use what you observed to choose a concrete practice task for your next attempt.
 
 ## Related guides
 

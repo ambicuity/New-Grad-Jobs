@@ -1,16 +1,16 @@
 ---
 title: How job data is collected
 description: Where every posting on this board comes from, how often the scraper runs, and what happens when a source fails.
-updated: 2026-09-25
+updated: 2026-09-30
 section: NGJ data
 order: 1
 ---
 
-Every job on this board was fetched by a program from a company's own career site or from Indeed, within the last few hours. Nobody submits postings, nobody edits them, and nothing is stored anywhere except as published files. This page describes that pipeline; the code is open source on [GitHub](https://github.com/ambicuity/New-Grad-Jobs) and the [about page](../../about/) shows the live figures.
+Jobs on this board are fetched by a program from configured company career sites and Indeed. The published data can become stale if a run fails; check the run timestamp on the [about page](../../about/) rather than assuming every posting was fetched within the last few hours. The site serves static published files, with no application server or database. The pipeline is open source on [GitHub](https://github.com/ambicuity/New-Grad-Jobs).
 
 ## Sources
 
-Four applicant tracking systems publish public job APIs, and most employers with a serious campus program use one of them:
+The scraper has adapters for four applicant tracking systems:
 
 - **Greenhouse**, **Lever** and **Ashby** expose a JSON list of open jobs per company board.
 - **Workday** exposes a search endpoint per tenant, queried page by page.

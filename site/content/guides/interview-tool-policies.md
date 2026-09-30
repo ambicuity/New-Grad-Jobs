@@ -14,7 +14,7 @@ For the broader format landscape, see [AI-assisted interviews](../ai-assisted-in
 
 ## Where the rules live
 
-In rough order of how often they appear:
+Check these places:
 
 1. The **invitation email** — usually states the format and any non-default tool rules.
 2. The **candidate instructions page** — the platform's pre-assessment page, which usually has an "allowed tools" or "AI policy" section.
@@ -26,7 +26,7 @@ If you have read the first three and the rules are still ambiguous, that is the 
 
 ## The questions to answer before you start
 
-The list below is a checklist you should be able to fill in completely before any interview round begins. See [AI-assisted interviews](../ai-assisted-interviews/) for the same list as part of the broader pre-assessment workflow.
+Use the list below to identify the requirements that apply to your round. See [AI-assisted interviews](../ai-assisted-interviews/) for the same list as part of the broader pre-assessment workflow.
 
 - What **platform** is this on? (HireVue, Modern Hire, Pymetrics, CoderPad, HackerRank, CodeSignal, Workday, Greenhouse, Zoom, Teams, an internal tool.)
 - Is this **live** or **asynchronous**?
@@ -41,17 +41,13 @@ The list below is a checklist you should be able to fill in completely before an
 - Are follow-up questions **adaptive**?
 - What happens if the **platform fails**? Who do you contact?
 
-## Common defaults you can rely on
+## Examples checked on September 30, 2026
 
-A few patterns hold often enough to be useful defaults, but you should still check:
+There is no universal 2026 interview tool policy. [Microsoft's candidate code of conduct](https://careers.microsoft.com/v2/global/en/hiring-tips.html) encourages responsible AI use in preparation and requires candidates to demonstrate their own skills during assessments and interviews unless assistance is explicitly permitted. [Anthropic's candidate guidance](https://www.anthropic.com/candidate-ai-guidance), last updated July 10, 2025, likewise permits preparation and refinement but requires explicit permission for AI during take-homes and live interviews.
 
-- Coding assessments: AI is usually **not allowed** unless the platform says so.
-- Live coding interviews: AI is usually **not allowed**, and the platform often blocks browser navigation.
-- Take-home assessments: AI may be allowed. Read the brief.
-- Recorded behavioral interviews: AI assistance during the recording is almost never appropriate.
-- Recruiter screens: a quiet space and a working microphone; no other tools required.
+[CoderPad's AI Assist documentation](https://coderpad.io/resources/docs/interview/pads/interview-ai-assist/) describes settings controlled by the interviewer for each pad. [HackerRank's candidate documentation](https://candidatesupport.hackerrank.com/articles/7634558376-ai-assistant-in-tests) describes an integrated assistant for tests where it is enabled. A visible feature does not authorize external tools. Confirm the permitted tools and scope for your specific round.
 
-These defaults change with the company and the year. The invitation is the source of truth.
+If permission is unclear, ask before using AI assistance. If you cannot get clarification in time, complete the round independently or request a reschedule. Ask early about accessibility accommodations and approved assistive technology.
 
 ## How to ask the recruiter
 
@@ -67,4 +63,4 @@ That is enough information to answer, no clarification needed. If the recruiter 
 
 ## What to do if you make a mistake
 
-If you used a tool that turned out to be disallowed, the move is to disclose it immediately, in writing, to the recruiter. Most employers treat the disclosure as a strong positive signal; misrepresenting it later is what costs candidates the offer. See [AI-assisted applications: what not to automate](../ai-applications-what-not-to-automate/) for the broader principle: the line is whether you can defend every action in the interview that follows.
+If you used a tool that turned out to be disallowed, the move is to disclose it immediately, in writing, to the recruiter. Explain what happened and ask how to proceed. Disclosure does not guarantee another attempt or prevent disqualification; the employer decides under its policy. See [AI-assisted applications: what not to automate](../ai-applications-what-not-to-automate/) for the broader principle: the line is whether you can defend every action in the interview that follows.

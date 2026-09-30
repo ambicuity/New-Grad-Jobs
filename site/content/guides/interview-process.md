@@ -6,7 +6,7 @@ section: Interviews
 order: 1
 ---
 
-Entry-level interview loops are more standardized than any other kind, because employers run them at volume. Knowing the stages lets you prepare for the right one at the right time instead of everything at once. Knowing that each stage can take several formats — human or AI, live or asynchronous, with or without permitted AI tooling — lets you match your preparation to the actual evaluation, not the one you wish the employer had given you.
+Some employers use standardized cohort hiring, while others adapt interviews by role and team. Knowing the stages lets you prepare for the right one at the right time instead of everything at once. Knowing that each stage can take several formats — human or AI, live or asynchronous, with or without permitted AI tooling — lets you match your preparation to the actual evaluation, not the one you wish the employer had given you.
 
 ## The stages
 
@@ -18,12 +18,12 @@ Entry-level interview loops are more standardized than any other kind, because e
 
 ## The format matrix
 
-Any single stage can be run in any of these ways. The same role at two different employers may use different combinations, and the rules change with each platform and each employer.
+Stages may combine the formats below. The same role at two different employers may use different combinations, and the rules change with each platform and each employer.
 
 - **Human-led** — the traditional format. A person is on the other end, real-time.
 - **AI-mediated** — a chatbot or voice assistant runs the conversation. Follow-ups may be adaptive.
 - **AI-assisted** — a human runs the loop but an AI tool is permitted or expected on the candidate side.
-- **Automated** — no human in the loop; a model scores a recorded or typed response.
+- **Automated scoring** — software evaluates tests or responses; this does not tell you whether a human reviews the result or makes the hiring decision.
 - **Asynchronous** — you complete the round on your own time within a window, with no live counterpart.
 - **Hybrid** — a mix within the same round (e.g., a human interviewer plus an AI coding assistant in a shared editor).
 - **Take-home** — an open-ended deliverable, usually with a stated time budget.
@@ -51,4 +51,4 @@ Interviews cluster. When you have an offer from one company and are mid-loop at 
 
 ## After a rejection
 
-Ask for feedback; a minority of employers give it, and it is worth the one-line email. Note which stage and which format you reached. Rejected at review means résumé; at a coding assessment means practice; at an AI-scored screen means the format-specific signal was weak; at final round means it was close, and reapplying next cycle is normal and often welcome.
+Ask for feedback; a minority of employers give it, and it is worth the one-line email. Note which stage and which format you reached. A rejection stage identifies where to investigate; it does not prove why you were rejected. Consider role fit, eligibility, demonstrated skills, and employer-side changes. Reapply only when the employer's waiting period and eligibility rules permit it.

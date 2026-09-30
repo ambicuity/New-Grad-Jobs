@@ -1,16 +1,16 @@
 ---
 title: Finding hidden new grad roles
 description: Using WIDEN SCOPE and the EXPLORE tab to see the postings the strict rules leave out, with your own signals.
-updated: 2026-09-25
+updated: 2026-09-30
 section: Understanding jobs
 order: 4
 ---
 
-The board's rules are strict on purpose, and strict rules have misses. A "Software Engineer" at a startup with no level in the title, a role posted 70 days ago that is still open, a "Rust Engineer" whose description never says "new grad". Two features let you look past the rules without the board pretending those roles meet them.
+The board's title-based rules can miss an unlevelled role without a configured signal or move a still-open posting to the near-miss tier because it is 70 days old. Two features let you look past those rules and check the employer's actual requirements.
 
 ## WIDEN SCOPE
 
-Under the filters is a group of toggles. Each one adds back postings that failed exactly one soft rule:
+Under the filters is a group of toggles for postings that passed the hard rules but failed one or more soft rules:
 
 - **internships & co-ops**: internships, co-ops, student placements and summer programs
 - **level III+**: titles at level III or higher
@@ -38,4 +38,4 @@ An EXPLORE result is a lead, not a verdict. Open the posting and read the requir
 
 ## When to use which
 
-Use WIDEN SCOPE when you want the board's judgment with one rule relaxed: you are open to co-ops, or you will relocate abroad. Use EXPLORE when you disagree with the rules, or when you are hunting in a niche (a language, a domain, a company) where the entry-level signal is often missing from the title.
+Use WIDEN SCOPE when you want to relax selected soft rules: you are open to co-ops, or you will relocate abroad. Enable every reason a posting fails. Use EXPLORE when you disagree with the hard rules, or when you are hunting in a niche where an entry-level signal may be missing from the title.

@@ -1,5 +1,5 @@
 // Guides (Markdown → /guides/<slug>/) and the /about/ page (health.json → facts).
-import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import { mkdir, mkdtemp, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -9,11 +9,45 @@ import { aboutFacts, renderAboutPage } from '../scripts/seo/about.mjs';
 import { generateSeo } from '../scripts/seo/generate.mjs';
 import { PRERENDER_MARKER } from '../scripts/seo/render.mjs';
 import { escapeHtml } from '../scripts/seo/text.mjs';
+import { parseFrontMatter } from '../scripts/seo/markdown.mjs';
 
 const SITE = 'https://jobs.example.test';
 const quiet = { log: () => {}, warn: () => {} };
 const ldBlocks = (html) => [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1]);
 const GUIDE = '---\ntitle: Reading a posting <carefully>\ndescription: Levels & signals\nupdated: 2026-09-25\nsection: Understanding jobs\norder: 2\n---\n# Reading a posting\n\nSome **bold** text and a [link](../../jobs/).\n\n## Levels\n\n- I and II\n';
+
+describe('published guide content', () => {
+  it('uses supported Markdown, valid metadata and existing guide links', async () => {
+    const dir = new URL('../content/guides/', import.meta.url);
+    const names = (await readdir(dir)).filter((name) => name.endsWith('.md'));
+    expect(names.length).toBeGreaterThan(0);
+    const slugs = new Set(names.map((name) => name.slice(0, -3)));
+    const issues = [];
+    for (const name of names) {
+      if (!/^[a-z0-9]+(?:-[a-z0-9]+)*\.md$/.test(name)) issues.push(`${name}: invalid guide slug`);
+      const { meta, body } = parseFrontMatter(await readFile(new URL(name, dir), 'utf8'));
+      for (const key of ['title', 'description', 'updated', 'section', 'order']) {
+        if (!meta[key]) issues.push(`${name}: missing ${key}`);
+      }
+      if (!SECTION_ORDER.includes(meta.section)) issues.push(`${name}: unknown section`);
+      if (!/^\d+$/.test(meta.order || '')) issues.push(`${name}: invalid order`);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(meta.updated || '') || !Number.isFinite(Date.parse(meta.updated))
+        || new Date(meta.updated).toISOString().slice(0, 10) !== meta.updated) {
+        issues.push(`${name}: invalid updated date`);
+      }
+      if (/^\s*(?:`{3}|~{3}|\||#{4,}\s)/m.test(body)) issues.push(`${name}: unsupported Markdown`);
+      for (const [, target] of body.matchAll(/\]\(([^\s)]+)\)/g)) {
+        const url = new URL(target, `https://jobs.example.test/guides/${name.slice(0, -3)}/`);
+        if (url.origin !== 'https://jobs.example.test' || !url.pathname.startsWith('/guides/')) continue;
+        const slug = url.pathname.slice('/guides/'.length).replace(/\/$/, '');
+        if (slug && !slugs.has(slug)) issues.push(`${name}: missing guide ${slug}`);
+        // Guide headings currently have no ids, so fragment links cannot resolve.
+        if (url.hash) issues.push(`${name}: unsupported guide fragment ${url.hash}`);
+      }
+    }
+    expect(issues).toEqual([]);
+  });
+});
 
 describe('loadGuides', () => {
   let dir;

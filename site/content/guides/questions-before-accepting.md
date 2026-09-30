@@ -1,12 +1,12 @@
 ---
 title: Questions to ask before accepting
 description: Twenty questions for the recruiter and hiring manager whose answers change whether a new grad offer is a good one.
-updated: 2026-09-25
+updated: 2026-09-30
 section: Offers
 order: 5
 ---
 
-Once an offer is on the table you have more leverage to ask questions than at any other point, and the answers are the last information you will get before you commit a year or more. Ask them. Employers expect it, and a hesitant answer is itself information.
+Once an offer is on the table you have more leverage to ask questions than at any other point, and the answers help you understand the written terms and remaining uncertainties before accepting. Ask them. Employers expect it, and a hesitant answer is itself information.
 
 ## About the work
 
@@ -22,7 +22,7 @@ Once an offer is on the table you have more leverage to ask questions than at an
 7. How many people are on the team, and how many are in their first or second year?
 8. How are new graduates onboarded: a program, a buddy, or learn as you go?
 9. How often will I get feedback, and in what form?
-10. Who left the team in the last year, and why? (Ask the manager; a good one answers.)
+10. What has team turnover been like, and how has it affected the role? Ask about patterns rather than other employees’ private circumstances.
 
 ## About growth and pay
 
@@ -37,7 +37,7 @@ Once an offer is on the table you have more leverage to ask questions than at an
 16. What is the remote or hybrid policy for this role, and is it a policy or a manager's preference?
 17. Is the start date flexible?
 18. What does relocation cover, and when is it paid?
-19. For international candidates: are you enrolled in E-Verify, and what is your policy on future sponsorship? See [OPT and STEM OPT](../opt-and-stem-opt/).
+19. For international candidates: can you support my current authorization and future immigration needs? For U.S. STEM OPT, confirm E-Verify and Form I-983 participation; for Canada or India, ask about the applicable permit or visa process. See [OPT and STEM OPT](../opt-and-stem-opt/).
 20. For startups: how much runway do you have, and what happens to this role if the next round does not close?
 
 ## How to ask

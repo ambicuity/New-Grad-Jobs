@@ -6,7 +6,7 @@ section: Interviews
 order: 6
 ---
 
-A week is enough to prepare for a new grad interview if you stop trying to prepare for everything. The loop is fixed; the schedule below handles it.
+A week can help you organize and prioritize preparation; how much you can improve depends on your starting point and the confirmed interview format. Adapt this example schedule to the role.
 
 ## Day 1: read the posting and write down the role
 
@@ -29,9 +29,9 @@ Write down your two-minute "tell me about yourself" answer. End it with what you
 
 Write six stories using the STAR structure (Situation, Task, Action, Result, Reflection). Cover conflict, failure, ownership, learning, teamwork, and ambiguity. Reuse one story for two or three questions. Read [Behavioral interviews](../behavioral-interviews/) for the format and what interviewers actually score.
 
-## Day 4: coding fundamentals
+## Day 4: role-specific fundamentals
 
-Focus on the patterns you will actually be tested on:
+If your round tests algorithms, begin with the patterns below. For SQL, ML, cloud, frontend, or other tracks, replace this session and the coding mock with the relevant exercise:
 
 - Arrays, hash maps, sliding window, two pointers
 - One graph traversal (BFS and DFS) and one tree recursion
@@ -41,7 +41,7 @@ Skip the obscure DP problem you cannot solve in twenty minutes. See the [LeetCod
 
 ## Day 5: mock interview
 
-Do one full mock with a friend, a coach, or a recorded self-mock. Time-box the coding question at thirty-five minutes. The point is to rehearse saying what you are thinking while you code, not to solve the problem perfectly. Most candidates fail because they go silent.
+Do one full mock with a friend, a coach, or a recorded self-mock. Time-box the coding question at thirty-five minutes. The point is to rehearse saying what you are thinking while you code, not to solve the problem perfectly. Use the mock to check both technical accuracy and whether the interviewer can follow your reasoning.
 
 ## Day 6: company-specific prep
 
@@ -53,6 +53,6 @@ Sleep eight hours. Do not cram. The loop is a marathon; preparation stops paying
 
 ## What to skip
 
-- Algorithms beyond the core patterns. New grad loops rarely go past medium difficulty.
-- System design depth. Most new grad loops have at most one system design round at a high level. Read [System design](../system-design/) for what that round actually asks.
-- Reading the entire codebase. You will not get a question about it, and "I don't know" is a fine answer.
+- Algorithms beyond the core patterns. Prioritize the topics in your invitation and preparation materials; hard problems remain possible.
+- System design depth. Confirm whether design is part of the loop and what depth is expected. Read [System design](../system-design/) for what that round actually asks.
+- Reading the entire codebase. Unless the employer names a repository or exercise, prioritize the published topics, and "I don't know" is a fine answer.

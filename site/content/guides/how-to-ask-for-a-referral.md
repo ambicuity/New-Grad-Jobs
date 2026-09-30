@@ -6,36 +6,31 @@ section: LinkedIn and networking
 order: 2
 ---
 
-A referral moves an application from the pile to a person. It does not guarantee an interview, but it changes who reads the résumé first. The asking is the easy part once you make it easy to say yes.
+A referral can add evidence from someone who knows your work. It does not guarantee review priority or an interview.
 
 ## When to ask
 
-After you have applied, not before. The internal referral system at most companies needs an application to attach the referral to. Ask within a week of submitting.
+Check the employer's referral process before submitting. Some require an employee referral or link first; others can attach a referral to an existing application. For example, [Lever places both referrals and direct applications into its applicant pipeline](https://help.lever.co/s/article/Operating-the-Applicant-section-of-the-pipeline). Ask the employee which process applies and avoid duplicate applications or withdrawing just to add a referral unless the recruiter instructs you to.
+
+If a deadline is imminent and you cannot establish the process, apply on time and tell the employee you have submitted.
 
 ## Who to ask
 
-In rough order of success:
+Start with people who can describe your relevant work: former colleagues, internship managers, classmates or alumni you have talked with. A current employee may submit a referral under their company's rules. A recruiter can advise on the process but is usually your hiring contact rather than a referral request.
 
-1. Someone who has worked with you: a previous internship manager, a class project partner who graduated, a teaching assistant who knows your work.
-2. A classmate or senior who joined the company recently and has referrals left.
-3. A recruiter at the company, especially one you have already talked to.
-4. A stranger at the company who fits the team you applied to. Cold referrals have a low hit rate but a non-zero one, and they are worth one try per role.
-
-Do not ask someone who does not work at the company. They cannot refer you, no matter how much they like you.
+A cold contact may decline because they do not know your work. Give them a clear reason for reaching out and an easy way to say no; do not assume a stranger owes you an endorsement.
 
 ## What to send
 
-A short message that does four things:
+- The role link and job ID.
+- A short explanation of your relevant project or experience.
+- Whether you have already applied.
+- Your résumé, if they need it, and permission to share it through the employer's referral system.
 
-- Confirms the specific role you applied for (link to the posting).
-- Says one sentence about why you fit it, in plain language.
-- Asks explicitly for the referral. No beating around it.
-- Makes the ask easy: attached résumé, no form to fill, no interview first.
-
-Keep it under ten lines. If the person has to write more than they would for any other request, they will postpone it and forget.
+Ask whether they would feel comfortable referring you. They may need to answer internal questions or discuss your background first.
 
 ## The follow-up
 
-Send one polite follow-up after a week. If there is no response, ask someone else. Most referrals happen on the second ask, not the first.
+Send one polite follow-up after a week. If there is no response, ask someone else. Do not assume that another follow-up will produce a referral.
 
 If they say yes, thank them the day the referral is submitted, and again if you advance. If they say no, thank them anyway. People remember both.

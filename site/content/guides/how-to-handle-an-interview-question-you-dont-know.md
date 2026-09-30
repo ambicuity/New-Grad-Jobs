@@ -14,7 +14,7 @@ Say so, plainly: "I haven't worked with that, but here is what I do know that is
 
 ## 2. Walk through your reasoning anyway
 
-Most interview questions are scored on how you think, not whether you know the answer. For a coding question, narrate the brute force, the data structure you would reach for, and the trade-off you would make. For a behavioral question, say what you would do, even if you cannot cite a past example. Interviewers ask "what would you do" when they want to see the answer, not a story.
+Most interview questions are scored on how you think, not whether you know the answer. For a coding question, narrate the brute force, the data structure you would reach for, and the trade-off you would make. For a behavioral question, acknowledge if you have no directly matching example and offer the closest real experience. Ask whether a hypothetical answer would help; do not present one as past work. Interviewers ask "what would you do" when they want to see the answer, not a story.
 
 ## 3. Ask a clarifying question
 
@@ -26,7 +26,7 @@ If you cannot solve the whole thing, solve the part you can. "Let me start with 
 
 ## What not to do
 
-- **Do not bluff.** "I think it might be..." followed by a wrong guess is worse than a clean "I don't know" plus reasoning. Interviewers can hear bluffing; it ends the question.
+- **Do not bluff.** Label a hypothesis as uncertain and explain how you would check it; an honest hypothesis is different from pretending to know. Interviewers can hear bluffing; it ends the question.
 - **Do not freeze.** Long silence after the question is interpreted as panic. If you have nothing, say so out loud, then reason.
 - **Do not pivot to a different question.** "I don't know about X, but let me tell you about Y" reads as evasion.
 - **Do not apologize more than once.** A second apology means you are spending the question on feelings, not answers.

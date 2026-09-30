@@ -1,35 +1,35 @@
 ---
 title: What to do after accepting a new grad offer
-description: The four weeks between accepting and starting, organized so nothing important slips.
+description: A flexible checklist for screening, work authorization, payroll, relocation and preparation between accepting an offer and starting.
 updated: 2026-09-30
 section: Starting your job
 order: 2
 ---
 
-The offer is signed. The next month is for closing the search cleanly, finishing whatever you have in flight, and getting ready to start without surprises. Most new grads use the gap to do less than they should; use it to do more than you think.
+After accepting, confirm the start date and every remaining condition in writing. The sequence below is a checklist, not a four-week timetable: screening, graduation, relocation and immigration can take different amounts of time.
 
-## Week one: close the search
+## Confirm the offer and close the search
 
-- **Withdraw from any active loop that overlaps.** Email the recruiter: "I've accepted a role that better fits my goals, so I'd like to withdraw." Polite, short, no explanation required. The industry is small; you will meet these recruiters again.
-- **Stop the daily board routine.** The board's RSS feeds and the daily ten-minute skim are no longer your job. Remove the bookmarks or move them aside for later.
+- **Decide how to close active applications.** Email the recruiter: "I've accepted a role that better fits my goals, so I'd like to withdraw." Polite, short, no explanation required. The industry is small; you will meet these recruiters again.
+- **Review outstanding conditions.** Before making irreversible plans, confirm screening, funding, graduation and work-authorization requirements. An accepted conditional offer can still fall through.
 - **Tell your references.** The people who gave you references for the search probably got phone calls and want to know the outcome. A short note is enough.
 - **Thank the people who helped.** Anyone who referred you, mock-interviewed you, or read your résumé. The thank-you is the relationship.
 
-## Week two: paperwork
+## Complete the paperwork
 
 - **Background check.** Most employers start this within days of acceptance. See [Background checks and pre-employment verification](../background-checks-and-pre-employment-verification/) for the parts that slow you down.
-- **I-9 / work authorization.** If you are on OPT or STEM OPT, this is where the EAD card and E-Verify come in. See [OPT and STEM OPT](../opt-and-stem-opt/) for the timing.
-- **Direct deposit and tax forms.** The employer sends a packet. Fill it out the day it arrives; the payroll cut-off is usually the 15th of the month before your start.
-- **Benefits enrollment.** Health, dental, vision, 401(k). Read the summary plan description; do not pick the default without looking. New grads often over-insure on day one and regret it later.
+- **Work authorization.** U.S. employers generally complete Form I-9 for all new hires. OPT candidates must confirm their authorized work start date; STEM OPT also needs employer participation. See [OPT and STEM OPT](../opt-and-stem-opt/). For Canada or India, confirm the appropriate local authorization and payroll documents with HR.
+- **Direct deposit and tax forms.** The employer sends a packet. Use the verified HR portal and ask about the employer’s payroll deadline and first payment date.
+- **Benefits enrollment.** Review enrollment deadlines, coverage start dates, premiums, deductibles, leave and retirement terms. U.S. plans may include a 401(k); Canadian and Indian benefits and statutory contributions differ. Choose coverage around your needs and the plan documents.
 
-## Week three: prep
+## Plan relocation and preparation
 
 - **Read the team page and any public docs.** Most teams have a public README, design docs, or onboarding page. Read what is there.
-- **Set up your dev environment early if you can.** Many companies send a laptop before day one with instructions to set up SSH keys, build the codebase, and run tests. Do this before day one, not on day one.
-- **Move if you are relocating.** Confirm housing, lease start date, and utilities. Most relocations go badly because the move happens the week of starting. See the relocation discussion in [Comparing offers](../comparing-offers/).
+- **Confirm equipment and onboarding.** Ask when equipment arrives and when setup should happen. Do required setup, training and productive work during authorized employment, following HR’s instructions about paid time. U.S. wage rules generally count required training as work, subject to applicable exceptions; see [Department of Labor guidance](https://www.dol.gov/agencies/whd/fact-sheets/53-healthcare-hours-worked). Do not begin work before your immigration authorization permits it.
+- **Move if you are relocating.** Confirm housing, lease start date, and utilities. Allow a buffer around the agreed start date and confirm reimbursement terms before spending. See the relocation discussion in [Comparing offers](../comparing-offers/).
 - **Tell your school.** If you are still finishing a semester, confirm the last exam date and any final-paper deadlines against your start date.
 
-## Week four: rest
+## Leave time to rest
 
 - **Do not study the codebase.** You will not be able to learn it from outside, and the act of trying makes the first week harder.
 - **Sleep, exercise, see people.** The first month of a new job is tiring. Enter it rested.
@@ -37,11 +37,11 @@ The offer is signed. The next month is for closing the search cleanly, finishing
 
 ## What to do with other offers
 
-If you accepted one offer and have others outstanding, decline them within a week of accepting. Holding other offers while deciding is reasonable during a search; holding them after you have signed is rude and risks your offer. Decline by email, in writing, with a thank-you.
+If you accepted one offer and have others outstanding, decline them within a week of accepting. Holding other offers while deciding is reasonable during a search; after deciding, communicate promptly and respectfully. Decline by email, in writing, with a thank-you.
 
 ## What to do if you change your mind
 
-Reneging on a signed offer is a decision you can only make for yourself, and it has real costs: your offer is gone, the recruiter remembers, and your reputation in that company's network is damaged. Read [Evaluating an offer](../evaluating-an-offer/) and [Negotiation](../negotiation/) before you sign; reneging is not a substitute for accepting carefully.
+If your circumstances change, communicate promptly. Review the contract, bonus or relocation repayment terms and any immigration consequences. Legal obligations depend on the agreement and jurisdiction; seek advice if uncertain. Read [Evaluating an offer](../evaluating-an-offer/) and [Negotiation](../negotiation/) before you sign; reneging is not a substitute for accepting carefully.
 
 ## First week on the job
 

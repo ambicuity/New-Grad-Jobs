@@ -6,41 +6,23 @@ section: Résumé and applications
 order: 6
 ---
 
-A new-grad application usually passes through four hands before a human reads it. Knowing which hands do what lets you write for each of them and set a realistic expectation for the timeline.
+An application can go through parsing, eligibility checks, review and interviews. The order varies by employer; an assessment may arrive before a recruiter reviews the résumé.
 
-## Step 1: the applicant tracking system parses your résumé
+## Parsing and application fields
 
-The ATS — Greenhouse, Lever, Ashby or Workday on this board — turns your PDF into structured fields. Anything that does not parse cleanly ends up in the wrong field or dropped. See [An ATS-friendly résumé](../ats-friendly-resume/) for what survives the trip.
+An ATS may extract information from your uploaded résumé. Review the fields before submitting and follow the requested file format. A parse failure is not evidence that nobody will read your document: [Greenhouse explains that a failed parse leaves the résumé attached](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse). See [An ATS-friendly résumé](../ats-friendly-resume/).
 
-## Step 2: automated rules filter
+## Screening rules
 
-Most large companies apply knockout rules before a person sees anything:
+Employers can configure eligibility questions, such as graduation window, license, location or work authorization. [Greenhouse auto-reject rules act on answers to configured questions](https://support.greenhouse.io/hc/en-us/articles/360000653472-Auto-reject). Other systems and integrations differ; there is no universal keyword score that every résumé must pass. Answer accurately and use the posting's vocabulary only for skills you actually have.
 
-- Graduation date outside a window
-- Missing degree or major
-- A keyword the recruiter hard-required
-- Work authorization that does not match the role
+## Human review and the recruiter screen
 
-If the system filters you out, no human will ever know. The fix is in the application itself: read the posting carefully, mirror the exact words for skills and degree, and answer the work-authorization question truthfully. Read [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/) before you answer the sponsorship question.
+A recruiter or hiring manager may review your experience, application answers and résumé. Make the relevant evidence easy to find. If invited to a screen, prepare to discuss the role, your experience, availability and logistics. Ask what the remaining stages are and when you should expect an update.
 
-## Step 3: a recruiter or hiring manager reads the résumé
+## Waiting and following up
 
-At large companies this is a recruiter; at smaller ones, often the hiring manager directly. They spend ten to thirty seconds. They look for the role's own words, a school or company they recognize, and one bullet that says you did something measurable. See [Resume bullet points](../resume-bullet-points/) for that bullet.
-
-## Step 4: a recruiter screen
-
-If the résumé passes, you get a twenty- to thirty-minute phone or video call. The recruiter checks basics: availability, visa, salary range, location, and a two-minute summary of you. The summary is the only thing they remember. Practise it until you can say it without thinking.
-
-## Realistic timeline
-
-| Stage | Typical wait |
-|-------|--------------|
-| Application confirmation email | Same day |
-| First response (pass to phone screen, rejection, or no reply) | 1 to 3 weeks |
-| Phone screen to onsite | 1 to 3 weeks |
-| Onsite to offer | 1 to 3 weeks |
-
-"No reply" usually means filtered out. After two weeks of silence, the application is closed in practice. Keep applying; do not wait.
+Response times vary by employer, recruiting season and stage. Silence does not establish whether you were rejected, filtered, waitlisted or affected by a hiring pause. Check your portal and spam folder, follow up after the promised date, and keep applying while you wait. If no date was given, a brief follow-up after one or two weeks is a reasonable personal routine, not an employer deadline.
 
 ## Why applications disappear
 

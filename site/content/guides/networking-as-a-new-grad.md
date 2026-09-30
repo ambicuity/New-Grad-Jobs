@@ -6,11 +6,11 @@ section: LinkedIn and networking
 order: 1
 ---
 
-Networking for new grads is not a personality trait; it is a small weekly system. Most new-grad hires come through someone the employer already trusts, and the rest of the funnel is a numbers game the board helps with.
+Networking for new grads is not a personality trait; it is a small weekly system. Conversations can help you understand roles and build professional relationships alongside direct applications. There is no universal share of new-grad hires attributable to networking.
 
 ## A workable definition
 
-Networking for this stage is sending ten short, specific messages a week to people you have a real connection to: alumni, former internship colleagues, classmates who graduated a year or two ahead, recruiters at target companies, and people who post about your target teams. The goal is to learn one thing per conversation and to be remembered when a role opens.
+One optional routine is sending a few short, specific messages a week to people you have a real connection to: alumni, former internship colleagues, classmates who graduated a year or two ahead, recruiters at target companies, and people who post about your target teams. The goal is to learn one thing per conversation and to be remembered when a role opens.
 
 ## The weekly loop
 
@@ -29,4 +29,4 @@ You do not need a large following, a polished personal brand, or anyone to "open
 
 ## When it stops being enough
 
-If networking is not producing referrals after a month of consistent outreach, the problem is usually the list, not the messages. Read [Diagnose your job-search funnel](../diagnose-your-job-search-funnel/) before changing tactics.
+A month of outreach without referrals does not establish a failure. Review whether your contacts and questions are relevant, and value useful information as well as referrals. Read [Diagnose your job-search funnel](../diagnose-your-job-search-funnel/) before changing tactics.

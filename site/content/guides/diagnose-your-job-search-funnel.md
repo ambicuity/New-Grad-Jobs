@@ -17,47 +17,31 @@ For every application in your tracker, record:
 3. **Date of first interview** (technical or behavioral)
 4. **Outcome** (offer, rejection, withdrew, ghosted)
 
-After fifty applications you have a real sample. Look at the conversion rates between each stage.
+After a comparable batch has had time to progress, you have a starting point for review. Look at the conversion rates between each stage.
 
-## What "normal" looks like at new grad level
+## Compare comparable applications
 
-These numbers vary by target school and target company, but a rough reference for a U.S. new-grad software search:
+There is no verified universal conversion-rate benchmark for a new grad search across countries, fields and employers. Track positive invitations separately from rejection emails; counting both as a response hides whether applications are producing interviews. Keep pending applications separate from completed outcomes.
 
-- 10–25% response rate (recruiter screen or rejection email within two weeks)
-- 30–50% of screens to first interview
-- 20–40% of interview loops to offer
-- 1–3% of applications to offer
+Compare your own results by role family, location, eligibility, recruiting season and application channel. A small sample is noisy, and even a larger one can mix very different searches. [The New York Fed's graduate labor-market data](https://www.newyorkfed.org/research/college-labor-market) describes employment outcomes, not a required application-to-offer rate.
 
-You are not trying to hit these. You are using them as a baseline. If your numbers are wildly different, something specific is off.
+## What the pattern can suggest
 
-## What the pattern tells you
-
-### Low response rate (<10%)
-
-The résumé is being filtered. Either the ATS is dropping you, the résumé does not match the role, or you are applying to roles outside your profile. Read [No interviews after 100 applications](../no-interviews-after-100-applications/) and [Why applications get rejected](../why-applications-get-rejected/).
-
-### High response rate but low screen-to-interview conversion (<20%)
-
-Recruiters are interested but your story is not landing. Fix the two-minute summary and the "why this role" answer. See [Behavioral interviews](../behavioral-interviews/).
-
-### High screen-to-interview but low interview-to-offer (<10%)
-
-The interviews themselves are losing. Either a specific round is the problem (see [Getting interviews but no offers](../getting-interviews-but-no-offers/)) or the loop as a whole is not aggregating.
-
-### High interview-to-offer but you never get there
-
-You are applying too narrowly. Add ten companies to your [target-company list](../build-a-target-company-list/) and ten more postings to your week. The board's [new this week](../../jobs/new-this-week/) page is a good source.
+- **Few invitations:** check eligibility, role match, résumé clarity, application completion and whether the posting is still open. Market competition and employer pauses can also contribute.
+- **Screens without later interviews:** review logistics and your explanation of why the role fits; ask the recruiter for feedback.
+- **Interviews without offers:** record the skills and communication you found difficult, and practice those. Another candidate or cancelled headcount can explain the outcome too.
+- **Good results from a narrow set of roles:** consider adding comparable employers or locations if you can.
 
 ## What to change first
 
-The biggest gap between your numbers and the baseline is the highest-return fix. If response rate is 5% and screen-to-interview is 50%, fix the response rate. Fixing the screen-to-interview rate from 50% to 60% gains you three extra onsites per hundred responses; fixing the response rate from 5% to 15% gains you ten extra screens, which produces three extra onsites by the same math.
+Choose one controllable change, such as clearer project evidence or better-targeted applications, and compare the next comparable batch with the previous one. Avoid changing every part of the search at once or treating an arbitrary percentage as a diagnosis.
 
 ## When the funnel is fine
 
-If the funnel is at or near the baseline and you are still not getting the outcome you want, the problem is not the funnel. It is one of:
+If you are getting invitations but the search is taking longer than you hoped, also consider:
 
 - **Targets are too selective.** If your list is all top-tier companies, expand it. See [Startup vs enterprise](../startup-vs-enterprise/) and [How to build a target-company list](../build-a-target-company-list/).
-- **Time horizon is too short.** Most new-grad searches take three to six months. If you are at month one and applying at a reasonable rate, keep going.
+- **Time horizon is too short.** There is no fixed duration for a new-grad search. Build a sustainable routine and revisit your plan as financial or graduation deadlines approach.
 - **Geography is too narrow.** A remote-only or one-metro search is harder than a regional search. Read the location filters on the board and consider widening.
 
 The funnel tells you what to fix; the broader search tells you when to stop fixing and start waiting.

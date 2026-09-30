@@ -20,12 +20,12 @@ Aim for 30 to 60 companies. Fewer and you run out of options when one of them st
 
 A target list built from vibes falls apart. Anchor each name to criteria you can verify:
 
-- **Hiring volume.** The board has a [page per company](../../jobs/). A company with zero roles this quarter is not a target.
+- **Hiring volume.** The board has a [page per company](../../jobs/). A company with no roles on this board may still hire through campus programs or sources the scraper does not cover; check its own careers page.
 - **New grad track.** Look for postings with the words "new grad", "entry level", "associate", or " Rotational " in the title. See [What counts as a new grad job](../what-counts-as-a-new-grad-job/).
 - **Sponsorship.** If you need it, the [visa flags guide](../visa-sponsorship-and-citizenship/) explains which chips to keep on.
 - **Location and remote.** Decide where you will physically work and never apply outside it. Remote-only postings are their own category.
 - **Compensation.** [Understanding compensation](../understanding-compensation/) explains what the board shows and what it does not.
-- **Industry.** You will be here for two to four years; pick one you can talk about in an interview.
+- **Industry.** Learn enough about the industry to explain your interest; your tenure is not predetermined.
 
 ## What to do with the list
 

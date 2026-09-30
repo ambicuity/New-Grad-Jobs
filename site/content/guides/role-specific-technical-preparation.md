@@ -16,11 +16,11 @@ Three signals:
 
 - **The title.** Backend / platform / infrastructure / SRE / systems → [Systems interview preparation](../systems-interview-preparation/). ML / AI / research scientist → [ML/AI interview preparation](../ml-ai-interview-preparation/). Data / analytics / BI → [SQL interview preparation](../sql-interview-preparation/). Cloud / DevOps → [Cloud interview preparation](../cloud-interview-preparation/). Frontend / mobile / full-stack → see below.
 - **The job description's verbs.** "Build a feature end to end", "ship to production", "work with stakeholders" usually indicates product engineering. "Operate the platform", "improve reliability", "on-call" usually indicates platform/SRE. "Train models", "evaluate on offline metrics", "run experiments" indicates ML.
-- **The team page and recent blog posts.** This is the strongest signal. A team that talks about their recommender system is an ML team; a team that talks about their storage engine is a systems team. Read the team's last quarter of blog posts before you prepare.
+- **The team page and recent blog posts.** Use these as context alongside the posting and recruiter guidance. A team that talks about their recommender system is an ML team; a team that talks about their storage engine is a systems team. Read the team's last quarter of blog posts before you prepare.
 
 ## Frontend, mobile, and full-stack roles
 
-Most loops combine LeetCode-style coding with a frontend or mobile-specific round. The frontend round usually asks you to build a small UI from a spec: a dropdown, a sortable table, a small game. The mobile round usually asks you to design a screen's data flow or implement a small view.
+These loops may combine general coding with a frontend or mobile-specific round. The frontend round usually asks you to build a small UI from a spec: a dropdown, a sortable table, a small game. The mobile round usually asks you to design a screen's data flow or implement a small view.
 
 Prepare by:
 
@@ -41,7 +41,7 @@ The LeetCode-style round is often replaced by a longer paired-programming round 
 
 ## Security roles
 
-Some companies run a security-specific new-grad loop. It usually combines LeetCode-style coding, a security fundamentals round (threat modeling, common vulnerability classes, secure coding patterns), and a take-home CTF-style problem. Read the invitation carefully; the rules for AI use in a CTF take-home are often strict.
+Some companies run a security-specific new-grad loop. It may include coding, security fundamentals (threat modeling, vulnerability classes, secure coding), or a CTF-style exercise. Read the invitation carefully; the rules for AI use in a CTF take-home are often strict.
 
 ## Quant and research-engineering roles
 
@@ -53,7 +53,7 @@ For each application:
 
 1. Read the posting once for the verbs, twice for the specific technologies, three times for the team signals.
 2. Pick one or two preparation guides above that match the track.
-3. Add one week of role-specific prep on top of your base prep (DSA, behavioral, project work).
+3. Allocate preparation time based on the confirmed topics and your current gaps (technical fundamentals, behavioral examples, and project explanations).
 4. Adjust for the assessment format — see [AI-assisted interviews](../ai-assisted-interviews/).
 
-That is the plan that beats a generic "do 100 LeetCode problems" plan because it matches what the company actually gave you.
+Use the confirmed role and interview format to choose practice tasks, then adjust with mock feedback.

@@ -1,7 +1,7 @@
 ---
 title: Evaluating an offer
 description: A structured way to judge a single new grad offer on money, learning, people and risk, before comparing it with anything.
-updated: 2026-09-25
+updated: 2026-09-30
 section: Offers
 order: 2
 ---
@@ -28,7 +28,7 @@ Money must clear the bar; beyond the bar, weight learning highest for a first jo
 
 ## The deadline
 
-Deadlines are real but usually movable by a week or two, especially when you are mid-loop elsewhere. Ask politely, once, with a reason. An employer that refuses any extension for a new grad is telling you something.
+Ask for the time you need with a concrete reason, and get any extension in writing. Hiring programs and staffing needs can limit flexibility; refusal alone does not establish a poor employer.
 
 ## Red flags
 
@@ -42,4 +42,4 @@ None of these is necessarily fatal, but each is a question to ask before you sig
 
 ## Accepting
 
-When you accept, tell every other employer in your pipeline the same day, briefly and gratefully. Reneging on an accepted offer is remembered; keep looking only until you accept, then stop. After you sign, see [What to do after accepting a new grad offer](../after-accepting-a-new-grad-offer/) for the four weeks between signing and starting.
+When you accept, tell every other employer in your pipeline the same day, briefly and gratefully. Confirm any outstanding conditions before making irreversible commitments. If circumstances change, review contractual repayment and immigration obligations and communicate promptly. After you sign, see [What to do after accepting a new grad offer](../after-accepting-a-new-grad-offer/) for a flexible checklist between acceptance and starting.

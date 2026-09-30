@@ -23,11 +23,11 @@ Three short paragraphs. What you have done, what you want, and what you read or 
 
 ## Experience and projects
 
-Treat class projects and side projects like jobs. Each gets a one-line description, a bullet list of what you did and what changed, and the stack you used. The format is the same as the résumé bullets in [Resume bullet points](../resume-bullet-points/).
+Label class and side projects accurately as projects, with dates and your contribution; do not present them as employment. Each gets a one-line description, a bullet list of what you did and what changed, and the stack you used. The format is the same as the résumé bullets in [Resume bullet points](../resume-bullet-points/).
 
 ## Open to Work
 
-Turn on the "Open to Work" badge with a recruiter-only setting so your network does not see it. Pick job titles, not just one. The badge does not get you hired, but it does affect how recruiters find you in search.
+Choose Open to Work visibility deliberately. The public option adds a photo frame; recruiter-only visibility shares preferences with LinkedIn Recruiter users and does not add that public frame. LinkedIn says complete privacy is not guaranteed. Set accurate job titles, locations and availability. In India you can also specify notice period and expected annual salary. See [LinkedIn's current instructions](https://www.linkedin.com/help/linkedin/answer/a507508/let-recruiters-know-you-re-open-to-work).
 
 ## Discoverability
 
@@ -35,6 +35,6 @@ Recruiters search by skill, school, and previous employer. Add skills you would 
 
 ## Connection requests
 
-Send them to alumni, recruiters at target companies, and people who work on teams you would join. Always include a one-line note. Cold connection requests without a note are filtered out by most recruiters and read as spam by the rest.
+Send them to alumni, recruiters at target companies, and people who work on teams you would join. Always include a one-line note. A short relevant note can explain the connection; platform limits and recipient preferences vary.
 
 You do not need to post, comment, or build a personal brand. A complete profile that recruiters can find is enough. Read [Messaging recruiters](../messaging-recruiters/) for what to write once a recruiter accepts.

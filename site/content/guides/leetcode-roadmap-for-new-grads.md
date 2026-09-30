@@ -10,11 +10,11 @@ LeetCode-style practice is the right preparation for interviews that test algori
 
 For data engineers and analysts, also see [SQL interview preparation](../sql-interview-preparation/). For ML/AI roles, see [ML/AI interview preparation](../ml-ai-interview-preparation/). For backend or platform roles, see [Systems interview preparation](../systems-interview-preparation/). For roles that emphasize debugging or reading unfamiliar code, see [Debugging interview preparation](../debugging-interview-preparation/).
 
-Where LeetCode is the right prep, most new-grad coding interviews test the same fifteen to twenty patterns, not the same three hundred problems. A new-grad roadmap covers those patterns, plus the language-specific gotchas you will trip on. Anything beyond that is research, not interview prep.
+Where LeetCode is the right prep, begin with recurring data-structure and algorithm patterns, then adapt to the employer's published topics and your mock results. [Amazon's software-development preparation topics](https://amazon.jobs/content/en-gb/how-we-hire/interview-prep/software-development-topics) span algorithms, data structures, design, databases, operating systems, and other fundamentals; ask the recruiter which apply to your role.
 
 ## Phase 1: arrays, hash maps, strings (2–3 weeks)
 
-The most-tested patterns, and the easiest to learn deeply.
+Start with these foundational patterns.
 
 - Two pointers (left/right, slow/fast)
 - Sliding window (fixed and variable size)
@@ -22,7 +22,7 @@ The most-tested patterns, and the easiest to learn deeply.
 - Prefix sums for range queries
 - Sorting plus linear pass for the simple cases
 
-Goal: solve any easy or medium problem in these categories in under twenty-five minutes.
+Practice goal: solve representative problems accurately within the time available for your round. Difficulty labels do not guarantee a fixed completion time.
 
 ## Phase 2: trees and graphs (2–3 weeks)
 
@@ -31,7 +31,7 @@ Goal: solve any easy or medium problem in these categories in under twenty-five 
 - Graph BFS and DFS on an adjacency list
 - Topological sort and the dependency question it answers
 
-Goal: pick the right traversal without thinking. Most tree and graph problems on new-grad loops come from this set.
+Goal: choose and explain an appropriate traversal. Add weighted shortest paths or union-find if the employer's topics or practice gaps call for them.
 
 ## Phase 3: linked lists, stacks, queues, heaps (1 week)
 
@@ -43,19 +43,17 @@ Goal: hand-implement the basic operations on each.
 
 ## Phase 4: dynamic programming and backtracking (2–3 weeks, only if you have time)
 
-Most new-grad loops have at most one DP question, and it is usually a small one. If your loop is in three weeks, focus on:
+Dynamic programming requirements vary. If your preparation time is short, begin with:
 
 - The classic 1D DP (climbing stairs, house robber)
 - The classic 2D DP (grid paths, longest common subsequence)
 - Backtracking on subsets or permutations
 
-If your loop is sooner, skip this phase entirely and come back if you bomb a DP question on a mock.
+If your loop is sooner, use the employer's guidance and a mock to decide which gaps to prioritize.
 
-## What to skip
+## What to deprioritize
 
-- Hard problems past the top 200. You will not see one.
-- Bit manipulation beyond AND / OR / XOR / shift. Same reason.
-- Segment trees, red-black trees, union-find. Not at new grad level.
+Advanced structures and specialized bit tricks may be lower priorities when time is limited, unless the role or employer names them. No public problem list guarantees what you will see. Learn binary search and interval problems alongside the phases above; cover union-find when connectivity problems are relevant.
 
 ## How to study
 
@@ -67,4 +65,4 @@ Quality of reps beats volume. Sixty problems out of six patterns beats three hun
 
 ## Pacing
 
-For a three-month search, three problems a day, four days a week, with one day off a week, lands you around the patterns above. For a one-month prep, drop the DP phase and accept that graph problems will take longer. Read [How to prepare for an interview in 7 days](../how-to-prepare-for-an-interview-in-7-days/) for the final-week schedule.
+For a three-month search, three problems a day, four days a week, with one day off a week, lands you around the patterns above. For a one-month plan, use an initial mock and the role requirements to reduce scope. Read [How to prepare for an interview in 7 days](../how-to-prepare-for-an-interview-in-7-days/) for the final-week schedule.

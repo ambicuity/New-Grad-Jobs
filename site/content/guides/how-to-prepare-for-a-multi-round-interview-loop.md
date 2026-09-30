@@ -6,35 +6,33 @@ section: Interviews
 order: 8
 ---
 
-A new grad loop is usually three to five rounds across one or two days. Each round tests something different. Treating the loop as one long conversation rather than five isolated ones is the cheapest advantage most candidates miss.
+A loop may include several rounds over one or more days. Confirm the actual schedule and prepare for each round while allowing time to rest between them.
 
 ## A typical new grad loop
 
-| Round | Length | Tests |
-|-------|--------|-------|
-| Recruiter screen | 20–30 min | Motivation, logistics, salary |
-| Hiring-manager call | 45–60 min | Project depth, scope of ownership |
-| Technical phone or video | 60 min | One or two coding problems |
-| Onsite / virtual onsite | 3–5 hours | Coding, system design, behavioral |
-| Bar-raiser or values round | 45 min | Culture, judgment |
+- **Recruiter screen**: Length: 20–30 min; Tests: Motivation, logistics, salary.
+- **Hiring-manager call**: Length: 45–60 min; Tests: Project depth, scope of ownership.
+- **Technical phone or video**: Length: 60 min; Tests: One or two coding problems.
+- **Onsite / virtual onsite**: Length: 3–5 hours; Tests: Coding, system design, behavioral.
+- **Bar-raiser or values round**: Length: 45 min; Tests: Culture, judgment.
 
-The exact shape is less important than the principle: every interviewer scores you independently and the debrief combines those scores. Aim to land mid-range or higher on each round; a single strong round does not save a weak one.
+The schedule is an example, not a universal schedule. Ask how rounds are evaluated and whether feedback is combined; scoring and decision rules vary.
 
 ## How to pace across the day
 
-The first round sets the tone; you are fresh and the interviewer is too. Use that round to establish the way you communicate — out loud, structured, honest about gaps. Subsequent rounds inherit it.
+The first round sets the tone; you are fresh and the interviewer is too. Use that round to establish the way you communicate — out loud, structured, honest about gaps. Use the same clear communication in subsequent rounds.
 
 If the loop is two days, treat day one as a half-marathon. Do not solve the day's hardest problem at five in the afternoon; you will be tired on day two. Save your best energy for the first round of day two.
 
 ## How to recover between rounds
 
-- **Water, food, light.** Most loop fatigue is blood sugar. Eat before, snack during breaks, hydrate constantly.
+- **Water, food, light.** Breaks and regular food can help you maintain energy. Eat before, snack during breaks, hydrate constantly.
 - **Reset, do not relitigate.** If a round went badly, your instinct is to figure out where. That instinct is wrong mid-loop. Move on; you cannot change it.
 - **Name something true to the interviewer.** The opening of the next round is a small reset. Greet, smile, and say one specific thing: "It was great to hear about X" or "I'd like to ask you about Y I saw on the team page."
 
 ## What each interviewer writes down
 
-Every interviewer writes the same shape of feedback: what you did well, what was weak, and a hire / no-hire recommendation. Make it easy for them by being consistent on the same things across rounds. "Cares about code quality" is a stronger signal when it appears in three debriefs.
+Employers use different feedback forms and rubrics; interviewers may record strengths, gaps, and a recommendation. Make it easy for them by being consistent on the same things across rounds. "Cares about code quality" is a stronger signal when it appears in three debriefs.
 
 ## How to use the names you have
 
@@ -46,4 +44,4 @@ Read [The interview process](../interview-process/) for the broader funnel and [
 
 ## When some rounds are AI and some are human
 
-It is increasingly common for one round of the loop to be AI-scored or AI-moderated while another is human-led. Treat each round with its own rules: the AI round's format-specific prep (read the invitation, run the pre-assessment checklist, debrief afterwards) and the human round's behavioral and technical prep. Don't optimize for the format you wish the company used. Optimize for the format they actually gave you. See [AI-assisted interviews](../ai-assisted-interviews/) for the workflow.
+A loop may combine an AI-scored or AI-moderated round with human-led rounds. Treat each round with its own rules: the AI round's format-specific prep (read the invitation, run the pre-assessment checklist, debrief afterwards) and the human round's behavioral and technical prep. Don't optimize for the format you wish the company used. Optimize for the format they actually gave you. See [AI-assisted interviews](../ai-assisted-interviews/) for the workflow.

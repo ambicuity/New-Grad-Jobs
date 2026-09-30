@@ -6,9 +6,9 @@ section: AI and job search
 order: 1
 ---
 
-Used well, AI is the cheapest intern a new grad has ever had. Used badly, it is a résumé full of words you cannot defend in an interview. The line between the two is the line between preparation and misrepresentation.
+AI can help draft and review job-search material. Used badly, it is a résumé full of words you cannot defend in an interview. The line between the two is the line between preparation and misrepresentation.
 
-## Where AI genuinely helps
+## Where AI can help
 
 - **Résumé bullets.** Take a project description and ask the model to rewrite it in the [STAR-style format](../resume-bullet-points/), with a metric if you provide it. Edit the result for accuracy; do not paste it directly.
 - **Job description parsing.** Paste a posting and ask for: the must-have skills, the nice-to-have skills, the team structure, and any signals of sponsorship or visa requirements. Compare against [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/).
@@ -18,11 +18,11 @@ Used well, AI is the cheapest intern a new grad has ever had. Used badly, it is 
 
 ## How to use it without losing accuracy
 
-- **Never paste AI text into a field without re-reading it.** It will invent tools, projects, or job duties you never did. Recruiters can spot AI-isms; see [AI-assisted applications: what not to automate](../ai-applications-what-not-to-automate/).
+- **Never paste AI text into a field without re-reading it.** It may invent tools, projects, or job duties you never did; see [AI-assisted applications: what not to automate](../ai-applications-what-not-to-automate/).
 - **Treat every fact as unverified until you check it.** AI models hallucinate companies, products, and even whole funding rounds. A claim you cannot defend in an interview is worse than no claim.
 - **Keep the final version yours.** You should still be able to read every line of your résumé and explain what you meant. If you cannot, the rewrite was too far.
 
-## What AI is not good for
+## Decisions that require independent evidence
 
 - **Negotiation.** Read [Negotiation](../negotiation/) and your own offer letter. The model does not know your numbers, your alternatives, or your risk tolerance.
 - **Visa questions.** Immigration rules change. Read the official source or talk to your international student office, not the model. See [OPT and STEM OPT](../opt-and-stem-opt/) and [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/).
@@ -30,7 +30,7 @@ Used well, AI is the cheapest intern a new grad has ever had. Used badly, it is 
 
 ## What to tell interviewers
 
-If you used AI to help with the application or to prepare, you do not need to volunteer it, but if an interviewer asks, the honest answer is "I used it to [specific, defensible thing] and verified everything I sent." That is a stronger answer than silence.
+Follow any employer disclosure requirements. If an interviewer asks about AI used in your application or preparation, the honest answer is "I used it to [specific, defensible thing] and verified everything I sent." That is a stronger answer than silence.
 
 ## A note about AI in the interview itself
 

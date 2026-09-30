@@ -1,7 +1,7 @@
 ---
 title: Behavioral interviews
 description: What "tell me about a time" questions are really asking, how to prepare six stories, and how to answer without a job history.
-updated: 2026-09-25
+updated: 2026-09-30
 section: Interviews
 order: 4
 ---
@@ -32,7 +32,7 @@ Prepare six stories, each usable for two or three families. For each, write down
 - **Result**: what happened, with an honest number or outcome
 - **Reflection**: what you would do differently
 
-This is the STAR structure with a fifth step, and the fifth step is what separates a good answer from a rehearsed one. Interviewers at new grad level care more about self-awareness than about outcomes.
+This is the STAR structure with a fifth step, and the fifth step is what separates a good answer from a rehearsed one. Give both the outcome and your reflection; the weight assigned to each depends on the employer's rubric.
 
 Stories can come from anywhere: a group project where a member disappeared, an internship bug that took a week, a club event that nearly failed, a part-time job with a difficult customer. Small, true and detailed beats large and vague.
 
@@ -48,7 +48,7 @@ The last five minutes are yours. Ask about the team's work, how new graduates ar
 
 ## When the behavioral round is recorded
 
-Some companies run the behavioral round as an AI-scored or AI-moderated recorded interview rather than live. The same stories work — STAR with reflection — but the pacing is different: you usually have a fixed window per question, no follow-up, and a small number of re-takes. See [AI-assisted interviews](../ai-assisted-interviews/) for the format-specific prep, including the pre-assessment checklist and the debrief.
+Some companies run the behavioral round as an AI-scored or AI-moderated recorded interview rather than live. The same stories work — STAR with reflection — but the pacing is different: you may have a fixed response window, adaptive follow-ups, or limited retries. Check the specific instructions. See [AI-assisted interviews](../ai-assisted-interviews/) for the format-specific prep, including the pre-assessment checklist and the debrief.
 
 ## Common mistakes
 

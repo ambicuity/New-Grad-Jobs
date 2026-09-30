@@ -1,7 +1,7 @@
 ---
 title: The new grad hiring timeline
 description: When large employers, startups and government contractors open entry-level roles, and how to pace a search across the year.
-updated: 2026-09-25
+updated: 2026-09-30
 section: Getting started
 order: 4
 ---
@@ -10,7 +10,7 @@ New grad hiring does not happen all at once. Different kinds of employers post a
 
 ## Large employers and cohort programs
 
-Banks, consultancies, defense contractors and the biggest technology companies hire in cohorts with a fixed start date. They post the next year's roles far in advance, often more than a year ahead, and many run structured programs (rotational, leadership development, "future talent") with their own deadlines. If you want one of these, start looking the autumn before your final year and treat the posting date as the beginning of a window that can close early.
+Banks, consultancies, defense contractors and the biggest technology companies hire in cohorts with a fixed start date. Some post the next year's roles months in advance, and many run structured programs (rotational, leadership development, "future talent") with their own deadlines. If you want one of these, check target-employer calendars before your final year and throughout it and treat the posting date as the beginning of a window that can close early.
 
 ## Technology companies without cohorts
 
@@ -22,15 +22,15 @@ Startups rarely label roles "new grad". They post "Software Engineer" or "Junior
 
 ## Government contractors
 
-Defense and aerospace employers are among the most consistent posters of levelled entry roles ("Engineer I", "Associate"). Almost all of them require citizenship or a clearance, which the board flags, so international candidates can filter them out with one chip.
+Defense and aerospace employers are among the most consistent posters of levelled entry roles ("Engineer I", "Associate"). Some roles require citizenship, export-control eligibility or clearance, while others do not. Read the exact requirement and the board's flags; a company's industry alone does not establish eligibility.
 
 ## Pacing a search
 
 - Keep a short list of target employers and check their landing pages here weekly; the `/jobs/at/<company>/` pages show every open role with a live count.
-- Apply early. Cohort roles fill on a rolling basis, and a posting still open in month three is often already full.
+- Apply early. Cohort roles fill on a rolling basis, and a posting still open after several months may remain active, so confirm its status rather than assume it is full.
 - Track what you have applied to with the APPLIED marker so you stop re-reading the same postings.
 - Expect the pace to change through the year; the "new this week" page shows what is actually being added right now.
 
 ## Where this board's data comes from
 
-Everything above is pattern, not promise. What is not a pattern is the data: every count here is computed from the published jobs at build time, and the [about page](../../about/) shows the sources and the last run.
+The calendar varies by country and employer. [NACE's 2026 Spring Update](https://naceweb.org/research/reports/job-outlook/) reports a shift toward spring recruiting among surveyed employers; a U.S. autumn-cohort pattern is not a universal deadline for Canada or India. Check employer and campus-placement calendars. Everything above is pattern, not promise. What is not a pattern is the data: every count here is computed from the published jobs at build time, and the [about page](../../about/) shows the sources and the last run.

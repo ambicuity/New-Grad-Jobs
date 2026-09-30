@@ -6,11 +6,11 @@ section: GitHub and portfolio
 order: 1
 ---
 
-A hiring manager who clicks your GitHub has thirty seconds before they make up their mind. The goal of your GitHub profile is not to impress them with everything you have ever built; it is to make the two or three projects you want them to look at findable in that half-minute.
+Make the projects most relevant to your target role easy to find. Reviewers have different time budgets; a clear profile helps them identify your contribution quickly.
 
 ## Pinned repos
 
-GitHub lets you pin six. Pin your four best and leave two for things that prove range. A recruiter looking at four projects and a language gets a faster picture than looking at twenty. See [What makes a GitHub repository impressive?](../what-makes-a-github-repo-impressive/) for what makes one of those four worth opening.
+GitHub supports [up to six pinned repositories and gists combined](https://docs.github.com/en/enterprise-cloud%40latest/account-and-profile/how-tos/profile-customization/pinning-items-to-your-profile). Pin a small selection of your strongest relevant work; there is no need to fill every slot. See [What makes a GitHub repository impressive?](../what-makes-a-github-repo-impressive/) for what makes a repository worth opening.
 
 Replace pins as you finish new projects. A repo you started a year ago and abandoned is not a pin candidate unless it is genuinely your best work.
 
@@ -20,15 +20,15 @@ The README at the top of your profile (the one tied to a repo named after your u
 
 ## Contribution graph
 
-It is mostly noise. Hiring managers know that one green streak can mean a hackathon and one grey week can mean exams. Do not pad it with low-quality commits; reviewers notice.
+A contribution graph does not establish code quality or ownership. Coursework, private work, and exams can affect visible activity. Focus on meaningful work rather than padding the graph.
 
 ## Things to clean up
 
-- **Forks with no commits.** Hide them or delete them. They look like clones.
+- **Forks with no commits.** Keep useful forks, and use pins and descriptions to distinguish them from work you have contributed to.
 - **Old assignments and coursework.** Keep them only if the code is genuinely worth reading; otherwise make them private.
-- **"Learning" repos with one commit and a README that says nothing.** Delete or push them further. An unfinished tutorial is worse than no tutorial.
+- **"Learning" repos with one commit and a README that says nothing.** Describe their learning purpose or keep them outside your pinned work; unfinished work need not be deleted.
 - **Profile-level jokes and edgy repo names.** Search "username" plus a few keywords you might be embarrassed by; fix anything that comes up.
 
 ## What you do not need
 
-You do not need a green graph every week, a portfolio website (GitHub is enough), or a contribution to a famous open-source project. Quality over volume applies even more to GitHub than to your résumé.
+A weekly green graph or a contribution to a famous open-source project is not a universal requirement. A separate portfolio can help for design, frontend, and other roles that benefit from a visible demonstration. Quality over volume applies even more to GitHub than to your résumé.
