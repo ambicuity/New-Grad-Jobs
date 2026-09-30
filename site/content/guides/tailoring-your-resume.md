@@ -1,7 +1,7 @@
 ---
 title: Tailoring your résumé to a posting
 description: A fifteen-minute method for matching a résumé to one job posting without rewriting it, and what not to change.
-updated: 2026-09-25
+updated: 2026-09-30
 section: Résumé and applications
 order: 3
 ---
@@ -10,7 +10,7 @@ The same résumé sent to fifty postings gets the results of a résumé written 
 
 ## Why it works
 
-Most postings on this board are hosted on Greenhouse, Lever, Ashby or Workday. Those systems parse the résumé into fields and show recruiters a searchable record. A recruiter with two hundred applicants searches and skims for the posting's own words. If the posting says "data pipelines" and your résumé says "ETL", a search misses you, and a skim may too. Tailoring is mostly the work of saying the same true things in the posting's vocabulary.
+Most postings on this board are hosted on Greenhouse, Lever, Ashby or Workday. Those systems parse the résumé into fields and show recruiters a searchable record. A recruiter with two hundred applicants searches and skims for the posting's own words. Search behavior varies. If your work involves ETL and data pipelines, describing both accurately can help a reviewer recognize the match. Tailoring is mostly the work of saying the same true things in the posting's vocabulary.
 
 ## The fifteen-minute pass
 
@@ -25,7 +25,7 @@ Most postings on this board are hosted on Greenhouse, Lever, Ashby or Workday. T
 
 - **Facts.** Dates, titles, employers, degrees, numbers. These are checked.
 - **Your strongest project**, even if it is off-topic. A great project shows how you work.
-- **Length.** One page for a new graduate. Tailoring should replace, not add.
+- **Length.** One page is a useful default for a new graduate; follow the role and field's conventions. Tailoring should replace, not add.
 
 ## Signs of over-tailoring
 

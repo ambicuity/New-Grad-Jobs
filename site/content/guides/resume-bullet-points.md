@@ -1,12 +1,12 @@
 ---
 title: Résumé bullet points that get read
-description: Writing experience and project bullets a recruiter can verify in six seconds, with before-and-after examples.
-updated: 2026-09-25
+description: Writing clear, truthful experience and project bullets, with before-and-after examples.
+updated: 2026-09-30
 section: Résumé and applications
 order: 2
 ---
 
-A recruiter's first pass over a new grad résumé is a few seconds long. They are not reading; they are looking for evidence that you have done the kind of work the role involves. Bullets are where that evidence lives, and most new grad bullets fail because they describe duties instead of results.
+Make a résumé easy to scan for evidence that you have done the kind of work the role involves. Bullets are where that evidence lives, and most new grad bullets fail because they describe duties instead of results.
 
 ## The shape of a good bullet
 
@@ -33,14 +33,14 @@ Projects are experience for a new graduate and get the same treatment: a name, w
 
 ## Ordering
 
-Within a role, put the bullet that best matches the target posting first. Recruiters read the first bullet of each entry and skim the rest. This is the cheapest form of tailoring and it is covered in [Tailoring your résumé](../tailoring-your-resume/).
+Within a role, put the bullet that best matches the target posting first. Place relevant evidence first so it is easy to find. This is the cheapest form of tailoring and it is covered in [Tailoring your résumé](../tailoring-your-resume/).
 
 ## Things to cut
 
 - Soft-skill claims with no evidence ("strong communicator", "fast learner")
 - Duties every holder of the title had ("attended stand-ups")
 - Tools listed without a use ("familiar with Docker")
-- Anything from before university unless it is directly relevant
+- Older experience that adds no relevant evidence; keep useful work, achievements or responsibilities regardless of when they happened
 
 ## A checklist per bullet
 

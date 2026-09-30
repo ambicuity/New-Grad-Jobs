@@ -1,7 +1,7 @@
 ---
 title: Job freshness
 description: What "posted", "first seen" and the LIVE stamp mean, how new roles are marked, and how to tell whether the board itself is current.
-updated: 2026-09-25
+updated: 2026-09-30
 section: NGJ data
 order: 5
 ---
@@ -10,11 +10,11 @@ Freshness is two different questions: how new is this job, and how current is th
 
 ## Posted date
 
-Each source reports when the employer published the posting, and the board shows that date on the row and uses it for the default newest-first sort. Sources differ in how they report it: some give the original publication time, some give the last edit, and a few give nothing. When a posting has no date, the board uses the time it first saw it instead. The NEW 24H count in the status bar and the marker on a row are based on this posted date.
+The board shows the posted date supplied by the source and uses it for the default newest-first sort. Sources differ: some provide the original publication time, some a last edit, and some no date. An unknown posted date is shown as a dash and is not included in NEW 24H; the site does not substitute first seen for it. NEW 24H and the corresponding row marker use the posted timestamp.
 
 ## First seen
 
-Separately, the board records the first run in which it saw each job, using the job's stable id. That timestamp is carried forward from run to run, so it does not reset when an employer edits a posting. It drives the [new this week](../../jobs/new-this-week/) page and the "new" link on the board, which list everything first seen in the last seven days. First seen is the board's own observation and does not depend on how a source reports dates, which is why it is used for those views.
+Separately, the board carries forward a first-seen timestamp for each stable job id from the previous published run. When previous records are available, a newly encountered job gets the current run time. During a bootstrap run without previous records, the scraper uses the source's posted date when available, otherwise the run time. The [new this week](../../jobs/new-this-week/) page and discovery filters use first seen, so the bootstrap fallback means it is not always the literal first observation. Jobs absent from the previous run can also receive a new first-seen value when they reappear.
 
 ## The LIVE stamp
 
@@ -30,7 +30,7 @@ None of these produce invented dates. If the board does not know when something 
 
 ## Using freshness
 
-- Apply within days of first seen when you can. Rolling review means early applications are read against a smaller pile.
+- Apply promptly when you can, while checking eligibility and application quality. Rolling review can close before a stated deadline; early submission does not guarantee review.
 - Subscribe to a feed; entries appear the run they are first seen, which is as early as the board knows.
 - Treat an old posted date with a recent first-seen as a reposted or newly discovered role, and read it with that in mind.
 - If the stamp reads STALE, the board is not currently updating; the data is still the last good run and the feeds will resume when the scrape does.

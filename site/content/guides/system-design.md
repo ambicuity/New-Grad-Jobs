@@ -1,16 +1,16 @@
 ---
 title: System design for new grads
 description: What a system design conversation at entry level actually covers, and the small set of concepts worth knowing.
-updated: 2026-09-25
+updated: 2026-09-30
 section: Interviews
 order: 5
 ---
 
-Most new grad software loops do not include a full system design interview; it is a mid-level and senior format. Some large employers include a short design conversation, and many technical interviews end with a "how would you scale this" question. This guide is scoped to that: enough to talk sensibly, not enough to design a payments system.
+System-design expectations vary by employer and role. Confirm whether your loop includes a design round and how deep it goes. This guide provides a starting method for an entry-level conversation.
 
 ## What is being judged
 
-At entry level, the interviewer wants to see whether you can reason about a system larger than a function: identify the parts, say how they talk to each other, and understand where it gets slow or breaks. Nobody expects you to know the right answer. They expect you to ask questions, make reasonable choices and explain trade-offs.
+At entry level, the interviewer wants to see whether you can reason about a system larger than a function: identify the parts, say how they talk to each other, and understand where it gets slow or breaks. You may need domain knowledge as well as reasoning. They expect you to ask questions, make reasonable choices and explain trade-offs.
 
 ## A method that fits in twenty minutes
 
@@ -28,9 +28,9 @@ Stop when the interviewer stops you. Adding components nobody asked for is the m
 - What a relational database is good at, and what an index does
 - Why reads are cached and how a cache goes stale
 - What a queue is for: decoupling and smoothing load
-- Load balancing across identical servers, and why servers should not hold state
+- Load balancing and the trade-offs of storing session state on individual servers
 - Replication for reads and for failure; the difference between consistent and eventually consistent
-- Sharding, and why it is the last resort
+- Sharding and the operational complexity it introduces
 - Idempotency: why the same request twice must not charge twice
 - Rate limiting and time-outs, as protection for the system and for its callers
 - Where logging and metrics go, and what you would alert on
@@ -43,4 +43,4 @@ The most likely version of this interview for a new grad is a deep dive into a p
 
 ## Preparation
 
-For the concepts above, two free, open-source courses by this board's maintainer cover exactly this ground with runnable code: the [Computer Science course](https://course-computer-science.riteshrana.engineer/) builds databases, B-trees, TCP state machines and Raft consensus from first principles in its later phases, and the [Computer Networks course](https://course-computer-networks.riteshrana.engineer/) traces packets through IP, TCP, DNS and HTTP and works through real failure modes. Take the phases you need and stop there. Then practice the method above on ordinary products you use: a URL shortener, a photo feed, a chat app, a job board. Twenty minutes each, out loud, drawing as you go. Five or six of those is enough for most entry-level loops. Spend the saved time on [coding interviews](../coding-interviews/), which decide far more new grad outcomes.
+For the concepts above, two free, open-source courses by this board's maintainer cover exactly this ground with runnable code: the [Computer Science course](https://course-computer-science.riteshrana.engineer/) builds databases, B-trees, TCP state machines and Raft consensus from first principles in its later phases, and the [Computer Networks course](https://course-computer-networks.riteshrana.engineer/) traces packets through IP, TCP, DNS and HTTP and works through real failure modes. Take the phases you need and stop there. Then practice the method above on ordinary products you use: a URL shortener, a photo feed, a chat app, a job board. Twenty minutes each, out loud, drawing as you go. Use mock feedback to decide whether you need more design practice or time on [coding interviews](../coding-interviews/).

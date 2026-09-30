@@ -1,7 +1,7 @@
 ---
 title: Duplicate jobs
 description: Why the same role appears on several sites, how the board decides two postings are one, and why a few duplicates remain.
-updated: 2026-09-25
+updated: 2026-09-30
 section: NGJ data
 order: 3
 ---
@@ -24,7 +24,7 @@ Jobs from the same source are never merged in this pass. Employers routinely pos
 - The same role at two locations that share no place-name words
 - A requisition reposted with a new URL after it was closed and reopened
 
-These show as separate rows. They are a small fraction, and the board would rather show an occasional duplicate than drop a real job by guessing.
+These can show as separate rows. Conversely, two distinct requisitions from different sources can share the same normalized company, title and compatible location and be merged. Deduplication is a heuristic, not a verified count of distinct vacancies.
 
 ## Applicant side
 

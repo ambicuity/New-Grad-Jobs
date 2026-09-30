@@ -1,7 +1,7 @@
 ---
 title: Behavioral interviews
 description: What "tell me about a time" questions are really asking, how to prepare six stories, and how to answer without a job history.
-updated: 2026-09-25
+updated: 2026-09-30
 section: Interviews
 order: 4
 ---
@@ -20,7 +20,7 @@ They come in a few families, whatever the wording:
 - Ambiguity: a task with no clear instructions
 - Feedback: criticism you received and what changed
 
-Employers that publish values (and many large ones do) ask questions mapped to them. Read the values page before the interview.
+Employers that publish values (and many large ones do) ask questions mapped to them. Read the values page before the interview. For the wider loop, see [How to prepare for a multi-round interview loop](../how-to-prepare-for-a-multi-round-interview-loop/).
 
 ## Six stories
 
@@ -32,7 +32,7 @@ Prepare six stories, each usable for two or three families. For each, write down
 - **Result**: what happened, with an honest number or outcome
 - **Reflection**: what you would do differently
 
-This is the STAR structure with a fifth step, and the fifth step is what separates a good answer from a rehearsed one. Interviewers at new grad level care more about self-awareness than about outcomes.
+This is the STAR structure with a fifth step, and the fifth step is what separates a good answer from a rehearsed one. Give both the outcome and your reflection; the weight assigned to each depends on the employer's rubric.
 
 Stories can come from anywhere: a group project where a member disappeared, an internship bug that took a week, a club event that nearly failed, a part-time job with a difficult customer. Small, true and detailed beats large and vague.
 
@@ -45,6 +45,10 @@ When the honest result was bad, say so and go straight to the reflection. A fail
 ## Questions to ask
 
 The last five minutes are yours. Ask about the team's work, how new graduates are onboarded, what the first three months look like, and how performance is reviewed. Avoid questions the careers page answers. The [Questions before accepting](../questions-before-accepting/) guide has more for the offer stage.
+
+## When the behavioral round is recorded
+
+Some companies run the behavioral round as an AI-scored or AI-moderated recorded interview rather than live. The same stories work — STAR with reflection — but the pacing is different: you may have a fixed response window, adaptive follow-ups, or limited retries. Check the specific instructions. See [AI-assisted interviews](../ai-assisted-interviews/) for the format-specific prep, including the pre-assessment checklist and the debrief.
 
 ## Common mistakes
 

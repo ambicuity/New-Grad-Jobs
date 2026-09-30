@@ -1,7 +1,7 @@
 ---
 title: Negotiating a new grad offer
-description: What is negotiable at entry level, what is not, and a short script that asks for more without risking the offer.
-updated: 2026-09-25
+description: How to ask about entry-level compensation, start dates and relocation while understanding employer constraints and uncertainty.
+updated: 2026-09-30
 section: Offers
 order: 4
 ---
@@ -17,8 +17,8 @@ New grad offers are more negotiable than most graduates assume and less negotiab
 
 ## What is usually not
 
-- **Level.** New grad is a level; you will not be hired above it without experience.
-- **Base above the band.** Nobody at a large employer can do this for a new grad.
+- **Level.** Ask how the employer maps your qualifications to its levels; structured graduate hiring often has a fixed entry level.
+- **Base above the band.** An exception may be unavailable or require additional approval.
 - **Cohort program terms.** Structured programs pay the class the same; asking is fine, expect a no.
 
 ## What you need first
@@ -37,11 +37,11 @@ Ask once, for one thing or one package. A second round is possible if the first 
 
 ## If they say no
 
-Ask whether anything else is possible: signing bonus, start date, an earlier review. Then decide on the offer as it stands with [Evaluating an offer](../evaluating-an-offer/). A polite no is not a reason to walk away from a good job, and a good employer will not withdraw an offer because you asked politely. If one does, you have learned something.
+Ask whether anything else is possible: signing bonus, start date, an earlier review. Then decide on the offer as it stands with [Evaluating an offer](../evaluating-an-offer/). A polite request does not guarantee that an offer remains open. Confirm the deadline, keep the ask proportionate and decide whether you are comfortable with that uncertainty.
 
 ## International candidates
 
-Negotiation does not affect sponsorship policy, and it does not help to try to trade salary for a visa petition. Settle the immigration questions first; see [OPT and STEM OPT](../opt-and-stem-opt/).
+Confirm immigration feasibility before relying on an offer. Salary does not establish sponsorship eligibility, and H-1B employers must meet [required-wage rules](https://www.dol.gov/agencies/whd/fact-sheets/62g-h1b-required-wage). Do not assume a lower salary can substitute for employer immigration obligations; see [OPT and STEM OPT](../opt-and-stem-opt/).
 
 ## Things not to do
 

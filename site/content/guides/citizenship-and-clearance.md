@@ -1,16 +1,16 @@
 ---
 title: Citizenship and security clearance
 description: Why so many entry-level engineering roles require citizenship, what a clearance is, and how to read "ability to obtain".
-updated: 2026-09-25
+updated: 2026-09-30
 section: International students
 order: 4
 ---
 
-A large share of levelled entry-level engineering postings ("Engineer I", "Associate Engineer") come from defense, aerospace and government contractors, and almost all of them require citizenship. This page explains the requirement so you can decide quickly whether a posting is open to you.
+This guide concerns U.S. roles. Defense, aerospace and government postings may include citizenship, clearance or export-control requirements. Those requirements differ; read the exact condition before ruling yourself out. Canadian and Indian requirements must be checked under their own rules.
 
 ## Why the requirement exists
 
-Work on government contracts often involves classified information or export-controlled technology. Access to classified information requires a security clearance, and clearances are granted to citizens. Export-control rules separately restrict who may access certain technical data. The employer cannot waive either; the requirement comes from the contract and the law, not from preference. This is why the board flags these roles as **citizenship required** and why the flag is worth trusting.
+Work on government contracts often involves classified information or export-controlled technology. U.S. personnel clearances require U.S. citizenship; rare limited-access authorizations are a separate mechanism. See [DCSA](https://www.dcsa.mil/Industrial-Security/International-Programs/Security-Assurances-for-Personnel-Facilities/clearenceis/). Export controls are separate and do not impose a blanket citizens-only hiring rule. See [DOJ’s explanation](https://www.justice.gov/crt/iers-frequently-asked-questions-faqs). The board’s **citizenship required** flag combines several text signals, so confirm the original wording.
 
 ## Clearance levels, briefly
 
@@ -18,7 +18,7 @@ Clearances are granted by the government after a background investigation. The c
 
 ## "Ability to obtain a clearance"
 
-This phrase means: you do not need a clearance today, but you must be eligible for one and the employer will sponsor the investigation. Eligibility starts with citizenship. Beyond that, the investigation looks at the factors above; extensive recent foreign contact, unresolved debt or a record of certain conduct can delay or block a clearance, and honesty in the questionnaire matters more than a spotless history. If you are a citizen with an ordinary background, treat "ability to obtain" as a formality that takes time.
+This phrase means: you do not need a clearance today, but you must be eligible for one and the employer will sponsor the investigation. Eligibility starts with citizenship. Beyond that, the investigation looks at the factors above; extensive recent foreign contact, unresolved debt or a record of certain conduct can delay or block a clearance, and honesty in the questionnaire matters more than a spotless history. Citizenship alone does not guarantee approval. Ask whether an interim clearance is needed, who initiates the process and what happens if approval is delayed or denied.
 
 ## "Active clearance required"
 
@@ -26,12 +26,12 @@ This means the employer wants someone who already holds one and will not wait. N
 
 ## Dual citizens and permanent residents
 
-Policies vary. Some roles accept permanent residents for export-control purposes but not for clearances; dual citizenship may raise questions in an investigation without being disqualifying. If a posting says "US person", it may include permanent residents; if it says "US citizen", it does not. Ask the recruiter; they answer this every day.
+For export-control purposes, U.S.-person eligibility can include citizens, nationals, lawful permanent residents, refugees and asylees. U.S.-person language does not mean citizens only. Dual citizenship is not by itself a conclusion about clearance eligibility. Ask the recruiter or security office which requirement applies.
 
 ## Using the board
 
-The "no restriction stated" chip hides every posting flagged citizenship required or no sponsorship. If you are a citizen who wants these roles, do the opposite: many of them are strong, structured entry programs at large employers, and the competition is smaller because the eligible pool is smaller. The COMPANY TIER facet and the [company pages](../../jobs/at/) help you find the main employers.
+The "no restriction stated" chip hides every posting flagged citizenship required or no sponsorship. If you are a citizen who wants these roles, do the opposite: many of them are strong, structured entry programs at large employers, and should be evaluated against your goals and the stated eligibility requirements. The COMPANY TIER facet and the [company pages](../../jobs/at/) help you find the main employers.
 
 ## For everyone else
 
-Nothing about this is personal, and there is no path around it worth spending time on. Filter these roles out and put the hours into the employers that can hire you. [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/) covers the rest of the eligibility picture.
+If a posting explicitly requires citizenship you do not hold, focus on roles for which you qualify. If it instead mentions U.S.-person status or export controls, ask for clarification before excluding yourself. [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/) covers the rest of the eligibility picture.

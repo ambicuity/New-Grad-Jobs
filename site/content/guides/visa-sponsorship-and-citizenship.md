@@ -1,7 +1,7 @@
 ---
 title: Visa sponsorship and citizenship flags
 description: How the board reads sponsorship and citizenship language, and what international students should check before applying.
-updated: 2026-09-25
+updated: 2026-09-30
 section: International students
 order: 1
 ---
@@ -11,7 +11,7 @@ This board flags two things it can read from a posting's text. It does not guess
 ## The two flags
 
 - **No sponsorship** is set when the posting says the employer will not sponsor a work visa, now or in the future.
-- **Citizenship required** is set when the posting requires citizenship, permanent residency, a security clearance or the ability to obtain one. Defense and government contractors account for most of these.
+- **Citizenship required** is the board’s broad text flag for citizenship, permanent-residency and clearance language. It is not a legal determination: permanent residency and U.S.-person status are different from citizenship. Read the original requirement.
 
 A job with neither flag shows "no restriction stated". That means the text contained no such statement, not that sponsorship is offered. Many employers simply say nothing, so treat it as a question to ask, not an answer.
 
@@ -21,10 +21,16 @@ Sponsorship language is usually near the end of the posting, in the equal-opport
 
 ## Terms worth knowing
 
-- **OPT** lets F-1 students work in the United States after graduation for twelve months, and STEM degrees can extend that by a further twenty-four. Employers who "do not sponsor" often still hire on OPT; ask.
-- **H-1B** is the common long-term work visa. It is subject to an annual lottery, which is why some employers avoid it and why an employer's willingness matters more than the job title.
+- **OPT** can authorize eligible F-1 students to work in their field of study, generally for up to twelve months; eligible STEM graduates can apply for a further twenty-four months subject to additional requirements. A "no sponsorship" policy may exclude OPT candidates. Ask whether the employer accepts your current authorization and future sponsorship needs. See [OPT and STEM OPT](../opt-and-stem-opt/) for requirements and official sources.
+- **H-1B** is a U.S. employer-petition route for qualifying specialty occupations. Cap-subject cases involve registration and selection; some cases are cap-exempt. Confirm current [USCIS requirements](https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations) and employer policy.
 - **TN status** is available to Canadian and Mexican citizens for a fixed list of professions and does not need a lottery.
-- **Security clearance** requires US citizenship in almost every case, so "clearance required" postings are not open to international candidates.
+- **U.S. personnel security clearance** requires U.S. citizenship. Rare limited-access authorizations are distinct from a clearance. See [DCSA guidance](https://www.dcsa.mil/Industrial-Security/International-Programs/Security-Assurances-for-Personnel-Facilities/clearenceis/).
+
+## Country matters
+
+OPT, H-1B and TN concern U.S. employment. For Canada, distinguish an open work permit from an employer-specific permit; employer steps may depend on an LMIA or an exemption. See [IRCC work-permit types](https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/need-permit.html). PGWP eligibility depends on your program and application history; use [IRCC’s current eligibility page](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html).
+
+For India, foreign nationals should verify their employment-visa eligibility with the responsible Indian mission. A U.S. or Canadian permit does not authorize work in India; see the [Ministry of Home Affairs employment-visa guidance](https://www.mha.gov.in/web/sites/default/files/2022-08/work_visa_faq%5B1%5D.pdf). Check current mission instructions before relying on this older FAQ.
 
 ## Using the filter
 

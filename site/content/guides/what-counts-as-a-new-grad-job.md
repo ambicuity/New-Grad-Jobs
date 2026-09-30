@@ -1,7 +1,7 @@
 ---
 title: What counts as a new grad job?
 description: The definition this board uses, why it is stricter than "junior", and the kinds of roles it deliberately leaves out.
-updated: 2026-09-25
+updated: 2026-09-30
 section: Getting started
 order: 2
 ---
@@ -12,8 +12,8 @@ order: 2
 
 A posting is a new grad job here when all of the following hold:
 
-1. **It names a role.** The title contains a recognizable role word: engineer, developer, analyst, designer, nurse, accountant, consultant, coordinator, and so on across every field. A title that is only a program name or an internal code is not enough.
-2. **It carries an entry-level signal.** Something in the title or description says early career: "new grad", "entry level", "junior", "associate", "early career", a level marker such as "I", "II", "L3" or "L4", a start year, "rotational program", "graduate program", or a common entry role such as "software engineer" or "data analyst". Some signals are strong on their own; others only count in combination.
+1. **It names a role or a strong graduate-program phrase in the title.** Recognizable role words include engineer, developer, analyst, designer, nurse, accountant, consultant and coordinator. A configured strong phrase such as a graduate program can pass without a separate role word; an internal code alone cannot.
+2. **It carries an entry-level signal in the title.** Examples include "new grad", "entry level", "junior", "associate", "early career", a configured level marker or cohort year, "rotational program", "graduate program", or a common entry role name. A signal only in the description is not enough for the curated title filter.
 3. **It has no seniority word.** Titles with "senior", "staff", "principal", "lead", "manager", "director", "VP", "head of", "architect", "distinguished" or "fellow" are out, and so are titles demanding five or more years of experience.
 4. **It is not an internship or co-op.** Those are a different search and a different season. They are still visible with a toggle: see [Finding hidden new grad roles](../finding-hidden-new-grad-roles/).
 5. **It is in the United States, Canada or India,** or remote without naming another country.
@@ -24,8 +24,8 @@ The details, including the exact word lists, are in [How NGJ classifies jobs](..
 ## What this deliberately excludes
 
 - **Level III and above.** "Engineer III" is usually two promotions past entry level.
-- **"Junior" roles that ask for years of experience.** The title word gets a posting in, but a "5+ years" requirement takes it back out.
-- **Contract-to-hire and staffing-agency listings** where the company is the agency, not the employer. Everything here comes from an employer's own career site or from Indeed listings that could be matched to one.
+- **Titles with excluded experience phrases**, such as configured "5+ years" signals. The filter does not extract every experience requirement from descriptions, so some included postings can still ask for more experience than you have.
+- **Titles without a configured entry-level signal**, even when the description would suit a graduate. Contract and staffing-agency roles are not categorically excluded; verify the actual employer and employment terms yourself.
 - **Roles that only mention a degree.** "Bachelor's degree required" is true of most jobs and says nothing about level.
 
 ## What it does not judge

@@ -1,12 +1,12 @@
 ---
 title: How to use this board
 description: Filters, alerts, saved and applied lists, keyboard shortcuts and the data behind every count.
-updated: 2026-09-25
+updated: 2026-09-30
 section: Getting started
 order: 1
 ---
 
-NGJ is a live list of new grad and entry-level jobs pulled straight from company career sites. It refreshes about every 30 minutes, and every number on it is computed from the published data. This guide is the two-minute tour.
+NGJ lists new grad and entry-level postings collected from configured company career sites and Indeed. Scrapes are scheduled about every 30 minutes; failures can delay publication, so check the LIVE stamp and the [about page](../../about/) for currency. Board counts come from the published data. This guide is the two-minute tour.
 
 ## Filtering
 
@@ -16,7 +16,7 @@ Everything you set lives in the URL, so a filtered view is a link you can share 
 
 ## Alerts
 
-Every category, plus remote and "no visa restriction stated", has its own RSS feed. The status bar shows the feed that matches your current view; the [browse pages](../../jobs/) link the feed for each page. Paste a feed into your reader, or into an RSS-to-email service, and you get new roles the moment the scraper sees them.
+Every category, plus remote and "no visa restriction stated", has its own RSS feed. The status bar offers a relevant feed for supported facets; it does not encode every combination of search and filters. The [browse pages](../../jobs/) link the feed for each page. Subscribe in a reader or RSS-to-email service; updates arrive after a successful publication and your reader's next refresh.
 
 ## Saved and applied
 

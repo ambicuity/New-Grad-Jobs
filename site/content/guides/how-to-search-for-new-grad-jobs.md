@@ -1,7 +1,7 @@
 ---
 title: How to search for new grad jobs
 description: A repeatable weekly routine built on this board's filters, landing pages, feeds and the EXPLORE tab.
-updated: 2026-09-25
+updated: 2026-09-30
 section: Getting started
 order: 3
 ---
@@ -15,9 +15,11 @@ The most common mistake in a new grad search is treating it as one big session. 
 3. If you need visa sponsorship, add the "no restriction stated" chip. It hides every posting that states a restriction. Read [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/) for what it does and does not mean.
 4. Bookmark the URL. Every filter lives in the address bar, so the bookmark is your saved search.
 
+If you do not already have a short list of companies you would apply to, write one before you start the routine. See [How to build a target-company list](../build-a-target-company-list/).
+
 ## Once: subscribe
 
-The status bar shows an RSS link for the feed closest to your view: one per category, plus remote and "no visa restriction stated". Put it in a feed reader or an RSS-to-email service. New postings then reach you within about half an hour of the scraper seeing them, which is as early as anyone sees them.
+The status bar shows an RSS link for the feed closest to your view: one per category, plus remote and "no visa restriction stated". Put it in a feed reader or an RSS-to-email service. New postings then reach you within about half an hour of the scraper seeing them, the feed is a discovery aid, and the employer may have posted earlier.
 
 ## Daily: ten minutes
 
@@ -27,7 +29,7 @@ The status bar shows an RSS link for the feed closest to your view: one per cate
 
 ## Twice a week: apply
 
-Open your saved list and apply to the ones that survive a second read. Two focused applications with a tailored résumé are worth more than ten copies of the same one; see [Tailoring your résumé](../tailoring-your-resume/) and [Application strategy](../application-strategy/).
+Open your saved list and apply to the ones that survive a second read. Use effort in proportion to fit and verify each submission; there is no fixed exchange rate between tailored and general applications; see [Tailoring your résumé](../tailoring-your-resume/) and [Application strategy](../application-strategy/).
 
 ## Weekly: widen and check the landing pages
 
