@@ -67,9 +67,9 @@ def test_each_keyword_is_searched_and_results_are_deduplicated_by_external_path(
     result = _fetch(tenant, search_keywords=["new grad", "junior"], title_filter=build_title_prefilter(FILTERING))
     assert sorted({p["searchText"] for p in tenant.payloads}) == ["junior", "new grad"]
     assert [j["url"] for j in result.jobs] == [
-        "https://acme.wd5.myworkdayjobs.com/job/1",
-        "https://acme.wd5.myworkdayjobs.com/job/2",
-        "https://acme.wd5.myworkdayjobs.com/job/3",
+        "https://acme.wd5.myworkdayjobs.com/Careers/job/1",
+        "https://acme.wd5.myworkdayjobs.com/Careers/job/2",
+        "https://acme.wd5.myworkdayjobs.com/Careers/job/3",
     ]
     assert result.raw_count == 4
     assert result.errors == ()
