@@ -18,7 +18,7 @@ The board's saved list (`s`) is a natural inbox for targets and good fits. Star 
 
 ## Speed matters
 
-Many employers review on a rolling basis and cohort roles close when the class fills. Applying in the first days after a posting appears is the single cheapest improvement you can make. The board marks roles first seen in the last 24 hours, the feeds deliver them within about half an hour, and the [new this week](../../jobs/new-this-week/) page shows what is being added.
+Many employers review on a rolling basis and cohort roles close when the class fills. Apply promptly when the role fits, without sacrificing eligibility checks or application quality. The board's NEW 24H marker uses the source's posted timestamp; feeds update after successful publication and your reader's refresh, and the [new this week](../../jobs/new-this-week/) page shows what is being added.
 
 ## Track everything
 

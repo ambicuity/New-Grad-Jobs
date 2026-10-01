@@ -6,12 +6,12 @@ section: International students
 order: 1
 ---
 
-This board flags two things it can read from a posting's text. It does not guess anything it cannot read.
+This board flags configured phrases in a posting's text. The flags are search aids with false positives and false negatives, not legal conclusions.
 
 ## The two flags
 
-- **No sponsorship** is set when the posting says the employer will not sponsor a work visa, now or in the future.
-- **Citizenship required** is the board’s broad text flag for citizenship, permanent-residency and clearance language. It is not a legal determination: permanent residency and U.S.-person status are different from citizenship. Read the original requirement.
+- **No sponsorship** is an automated text flag. Its phrase list includes explicit refusals and broader phrases such as "must be authorized"; it can flag a posting that has not actually ruled out sponsorship.
+- **Citizenship required** is the board’s broad text flag for configured citizenship and clearance phrases. Permanent-residency or US-person language alone is not a complete description of this flag's matching rules. It is not a legal determination: permanent residency and U.S.-person status are different from citizenship. Read the original requirement.
 
 A job with neither flag shows "no restriction stated". That means the text contained no such statement, not that sponsorship is offered. Many employers simply say nothing, so treat it as a question to ask, not an answer.
 

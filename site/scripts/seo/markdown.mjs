@@ -9,6 +9,8 @@ import { escapeHtml } from './text.mjs';
 
 const FRONT_MATTER_RE = /^---\n([\s\S]*?)\n---\n?/;
 const RELATIVE_URL_RE = /^(?:\.{1,2}\/|\/|#)[^\s"'<>]*$/;
+const TABLE_DELIM_RE = /^\s*\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)+\|?\s*$/;
+const TABLE_ROW_RE = /\|/;
 
 /** Split optional `---` front matter (key: value lines) from the body. */
 export function parseFrontMatter(source) {
@@ -34,7 +36,8 @@ export function renderInline(text) {
   out = out.replace(/`([^`]+)`/g, (_, code) => `<code>${code}</code>`);
   // One level of parentheses inside the target ("javascript:alert(1)") is consumed so the link is rejected whole.
   out = out.replace(/\[([^\]]+)\]\(([^()\s]*(?:\([^()\s]*\))?[^()\s]*)\)/g, (whole, label, target) => {
-    const href = safeHref(target);
+    // Undo the text escape for query separators; escape the validated href once below.
+    const href = safeHref(target.replace(/&amp;/g, '&'));
     if (!href) return label;
     const external = /^https?:/i.test(href);
     return `<a href="${escapeHtml(href)}"${external ? ' rel="noopener noreferrer"' : ''}>${label}</a>`;
@@ -42,6 +45,28 @@ export function renderInline(text) {
   out = out.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
   out = out.replace(/(^|[\s(])_([^_]+)_(?=[\s.,;:!?)]|$)/g, '$1<em>$2</em>');
   return out;
+}
+
+/** Evidence levels for cited claims. Order matches the badge colour ramp (best evidence first). */
+export const EVIDENCE_LEVELS = Object.freeze([
+  { id: 'official', label: 'OFFICIAL', swatch: '#5fd28a', description: 'USCIS / DHS / FTC / BLS / employer policy' },
+  { id: 'primary', label: 'PRIMARY SOURCE', swatch: '#62a3ff', description: 'Company careers page / actual job posting' },
+  { id: 'observational', label: 'OBSERVATIONAL', swatch: '#e8c443', description: 'Patterns observed from job postings/data' },
+  { id: 'practical', label: 'PRACTICAL ADVICE', swatch: '#ff9d3d', description: 'Recommended workflow' },
+  { id: 'candidate', label: 'CANDIDATE EXPERIENCE', swatch: '#c084fc', description: 'Anecdotal / community experience' },
+]);
+
+const EVIDENCE_BLOCK_RE = /^:::\s*evidence\s+([a-z]+)\s*$/;
+
+/** Look up the badge info for a level id; returns null for unknown levels. */
+export function evidenceLevel(id) {
+  const found = EVIDENCE_LEVELS.find((l) => l.id === id);
+  return found || null;
+}
+
+/** True if the source uses `::: evidence <level>` blocks (used by the renderer). */
+export function hasEvidenceBlocks(body) {
+  return EVIDENCE_BLOCK_RE.test(String(body ?? '').split('\n', 1)[0]) || /(^|\n):::\s*evidence\s+[a-z]+\s*\n/.test(String(body ?? ''));
 }
 
 /**
@@ -70,16 +95,91 @@ export function renderMarkdown(body) {
   };
   const flushAll = () => { flushPara(); flushList(); flushQuote(); };
 
-  for (const raw of lines) {
+  /** A heading slug the build, the index, and the in-page fragments all agree on. */
+  const slugifyHeading = (text) => {
+    const ascii = text.normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+    return ascii.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  };
+
+  for (let i = 0; i < lines.length; i += 1) {
+    const raw = lines[i];
     const line = raw.trimEnd();
     if (!line.trim()) { flushAll(); continue; }
+    // Pipe table: a header row, a delimiter row, then one or more body rows.
+    // Detect by peeking at the next line and confirming it is the
+    // delimiter pattern (`| --- | --- |`).
+    if (TABLE_ROW_RE.test(line)) {
+      const next = (lines[i + 1] || '').trimEnd();
+      if (TABLE_DELIM_RE.test(next)) {
+        flushAll();
+        const splitCells = (row) => row.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map((c) => c.trim());
+        const header = splitCells(line);
+        const aligns = splitCells(next).map((c) => {
+          const left = c.startsWith(':');
+          const right = c.endsWith(':');
+          if (left && right) return 'center';
+          if (right) return 'right';
+          if (left) return 'left';
+          return null;
+        });
+        const body = [];
+        i += 2;
+        while (i < lines.length) {
+          const cur = lines[i].trimEnd();
+          if (!cur.trim()) break;
+          if (!TABLE_ROW_RE.test(cur)) break;
+          body.push(splitCells(cur));
+          i += 1;
+        }
+        const alignAttr = (a) => a ? ` style="text-align:${a}"` : '';
+        const renderRow = (cells, tag) => `<tr>${cells.map((c, idx) => `<${tag}${alignAttr(aligns[idx])}>${renderInline(c)}</${tag}>`).join('')}</tr>`;
+        out.push(`<table>\n<thead>\n${renderRow(header, 'th')}\n</thead>\n${body.length ? `<tbody>\n${body.map((r) => renderRow(r, 'td')).join('\n')}\n</tbody>` : ''}\n</table>`);
+        // The outer loop advances once more; revisit the first non-table line.
+        i -= 1;
+        continue;
+      }
+    }
+    // Evidence block: opens with `::: evidence <level>` and closes on the next `:::` line.
+    const evOpen = EVIDENCE_BLOCK_RE.exec(line);
+    if (evOpen) {
+      flushAll();
+      const level = evOpen[1];
+      const levelInfo = evidenceLevel(level);
+      const evLines = [];
+      i += 1;
+      while (i < lines.length) {
+        const cur = lines[i].trimEnd();
+        if (cur.trim() === ':::') break;
+        evLines.push(cur);
+        i += 1;
+      }
+      const inner = evLines.join('\n').trim();
+      // If the level id is unknown, render the block as a plain blockquote so
+      // a typo never silently disappears.
+      const body = inner
+        ? `<p>${renderInline(inner.replace(/\n+/g, ' '))}</p>`
+        : '';
+      if (levelInfo) {
+        out.push(
+          `<aside class="evidence" data-evidence="${escapeHtml(levelInfo.id)}" aria-label="Evidence level: ${escapeHtml(levelInfo.label)}">`
+          + `<span class="evidence-badge"><span class="evidence-swatch" aria-hidden="true"></span>${escapeHtml(levelInfo.label)}</span>`
+          + `<span class="evidence-body">${body}</span>`
+          + `<span class="evidence-desc">${escapeHtml(levelInfo.description)}</span>`
+          + `</aside>`,
+        );
+      } else if (body) {
+        out.push(`<blockquote class="evidence-unknown">${body}<p class="dim">Evidence level "${escapeHtml(level)}" not recognised.</p></blockquote>`);
+      }
+      continue;
+    }
     const heading = /^(#{1,3})\s+(.+)$/.exec(line);
     if (heading) {
       flushAll();
       const level = heading[1].length;
       const text = heading[2].trim();
       headings.push({ level, text });
-      out.push(`<h${level}>${renderInline(text)}</h${level}>`);
+      const id = slugifyHeading(text);
+      out.push(`<h${level}${id ? ` id="${escapeHtml(id)}"` : ''}>${renderInline(text)}</h${level}>`);
       continue;
     }
     const bullet = /^\s*[-*]\s+(.+)$/.exec(line);

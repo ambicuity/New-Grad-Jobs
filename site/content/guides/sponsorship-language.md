@@ -33,11 +33,11 @@ The board uses a broad **citizenship required** text flag for these signals. It 
 
 ## Silence
 
-Most postings say nothing at all. The board shows them as "no restriction stated", which is a description of the text, not a promise from the employer. Ask about the policy in the first recruiter conversation, regardless of employer size. [OPT and STEM OPT](../opt-and-stem-opt/) lists the questions.
+Some postings say nothing about sponsorship. The board shows them as "no restriction stated", which is a description of the text, not a promise from the employer. Ask about the policy in the first recruiter conversation, regardless of employer size. [OPT and STEM OPT](../opt-and-stem-opt/) lists the questions.
 
 ## How the flags are set
 
-The scraper looks for these phrases in the title and description as whole phrases, not substrings, so "sponsorship" inside "our sponsorship program for conferences" does not trip it, but a posting that phrases its policy unusually may go unflagged. Flags can have false positives and false negatives. Always read the original posting. The exact phrase lists are in the scraper's source on [GitHub](https://github.com/ambicuity/New-Grad-Jobs).
+The [enrichment code](https://github.com/ambicuity/New-Grad-Jobs/blob/main/scripts/ngj/enrich.py) checks lowercased title and description for configured substrings. This differs from the token-boundary inclusion filter. Broad phrases such as "must be authorized" can trigger a flag without an explicit refusal to sponsor, while unusual wording may go unflagged. Flags can have false positives and false negatives. Always read the original posting. The exact phrase lists are in the scraper's source on [GitHub](https://github.com/ambicuity/New-Grad-Jobs).
 
 ## What to do with a flagged posting
 

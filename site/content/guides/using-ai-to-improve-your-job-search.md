@@ -34,4 +34,4 @@ Follow any employer disclosure requirements. If an interviewer asks about AI use
 
 ## A note about AI in the interview itself
 
-The preparation above is for the application. AI use *during* the interview is governed by the rules of the specific assessment, which vary by employer and platform. See [AI-assisted interviews](../ai-assisted-interviews/) for the format landscape and [Interview tool policies](../interview-tool-policies/) for how to read the rules. The same principle applies: every company and platform sets its own rules; the candidate must follow the specific assessment instructions rather than assume an AI tool is allowed.
+The preparation above is for the application. AI use _during_ the interview is governed by the rules of the specific assessment, which vary by employer and platform. See [AI-assisted interviews](../ai-assisted-interviews/) for the format landscape and [Interview tool policies](../interview-tool-policies/) for how to read the rules. The same principle applies: every company and platform sets its own rules; the candidate must follow the specific assessment instructions rather than assume an AI tool is allowed.

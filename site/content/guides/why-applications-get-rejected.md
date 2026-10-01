@@ -24,7 +24,7 @@ You applied to a backend role with a résumé that leads with front-end projects
 
 Many new grad programs hire on a rolling basis and close the requisition when the headcount is met. By the time you apply, there is no seat.
 
-**Fix:** apply early and subscribe to the RSS feeds so new postings reach you within minutes. The board's "first seen in the last 24 hours" highlight is the cheapest signal of a still-open requisition.
+**Fix:** apply promptly and subscribe to RSS for updates after publication. NEW 24H uses the source's posted date, not first seen, and does not establish that the requisition is still open. Check the employer page.
 
 ## 4. The bar was higher than your profile
 

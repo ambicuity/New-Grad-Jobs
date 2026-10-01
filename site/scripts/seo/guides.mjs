@@ -35,6 +35,40 @@ export const SECTION_ORDER = Object.freeze([
 ]);
 const OTHER_SECTION = 'More';
 
+/**
+ * Sections whose guides auto-append an "educational, not legal advice"
+ * disclaimer and a list of official sources. The list is built from US
+ * government immigration / labor / consumer-protection sites that the guides
+ * link to throughout; extend it as new authoritative sources are added.
+ */
+const LEGAL_DISCLAIMER_SECTIONS = new Set(['International students']);
+const LEGAL_DISCLAIMER_NOTICE = '<strong>Important:</strong> This guide is educational information, not legal advice. Immigration rules, processing times and employer policies change. Verify current requirements with the official sources below, your Designated School Official (DSO), or a qualified immigration attorney.';
+const LEGAL_DISCLAIMER_SOURCES = [
+  { href: 'https://www.uscis.gov/working-in-the-united-states', label: 'USCIS — Working in the United States' },
+  { href: 'https://studyinthestates.dhs.gov/', label: 'DHS — Study in the States (F-1 students)' },
+  { href: 'https://www.uscis.gov/policy-manual', label: 'USCIS Policy Manual' },
+  { href: 'https://www.e-verify.gov/', label: 'E-Verify' },
+  { href: 'https://www.bls.gov/', label: 'Bureau of Labor Statistics — Occupational Employment and Wage Statistics' },
+];
+
+/**
+ * The disclaimer footer for guides whose section needs an authoritative-sources
+ * footer. Sources are rendered as a small `<ul>` of inline links so the page
+ * keeps the strict no-script CSP used by every guide page.
+ */
+export function legalDisclaimerHtml() {
+  const links = LEGAL_DISCLAIMER_SOURCES
+    .map((s) => `<li><a href="${s.href}" rel="noopener noreferrer">${s.label}</a></li>`)
+    .join('\n');
+  return `<aside class="legal-notice" role="note" aria-label="Educational disclaimer and official sources">
+<p>${LEGAL_DISCLAIMER_NOTICE}</p>
+<p>Official sources:</p>
+<ul>
+${links}
+</ul>
+</aside>`;
+}
+
 /** Sort key inside a section: explicit `order`, then title. */
 const byOrderThenTitle = (a, b) => (a.order - b.order) || a.title.localeCompare(b.title);
 
@@ -130,6 +164,9 @@ export function renderGuidePage(guide, { siteUrl, siblings = [] }) {
   const sameSection = guide.section ? others.filter((g) => g.section === guide.section).sort(byOrderThenTitle) : [];
   const more = sameSection.length ? sameSection : others;
   const moreTitle = sameSection.length ? `MORE IN ${escapeHtml(guide.section.toUpperCase())}` : 'MORE GUIDES';
+  // Auto-append the legal disclaimer for guides in sections whose content
+  // (immigration, employment authorisation) carries legal consequences.
+  const legalFooter = LEGAL_DISCLAIMER_SECTIONS.has(guide.section) ? legalDisclaimerHtml() : '';
   return `${head({ title: `${guide.title} · NGJ`, description, canonical, siteUrl, root, jsonLd })}
 <body>
 <main>
@@ -138,6 +175,7 @@ export function renderGuidePage(guide, { siteUrl, siblings = [] }) {
 <h1>${escapeHtml(guide.title)}</h1>
 ${guide.updated ? `<p class="dim">Updated ${escapeHtml(guide.updated)}</p>` : ''}
 ${guide.html}
+${legalFooter}
 </article>
 <div class="actions">
 <a class="btn primary" href="${root}?">OPEN THE JOB BOARD</a>

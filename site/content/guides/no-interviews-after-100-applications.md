@@ -17,7 +17,7 @@ If you have applied to fifty or more postings on the board and have heard nothin
 
 ## Step 2: confirm you are applying to roles that fit
 
-A hundred applications is not a hundred real shots if most of them are filtered out by the ATS before a person sees them. Audit the last twenty:
+A hundred applications is not a hundred real shots if many fail stated eligibility or concern closed openings. Silence does not establish automatic rejection. Audit the last twenty:
 
 - How many asked for a graduation date outside your window?
 - How many required a clearance or citizenship you do not have?
@@ -27,7 +27,7 @@ If many applications failed stated eligibility, review how you select roles. Tig
 
 ## Step 3: confirm you are applying early
 
-Check whether your target employers review on a rolling basis or use fixed deadlines. A posting more than a week old can still be open and actively reviewed. The board marks "first seen in the last 24 hours" for a reason. See [Application strategy](../application-strategy/) for timing and tracking.
+Check whether your target employers review on a rolling basis or use fixed deadlines. A posting more than a week old can still be open and actively reviewed. The board's NEW 24H marker uses the source's posted date, while new-this-week discovery uses first seen. Neither confirms that a role is still accepting applications. See [Application strategy](../application-strategy/) for timing and tracking.
 
 ## Step 4: confirm the résumé matches the role
 

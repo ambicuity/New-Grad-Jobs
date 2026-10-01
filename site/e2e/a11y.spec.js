@@ -4,6 +4,14 @@ import { expectNoSeriousA11yViolations } from './support/axe.js';
 import { FIXTURE, helpDialog, jobList, openBoard, tab } from './support/app.js';
 
 test.describe('axe (WCAG 2.2 AA)', () => {
+  for (const slug of ['start-here', 'resume-evidence-test', 'ai-job-search-framework', 'international-student-job-search-center']) {
+    test(`expanded guide: ${slug}`, async ({ page }, testInfo) => {
+      await page.goto(`/guides/${slug}/`);
+      await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+      await expectNoSeriousA11yViolations(page, testInfo);
+    });
+  }
+
   test('hiring tab', async ({ page }, testInfo) => {
     await openBoard(page);
     await expect(page.getByTestId('job-description')).toContainText(FIXTURE.firstDescriptionStart);
