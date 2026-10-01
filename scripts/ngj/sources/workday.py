@@ -180,12 +180,14 @@ def _post_page(
     return response
 
 
-def _to_job(company_name: str, host: str, item: dict[str, Any]) -> dict[str, Any]:
+def _to_job(company_name: str, site_url: str, item: dict[str, Any]) -> dict[str, Any]:
+    # externalPath ("/job/<loc>/<slug>") is relative to the careers *site*, not the host:
+    # https://<host>/job/... answers 404, https://<host>/<site>/job/... is the posting.
     return {
         'company': company_name,
         'title': item.get('title') or '',
         'location': item.get('locationsText') or '',
-        'url': f"https://{host}{item.get('externalPath', '')}",
+        'url': f"{site_url}{item.get('externalPath', '')}",
         'posted_at': item.get('postedOn', ''),
         'source': 'Workday',
         'description': '',  # Not fetched: one extra request per job.
@@ -197,7 +199,7 @@ class _Tenant:
     """Per-company request context shared by every query."""
 
     company_name: str
-    host: str
+    site_url: str  # https://<host>/<site>, the base every externalPath hangs off
     api_url: str
     headers: dict[str, str]
     page_limit: int
@@ -285,7 +287,7 @@ def _crawl_search(
             break
         result.raw_count += len(items)
         for item in items:
-            result.jobs.setdefault(_job_key(item), _to_job(tenant.company_name, tenant.host, item))
+            result.jobs.setdefault(_job_key(item), _to_job(tenant.company_name, tenant.site_url, item))
 
         if (
             search_text
@@ -353,7 +355,8 @@ def _fetch_workday_company(
         if csrf_token:
             headers['X-Calypso-CSRF-Token'] = csrf_token
         deadline = time.monotonic() + max_seconds if max_seconds else None
-        tenant = _Tenant(company_name, host, api_url, headers, page_limit, max_retries, timeout, deadline)
+        site_url = f"https://{host}{parsed.path.rstrip('/')}"
+        tenant = _Tenant(company_name, site_url, api_url, headers, page_limit, max_retries, timeout, deadline)
 
         if search_keywords:
             queries = [(keyword, max_jobs_per_keyword) for keyword in search_keywords]

@@ -95,6 +95,27 @@ def canonical_url(url: Any) -> str:
     return urlunsplit((scheme, netloc, path, urlencode(kept), ""))
 
 
+_WORKDAY_HOST_SUFFIX = ".myworkdayjobs.com"
+_WORKDAY_JOB_SEGMENT = "/job/"
+
+
+def _identity_url(source: str, url: str) -> str:
+    """The URL hashed into ``job_id``: the canonical URL, minus a Workday careers-site prefix.
+
+    Workday URLs were once built without the careers-site segment
+    (``https://<host>/job/...``). The site segment was restored so links open,
+    but identity keeps the old form so existing ``job_id``s and their
+    ``first_seen`` dates do not change.
+    """
+    if source != "workday" or not url:
+        return url
+    parts = urlsplit(url)
+    at = parts.path.find(_WORKDAY_JOB_SEGMENT)
+    if not (parts.hostname or "").endswith(_WORKDAY_HOST_SUFFIX) or at <= 0:
+        return url
+    return urlunsplit((parts.scheme, parts.netloc, parts.path[at:], parts.query, ""))
+
+
 def job_identity(job: dict[str, Any]) -> str:
     """The canonical identity string hashed into ``job_id``.
 
@@ -102,7 +123,7 @@ def job_identity(job: dict[str, Any]) -> str:
     ``source`` + company + title + location.
     """
     source = _normalize_text(job.get("source"))
-    url = canonical_url(job.get("url"))
+    url = _identity_url(source, canonical_url(job.get("url")))
     if url:
         fields: dict[str, str] = {"source": source, "url": url}
     else:
