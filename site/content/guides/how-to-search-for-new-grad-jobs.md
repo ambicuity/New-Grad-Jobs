@@ -19,11 +19,11 @@ If you do not already have a short list of companies you would apply to, write o
 
 ## Once: subscribe
 
-The status bar shows an RSS link for the feed closest to your view: one per category, plus remote and "no visa restriction stated". Put it in a feed reader or an RSS-to-email service. New postings then reach you within about half an hour of the scraper seeing them, the feed is a discovery aid, and the employer may have posted earlier.
+The status bar shows an RSS link for the feed closest to your view: one per category, plus remote and "no visa restriction stated". Put it in a feed reader or an RSS-to-email service. Updates arrive after successful publication and your reader's refresh. The feed is a discovery aid, and the employer may have posted earlier.
 
 ## Daily: ten minutes
 
-- Open your bookmark. The rows are sorted newest first, and roles first seen in the last 24 hours are marked, so the top of the list is what changed.
+- Open your bookmark. The rows are sorted newest first, and NEW 24H marks recent source-posted dates. Use [Job freshness](../job-freshness/) to distinguish posted dates from first-seen discoveries.
 - Star (`s`) anything worth a closer look. Skim, do not apply yet.
 - Press `a` on anything you applied to elsewhere so it stops showing up as new to you.
 

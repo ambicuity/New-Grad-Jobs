@@ -1,134 +1,71 @@
 ---
 title: How to research your market salary
-description: The data sources, the data hierarchy, and the four different "compensation" numbers that new grads conflate.
+description: Compare current entry-level pay evidence and separate fixed cash, variable bonuses, equity and benefits before evaluating an offer.
 updated: 2026-09-30
 section: Offers
 order: 0
 ---
 
-Most new grads accept the first number they hear because they have no anchor for what a reasonable number looks like. That is not a failure of judgement; it is a failure of research. This guide is the research method: where to look, what to trust, and the four different "compensation" numbers that get conflated in the same conversation.
+Research pay for the role, level and location you could actually join. An occupation-wide median or a headline package from another country is context, not your expected offer. Keep the currency, reference period, sample size and compensation definition beside every figure.
+
+## Separate the parts
+
+- **Base salary:** fixed gross cash paid while employed under the agreed terms. Budget after taxes and deductions.
+- **Variable cash:** target bonuses, commissions and performance payments. A target is not guaranteed; ask about eligibility, proration and payout conditions.
+- **Equity:** record the instrument, units, vesting schedule and valuation assumptions separately. An entire multi-year grant is not one year's pay. Options have an exercise price and may expire; private shares may never become liquid.
+- **Benefits and one-time payments:** record insurance, retirement contributions, signing bonuses and relocation separately, including eligibility, payment dates and repayment clauses. Employer cost does not equal spendable cash or personal value.
+
+Total compensation has no single definition across postings and databases. Ask what it includes and which period it covers. Treat a payment as guaranteed only when the written terms establish that, and record any remaining conditions.
+
+## Start with comparable postings
+
+Collect current postings for the same role family, entry level and work location. Identify whether each range is base salary, hourly pay or a broader package. A range spanning several locations or levels may not apply in full to you. Ask the recruiter which band covers this opening.
+
+Pay-disclosure requirements vary by jurisdiction. For example, [New York State's guidance](https://dol.ny.gov/pay-transparency) explains its covered postings. Check the relevant local authority rather than assuming a rule applies throughout the US or Canada.
+
+## Add public wage data
 
 ::: evidence official
-The Bureau of Labor Statistics publishes occupational employment, wage, geographic and outlook data through its Occupational Employment and Wage Statistics (OEWS) program. It is the most authoritative public source for role-level wage distributions in the US.
+[BLS OEWS](https://www.bls.gov/oes/oes_ques.htm) reports US occupational wage estimates, with published reference periods. It excludes nonproduction bonuses, stock bonuses and employer benefit costs, and does not separate new-graduate pay from experienced-worker pay.
 :::
 
-## The four numbers, distinguished
+Use the appropriate occupation and metro or state as context. A lower percentile is not automatically an entry-level rate, and the median-to-75th-percentile range is not a justified new-grad negotiation target. Check current entry-level postings and employer level information before setting your range.
 
-Most "compensation" conversations mix four distinct numbers. They are not interchangeable.
+For Canada, use [Job Bank's wage search](https://www.jobbank.gc.ca/trend-analysis/search-wages) by occupation and region, checking the reference period and hourly or annual basis. These figures also cover workers with different experience levels.
 
-- **Base salary.** The fixed cash paid while employed under the agreed terms. The cleanest number; the easiest to compare.
-- **Total compensation.** Base + bonus + equity value at grant + benefits valued at employer cost. The number that looks largest. Often overstated by including paper-valued equity.
-- **Equity value.** The value of stock, RSUs or options at the moment you receive them. For public companies, this is the current share price; for private companies, it is the most recent 409A or last-round valuation, which may not be realisable.
-- **Guaranteed compensation.** The part that does not depend on company performance, individual performance, or a future liquidity event. Base salary + cash bonus at target. This is the part you can budget on.
+For India, prioritize comparable current employer postings and written graduate-program packages. Request the full CTC breakdown: fixed gross cash, variable pay, employer contributions, gratuity-related amounts and one-time payments. CTC divided by twelve is not monthly take-home pay. Ask payroll for a calculation using the applicable deductions and tax assumptions.
 
-A $200k offer with $80k of paper-valued equity is not the same as a $200k offer with $80k of base salary. The first requires the equity to be worth something; the second does not.
+## Use compensation databases carefully
 
-## The data hierarchy
+User-submitted databases can add company and level context. Check submission dates, location, level, sample size and whether equity is annualized. Small or self-selected samples may be unrepresentative. A site median is not an independently verified market rate.
 
-Different sources answer different questions. Use them in this order.
+Executive-pay filings and a public company's CEO pay-ratio median do not establish new-grad pay. Employer careers pages, relevant salary bands and comparable offers are more useful.
 
-### 1. The posting's own salary range
+## Build a defensible range
 
-If the company posts a salary range, that is the starting point. It is the range the company has decided is reasonable for the role; it is also the range they expect you to anchor against. Pay ranges you see in the posting are evidence; they are not the final answer.
+1. Choose the role family, entry level and location first.
+2. Collect comparable current postings and note where their ranges overlap or differ.
+3. Add official wage context and recent company-level reports where available.
+4. Explain differences in responsibilities, pay period, currency, hours and variable components instead of averaging unlike packages.
+5. Choose an expectation you can explain, and separately calculate the minimum fixed cash that meets your needs.
 
-Some US states and cities require pay ranges in postings (for example, [New York State](https://dol.ny.gov/system/files/documents/2024/03/pay-transparency-faqs.pdf)). More employers post ranges voluntarily.
+If there is little comparable evidence, say so. No source can establish what a particular employer will offer. Graduate cohorts, public-sector scales and union agreements may have fixed terms; ask what can be discussed. See [Negotiation](../negotiation/).
 
-### 2. Bureau of Labor Statistics (BLS)
+## A reusable offer worksheet
 
-The [BLS Occupational Employment and Wage Statistics (OEWS)](https://www.bls.gov/oes/) program publishes wage data by occupation, industry, state and metropolitan area. The data is the most authoritative public source, with the limitation that it lags (often 6 to 12 months) and rolls up many employers into a single distribution.
+Record base, target bonus, payout conditions, signing bonus, relocation, repayment clauses, equity units and vesting, benefits, currency, work location and start date. Then compare:
 
-Useful for:
+- **Fixed gross cash:** base and explicitly guaranteed recurring cash under the written terms.
+- **First-year cash scenarios:** fixed cash plus eligible one-time cash, with variable bonuses shown separately at zero, target and another plausible payout.
+- **Equity vesting in each year:** a separate estimate with explicit valuation assumptions; vested equity is not cash until sold.
+- **Later years:** remove one-time payments and use the actual vesting schedule. Do not assume raises, refresh grants or bonuses.
+- **Budget:** estimate take-home cash against housing, debt, dependants and other costs. Keep private equity outside your essential-expense budget.
 
-- Anchoring the role family ("what does a software developer make in this metro?").
-- Comparing metros ("what does the same role make in a different city?").
-- Distinguishing high-cost and low-cost geographies.
-
-Less useful for:
-
-- Differentiating between employers of different sizes.
-- Differentiating between new-grad and senior compensation.
-- Reading individual offers.
-
-### 3. State and local wage data
-
-Some states publish their own wage data that is more current or more granular than BLS. Useful for confirming the BLS number for a specific geography.
-
-### 4. Comparable public compensation data
-
-- Company filings (DEF 14A proxy statements) often disclose the median or the named-executive compensation. The named-executive number is not useful; the broader distribution rarely is. Public companies' 8-K filings disclose equity grants.
-- Public compensation databases (Glassdoor, Levels.fyi, Pave, etc.) compile user-submitted compensation. Sample sizes vary by company and role; the median for a small sample is noisy. Use these as one data point, not the answer.
-
-### 5. Comparable job postings
-
-Other postings for the same role family at the same company or in the same metro. Useful for triangulating when the company has not posted a range.
-
-### 6. Comparable roles
-
-Roles with similar scope and seniority, in the same metro and industry. Useful when your specific role is not well represented in the data.
-
-### 7. Comparable experience and level
-
-A new-grad role and a level-II role are not the same job, even at the same company. Adjust for level. The standard signals are years of experience and the company's internal level ladder.
-
-### 8. Comparable location
-
-A role in San Francisco is not the same offer as the same role in a lower-cost metro. Adjust for location. The BLS data and company-specific location differentials help.
-
-## How to build a number
-
-A defensible market range comes from triangulating three or more sources.
-
-1. **Anchor with BLS.** Look up the OEWS code for the role and the metro. Take the 50th percentile (median) and the 75th percentile as your starting bracket.
-2. **Triangulate with public data.** Look up the same role at the same company in a public compensation database. Note the median and the sample size.
-3. **Cross-check with postings.** Find two or three current postings for the same role family in the same metro. Note the ranges.
-4. **Adjust for level.** If you are a new grad, the relevant number is the new-grad bracket, not the median for the role. Use the company-specific level signals.
-5. **Adjust for location.** If the role is in a higher-cost metro, the offer should reflect that. If the role is remote and you live in a lower-cost metro, ask which salary band the role is in.
-
-The result is a range, not a single number. The bottom of the range is what a typical candidate in a typical negotiation accepts; the top is what a strong candidate in a strong negotiation accepts.
-
-## The four mistakes new grads make
-
-### Mistake 1: Anchoring on equity
-
-Equity is the part that varies the most in realised value. Anchoring on a total-compensation number that includes paper-valued equity makes an offer look better than it is. Compare base, then total.
-
-### Mistake 2: Accepting the first number
-
-Recruiters expect negotiation on the base salary. The first number is an opening offer, not the final offer. See [Negotiation](../negotiation/).
-
-### Mistake 3: Comparing total comp across different equity structures
-
-A $200k offer with $80k of RSUs that vest over four years is not the same as a $200k offer with $80k of options that may never be exercisable. The structures matter; compare apples to apples.
-
-### Mistake 4: Using Glassdoor's median as the median
-
-User-submitted data has selection bias. The people who submit tend to be the people who got high offers and want to brag or the people who got low offers and want to vent. Use the median with a wide error bar.
-
-## A reusable worksheet
-
-For each offer you evaluate, fill in:
-
-- Base salary
-- Target bonus (% of base, paid out last year at X% of target)
-- Equity grant (number of shares, vesting schedule, current valuation, for private companies the last-round price)
-- Benefits (healthcare contribution, 401k match, learning budget, relocation)
-- Sign-on bonus and any clawback
-
-Then derive:
-
-- Guaranteed cash (base + target bonus)
-- First-year cash (base + target bonus + vesting in year 1)
-- Total compensation (all of the above valued at employer cost)
-
-Compare on the dimensions that matter to you, not just the headline number. See [Evaluating an offer](../evaluating-an-offer/) and [Understanding new grad compensation](../understanding-compensation/) for the parts.
-
-## Where the board helps
-
-The board tags the postings that publish a salary range and exposes the ranges that come from postings. Use them as one anchor; they are not the answer.
+Compare the package alongside learning, management, stability and authorization feasibility. The largest headline number may not fit your needs best.
 
 ## Related guides
 
-- [Understanding new grad compensation](../understanding-compensation/) — the parts of the offer and what they are worth.
-- [Evaluating an offer](../evaluating-an-offer/) — the decision framework.
-- [Comparing offers](../comparing-offers/) — when you have more than one.
-- [Negotiation](../negotiation/) — the script and the levers.
+- [Understanding new grad compensation](../understanding-compensation/)
+- [Evaluating an offer](../evaluating-an-offer/)
+- [Comparing offers](../comparing-offers/)
+- [Negotiation](../negotiation/)

@@ -9,12 +9,12 @@ order: 5
 The templates below are starting points. Replace the brackets with your specifics; cut what does not apply. Short emails are read; long emails are skimmed. Aim for five sentences or fewer unless the situation calls for more.
 
 ::: evidence practical
-Send the email within 24 hours of the event. Memory fades; relevance fades faster. The recruiter who hears from you within a day is a different recruiter than the one who hears from you in a week.
+If you choose to send a thank-you, the next day is a useful personal routine, not an employer rule. For status updates, follow the stated timeline. A follow-up does not guarantee a response or change a decision.
 :::
 
 ## Thank-you after an interview
 
-The classic. Send to every interviewer, not just the recruiter.
+Optional. Use a contact the employer shared for this purpose, or ask the recruiter to pass along your thanks. Do not search for private addresses.
 
 > **Subject:** Thanks for your time today
 >
@@ -31,7 +31,7 @@ Why it works: short, specific, asks nothing. The specificity (one thing you lear
 
 ## Thank-you after an AI-scored interview
 
-The same structure works. The platform records your response, not your follow-up, so the email is to the recruiter.
+The same structure works. Send to the recruiter or designated contact; do not assume the platform scores your follow-up or that a recorded round was AI-scored.
 
 > **Subject:** Thanks for the interview
 >
@@ -46,7 +46,7 @@ The same structure works. The platform records your response, not your follow-up
 
 ## Recruiter follow-up when you have not heard back
 
-Send after one week of silence. If still no response after a second week, follow up once more; after that, redirect your energy.
+Follow the promised update date. If none was given, a brief follow-up after one or two weeks is a reasonable routine. If still no response after a second week, follow up once more; after that, redirect your energy.
 
 > **Subject:** Following up on [role] application
 >
@@ -76,7 +76,7 @@ When you want to add information you did not get to in the interview.
 
 ## Feedback request after a rejection
 
-Most recruiters will not give detailed feedback, but asking once is appropriate. Send within a week of the rejection email.
+The employer may decline to share feedback. Asking once is reasonable unless its instructions say otherwise. Send within a week of the rejection email.
 
 > **Subject:** Quick ask — feedback on [role] interview
 >
@@ -89,7 +89,7 @@ Most recruiters will not give detailed feedback, but asking once is appropriate.
 > Best,
 > [Your name]
 
-If they do not respond in a week, send a brief thank-you that closes the loop.
+If they do not respond, move on; another email is optional and may not add value.
 
 ## Response to a rejection (closing the loop)
 
@@ -188,7 +188,7 @@ The specificity is what turns a template into a real email.
 
 - A long complaint about the rejection.
 - A demand for feedback ("I deserve to know why").
-- A counter-offer by email (negotiation belongs in a call).
+- An inaccurate competing offer or a demand presented as a threat. Email is a valid negotiation channel; use the employer's preferred format and confirm agreed terms in writing.
 - A copy-paste that names the wrong company.
 
 If you find yourself writing any of these, sleep on it and rewrite.

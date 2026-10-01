@@ -15,6 +15,10 @@ This is orientation, not legal advice. Immigration rules change and your situati
 
 NGJ's role is to help you know what to ask and where to look. Your DSO is the right next step for questions about your program, your I-20, and the timing of your application. A qualified immigration attorney is the right next step for legal questions about your specific case.
 
+## Check the September 2026 transition
+
+DHS's [fixed-period admission final rule](https://www.govinfo.gov/content/pkg/FR-2026-07-17/pdf/2026-14439.pdf) states an effective date of September 15, 2026, with transition provisions for earlier duration-of-status admissions. Current regulatory filing deadlines and older USCIS or university summaries may differ. Have your DSO confirm the rules that apply to your admission history, any extension-of-stay requirement and your exact filing deadline before acting. The [international student center](../international-student-job-search-center/) explains what to verify.
+
 ## What OPT is
 
 Optional Practical Training lets an F-1 student work in the United States in a job related to their field of study. Post-completion OPT is the one new graduates use: a period of work authorization, typically twelve months, that begins after the program ends. You apply through the DSO, who recommends it on your I-20, and then to USCIS for the employment authorization document (EAD). Timing matters: there is a window before and after program completion in which the application must be filed, and unemployment limits apply: generally 90 days during initial post-completion OPT, or 150 days in total including a STEM extension. Confirm both with your DSO early, because the application takes time to process and you cannot begin initial OPT employment before USCIS approves your authorization and the authorized start date arrives. A pending application alone is not permission to work. See [8 CFR 214.2(f)](https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/subpart-A/section-214.2).

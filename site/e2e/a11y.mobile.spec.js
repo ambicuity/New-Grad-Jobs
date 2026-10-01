@@ -4,6 +4,17 @@ import { expectNoSeriousA11yViolations } from './support/axe.js';
 import { FIXTURE } from './support/app.js';
 
 test.describe('axe (WCAG 2.2 AA), 375px', () => {
+  test('guide table and evidence callout', async ({ page }, testInfo) => {
+    await page.goto('/guides/resume-evidence-test/');
+    await expect(page.getByRole('table')).toBeVisible();
+    const width = await page.evaluate(() => ({
+      content: document.documentElement.scrollWidth,
+      viewport: window.innerWidth,
+    }));
+    expect(width.content).toBeLessThanOrEqual(width.viewport);
+    await expectNoSeriousA11yViolations(page, testInfo);
+  });
+
   test('card list', async ({ page }, testInfo) => {
     await page.goto('/');
     await expect(page.getByTestId('job-list').getByRole('listitem').first()).toBeVisible();

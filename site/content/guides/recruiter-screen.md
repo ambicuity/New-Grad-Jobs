@@ -9,18 +9,18 @@ order: 0
 The recruiter screen is the conversation most candidates underestimate. It is not a "chat". It is a fit conversation with specific signals: can the company move on you, can you move on the company, are there flags that make either answer no. Most recruiter screens have a short, predictable list of questions. Preparation is rehearsed answers, not improvisation.
 
 ::: evidence practical
-The recruiter screen is mostly a fit conversation, not a technical signal. The technical signal happens later. Treating the recruiter screen as a technical interview is a common mistake that costs offers.
+A screen often covers fit and logistics, but can include technical or domain questions. Confirm the format and prepare relevant evidence rather than assuming every screen has the same scope.
 :::
 
 ## The setup
 
-A recruiter screen is a phone or video call, usually 25 to 45 minutes, with a recruiter or a coordinator (not the hiring manager). The recruiter has a checklist: eligibility, location, salary expectations, start date, role fit, team fit. They are usually checking whether to pass you forward, not whether to hire you.
+A recruiter screen is a phone or video call, with a duration set by the employer, with a recruiter or a coordinator (not the hiring manager). The recruiter has a checklist: eligibility, location, salary expectations, start date, role fit, team fit. They are usually checking whether to pass you forward, not whether to hire you.
 
 Some screens are with the hiring manager directly. The format is similar but the audience is different — the hiring manager is also evaluating your judgement and your communication, not just your fit.
 
 ## The questions
 
-These come up in almost every recruiter screen. The exact wording varies; the underlying signal does not.
+Possible questions include the following. The exact wording varies; the underlying signal does not.
 
 - Tell me about yourself.
 - Walk me through your résumé.
@@ -121,14 +121,14 @@ Have three. Rotate based on the conversation. Use [Questions before accepting](.
 
 Rehearse out loud. The 30/60/120-second versions are a skill you build by saying them, not by reading them.
 
-- Use a timer. Most candidates ramble past 60 seconds without realising it.
+- Use a timer. Check whether your answer is concise enough for the question and available time.
 - Record yourself. Listening back catches filler words ("um", "like", "so") and trailing sentences.
 - Practice with a peer or a model. A model can run a mock recruiter screen; a peer can give you the social cues. See [The AI Job Search Framework](../ai-job-search-framework/) section D.
 
 ## What you should not do
 
-- Do not pretend the recruiter screen is more than it is. It is a fit conversation. Treating it as a final-round interview causes over-preparation and stilted delivery.
-- Do not lie. The recruiter will find out. If you have offers, name the company or the role family. If you do not, say so.
+- Confirm whether the screen includes domain or technical questions, and prepare proportionately.
+- Do not lie. The recruiter will find out. Describe offers and deadlines accurately. You can keep employer names and confidential documents private.
 - Do not ask about salary before you have been told the role. Ask early in the conversation, after role fit is established.
 - Do not badmouth a previous employer. The recruiter will assume you will badmouth this one too.
 - Do not accept the role on the call. The recruiter is selling; you should be deciding.

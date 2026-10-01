@@ -36,7 +36,8 @@ export function renderInline(text) {
   out = out.replace(/`([^`]+)`/g, (_, code) => `<code>${code}</code>`);
   // One level of parentheses inside the target ("javascript:alert(1)") is consumed so the link is rejected whole.
   out = out.replace(/\[([^\]]+)\]\(([^()\s]*(?:\([^()\s]*\))?[^()\s]*)\)/g, (whole, label, target) => {
-    const href = safeHref(target);
+    // Undo the text escape for query separators; escape the validated href once below.
+    const href = safeHref(target.replace(/&amp;/g, '&'));
     if (!href) return label;
     const external = /^https?:/i.test(href);
     return `<a href="${escapeHtml(href)}"${external ? ' rel="noopener noreferrer"' : ''}>${label}</a>`;
@@ -105,7 +106,7 @@ export function renderMarkdown(body) {
     const line = raw.trimEnd();
     if (!line.trim()) { flushAll(); continue; }
     // Pipe table: a header row, a delimiter row, then one or more body rows.
-    // Detect by peeking at the next non-blank line and confirming it is the
+    // Detect by peeking at the next line and confirming it is the
     // delimiter pattern (`| --- | --- |`).
     if (TABLE_ROW_RE.test(line)) {
       const next = (lines[i + 1] || '').trimEnd();
@@ -133,6 +134,8 @@ export function renderMarkdown(body) {
         const alignAttr = (a) => a ? ` style="text-align:${a}"` : '';
         const renderRow = (cells, tag) => `<tr>${cells.map((c, idx) => `<${tag}${alignAttr(aligns[idx])}>${renderInline(c)}</${tag}>`).join('')}</tr>`;
         out.push(`<table>\n<thead>\n${renderRow(header, 'th')}\n</thead>\n${body.length ? `<tbody>\n${body.map((r) => renderRow(r, 'td')).join('\n')}\n</tbody>` : ''}\n</table>`);
+        // The outer loop advances once more; revisit the first non-table line.
+        i -= 1;
         continue;
       }
     }

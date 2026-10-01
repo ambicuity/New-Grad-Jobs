@@ -1,89 +1,52 @@
 ---
 title: How to detect a fake job or recruiter
-description: The 2026 landscape of fake recruiter scams — what they look like, the five-minute verification checklist, and what to do if you have already responded.
+description: Verify a vacancy and recruiter independently, recognize requests for money or sensitive information, and respond promptly if you have shared them.
 updated: 2026-09-30
 section: Rejections and recovery
 order: 1
 ---
 
-Fake recruiter scams are not new, but the volume and the polish are. In 2026, scammers imitate real company careers pages, clone real recruiters' LinkedIn profiles, run real-looking interview portals, and use AI to draft convincing outreach. This guide is the field guide: what they look like, what to verify before you share anything, and what to do if you have already responded. Students are frequent targets because the search is urgent, the offer feels life-changing, and the friction feels low until it isn't.
+Scammers can impersonate an employer, recruiter or hiring platform. A polished message, a familiar logo or a LinkedIn profile does not verify an opportunity. Confirm the organization and the vacancy through a channel you find independently before sending money or sensitive information.
 
 ::: evidence official
-The US Federal Trade Commission warns job seekers about fake recruiters, fake remote job listings, requests for money or sensitive personal information, fake check scams, and scammers impersonating legitimate companies.
+The [FTC's job-scam guidance](https://consumer.ftc.gov/articles/job-scams) describes employer impersonation, fake checks, reshipping and requests for money or personal information. The checklist below applies that guidance; it cannot certify a job as genuine.
 :::
 
-## The pattern, not the signal
+## Signals that warrant a pause
 
-The list below is long. Don't try to memorise it. The point is to recognise the **pattern** — pressure + vague employer + too-good-to-be-true compensation + a channel outside the company's own careers page — and to verify before you act on the message. Scammers move faster than any checklist.
+- A recruiter requests payment, gift cards, cryptocurrency or a transfer to obtain a job, buy equipment or unlock earnings.
+- You receive a check with instructions to buy equipment or return part of the money. Funds appearing in your account do not establish that the check is valid.
+- The work involves receiving and reshipping packages or moving money through your personal account.
+- The sender uses a look-alike domain or cannot explain whom they represent.
+- An offer promises unusually high pay for vague work, or pressure discourages independent verification.
+- You are asked to send bank details, identity documents or credentials through an unverified chat, email or portal.
 
-## Common signals
+One signal is not proof, and several still require verification. Authorized agencies, small employers and campus recruiters may use channels different from a large company's process. Employers also use third-party ATS and interview domains. WhatsApp outreach, an off-domain portal or absence from LinkedIn is not enough by itself to declare a scam.
 
-The presence of any one signal is not proof of a scam. The combination of several is.
+## Verify the vacancy and recruiter
 
-- **Gmail / Yahoo / Outlook recruiter addresses.** A real recruiter at a real company uses the company's domain. "@acmecorp-talent.com" for a company called "Acme Corp" is not the company's domain.
-- **WhatsApp, Telegram, or text-only outreach for the first contact.** A real recruiter from a real company will email from their domain or message you on LinkedIn from their verified profile. Switching to a personal channel early is a major signal.
-- **A first interview "portal" with a non-company domain.** The portal looks like the company, but the URL is wrong. Look at the URL bar.
-- **An unsolicited job offer you did not apply for.** Especially with compensation well above your target. Especially with vague role descriptions.
-- **Requests for sensitive personal information early.** SSN, driver's licence, bank account, credit-card numbers, date of birth. Real employers collect this through verified HR portals, behind an offer, after you've passed interviews — not in a first call.
-- **Requests for payment from you.** "Send $200 for background-check processing", "buy equipment from this vendor we will reimburse later", "wire a small amount to confirm your bank". Real employers do not ask candidates to send money. Period.
-- **Equipment-shipment / reshipping scams.** "We're sending you a laptop and a starter package; please reship part of it to our international team". You become the money mule.
-- **Crypto / payment-app payment.** A real employer pays through payroll, not through a crypto wallet or a peer-to-peer app.
-- **Fake staffing agencies.** A staffing agency you cannot verify, with no address, no working phone, no public reviews, no named recruiters on LinkedIn.
-- **Fake company websites.** Recently registered domain, no employees on LinkedIn, no Glassdoor presence, no news coverage. Cross-check the domain registration date on `whois`.
-- **Domain impersonation.** "Acme-Corp.us" or "AcmeCorp-Jobs.io" or a Unicode look-alike. Look at the full domain, not just the brand name.
-- **LinkedIn impersonation.** A profile with very few connections, a job title that doesn't match the company's org chart, a profile photo that doesn't render, and an outreach message that asks you to move off-platform.
-- **Compensation that is too good to be true.** For your experience level, your location and your role family. If $250k base for a remote junior role with no interview is on the table, the role is not real.
-- **Pressure to act fast.** "We need to close this requisition today" or "this offer expires in 24 hours" or "we can only hold the slot until tomorrow". Real employers respect your timeline.
+1. **Find the employer independently.** Use a trusted company source, university placement office or established contact. Search results and advertisements can also lead to impersonation sites; verify the domain before relying on them.
+2. **Check the role and application route.** Follow the careers link from the verified employer website. Match the role and requisition ID where available. If the role is confidential, agency-run or unlisted, ask the employer or placement office to confirm the route independently.
+3. **Verify the recruiter.** Contact the employer or agency using a number or address found independently. Ask whether the person represents them for this role. A matching profile or email domain helps but can be copied or compromised.
+4. **Verify third-party portals.** Reach them through the employer's own careers page or an independently confirmed invitation. Do not assume every non-company domain is fake or every familiar platform is safe.
+5. **Check what is being requested.** Ask why information is needed, who receives it and which secure process to use. Background checks and payroll can legitimately need sensitive information at appropriate stages; an offer letter alone does not verify the recipient.
 
-## What real employers do
+If you cannot verify the opportunity, pause. Do not share sensitive information while uncertainty remains. A missing careers page or a new domain may require further checking rather than prove fraud.
 
-A short list of what should be true. If any of these is missing, slow down.
+## If you have already responded
 
-- They have a real, public careers page on the company's own domain.
-- They have employees on LinkedIn with the matching recruiter title.
-- They email you from the company domain, not a personal Gmail.
-- They schedule interviews through a recognisable platform (Greenhouse, Lever, Workday, Ashby, Microsoft Teams, Zoom).
-- They pay you through the company's payroll, with a W-2 or the local equivalent.
-- They do not ask you to send money, equipment or bank information.
-- They do not pressure you past your stated timeline.
-- They will let you verify them — they will not object when you call the company switchboard to confirm.
+Stop further transfers and preserve the messages and transaction details. Do not pay someone claiming they can recover your money for a fee.
 
-## The five-minute verification checklist
+- **Money or bank information:** contact your bank or payment provider immediately and ask whether the transfer can be stopped or reversed. Do not assume recovery is impossible.
+- **US identity information:** use [IdentityTheft.gov](https://www.identitytheft.gov/) for recovery steps tailored to what you shared, including credit protection where appropriate.
+- **Passwords:** change affected or reused passwords through the real service, enable multifactor authentication and review account access.
+- **Remote-access software or suspicious downloads:** disconnect the suspicious session and seek trusted technical help before using the device for sensitive accounts.
+- **Reshipping:** stop and contact the carrier or retailer through independently found details.
 
-Before you reply to the second message, do all of these.
-
-1. **Find the company's real careers page.** Type the company name into a search engine. Do not follow a link the recruiter sent; click the result. Confirm the role is on the careers page and that the requisition ID matches.
-2. **Verify the recruiter's email domain.** Compare it to the company's domain. A single-character difference is a domain impersonation.
-3. **Search LinkedIn for the recruiter's name.** Confirm they work at the company, that their profile photo matches, and that they have real connections.
-4. **Search for the company + "scam" or "fake" in a search engine.** Read the results. A real company with a real history has a different signature than a recently registered shell.
-5. **Check the company domain registration.** A `whois` lookup on the company domain tells you when it was registered. A domain registered last month is not a Fortune 500 employer.
-
-If you cannot complete the checklist — if the company has no careers page, no recruiter on LinkedIn, no real web presence — you are looking at a fake. Walk away.
-
-## What to do if you have already responded
-
-- **Do not send money.** Not for equipment, not for background checks, not for "training materials", not for any reason.
-- **Do not give your SSN, bank account, or driver's licence number.** Real employers collect this through verified HR portals, after an offer, never in a chat.
-- **If you already sent money or shared financial information:** contact your bank and the FTC at [reportfraud.ftc.gov](https://reportfraud.ftc.gov/). The FTC's site is the US reporting channel; other countries have equivalents.
-- **If you already shared your SSN:** consider placing a fraud alert or credit freeze with the three US credit bureaus (Equifax, Experian, TransUnion) and monitor your credit reports.
-- **If you wired money or sent a gift card:** the funds are usually unrecoverable. The reporting channels above still matter for the next victim.
-- **If you shipped equipment:** stop. Notify the shipping carrier and the original retailer.
-
-## The two questions to ask a recruiter
-
-When in doubt, ask the two questions that real employers answer without hesitation.
-
-1. "What's the company careers page URL for this role?" A real recruiter will send the URL on their company's domain. A scammer will evade or send a clone.
-2. "Can I verify this by calling the company switchboard?" A real recruiter will not object. A scammer will tell you the recruiter is "remote-only" or "out of office".
-
-A refusal to answer either question is the single strongest signal that the offer is not real.
-
-::: evidence practical
-If a recruiter pressures you, asks for money, asks for SSN or bank details before an offer, refuses to be verified, or moves the conversation off-platform — assume the offer is not real. The cost of walking away from a fake offer is zero. The cost of engaging with one is high.
-:::
+In the US, report through [ReportFraud.ftc.gov](https://reportfraud.ftc.gov/). In Canada, consult the [Canadian Anti-Fraud Centre](https://antifraudcentre-centreantifraude.ca/index-eng.htm). In India, use the [National Cyber Crime Reporting Portal](https://cybercrime.gov.in/) for current reporting instructions. Notify the verified employer and the platform where impersonation occurred.
 
 ## Related guides
 
-- [International student job search center](../international-student-job-search-center/) — scammers specifically target international students with sponsorship-themed fraud.
-- [Background checks and pre-employment verification](../background-checks-and-pre-employment-verification/) — what a real background check looks like.
-- [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/) — legitimate sponsorship language and how the board flags it.
+- [Background checks and pre-employment verification](../background-checks-and-pre-employment-verification/)
+- [International student job search center](../international-student-job-search-center/)
+- [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/)

@@ -29,6 +29,13 @@ describe('renderInline', () => {
   it('does not treat snake_case as italics', () => {
     expect(renderInline('use job_id and first_seen')).toBe('use job_id and first_seen');
   });
+
+  it('preserves query parameters in source links without double-escaping ampersands', () => {
+    expect(renderInline('[source](https://example.test/?id=1&lang=en)'))
+      .toBe('<a href="https://example.test/?id=1&amp;lang=en" rel="noopener noreferrer">source</a>');
+    expect(renderInline('[source](https://example.test/?id=1&literal=&quot;)'))
+      .toContain('href="https://example.test/?id=1&amp;literal=&amp;quot;"');
+  });
 });
 
 describe('renderMarkdown', () => {
@@ -58,6 +65,14 @@ describe('renderMarkdown', () => {
 });
 
 describe('tables', () => {
+  it('preserves a heading or paragraph immediately after a table', () => {
+    for (const following of ['## Next step', 'Read the next step.']) {
+      const { html } = renderMarkdown(`| A | B |\n| --- | --- |\n| 1 | 2 |\n${following}\n`);
+      expect(html).toContain(following.startsWith('##')
+        ? '<h2 id="next-step">Next step</h2>' : '<p>Read the next step.</p>');
+    }
+  });
+
   it('renders a pipe table with thead and tbody', () => {
     const { html } = renderMarkdown('| A | B |\n| --- | --- |\n| 1 | 2 |\n| 3 | 4 |\n');
     expect(html).toContain('<table>');

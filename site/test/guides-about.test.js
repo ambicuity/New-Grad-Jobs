@@ -36,8 +36,8 @@ describe('published guide content', () => {
         || new Date(meta.updated).toISOString().slice(0, 10) !== meta.updated) {
         issues.push(`${name}: invalid updated date`);
       }
-      // markdown.mjs supports fenced code, pipe tables (|) and headings up to
-      // ### only. Anything more elaborate is rejected so the validator catches
+      // markdown.mjs supports pipe tables and headings up to ###, but no
+      // fenced code. Anything more elaborate is rejected so the validator catches
       // accidental syntax that will silently disappear at build.
       if (/^\s*(?:`{3}|~{3}|#{4,}\s)/m.test(body)) issues.push(`${name}: unsupported Markdown`);
       // Headings now have slugified ids, so fragment links can resolve within
@@ -52,7 +52,7 @@ describe('published guide content', () => {
         if (slug && !slugs.has(slug)) issues.push(`${name}: missing guide ${slug}`);
         if (url.hash) {
           const id = url.hash.slice(1);
-          if (slug === '' && !localIds.has(id)) issues.push(`${name}: unknown fragment ${url.hash}`);
+          if (slug === name.slice(0, -3) && !localIds.has(id)) issues.push(`${name}: unknown fragment ${url.hash}`);
         }
       }
     }

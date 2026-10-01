@@ -30,7 +30,7 @@ For export-control purposes, U.S.-person eligibility can include citizens, natio
 
 ## Using the board
 
-The "no restriction stated" chip hides every posting flagged citizenship required or no sponsorship. If you are a citizen who wants these roles, do the opposite: many of them are strong, structured entry programs at large employers, and should be evaluated against your goals and the stated eligibility requirements. The COMPANY TIER facet and the [company pages](../../jobs/at/) help you find the main employers.
+The "no restriction stated" chip hides every posting flagged citizenship required or no sponsorship. If you are a citizen who wants these roles, do the opposite: many of them are strong, structured entry programs at large employers, and should be evaluated against your goals and the stated eligibility requirements. The COMPANY TIER facet and the [company pages](../../jobs/) help you find the main employers.
 
 ## For everyone else
 

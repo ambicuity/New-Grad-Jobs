@@ -1,146 +1,65 @@
 ---
 title: Interview accessibility and accommodations
-description: How to request what you need, what employers commonly provide, and where AI-mediated interviews create new accessibility questions.
+description: Identify an assessment barrier, request an adjustment, protect medical information and check the rules for your jurisdiction.
 updated: 2026-09-30
 section: Interviews
 order: 6
 ---
 
-Accessibility is not a special case. Most accommodations are small, common, and free to provide. The challenge for candidates is knowing what to ask for, how to ask, and what to do when the assessment format itself — increasingly AI-mediated — creates a new barrier. This guide covers both: how to request an accommodation, and how to think about accessibility with the new generation of AI interview platforms.
+An interview format can create barriers unrelated to the skills a job requires. Ask what the assessment involves and explain the adjustment you need. The appropriate arrangement depends on the barrier, the job and the applicable law; a checklist cannot decide your individual entitlement.
 
 ::: evidence official
-In the US, the EEOC enforces workplace anti-discrimination laws including the Americans with Disabilities Act (ADA). Employers are required to provide reasonable accommodations for the interview process unless doing so causes undue hardship.
+For covered US employers, the [EEOC's Job Applicants and the ADA guidance](https://www.eeoc.gov/laws/guidance/job-applicants-and-ada) explains accommodation during applications and interviews, undue hardship and limits on requests for disability documentation.
 :::
 
-## The principle
+## Identify the barrier
 
-The interview is a job-related selection criterion. An accommodation that does not change the underlying skill being assessed is reasonable. Examples the EEOC has long considered reasonable: extra time, a quiet room, a screen-reader compatible format, captioning, an interpreter.
+Ask about the platform, timing, input format, camera requirements and tasks. Possible adjustments to discuss include:
 
-An accommodation that changes what is being measured is not. Examples: someone else coding for you, someone else answering for you.
+- Accessible documents or an interface compatible with your screen reader.
+- Captioning, an interpreter or a written alternative to an inaccessible audio format.
+- Extra time, breaks, a quiet room or scheduling changes.
+- Permission to use dictation, an alternative input device or other assistive technology.
+- An equivalent assessment when the platform itself is inaccessible.
 
-The candidate's job is to ask for what they need. The employer's job is to engage with the request in good faith. The two sides do not need to agree on the precise format in advance; they need to start a conversation.
+These are examples to discuss, not a promise that every request must be granted. Describe how the adjustment lets you demonstrate the relevant skill. The employer may propose another effective arrangement.
 
-## What to ask for
+## Make the request
 
-The exact accommodation depends on your situation. These are the common categories.
+In the US, no special legal wording is required. Tell the employer that a medical condition creates a barrier and explain the adjustment needed. Request as soon as you know the format so there is time to arrange it; a later request can still be made.
 
-- **Extra time.** Most platforms allow it; some require advance request.
-- **A quiet environment.** Most remote interviews allow it; some require advance request for in-person.
-- **Captioning.** Useful for verbal interviews if you are deaf or hard of hearing, or if English is a second language. Many video platforms have built-in captioning; for higher accuracy, a human captioner can be requested.
-- **A screen reader or compatible interface.** Some coding platforms work well with screen readers; some do not. Ask.
-- **An alternative interview format.** A written interview instead of a phone screen, or a phone screen instead of video.
-- **A different schedule.** Extra breaks between rounds, a later start time, an asynchronous interview instead of a synchronous one.
-- **Specific assistive technology.** A particular screen reader, dictation tool, or eye-tracking device.
-
-List what you need. You do not need to justify it beyond a brief description. The employer may ask for documentation; some will not.
-
-## How to ask
-
-In the US, the request can be made at any point in the process, including before the recruiter screen. The format is a short email or message to the recruiter or HR contact.
-
-> **Subject:** Reasonable accommodation request for [Company] interview
+> **Subject:** Interview accommodation request for [role]
 >
-> Hi [recruiter name],
+> Hi [name],
 >
-> Thanks for the interview invitation. I'd like to request a reasonable accommodation for the interview. Specifically, [one or two sentences on what you need].
+> Thank you for the invitation. Because of a medical condition, I need [adjustment] for [assessment or date]. The current format creates [brief description of the barrier]. Could we arrange this or discuss an effective alternative?
 >
-> This is for [brief context — disability, medical condition, English as a second language, etc., if you choose to disclose]. I'm happy to discuss specifics if helpful.
+> Please let me know the appropriate contact and secure process if documentation is needed.
 >
-> Please let me know what works on your end. Thanks,
-> [Your name]
+> Thanks, [name]
 
-Three notes.
+Explain the functional need without sending your full medical history. When disability or need is not obvious, a covered US employer may request reasonable supporting documentation. Use the designated confidential channel and ask what information is necessary.
 
-- **You do not have to disclose the underlying condition.** "I have a medical condition that requires X" is sufficient.
-- **You do not have to ask early.** Asking the day before is acceptable. The employer may not be able to accommodate on the same day.
-- **You do not have to accept the first response.** If the employer's accommodation does not work for you, ask for an alternative.
+Language preferences and disability accommodations are distinct. You can ask for language support, but speaking English as an additional language does not by itself establish an ADA disability accommodation right.
 
-## Disability disclosure choices
+## Confirm before starting
 
-Whether to disclose a disability is a personal decision. Three patterns are common.
+Get the agreed timing, format and tools in writing. Ask who can help if the platform fails or automated proctoring flags approved assistive technology. Confirm extra time or breaks are configured before launching a timed assessment.
 
-- **Disclose at the request.** You disclose what is needed to justify the accommodation. The employer does not learn the diagnosis.
-- **Disclose at the offer.** Some candidates disclose only after the offer is made, when the workplace accommodation is the relevant conversation.
-- **Never disclose.** Some candidates prefer not to disclose at all. This is a valid choice; it just limits the accommodations available.
+For AI-mediated interviews, ask whether a human can review an accessibility concern and whether an equivalent accessible format is available. AI use does not remove applicable employer obligations. Ask about assistive technology separately from a request to use generative AI to answer questions; follow [Interview tool policies](../interview-tool-policies/).
 
-There is no wrong answer. The choice is yours.
+## If the response does not resolve the barrier
 
-## Accessibility with AI-mediated interviews
+Explain why the proposed arrangement is ineffective and suggest alternatives. Ask the recruiter to involve the accommodation or HR contact. Keep the invitation, request, response and dates. If the barrier affected an assessment already completed, ask about review or reassessment; repeating it is not guaranteed.
 
-AI interviews create new accessibility questions. Some are positive (captioning built in, asynchronous format that allows breaks); some are negative (proprietary platforms that are not screen-reader compatible, opaque scoring).
+If you believe your rights were violated, consult the relevant agency or a qualified adviser promptly. Complaint deadlines depend on jurisdiction and process. [EEOC charge-filing guidance](https://www.eeoc.gov/how-file-charge-employment-discrimination) covers US private-sector and state/local cases; federal applicants have a different process.
 
-- **Ask about the platform.** "What platform will the assessment use, and is it compatible with [your tool]?" The employer's accessibility team should know.
-- **Ask for an alternative format.** "If the platform is not compatible with my screen reader, can the assessment be administered in an alternative format that is?"
-- **Ask about the scoring.** AI scoring is opaque. "How is the assessment scored, and can a human review it for accessibility?" is a fair question. The employer may not be able to answer it fully; the answer itself is informative.
-- **Request human review.** If the AI-mediated format is a barrier, request a human-administered equivalent. The employer may say no; if they do, you have learned something useful.
+## Country and employer coverage matter
 
-::: evidence practical
-AI interview platforms are not a substitute for the employer's accessibility obligations. If the platform does not work with your assistive technology, ask for a different format. The candidate's job is to make the request; the employer's job is to engage with it.
-:::
-
-## What employers commonly provide
-
-Common accommodations employers routinely grant, even without a formal request.
-
-- Extra time on coding assessments.
-- Quiet rooms for in-person interviews.
-- Captioning on video interviews.
-- Asynchronous interview format instead of synchronous.
-- Splitting a multi-round loop across multiple days.
-
-If any of these would help you, ask.
-
-## What employers commonly resist
-
-Common accommodations that require more conversation.
-
-- A completely different interview format (for example, written instead of live coding).
-- An extended timeline (multiple weeks between rounds).
-- Removing a specific round (for example, the system-design round).
-- Substituting a tool that does not match the platform.
-
-For each, the conversation is the same: ask, listen, propose an alternative if the first answer is no.
-
-## What if the employer says no
-
-The employer's response can be:
-
-- **Yes, here's the accommodation.** The most common outcome for reasonable requests.
-- **Yes, but here is a different form of accommodation.** An alternative you may or may not accept.
-- **No, because [reason].** This is rare for reasonable requests. Ask for the reason; consider whether you want to continue the process.
-
-If the employer says no to a reasonable request and the request would have allowed you to demonstrate the role's skills, the conversation has told you something about the employer. That information is useful for your decision.
-
-## What if you have already had the interview
-
-Accommodations are not retroactive, but feedback is. If an interview format was a barrier, tell the recruiter. Two things may follow.
-
-- The employer may offer to re-administer the round in a different format.
-- The employer may take the feedback into the next round.
-
-If neither happens, you have learned something about the employer's process.
-
-## A reusable email template
-
-> **Subject:** Reasonable accommodation request for [Company] interview
->
-> Hi [recruiter name],
->
-> Thanks for the interview invitation. I'd like to request a reasonable accommodation for the interview process. Specifically:
->
-> - [Bullet 1: what you need]
-> - [Bullet 2: what you need]
-> - [Bullet 3: what you need, if relevant]
->
-> I'm happy to discuss specifics or alternative formats. Please let me know what works on your end.
->
-> Thanks,
-> [Your name]
-
-Edit to fit. Send early enough that the employer has time to respond.
+US ADA guidance does not establish rights in Canada or India. In Canada, check the applicable provincial, territorial or federal human-rights authority; [the Canadian Human Rights Commission](https://www.chrc-ccdp.gc.ca/) addresses federal jurisdiction. In India, check the [Department of Empowerment of Persons with Disabilities](https://depwd.gov.in/) and rules applicable to the employer and recruitment process. Use local guidance for a specific rights question.
 
 ## Related guides
 
-- [AI-assisted interviews](../ai-assisted-interviews/) — the format landscape, including AI platforms.
-- [The recruiter screen](../recruiter-screen/) — the round where accommodations are often easiest to arrange.
-- [How to learn from every interview](../interview-postmortem/) — feedback loop after the round.
+- [AI-assisted interviews](../ai-assisted-interviews/)
+- [The recruiter screen](../recruiter-screen/)
+- [How to learn from every interview](../interview-postmortem/)

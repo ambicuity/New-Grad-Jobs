@@ -1,12 +1,12 @@
 ---
 title: Build a behavioral story bank
-description: A reusable worksheet that turns eight to ten stories into answers for fifty behavioral questions, instead of memorising fifty answers.
+description: A worksheet for preparing truthful examples, mapping them to relevant question families and practicing answers without memorizing scripts.
 updated: 2026-09-30
 section: Interviews
 order: 5
 ---
 
-The standard advice — "prepare six STAR stories" — leaves out the multiplier. Each story, fully prepared, answers three or four different behavioral questions. Ten well-prepared stories cover most of what an interviewer will ask. Memorising fifty answers covers it less well, because the answers drift from each other and the interviewer can tell.
+The standard advice — "prepare six STAR stories" — leaves out the multiplier. A well-prepared story may fit several question families, but no fixed number of stories covers every interview. Memorising fifty answers covers it less well, because the answers drift from each other and the interviewer can tell.
 
 This guide is the worksheet: build ten stories, each with the structure that turns it into three or four answers. Each story uses STAR with a fifth step — reflection — that separates a good answer from a rehearsed one. The STAR-R structure is the same one [Behavioral interviews](../behavioral-interviews/) describes; this guide is the bank.
 
@@ -19,7 +19,7 @@ One strong story answered in three different framings beats three weak stories t
 Two reasons.
 
 - You will forget the details of a story you have not used in a month. The bank forces you to keep them sharp.
-- Interviewers re-use question types. The "tell me about a conflict" question at company A and the "describe a difficult teammate" question at company B are the same story. If you only memorised one answer, you have nothing for the second.
+- Interviewers re-use question types. The "tell me about a conflict" question at company A and the "describe a difficult teammate" question at company B are the same story. Adapt the emphasis only when the example actually answers the new question; keep the underlying facts consistent.
 
 ## The bank
 
@@ -48,31 +48,31 @@ For each story, write down five things.
 
 One or two sentences of context. Names, places, dates are good. Specific beats impressive.
 
-- *Example:* "In my spring semester, I was leading a four-person team for the senior design project. We had eight weeks, and our original project lead disappeared in week three."
+- _Example:_ "In my spring semester, I was leading a four-person team for the senior design project. We had eight weeks, and our original project lead disappeared in week three."
 
 ### Task
 
 What you had to do, and what made it hard.
 
-- *Example:* "I had to either rebuild the team plan or pull the project. The deadline was fixed; the team was down a member; I had no experience leading."
+- _Example:_ "I had to either rebuild the team plan or pull the project. The deadline was fixed; the team was down a member; I had no experience leading."
 
 ### Action
 
 What you, specifically, did. Most of the answer is here. Use "I", not "we", for the actions you took.
 
-- *Example:* "I scheduled a 30-minute sync with the original lead to recover what I could of their work. I redistributed the four remaining tasks based on each person's strengths. I cut the project scope by one feature."
+- _Example:_ "I scheduled a 30-minute sync with the original lead to recover what I could of their work. I redistributed the four remaining tasks based on each person's strengths. I cut the project scope by one feature."
 
 ### Result
 
 What happened, with an honest number or outcome.
 
-- *Example:* "We shipped on time. The cut feature was the lowest-priority one anyway. The team gave me the highest peer-eval score I'd received in the program."
+- _Example:_ "We shipped on time. The cut feature was the lowest-priority one anyway. The team gave me the highest peer-eval score I'd received in the program."
 
 ### Reflection
 
 What you would do differently. This is the fifth step and the one most candidates skip.
 
-- *Example:* "I should have flagged the risk to the team earlier. I waited until week five to raise the missing-member concern; I should have raised it in week one. Now I ask 'what's the worst case here?' before I start."
+- _Example:_ "I should have flagged the risk to the team earlier. I waited until week five to raise the missing-member concern; I should have raised it when the lead became unavailable in week three. Now I ask 'what's the worst case here?' before I start."
 
 The reflection is what makes the answer honest. Without it, the answer is a victory lap; with it, the answer shows learning.
 
@@ -117,7 +117,7 @@ If you do not yet have ten stories, the easiest source is your own history.
 - One from a personal project (ownership, execution).
 - One from an extracurricular (leadership, integrity, customer focus).
 
-If you genuinely do not have ten stories yet, you do. Look at your week and you will find conflict, ambiguity, deadlines, and feedback — every week.
+If you do not have ten distinct examples, start with fewer. Use real coursework, volunteering or part-time work and add examples over time. Never manufacture a story to fill a slot.
 
 ## What if you have not had a job?
 
@@ -126,7 +126,7 @@ The bank is built from any source. A retail job, a part-time job, a class projec
 ## Practice
 
 - **Out loud.** The bank is useless until you have said it.
-- **With a timer.** Most candidates ramble past two minutes.
+- **With a timer.** Check whether your answer fits the available time while covering your actions and outcome.
 - **With a peer or a model.** A model can run a behavioral round; a peer can give you the social cues. See [The AI Job Search Framework](../ai-job-search-framework/) section D.
 - **On the bank, not on the questions.** Practice the bank by mapping it to random questions; the questions will vary, the bank will not.
 

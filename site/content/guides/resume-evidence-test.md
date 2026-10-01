@@ -6,7 +6,7 @@ section: Résumé and applications
 order: 5
 ---
 
-Most new-grad résumés fail one simple test: the interviewer asks how the candidate knows a number, and the candidate cannot answer. The claim "reduced latency by 40%" looks impressive on paper and turns into a liability the moment the interviewer asks how it was measured. This guide is that test, in three questions, with a worksheet you can run on every bullet.
+A résumé metric needs an explanation of how it was measured. The claim "reduced latency by 40%" looks impressive on paper and turns into a liability the moment the interviewer asks how it was measured. This guide is that test, in three questions, with a worksheet you can run on every bullet.
 
 ::: evidence practical
 If you cannot answer "how do you know?" for a metric on your résumé, the bullet is doing you harm. Either replace the metric with a different one you can defend or describe the change without a number.
@@ -18,7 +18,7 @@ For every bullet on your résumé, ask these three in order. If any answer is "n
 
 ### 1. Can you prove it?
 
-"Prove it" means: is there an artefact outside your head that supports the claim?
+"Prove it" means: is there a reliable record or explanation that supports the claim?
 
 - A benchmark result, a graph, a benchmark output.
 - A ticket, a pull request, a commit log.
@@ -27,7 +27,7 @@ For every bullet on your résumé, ask these three in order. If any answer is "n
 - A user survey, a usage log, a quote from a teammate.
 - A project history, a changelog, a release note.
 
-If the only evidence is your memory of "it felt faster", you cannot prove it. The interviewer knows this; they ask the question precisely because they know most candidates cannot answer it.
+If the only evidence is your memory of "it felt faster", you cannot prove it. Do not invent measurements. A truthful qualitative description may be more appropriate.
 
 ### 2. Can you explain it?
 
@@ -47,9 +47,9 @@ If the honest answer to any of these is "I'm not sure", the bullet is too strong
 
 - "Yes, here's the approach." — strong.
 - "It was a one-off, but here's what I learned." — acceptable if you are honest.
-- "No, I couldn't." — the bullet is too strong for the résumé; it implies you can.
+- "No, the conditions were specific." — explain those limits. A truthful past achievement does not promise the same result in every future setting.
 
-The third question catches the silent inflation. A bullet that implies repeatable competence when the work was a one-off is a misrepresentation, not a strength.
+The third question catches the silent inflation. Distinguish your contribution from team work and conditions you cannot recreate. Do not claim independent expertise that the experience did not establish.
 
 ## The worksheet
 
@@ -57,34 +57,34 @@ Print this, fill it in, keep it next to your résumé.
 
 | Claim | Prove it (artefact) | Explain it (mechanism) | Reproduce it (could you do it again?) |
 |---|---|---|---|
-| Reduced latency by 40% | Profiler output, dated | Replaced N+1 query with batch insert | Yes, on a similar system |
+| Reduced latency by 40% | Profiler output, dated | Replaced repeated reads with one batched query | Yes, on a similar system |
 | Led a team of 4 to ship X | PR list, retros | Held weekly syncs; here's what changed | Yes |
-| Built Y used by Z users | Logs, testimonials | React + Flask, served from S3 | Yes |
+| Built Y used by Z users | Logs, testimonials | React frontend on S3; Flask API on a server | Yes |
 | Won the hackathon | Submission, photos | Built a working demo in 36 hours | Different constraints, different result |
 | Improved test coverage from 40% to 80% | Coverage report | Wrote unit tests for the X module first | Yes |
 
-The shape of the worksheet matters more than its length. One row per bullet. One column per question. The bullet survives if no cell is blank.
+The shape of the worksheet matters more than its length. One row per bullet. One column per question. Use the worksheet to identify unsupported claims or limits to explain. These rows are illustrative examples, not achievements to copy. Never disclose confidential records, customer data or private colleague information as proof.
 
 ## Where AI helps, where AI hurts
 
 The test interacts with AI use in two ways.
 
 - **AI helps you write the bullet.** A model can rephrase "built a thing" into "built a thing that did X for Y people" if you give it the facts. The fact comes from you.
-- **AI hurts you when it invents the metric.** A model will fill in "40%" if you did not provide one. If you cannot defend the number it chose, the bullet is doing you harm.
+- **AI hurts you when it invents the metric.** A model may invent a number you did not provide. If you cannot defend the number it chose, the bullet is doing you harm.
 
 Run the test on every AI-edited bullet. The [AI Job Search Framework](../ai-job-search-framework/) section B has the matching guidance on factuality verification and hallucination detection.
 
-::: evidence observational
-The fastest way to lose an offer is a metric the interviewer cannot reproduce. A defensible claim with no number beats an indefensible claim with one. "Reduced dashboard load from N seconds to M" is better than "improved performance by 40%" if the second number was guessed.
+::: evidence practical
+An unsupported metric can undermine credibility. A defensible claim with no number beats an indefensible claim with one. "Reduced dashboard load from N seconds to M" is better than "improved performance by 40%" if the second number was guessed.
 :::
 
 ## When "no metric" is the right answer
 
 Not every bullet has a number. That is fine. The bullet should still survive the test. Here is a bullet that passes the test without a metric.
 
-> **Owned onboarding for the campus ambassador program.** Designed the application, ran the interview loop, selected 12 ambassadors from 80 applicants. Three of them are still in the program two years later.
+> **Owned onboarding for the campus ambassador program.** Designed the application form, coordinated interviews and documented selection decisions with the committee.
 
-- Prove it: the application form, the interview notes, the alumni list.
+- Prove it: the application form, the interview notes, the process records, where sharing is permitted.
 - Explain it: what the role needed, what you looked for, how the loop worked.
 - Reproduce it: yes, with adjustments.
 

@@ -1,6 +1,6 @@
 ---
 title: The new-grad job search playbook — 2026
-description: The full 14-step sequence from defining your target to starting your job. Read top-to-bottom on your first read; later, jump to the step you are on.
+description: A practical sequence from defining your target to starting your job. Read top-to-bottom on your first read; later, jump to the step you are on.
 updated: 2026-09-30
 section: Getting started
 order: 1
@@ -23,38 +23,38 @@ Write it down. You will return to this document every time you are tempted to ch
 
 ## STEP 1 — Build your résumé + LinkedIn
 
-Your résumé and LinkedIn are the same artifact in two formats. They must be ready before you apply, because each application is a tailored version of the same base.
+Keep your résumé and any professional profiles factually consistent. Prepare a base résumé, then tailor relevant evidence for the role. You can apply while improving your materials; do not miss a deadline waiting for a perfect profile.
 
 - Read [An ATS-friendly résumé](../ats-friendly-resume/) and [Résumé bullet points that get read](../resume-bullet-points/). Pick a structure and a length, then write your base résumé against that template.
-- Read [LinkedIn for new grads](../linkedin-for-new-grads/). LinkedIn is not optional — many recruiters use it as their primary search tool.
+- Read [LinkedIn for new grads](../linkedin-for-new-grads/). LinkedIn can help with discovery and outreach; it is not a universal application requirement. Prioritize the channels your field and target employers use.
 - Run your résumé through [The résumé evidence test](../resume-evidence-test/) before you send it anywhere. Every bullet should be provable in an interview.
 
-Time-box: a base résumé that passes the evidence test is one to two focused weekends, not two months.
+Set a manageable time box for a first draft, get feedback and revise as you apply. The time needed varies with your starting point.
 
-## STEP 2 — Build your portfolio / GitHub
+## STEP 2 — Prepare relevant work evidence
 
-A new-grad résumé without code is a list of courses. A new-grad résumé with proof that you shipped code is a different document entirely.
+Match your evidence to the role: software projects, data analysis, design case studies, lab work, clinical placements, sales results or writing samples. Respect confidentiality and ownership requirements.
 
-- Read [New grad projects](../new-grad-projects/) and [What makes a GitHub repo impressive](../what-makes-a-github-repo-impressive/).
+- For software roles, read [New grad projects](../new-grad-projects/) and [What makes a GitHub repo impressive](../what-makes-a-github-repo-impressive/).
 - Read [GitHub profile for new grads](../github-profile-for-new-grads/) and decide what your profile says at a glance.
 - One strong project > three weak ones. Pick something you can explain to a non-technical friend in 90 seconds.
 
-You do not need a portfolio to apply to most roles, but you need one to compete for the roles you actually want.
+A public portfolio is useful for some roles and unnecessary for others. Follow the posting and use evidence appropriate to your field; do not publish confidential work.
 
 ## STEP 3 — Build a target-company list
 
-Volume is not strategy. Twenty to forty companies you have actually researched will outperform 200 you have not. The list is the single most important operational artifact of the search.
+Keep a target list you can maintain and broaden it as needed. Research helps you prioritize effort; no fixed list size or research routine guarantees better outcomes.
 
 - Read [Build a target-company list](../build-a-target-company-list/). Use it to decide what "researched" means and how to keep the list fresh.
 - Read [Startup vs enterprise](../startup-vs-enterprise/) if you do not yet know what you want from company size.
 - Read [How to search for new-grad jobs](../how-to-search-for-new-grad-jobs/) to learn what is published where.
-- Subscribe to the RSS feeds (per category, per company) so new postings reach you within minutes of being indexed.
+- Subscribe to the RSS feeds (per category, per company) to receive updates after successful publication and your reader's next refresh.
 
 The list is a living document. Add a row the moment a new company enters your consideration; remove one the moment a closed door does.
 
 ## STEP 4 — Find relevant jobs
 
-Open the [board](../../), apply your filters, and read the posting. The job search begins here, but only after the previous steps are in place.
+Open the [board](../../), apply your filters, and read the posting. Searching, preparing and applying can run in parallel.
 
 - Use the search, the category facet, the remote facet and the visa facet. The chips combine.
 - Use [Finding hidden new-grad roles](../finding-hidden-new-grad-roles/) when a category comes up empty.
@@ -65,7 +65,7 @@ Save anything that might be a fit. The decision of whether to apply happens afte
 
 ## STEP 5 — Tailor + apply
 
-A tailored application is two artefacts: a one-page résumé variant and a short cover note (when the application asks for one).
+A tailored application is two artefacts: a résumé variant appropriate to the field and application instructions and a short cover note (when the application asks for one).
 
 - Read [Tailoring your résumé](../tailoring-your-resume/). The variant changes the order of bullets, swaps the lead, and adds the keywords the posting uses.
 - Read [Application strategy](../application-strategy/) for what to write in the cover note and what to skip.
@@ -76,13 +76,13 @@ The application is the smallest unit of work in the search. A rejected applicati
 
 ## STEP 6 — Network / referrals
 
-Referrals are the single highest-converting path into a recruiter screen. You do not need a huge network; you need a small one that is actually used.
+Referrals can add context from someone who knows your work. Outcomes and review order vary by employer; use networking alongside direct applications.
 
 - Read [How to ask for a referral](../how-to-ask-for-a-referral/) and [Networking as a new grad](../networking-as-a-new-grad/).
 - Read [Messaging recruiters](../messaging-recruiters/) for the recruiter-specific version.
-- Ask early. The best referrals happen before you have applied.
+- Ask early. Check whether the employer needs a referral before submission or can attach it later. Do not miss a deadline while waiting.
 
-A referral does not guarantee an interview. It guarantees a human reads your résumé instead of an algorithm.
+A referral does not guarantee human review, priority or an interview. Follow the employer's process and avoid duplicate applications.
 
 ## STEP 7 — Recruiter screen
 
@@ -91,7 +91,7 @@ The recruiter screen is its own round with its own rules. Treat it that way.
 - Read [The recruiter screen](../recruiter-screen/) — the questions and the 30/60/120-second answers.
 - Read [Diagnose your job-search funnel](../diagnose-your-job-search-funnel/) so you understand what the recruiter is measuring.
 
-The recruiter screen is mostly a fit conversation. The technical signal does not happen here.
+The recruiter screen is mostly a fit conversation. Some screens also include technical or domain questions; ask about the format.
 
 ## STEP 8 — Technical / behavioral / AI assessment
 
@@ -106,7 +106,7 @@ This is the round that varies the most. The specific instructions for your asses
 
 ## STEP 9 — Final interview (loop close)
 
-The on-site or final loop is several conversations back-to-back. The interview you have at 9 AM affects the one at 2 PM only via your energy, not via shared context.
+The on-site or final loop is several conversations back-to-back. Interviewers may share feedback or combine scores. Maintain consistent facts and clear explanations across rounds.
 
 - Read [How to prepare for a multi-round interview loop](../how-to-prepare-for-a-multi-round-interview-loop/).
 - Read [How to handle an interview question you don't know](../how-to-handle-an-interview-question-you-dont-know/) — for the moments you will hit.
@@ -131,11 +131,11 @@ Negotiation is a conversation, not a confrontation. The most useful frame: both 
 - Read [Negotiation](../negotiation/) — the script, the levers, the timing.
 - Re-read [How to research your market salary](../compensation-research/) — the data anchors the conversation.
 
-Negotiation is the only point in the search where a single conversation can change the multi-year outcome of the search by tens of thousands of dollars.
+Negotiation may improve terms, but graduate programs can have fixed packages. Assess the written offer and your alternatives without assuming an increase is available.
 
 ## STEP 12 — Background check + work authorization
 
-The background check happens after you sign, sometimes weeks after. International students have an extra step.
+Screening and authorization checks can occur at different stages. Confirm outstanding conditions and permitted work dates before starting or making irreversible commitments. Check work authorization from the beginning of the search.
 
 - Read [Background checks and pre-employment verification](../background-checks-and-pre-employment-verification/).
 - Read [International student job search center](../international-student-job-search-center/), [OPT and STEM OPT](../opt-and-stem-opt/), and [Sponsorship language](../sponsorship-language/) if your authorization matters for the role.
@@ -143,7 +143,7 @@ The background check happens after you sign, sometimes weeks after. Internationa
 
 ## STEP 13 — Start the job
 
-The job starts before day one. The first 90 days set the trajectory.
+The job starts before day one. Use the first months to learn the role, agree on expectations and seek feedback.
 
 - Read [After accepting a new-grad offer](../after-accepting-a-new-grad-offer/) — what to do in the gap.
 
@@ -160,4 +160,4 @@ The search taught you something. Write it down before the memory fades.
 - During the search: jump to the step you are on. Each step links to the deeper guide.
 - After an offer: jump to Step 10–13.
 
-The sequence is not sacred. International students add an axis at every step from Step 3 onward; career switchers spend more time on Step 2; candidates with offers skip to Step 10. Read it as a checklist of what the complete search contains, not as a prescription you must complete in order.
+The sequence is not sacred. International students check authorization from Step 0 onward; career switchers spend more time on Step 2; candidates with offers skip to Step 10. Read it as a checklist of what the complete search contains, not as a prescription you must complete in order.

@@ -36,4 +36,4 @@ Large employers can also freeze hiring or restructure. Ask about the team's fund
 - If you want range, speed and ownership, and can tolerate uncertainty, prefer the startup.
 - If you are on a visa, check the sponsorship position early: large employers have a policy, startups may never have done it. See [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/).
 
-On this board the COMPANY TIER facet separates the largest technology and finance employers, well-funded startups and everyone else, and the [company pages](../../jobs/at/) show every open role per employer.
+On this board the COMPANY TIER facet separates the largest technology and finance employers, well-funded startups and everyone else, and the [company pages](../../jobs/) show every open role per employer.

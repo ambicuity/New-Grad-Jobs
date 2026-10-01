@@ -50,4 +50,4 @@ If an interviewer asks "did you use AI to help with this?" the honest answer is 
 
 ## A note about AI in the interview itself
 
-This guide is about the application. AI use *during* the interview — coding, behavioral, take-home, or otherwise — is governed by the rules of the specific assessment. The line is the same: every employer and platform sets its own rules, and the candidate must follow the specific assessment instructions. See [AI-assisted interviews](../ai-assisted-interviews/) and [Interview tool policies](../interview-tool-policies/) for how to read those rules and prepare accordingly.
+This guide is about the application. AI use _during_ the interview — coding, behavioral, take-home, or otherwise — is governed by the rules of the specific assessment. The line is the same: every employer and platform sets its own rules, and the candidate must follow the specific assessment instructions. See [AI-assisted interviews](../ai-assisted-interviews/) and [Interview tool policies](../interview-tool-policies/) for how to read those rules and prepare accordingly.

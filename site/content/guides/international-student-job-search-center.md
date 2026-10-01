@@ -1,142 +1,71 @@
 ---
 title: International student job search center
-description: The full reference for the F-1 / OPT / STEM OPT / H-1B axis of the new-grad search, with the official sources you should verify against.
+description: A US F-1 job-search checklist for authorization, employer participation and deadlines, with current rules and case-specific verification.
 updated: 2026-09-30
 section: International students
 order: 1
 ---
 
-This guide is the long-form companion to [OPT and STEM OPT](../opt-and-stem-opt/). It covers the terms you will hear in every recruiter call, the questions to ask, the documents the employer is responsible for, the deadlines that drive the search, and the official sources you must verify against. Rules change; the [official USCIS and DHS sources](#official-sources) below are the source of truth.
+This guide concerns US F-1 students. It is educational information, not a determination of your eligibility. Use it to prepare questions for your Designated School Official (DSO) and, when needed, a qualified immigration attorney. For Canada or India, start with the country-specific sources in [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/).
+
+## A September 2026 rule change to check
 
 ::: evidence official
-USCIS and DHS policy guidance controls F-1 OPT, the 24-month STEM extension, the Form I-983 training plan, E-Verify, and H-1B. University international-student offices (DSOs) implement those rules for your specific I-20.
+DHS's [fixed-period admission final rule](https://www.govinfo.gov/content/pkg/FR-2026-07-17/pdf/2026-14439.pdf) states an effective date of September 15, 2026 and includes transition provisions for people previously admitted for duration of status. Confirm current implementation and how those provisions apply to your admission history before relying on older guidance.
 :::
 
-## Authorization timeline at a glance
+The current [8 CFR 214.2(f)](https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/subpart-A/section-214.2) specifies a post-completion OPT filing window from 90 days before to 30 days after program end, plus filing within 30 days of the DSO recommendation. Older summaries often say 60 days after program end. Have your DSO confirm your applicable filing deadline, admission period and any extension-of-stay requirement in writing; do not use a generic timeline to resolve transition eligibility.
 
-A typical undergraduate or master's timeline looks like this. Yours will differ — confirm with your DSO.
+## Build your authorization calendar
 
-1. **Program end date** is on your I-20. This is the start of your OPT application window.
-2. **OPT application window** opens 90 days before the program end date and closes 60 days after. File inside that window. Pre-completion OPT has different rules.
-3. **EAD issued** by USCIS. You cannot begin OPT employment until the start date on the EAD arrives. A pending application is not permission to work.
-4. **12-month OPT** begins. You have 90 days of unemployment during initial post-completion OPT.
-5. **STEM extension application** is filed before the 12-month OPT ends. The extension adds 24 months for qualifying STEM degrees.
-6. **STEM OPT unemployment total** is 150 days, including any unused initial OPT days.
-7. **H-1B registration** happens in March each year for an October 1 start. Cap-subject cases are selected by lottery; some are cap-exempt.
-8. **Cap-gap extension** bridges a timely-filed H-1B change-of-status petition between the OPT end and the H-1B start. Eligibility depends on the petition being selected and pending.
+Record your I-20 program end, admission record, DSO recommendation date, filing deadline, authorized work start and end, unemployment count and reporting dates.
 
-Confirm every date with your DSO. The numbers above are the most common defaults; they are not a guarantee.
+- **Initial OPT:** employment must relate to your degree. Start only after approval and the authorized EAD start date; a pending initial application does not authorize work.
+- **STEM OPT:** qualifying degree and employer requirements include E-Verify and Form I-983 participation. Check the extension filing deadline and recommendation validity. A timely qualifying application can extend work authorization while pending, subject to the applicable limits; verify documents with your DSO and HR.
+- **Unemployment:** the regulation limits initial post-completion OPT to 90 days, and initial plus STEM OPT to 150 days in total. It is not 150 additional days during STEM OPT.
+- **H-1B:** use the current registration season, selection rules and employer policy. The [weighted-selection final rule](https://www.federalregister.gov/documents/2025/12/29/2025-23853/weighted-selection-process-for-registrants-and-petitioners-seeking-to-file-cap-subject-h-1b) changes the cap selection process for the FY 2027 season. Do not assume equal selection odds or a future sponsorship commitment.
+- **Cap-gap:** registration or selection alone is insufficient. Ask the employer's immigration team whether the petition, filing timing and change-of-status request qualify, and whether the extension covers status, employment or both. Check the actual end date; do not assume it always ends October 1.
 
-## The vocabulary you will hear
+Some qualifying H-1B cases are cap-exempt. Employer category alone does not confirm the eligibility of a particular petition. Keep copies of your records and consult the employer's immigration counsel before relying on a later route.
 
-These are the terms a recruiter, an immigration attorney or your DSO will use.
+## CPT is a separate authorization
 
-- **CPT** — Curricular Practical Training. Used during your program, for internships which your school's curriculum requires. Requires a DSO recommendation on your I-20 before employment starts.
-- **OPT** — Optional Practical Training. 12 months of post-completion work authorisation, applied for through USCIS. See [OPT and STEM OPT](../opt-and-stem-opt/).
-- **STEM OPT** — the 24-month extension for graduates with a qualifying STEM degree. Requires the employer to be enrolled in E-Verify and to sign the Form I-983 training plan.
-- **EAD** — Employment Authorization Document. The card USCIS issues after approving OPT or STEM OPT. You cannot begin employment until the start date on the EAD arrives.
-- **I-983** — the Training Plan for STEM OPT students. The employer signs; you and your DSO keep it on file. Material changes (employer, role, duties, address) require an updated I-983.
-- **E-Verify** — the federal program employers use to confirm employment eligibility. Required for STEM OPT employers; used more broadly by many US employers.
-- **Cap-gap** — the automatic extension of F-1 status (and OPT work authorisation, in some cases) that bridges the gap between an expiring OPT and an October 1 H-1B start, when an H-1B change-of-status petition is selected in the lottery and pending.
-- **H-1B** — the temporary specialty-occupation visa. Most cap-subject cases require employer sponsorship and are subject to the annual lottery. Some cases are cap-exempt (higher-education institutions, certain non-profits, research organisations).
-- **Cap-exempt H-1B** — not subject to the annual cap; often a faster path to sponsorship for the right employer.
+Curricular Practical Training is tied to an established curriculum and requires DSO authorization for the particular employment before starting. A recommendation alone is not enough. It can include a required internship or qualifying cooperative education; confirm your program's rules. Ask how any prior full-time CPT affects OPT eligibility.
 
-## Sponsorship language in postings
+## Ask employers early
 
-The phrases employers use are not all equivalent. See [Sponsorship language](../sponsorship-language/) for the full list and what each signals. The short version:
+1. Do you accept candidates with my current authorization for this role and start date?
+2. For STEM OPT, are you enrolled in E-Verify and able to meet the training-plan and supervision requirements?
+3. What is your current policy on future sponsorship for this role? Who can confirm it?
+4. If an immigration application or selection is unsuccessful, what options, if any, would you support?
 
-- **"Unable to sponsor" / "will not sponsor" / "no sponsorship available"** — a policy for the role. Do not apply if you will need future sponsorship.
-- **"Must be authorized to work in the US"** without "without sponsorship" — boilerplate. Often compatible with current OPT.
-- **"Sponsorship considered on a case-by-case basis"** — not a no. Ask.
-- **Silence** — the most common case. Ask the recruiter.
+Agency and client-site arrangements need particular checking. Confirm who employs, supervises and trains you; do not assume an agency's E-Verify enrollment alone makes a placement STEM-eligible.
 
-## The questions to ask in the first recruiter screen
+## Answer application questions completely
 
-These are the questions for the recruiter or hiring manager. You do not need an immigration attorney in the room; you need the employer's policy.
+Answer the question actually asked. If you require future employer sponsorship, a combined question asking about sponsorship now or in the future generally calls for that information even when initial OPT does not require a visa petition. Do not answer only the current half. If your situation is uncertain, seek case-specific advice before submitting rather than guessing or selecting an inaccurate answer to pass a filter.
 
-1. Do you hire candidates on OPT?
-2. Are you enrolled in E-Verify? (Required for STEM OPT.)
-3. Have you sponsored H-1B petitions for people in this role before, and what is your policy?
-4. If a later immigration application or selection is unsuccessful, what options, if any, would the employer support? A transfer abroad requires its own role, authorisation and approval; it is not guaranteed.
+A free-text explanation can distinguish current authorization, its dates and future needs. Employer definitions and policies vary; ask for clarification where needed. See [Sponsorship language](../sponsorship-language/).
 
-Ask at the first screen. The answer saves everyone time.
-
-## The form I-983 and your reporting obligations
-
-STEM OPT students have ongoing reporting obligations. Keep your own calendar and your own records; do not rely on your employer's memory.
-
-- The I-983 is signed by the employer and by you. Your DSO keeps a copy.
-- Material changes (employer, role, duties, address) require an updated I-983, signed by the new employer where applicable.
-- The six-month validation: confirm with your DSO that your I-983 is current at the six-month mark.
-- Annual self-evaluations: confirm the schedule and the form with your DSO. These are required, on time, every year of STEM OPT.
-- Reporting to your DSO: any change in employment, address, or status must be reported. Confirm the reporting channel and the deadline.
+## Reporting and travel
 
 ::: evidence official
-DHS's STEM OPT reporting material specifies requirements around the I-983, six-month validation, annual self-evaluations, changes in employment, and reporting timelines. Check the current Study in the States pages before relying on any summary.
+[DHS STEM OPT reporting guidance](https://studyinthestates.dhs.gov/assets/sevpstemoptreportingrequirementsfinal.pdf) distinguishes six-month validation of personal and employment information from training evaluations and change reporting. [Form I-983 guidance](https://studyinthestates.dhs.gov/form-i-983-overview) explains the 12-month and final evaluations. Confirm deadlines and your school's submission channel before each event.
 :::
 
-## How to answer "Will you now or in the future require sponsorship?"
+An employer change or early end to training can trigger a final evaluation and new paperwork; do not wait for the next annual checkpoint. Keep evidence of submissions.
 
-The classic question, with three honest answers.
+Before international travel, have your DSO and immigration adviser review your status, admission record, pending applications, travel endorsement, employment evidence, visa and passport requirements. Exceptions and transition rules can matter. A visa stamp, EAD or employer offer does not guarantee re-entry.
 
-- **"I do not currently require sponsorship."** — true if you have an unexpired EAD that covers the role. You are authorised to work on OPT or STEM OPT and the role is within that authorisation.
-- **"I will require sponsorship in the future."** — true if you intend to convert to H-1B or another status at the end of your current authorisation.
-- **"I do not know yet."** — true if you are undecided. Some applications auto-reject for either "yes" or "no" answers; if the policy allows it, "I do not know yet" is the honest answer.
+## What the board tells you
 
-The question is sometimes a coarse filter. The recruiter may treat "future sponsorship" as a hard no. That is information you needed, and the earlier you learn it, the more time you have to redirect.
-
-## Citizenship, clearance and government roles
-
-Some roles require US citizenship by law, and the requirement is non-negotiable.
-
-- **US personnel security clearances.** Require US citizenship (with very limited narrow exceptions). Federal contractors hiring for cleared roles apply this consistently.
-- **Some government positions.** Citizenship requirements are statutory. See [Citizenship and clearance](../citizenship-and-clearance/).
-- **Export-control / ITAR work.** A US-person requirement may apply; non-citizens can be US-persons in some cases. The [DOJ explains the distinction](https://www.justice.gov/crt/iers-frequently-asked-questions-faqs).
-
-If the role involves cleared work, government work, or export-controlled technology, ask the recruiter and the legal team directly.
-
-## Staffing agencies, contracting companies, and the indirect path
-
-The first US job is sometimes through a staffing agency or a government contractor. Both are legitimate paths with their own considerations.
-
-- **Staffing agencies.** Confirm whether the agency will sponsor, whether the end-client will sponsor, and whether the role is contract-to-hire or direct. The "end-client" is the company whose team you would actually join.
-- **Government contractors.** Some roles are with the prime contractor, not the agency. The end-client's clearance and citizenship requirements apply. Ask which.
-
-## Travel, re-entry, and the visa stamp
-
-Travelling internationally during OPT or STEM OPT is allowed but requires valid travel endorsement on your I-20 (from your DSO), a valid EAD, a valid F-1 visa, and a passport that is unexpired for at least six months into the future. Re-entry to resume employment is not guaranteed; the officer at the port of entry makes the decision. Confirm with your DSO before any international travel.
-
-## How the board helps (and does not)
-
-The board flags two signals on each posting:
-
-- **No sponsorship.** Phrases like "we will not sponsor" or "no sponsorship available for this position". When set, the posting is hidden by the "no visa restriction stated" chip in the visa facet.
-- **Citizenship required.** US citizenship phrases, clearance phrases, "must be a US person". The flag is broad; it does not distinguish every legal category.
-
-A "no restriction stated" chip is the absence of a stated restriction. It is not a positive signal of sponsorship. Treat it as a filter, not an answer.
-
-## Common mistakes
-
-- Treating the absence of a stated restriction as a promise of sponsorship. It is not.
-- Believing "OPT does not require sponsorship" extends to future sponsorship. It does not.
-- Skipping the recruiter conversation because you "do not want to bother them". The recruiter conversation is where you save everyone time.
-- Letting authorisation deadlines drive the search on their own. Authorisation is one axis; the target list and the funnel matter just as much.
+The board flags stated sponsorship and citizenship-related phrases. No restriction stated means no such signal was detected; it does not establish eligibility or willingness to sponsor. Export-control US-person language differs from citizenship and clearance requirements. See [Citizenship and clearance](../citizenship-and-clearance/) and confirm the original posting.
 
 ## Official sources
 
-These are the starting points. The pages link out to forms, processing times, and policy guidance. Bookmark them and re-read them when your situation changes.
-
-- **[USCIS — Working in the United States](https://www.uscis.gov/working-in-the-united-states).** The umbrella page for employment-based immigration.
-- **[USCIS — Optional Practical Training (OPT) for F-1 students](https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students).** Eligibility, application steps, the EAD.
-- **[USCIS — STEM OPT](https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-extension-for-stem-students-stem-opt).** The 24-month STEM extension, the Form I-983, reporting.
-- **[USCIS Policy Manual](https://www.uscis.gov/policy-manual).** Authoritative guidance USCIS officers follow.
-- **[DHS — Study in the States](https://studyinthestates.dhs.gov/).** DHS's resource for F-1 students; OPT, STEM OPT, the I-983.
-- **[DHS — Form I-983 overview](https://studyinthestates.dhs.gov/form-i-983-overview).** The training plan used by STEM OPT students and their employers.
-- **[E-Verify](https://www.e-verify.gov/).** Information on the employer-side program; employees can use myE-Verify to self-check.
-- **[myE-Verify](https://www.e-verify.gov/employees/mye-verify).** The employee-facing side of E-Verify for self-checks.
-- **[USCIS I-9 Central](https://www.uscis.gov/i-9-central).** The employment eligibility verification form every US employer uses.
-- **[USCIS Processing Times](https://egov.uscis.gov/processing-times/).** Current processing times for OPT, STEM OPT and related applications.
-- **[USCIS H-1B Employer Data Hub](https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub).** Historical H-1B petition decisions by employer and fiscal year. Past petitions do not establish current sponsorship policy; confirm with the employer.
-- **[Bureau of Labor Statistics — Occupational Employment and Wage Statistics](https://www.bls.gov/oes/).** Occupational, wage, geographic and outlook data. Useful during salary research for any role.
-
-This page is educational information, not legal advice. Verify your specific situation with USCIS, DHS / Study in the States, your DSO, or a qualified immigration attorney.
+- [USCIS OPT guidance](https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students)
+- [USCIS STEM OPT guidance](https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-extension-for-stem-students-stem-opt)
+- [Current student regulations](https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/subpart-A/section-214.2)
+- [DHS Study in the States](https://studyinthestates.dhs.gov/)
+- [USCIS H-1B guidance](https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations)
+- [USCIS H-1B Employer Data Hub](https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub) for historical petition decisions, not current sponsorship promises.

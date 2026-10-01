@@ -8,8 +8,8 @@ order: 0
 
 A rejection email that says "we decided not to move forward" is honest but useless. Students regularly walk away thinking "I failed because of the ATS", "I failed because I'm international", or "I failed because I didn't do enough LeetCode" — and each of those is a guess. This guide is about replacing the guess with what you actually know, and being honest about the difference.
 
-::: evidence observational
-On the New Grad Jobs board, the most common reasons a posting is filtered out of the curated set are: a "no sponsorship" phrase, a citizenship or clearance phrase, a level-III+ signal, an intern or co-op signal, and a posting older than the recency cutoff. None of those reasons tells you why *your* application was rejected.
+::: evidence primary
+NGJ applies the [configured inclusion rules](https://github.com/ambicuity/New-Grad-Jobs/blob/main/config.yml) to postings. Sponsorship and citizenship phrases are flags, not automatic exclusions from the curated set. A board classification cannot establish why an employer rejected your application.
 :::
 
 ## Observation is not explanation
@@ -19,7 +19,7 @@ You applied. They rejected you. The gap between those two facts is where the gue
 - You **observed**: they sent a rejection email.
 - You **inferred**: the reason.
 
-The inference is the part to question. A common cognitive shortcut is to assume the most painful explanation is true — that the rejection was personal, structural, or caused by some trait of yours. It usually wasn't.
+The inference is the part to question. A common cognitive shortcut is to assume the most painful explanation is true — that the rejection was personal, structural, or caused by some trait of yours. A generic rejection cannot establish or rule out any of those explanations.
 
 ## Evidence you have
 
@@ -48,13 +48,13 @@ This is the list of reasons the rejection might have been caused by something yo
 - The hiring manager's preference shifted.
 - The requisition was paused or cancelled.
 
-None of those are about you. All of them are common. The list is not a ranking by frequency.
+These are possible explanations, not findings about your application or a ranking by frequency. Some concern employer decisions; others concern relative fit.
 
 ## What "the ATS rejected me" usually means
 
-The most common self-blame story after a rejection is "the ATS rejected me". Most of the time, that is not what happened. There are two distinct mechanisms and they are often confused.
+The most common self-blame story after a rejection is "the ATS rejected me". The rejection email alone does not establish that. There are two distinct mechanisms and they are often confused.
 
-- **Auto-reject from application answers.** Some employers configure automatic rejection from specific application answers (eligibility, graduation date, years of experience). [Greenhouse documents this mechanism](https://support.greenhouse.io/hc/en-us/articles/360000653472-Auto-reject). It is *not* résumé parsing.
+- **Auto-reject from application answers.** Some employers configure automatic rejection from specific application answers (eligibility, graduation date, years of experience). [Greenhouse documents this mechanism](https://support.greenhouse.io/hc/en-us/articles/360000653472-Auto-reject). It is _not_ résumé parsing.
 - **Résumé parsing.** The résumé is parsed into structured fields and stored. [Greenhouse notes that an unsuccessful parse does not remove the résumé](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse); it remains attached.
 
 A missing exact title from a parsed résumé is not evidence that an algorithm rejected you. See [An ATS-friendly résumé](../ats-friendly-resume/) and [Why applications get rejected](../why-applications-get-rejected/) for the actual mechanisms.
@@ -80,10 +80,10 @@ The protocol above separates what you observed from what you inferred. The actio
 
 ## What you cannot do about the rest
 
-You cannot interview better than an internal candidate who already has the team's context. You cannot out-apply a hiring freeze. You cannot out-LeetCode a requisition cancellation. Recognising that is not defeat; it is the difference between a controllable improvement and a self-blame spiral.
+You cannot control whether the employer prefers an internal candidate. You cannot out-apply a hiring freeze. You cannot out-LeetCode a requisition cancellation. Recognising that is not defeat; it is the difference between a controllable improvement and a self-blame spiral.
 
 ::: evidence practical
-If you cannot name an actionable change that distinguishes this rejection from the next 100 you will receive, the rejection did not give you new information. Move on without a diagnosis.
+If you cannot name an actionable change that distinguishes this rejection from other applications, the rejection did not give you new information. Move on without a diagnosis.
 :::
 
 ## Related guides

@@ -6,7 +6,7 @@ section: Getting started
 order: 0
 ---
 
-A new-grad job search isn't one path — it's at least nine, depending on where you start. The same advice ("just apply to more roles") helps one person and hurts another. This page is a router: pick the row that matches where you are right now and follow its sequence. Each path links to the specific guides that matter most for that stage. No scripts, no saved state — just the right next read.
+A new-grad job search isn't one path — it's at least nine, depending on where you start. The same advice ("just apply to more roles") helps one person and hurts another. This page is a router: pick the row that matches where you are right now and follow its sequence. Each path links to the specific guides that matter most for that stage. Choose the next read that fits your situation.
 
 If nothing below fits, jump straight to the [full 2026 playbook](../job-search-playbook-2026/) — it covers every stage end to end.
 
@@ -24,10 +24,10 @@ If nothing below fits, jump straight to the [full 2026 playbook](../job-search-p
 
 ## Graduating in 0–3 months
 
-Your bottleneck is preparation and timing. Most new-grad programs post in the fall and close by spring, so the goal is to be a credible applicant by the time the listings go live.
+Check current employer and campus deadlines, and prepare while applying. Recruitment varies by country, field and program; a missed autumn cycle does not close every route. See [The 2026 job market](../new-grad-job-market-2026/) for dated evidence.
 
 1. [How to search for new-grad jobs](../how-to-search-for-new-grad-jobs/) — read what counts and where to look.
-2. [Build a target-company list](../build-a-target-company-list/) — 20 to 40 employers, not 200.
+2. [Build a target-company list](../build-a-target-company-list/) — a manageable list you can broaden and refresh.
 3. [An ATS-friendly résumé](../ats-friendly-resume/) and [Résumé bullet points that get read](../resume-bullet-points/).
 4. [Tailoring your résumé](../tailoring-your-resume/) — one base, one variant per role family.
 5. [LinkedIn for new grads](../linkedin-for-new-grads/) and [GitHub profile for new grads](../github-profile-for-new-grads/).
@@ -47,18 +47,18 @@ You are not stuck — you are at the start. The work is making the target list, 
 
 ## Applying but getting no interviews
 
-Your résumé is the bottleneck. Don't "send more applications" — fix the funnel.
+Review eligibility, targeting, résumé evidence, submission dates and employer timelines. Silence alone does not identify a résumé problem.
 
-1. [Why applications get rejected](../why-applications-get-rejected/) — the eight most common reasons.
+1. [Why applications get rejected](../why-applications-get-rejected/) — possible mechanisms, without assuming which affected you.
 2. [An ATS-friendly résumé](../ats-friendly-resume/).
 3. [Tailoring your résumé](../tailoring-your-resume/).
 4. [Rejection diagnosis](../rejection-diagnosis/) — what your evidence actually supports.
 5. [No interviews after 100 applications](../no-interviews-after-100-applications/) — when volume is not the answer.
-6. [How to ask for a referral](../how-to-ask-for-a-referral/) — referrals are the highest-converting path in.
+6. [How to ask for a referral](../how-to-ask-for-a-referral/) — check the employer's process; outcomes vary.
 
 ## Getting interviews but no offers
 
-You are past the funnel. The fix is in your interview loop, not your résumé.
+Review feedback and preparation alongside eligibility, competing candidates and headcount. A late rejection alone does not establish an interview-skill gap.
 
 1. [Diagnose your job-search funnel](../diagnose-your-job-search-funnel/) — find where the funnel breaks.
 2. [Getting interviews but no offers](../getting-interviews-but-no-offers/) — the specific case.
@@ -75,12 +75,12 @@ The interview is a skill you can rehearse. Treat preparation like a project: sco
 2. [Coding interviews](../coding-interviews/) — live coding.
 3. [LeetCode roadmap for new grads](../leetcode-roadmap-for-new-grads/) — what to actually drill.
 4. [Coding assessments](../coding-assessments/) — the asynchronous variant.
-5. [System-design interviews](../system-design/) for senior-track roles, [SQL](../sql-interview-preparation/), [ML/AI](../ml-ai-interview-preparation/) or [cloud](../cloud-interview-preparation/) by role family.
+5. [System-design interviews](../system-design/) when the employer confirms a design round, [SQL](../sql-interview-preparation/), [ML/AI](../ml-ai-interview-preparation/) or [cloud](../cloud-interview-preparation/) by role family.
 6. [Role-specific technical preparation](../role-specific-technical-preparation/).
 
 ## Preparing for AI interviews and assessments
 
-AI-mediated interviews and assessments are now common. The rules vary by employer, and the candidate who reads them wins.
+Some employers use AI-mediated assessments. Check your invitation rather than assuming prevalence or permission to use AI yourself.
 
 1. [AI-assisted interviews](../ai-assisted-interviews/) — the format landscape and the preparation loop.
 2. [AI coding assessments](../ai-coding-assessments/) — what AI use looks like in coding rounds.
