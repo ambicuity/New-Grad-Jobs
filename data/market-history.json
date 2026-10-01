@@ -1,77 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-09-30T22:36:08.982494+00:00",
+    "last_updated": "2026-10-01T01:32:59.440352+00:00",
     "total_snapshots": 55,
     "date_range": {
-      "start": "2026-07-02",
-      "end": "2026-09-30"
+      "start": "2026-07-03",
+      "end": "2026-10-01"
     }
   },
   "snapshots": [
-    {
-      "date": "2026-07-02",
-      "total_jobs": 1394,
-      "categories": {
-        "software_engineering": 927,
-        "data_ml": 149,
-        "other": 108,
-        "data_engineering": 30,
-        "infrastructure_sre": 163,
-        "product_management": 2,
-        "hardware": 9,
-        "quant_finance": 6
-      },
-      "tiers": {
-        "unicorn": 689,
-        "other": 573,
-        "faang_plus": 132
-      },
-      "top_companies": [
-        {
-          "company": "SpaceX",
-          "jobs": 213
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 191
-        },
-        {
-          "company": "OpenAI",
-          "jobs": 47
-        },
-        {
-          "company": "Waymo",
-          "jobs": 41
-        },
-        {
-          "company": "Boeing",
-          "jobs": 29
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 28
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 25
-        },
-        {
-          "company": "Pinterest",
-          "jobs": 23
-        },
-        {
-          "company": "Glean",
-          "jobs": 23
-        },
-        {
-          "company": "Robinhood",
-          "jobs": 22
-        }
-      ],
-      "unique_companies": 219,
-      "avg_jobs_per_company": 6.37,
-      "timestamp": "2026-07-02T23:36:47.958111+00:00"
-    },
     {
       "date": "2026-07-03",
       "total_jobs": 1435,
@@ -3803,6 +3739,92 @@
       "unique_companies": 444,
       "avg_jobs_per_company": 6.57,
       "timestamp": "2026-09-30T22:36:08.982494+00:00"
+    },
+    {
+      "date": "2026-10-01",
+      "total_jobs": 2913,
+      "categories": {
+        "security": 95,
+        "software_engineering": 1024,
+        "data_ml": 129,
+        "quant_finance": 12,
+        "business_analyst": 78,
+        "frontend": 15,
+        "backend": 17,
+        "design": 22,
+        "other": 84,
+        "mobile": 9,
+        "accounting_finance": 162,
+        "hardware": 87,
+        "engineering": 321,
+        "sales": 130,
+        "infrastructure_sre": 185,
+        "supply_chain": 95,
+        "management": 62,
+        "data_engineering": 43,
+        "legal": 33,
+        "customer_support": 68,
+        "data_analyst": 5,
+        "human_resources": 61,
+        "marketing": 27,
+        "consulting": 50,
+        "product_management": 5,
+        "project_management": 10,
+        "public_sector": 2,
+        "healthcare": 74,
+        "education": 7,
+        "arts_entertainment": 1
+      },
+      "tiers": {
+        "other": 1697,
+        "unicorn": 600,
+        "faang_plus": 616
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 428
+        },
+        {
+          "company": "Raytheon",
+          "jobs": 164
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 140
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 112
+        },
+        {
+          "company": "Leidos",
+          "jobs": 93
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 92
+        },
+        {
+          "company": "Boeing",
+          "jobs": 86
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 69
+        },
+        {
+          "company": "General Dynamics",
+          "jobs": 67
+        },
+        {
+          "company": "CACI",
+          "jobs": 64
+        }
+      ],
+      "unique_companies": 446,
+      "avg_jobs_per_company": 6.53,
+      "timestamp": "2026-10-01T01:32:59.440352+00:00"
     }
   ]
 }
