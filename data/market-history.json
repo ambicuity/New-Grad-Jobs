@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-02T05:51:16.105380+00:00",
+    "last_updated": "2026-10-02T06:08:50.822438+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-04",
@@ -3763,43 +3763,43 @@
     },
     {
       "date": "2026-10-02",
-      "total_jobs": 2938,
+      "total_jobs": 2923,
       "categories": {
-        "security": 95,
-        "software_engineering": 1008,
+        "security": 96,
+        "software_engineering": 995,
         "data_ml": 139,
         "quant_finance": 12,
         "business_analyst": 79,
         "frontend": 12,
         "backend": 20,
         "design": 23,
-        "other": 83,
+        "other": 84,
         "mobile": 17,
-        "accounting_finance": 154,
+        "accounting_finance": 153,
         "hardware": 74,
-        "engineering": 311,
-        "sales": 116,
-        "infrastructure_sre": 191,
+        "engineering": 305,
+        "sales": 120,
+        "infrastructure_sre": 192,
         "supply_chain": 91,
         "management": 45,
         "data_engineering": 47,
         "legal": 48,
-        "customer_support": 82,
+        "customer_support": 81,
         "data_analyst": 5,
-        "human_resources": 50,
+        "human_resources": 51,
         "marketing": 19,
-        "consulting": 49,
+        "consulting": 48,
         "product_management": 3,
-        "project_management": 12,
+        "project_management": 13,
         "public_sector": 2,
-        "healthcare": 139,
+        "healthcare": 137,
         "education": 11,
         "arts_entertainment": 1
       },
       "tiers": {
-        "other": 1760,
+        "other": 1758,
         "unicorn": 626,
-        "faang_plus": 552
+        "faang_plus": 539
       },
       "top_companies": [
         {
@@ -3815,12 +3815,12 @@
           "jobs": 112
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 104
-        },
-        {
           "company": "Leidos",
           "jobs": 97
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 91
         },
         {
           "company": "Raytheon",
@@ -3843,9 +3843,9 @@
           "jobs": 62
         }
       ],
-      "unique_companies": 450,
-      "avg_jobs_per_company": 6.53,
-      "timestamp": "2026-10-02T05:51:16.105380+00:00"
+      "unique_companies": 446,
+      "avg_jobs_per_company": 6.55,
+      "timestamp": "2026-10-02T06:08:50.822438+00:00"
     }
   ]
 }
