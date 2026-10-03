@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-03T19:49:52.180009+00:00",
+    "last_updated": "2026-10-03T22:51:45.938048+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-05",
@@ -3787,40 +3787,40 @@
       "date": "2026-10-03",
       "total_jobs": 2954,
       "categories": {
-        "security": 100,
-        "software_engineering": 1034,
-        "data_ml": 141,
-        "quant_finance": 11,
-        "business_analyst": 80,
+        "security": 99,
+        "software_engineering": 1030,
+        "data_ml": 140,
+        "quant_finance": 12,
+        "business_analyst": 78,
         "frontend": 13,
         "backend": 19,
-        "design": 21,
-        "other": 78,
+        "design": 22,
+        "other": 79,
         "mobile": 19,
-        "accounting_finance": 153,
-        "hardware": 70,
+        "accounting_finance": 156,
+        "hardware": 69,
         "engineering": 271,
-        "sales": 127,
+        "sales": 128,
         "infrastructure_sre": 191,
         "supply_chain": 91,
-        "management": 49,
-        "data_engineering": 43,
+        "management": 50,
+        "data_engineering": 44,
         "legal": 47,
-        "customer_support": 81,
+        "customer_support": 80,
         "data_analyst": 11,
         "human_resources": 53,
         "marketing": 19,
         "consulting": 53,
         "product_management": 6,
-        "healthcare": 142,
+        "healthcare": 144,
         "project_management": 9,
         "public_sector": 1,
-        "education": 19,
+        "education": 18,
         "arts_entertainment": 2
       },
       "tiers": {
-        "other": 1773,
-        "unicorn": 631,
+        "other": 1775,
+        "unicorn": 629,
         "faang_plus": 550
       },
       "top_companies": [
@@ -3834,7 +3834,7 @@
         },
         {
           "company": "Anduril Industries",
-          "jobs": 114
+          "jobs": 113
         },
         {
           "company": "Leidos",
@@ -3850,7 +3850,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 81
+          "jobs": 83
         },
         {
           "company": "CACI",
@@ -3865,9 +3865,9 @@
           "jobs": 67
         }
       ],
-      "unique_companies": 453,
-      "avg_jobs_per_company": 6.52,
-      "timestamp": "2026-10-03T19:49:52.180009+00:00"
+      "unique_companies": 450,
+      "avg_jobs_per_company": 6.56,
+      "timestamp": "2026-10-03T22:51:45.938048+00:00"
     }
   ]
 }
