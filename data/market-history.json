@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-03T16:30:11.803011+00:00",
+    "last_updated": "2026-10-03T16:41:45.599442+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-05",
@@ -3785,32 +3785,32 @@
     },
     {
       "date": "2026-10-03",
-      "total_jobs": 2949,
+      "total_jobs": 2951,
       "categories": {
-        "security": 104,
+        "security": 103,
         "software_engineering": 1034,
         "data_ml": 141,
-        "quant_finance": 12,
+        "quant_finance": 11,
         "business_analyst": 80,
         "frontend": 13,
         "backend": 19,
         "design": 21,
-        "other": 77,
+        "other": 78,
         "mobile": 19,
-        "accounting_finance": 156,
+        "accounting_finance": 155,
         "hardware": 70,
         "engineering": 269,
         "sales": 125,
         "infrastructure_sre": 192,
         "supply_chain": 90,
         "management": 46,
-        "data_engineering": 43,
+        "data_engineering": 42,
         "legal": 47,
         "customer_support": 80,
         "data_analyst": 11,
         "human_resources": 53,
-        "marketing": 19,
-        "consulting": 49,
+        "marketing": 20,
+        "consulting": 53,
         "product_management": 5,
         "healthcare": 142,
         "project_management": 9,
@@ -3819,8 +3819,8 @@
         "arts_entertainment": 2
       },
       "tiers": {
-        "other": 1767,
-        "unicorn": 632,
+        "other": 1770,
+        "unicorn": 631,
         "faang_plus": 550
       },
       "top_companies": [
@@ -3865,9 +3865,9 @@
           "jobs": 67
         }
       ],
-      "unique_companies": 449,
-      "avg_jobs_per_company": 6.57,
-      "timestamp": "2026-10-03T16:30:11.803011+00:00"
+      "unique_companies": 451,
+      "avg_jobs_per_company": 6.54,
+      "timestamp": "2026-10-03T16:41:45.599442+00:00"
     }
   ]
 }
