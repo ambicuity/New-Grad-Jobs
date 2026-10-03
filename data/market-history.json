@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-03T12:30:23.562423+00:00",
+    "last_updated": "2026-10-03T16:30:11.803011+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-05",
@@ -3785,43 +3785,43 @@
     },
     {
       "date": "2026-10-03",
-      "total_jobs": 2958,
+      "total_jobs": 2949,
       "categories": {
-        "security": 105,
-        "software_engineering": 1038,
-        "data_ml": 142,
+        "security": 104,
+        "software_engineering": 1034,
+        "data_ml": 141,
         "quant_finance": 12,
-        "business_analyst": 79,
+        "business_analyst": 80,
         "frontend": 13,
         "backend": 19,
         "design": 21,
-        "other": 74,
+        "other": 77,
         "mobile": 19,
         "accounting_finance": 156,
-        "hardware": 69,
+        "hardware": 70,
         "engineering": 269,
-        "sales": 135,
-        "infrastructure_sre": 191,
-        "supply_chain": 91,
+        "sales": 125,
+        "infrastructure_sre": 192,
+        "supply_chain": 90,
         "management": 46,
         "data_engineering": 43,
         "legal": 47,
-        "customer_support": 81,
+        "customer_support": 80,
         "data_analyst": 11,
-        "human_resources": 51,
-        "marketing": 18,
+        "human_resources": 53,
+        "marketing": 19,
         "consulting": 49,
         "product_management": 5,
-        "healthcare": 143,
+        "healthcare": 142,
         "project_management": 9,
         "public_sector": 1,
-        "education": 19,
+        "education": 20,
         "arts_entertainment": 2
       },
       "tiers": {
-        "other": 1773,
-        "unicorn": 634,
-        "faang_plus": 551
+        "other": 1767,
+        "unicorn": 632,
+        "faang_plus": 550
       },
       "top_companies": [
         {
@@ -3830,7 +3830,7 @@
         },
         {
           "company": "SpaceX",
-          "jobs": 146
+          "jobs": 145
         },
         {
           "company": "Anduril Industries",
@@ -3865,9 +3865,9 @@
           "jobs": 67
         }
       ],
-      "unique_companies": 447,
-      "avg_jobs_per_company": 6.62,
-      "timestamp": "2026-10-03T12:30:23.562423+00:00"
+      "unique_companies": 449,
+      "avg_jobs_per_company": 6.57,
+      "timestamp": "2026-10-03T16:30:11.803011+00:00"
     }
   ]
 }
