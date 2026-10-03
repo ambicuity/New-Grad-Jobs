@@ -57,7 +57,7 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from the scraper output jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->2960<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->2958<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -78,12 +78,12 @@ Experience an advanced career journey with us! 🚀
 | [Creatives and Design](#creatives-and-design) | <!-- COUNT:design -->21<!-- /COUNT --> |
 | [Business Analyst](#business-analyst) | <!-- COUNT:business_analyst -->79<!-- /COUNT --> |
 | [Marketing](#marketing) | <!-- COUNT:marketing -->18<!-- /COUNT --> |
-| [Sales](#sales) | <!-- COUNT:sales -->139<!-- /COUNT --> |
-| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->154<!-- /COUNT --> |
-| [Consulting](#consulting) | <!-- COUNT:consulting -->48<!-- /COUNT --> |
+| [Sales](#sales) | <!-- COUNT:sales -->135<!-- /COUNT --> |
+| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->156<!-- /COUNT --> |
+| [Consulting](#consulting) | <!-- COUNT:consulting -->49<!-- /COUNT --> |
 | [Human Resources](#human-resources) | <!-- COUNT:human_resources -->51<!-- /COUNT --> |
 | [Legal and Compliance](#legal-and-compliance) | <!-- COUNT:legal -->47<!-- /COUNT --> |
-| [Customer Service and Support](#customer-service-and-support) | <!-- COUNT:customer_support -->82<!-- /COUNT --> |
+| [Customer Service and Support](#customer-service-and-support) | <!-- COUNT:customer_support -->81<!-- /COUNT --> |
 | [Supply Chain](#supply-chain) | <!-- COUNT:supply_chain -->91<!-- /COUNT --> |
 | [Healthcare](#healthcare) | <!-- COUNT:healthcare -->143<!-- /COUNT --> |
 | [Education and Training](#education-and-training) | <!-- COUNT:education -->19<!-- /COUNT --> |
@@ -97,7 +97,7 @@ Experience an advanced career journey with us! 🚀
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from the scraper output jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **2,960** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **2,958** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -422,14 +422,14 @@ Experience an advanced career journey with us! 🚀
 | Genesis Global Group | Entry Level Sales Executive - Dover/Newark, DE | DE, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=07aedc7f59b1ad5d>) |
 | Verizon | Retail Sales Associate | Cedar Hill, TX, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=8bcfbeb56bc002d5>) |
 | Genesis Global Group | Entry Level Sales Executive - Memphis, TN | Memphis, TN, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=b551cdd615d4ba4c>) |
-| Genesis Global Group | Entry Level Sales Executive - Indiana | Chesterton, IN, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=345704ef09f77065>) |
 | Genesis Global Group | Entry Level Sales Executive - San Francisco, CA | San Francisco, CA, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=3d097d4e62682b05>) |
 | Genesis Global Group | Entry Level Sales Executive - Dover/Newark, DE | Newark, DE, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=848238f43bef41bf>) |
 | Genesis Global Group | Entry Level Sales Executive - San Francisco, CA | CA, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=0367057c6767ccdf>) |
 | Genesis Global Group | Entry Level Sales Executive - San Francisco, CA | San Francisco, CA, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=ca7e5b3beef3bf5a>) |
 | Genesis Global Group | Entry Level Sales Executive - Dover/Newark, DE | DE, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=f2cf7ec19a120d91>) |
+| Genesis Global Group | Entry Level Sales Executive - Santa Rosa, CA | Santa Rosa, CA, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=7f133f8433879d43>) |
 
-**[View all 139 Sales roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 135 Sales roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Accounting and Finance
 
@@ -437,6 +437,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| JPMorganChase | Associate - Automation \(Global Financial Crimes and Compliance\) | TS, IN | Today | [Apply](<https://in.indeed.com/viewjob?jk=bf4563d49dfd3c36>) |
 | City and County of Denver | Financial Analyst Associate, Grant Administration – Denver International Airport | Denver International Airport, CO, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=684fc29c60439a37>) |
 | MITRE | Associate Program Finance Analyst | McLean, VA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=481c3b590308ee11>) |
 | Welty Enterprises | Financial Analyst I | Fairlawn, OH, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=9fd85e9fe4ee17c2>) |
@@ -446,9 +447,8 @@ Experience an advanced career journey with us! 🚀
 | Unknown | Financial Service Associate | TS, IN | 1 day ago | [Apply](<https://in.indeed.com/viewjob?jk=c1a5b0c8039a0e64>) |
 | Wells Fargo | 2027 Wealth &amp; Investment Management Analyst Program - Early Careers | St. Louis, MO, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=6366ed9d42f38bef>) |
 | Citi | Investment Banking Associate -Leveraged Finance - DCM | New York New York United States | 1 day ago | [Apply](<https://citi.wd5.myworkdayjobs.com/2/job/New-York-New-York-United-States/Investment-Banking-Associate--Leveraged-Finance---DCM_26997552-1>) |
-| Northrop Grumman | Flight Controller Level 2 - Spacecraft Operations - Colorado Springs | United States-Colorado-Colorado Springs | 1 day ago | [Apply](<https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Colorado-Colorado-Springs/Flight-Controller-Level-2---Spacecraft-Operations---Colorado-Springs_R10237892>) |
 
-**[View all 154 Accounting and Finance roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 156 Accounting and Finance roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Consulting
 
@@ -456,6 +456,7 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
+| Bulguard health solutions | Entry level Benefits Consultant - Tampa | Tampa, FL, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=3cf7b483d52a01c1>) |
 | Accenture | Junior Consultant Technology Strategy &amp; Advisory \(all genders\) | — | 2 days ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Kronberg-Campus-Kronberg-1/Junior-Consultant-Technology-Strategy---Advisory_R00297297>) |
 | Fidelity | Investment Management Consultant II - Denver, CO | Greenwood Village, CO | 2 days ago | [Apply](<https://fmr.wd1.myworkdayjobs.com/FidelityCareers/job/Greenwood-Village-CO/Investment-Management-Consultant-II---Denver--CO_2136486>) |
 | Vancouver Coastal Health | Junior Business Advisor, Data &amp; Analytics | Vancouver, BC, CA | 2 days ago | [Apply](<https://ca.indeed.com/viewjob?jk=5ef562d4c473f135>) |
@@ -465,9 +466,8 @@ Experience an advanced career journey with us! 🚀
 | Accenture | Business Advisory New Associate | — | 4 days ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Noida/Business-Advisory-New-Associate_AIOC-S01668394-1>) |
 | Infinitive Inc | Consultant, Technology \(2026\) | McLean, VA, US | 4 days ago | [Apply](<https://www.indeed.com/viewjob?jk=9a443af409b20b9f>) |
 | Accenture | Junior Consultant Industrial Transformation \(all genders\) | — | 4 days ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Hamburg-Voelckersstrasse-38-Bldg-A/Junior-Consultant-Industrial-Transformation--all-genders-_R00334403>) |
-| Accenture | Business Advisory New Associate | — | 4 days ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Business-Advisory-Associate_AIOC-S01656911-1>) |
 
-**[View all 48 Consulting roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 49 Consulting roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Human Resources
 
@@ -519,12 +519,12 @@ Experience an advanced career journey with us! 🚀
 | Boeing | Associate Customer Support Specialist | USA - Dallas, TX | 1 day ago | [Apply](<https://boeing.wd1.myworkdayjobs.com/external_careers/job/USA---Dallas-TX/Associate-Customer-Support-Specialist_JR2026522908>) |
 | Parker Hannifin | Customer Service Engineer II \(SSO Division – Location: Simi Valley, CA\) | Simi Valley, CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=87422987c4068391>) |
 | Leon's Furniture | Part Time Customer Service Associate\(Evenings and weekends\) | Moncton, NB, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=9ecd9ba3349d6566>) |
-| Hammer Head Global Solutions Pvt. Ltd. | Customer Service Associate | DL, IN | 1 day ago | [Apply](<https://in.indeed.com/viewjob?jk=0bfcc1f190bf6eb7>) |
 | Humber River Health | Clerical Support Associate Mental Health - OP Child &amp; Adololescent | Greater Toronto Area, ON, CA | 1 day ago | [Apply](<https://ca.indeed.com/viewjob?jk=04626b63c8160838>) |
 | Third Bridge | Associate, Client Services - July 2027 Start | Dallas | 1 day ago | [Apply](<https://job-boards.eu.greenhouse.io/thirdbridge/jobs/4995668101?gh_jid=4995668101>) |
 | Third Bridge | Associate, Client Services - July 2027 Start | Los Angeles | 1 day ago | [Apply](<https://job-boards.eu.greenhouse.io/thirdbridge/jobs/4995665101?gh_jid=4995665101>) |
+| Third Bridge | Associate, Client Services - April 2027 Start | Los Angeles | 1 day ago | [Apply](<https://job-boards.eu.greenhouse.io/thirdbridge/jobs/4995658101?gh_jid=4995658101>) |
 
-**[View all 82 Customer Service and Support roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 81 Customer Service and Support roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Supply Chain
 
@@ -766,4 +766,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-10-03 11:49:35 UTC*
+*Last updated: 2026-10-03 12:30:13 UTC*
