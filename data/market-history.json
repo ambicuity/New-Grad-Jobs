@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-04T14:48:27.516699+00:00",
+    "last_updated": "2026-10-04T18:38:58.838394+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-06",
@@ -3807,43 +3807,43 @@
     },
     {
       "date": "2026-10-04",
-      "total_jobs": 2954,
+      "total_jobs": 2952,
       "categories": {
         "security": 99,
-        "software_engineering": 1035,
+        "software_engineering": 1034,
         "data_ml": 141,
         "quant_finance": 12,
         "business_analyst": 77,
         "frontend": 13,
         "backend": 19,
-        "design": 22,
-        "other": 76,
+        "design": 20,
+        "other": 77,
         "mobile": 19,
-        "accounting_finance": 156,
+        "accounting_finance": 157,
         "hardware": 69,
-        "engineering": 266,
-        "sales": 132,
+        "engineering": 265,
+        "sales": 128,
         "infrastructure_sre": 189,
-        "supply_chain": 91,
+        "supply_chain": 94,
         "management": 52,
-        "data_engineering": 42,
+        "data_engineering": 41,
         "legal": 47,
         "customer_support": 79,
         "data_analyst": 11,
         "human_resources": 53,
-        "marketing": 20,
-        "consulting": 53,
+        "marketing": 22,
+        "consulting": 56,
         "product_management": 6,
-        "healthcare": 145,
-        "project_management": 9,
+        "healthcare": 143,
+        "project_management": 8,
         "public_sector": 1,
         "education": 18,
         "arts_entertainment": 2
       },
       "tiers": {
-        "other": 1778,
-        "unicorn": 628,
-        "faang_plus": 548
+        "other": 1777,
+        "unicorn": 626,
+        "faang_plus": 549
       },
       "top_companies": [
         {
@@ -3887,9 +3887,9 @@
           "jobs": 67
         }
       ],
-      "unique_companies": 456,
-      "avg_jobs_per_company": 6.48,
-      "timestamp": "2026-10-04T14:48:27.516699+00:00"
+      "unique_companies": 455,
+      "avg_jobs_per_company": 6.49,
+      "timestamp": "2026-10-04T18:38:58.838394+00:00"
     }
   ]
 }
