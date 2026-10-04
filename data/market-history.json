@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-04T08:47:10.482441+00:00",
+    "last_updated": "2026-10-04T14:48:27.516699+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-06",
@@ -3807,10 +3807,10 @@
     },
     {
       "date": "2026-10-04",
-      "total_jobs": 2949,
+      "total_jobs": 2954,
       "categories": {
         "security": 99,
-        "software_engineering": 1026,
+        "software_engineering": 1035,
         "data_ml": 141,
         "quant_finance": 12,
         "business_analyst": 77,
@@ -3822,28 +3822,28 @@
         "accounting_finance": 156,
         "hardware": 69,
         "engineering": 266,
-        "sales": 133,
+        "sales": 132,
         "infrastructure_sre": 189,
-        "supply_chain": 93,
-        "management": 50,
-        "data_engineering": 44,
+        "supply_chain": 91,
+        "management": 52,
+        "data_engineering": 42,
         "legal": 47,
-        "customer_support": 81,
+        "customer_support": 79,
         "data_analyst": 11,
         "human_resources": 53,
         "marketing": 20,
         "consulting": 53,
         "product_management": 6,
-        "healthcare": 143,
+        "healthcare": 145,
         "project_management": 9,
         "public_sector": 1,
-        "education": 19,
+        "education": 18,
         "arts_entertainment": 2
       },
       "tiers": {
-        "other": 1781,
+        "other": 1778,
         "unicorn": 628,
-        "faang_plus": 540
+        "faang_plus": 548
       },
       "top_companies": [
         {
@@ -3868,11 +3868,11 @@
         },
         {
           "company": "Boeing",
-          "jobs": 84
+          "jobs": 85
         },
         {
           "company": "Raytheon",
-          "jobs": 82
+          "jobs": 79
         },
         {
           "company": "CACI",
@@ -3887,9 +3887,9 @@
           "jobs": 67
         }
       ],
-      "unique_companies": 453,
-      "avg_jobs_per_company": 6.51,
-      "timestamp": "2026-10-04T08:47:10.482441+00:00"
+      "unique_companies": 456,
+      "avg_jobs_per_company": 6.48,
+      "timestamp": "2026-10-04T14:48:27.516699+00:00"
     }
   ]
 }
