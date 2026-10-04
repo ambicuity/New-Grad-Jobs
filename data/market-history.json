@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-04T08:33:25.759919+00:00",
+    "last_updated": "2026-10-04T08:47:10.482441+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-06",
@@ -3807,7 +3807,7 @@
     },
     {
       "date": "2026-10-04",
-      "total_jobs": 2953,
+      "total_jobs": 2949,
       "categories": {
         "security": 99,
         "software_engineering": 1026,
@@ -3819,12 +3819,12 @@
         "design": 22,
         "other": 76,
         "mobile": 19,
-        "accounting_finance": 158,
+        "accounting_finance": 156,
         "hardware": 69,
-        "engineering": 267,
+        "engineering": 266,
         "sales": 133,
         "infrastructure_sre": 189,
-        "supply_chain": 94,
+        "supply_chain": 93,
         "management": 50,
         "data_engineering": 44,
         "legal": 47,
@@ -3841,9 +3841,9 @@
         "arts_entertainment": 2
       },
       "tiers": {
-        "other": 1784,
+        "other": 1781,
         "unicorn": 628,
-        "faang_plus": 541
+        "faang_plus": 540
       },
       "top_companies": [
         {
@@ -3872,7 +3872,7 @@
         },
         {
           "company": "Raytheon",
-          "jobs": 83
+          "jobs": 82
         },
         {
           "company": "CACI",
@@ -3888,8 +3888,8 @@
         }
       ],
       "unique_companies": 453,
-      "avg_jobs_per_company": 6.52,
-      "timestamp": "2026-10-04T08:33:25.759919+00:00"
+      "avg_jobs_per_company": 6.51,
+      "timestamp": "2026-10-04T08:47:10.482441+00:00"
     }
   ]
 }

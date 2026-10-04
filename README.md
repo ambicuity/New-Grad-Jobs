@@ -57,7 +57,7 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from the scraper output jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->2953<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->2949<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
@@ -74,17 +74,17 @@ Experience an advanced career journey with us! 🚀
 | [Project Management](#project-management) | <!-- COUNT:project_management -->9<!-- /COUNT --> |
 | [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->12<!-- /COUNT --> |
 | [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->69<!-- /COUNT --> |
-| [Engineering and Development](#engineering-and-development) | <!-- COUNT:engineering -->267<!-- /COUNT --> |
+| [Engineering and Development](#engineering-and-development) | <!-- COUNT:engineering -->266<!-- /COUNT --> |
 | [Creatives and Design](#creatives-and-design) | <!-- COUNT:design -->22<!-- /COUNT --> |
 | [Business Analyst](#business-analyst) | <!-- COUNT:business_analyst -->77<!-- /COUNT --> |
 | [Marketing](#marketing) | <!-- COUNT:marketing -->20<!-- /COUNT --> |
 | [Sales](#sales) | <!-- COUNT:sales -->133<!-- /COUNT --> |
-| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->158<!-- /COUNT --> |
+| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->156<!-- /COUNT --> |
 | [Consulting](#consulting) | <!-- COUNT:consulting -->53<!-- /COUNT --> |
 | [Human Resources](#human-resources) | <!-- COUNT:human_resources -->53<!-- /COUNT --> |
 | [Legal and Compliance](#legal-and-compliance) | <!-- COUNT:legal -->47<!-- /COUNT --> |
 | [Customer Service and Support](#customer-service-and-support) | <!-- COUNT:customer_support -->81<!-- /COUNT --> |
-| [Supply Chain](#supply-chain) | <!-- COUNT:supply_chain -->94<!-- /COUNT --> |
+| [Supply Chain](#supply-chain) | <!-- COUNT:supply_chain -->93<!-- /COUNT --> |
 | [Healthcare](#healthcare) | <!-- COUNT:healthcare -->143<!-- /COUNT --> |
 | [Education and Training](#education-and-training) | <!-- COUNT:education -->19<!-- /COUNT --> |
 | [Public Sector and Government](#public-sector-and-government) | <!-- COUNT:public_sector -->1<!-- /COUNT --> |
@@ -97,7 +97,7 @@ Experience an advanced career journey with us! 🚀
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from the scraper output jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **2,953** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **2,949** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -354,7 +354,7 @@ Experience an advanced career journey with us! 🚀
 | KION Group | Associate Controls Engineering | Mississauga, Canada | 2 days ago | [Apply](<https://kiongroup.wd3.myworkdayjobs.com/KIONGroup/job/Mississauga-Canada/Associate-Controls-Engineering_JR-0096494-2>) |
 | SURYADEV ALLOYS AND POWER PVT LTD | GET \(Graduate Engineer Trainee\) | TN, IN | 2 days ago | [Apply](<https://in.indeed.com/viewjob?jk=41599b481770df80>) |
 
-**[View all 267 Engineering and Development roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 266 Engineering and Development roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Creatives and Design
 
@@ -449,7 +449,7 @@ Experience an advanced career journey with us! 🚀
 | RBC | Associate, Financial Institutions Group Corporate Banking | New York, New York, United States of America | 2 days ago | [Apply](<https://rbc.wd3.myworkdayjobs.com/RBCGLOBAL1/job/New-York-New-York-United-States-of-America/Associate--Financial-Institutions-Group-Corporate-Banking_R-0000183168>) |
 | County of Santa Barbara | Financial Systems Analyst I | Santa Barbara, CA, US | 2 days ago | [Apply](<https://www.indeed.com/viewjob?jk=91aa6c64099efd95>) |
 
-**[View all 158 Accounting and Finance roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 156 Accounting and Finance roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Consulting
 
@@ -544,7 +544,7 @@ Experience an advanced career journey with us! 🚀
 | Boeing | Associate Supply Chain Specialist | USA - Mesa, AZ | 2 days ago | [Apply](<https://boeing.wd1.myworkdayjobs.com/external_careers/job/USA---Mesa-AZ/Associate-Supply-Chain-Specialist_JR2026518548-1>) |
 | Anduril Industries | Operations &amp; Logistics Associate, AIS | Ashville, Ohio, United States | 2 days ago | [Apply](<https://boards.greenhouse.io/andurilindustries/jobs/5254831007?gh_jid=5254831007>) |
 
-**[View all 94 Supply Chain roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 93 Supply Chain roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Healthcare
 
@@ -767,4 +767,4 @@ Found a job we're missing? Want to report a closed position?
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-10-04 08:33:19 UTC*
+*Last updated: 2026-10-04 08:47:00 UTC*
