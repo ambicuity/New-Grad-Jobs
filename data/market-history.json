@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-04T02:34:25.308812+00:00",
+    "last_updated": "2026-10-04T08:33:25.759919+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-06",
@@ -3807,43 +3807,43 @@
     },
     {
       "date": "2026-10-04",
-      "total_jobs": 2947,
+      "total_jobs": 2953,
       "categories": {
         "security": 99,
-        "software_engineering": 1027,
-        "data_ml": 140,
+        "software_engineering": 1026,
+        "data_ml": 141,
         "quant_finance": 12,
         "business_analyst": 77,
         "frontend": 13,
         "backend": 19,
         "design": 22,
-        "other": 78,
+        "other": 76,
         "mobile": 19,
-        "accounting_finance": 157,
+        "accounting_finance": 158,
         "hardware": 69,
-        "engineering": 268,
-        "sales": 130,
-        "infrastructure_sre": 190,
-        "supply_chain": 91,
+        "engineering": 267,
+        "sales": 133,
+        "infrastructure_sre": 189,
+        "supply_chain": 94,
         "management": 50,
         "data_engineering": 44,
         "legal": 47,
-        "customer_support": 80,
+        "customer_support": 81,
         "data_analyst": 11,
         "human_resources": 53,
-        "marketing": 19,
+        "marketing": 20,
         "consulting": 53,
         "product_management": 6,
-        "healthcare": 145,
+        "healthcare": 143,
         "project_management": 9,
         "public_sector": 1,
-        "education": 16,
+        "education": 19,
         "arts_entertainment": 2
       },
       "tiers": {
-        "other": 1775,
-        "unicorn": 627,
-        "faang_plus": 545
+        "other": 1784,
+        "unicorn": 628,
+        "faang_plus": 541
       },
       "top_companies": [
         {
@@ -3864,15 +3864,15 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 94
+          "jobs": 88
         },
         {
           "company": "Boeing",
-          "jobs": 83
+          "jobs": 84
         },
         {
           "company": "Raytheon",
-          "jobs": 82
+          "jobs": 83
         },
         {
           "company": "CACI",
@@ -3887,9 +3887,9 @@
           "jobs": 67
         }
       ],
-      "unique_companies": 450,
-      "avg_jobs_per_company": 6.55,
-      "timestamp": "2026-10-04T02:34:25.308812+00:00"
+      "unique_companies": 453,
+      "avg_jobs_per_company": 6.52,
+      "timestamp": "2026-10-04T08:33:25.759919+00:00"
     }
   ]
 }
