@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-05T05:52:59.777717+00:00",
+    "last_updated": "2026-10-05T06:55:59.527842+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-07",
@@ -3829,48 +3829,48 @@
     },
     {
       "date": "2026-10-05",
-      "total_jobs": 2933,
+      "total_jobs": 2906,
       "categories": {
         "security": 101,
-        "software_engineering": 1028,
-        "data_ml": 137,
+        "software_engineering": 1029,
+        "data_ml": 136,
         "quant_finance": 12,
-        "business_analyst": 74,
-        "frontend": 13,
+        "business_analyst": 73,
+        "frontend": 12,
         "backend": 19,
         "design": 19,
-        "other": 91,
+        "other": 89,
         "mobile": 19,
-        "accounting_finance": 147,
-        "hardware": 71,
+        "accounting_finance": 140,
+        "hardware": 70,
         "engineering": 270,
-        "sales": 127,
+        "sales": 129,
         "infrastructure_sre": 188,
         "supply_chain": 87,
-        "management": 52,
+        "management": 50,
         "data_engineering": 38,
         "legal": 45,
-        "customer_support": 79,
+        "customer_support": 76,
         "data_analyst": 11,
         "human_resources": 50,
-        "marketing": 21,
-        "consulting": 58,
+        "marketing": 20,
+        "consulting": 51,
         "product_management": 6,
-        "healthcare": 142,
+        "healthcare": 140,
         "project_management": 8,
         "public_sector": 1,
-        "education": 18,
+        "education": 16,
         "arts_entertainment": 1
       },
       "tiers": {
-        "other": 1754,
+        "other": 1726,
         "unicorn": 620,
-        "faang_plus": 559
+        "faang_plus": 560
       },
       "top_companies": [
         {
           "company": "Accenture",
-          "jobs": 467
+          "jobs": 446
         },
         {
           "company": "SpaceX",
@@ -3909,9 +3909,9 @@
           "jobs": 67
         }
       ],
-      "unique_companies": 444,
-      "avg_jobs_per_company": 6.61,
-      "timestamp": "2026-10-05T05:52:59.777717+00:00"
+      "unique_companies": 442,
+      "avg_jobs_per_company": 6.57,
+      "timestamp": "2026-10-05T06:55:59.527842+00:00"
     }
   ]
 }
