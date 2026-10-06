@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-06T02:30:55.856267+00:00",
+    "last_updated": "2026-10-06T06:32:16.179712+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-08",
@@ -3851,42 +3851,42 @@
     },
     {
       "date": "2026-10-06",
-      "total_jobs": 2997,
+      "total_jobs": 2947,
       "categories": {
-        "security": 100,
-        "software_engineering": 1036,
+        "security": 98,
+        "software_engineering": 1041,
         "quant_finance": 14,
         "frontend": 12,
         "backend": 19,
-        "design": 16,
-        "other": 85,
+        "design": 17,
+        "other": 77,
         "mobile": 19,
-        "accounting_finance": 163,
-        "data_ml": 144,
-        "hardware": 86,
-        "engineering": 286,
-        "sales": 124,
-        "business_analyst": 71,
-        "infrastructure_sre": 183,
-        "supply_chain": 91,
+        "accounting_finance": 132,
+        "data_ml": 141,
+        "hardware": 79,
+        "engineering": 295,
+        "sales": 125,
+        "business_analyst": 69,
+        "infrastructure_sre": 184,
+        "supply_chain": 88,
         "management": 55,
         "data_engineering": 42,
-        "legal": 37,
+        "legal": 36,
         "customer_support": 77,
         "data_analyst": 10,
-        "human_resources": 49,
-        "marketing": 18,
-        "consulting": 47,
+        "human_resources": 50,
+        "marketing": 17,
+        "consulting": 46,
         "arts_entertainment": 3,
-        "product_management": 4,
-        "healthcare": 181,
+        "product_management": 5,
+        "healthcare": 171,
         "project_management": 11,
-        "public_sector": 3,
-        "education": 11
+        "public_sector": 4,
+        "education": 10
       },
       "tiers": {
-        "other": 1794,
-        "unicorn": 619,
+        "other": 1742,
+        "unicorn": 621,
         "faang_plus": 584
       },
       "top_companies": [
@@ -3904,11 +3904,11 @@
         },
         {
           "company": "Raytheon",
-          "jobs": 109
+          "jobs": 110
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 99
+          "jobs": 98
         },
         {
           "company": "Leidos",
@@ -3916,7 +3916,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 91
+          "jobs": 86
         },
         {
           "company": "General Dynamics",
@@ -3931,9 +3931,9 @@
           "jobs": 65
         }
       ],
-      "unique_companies": 451,
-      "avg_jobs_per_company": 6.65,
-      "timestamp": "2026-10-06T02:30:55.856267+00:00"
+      "unique_companies": 440,
+      "avg_jobs_per_company": 6.7,
+      "timestamp": "2026-10-06T06:32:16.179712+00:00"
     }
   ]
 }
