@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-06T09:23:11.859816+00:00",
+    "last_updated": "2026-10-06T15:19:05.544201+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-08",
@@ -3851,43 +3851,43 @@
     },
     {
       "date": "2026-10-06",
-      "total_jobs": 2946,
+      "total_jobs": 2948,
       "categories": {
         "security": 99,
-        "software_engineering": 1042,
+        "software_engineering": 1009,
         "quant_finance": 14,
-        "frontend": 12,
-        "backend": 19,
-        "design": 16,
-        "other": 76,
+        "frontend": 13,
+        "backend": 22,
+        "design": 18,
+        "other": 81,
         "mobile": 19,
-        "accounting_finance": 134,
-        "data_ml": 140,
-        "hardware": 80,
-        "engineering": 297,
-        "sales": 125,
+        "accounting_finance": 135,
+        "data_ml": 137,
+        "hardware": 85,
+        "engineering": 305,
+        "sales": 119,
         "business_analyst": 70,
-        "infrastructure_sre": 187,
-        "supply_chain": 92,
-        "management": 46,
+        "infrastructure_sre": 186,
+        "supply_chain": 97,
+        "management": 45,
         "data_engineering": 41,
-        "legal": 36,
-        "customer_support": 74,
-        "data_analyst": 11,
-        "human_resources": 50,
-        "marketing": 19,
-        "consulting": 46,
+        "legal": 40,
+        "customer_support": 70,
+        "data_analyst": 14,
+        "human_resources": 53,
+        "marketing": 24,
+        "consulting": 49,
         "arts_entertainment": 3,
-        "product_management": 5,
-        "healthcare": 171,
+        "product_management": 4,
+        "healthcare": 173,
         "project_management": 12,
-        "public_sector": 2,
+        "public_sector": 3,
         "education": 8
       },
       "tiers": {
-        "other": 1735,
-        "unicorn": 622,
-        "faang_plus": 589
+        "other": 1763,
+        "unicorn": 620,
+        "faang_plus": 565
       },
       "top_companies": [
         {
@@ -3899,41 +3899,41 @@
           "jobs": 141
         },
         {
+          "company": "Raytheon",
+          "jobs": 133
+        },
+        {
           "company": "Anduril Industries",
           "jobs": 114
         },
         {
-          "company": "Raytheon",
-          "jobs": 114
-        },
-        {
           "company": "Northrop Grumman",
-          "jobs": 101
+          "jobs": 93
         },
         {
           "company": "Leidos",
-          "jobs": 94
+          "jobs": 91
         },
         {
           "company": "Boeing",
-          "jobs": 82
-        },
-        {
-          "company": "General Dynamics",
-          "jobs": 74
+          "jobs": 89
         },
         {
           "company": "Booz Allen Hamilton",
-          "jobs": 65
+          "jobs": 66
         },
         {
           "company": "CACI",
           "jobs": 65
+        },
+        {
+          "company": "OpenAI",
+          "jobs": 55
         }
       ],
-      "unique_companies": 433,
-      "avg_jobs_per_company": 6.8,
-      "timestamp": "2026-10-06T09:23:11.859816+00:00"
+      "unique_companies": 465,
+      "avg_jobs_per_company": 6.34,
+      "timestamp": "2026-10-06T15:19:05.544201+00:00"
     }
   ]
 }
