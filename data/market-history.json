@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-06T21:05:21.303854+00:00",
+    "last_updated": "2026-10-06T21:14:26.144225+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-08",
@@ -3851,43 +3851,43 @@
     },
     {
       "date": "2026-10-06",
-      "total_jobs": 2888,
+      "total_jobs": 2880,
       "categories": {
-        "software_engineering": 995,
+        "software_engineering": 997,
         "quant_finance": 15,
         "frontend": 13,
         "backend": 21,
         "design": 14,
-        "other": 81,
+        "other": 85,
         "mobile": 18,
-        "accounting_finance": 141,
+        "accounting_finance": 136,
         "data_ml": 131,
-        "hardware": 70,
-        "engineering": 302,
-        "sales": 121,
-        "business_analyst": 74,
-        "infrastructure_sre": 178,
+        "hardware": 68,
+        "engineering": 298,
+        "sales": 120,
+        "business_analyst": 73,
+        "infrastructure_sre": 180,
         "security": 97,
-        "supply_chain": 102,
+        "supply_chain": 101,
         "management": 47,
-        "data_engineering": 43,
+        "data_engineering": 44,
         "legal": 36,
-        "customer_support": 70,
-        "data_analyst": 16,
+        "customer_support": 71,
+        "data_analyst": 12,
         "human_resources": 47,
         "marketing": 18,
-        "consulting": 53,
+        "consulting": 51,
         "arts_entertainment": 3,
         "product_management": 3,
-        "healthcare": 163,
+        "healthcare": 164,
         "project_management": 11,
         "public_sector": 1,
-        "education": 4
+        "education": 5
       },
       "tiers": {
-        "other": 1746,
+        "other": 1739,
         "unicorn": 621,
-        "faang_plus": 521
+        "faang_plus": 520
       },
       "top_companies": [
         {
@@ -3903,12 +3903,12 @@
           "jobs": 114
         },
         {
-          "company": "Raytheon",
+          "company": "Northrop Grumman",
           "jobs": 96
         },
         {
-          "company": "Northrop Grumman",
-          "jobs": 95
+          "company": "Raytheon",
+          "jobs": 96
         },
         {
           "company": "Leidos",
@@ -3916,24 +3916,24 @@
         },
         {
           "company": "Boeing",
-          "jobs": 93
+          "jobs": 92
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 66
         },
         {
           "company": "CACI",
           "jobs": 66
         },
         {
-          "company": "Booz Allen Hamilton",
-          "jobs": 65
-        },
-        {
           "company": "OpenAI",
           "jobs": 58
         }
       ],
-      "unique_companies": 442,
-      "avg_jobs_per_company": 6.53,
-      "timestamp": "2026-10-06T21:05:21.303854+00:00"
+      "unique_companies": 445,
+      "avg_jobs_per_company": 6.47,
+      "timestamp": "2026-10-06T21:14:26.144225+00:00"
     }
   ]
 }
