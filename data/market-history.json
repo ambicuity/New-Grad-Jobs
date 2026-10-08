@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-08T13:42:16.424174+00:00",
+    "last_updated": "2026-10-08T14:00:56.540374+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-10",
@@ -3894,42 +3894,42 @@
     },
     {
       "date": "2026-10-08",
-      "total_jobs": 3067,
+      "total_jobs": 3038,
       "categories": {
-        "software_engineering": 1074,
+        "software_engineering": 1071,
         "quant_finance": 14,
         "frontend": 17,
-        "backend": 23,
+        "backend": 22,
         "design": 17,
-        "other": 98,
+        "other": 95,
         "mobile": 22,
         "accounting_finance": 149,
-        "data_ml": 136,
-        "hardware": 83,
-        "engineering": 299,
-        "sales": 125,
-        "business_analyst": 109,
+        "data_ml": 133,
+        "hardware": 80,
+        "engineering": 293,
+        "sales": 128,
+        "business_analyst": 103,
         "infrastructure_sre": 177,
         "security": 104,
         "supply_chain": 98,
-        "management": 51,
-        "data_engineering": 60,
-        "legal": 40,
-        "customer_support": 69,
-        "data_analyst": 8,
-        "human_resources": 51,
-        "marketing": 26,
+        "management": 48,
+        "data_engineering": 58,
+        "legal": 36,
+        "customer_support": 67,
+        "data_analyst": 10,
+        "human_resources": 54,
+        "marketing": 23,
         "product_management": 4,
-        "consulting": 49,
+        "consulting": 50,
         "arts_entertainment": 3,
-        "healthcare": 141,
-        "project_management": 13,
-        "education": 7
+        "healthcare": 142,
+        "project_management": 12,
+        "education": 8
       },
       "tiers": {
-        "other": 1817,
-        "unicorn": 642,
-        "faang_plus": 608
+        "other": 1800,
+        "unicorn": 639,
+        "faang_plus": 599
       },
       "top_companies": [
         {
@@ -3942,7 +3942,7 @@
         },
         {
           "company": "Raytheon",
-          "jobs": 133
+          "jobs": 125
         },
         {
           "company": "Anduril Industries",
@@ -3958,7 +3958,7 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 92
+          "jobs": 93
         },
         {
           "company": "Booz Allen Hamilton",
@@ -3966,16 +3966,16 @@
         },
         {
           "company": "General Dynamics",
-          "jobs": 69
+          "jobs": 68
         },
         {
           "company": "CACI",
-          "jobs": 60
+          "jobs": 65
         }
       ],
-      "unique_companies": 535,
-      "avg_jobs_per_company": 5.73,
-      "timestamp": "2026-10-08T13:42:16.424174+00:00"
+      "unique_companies": 514,
+      "avg_jobs_per_company": 5.91,
+      "timestamp": "2026-10-08T14:00:56.540374+00:00"
     }
   ]
 }
