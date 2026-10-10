@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-10T06:02:59.690732+00:00",
+    "last_updated": "2026-10-10T09:44:53.799389+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-12",
@@ -3936,42 +3936,42 @@
     },
     {
       "date": "2026-10-10",
-      "total_jobs": 3076,
+      "total_jobs": 3077,
       "categories": {
-        "software_engineering": 1106,
-        "quant_finance": 15,
-        "sales": 93,
+        "software_engineering": 1093,
+        "quant_finance": 13,
+        "sales": 90,
         "frontend": 17,
-        "backend": 28,
-        "design": 14,
-        "other": 85,
+        "backend": 29,
+        "design": 17,
+        "other": 89,
         "mobile": 20,
-        "accounting_finance": 151,
-        "data_ml": 145,
-        "hardware": 81,
-        "engineering": 324,
+        "accounting_finance": 159,
+        "data_ml": 141,
+        "hardware": 78,
+        "engineering": 320,
         "business_analyst": 96,
-        "infrastructure_sre": 183,
-        "security": 102,
-        "supply_chain": 91,
-        "management": 53,
-        "data_engineering": 62,
-        "legal": 36,
-        "customer_support": 71,
-        "data_analyst": 6,
-        "human_resources": 54,
+        "infrastructure_sre": 184,
+        "security": 105,
+        "supply_chain": 92,
+        "management": 52,
+        "data_engineering": 61,
+        "legal": 34,
+        "customer_support": 69,
+        "data_analyst": 8,
+        "human_resources": 58,
         "product_management": 5,
         "consulting": 46,
-        "marketing": 22,
+        "marketing": 25,
         "arts_entertainment": 2,
-        "healthcare": 144,
-        "education": 6,
+        "healthcare": 146,
+        "education": 10,
         "project_management": 18
       },
       "tiers": {
-        "other": 1791,
+        "other": 1789,
         "unicorn": 675,
-        "faang_plus": 610
+        "faang_plus": 613
       },
       "top_companies": [
         {
@@ -4000,7 +4000,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 88
+          "jobs": 85
         },
         {
           "company": "CACI",
@@ -4015,9 +4015,9 @@
           "jobs": 64
         }
       ],
-      "unique_companies": 533,
-      "avg_jobs_per_company": 5.77,
-      "timestamp": "2026-10-10T06:02:59.690732+00:00"
+      "unique_companies": 524,
+      "avg_jobs_per_company": 5.87,
+      "timestamp": "2026-10-10T09:44:53.799389+00:00"
     }
   ]
 }
