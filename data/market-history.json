@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-11T09:18:16.417893+00:00",
+    "last_updated": "2026-10-11T13:02:47.902236+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-13",
@@ -3957,42 +3957,43 @@
     },
     {
       "date": "2026-10-11",
-      "total_jobs": 3053,
+      "total_jobs": 3072,
       "categories": {
-        "software_engineering": 1086,
+        "software_engineering": 1096,
         "quant_finance": 14,
-        "sales": 90,
-        "frontend": 16,
-        "backend": 27,
-        "design": 17,
-        "other": 89,
-        "mobile": 20,
-        "accounting_finance": 155,
-        "data_ml": 140,
-        "hardware": 76,
-        "engineering": 304,
-        "business_analyst": 106,
-        "infrastructure_sre": 182,
-        "security": 103,
-        "supply_chain": 95,
+        "sales": 95,
+        "frontend": 17,
+        "backend": 26,
+        "design": 16,
+        "other": 91,
+        "mobile": 21,
+        "accounting_finance": 162,
+        "data_ml": 139,
+        "hardware": 75,
+        "engineering": 305,
+        "business_analyst": 103,
+        "infrastructure_sre": 181,
+        "security": 102,
+        "supply_chain": 94,
         "management": 48,
-        "data_engineering": 63,
+        "data_engineering": 66,
         "legal": 35,
-        "customer_support": 73,
-        "data_analyst": 10,
-        "human_resources": 57,
+        "customer_support": 70,
+        "data_analyst": 8,
+        "human_resources": 56,
         "product_management": 5,
-        "project_management": 19,
+        "project_management": 16,
         "consulting": 49,
-        "marketing": 19,
+        "marketing": 24,
         "arts_entertainment": 2,
-        "healthcare": 146,
-        "education": 7
+        "healthcare": 144,
+        "education": 11,
+        "public_sector": 1
       },
       "tiers": {
-        "other": 1793,
-        "unicorn": 662,
-        "faang_plus": 598
+        "other": 1814,
+        "unicorn": 661,
+        "faang_plus": 597
       },
       "top_companies": [
         {
@@ -4036,9 +4037,9 @@
           "jobs": 64
         }
       ],
-      "unique_companies": 546,
-      "avg_jobs_per_company": 5.59,
-      "timestamp": "2026-10-11T09:18:16.417893+00:00"
+      "unique_companies": 559,
+      "avg_jobs_per_company": 5.5,
+      "timestamp": "2026-10-11T13:02:47.902236+00:00"
     }
   ]
 }
