@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-11T02:10:14.638278+00:00",
+    "last_updated": "2026-10-11T05:59:07.438980+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-13",
@@ -3957,42 +3957,42 @@
     },
     {
       "date": "2026-10-11",
-      "total_jobs": 3074,
+      "total_jobs": 3063,
       "categories": {
-        "software_engineering": 1103,
-        "quant_finance": 14,
-        "sales": 90,
+        "software_engineering": 1105,
+        "quant_finance": 13,
+        "sales": 89,
         "frontend": 16,
-        "backend": 26,
+        "backend": 27,
         "design": 17,
-        "other": 89,
+        "other": 92,
         "mobile": 21,
         "accounting_finance": 152,
-        "data_ml": 140,
-        "hardware": 78,
-        "engineering": 305,
-        "business_analyst": 106,
-        "infrastructure_sre": 182,
-        "security": 102,
-        "supply_chain": 94,
-        "management": 48,
-        "data_engineering": 64,
+        "data_ml": 142,
+        "hardware": 77,
+        "engineering": 298,
+        "business_analyst": 103,
+        "infrastructure_sre": 183,
+        "security": 101,
+        "supply_chain": 95,
+        "management": 47,
+        "data_engineering": 63,
         "legal": 36,
-        "customer_support": 71,
-        "data_analyst": 9,
-        "human_resources": 55,
+        "customer_support": 70,
+        "data_analyst": 10,
+        "human_resources": 56,
         "product_management": 5,
         "project_management": 17,
-        "consulting": 51,
-        "marketing": 26,
+        "consulting": 48,
+        "marketing": 20,
         "arts_entertainment": 2,
-        "healthcare": 148,
-        "education": 7
+        "healthcare": 149,
+        "education": 9
       },
       "tiers": {
-        "other": 1809,
-        "unicorn": 662,
-        "faang_plus": 603
+        "other": 1805,
+        "unicorn": 661,
+        "faang_plus": 597
       },
       "top_companies": [
         {
@@ -4017,11 +4017,11 @@
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 96
+          "jobs": 89
         },
         {
           "company": "Boeing",
-          "jobs": 84
+          "jobs": 83
         },
         {
           "company": "CACI",
@@ -4036,9 +4036,9 @@
           "jobs": 64
         }
       ],
-      "unique_companies": 557,
-      "avg_jobs_per_company": 5.52,
-      "timestamp": "2026-10-11T02:10:14.638278+00:00"
+      "unique_companies": 560,
+      "avg_jobs_per_company": 5.47,
+      "timestamp": "2026-10-11T05:59:07.438980+00:00"
     }
   ]
 }
