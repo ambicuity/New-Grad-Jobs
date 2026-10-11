@@ -21,6 +21,7 @@ logger = logging.getLogger(__name__)
 
 SOURCE = "jobspy"
 _RETRY_DELAY = 0.3
+DEFAULT_MAX_RETRIES = 2  # Default max retries for JobSpy scrape_jobs calls
 
 # Countries searched when config.yml lists none.
 DEFAULT_JOBSPY_COUNTRIES: tuple[dict[str, str], ...] = (
@@ -144,7 +145,7 @@ def _search_one(
 
 def fetch_jobspy_jobs(
     config_jobspy: dict[str, Any],
-    max_retries: int = 2,
+    max_retries: int = DEFAULT_MAX_RETRIES,
     workers: int = DEFAULT_JOBSPY_WORKERS,
 ) -> SourceResult:
     """Run every configured (site, search term, country) JobSpy search in parallel."""
