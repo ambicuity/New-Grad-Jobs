@@ -5,6 +5,14 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-14 — Rippling source (16 boards)
+
+The new Rippling adapter (#397) adds the 16 Rippling boards linked from the 30-day applied-jobs
+export (#390). Each slug was probed live on 2026-10-14 and returned postings: Albers Aerospace
+(`albers-aersopace`, the board's real spelling), Bamboo Health, Cintal, Concept Plus, Decision
+Technologies, Eridu, Flourish and Thrive Labs, Kreate, Lyte, Reserv, Rippling, Sight Machine, Swoop,
+ThreatDown, Veracity Insurance and Webull.
+
 ## 2026-10-14 — Oracle HCM source (21 careers sites)
 
 The new Oracle HCM adapter (#394) adds the 21 Oracle Recruiting Cloud careers sites linked from the

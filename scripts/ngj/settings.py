@@ -48,6 +48,7 @@ DEFAULT_ASHBY_MAX_WORKERS = 10
 DEFAULT_SMARTRECRUITERS_MAX_WORKERS = 4
 # Oracle HCM tenants are slow (a Nokia page took > 30 s); keep per-tenant load low.
 DEFAULT_ORACLE_HCM_MAX_WORKERS = 4
+DEFAULT_RIPPLING_MAX_WORKERS = 6
 DEFAULT_GRAPHQL_MIN_WORKERS = 8
 DEFAULT_GRAPHQL_MAX_WORKERS = 80
 DEFAULT_JOBSPY_WORKERS = 25
@@ -76,6 +77,8 @@ DEFAULT_ORACLE_HCM_MAX_JOBS_PER_COUNTRY = 1000
 DEFAULT_ORACLE_HCM_TIMEOUT = 45
 # Wall-clock budget per company; paging stops (keeping what it has) once spent.
 DEFAULT_ORACLE_HCM_MAX_SECONDS_PER_COMPANY = 300
+# Rippling boards are small (Rippling's own: ~600 postings); the cap bounds list pages.
+DEFAULT_RIPPLING_MAX_JOBS_PER_COMPANY = 1000
 
 DEFAULT_GOOGLE_MAX_PAGES = 3
 DEFAULT_GRAPHQL_MAX_JOBS_PER_SOURCE = 200
@@ -112,6 +115,7 @@ class Settings:
     ashby_max_workers: int = DEFAULT_ASHBY_MAX_WORKERS
     smartrecruiters_max_workers: int = DEFAULT_SMARTRECRUITERS_MAX_WORKERS
     oracle_hcm_max_workers: int = DEFAULT_ORACLE_HCM_MAX_WORKERS
+    rippling_max_workers: int = DEFAULT_RIPPLING_MAX_WORKERS
     graphql_min_workers: int = DEFAULT_GRAPHQL_MIN_WORKERS
     graphql_max_workers: int = DEFAULT_GRAPHQL_MAX_WORKERS
     jobspy_workers: int = DEFAULT_JOBSPY_WORKERS
@@ -133,6 +137,8 @@ class Settings:
     oracle_hcm_max_jobs_per_country: int = DEFAULT_ORACLE_HCM_MAX_JOBS_PER_COUNTRY
     oracle_hcm_timeout: int = DEFAULT_ORACLE_HCM_TIMEOUT
     oracle_hcm_max_seconds_per_company: int = DEFAULT_ORACLE_HCM_MAX_SECONDS_PER_COMPANY
+
+    rippling_max_jobs_per_company: int = DEFAULT_RIPPLING_MAX_JOBS_PER_COMPANY
 
     google_enabled: bool = False
     google_max_pages: int = DEFAULT_GOOGLE_MAX_PAGES
@@ -199,6 +205,7 @@ def build_settings(
     workday_search = _section(config, "apis", "workday", "search_filters")
     smartrecruiters = _section(config, "apis", "smartrecruiters")
     oracle_hcm = _section(config, "apis", "oracle_hcm")
+    rippling = _section(config, "apis", "rippling")
     google = _section(config, "apis", "google")
     graphql = _section(config, "apis", "graphql")
     jobspy = _section(config, "apis", "jobspy")
@@ -222,6 +229,7 @@ def build_settings(
         ashby_max_workers=pool("ashby_max_workers", DEFAULT_ASHBY_MAX_WORKERS),
         smartrecruiters_max_workers=pool("smartrecruiters_max_workers", DEFAULT_SMARTRECRUITERS_MAX_WORKERS),
         oracle_hcm_max_workers=pool("oracle_hcm_max_workers", DEFAULT_ORACLE_HCM_MAX_WORKERS),
+        rippling_max_workers=pool("rippling_max_workers", DEFAULT_RIPPLING_MAX_WORKERS),
         graphql_min_workers=pool("graphql_min_workers", DEFAULT_GRAPHQL_MIN_WORKERS),
         graphql_max_workers=pool("graphql_max_workers", DEFAULT_GRAPHQL_MAX_WORKERS),
         jobspy_workers=pool("jobspy_workers", DEFAULT_JOBSPY_WORKERS),
@@ -257,6 +265,9 @@ def build_settings(
         oracle_hcm_max_seconds_per_company=coerce_positive_int(
             oracle_hcm.get("max_seconds_per_company"), DEFAULT_ORACLE_HCM_MAX_SECONDS_PER_COMPANY,
             "apis.oracle_hcm.max_seconds_per_company"),
+        rippling_max_jobs_per_company=coerce_positive_int(
+            rippling.get("max_jobs_per_company"), DEFAULT_RIPPLING_MAX_JOBS_PER_COMPANY,
+            "apis.rippling.max_jobs_per_company"),
         # Historical default: a google section without `enabled` runs.
         google_enabled=bool(google.get("enabled", True)),
         google_max_pages=coerce_positive_int(google_pages, DEFAULT_GOOGLE_MAX_PAGES, "apis.google.max_pages"),
@@ -281,6 +292,8 @@ def describe_settings(settings: Settings) -> None:
     logger.info("     Oracle HCM: up to %s, countries=%s, max_per_country=%s, timeout=%ss",
                 settings.oracle_hcm_max_workers, ",".join(settings.oracle_hcm_countries),
                 settings.oracle_hcm_max_jobs_per_country, settings.oracle_hcm_timeout)
+    logger.info("     Rippling: up to %s, max_per_company=%s",
+                settings.rippling_max_workers, settings.rippling_max_jobs_per_company)
     logger.info("     GraphQL: %s-%s", settings.graphql_min_workers, settings.graphql_max_workers)
     logger.info("     JobSpy: %s", settings.jobspy_workers)
     logger.info("     Orchestrator: %s", settings.orchestrator_workers)

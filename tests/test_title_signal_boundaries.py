@@ -302,3 +302,26 @@ class TestPartTimeAndSeasonalExcluded:
     ])
     def test_kept(self, title):
         assert _passes(title) is True
+
+
+class TestPassesTitleRules:
+    """passes_title_rules is classify_job's title-only hard gate (shared with adapters
+    that must decide, before fetching details, whether a posting can be listed)."""
+
+    @pytest.mark.parametrize("title", [
+        "Software Engineer I", "Associate Data Scientist I", "Jr. Systems Administrator",
+        "Software Engineering Intern", "Senior Software Engineer", "Account Executive",
+        "Systems Administrator", "Seasonal Sales Associate (Part-Time)", "Data Analyst", "",
+    ])
+    def test_agrees_with_classify_job_on_the_title(self, title):
+        from ngj.filters import classify_job, passes_title_rules
+
+        config = _live_config()
+        job = {"title": title, "location": "Seattle, WA", "posted_at": POSTED_AT, "company": "Acme"}
+        verdict = classify_job(job, config)
+        assert passes_title_rules(title, config["filtering"]) is (verdict.kept or verdict.near_miss)
+
+    def test_internships_pass_so_near_misses_survive(self):
+        from ngj.filters import passes_title_rules
+
+        assert passes_title_rules("Software Engineering Intern", _live_filtering()) is True

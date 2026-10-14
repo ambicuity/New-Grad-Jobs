@@ -31,6 +31,7 @@ __all__ = [
     'filter_jobs',
     'is_internship_title',
     'partition_jobs',
+    'passes_title_rules',
     'find_padded_signals',
     'has_excluded_level',
     'has_new_grad_signal',
@@ -289,6 +290,29 @@ def _filtering(config: dict[str, Any]) -> dict[str, Any]:
     return config.get('filtering', config.get('filters', {}))
 
 
+def passes_title_rules(title: Any, filters: dict[str, Any]) -> bool:
+    """The title-only hard rules of :func:`classify_job` (``filters`` = ``config['filtering']``).
+
+    True when a posting with this title can be curated or a near miss, given a
+    target-country location and a recent date. Adapters that pay per posting
+    for those fields (Rippling's detail endpoint) use it to decide which
+    postings are worth the request, so it must stay the single definition.
+    """
+    if not isinstance(title, str):
+        return False
+    exclusion_signals = filters.get('exclusion_signals', list(DEFAULT_EXCLUSION_SIGNALS))
+    if is_title_excluded(title, exclusion_signals):
+        return False
+    internship = is_internship_title(title, filters.get('internship_signals'))
+    new_grad_signals = list(filters['new_grad_signals']) + list(filters.get('level_signals', DEFAULT_LEVEL_SIGNALS))
+    if not internship and not has_new_grad_signal(title, new_grad_signals):
+        return False
+    return (
+        has_strong_new_grad_signal(title, filters.get('strong_new_grad_signals'))
+        or has_track_signal(title, filters['track_signals'])
+    )
+
+
 def classify_job(job: dict[str, Any], config: dict[str, Any], *, now: datetime | None = None) -> Verdict:
     """Apply the hard rules, then record which soft rules a posting fails.
 
@@ -301,19 +325,9 @@ def classify_job(job: dict[str, Any], config: dict[str, Any], *, now: datetime |
     """
     filters = _filtering(config)
     title = job.get('title', '')
-    exclusion_signals = filters.get('exclusion_signals', list(DEFAULT_EXCLUSION_SIGNALS))
-    if is_title_excluded(title, exclusion_signals):
+    if not passes_title_rules(title, filters):
         return _OUT
-
     internship = is_internship_title(title, filters.get('internship_signals'))
-    new_grad_signals = list(filters['new_grad_signals']) + list(filters.get('level_signals', DEFAULT_LEVEL_SIGNALS))
-    if not internship and not has_new_grad_signal(title, new_grad_signals):
-        return _OUT
-    if not (
-        has_strong_new_grad_signal(title, filters.get('strong_new_grad_signals'))
-        or has_track_signal(title, filters['track_signals'])
-    ):
-        return _OUT
 
     posted = job.get('posted_at', '')
     max_age = filters['max_age_days']

@@ -114,6 +114,14 @@ def test_oracle_hcm_knobs(tmp_path):
         200, 20, 2)
 
 
+def test_rippling_knobs(tmp_path):
+    defaults = build_settings(_config(), env={}, repo_root=tmp_path)
+    assert (defaults.rippling_max_jobs_per_company, defaults.rippling_max_workers) == (1000, 6)
+    config = {"worker_pools": {"rippling_max_workers": 2}, "apis": {"rippling": {"max_jobs_per_company": 50}}}
+    settings = build_settings(config, env={}, repo_root=tmp_path)
+    assert (settings.rippling_max_jobs_per_company, settings.rippling_max_workers) == (50, 2)
+
+
 def test_google_uppercase_max_pages_key_still_supported(tmp_path):
     settings = build_settings(_config(google={"MAX_PAGES": "5"}), env={}, repo_root=tmp_path)
     assert settings.google_max_pages == 5
