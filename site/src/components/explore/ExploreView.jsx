@@ -300,14 +300,14 @@ export function ExploreView({ view, updateView }) {
                 }}
               >
                 {!isMobile && <span style={{ color: BBG.dim, fontSize: 11 }}>{String(vi.index + 1).padStart(2, '0')}</span>}
-                {!isMobile && <span style={{ color: isSel ? BBG.acc : BBG.ink, fontWeight: 600, ...ellipsis }}>{r.co}</span>}
-                <span style={{ ...ellipsis, minWidth: 0, color: BBG.ink }}>
+                {!isMobile && <span title={r.co} style={{ color: isSel ? BBG.acc : BBG.ink, fontWeight: 600, ...ellipsis }}>{r.co}</span>}
+                <span title={isMobile ? undefined : r.title} style={{ ...ellipsis, minWidth: 0, color: BBG.ink }}>
                   {isMobile && <span style={{ fontWeight: 600 }}>{r.co} · </span>}
                   {r.title}
                   {isMobile && <span style={{ color: BBG.dim }}> · {r.loc} · <span style={{ color: TIER_COLOR[r.tier] }}>{tier.tag}</span></span>}
                 </span>
-                {!isMobile && <span style={{ color: BBG.ink, fontSize: 11.5, ...ellipsis }}>{r.loc}</span>}
-                {!isMobile && <span style={{ color: BBG.dim, fontSize: 11, ...ellipsis }}>{r.src}</span>}
+                {!isMobile && <span title={r.loc} style={{ color: BBG.ink, fontSize: 11.5, ...ellipsis }}>{r.loc}</span>}
+                {!isMobile && <span title={r.src} style={{ color: BBG.dim, fontSize: 11, ...ellipsis }}>{r.src}</span>}
                 {!isMobile && <span style={{ color: BBG.dim, fontSize: 11 }}>{r.posted || '—'}</span>}
                 {!isMobile && <span style={{ color: TIER_COLOR[r.tier], fontSize: 11 }} title={tier.why}>{tier.tag}</span>}
               </div>

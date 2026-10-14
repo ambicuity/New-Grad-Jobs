@@ -119,14 +119,14 @@ export const JobRow = memo(function JobRow({
       }}
     >
       <span style={{ color: BBG.dim, fontSize: 11 }}>{rowNumber(index)}</span>
-      <span style={{ color: isSelected ? BBG.acc : BBG.ink, fontWeight: 600, ...ellipsis }}>{j.co}</span>
+      <span title={j.co} style={{ color: isSelected ? BBG.acc : BBG.ink, fontWeight: 600, ...ellipsis }}>{j.co}</span>
       <div style={{ minWidth: 0 }}>
-        <div style={{ color: j.closed ? BBG.dim : BBG.ink, ...ellipsis }}>
+        <div title={j.role} style={{ color: j.closed ? BBG.dim : BBG.ink, ...ellipsis }}>
           {isApplied && <AppliedMark />}{j.closed && <ClosedBadge />}{j.role}
         </div>
         <div style={{ color: BBG.dim, fontSize: 11, ...ellipsis }}><MetaLine j={j} /></div>
       </div>
-      <span style={{ color: BBG.ink, fontSize: 11.5, ...ellipsis }}>{j.loc}</span>
+      <span title={j.loc} style={{ color: BBG.ink, fontSize: 11.5, ...ellipsis }}>{j.loc}</span>
       <span style={{ color: j.comp[0] != null ? BBG.acc : BBG.dim, fontSize: 11.5 }}>{fmtComp(j.comp)}</span>
       <span style={{ color: BBG.dim, fontSize: 11 }}>{j.posted}</span>
       <RowStar isSaved={isSaved} onToggle={() => onToggleSave(j.id)} />

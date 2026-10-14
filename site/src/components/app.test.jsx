@@ -131,6 +131,26 @@ describe('hiring view (desktop)', () => {
     await vi.waitFor(() => expect(screen.getByTestId('job-description').textContent).toBe(shard[job.jobId].trim()));
   });
 
+  it('without a requirements list, lists only the skills the description names', async () => {
+    renderApp();
+    const orion = jobsState.jobs.find((j) => j.co === 'Orion Innovation');
+    fireEvent.click(document.querySelector(`[data-testid="job-list"] [data-job-id="${orion.id}"]`));
+    const list = await screen.findByRole('list', { name: 'Skills mentioned in the description' });
+    const skills = [...list.querySelectorAll('li')].map((li) => li.textContent);
+    expect(skills).toEqual(['Azure', 'Python', 'Databricks', 'SQL', 'Power BI']);
+    for (const skill of skills) expect(shard[orion.jobId]).toContain(skill);
+    expect(screen.queryByText(/None extracted from the description/)).toBeNull();
+  });
+
+  it('truncated row cells carry their full value as hover text', () => {
+    renderApp();
+    const row = rows()[0];
+    const job = jobsState.jobs.find((j) => j.id === row.dataset.jobId);
+    expect(row.querySelector(`[title="${job.co}"]`)).not.toBeNull();
+    expect(row.querySelector(`[title="${job.role}"]`)).not.toBeNull();
+    expect(row.querySelector(`[title="${job.loc}"]`)).not.toBeNull();
+  });
+
   it('shows "loading…" (never the previous job\'s text) while a description loads', async () => {
     let release;
     shardResponse = () => new Promise((r) => { release = () => r({ ok: true, json: () => Promise.resolve(shard) }); });

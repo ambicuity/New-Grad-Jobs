@@ -7,6 +7,7 @@ import { RMT_LABEL, TIER_LABEL, TYPE_LABEL } from '../../lib/taxonomy.js';
 import { fmtComp } from '../../lib/format.js';
 import { safeHttpUrl } from '../../lib/safe-url.js';
 import { extractRequirements } from '../../lib/requirements.js';
+import { extractSkills } from '../../lib/skills.js';
 import { similarJobs } from '../../lib/similar.js';
 import { nearMissNote } from '../../lib/near-miss.js';
 import { useJobDescription } from '../../hooks/useJobDescription.js';
@@ -48,6 +49,11 @@ export function JobDetail({ job, jobs, saved, onSave, applied = false, onApplied
   const requirements = useMemo(
     () => (desc.status === 'ready' ? extractRequirements(desc.text) : []),
     [desc.status, desc.text],
+  );
+  // Only when no requirements list exists: named skills found verbatim in the text.
+  const skills = useMemo(
+    () => (desc.status === 'ready' && requirements.length === 0 ? extractSkills(desc.text) : []),
+    [desc.status, desc.text, requirements],
   );
   const similar = useMemo(() => similarJobs(job, jobs), [job, jobs]);
   if (!job) return <DetailEmpty hasJobs={jobs.length > 0} />;
@@ -126,6 +132,19 @@ export function JobDetail({ job, jobs, saved, onSave, applied = false, onApplied
             <ul style={{ margin: 0, paddingLeft: 16, lineHeight: 1.7, color: BBG.ink, fontSize: 11.5 }}>
               {requirements.map((req, i) => <li key={i}>{req}</li>)}
             </ul>
+          ) : skills.length > 0 ? (
+            <>
+              <div style={muted}>No requirements list in the description. Skills it mentions:</div>
+              <ul aria-label="Skills mentioned in the description" style={{
+                listStyle: 'none', margin: '6px 0 0', padding: 0, display: 'flex', flexWrap: 'wrap', gap: 6,
+              }}>
+                {skills.map((skill) => (
+                  <li key={skill} style={{ border: `1px solid ${BBG.rule2}`, color: BBG.ink, padding: '1px 6px', fontSize: 11.5 }}>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </>
           ) : (
             <div style={muted}>None extracted from the description — see the full listing.</div>
           )}
