@@ -261,12 +261,16 @@ def fetch_json_with_retry(
     *,
     timeout: int,
     json_body: Mapping[str, Any] | None = None,
+    as_text: bool = False,
 ) -> SourceResult:
     """GET ``url`` once (POST ``json_body`` when given) and hand the decoded JSON to ``parse``.
 
     POST is for read-only search endpoints (UKG). urllib3 never retries POST
     (:data:`RETRY_ALLOWED_METHODS`), so a 429/5xx on a POST is final here, and
     a timeout is left to :func:`retry_transient_failures`.
+
+    ``as_text`` hands ``parse`` the raw body instead of decoded JSON, for
+    sources that embed their data in an HTML page (Paylocity).
 
     Transient failures (connect/read errors, 429, 5xx) are retried by the
     session's urllib3 policy (:func:`build_retry`) — this function adds no
@@ -308,7 +312,7 @@ def fetch_json_with_retry(
         return failure(KIND_HTTP, f"HTTP {response.status_code} for {url}", response.status_code)
 
     try:
-        data = response.json()
+        data = response.text if as_text else response.json()
     except ValueError as exc:  # requests' JSONDecodeError is a ValueError
         logger.warning("  ⚠️  %s: response is not JSON: %s", company, exc)
         return failure(KIND_PARSE, f"invalid JSON: {exc}", response.status_code)

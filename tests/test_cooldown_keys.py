@@ -33,6 +33,9 @@ LEVER_URL = "https://api.lever.co/v0/postings/acme"
         ("https://api.smartrecruiters.com/v1/companies/AbbVie/postings?limit=100", "smartrecruiters.com/abbvie"),
         ("https://jobs.smartrecruiters.com/AbbVie/3743990016070676", "smartrecruiters.com/abbvie"),
         ("https://ats.rippling.com/api/v2/board/Cintal/jobs?page=0", "rippling.com/cintal"),
+        # Paylocity: every company shares recruiting.paylocity.com; the board GUID is the tenant.
+        ("https://recruiting.paylocity.com/Recruiting/Jobs/All/6A14A346-cc8d-4490-a772-4a087d8cab39",
+         "paylocity.com/6a14a346-cc8d-4490-a772-4a087d8cab39"),
         # Workable: every account shares apply.workable.com; the account slug is the tenant.
         ("https://apply.workable.com/api/v1/widget/accounts/Credence", "workable.com/credence"),
         ("https://apply.workable.com/credence/j/053C4602C2", "workable.com/credence"),

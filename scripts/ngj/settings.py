@@ -54,6 +54,8 @@ DEFAULT_UKG_MAX_WORKERS = 6
 DEFAULT_ADP_MAX_WORKERS = 4
 # One request per Workable account; every account shares apply.workable.com.
 DEFAULT_WORKABLE_MAX_WORKERS = 4
+# Paylocity rate-limits bursts (HTTP 429): one board at a time (one request each).
+DEFAULT_PAYLOCITY_MAX_WORKERS = 1
 DEFAULT_GRAPHQL_MIN_WORKERS = 8
 DEFAULT_GRAPHQL_MAX_WORKERS = 80
 DEFAULT_JOBSPY_WORKERS = 25
@@ -128,6 +130,7 @@ class Settings:
     ukg_max_workers: int = DEFAULT_UKG_MAX_WORKERS
     adp_max_workers: int = DEFAULT_ADP_MAX_WORKERS
     workable_max_workers: int = DEFAULT_WORKABLE_MAX_WORKERS
+    paylocity_max_workers: int = DEFAULT_PAYLOCITY_MAX_WORKERS
     graphql_min_workers: int = DEFAULT_GRAPHQL_MIN_WORKERS
     graphql_max_workers: int = DEFAULT_GRAPHQL_MAX_WORKERS
     jobspy_workers: int = DEFAULT_JOBSPY_WORKERS
@@ -249,6 +252,7 @@ def build_settings(
         ukg_max_workers=pool("ukg_max_workers", DEFAULT_UKG_MAX_WORKERS),
         adp_max_workers=pool("adp_max_workers", DEFAULT_ADP_MAX_WORKERS),
         workable_max_workers=pool("workable_max_workers", DEFAULT_WORKABLE_MAX_WORKERS),
+        paylocity_max_workers=pool("paylocity_max_workers", DEFAULT_PAYLOCITY_MAX_WORKERS),
         graphql_min_workers=pool("graphql_min_workers", DEFAULT_GRAPHQL_MIN_WORKERS),
         graphql_max_workers=pool("graphql_max_workers", DEFAULT_GRAPHQL_MAX_WORKERS),
         jobspy_workers=pool("jobspy_workers", DEFAULT_JOBSPY_WORKERS),
@@ -320,6 +324,7 @@ def describe_settings(settings: Settings) -> None:
     logger.info("     UKG: up to %s, max_per_company=%s", settings.ukg_max_workers, settings.ukg_max_jobs_per_company)
     logger.info("     ADP: up to %s, max_per_company=%s", settings.adp_max_workers, settings.adp_max_jobs_per_company)
     logger.info("     Workable: up to %s", settings.workable_max_workers)
+    logger.info("     Paylocity: up to %s", settings.paylocity_max_workers)
     logger.info("     GraphQL: %s-%s", settings.graphql_min_workers, settings.graphql_max_workers)
     logger.info("     JobSpy: %s", settings.jobspy_workers)
     logger.info("     Orchestrator: %s", settings.orchestrator_workers)

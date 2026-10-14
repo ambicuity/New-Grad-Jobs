@@ -43,6 +43,7 @@ from ngj.sources.greenhouse import fetch_all_greenhouse_jobs, hydrate_greenhouse
 from ngj.sources.jobspy import fetch_jobspy_jobs
 from ngj.sources.lever import fetch_all_lever_jobs
 from ngj.sources.oracle_hcm import fetch_all_oracle_hcm_jobs
+from ngj.sources.paylocity import fetch_all_paylocity_jobs
 from ngj.sources.rippling import fetch_all_rippling_jobs
 from ngj.sources.smartrecruiters import fetch_all_smartrecruiters_jobs
 from ngj.sources.ukg import fetch_all_ukg_jobs
@@ -112,6 +113,8 @@ def plan_sources(config: Mapping[str, Any], settings: Settings) -> dict[str, Sou
             return partial(fetch_all_adp_jobs, units, settings)
         if name == 'workable':
             return partial(fetch_all_workable_jobs, units, settings)
+        if name == 'paylocity':
+            return partial(fetch_all_paylocity_jobs, units, settings)
         if name == 'google':
             return partial(fetch_google_jobs, units, max_pages=settings.google_max_pages,
                            timeout=settings.http_timeout)

@@ -1382,6 +1382,30 @@ apis:
         url: "https://apply.workable.com/api/v1/widget/accounts/tp-link-usa-corp"
       - name: "Zifo"
         url: "https://apply.workable.com/api/v1/widget/accounts/zifo"
+  paylocity:
+    # Paylocity public recruiting boards (no key; the board page embeds its job
+    # list as window.pageData). One request per company; Paylocity rate-limits
+    # bursts. Every board below was probed live on 2026-10-14 (#413). Direct
+    # employers only (see docs/removed-companies.md).
+    companies:
+      - name: "Concept Solutions"
+        url: "https://recruiting.paylocity.com/Recruiting/Jobs/All/6a14a346-cc8d-4490-a772-4a087d8cab39"
+      - name: "CU*Answers"
+        url: "https://recruiting.paylocity.com/Recruiting/Jobs/All/b48ad77d-4098-4bc6-8700-c9a1d68e3371"
+      - name: "E&M Technologies"
+        url: "https://recruiting.paylocity.com/Recruiting/Jobs/All/4731cca6-d764-499e-9b4c-90f2eb981b37"
+      - name: "Five Star Bank"
+        url: "https://recruiting.paylocity.com/Recruiting/Jobs/All/d3aea080-1556-4426-8caa-a23002a81545"
+      - name: "Forgent Power Solutions"
+        url: "https://recruiting.paylocity.com/Recruiting/Jobs/All/4342b9cb-269b-457b-b96b-b5a30adfaca8"
+      - name: "Interclypse"
+        url: "https://recruiting.paylocity.com/Recruiting/Jobs/All/6ea91ea2-804f-462b-9fd7-63453b2902ab"
+      - name: "Oneida Professional Services"
+        url: "https://recruiting.paylocity.com/Recruiting/Jobs/All/d15ab4ae-c8a7-4768-b462-868e5dbd35a8"
+      - name: "Trean"
+        url: "https://recruiting.paylocity.com/Recruiting/Jobs/All/d5c62503-946e-4b1c-a16e-500b823a4eea"
+      - name: "UNICO Group"
+        url: "https://recruiting.paylocity.com/Recruiting/Jobs/All/b0c54da9-463d-4e38-a983-6126b6dd104b"
   google:
     # Scrapes the public Google Careers results page (AF_initDataCallback
     # payload; the old /api/v3/search JSON endpoint 404s). Verified working

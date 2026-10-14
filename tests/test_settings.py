@@ -114,6 +114,12 @@ def test_oracle_hcm_knobs(tmp_path):
         200, 20, 2)
 
 
+def test_paylocity_knobs(tmp_path):
+    assert build_settings(_config(), env={}, repo_root=tmp_path).paylocity_max_workers == 1
+    config = {"worker_pools": {"paylocity_max_workers": 1}}
+    assert build_settings(config, env={}, repo_root=tmp_path).paylocity_max_workers == 1
+
+
 def test_workable_knobs(tmp_path):
     assert build_settings(_config(), env={}, repo_root=tmp_path).workable_max_workers == 4
     config = {"worker_pools": {"workable_max_workers": 2}}

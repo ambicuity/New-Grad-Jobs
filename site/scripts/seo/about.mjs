@@ -6,7 +6,7 @@ import { JOB_PAGE_CSP, JOB_PAGE_CSS, REPO_URL } from './render.mjs';
 import { escapeHtml } from './text.mjs';
 
 export const ABOUT_PATH = 'about/';
-const SOURCE_LABEL = { greenhouse: 'Greenhouse', lever: 'Lever', ashby: 'Ashby', smartrecruiters: 'SmartRecruiters', oracle_hcm: 'Oracle HCM', rippling: 'Rippling', ukg: 'UKG Pro Recruiting', adp: 'ADP Workforce Now', workable: 'Workable', workday: 'Workday', jobspy: 'Indeed (via JobSpy)', graphql: 'GraphQL', google: 'Google Jobs' };
+const SOURCE_LABEL = { greenhouse: 'Greenhouse', lever: 'Lever', ashby: 'Ashby', smartrecruiters: 'SmartRecruiters', oracle_hcm: 'Oracle HCM', rippling: 'Rippling', ukg: 'UKG Pro Recruiting', adp: 'ADP Workforce Now', workable: 'Workable', paylocity: 'Paylocity', workday: 'Workday', jobspy: 'Indeed (via JobSpy)', graphql: 'GraphQL', google: 'Google Jobs' };
 
 const num = (n) => (typeof n === 'number' && Number.isFinite(n) ? n.toLocaleString('en-US') : null);
 
@@ -76,7 +76,7 @@ export function renderAboutPage(facts, { siteUrl }) {
 <main>
 <nav class="crumb" aria-label="Breadcrumb"><a class="brand" href="${root}" aria-label="NGJ, New Grad Jobs, home">NGJ</a> › about</nav>
 <h1>How this board works</h1>
-<p>NGJ is a fully automated board of new grad and entry-level jobs in every field. A scraper in GitHub Actions pulls postings straight from company career-site APIs (Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, UKG, ADP, Workable, Workday) and Indeed about every 30 minutes, keeps only the roles that pass the rules below, and publishes the result as static files. There is no server, no database and no account.</p>
+<p>NGJ is a fully automated board of new grad and entry-level jobs in every field. A scraper in GitHub Actions pulls postings straight from company career-site APIs (Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, UKG, ADP, Workable, Paylocity, Workday) and Indeed about every 30 minutes, keeps only the roles that pass the rules below, and publishes the result as static files. There is no server, no database and no account.</p>
 
 <h2>THIS RUN</h2>
 <dl>
