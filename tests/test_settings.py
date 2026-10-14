@@ -100,6 +100,20 @@ def test_smartrecruiters_knobs(tmp_path):
     assert settings.smartrecruiters_max_workers == 2
 
 
+def test_oracle_hcm_knobs(tmp_path):
+    defaults = build_settings(_config(), env={}, repo_root=tmp_path)
+    assert defaults.oracle_hcm_countries == ("United States", "Canada", "India")
+    assert (defaults.oracle_hcm_max_jobs_per_country, defaults.oracle_hcm_timeout, defaults.oracle_hcm_max_workers) == (
+        1000, 45, 4)
+    assert defaults.oracle_hcm_max_seconds_per_company == 300
+    config = {"worker_pools": {"oracle_hcm_max_workers": 2},
+              "apis": {"oracle_hcm": {"countries": ["Canada"], "max_jobs_per_country": 200, "timeout": 20}}}
+    settings = build_settings(config, env={}, repo_root=tmp_path)
+    assert settings.oracle_hcm_countries == ("Canada",)
+    assert (settings.oracle_hcm_max_jobs_per_country, settings.oracle_hcm_timeout, settings.oracle_hcm_max_workers) == (
+        200, 20, 2)
+
+
 def test_google_uppercase_max_pages_key_still_supported(tmp_path):
     settings = build_settings(_config(google={"MAX_PAGES": "5"}), env={}, repo_root=tmp_path)
     assert settings.google_max_pages == 5

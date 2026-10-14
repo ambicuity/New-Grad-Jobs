@@ -1213,6 +1213,60 @@ apis:
         url: "https://api.smartrecruiters.com/v1/companies/Winsupply1/postings"
       - name: "Wynn Resorts"
         url: "https://api.smartrecruiters.com/v1/companies/WynnResorts/postings"
+  oracle_hcm:
+    # Oracle HCM (Recruiting Cloud) candidate-experience search (no key). Each
+    # entry is the public careers site; the adapter queries the same tenant's
+    # REST search once per country, newest first, capped per country. Every
+    # site below was probed live on 2026-10-14 and returned postings (#394).
+    countries: ["United States", "Canada", "India"]
+    max_jobs_per_country: 1000
+    # Some tenants take > 30 s per page.
+    timeout: 45
+    # Wall-clock budget per company: paging stops, keeping what it has.
+    max_seconds_per_company: 300
+    companies:
+      - name: "American Express"
+        url: "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1"
+      - name: "Arcadis"
+        url: "https://ebcs.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1"
+      - name: "Citco"
+        url: "https://fa-euxc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1"
+      - name: "CORE Foodservice"
+        url: "https://eczy.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1"
+      - name: "CSX"
+        url: "https://fa-eowa-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CSXCareers"
+      - name: "Diebold Nixdorf"
+        url: "https://eeug.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX"
+      - name: "Estes"
+        url: "https://ecwr.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/work4estes"
+      - name: "GCI"
+        url: "https://edqv.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX"
+      - name: "GM Financial"
+        url: "https://fa-exvu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1"
+      - name: "International Paper"
+        url: "https://iazbqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1"
+      - name: "Mayo Clinic"
+        url: "https://fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Mayo-US"
+      - name: "Nokia"
+        url: "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1"
+      - name: "Northeastern Nevada Regional Hospital"
+        url: "https://ibnjjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1"
+      - name: "Oceaneering"
+        url: "https://ebfr.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/jobs"
+      - name: "Southern Company"
+        url: "https://emje.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/SouthernCompanyJobs"
+      - name: "Texas Instruments"
+        url: "https://edbz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX"
+      - name: "Trail King"
+        url: "https://hcre.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1"
+      - name: "Uber"
+        url: "https://iaziqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/UberCareers"
+      - name: "Vertiv"
+        url: "https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX"
+      - name: "VITAS Healthcare"
+        url: "https://ejrz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_5001"
+      - name: "WSP"
+        url: "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001"
   google:
     # Scrapes the public Google Careers results page (AF_initDataCallback
     # payload; the old /api/v3/search JSON endpoint 404s). Verified working

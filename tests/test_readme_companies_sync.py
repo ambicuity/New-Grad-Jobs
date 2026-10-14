@@ -81,6 +81,7 @@ def test_board_counts_uses_marker_ids_and_a_total() -> None:
         "boards_ashby": 3,
         "boards_workday": 1,
         "boards_smartrecruiters": 0,
+        "boards_oracle_hcm": 0,
         "boards_total": 7,
     }
 
