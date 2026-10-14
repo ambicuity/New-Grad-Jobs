@@ -10,7 +10,7 @@ and the reasoning behind these choices is in the [ADRs](adr/).
 flowchart LR
     cfg[config.yml] --> fetch
     subgraph scrape["update-jobs.yml · scrape job"]
-        fetch["Fetch sources in parallel<br/>Greenhouse · Lever · Ashby · SmartRecruiters · Oracle HCM · Rippling · UKG · ADP · Workday · JobSpy"] --> dedup[Dedup<br/>job_id + cross-source]
+        fetch["Fetch sources in parallel<br/>Greenhouse · Lever · Ashby · SmartRecruiters · Oracle HCM · Rippling · UKG · ADP · Workable · Workday · JobSpy"] --> dedup[Dedup<br/>job_id + cross-source]
         dedup --> filter[Filter<br/>signals · level · recency · location]
         filter --> enrich[Enrich<br/>category · tier · flags]
         enrich --> gate[URL safety gate<br/>+ collapse guard]
@@ -31,7 +31,7 @@ flowchart LR
 |---|---|
 | `settings.py` | Frozen `Settings` built once from `config.yml` and the environment (`NGJ_OUTPUT_DIR`, default `site/public`; `NGJ_SITE_URL`). It is passed explicitly, with no globals. |
 | `registry.py` | The single decision on which sources are enabled. It is shared by the pipeline, `health.json` and `validate_config.py`. |
-| `sources/*.py` | One adapter per source (Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, UKG, ADP, Workday, JobSpy, plus optional Google and GraphQL). Each returns a `SourceResult`. |
+| `sources/*.py` | One adapter per source (Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, UKG, ADP, Workable, Workday, JobSpy, plus optional Google and GraphQL). Each returns a `SourceResult`. |
 | `models.py` | `SourceResult(jobs, errors, raw_count)` and `SourceError(company, source, kind, status, message)`. A failed company is data, not an exception. |
 | `http.py` | Shared pooled `requests` session with retries, per-domain concurrency limits and the per-run 403 cooldown (`scripts/source_cooldown.py`). |
 | `dedup.py` | Same-posting dedup by `job_id`, then cross-source dedup. |

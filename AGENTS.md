@@ -8,7 +8,7 @@ Humans should read [CONTRIBUTING.md](CONTRIBUTING.md). Operators should read
 
 New Grad Jobs is an automated board of entry-level jobs in every field (software, data,
 engineering, finance, marketing, sales, healthcare, …) in the US, Canada and India.
-A Python scraper pulls public ATS APIs (Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, UKG, ADP, Workday) plus JobSpy
+A Python scraper pulls public ATS APIs (Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, UKG, ADP, Workable, Workday) plus JobSpy
 (Indeed) about every 30 minutes in GitHub Actions. It filters for new-grad roles and
 publishes static JSON/RSS. A Vite + React site at <https://jobs.riteshrana.engineer> is
 built from that data and deployed to GitHub Pages. There is no server and no database.
@@ -125,7 +125,7 @@ After `make run`, restore the two files that a local scrape rewrites:
 
 ### Where to add things
 
-- **A company:** add `{name, url}` under `apis.greenhouse|lever|ashby|smartrecruiters|oracle_hcm|rippling|ukg|adp.companies`
+- **A company:** add `{name, url}` under `apis.greenhouse|lever|ashby|smartrecruiters|oracle_hcm|rippling|ukg|adp|workable.companies`
   (`https://boards-api.greenhouse.io/v1/boards/<slug>/jobs`,
   `https://api.lever.co/v0/postings/<slug>`,
   `https://api.ashbyhq.com/posting-api/job-board/<slug>`,
@@ -134,7 +134,8 @@ After `make run`, restore the two files that a local scrape rewrites:
   `https://<host>/hcmUI/CandidateExperience/en/sites/<site>`; Rippling takes
   `https://ats.rippling.com/api/v2/board/<slug>/jobs`; UKG takes the job board
   `https://recruiting.ultipro.com/<tenant>/JobBoard/<board-id>`; ADP Workforce Now takes the career
-  center `https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=<uuid>`) or `{name, workday_url}` under
+  center `https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=<uuid>`; Workable
+  takes `https://apply.workable.com/api/v1/widget/accounts/<slug>`, direct employers only) or `{name, workday_url}` under
   `apis.workday.companies` (`https://<tenant>.wd<N>.myworkdayjobs.com/<site>`). Then run
   `validate_config.py`. Record removals in `docs/removed-companies.md`.
 - **A new ATS source:** add `scripts/ngj/sources/<name>.py` returning `SourceResult`. Then

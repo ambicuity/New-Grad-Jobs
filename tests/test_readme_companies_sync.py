@@ -85,6 +85,7 @@ def test_board_counts_uses_marker_ids_and_a_total() -> None:
         "boards_rippling": 0,
         "boards_ukg": 0,
         "boards_adp": 0,
+        "boards_workable": 0,
         "boards_total": 7,
     }
 
