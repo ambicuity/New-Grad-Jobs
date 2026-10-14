@@ -35,6 +35,7 @@ from ngj.outputs.previous import (
 from ngj.outputs.rss import generate_rss_feeds
 from ngj.registry import source_registry
 from ngj.settings import DEFAULT_CONFIG_PATH, Settings, build_settings, describe_settings, load_config
+from ngj.sources.adp import fetch_all_adp_jobs
 from ngj.sources.ashby import fetch_all_ashby_jobs
 from ngj.sources.google import fetch_google_jobs
 from ngj.sources.graphql import fetch_all_graphql_jobs
@@ -106,6 +107,8 @@ def plan_sources(config: Mapping[str, Any], settings: Settings) -> dict[str, Sou
                            filtering=config.get('filtering') or config.get('filters') or {})
         if name == 'ukg':
             return partial(fetch_all_ukg_jobs, units, settings)
+        if name == 'adp':
+            return partial(fetch_all_adp_jobs, units, settings)
         if name == 'google':
             return partial(fetch_google_jobs, units, max_pages=settings.google_max_pages,
                            timeout=settings.http_timeout)

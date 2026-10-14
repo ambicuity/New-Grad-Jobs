@@ -114,6 +114,14 @@ def test_oracle_hcm_knobs(tmp_path):
         200, 20, 2)
 
 
+def test_adp_knobs(tmp_path):
+    defaults = build_settings(_config(), env={}, repo_root=tmp_path)
+    assert (defaults.adp_max_jobs_per_company, defaults.adp_max_workers) == (1000, 4)
+    config = {"worker_pools": {"adp_max_workers": 2}, "apis": {"adp": {"max_jobs_per_company": 60}}}
+    settings = build_settings(config, env={}, repo_root=tmp_path)
+    assert (settings.adp_max_jobs_per_company, settings.adp_max_workers) == (60, 2)
+
+
 def test_ukg_knobs(tmp_path):
     defaults = build_settings(_config(), env={}, repo_root=tmp_path)
     assert (defaults.ukg_max_jobs_per_company, defaults.ukg_max_workers) == (1000, 6)

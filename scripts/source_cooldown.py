@@ -29,7 +29,7 @@ from __future__ import annotations
 import logging
 import re
 import threading
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
 
 logger = logging.getLogger(__name__)
 
@@ -71,6 +71,23 @@ _PATH_TENANT_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
     # jobs.smartrecruiters.com/<id>/<posting>
     ("smartrecruiters.com", re.compile(r"^/(?!v\d+/)([^/?#]+)")),
 )
+
+
+# Shared hosts where the tenant is a query parameter: (host, key prefix, param).
+_QUERY_TENANT_PARAMS: tuple[tuple[str, str, str], ...] = (
+    # workforcenow.adp.com/...?cid=<tenant uuid> (ADP Workforce Now)
+    ("workforcenow.adp.com", "adp.com", "cid"),
+)
+
+
+def _query_tenant(url_or_domain: str, host: str) -> str | None:
+    for tenant_host, prefix, param in _QUERY_TENANT_PARAMS:
+        if host != tenant_host:
+            continue
+        values = parse_qs(urlparse(url_or_domain.strip()).query).get(param)
+        if values and values[0]:
+            return f"{prefix}/{values[0].lower()}"
+    return None
 
 
 def _split_host_path(url_or_domain: str) -> tuple[str, str]:
@@ -162,6 +179,9 @@ class SourceCooldownTracker:
         provider URL without a board falls back to the host.
         """
         host, path = _split_host_path(url_or_domain)
+        query_tenant = _query_tenant(url_or_domain, host)
+        if query_tenant:
+            return query_tenant
         provider = cls.domain_key(host)
         for domain, pattern in _PATH_TENANT_PATTERNS:
             if provider != domain:
