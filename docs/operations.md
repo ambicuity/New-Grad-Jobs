@@ -32,7 +32,9 @@ running always gets to finish and deploy.
 2. **`deploy` job** (`main` only): `actions/deploy-pages` publishes the artifact to the
    `github-pages` environment.
 3. **`persist` job** (`main` only): commits `README.md` and `data/market-history.json` back
-   to `main` as `🤖 Update job listings [skip ci]`. It rebases onto the latest `main`. If the
+   to `main` as `🤖 Update job listings [skip ci]`, on top of the commit the scrape started
+   from. On `main` the scrape starts from the current tip of `main`, not the trigger commit,
+   so a run that waited behind another run's save builds on that save. It rebases onto the latest `main`. If the
    rebase conflicts, it aborts and fails. It never pushes conflict markers or invalid JSON,
    and it retries the push up to 3 times.
 
@@ -108,7 +110,8 @@ reproduce it locally with `make run` + `check_integrity.py`.
 
 ### `persist` fails
 
-Usually the rebase onto `main` conflicted, or a branch rule rejected the bot push. The
+Usually the rebase onto `main` conflicted (someone changed `README.md` or the history on `main`
+while the scrape ran), or a branch rule rejected the bot push. The
 site was still deployed. The next run regenerates `README.md` from the new `main`, so a
 single failure needs no action. If it fails every run with "permission denied" or a rule
 violation, check that the `PERSIST_DEPLOY_KEY` secret matches a write deploy key and that
