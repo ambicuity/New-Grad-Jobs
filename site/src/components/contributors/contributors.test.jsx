@@ -59,6 +59,17 @@ describe('stepHandle', () => {
   });
 });
 
+// The view mounts when contributorsPromise settles, outside act(), so its
+// keydown listener (attached in a passive effect) can lag the first render on a
+// slow runner: a key pressed as soon as the text appears is then lost (#410).
+// Retry only that first press until it takes effect; it cannot double-step,
+// because waitFor stops at the first press that lands. Later presses run
+// inside act(), which flushes effects before returning, so they are safe.
+const pressUntil = (key, check) => vi.waitFor(() => {
+  act(() => { fireEvent.keyDown(window, { key }); });
+  check();
+});
+
 describe('ContributorsView', () => {
   const renderView = (gh) => {
     const state = applyGhEnrichment(raw.map(mapContributor), DEFAULT_REPO, gh);
@@ -102,8 +113,7 @@ describe('ContributorsView', () => {
     const sel = () => document.body.textContent.match(/SEL: @([A-Za-z0-9-]+)/)[1];
     expect(sel()).toBe('ambicuity');
     expect(screen.getByText('SPONSOR ↗').getAttribute('href')).toBe('https://github.com/sponsors/ambicuity');
-    act(() => { fireEvent.keyDown(window, { key: 'j' }); });
-    expect(sel()).not.toBe('ambicuity');
+    await pressUntil('j', () => expect(sel()).not.toBe('ambicuity'));
     expect(screen.queryByText('SPONSOR ↗')).toBeNull();
     expect(screen.getByText('VIEW ON GITHUB ↗').getAttribute('href')).toBe(`https://github.com/${sel()}`);
   });
@@ -113,8 +123,7 @@ describe('ContributorsView', () => {
     await screen.findByText(/SHOWN:/);
     const sel = () => document.body.textContent.match(/SEL: @([A-Za-z0-9-]+)/)[1];
     const first = sel();
-    act(() => { fireEvent.keyDown(window, { key: 'j' }); });
-    expect(sel()).not.toBe(first);
+    await pressUntil('j', () => expect(sel()).not.toBe(first));
     act(() => { fireEvent.keyDown(window, { key: 'k' }); });
     expect(sel()).toBe(first);
     act(() => { fireEvent.keyDown(window, { key: '/' }); });
