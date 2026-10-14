@@ -48,14 +48,26 @@ jobs:
     timeout-minutes: 25
     permissions:
       contents: read
+    outputs:
+      # The commit this run scraped from; persist commits on top of it.
+      base_sha: ${{ steps.base.outputs.sha }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: 1
+          # Runs on main start from main's current tip, not the trigger commit:
+          # a run queued behind another run (concurrency group) would otherwise
+          # rebuild README.md and history from a commit that predates the save
+          # ahead of it, and its rebase would always conflict on those lines.
+          ref: ${{ github.ref == 'refs/heads/main' && 'main' || github.sha }}
           # No token is left in .git/config while third-party scraper
           # dependencies run; the persist job pushes with its own token.
           persist-credentials: false
+
+      - name: Record the commit being scraped
+        id: base
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Set up Python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
@@ -139,6 +151,9 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: 1
+          # The same commit the scrape started from, so this run's commit only
+          # contains its own changes to the generated files.
+          ref: ${{ needs.scrape.outputs.base_sha }}
           ssh-key: ${{ secrets.PERSIST_DEPLOY_KEY }}
 
       - name: Download persistent state

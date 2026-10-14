@@ -201,3 +201,53 @@ def test_persist_job_pushes_with_the_deploy_key_not_the_token():
     assert job["permissions"] == {"contents": "read"}
     checkout = next(s for s in job["steps"] if "actions/checkout@" in s.get("uses", ""))
     assert checkout["with"]["ssh-key"] == "${{ secrets.PERSIST_DEPLOY_KEY }}"
+
+
+# --- Runs queued behind another run's save (2026-10-14, run 38611478905) ------
+#
+# Runs of update-jobs.yml never overlap (concurrency group), but one can wait in
+# the queue while the run ahead of it saves README.md + history to main. The
+# queued run used to scrape from, and commit on top of, its *trigger* commit,
+# which by then was behind main, so its rebase always conflicted with the save
+# ahead of it on the same generated lines and nothing was pushed.
+
+def _job_checkout(job_name: str) -> dict:
+    job = yaml.safe_load(WORKFLOW.read_text(encoding="utf-8"))["jobs"][job_name]
+    return next(s for s in job["steps"] if "actions/checkout@" in s.get("uses", ""))
+
+
+def test_scrape_starts_from_the_current_tip_of_main():
+    ref = _job_checkout("scrape")["with"].get("ref", "")
+    assert "'main'" in ref and "refs/heads/main" in ref, ref
+
+
+def test_scrape_publishes_the_commit_it_started_from():
+    workflow = yaml.safe_load(WORKFLOW.read_text(encoding="utf-8"))
+    scrape = workflow["jobs"]["scrape"]
+    assert scrape["outputs"]["base_sha"] == "${{ steps.base.outputs.sha }}"
+    step = next(s for s in scrape["steps"] if s.get("id") == "base")
+    assert "git rev-parse HEAD" in step["run"] and "$GITHUB_OUTPUT" in step["run"]
+
+
+def test_persist_commits_on_top_of_the_scrape_base():
+    assert _job_checkout("persist")["with"]["ref"] == "${{ needs.scrape.outputs.base_sha }}"
+
+
+def test_a_run_queued_behind_another_save_pushes_when_it_starts_from_that_save(repos, tmp_path):
+    env, origin, runner, upstream = repos
+    # The run ahead in the queue saves its generated files to main.
+    _write_site(upstream, {"snapshots": ["a", "b", "c", "ahead"]})
+    _git(upstream, env, "commit", "-am", "🤖 Update job listings [skip ci]")
+    _git(upstream, env, "push", "origin", "main")
+
+    # Old behaviour: the queued run's checkout predates that save -> conflict, nothing pushed.
+    _write_site(runner, {"snapshots": ["a", "b", "c", "queued"]})
+    assert _run_step(runner, env).returncode != 0
+
+    # Fixed behaviour: the queued run starts from the tip of main (which includes the save).
+    fresh = tmp_path / "fresh"
+    _git(tmp_path, env, "clone", "--depth", "1", "-b", "main", origin.as_uri(), str(fresh))
+    _write_site(fresh, {"snapshots": ["a", "b", "c", "ahead", "queued"]})
+    result = _run_step(fresh, env)
+    assert result.returncode == 0, result.stdout + result.stderr
+    assert json.loads(_origin_file(origin, env, "data/market-history.json"))["snapshots"][-1] == "queued"
