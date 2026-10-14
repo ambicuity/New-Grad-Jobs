@@ -5,6 +5,15 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-14 — Oracle HCM source (21 careers sites)
+
+The new Oracle HCM adapter (#394) adds the 21 Oracle Recruiting Cloud careers sites linked from the
+30-day applied-jobs export (#390). Each host/site pair was probed live on 2026-10-14 through the
+public `recruitingCEJobRequisitions` search and returned postings, sorted newest first: American
+Express, Arcadis, Citco, CORE Foodservice, CSX, Diebold Nixdorf, Estes, GCI, GM Financial,
+International Paper, Mayo Clinic, Nokia, Northeastern Nevada Regional Hospital, Oceaneering,
+Southern Company, Texas Instruments, Trail King, Uber, Vertiv, VITAS Healthcare and WSP.
+
 ## 2026-10-14 — SmartRecruiters source (37 companies, 1 moved)
 
 The new SmartRecruiters adapter (#392) adds 37 companies whose ids appeared in the applied-jobs

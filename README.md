@@ -663,6 +663,7 @@ This repository automatically scrapes new graduate job opportunities from variou
 - **Workday**: <!-- COUNT:boards_workday -->150<!-- /COUNT --> configured boards (Boeing, Lockheed, Citi, The Home Depot, GE Aerospace, etc.). A cohort of enterprise tenants rejects the public jobs API (HTTP 422/400); per-company errors are reported in [`health.json`](https://jobs.riteshrana.engineer/health.json) — see [`docs/operations.md`](docs/operations.md#a-source-returns-far-fewer-jobs).
 - **Lever**: <!-- COUNT:boards_lever -->46<!-- /COUNT --> active boards (Palantir, Spotify, Layup Parts, …) — most legacy Lever boards have migrated to other ATSes; see [`docs/removed-companies.md`](docs/removed-companies.md).
 - **SmartRecruiters**: <!-- COUNT:boards_smartrecruiters -->37<!-- /COUNT --> configured companies (AbbVie, Bosch, ServiceNow, Western Digital, LinkedIn, …), queried once per target country (US, Canada, India).
+- **Oracle HCM**: <!-- COUNT:boards_oracle_hcm -->21<!-- /COUNT --> configured careers sites (Texas Instruments, American Express, Uber, Nokia, Mayo Clinic, …), queried once per target country (US, Canada, India).
 - **JobSpy**: aggregation layer over Indeed (LinkedIn is disabled because of rate limits), searched in the US, Canada and India.
 - **Community Submissions**: User-submitted jobs via GitHub Issues.
 
@@ -700,7 +701,7 @@ The full dataset is published at [`https://jobs.riteshrana.engineer/jobs.json`](
 | `url` | string | direct link to the posting on the source ATS |
 | `posted_at` | ISO 8601 | when the employer posted the role |
 | `first_seen` | ISO 8601 | when this board first saw the job (carried forward across runs; orders `feed.xml`) |
-| `source` | string | one of `Greenhouse`, `Ashby`, `Workday`, `Lever`, `SmartRecruiters`, `JobSpy (Indeed)` (`GraphQL` when enabled) |
+| `source` | string | one of `Greenhouse`, `Ashby`, `Workday`, `Lever`, `SmartRecruiters`, `Oracle HCM`, `JobSpy (Indeed)` (`GraphQL` when enabled) |
 | `category` | object | `{id, name, emoji}` — one of the 30 categories (`CATEGORY_PATTERNS` in `scripts/ngj/taxonomy.py`) |
 | `company_tier` | object | `{tier, emoji, label, sectors}` — FAANG+ / unicorn / other |
 | `flags` | object | `{no_sponsorship, us_citizenship_required}` |
@@ -719,7 +720,7 @@ The site itself loads two lighter artifacts generated alongside it:
 ### Companies Monitored
 
 <details>
-<summary>Click to expand the configured list (<!-- COUNT:boards_total -->603<!-- /COUNT --> boards)</summary>
+<summary>Click to expand the configured list (<!-- COUNT:boards_total -->624<!-- /COUNT --> boards)</summary>
 
 <!-- COMPANY-LISTINGS:START - auto-generated from config.yml by scripts/sync_readme_companies.py; do not edit by hand -->
 
@@ -732,6 +733,8 @@ The site itself loads two lighter artifacts generated alongside it:
 **Lever (46)**: Alloy.ai, ARSIEM Corporation, Beghou Consulting, Belvedere Trading, Centuria, CGS Federal, Commonwealth Fusion Systems, Computer World Services, DEUNA, Dexterity, Dutch, Dynamic Catholic, Electric Mind, Eleos Technologies, ERG, Fehr &amp; Peers, Finch, Grant Street Group, Hermeus, Hive, Institute of Foundation Models, Intenseye, K Group Companies, Kraken, Laminar, Layup Parts, Life.Church, Lightcast, Mendix, Palantir, Pivotal, Prosper, Protective Life, Shield AI, Skyward IT Solutions, Spotify, Spry Methods, SteerBridge, Telligen, Thea Energy, True Zero Technologies, TrueML, Welo Global, Wyetech, zaimler, Zoox
 
 **SmartRecruiters (37)**: AbbVie, Afficiency, Bertelsmann, Bosch, Check Point Software Technologies, City of New York, Domino's, ELITEBRAIN, Eurofins, Expeditors, Flywire, Grantek, Intelerad, Interco, Intuitive, IPT Global, Kioxia, Lawrence Livermore National Laboratory, LGC Group, LinkedIn, M3 USA, Mattel, MAXISIQ, MSX International, PA Consulting, Proximate Technologies, SBT Global, ServiceNow, SGS, Sika, Stäubli, The Wonderful Company, Versant, Wabtec, Western Digital, Winsupply, Wynn Resorts
+
+**Oracle HCM (21)**: American Express, Arcadis, Citco, CORE Foodservice, CSX, Diebold Nixdorf, Estes, GCI, GM Financial, International Paper, Mayo Clinic, Nokia, Northeastern Nevada Regional Hospital, Oceaneering, Southern Company, Texas Instruments, Trail King, Uber, Vertiv, VITAS Healthcare, WSP
 
 <!-- COMPANY-LISTINGS:END -->
 

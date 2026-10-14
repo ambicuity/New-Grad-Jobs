@@ -32,6 +32,8 @@ LEVER_URL = "https://api.lever.co/v0/postings/acme"
         ("https://api.ashbyhq.com/posting-api/job-board/openai?includeCompensation=true", "ashbyhq.com/openai"),
         ("https://api.smartrecruiters.com/v1/companies/AbbVie/postings?limit=100", "smartrecruiters.com/abbvie"),
         ("https://jobs.smartrecruiters.com/AbbVie/3743990016070676", "smartrecruiters.com/abbvie"),
+        ("https://egup.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?x=1",
+         "egup.fa.us2.oraclecloud.com"),
         ("https://boards-api.greenhouse.io/", "boards-api.greenhouse.io"),
         ("https://careers.example.co.uk/jobs", "careers.example.co.uk"),
         ("greenhouse.io", "greenhouse.io"),

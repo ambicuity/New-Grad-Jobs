@@ -13,10 +13,10 @@ from dataclasses import dataclass
 from typing import Any
 
 # Board-per-company ATS sources: ``apis.<name>.companies`` = [{name, url}].
-ATS_COMPANY_SOURCES = ("greenhouse", "lever", "ashby", "smartrecruiters")
+ATS_COMPANY_SOURCES = ("greenhouse", "lever", "ashby", "smartrecruiters", "oracle_hcm")
 
 # Registry order is the fetch/plan order.
-SOURCE_ORDER = ("greenhouse", "lever", "ashby", "smartrecruiters", "google", "jobspy", "workday", "graphql")
+SOURCE_ORDER = ("greenhouse", "lever", "ashby", "smartrecruiters", "oracle_hcm", "google", "jobspy", "workday", "graphql")
 
 
 @dataclass(frozen=True)

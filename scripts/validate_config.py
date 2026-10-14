@@ -8,7 +8,7 @@ config path it is about:
 - ``filtering``: ``max_age_days`` (1-365) and non-empty string lists
   ``new_grad_signals`` / ``track_signals``; optional ``exclusion_signals``
   (string list) and ``min_expected_companies`` (>= 0);
-- ``apis.greenhouse|lever|ashby|smartrecruiters``: ``companies`` entries are ``{name, url}``
+- ``apis.greenhouse|lever|ashby|smartrecruiters|oracle_hcm``: ``companies`` entries are ``{name, url}``
   with the URL shape of that ATS's public API, names and URLs unique per ATS;
 - ``apis.workday``: ``{name, workday_url}`` entries on *.myworkdayjobs.com,
   unique; numeric knobs within range;
@@ -47,11 +47,17 @@ ATS_URL_PATTERNS: dict[str, re.Pattern[str]] = {
     "ashby": re.compile(r"^https://api\.ashbyhq\.com/posting-api/job-board/[A-Za-z0-9_.%-]+/?(\?\S*)?$"),
     # No query string: the adapter adds limit/offset/country itself.
     "smartrecruiters": re.compile(r"^https://api\.smartrecruiters\.com/v1/companies/[A-Za-z0-9_.-]+/postings/?$"),
+    # The public careers site; the adapter derives the REST search URL from it.
+    "oracle_hcm": re.compile(
+        r"^https://[a-z0-9-]+(\.[a-z0-9-]+)*\.oraclecloud\.com/hcmUI/CandidateExperience/"
+        r"[A-Za-z]{2,3}([-_][A-Za-z]{2,4})?/sites/[A-Za-z0-9_-]+/?$"),
 }
 WORKDAY_URL_PATTERN = re.compile(r"^https://[A-Za-z0-9-]+\.wd\d+\.myworkdayjobs\.com/\S+$")
 HTTPS_URL_PATTERN = re.compile(r"^https://[^\s/]+(/\S*)?$")
 # ISO 3166-1 alpha-2, as the SmartRecruiters ``country`` filter expects.
 COUNTRY_CODE_PATTERN = re.compile(r"^[A-Za-z]{2}$")
+# Characters that end a value inside an Oracle HCM ``finder=`` parameter.
+FINDER_UNSAFE = re.compile(r'[,;"=]')
 
 # (config path, minimum, maximum) for integer knobs. Missing keys are fine
 # (the code has defaults); present keys must be integers in range.
@@ -65,6 +71,9 @@ INT_RANGES: tuple[tuple[str, int, int], ...] = (
     ("apis.workday.timeout", 1, 120),
     ("apis.workday.max_workers", 1, 64),
     ("apis.smartrecruiters.max_jobs_per_country", 1, 10_000),
+    ("apis.oracle_hcm.max_jobs_per_country", 1, 10_000),
+    ("apis.oracle_hcm.timeout", 1, 120),
+    ("apis.oracle_hcm.max_seconds_per_company", 1, 3_600),
     ("apis.google.max_pages", 1, 50),
     ("apis.graphql.timeout", 1, 120),
     ("apis.graphql.max_jobs_per_source", 1, 10_000),
@@ -74,8 +83,8 @@ INT_RANGES: tuple[tuple[str, int, int], ...] = (
 WORKER_POOL_RANGE = (1, 1_000)
 REQUIRED_FILTERING_LISTS = ("new_grad_signals", "track_signals")
 OPTIONAL_FILTERING_LISTS = ("exclusion_signals", "strong_new_grad_signals", "level_signals", "internship_signals")
-SOURCE_NAMES = {"smartrecruiters": "SmartRecruiters"}
-ENABLED_FLAG_SECTIONS = ("greenhouse", "lever", "ashby", "smartrecruiters", "google", "jobspy", "workday", "graphql")
+SOURCE_NAMES = {"smartrecruiters": "SmartRecruiters", "oracle_hcm": "Oracle HCM"}
+ENABLED_FLAG_SECTIONS = ("greenhouse", "lever", "ashby", "smartrecruiters", "oracle_hcm", "google", "jobspy", "workday", "graphql")
 
 
 @dataclass
@@ -223,6 +232,12 @@ def _check_apis(report: ConfigReport, apis: Any) -> None:
         if not isinstance(countries, list) or not all(
                 isinstance(c, str) and COUNTRY_CODE_PATTERN.match(c) for c in countries):
             report.errors.append("apis.smartrecruiters.countries: must be a list of 2-letter country codes")
+    oracle_hcm = apis.get("oracle_hcm")
+    if isinstance(oracle_hcm, Mapping) and oracle_hcm.get("countries") is not None:
+        countries = oracle_hcm["countries"]
+        _check_string_list(report, "apis.oracle_hcm.countries", countries, required=True)
+        if isinstance(countries, list) and any(isinstance(c, str) and FINDER_UNSAFE.search(c) for c in countries):
+            report.errors.append("apis.oracle_hcm.countries: names must not contain , ; \" or = (they split the finder)")
     jobspy = apis.get("jobspy")
     if isinstance(jobspy, Mapping) and jobspy.get("enabled") is True:
         _check_string_list(report, "apis.jobspy.search_terms", jobspy.get("search_terms", MISSING), required=True)

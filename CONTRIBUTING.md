@@ -47,7 +47,7 @@ confirm the approach and nobody duplicates it. Issues are not formally assigned.
 
 ```
 config.yml ─▶ scripts/update_jobs.py (ngj package)
-               fetch (Greenhouse, Lever, Ashby, SmartRecruiters, Workday, JobSpy) → dedup → filter → enrich
+               fetch (Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Workday, JobSpy) → dedup → filter → enrich
                └─▶ site/public/{jobs.json, jobs-index.json, descriptions/, feed.xml, health.json}
                     └─▶ vite build (site/) ─▶ GitHub Pages: https://jobs.riteshrana.engineer
 ```
@@ -144,6 +144,10 @@ Keep data logic in `site/src/lib/` as pure functions with tests next to them.
        companies:
          - name: "ServiceNow"
            url: "https://api.smartrecruiters.com/v1/companies/ServiceNow/postings"
+     oracle_hcm:
+       companies:
+         - name: "Uber"
+           url: "https://iaziqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/UberCareers"
      workday:
        companies:
          - name: "Microsoft"
