@@ -82,6 +82,31 @@ test.describe('explore', () => {
     await expect(page.getByRole('button', { name: /^Export \d+ postings as CSV/ })).toBeEnabled();
   });
 
+  test('EXPORT CSV downloads exactly the filtered postings', async ({ page }) => {
+    await page.goto('/?tab=explore');
+    await expect(count(page)).toContainText('10 / 10 postings');
+    await page.getByLabel('Search all postings').fill('anduril');
+    await expect(count(page)).toContainText('2 / 10 postings');
+
+    const [download] = await Promise.all([
+      page.waitForEvent('download'),
+      page.getByRole('button', { name: 'Export 2 postings as CSV' }).click(),
+    ]);
+    expect(download.suggestedFilename()).toMatch(/^ngj-explore-\d{4}-\d{2}-\d{2}\.csv$/);
+    const text = await (await download.createReadStream()).toArray().then((chunks) => Buffer.concat(chunks).toString('utf8'));
+    const lines = text.trimEnd().split('\r\n');
+    expect(lines[0]).toBe('company,title,location,source,posted,category,tier,url');
+    expect(lines).toHaveLength(3);
+    for (const line of lines.slice(1)) expect(line.toLowerCase()).toContain('anduril');
+  });
+
+  test('EXPORT CSV is disabled when nothing matches', async ({ page }) => {
+    await page.goto('/?tab=explore');
+    await page.getByLabel('Search all postings').fill('zzz-no-such-posting');
+    await expect(count(page)).toContainText('0 / 10 postings');
+    await expect(page.getByRole('button', { name: 'Export 0 postings as CSV' })).toBeDisabled();
+  });
+
   test('presets apply a named signal set and the URL restores it', async ({ page }) => {
     await page.goto('/?tab=explore');
     await expect(count(page)).toContainText('10 / 10');

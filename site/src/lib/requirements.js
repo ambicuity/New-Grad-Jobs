@@ -14,7 +14,7 @@ const STOP_WORD = /^(?:and|or|the|a|an|is|are|was|were|be|been|being|have|has|ha
 // Strip tags until nothing changes (a single pass leaves e.g. "<scr<b>ipt>" as
 // "<script>"), then drop any stray angle brackets. Output is rendered as React
 // text (escaped), so this is defence in depth, not the XSS boundary.
-const stripTags = (s) => {
+export const stripTags = (s) => {
   let prev;
   let out = s;
   do {
