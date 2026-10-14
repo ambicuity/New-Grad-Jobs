@@ -39,12 +39,20 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GH_REPO: ${{ github.repository }}
     steps:
+      # Only for scripts/health_summary.py (stdlib Python, no dependencies).
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
       - name: Measure data age
         id: age
         run: |
           set -euo pipefail
           # health.json is no longer committed; read what the site serves.
-          last_run=$(curl -fsSL --retry 3 --max-time 30 "${HEALTH_URL}" | jq -r '.last_run // empty')
+          curl -fsSL --retry 3 --max-time 30 "${HEALTH_URL}" -o health.json
+          last_run=$(jq -r '.last_run // empty' health.json)
           if [ -z "$last_run" ]; then
             echo "::error::${HEALTH_URL} has no last_run timestamp"
             exit 1
@@ -53,6 +61,12 @@ jobs:
           echo "Last scrape: ${last_run} (${age_min} min ago)"
           echo "last_run=${last_run}" >> "$GITHUB_OUTPUT"
           echo "age_min=${age_min}" >> "$GITHUB_OUTPUT"
+
+      # Informational: a per-source table in the job summary and one warning per
+      # degraded, failed, zero-job or 403-cooled source. Never fails the run;
+      # staleness alone decides re-dispatch and the stale-data issue.
+      - name: Summarize source health
+        run: python3 scripts/health_summary.py health.json
 
       - name: Re-dispatch scraper when stale
         if: fromJSON(steps.age.outputs.age_min) > fromJSON(env.STALE_AFTER_MINUTES)
