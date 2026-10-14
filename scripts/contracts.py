@@ -32,7 +32,9 @@ JOB_ID_RE = re.compile(rf"^{JOB_ID_PREFIX}[0-9a-f]{{{JOB_ID_HEX_CHARS}}}$")
 #   gh_jid        Greenhouse embeds on company career sites (?gh_jid=123)
 #   jk / vjk      Indeed view-job key
 #   jobid, job_id, jid, id, currentjobid   generic/LinkedIn-style ids
-ID_QUERY_PARAMS = frozenset({"gh_jid", "jk", "vjk", "jobid", "job_id", "jid", "id", "currentjobid"})
+# Query params that identify the posting itself (kept by canonical_url). UKG Pro
+# Recruiting puts its posting id only in the query (OpportunityDetail?opportunityId=).
+ID_QUERY_PARAMS = frozenset({"gh_jid", "jk", "vjk", "jobid", "job_id", "jid", "id", "currentjobid", "opportunityid"})
 
 _DEFAULT_PORTS = {"http": 80, "https": 443}
 

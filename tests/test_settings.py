@@ -114,6 +114,14 @@ def test_oracle_hcm_knobs(tmp_path):
         200, 20, 2)
 
 
+def test_ukg_knobs(tmp_path):
+    defaults = build_settings(_config(), env={}, repo_root=tmp_path)
+    assert (defaults.ukg_max_jobs_per_company, defaults.ukg_max_workers) == (1000, 6)
+    config = {"worker_pools": {"ukg_max_workers": 3}, "apis": {"ukg": {"max_jobs_per_company": 40}}}
+    settings = build_settings(config, env={}, repo_root=tmp_path)
+    assert (settings.ukg_max_jobs_per_company, settings.ukg_max_workers) == (40, 3)
+
+
 def test_rippling_knobs(tmp_path):
     defaults = build_settings(_config(), env={}, repo_root=tmp_path)
     assert (defaults.rippling_max_jobs_per_company, defaults.rippling_max_workers) == (1000, 6)

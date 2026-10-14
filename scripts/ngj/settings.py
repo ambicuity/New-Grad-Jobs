@@ -49,6 +49,7 @@ DEFAULT_SMARTRECRUITERS_MAX_WORKERS = 4
 # Oracle HCM tenants are slow (a Nokia page took > 30 s); keep per-tenant load low.
 DEFAULT_ORACLE_HCM_MAX_WORKERS = 4
 DEFAULT_RIPPLING_MAX_WORKERS = 6
+DEFAULT_UKG_MAX_WORKERS = 6
 DEFAULT_GRAPHQL_MIN_WORKERS = 8
 DEFAULT_GRAPHQL_MAX_WORKERS = 80
 DEFAULT_JOBSPY_WORKERS = 25
@@ -79,6 +80,8 @@ DEFAULT_ORACLE_HCM_TIMEOUT = 45
 DEFAULT_ORACLE_HCM_MAX_SECONDS_PER_COMPANY = 300
 # Rippling boards are small (Rippling's own: ~600 postings); the cap bounds list pages.
 DEFAULT_RIPPLING_MAX_JOBS_PER_COMPANY = 1000
+# UKG boards are newest first; the cap bounds search pages (Gray Media: ~500 postings).
+DEFAULT_UKG_MAX_JOBS_PER_COMPANY = 1000
 
 DEFAULT_GOOGLE_MAX_PAGES = 3
 DEFAULT_GRAPHQL_MAX_JOBS_PER_SOURCE = 200
@@ -116,6 +119,7 @@ class Settings:
     smartrecruiters_max_workers: int = DEFAULT_SMARTRECRUITERS_MAX_WORKERS
     oracle_hcm_max_workers: int = DEFAULT_ORACLE_HCM_MAX_WORKERS
     rippling_max_workers: int = DEFAULT_RIPPLING_MAX_WORKERS
+    ukg_max_workers: int = DEFAULT_UKG_MAX_WORKERS
     graphql_min_workers: int = DEFAULT_GRAPHQL_MIN_WORKERS
     graphql_max_workers: int = DEFAULT_GRAPHQL_MAX_WORKERS
     jobspy_workers: int = DEFAULT_JOBSPY_WORKERS
@@ -139,6 +143,7 @@ class Settings:
     oracle_hcm_max_seconds_per_company: int = DEFAULT_ORACLE_HCM_MAX_SECONDS_PER_COMPANY
 
     rippling_max_jobs_per_company: int = DEFAULT_RIPPLING_MAX_JOBS_PER_COMPANY
+    ukg_max_jobs_per_company: int = DEFAULT_UKG_MAX_JOBS_PER_COMPANY
 
     google_enabled: bool = False
     google_max_pages: int = DEFAULT_GOOGLE_MAX_PAGES
@@ -206,6 +211,7 @@ def build_settings(
     smartrecruiters = _section(config, "apis", "smartrecruiters")
     oracle_hcm = _section(config, "apis", "oracle_hcm")
     rippling = _section(config, "apis", "rippling")
+    ukg = _section(config, "apis", "ukg")
     google = _section(config, "apis", "google")
     graphql = _section(config, "apis", "graphql")
     jobspy = _section(config, "apis", "jobspy")
@@ -230,6 +236,7 @@ def build_settings(
         smartrecruiters_max_workers=pool("smartrecruiters_max_workers", DEFAULT_SMARTRECRUITERS_MAX_WORKERS),
         oracle_hcm_max_workers=pool("oracle_hcm_max_workers", DEFAULT_ORACLE_HCM_MAX_WORKERS),
         rippling_max_workers=pool("rippling_max_workers", DEFAULT_RIPPLING_MAX_WORKERS),
+        ukg_max_workers=pool("ukg_max_workers", DEFAULT_UKG_MAX_WORKERS),
         graphql_min_workers=pool("graphql_min_workers", DEFAULT_GRAPHQL_MIN_WORKERS),
         graphql_max_workers=pool("graphql_max_workers", DEFAULT_GRAPHQL_MAX_WORKERS),
         jobspy_workers=pool("jobspy_workers", DEFAULT_JOBSPY_WORKERS),
@@ -268,6 +275,8 @@ def build_settings(
         rippling_max_jobs_per_company=coerce_positive_int(
             rippling.get("max_jobs_per_company"), DEFAULT_RIPPLING_MAX_JOBS_PER_COMPANY,
             "apis.rippling.max_jobs_per_company"),
+        ukg_max_jobs_per_company=coerce_positive_int(
+            ukg.get("max_jobs_per_company"), DEFAULT_UKG_MAX_JOBS_PER_COMPANY, "apis.ukg.max_jobs_per_company"),
         # Historical default: a google section without `enabled` runs.
         google_enabled=bool(google.get("enabled", True)),
         google_max_pages=coerce_positive_int(google_pages, DEFAULT_GOOGLE_MAX_PAGES, "apis.google.max_pages"),
@@ -294,6 +303,7 @@ def describe_settings(settings: Settings) -> None:
                 settings.oracle_hcm_max_jobs_per_country, settings.oracle_hcm_timeout)
     logger.info("     Rippling: up to %s, max_per_company=%s",
                 settings.rippling_max_workers, settings.rippling_max_jobs_per_company)
+    logger.info("     UKG: up to %s, max_per_company=%s", settings.ukg_max_workers, settings.ukg_max_jobs_per_company)
     logger.info("     GraphQL: %s-%s", settings.graphql_min_workers, settings.graphql_max_workers)
     logger.info("     JobSpy: %s", settings.jobspy_workers)
     logger.info("     Orchestrator: %s", settings.orchestrator_workers)

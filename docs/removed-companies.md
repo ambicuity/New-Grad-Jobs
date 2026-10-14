@@ -5,6 +5,16 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-14 — UKG Pro Recruiting source (19 job boards)
+
+The new UKG adapter (#399) adds the 19 UKG Pro Recruiting (UltiPro) job boards linked from the
+30-day applied-jobs export (#390). Each board was probed live on 2026-10-14 through its public
+`LoadSearchResults` search and returned postings, sorted newest first: Aeroflow Health, AFL,
+Alliance Technical Group, Alpha Omega, Amada, arrivia, Brown and Caldwell, Cleveland Guardians,
+Community Health Center of Snohomish County, Gen II, Gray Media, Hotwire Communications, John Knox
+Village, Modern Woodmen of America, PowerSecure, Rocky Brands, RubinBrown LLP, Scripps Research and
+Toshiba America (the `toshibausa.rec.pro.ukg.net` board, which also lists EtaPRO).
+
 ## 2026-10-14 — Rippling source (16 boards)
 
 The new Rippling adapter (#397) adds the 16 Rippling boards linked from the 30-day applied-jobs

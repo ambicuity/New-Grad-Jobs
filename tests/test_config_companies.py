@@ -37,6 +37,7 @@ SOURCE_CONTRACT = {
     'smartrecruiters': ('url', 'https://api.smartrecruiters.com/v1/companies/'),
     'oracle_hcm': ('url', 'https://'),
     'rippling': ('url', 'https://ats.rippling.com/api/v2/board/'),
+    'ukg': ('url', 'https://'),
 }
 
 
@@ -54,7 +55,7 @@ def _endpoint(source: str, entry: dict[str, str]) -> str:
     return entry[key]
 
 
-ALL_SOURCES = ['greenhouse', 'lever', 'ashby', 'smartrecruiters', 'oracle_hcm', 'rippling', 'workday']
+ALL_SOURCES = ['greenhouse', 'lever', 'ashby', 'smartrecruiters', 'oracle_hcm', 'rippling', 'ukg', 'workday']
 
 
 @pytest.mark.parametrize('source', ALL_SOURCES)

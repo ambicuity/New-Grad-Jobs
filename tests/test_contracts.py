@@ -48,6 +48,11 @@ def _payload(jobs):
     ('https://example.com/', 'https://example.com'),
     ('https://boards.greenhouse.io/robinhood/jobs/8189007?t=gh_src=&gh_jid=8189007',
      'https://boards.greenhouse.io/robinhood/jobs/8189007?gh_jid=8189007'),
+    # UKG Pro Recruiting: the posting id lives only in the query.
+    ('https://recruiting.ultipro.com/AFL1002/JobBoard/d535/OpportunityDetail?opportunityId=9da3&utm_source=x',
+     'https://recruiting.ultipro.com/AFL1002/JobBoard/d535/OpportunityDetail?opportunityid=9da3'),
+    # Like jk / id, the rule is host-independent: any opportunityId is kept as an id.
+    ('https://careers.example.com/view?opportunityId=42&src=li', 'https://careers.example.com/view?opportunityid=42'),
 ])
 def test_canonical_url_strips_tracking_and_normalizes(raw, expected):
     assert canonical_url(raw) == expected
