@@ -1,81 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-10-13T23:07:37.760611+00:00",
+    "last_updated": "2026-10-14T01:52:21.218954+00:00",
     "total_snapshots": 55,
     "date_range": {
-      "start": "2026-07-15",
-      "end": "2026-10-13"
+      "start": "2026-07-16",
+      "end": "2026-10-14"
     }
   },
   "snapshots": [
-    {
-      "date": "2026-07-15",
-      "total_jobs": 1462,
-      "categories": {
-        "software_engineering": 856,
-        "data_ml": 148,
-        "security": 85,
-        "infrastructure_sre": 124,
-        "data_engineering": 26,
-        "other": 148,
-        "backend": 32,
-        "quant_finance": 4,
-        "hardware": 17,
-        "product_management": 3,
-        "frontend": 9,
-        "mobile": 10
-      },
-      "tiers": {
-        "unicorn": 676,
-        "other": 635,
-        "faang_plus": 151
-      },
-      "top_companies": [
-        {
-          "company": "SpaceX",
-          "jobs": 223
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 197
-        },
-        {
-          "company": "Waymo",
-          "jobs": 42
-        },
-        {
-          "company": "OpenAI",
-          "jobs": 38
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 30
-        },
-        {
-          "company": "Boeing",
-          "jobs": 30
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 27
-        },
-        {
-          "company": "Accenture",
-          "jobs": 25
-        },
-        {
-          "company": "xAI",
-          "jobs": 21
-        },
-        {
-          "company": "Affirm",
-          "jobs": 21
-        }
-      ],
-      "unique_companies": 253,
-      "avg_jobs_per_company": 5.78,
-      "timestamp": "2026-07-15T23:47:05.418895+00:00"
-    },
     {
       "date": "2026-07-16",
       "total_jobs": 1454,
@@ -4083,6 +4015,92 @@
       "unique_companies": 525,
       "avg_jobs_per_company": 5.84,
       "timestamp": "2026-10-13T23:07:37.760611+00:00"
+    },
+    {
+      "date": "2026-10-14",
+      "total_jobs": 3119,
+      "categories": {
+        "software_engineering": 1098,
+        "customer_support": 75,
+        "quant_finance": 12,
+        "sales": 124,
+        "frontend": 20,
+        "backend": 29,
+        "design": 19,
+        "other": 86,
+        "hardware": 75,
+        "engineering": 344,
+        "business_analyst": 88,
+        "infrastructure_sre": 181,
+        "accounting_finance": 159,
+        "security": 100,
+        "supply_chain": 98,
+        "data_engineering": 49,
+        "data_ml": 142,
+        "legal": 36,
+        "management": 45,
+        "human_resources": 65,
+        "product_management": 6,
+        "project_management": 18,
+        "mobile": 18,
+        "consulting": 43,
+        "marketing": 29,
+        "arts_entertainment": 2,
+        "healthcare": 144,
+        "education": 7,
+        "data_analyst": 6,
+        "public_sector": 1
+      },
+      "tiers": {
+        "other": 1848,
+        "unicorn": 636,
+        "faang_plus": 635
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 454
+        },
+        {
+          "company": "Raytheon",
+          "jobs": 161
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 128
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 113
+        },
+        {
+          "company": "Leidos",
+          "jobs": 110
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 102
+        },
+        {
+          "company": "Boeing",
+          "jobs": 83
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 71
+        },
+        {
+          "company": "General Dynamics",
+          "jobs": 67
+        },
+        {
+          "company": "OpenAI",
+          "jobs": 59
+        }
+      ],
+      "unique_companies": 575,
+      "avg_jobs_per_company": 5.42,
+      "timestamp": "2026-10-14T01:52:21.218954+00:00"
     }
   ]
 }
