@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-14T21:14:16.926325+00:00",
+    "last_updated": "2026-10-14T21:20:00.148999+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-16",
@@ -4018,43 +4018,43 @@
     },
     {
       "date": "2026-10-14",
-      "total_jobs": 6281,
+      "total_jobs": 6306,
       "categories": {
-        "software_engineering": 1667,
+        "software_engineering": 1671,
         "customer_support": 122,
         "quant_finance": 15,
-        "sales": 709,
+        "sales": 711,
         "frontend": 30,
-        "backend": 41,
+        "backend": 40,
         "design": 39,
-        "other": 332,
-        "data_ml": 267,
+        "other": 331,
+        "data_ml": 268,
         "hardware": 180,
-        "engineering": 816,
+        "engineering": 814,
         "business_analyst": 219,
-        "infrastructure_sre": 329,
-        "accounting_finance": 285,
-        "security": 180,
+        "infrastructure_sre": 331,
+        "accounting_finance": 297,
+        "security": 179,
         "supply_chain": 169,
-        "data_engineering": 118,
+        "data_engineering": 119,
         "legal": 57,
         "management": 94,
-        "human_resources": 76,
-        "product_management": 16,
-        "project_management": 48,
-        "mobile": 20,
-        "consulting": 90,
-        "marketing": 55,
+        "human_resources": 78,
+        "product_management": 17,
+        "project_management": 49,
+        "mobile": 21,
+        "consulting": 91,
+        "marketing": 54,
         "arts_entertainment": 2,
-        "healthcare": 250,
-        "education": 29,
-        "data_analyst": 24,
+        "healthcare": 251,
+        "education": 30,
+        "data_analyst": 25,
         "public_sector": 2
       },
       "tiers": {
-        "other": 4569,
+        "other": 4593,
         "unicorn": 818,
-        "faang_plus": 894
+        "faang_plus": 895
       },
       "top_companies": [
         {
@@ -4098,9 +4098,9 @@
           "jobs": 88
         }
       ],
-      "unique_companies": 834,
-      "avg_jobs_per_company": 7.53,
-      "timestamp": "2026-10-14T21:14:16.926325+00:00"
+      "unique_companies": 835,
+      "avg_jobs_per_company": 7.55,
+      "timestamp": "2026-10-14T21:20:00.148999+00:00"
     }
   ]
 }
