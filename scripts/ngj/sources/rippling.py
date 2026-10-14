@@ -11,6 +11,12 @@ whose title passes :func:`ngj.filters.passes_title_rules` (about 5% of
 postings). The rest are still returned, without a date, so the Explore corpus
 stays complete; they fail the title rules, so no date would change their fate.
 Postings the detail marks ``unlistedFromSearch`` are dropped.
+
+The list returns one row per location for the same posting (Rippling's own
+board: 609 rows for about 400 postings). Rows are merged into one posting per
+id, with every location kept, before the detail pass, so a posting costs one
+detail request and keeps all its cities instead of the one dedup happened
+to keep.
 """
 
 from __future__ import annotations
@@ -128,6 +134,21 @@ def _list_board(company_name: str, base: str, max_jobs: int, timeout: int) -> So
     return SourceResult(jobs=tuple(items), raw_count=raw_count)
 
 
+def _merge_rows(rows: Sequence[Mapping[str, Any]]) -> list[dict[str, Any]]:
+    """One item per posting id, in first-seen order, with the rows' locations combined."""
+    merged: dict[str, dict[str, Any]] = {}
+    for row in rows:
+        posting = merged.get(row["id"])
+        if posting is None:
+            merged[row["id"]] = {**row, "locations": list(row.get("locations") or ())}
+            continue
+        seen = {loc.get("name") for loc in posting["locations"] if isinstance(loc, Mapping)}
+        extra = [loc for loc in row.get("locations") or ()
+                 if isinstance(loc, Mapping) and loc.get("name") not in seen]
+        merged[row["id"]] = {**posting, "locations": [*posting["locations"], *extra]}
+    return list(merged.values())
+
+
 def fetch_rippling_jobs(
     company_name: str,
     url: str,
@@ -159,7 +180,8 @@ def fetch_rippling_jobs(
     listing = _list_board(company_name, base, max_jobs, timeout)
     errors = list(listing.errors)
     jobs: list[dict[str, Any]] = []
-    for item in listing.jobs:
+    postings = _merge_rows(listing.jobs)
+    for item in postings:
         title = (item.get("name") or "").strip()
         if not passes_title_rules(title, rules):
             jobs.append(_to_job(company_name, slug, item, None))
@@ -176,7 +198,7 @@ def fetch_rippling_jobs(
 
     if any(e.kind in ngj_http.TRANSIENT_KINDS for e in errors):
         return SourceResult(errors=tuple(errors))
-    return SourceResult(jobs=tuple(jobs), errors=tuple(errors), raw_count=listing.raw_count)
+    return SourceResult(jobs=tuple(jobs), errors=tuple(errors), raw_count=len(postings))
 
 
 def fetch_all_rippling_jobs(
