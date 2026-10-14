@@ -30,6 +30,8 @@ filtering:
     - "early career"
     - "early-career"
     - "junior"
+    # "Jr." / "Jr" is how many ATS titles abbreviate junior.
+    - "jr"
     - "trainee"
     - "associate"
     - "intern conversion"
@@ -202,6 +204,7 @@ filtering:
     - "process"
     - "specialist"
     - "coordinator"
+    - "administrator"
 
   # Exclusion signals - jobs with these keywords are filtered OUT
   exclusion_signals:
@@ -583,6 +586,17 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/qualtrics/jobs"
       - name: "Rocket Lab"
         url: "https://boards-api.greenhouse.io/v1/boards/rocketlab/jobs"
+      # 2026-10-14 sweep: employers from an applied-jobs list whose posting
+      # URL names this ATS. Every endpoint below was probed live on
+      # 2026-10-14 and returned a non-empty job list.
+      - name: "Alarm.com"
+        url: "https://boards-api.greenhouse.io/v1/boards/alarmcom/jobs"
+      - name: "Foxhole Technology"
+        url: "https://boards-api.greenhouse.io/v1/boards/foxholetechnology/jobs"
+      - name: "MetTel"
+        url: "https://boards-api.greenhouse.io/v1/boards/mettel/jobs"
+      - name: "Vectara"
+        url: "https://boards-api.greenhouse.io/v1/boards/vectara/jobs"
   lever:
     # Lever job board API endpoints for major tech companies
     companies:
@@ -609,6 +623,13 @@ apis:
         url: "https://api.lever.co/v0/postings/zoox"
       - name: "Kraken"
         url: "https://api.lever.co/v0/postings/kraken"
+      # 2026-10-14 sweep: employers from an applied-jobs list whose posting
+      # URL names this ATS. Every endpoint below was probed live on
+      # 2026-10-14 and returned a non-empty job list.
+      - name: "Dynamic Catholic"
+        url: "https://api.lever.co/v0/postings/dynamiccatholic"
+      - name: "Pivotal"
+        url: "https://api.lever.co/v0/postings/pivotal"
 
   ashby:
     # Ashby Posting API — modern ATS used by many AI labs and devtools companies.
@@ -1198,6 +1219,43 @@ apis:
         workday_url: "https://transunion.wd5.myworkdayjobs.com/transunion"
       - name: "Waystar"
         workday_url: "https://waystar.wd1.myworkdayjobs.com/Waystar"
+      # 2026-10-14 sweep: employers from an applied-jobs list whose posting
+      # URL names this ATS. Every endpoint below was probed live on
+      # 2026-10-14 and returned a non-empty job list.
+      - name: "Amgen"
+        workday_url: "https://amgen.wd1.myworkdayjobs.com/Careers"
+      - name: "Astound"
+        workday_url: "https://astound.wd108.myworkdayjobs.com/astound_careers"
+      - name: "Conagra Brands"
+        workday_url: "https://conagrabrands.wd1.myworkdayjobs.com/Careers_US"
+      - name: "Daimler Truck North America"
+        workday_url: "https://dtna.wd5.myworkdayjobs.com/DTNA_affiliate"
+      - name: "Dow Jones"
+        workday_url: "https://dowjones.wd1.myworkdayjobs.com/Dow_Jones_Career"
+      - name: "Eli Lilly"
+        workday_url: "https://lilly.wd115.myworkdayjobs.com/lly"
+      - name: "Gartner"
+        workday_url: "https://gartner.wd5.myworkdayjobs.com/EXT"
+      - name: "Microchip Technology"
+        workday_url: "https://microchiphr.wd5.myworkdayjobs.com/External"
+      - name: "Mohegan"
+        workday_url: "https://mohegan.wd1.myworkdayjobs.com/Mohegan"
+      - name: "Pacific Life"
+        workday_url: "https://pacificlife.wd1.myworkdayjobs.com/PacificLifeCareers"
+      - name: "Point32Health"
+        workday_url: "https://point32health.wd5.myworkdayjobs.com/THP"
+      - name: "Rockwell Automation"
+        workday_url: "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation"
+      - name: "Travelers"
+        workday_url: "https://travelers.wd5.myworkdayjobs.com/External"
+      - name: "TTI"
+        workday_url: "https://tti.wd1.myworkdayjobs.com/TTI_PE"
+      - name: "Unisys"
+        workday_url: "https://unisys.wd5.myworkdayjobs.com/External"
+      - name: "UPM"
+        workday_url: "https://upm.wd103.myworkdayjobs.com/Careers"
+      - name: "Whataburger"
+        workday_url: "https://whataburger.wd5.myworkdayjobs.com/WAB_CAREERS"
 
     # One Workday searchText query per keyword, merged by job path. Replaces
     # the unfiltered listing, which was capped at 200 jobs per company and so

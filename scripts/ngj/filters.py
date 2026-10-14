@@ -85,6 +85,9 @@ DEFAULT_LEVEL_SIGNALS: tuple[str, ...] = ('I', 'II', 'L3', 'L4', 'E3', 'E4')
 # and "Engineer-II," match; "Alvin I. Goodman", "I/O", "L2/L3" and "L3Harris"
 # do not.
 _LEVEL_TOKEN_RE = re.compile(r'^(?:[ivx]+|[le]\d)$', re.IGNORECASE)
+# Words that also prefix req ids in titles ("JR-2026-0042", "JR 1234"): such a
+# signal never matches when a number follows it.
+_REQ_ID_PREFIX_SIGNALS = frozenset({'jr'})
 _LEVEL_LEFT = r'(?<=[\s(\-,\[])'
 _LEVEL_RIGHT = r'(?=$|[\s),\-|:;\]]|/(?:[ivx]+|[le]\d)\b)'
 
@@ -134,6 +137,8 @@ def _signal_pattern(raw: str, suffix: str = '') -> str | None:
         body += suffix
     left = r'(?<!\w)' if words[0][0].isalnum() else ''
     right = r'(?!\w)' if words[-1][-1].isalnum() else ''
+    if len(words) == 1 and words[0] in _REQ_ID_PREFIX_SIGNALS:
+        right += r'(?![-/#]?\s*\d)'
     return f'{left}{body}{right}'
 
 

@@ -117,6 +117,16 @@ class TestValidLocationEdgeCases:
     def test_whitespace_only_is_unknown_and_passes(self):
         assert is_valid_location("   ") is True
 
+    # Workday's locationsText for a multi-site posting is a bare count
+    # ("6 Locations"): it names no country, so it is unknown, like "Multiple
+    # Locations". It used to read as foreign and park the job as a near miss.
+    @pytest.mark.parametrize("location", ["6 Locations", "2 locations", "1 Location", "Multiple Locations"])
+    def test_workday_location_count_is_unknown_and_passes(self, location):
+        assert is_valid_location(location) is True
+
+    def test_location_count_next_to_a_foreign_country_still_fails(self):
+        assert is_valid_location("3 Locations, Germany") is False
+
     def test_comma_separated_state_code(self):
         """'San Jose, CA' — 'ca' is 2 chars, should match via word boundary."""
         assert is_valid_location("San Jose, CA") is True

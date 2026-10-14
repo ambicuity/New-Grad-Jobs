@@ -237,6 +237,32 @@ class TestFilterEndToEndAuditTitles:
         assert _passes(title) is True
 
 
+class TestJuniorAbbreviationAndAdministratorTrack:
+    """Live postings (Oct 2026) dropped because "Jr." was not read as junior
+    and "Administrator" was not a track word."""
+
+    @pytest.mark.parametrize("title", [
+        "Jr. Systems Administrator",
+        "Jr. Front-End Developer (Korean Bilingual)",
+        "Jr Data Analyst",
+        "Junior SQL Database Administrator",
+    ])
+    def test_kept(self, title):
+        assert _passes(title) is True
+
+    @pytest.mark.parametrize("title", [
+        "Sr. Systems Administrator",
+        "Systems Administrator",
+        "Office Administrator",
+        # "JR" also prefixes Workday req ids; those are not a junior signal.
+        "Platform Engineer JR-2026-0042",
+        "Data Analyst (JR-000934)",
+        "Quality Engineer - JR 1234",
+    ])
+    def test_dropped(self, title):
+        assert _passes(title) is False
+
+
 class TestSignalConfigHygiene:
     """(6) Leading/trailing spaces used to be stripped silently."""
 

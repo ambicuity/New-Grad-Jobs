@@ -7,8 +7,9 @@ job passes when any segment passes. Each segment is decided in this order:
    "North America", ...) -> pass;
 2. a foreign country or region ("Germany", "UK", "EMEA", ...) -> fail, so
    "Remote - Poland" and "Milan, MI, Italy" no longer slip through;
-3. only work-mode words ("Remote", "Hybrid", "Remote, Global") -> pass: an
-   unqualified remote role is open to target-country candidates;
+3. only work-mode words ("Remote", "Hybrid", "Remote, Global") or a bare
+   location count (Workday's "6 Locations") -> pass: an unqualified remote
+   role is open to target-country candidates, and a count names no country;
 4. a US state name, a known US/Canadian/Indian city or region -> pass;
 5. a known foreign city ("Berlin", "Bogota") -> fail, which keeps ISO country
    codes in "Berlin, DE" / "Bogota, CO" from reading as Delaware / Colorado;
@@ -151,9 +152,13 @@ STATE_CODE_PATTERN = re.compile(
 
 _SEGMENT_SPLIT_RE = re.compile(r'\s*(?:;|\||•|\n|(?<!,)\s+or\s+)\s*', re.IGNORECASE)
 _WORD_RE = re.compile(r'[^\W_]+')
+# Workday's locationsText for a posting listed in several places.
+_LOCATION_COUNT_RE = re.compile(r'\d+\s+locations?', re.IGNORECASE)
 
 
 def _is_work_mode_only(segment: str) -> bool:
+    if _LOCATION_COUNT_RE.fullmatch(segment.strip()):
+        return True
     words = _WORD_RE.findall(segment)
     return bool(words) and all(word in WORK_MODE_WORDS for word in words)
 
