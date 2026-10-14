@@ -279,3 +279,26 @@ class TestSignalConfigHygiene:
     def test_shipped_config_lists_level_signals_as_tokens(self):
         levels = _live_filtering()['level_signals']
         assert {'I', 'II', 'L3', 'L4', 'E3', 'E4'} <= set(levels)
+
+
+class TestPartTimeAndSeasonalExcluded:
+    """Part-time and seasonal store roles are not new-grad careers (owner
+    decision, Oct 2026). Full-time entry-level sales and operations stay in."""
+
+    @pytest.mark.parametrize("title", [
+        "Seasonal Sales Associate (Part-Time) - SoHo",
+        "Seasonal Operations Associate (Part-Time) - Park Meadows Mall",
+        "Part Time Retail Sales Associate",
+        "Seasonal Associate Accountant",
+    ])
+    def test_dropped(self, title):
+        assert _passes(title) is False
+
+    @pytest.mark.parametrize("title", [
+        "Retail Sales Associate",
+        "Operations Associate (Full-Time) - Cherry Creek",
+        "Associate Data Analyst (Time Series)",
+        "Seasonality Analyst I",
+    ])
+    def test_kept(self, title):
+        assert _passes(title) is True
