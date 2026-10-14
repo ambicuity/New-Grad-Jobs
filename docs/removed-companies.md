@@ -5,6 +5,21 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-14 — Paylocity source (9 boards added, 1 left out, 5 unresolved)
+
+The new Paylocity adapter (#413) adds the boards of 9 direct employers linked from the 30-day
+applied-jobs export (#390), each probed live on 2026-10-14: Concept Solutions, CU*Answers, E&M
+Technologies, Five Star Bank, Forgent Power Solutions (listed twice in the export, one board),
+Interclypse, Oneida Professional Services, Trean and UNICO Group.
+
+**Not added (owner rule, direct employers only):** the export's "Mechanical Comfort, Inc." link
+resolves to the board of Abstrakt Marketing Group, which posts HVAC and sales jobs for client
+companies.
+
+**Unresolved:** CleanSlate Technology Group, Imagine, Northern Technologies Group, ES&S and Ryan
+Consulting Group. Their linked postings have closed ("Job Not Found"), so the links no longer reveal
+a board GUID; any live job page of theirs would (its "View All Jobs" link).
+
 ## 2026-10-14 — Amplitude moved to Ashby
 
 The watchdog's new per-source summary (#409) showed Greenhouse's one failing company: Amplitude.

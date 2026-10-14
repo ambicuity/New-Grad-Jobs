@@ -87,3 +87,32 @@ class TestJsonBodyPost:
             "TestCo", "ukg", "UKG", "https://recruiting.ultipro.com/X/JobBoard/y", lambda data: SourceResult(),
             timeout=5, json_body={})
         assert [(e.kind, e.status) for e in result.errors] == [(KIND_HTTP, status)]
+
+
+class TestAsText:
+    """fetch_json_with_retry(as_text=True) hands parse the raw body (Paylocity's HTML board pages)."""
+
+    def test_raw_text_reaches_parse_without_json_decoding(self, monkeypatch):
+        from ngj import http as ngj_http
+        from ngj.models import SourceResult
+
+        resp = requests.models.Response()
+        resp.status_code = 200
+        resp._content = b"<html>window.pageData = {};</html>"
+        resp.encoding = "utf-8"
+        monkeypatch.setattr("ngj.http.limited_get", lambda url, **kwargs: resp)
+        seen = []
+        result = ngj_http.fetch_json_with_retry(
+            "TestCo", "paylocity", "Paylocity", "https://recruiting.paylocity.com/Recruiting/Jobs/All/x",
+            lambda body: (seen.append(body), SourceResult(raw_count=1))[1], timeout=5, as_text=True)
+        assert seen == ["<html>window.pageData = {};</html>"] and result.raw_count == 1
+
+    def test_http_errors_are_reported_the_same_way(self, monkeypatch):
+        from ngj import http as ngj_http
+        from ngj.models import SourceResult
+
+        monkeypatch.setattr("ngj.http.limited_get", lambda url, **kwargs: _response(404))
+        result = ngj_http.fetch_json_with_retry(
+            "TestCo", "paylocity", "Paylocity", "https://recruiting.paylocity.com/x", lambda body: SourceResult(),
+            timeout=5, as_text=True)
+        assert [(e.kind, e.status) for e in result.errors] == [(KIND_HTTP, 404)]

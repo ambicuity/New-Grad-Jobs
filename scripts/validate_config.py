@@ -8,7 +8,7 @@ config path it is about:
 - ``filtering``: ``max_age_days`` (1-365) and non-empty string lists
   ``new_grad_signals`` / ``track_signals``; optional ``exclusion_signals``
   (string list) and ``min_expected_companies`` (>= 0);
-- ``apis.greenhouse|lever|ashby|smartrecruiters|oracle_hcm|rippling|ukg|adp|workable``: ``companies`` entries are ``{name, url}``
+- ``apis.greenhouse|lever|ashby|smartrecruiters|oracle_hcm|rippling|ukg|adp|workable|paylocity``: ``companies`` entries are ``{name, url}``
   with the URL shape of that ATS's public API, names and URLs unique per ATS;
 - ``apis.workday``: ``{name, workday_url}`` entries on *.myworkdayjobs.com,
   unique; numeric knobs within range;
@@ -61,6 +61,9 @@ ATS_URL_PATTERNS: dict[str, re.Pattern[str]] = {
         r"^https://workforcenow\.adp\.com/mascsr/default/mdf/recruitment/recruitment\.html"
         r"\?cid=[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"),
     "workable": re.compile(r"^https://apply\.workable\.com/api/v1/widget/accounts/[A-Za-z0-9_-]+/?$"),
+    "paylocity": re.compile(
+        r"^https://recruiting\.paylocity\.com/Recruiting/Jobs/All/"
+        r"[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}/?$"),
 }
 WORKDAY_URL_PATTERN = re.compile(r"^https://[A-Za-z0-9-]+\.wd\d+\.myworkdayjobs\.com/\S+$")
 HTTPS_URL_PATTERN = re.compile(r"^https://[^\s/]+(/\S*)?$")
@@ -96,8 +99,8 @@ INT_RANGES: tuple[tuple[str, int, int], ...] = (
 WORKER_POOL_RANGE = (1, 1_000)
 REQUIRED_FILTERING_LISTS = ("new_grad_signals", "track_signals")
 OPTIONAL_FILTERING_LISTS = ("exclusion_signals", "strong_new_grad_signals", "level_signals", "internship_signals")
-SOURCE_NAMES = {"smartrecruiters": "SmartRecruiters", "oracle_hcm": "Oracle HCM", "rippling": "Rippling", "ukg": "UKG", "adp": "ADP", "workable": "Workable"}
-ENABLED_FLAG_SECTIONS = ("greenhouse", "lever", "ashby", "smartrecruiters", "oracle_hcm", "rippling", "ukg", "adp", "workable", "google", "jobspy", "workday", "graphql")
+SOURCE_NAMES = {"smartrecruiters": "SmartRecruiters", "oracle_hcm": "Oracle HCM", "rippling": "Rippling", "ukg": "UKG", "adp": "ADP", "workable": "Workable", "paylocity": "Paylocity"}
+ENABLED_FLAG_SECTIONS = ("greenhouse", "lever", "ashby", "smartrecruiters", "oracle_hcm", "rippling", "ukg", "adp", "workable", "paylocity", "google", "jobspy", "workday", "graphql")
 
 
 @dataclass
