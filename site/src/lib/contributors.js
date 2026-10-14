@@ -44,7 +44,7 @@ const SPONSOR_HANDLES = new Set([PROJECT_OWNER]);
  */
 export const DEFAULT_REPO = Object.freeze({
   name: REPO_SLUG,
-  desc: 'open-source new-grad job board · scrapes company careers APIs (greenhouse, lever, ashby, workday, jobspy) and publishes a live feed.',
+  desc: 'open-source new-grad job board · scrapes company careers APIs (greenhouse, lever, ashby, smartrecruiters, workday, jobspy) and publishes a live feed.',
   stars: null, forks: null, issues: null, prs_open: null,
   langs: [],
   license: 'MIT',

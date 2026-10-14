@@ -8,7 +8,7 @@ Humans should read [CONTRIBUTING.md](CONTRIBUTING.md). Operators should read
 
 New Grad Jobs is an automated board of entry-level jobs in every field (software, data,
 engineering, finance, marketing, sales, healthcare, …) in the US, Canada and India.
-A Python scraper pulls public ATS APIs (Greenhouse, Lever, Ashby, Workday) plus JobSpy
+A Python scraper pulls public ATS APIs (Greenhouse, Lever, Ashby, SmartRecruiters, Workday) plus JobSpy
 (Indeed) about every 30 minutes in GitHub Actions. It filters for new-grad roles and
 publishes static JSON/RSS. A Vite + React site at <https://jobs.riteshrana.engineer> is
 built from that data and deployed to GitHub Pages. There is no server and no database.
@@ -125,10 +125,12 @@ After `make run`, restore the two files that a local scrape rewrites:
 
 ### Where to add things
 
-- **A company:** add `{name, url}` under `apis.greenhouse|lever|ashby.companies`
+- **A company:** add `{name, url}` under `apis.greenhouse|lever|ashby|smartrecruiters.companies`
   (`https://boards-api.greenhouse.io/v1/boards/<slug>/jobs`,
   `https://api.lever.co/v0/postings/<slug>`,
-  `https://api.ashbyhq.com/posting-api/job-board/<slug>`) or `{name, workday_url}` under
+  `https://api.ashbyhq.com/posting-api/job-board/<slug>`,
+  `https://api.smartrecruiters.com/v1/companies/<id>/postings`; an unknown SmartRecruiters id
+  answers 200 with 0 postings, so check `totalFound` first) or `{name, workday_url}` under
   `apis.workday.companies` (`https://<tenant>.wd<N>.myworkdayjobs.com/<site>`). Then run
   `validate_config.py`. Record removals in `docs/removed-companies.md`.
 - **A new ATS source:** add `scripts/ngj/sources/<name>.py` returning `SourceResult`. Then

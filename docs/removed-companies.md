@@ -5,6 +5,14 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-14 — SmartRecruiters source (37 companies, 1 moved)
+
+The new SmartRecruiters adapter (#392) adds 37 companies whose ids appeared in the applied-jobs
+exports. Every id was probed live on 2026-10-14 and returned postings (an unknown id answers
+HTTP 200 with `totalFound: 0`, so a non-empty result is the only proof an id is right).
+
+**Moved:** LinkedIn, from Greenhouse (`linkedin` answers with 0 jobs) to SmartRecruiters (`LinkedIn3`).
+
 ## 2026-10-14 — 30-day applied-jobs export (234 boards added, 1 moved)
 
 A 30-day applied-jobs export lists 704 employers that users applied to in the 30 days to

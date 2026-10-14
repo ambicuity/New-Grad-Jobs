@@ -8,7 +8,7 @@ config path it is about:
 - ``filtering``: ``max_age_days`` (1-365) and non-empty string lists
   ``new_grad_signals`` / ``track_signals``; optional ``exclusion_signals``
   (string list) and ``min_expected_companies`` (>= 0);
-- ``apis.greenhouse|lever|ashby``: ``companies`` entries are ``{name, url}``
+- ``apis.greenhouse|lever|ashby|smartrecruiters``: ``companies`` entries are ``{name, url}``
   with the URL shape of that ATS's public API, names and URLs unique per ATS;
 - ``apis.workday``: ``{name, workday_url}`` entries on *.myworkdayjobs.com,
   unique; numeric knobs within range;
@@ -45,9 +45,13 @@ ATS_URL_PATTERNS: dict[str, re.Pattern[str]] = {
     "greenhouse": re.compile(r"^https://boards-api(\.eu)?\.greenhouse\.io/v1/boards/[A-Za-z0-9_.-]+/jobs/?(\?\S*)?$"),
     "lever": re.compile(r"^https://api(\.eu)?\.lever\.co/v0/postings/[A-Za-z0-9_.-]+/?(\?\S*)?$"),
     "ashby": re.compile(r"^https://api\.ashbyhq\.com/posting-api/job-board/[A-Za-z0-9_.%-]+/?(\?\S*)?$"),
+    # No query string: the adapter adds limit/offset/country itself.
+    "smartrecruiters": re.compile(r"^https://api\.smartrecruiters\.com/v1/companies/[A-Za-z0-9_.-]+/postings/?$"),
 }
 WORKDAY_URL_PATTERN = re.compile(r"^https://[A-Za-z0-9-]+\.wd\d+\.myworkdayjobs\.com/\S+$")
 HTTPS_URL_PATTERN = re.compile(r"^https://[^\s/]+(/\S*)?$")
+# ISO 3166-1 alpha-2, as the SmartRecruiters ``country`` filter expects.
+COUNTRY_CODE_PATTERN = re.compile(r"^[A-Za-z]{2}$")
 
 # (config path, minimum, maximum) for integer knobs. Missing keys are fine
 # (the code has defaults); present keys must be integers in range.
@@ -60,6 +64,7 @@ INT_RANGES: tuple[tuple[str, int, int], ...] = (
     ("apis.workday.max_jobs_per_company", 1, 5_000),
     ("apis.workday.timeout", 1, 120),
     ("apis.workday.max_workers", 1, 64),
+    ("apis.smartrecruiters.max_jobs_per_country", 1, 10_000),
     ("apis.google.max_pages", 1, 50),
     ("apis.graphql.timeout", 1, 120),
     ("apis.graphql.max_jobs_per_source", 1, 10_000),
@@ -69,7 +74,8 @@ INT_RANGES: tuple[tuple[str, int, int], ...] = (
 WORKER_POOL_RANGE = (1, 1_000)
 REQUIRED_FILTERING_LISTS = ("new_grad_signals", "track_signals")
 OPTIONAL_FILTERING_LISTS = ("exclusion_signals", "strong_new_grad_signals", "level_signals", "internship_signals")
-ENABLED_FLAG_SECTIONS = ("greenhouse", "lever", "ashby", "google", "jobspy", "workday", "graphql")
+SOURCE_NAMES = {"smartrecruiters": "SmartRecruiters"}
+ENABLED_FLAG_SECTIONS = ("greenhouse", "lever", "ashby", "smartrecruiters", "google", "jobspy", "workday", "graphql")
 
 
 @dataclass
@@ -211,6 +217,12 @@ def _check_apis(report: ConfigReport, apis: Any) -> None:
     google = apis.get("google")
     if isinstance(google, Mapping) and google.get("search_terms") is not None:
         _check_string_list(report, "apis.google.search_terms", google["search_terms"], required=False)
+    smartrecruiters = apis.get("smartrecruiters")
+    if isinstance(smartrecruiters, Mapping) and smartrecruiters.get("countries") is not None:
+        countries = smartrecruiters["countries"]
+        if not isinstance(countries, list) or not all(
+                isinstance(c, str) and COUNTRY_CODE_PATTERN.match(c) for c in countries):
+            report.errors.append("apis.smartrecruiters.countries: must be a list of 2-letter country codes")
     jobspy = apis.get("jobspy")
     if isinstance(jobspy, Mapping) and jobspy.get("enabled") is True:
         _check_string_list(report, "apis.jobspy.search_terms", jobspy.get("search_terms", MISSING), required=True)
@@ -284,7 +296,7 @@ def validate_config(config_path: str = "config.yml") -> int:
     logger.info("✅ YAML loaded successfully!")
     counts = enabled_company_counts(config)
     for name, count in counts.items():
-        logger.info("%s: %s companies", name.capitalize(), count)
+        logger.info("%s: %s companies", SOURCE_NAMES.get(name, name.capitalize()), count)
     total = sum(counts.values())
     logger.info("TOTAL: %s companies", total)
 

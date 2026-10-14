@@ -87,6 +87,19 @@ def test_config_values_are_read(tmp_path):
     assert settings.workday_enabled and settings.graphql_enabled and settings.jobspy_enabled
 
 
+def test_smartrecruiters_knobs(tmp_path):
+    defaults = build_settings(_config(), env={}, repo_root=tmp_path)
+    assert defaults.smartrecruiters_countries == ("us", "ca", "in")
+    assert defaults.smartrecruiters_max_jobs_per_country == 1000
+    assert defaults.smartrecruiters_max_workers == 4
+    config = {"worker_pools": {"smartrecruiters_max_workers": 2},
+              "apis": {"smartrecruiters": {"countries": ["US", "ca"], "max_jobs_per_country": 300}}}
+    settings = build_settings(config, env={}, repo_root=tmp_path)
+    assert settings.smartrecruiters_countries == ("us", "ca")
+    assert settings.smartrecruiters_max_jobs_per_country == 300
+    assert settings.smartrecruiters_max_workers == 2
+
+
 def test_google_uppercase_max_pages_key_still_supported(tmp_path):
     settings = build_settings(_config(google={"MAX_PAGES": "5"}), env={}, repo_root=tmp_path)
     assert settings.google_max_pages == 5
