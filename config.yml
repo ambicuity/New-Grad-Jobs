@@ -267,8 +267,6 @@ apis:
         url: "https://boards-api.greenhouse.io/v1/boards/airtable/jobs"
       - name: "Algolia"
         url: "https://boards-api.greenhouse.io/v1/boards/algolia/jobs"
-      - name: "Amplitude"
-        url: "https://boards-api.greenhouse.io/v1/boards/amplitude/jobs"
       - name: "Anduril Industries"
         url: "https://boards-api.greenhouse.io/v1/boards/andurilindustries/jobs"
       - name: "AppLovin"
@@ -1131,6 +1129,9 @@ apis:
         url: "https://api.ashbyhq.com/posting-api/job-board/vultr"
       - name: "Zello"
         url: "https://api.ashbyhq.com/posting-api/job-board/zello"
+      # Moved from Greenhouse (2026-10-14: `amplitude` answers 404; careers page links Ashby).
+      - name: "Amplitude"
+        url: "https://api.ashbyhq.com/posting-api/job-board/amplitude"
   smartrecruiters:
     # SmartRecruiters public Posting API (no key). One query per country,
     # newest first, capped per country. An unknown company id answers 200 with

@@ -5,6 +5,12 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-14 — Amplitude moved to Ashby
+
+The watchdog's new per-source summary (#409) showed Greenhouse's one failing company: Amplitude.
+Its Greenhouse board (`amplitude`) answers `HTTP 404`, and its careers page links
+`jobs.ashbyhq.com/amplitude`, whose posting API returned 38 jobs on 2026-10-14. Moved to Ashby.
+
 ## 2026-10-14 — Workable source (5 accounts added, 3 recruiters left out)
 
 The new Workable adapter (#404) adds the direct employers among the 8 Workable accounts linked from
