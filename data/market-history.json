@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-14T21:38:33.890184+00:00",
+    "last_updated": "2026-10-14T21:47:48.778055+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-16",
@@ -4018,43 +4018,43 @@
     },
     {
       "date": "2026-10-14",
-      "total_jobs": 6314,
+      "total_jobs": 6367,
       "categories": {
-        "software_engineering": 1674,
-        "customer_support": 122,
+        "software_engineering": 1697,
+        "customer_support": 124,
         "quant_finance": 15,
-        "sales": 716,
-        "frontend": 31,
-        "backend": 40,
-        "design": 39,
+        "sales": 715,
+        "frontend": 30,
+        "backend": 41,
+        "design": 38,
         "other": 329,
-        "data_ml": 268,
+        "data_ml": 269,
         "hardware": 181,
-        "engineering": 816,
-        "business_analyst": 219,
-        "infrastructure_sre": 329,
-        "accounting_finance": 298,
-        "security": 179,
-        "supply_chain": 169,
-        "data_engineering": 120,
-        "legal": 58,
+        "engineering": 817,
+        "business_analyst": 223,
+        "infrastructure_sre": 336,
+        "accounting_finance": 301,
+        "security": 185,
+        "supply_chain": 170,
+        "data_engineering": 121,
+        "legal": 59,
         "management": 94,
         "human_resources": 78,
         "product_management": 17,
         "project_management": 49,
         "mobile": 20,
-        "consulting": 92,
-        "marketing": 54,
+        "consulting": 94,
+        "marketing": 55,
         "arts_entertainment": 2,
         "healthcare": 250,
-        "education": 29,
-        "data_analyst": 24,
+        "education": 30,
+        "data_analyst": 25,
         "public_sector": 2
       },
       "tiers": {
-        "other": 4606,
-        "unicorn": 819,
-        "faang_plus": 889
+        "other": 4646,
+        "unicorn": 821,
+        "faang_plus": 900
       },
       "top_companies": [
         {
@@ -4067,15 +4067,15 @@
         },
         {
           "company": "T-Mobile",
-          "jobs": 194
+          "jobs": 196
         },
         {
           "company": "WSP",
-          "jobs": 154
+          "jobs": 153
         },
         {
           "company": "Raytheon",
-          "jobs": 145
+          "jobs": 148
         },
         {
           "company": "SpaceX",
@@ -4091,16 +4091,16 @@
         },
         {
           "company": "Boeing",
-          "jobs": 96
+          "jobs": 97
         },
         {
           "company": "Booz Allen Hamilton",
           "jobs": 89
         }
       ],
-      "unique_companies": 840,
+      "unique_companies": 847,
       "avg_jobs_per_company": 7.52,
-      "timestamp": "2026-10-14T21:38:33.890184+00:00"
+      "timestamp": "2026-10-14T21:47:48.778055+00:00"
     }
   ]
 }
