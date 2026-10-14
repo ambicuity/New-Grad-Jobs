@@ -8,11 +8,17 @@ from ngj.settings import load_config
 CO = [{"name": "A", "url": "https://x"}]
 
 
-def test_live_config_enables_all_seven_active_sources():
+def test_live_config_enables_all_eight_active_sources():
     registry = source_registry(load_config(Path(__file__).resolve().parents[1] / "config.yml"))
-    assert list(registry) == ["greenhouse", "lever", "ashby", "smartrecruiters", "oracle_hcm", "jobspy", "workday"]
-    assert configured_company_apis(registry) == sum(
-        registry[name].unit_count for name in ("greenhouse", "lever", "ashby", "smartrecruiters", "oracle_hcm", "workday"))
+    boards = ("greenhouse", "lever", "ashby", "smartrecruiters", "oracle_hcm", "rippling")
+    assert list(registry) == [*boards, "jobspy", "workday"]
+    assert configured_company_apis(registry) == sum(registry[name].unit_count for name in (*boards, "workday"))
+
+
+def test_rippling_is_a_board_source_enabled_by_default():
+    registry = source_registry({"apis": {"rippling": {"companies": CO}}})
+    assert list(registry) == ["rippling"] and registry["rippling"].company_api is True
+    assert source_registry({"apis": {"rippling": {"companies": CO, "enabled": False}}}) == {}
 
 
 def test_oracle_hcm_is_a_board_source_enabled_by_default():

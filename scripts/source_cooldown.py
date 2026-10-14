@@ -62,6 +62,10 @@ _PATH_TENANT_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
     ("ashbyhq.com", re.compile(r"^/(?!posting-api/)([^/?#]+)")),
     # api.smartrecruiters.com/v1/companies/<id>/postings
     ("smartrecruiters.com", re.compile(r"^/v\d+/companies/([^/?#]+)")),
+    # ats.rippling.com/api/v2/board/<slug>/jobs
+    ("rippling.com", re.compile(r"^/api/v\d+/board/([^/?#]+)")),
+    # ats.rippling.com/<slug>/jobs/<id>
+    ("rippling.com", re.compile(r"^/(?!api/)([^/?#]+)/jobs")),
     # jobs.smartrecruiters.com/<id>/<posting>
     ("smartrecruiters.com", re.compile(r"^/(?!v\d+/)([^/?#]+)")),
 )

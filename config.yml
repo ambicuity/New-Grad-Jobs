@@ -1267,6 +1267,45 @@ apis:
         url: "https://ejrz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_5001"
       - name: "WSP"
         url: "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001"
+  rippling:
+    # Rippling ATS public board API (no key). The list has no posting date, so
+    # postings whose title can pass the filter also get their detail (date,
+    # description, pay). Every board below was probed live on 2026-10-14 and
+    # returned postings (#397). ("albers-aersopace" is the board's real slug.)
+    max_jobs_per_company: 1000
+    companies:
+      - name: "Albers Aerospace"
+        url: "https://ats.rippling.com/api/v2/board/albers-aersopace/jobs"
+      - name: "Bamboo Health"
+        url: "https://ats.rippling.com/api/v2/board/bamboo-health-careers/jobs"
+      - name: "Cintal"
+        url: "https://ats.rippling.com/api/v2/board/cintal/jobs"
+      - name: "Concept Plus"
+        url: "https://ats.rippling.com/api/v2/board/conceptplus/jobs"
+      - name: "Decision Technologies"
+        url: "https://ats.rippling.com/api/v2/board/decision-technologies-inc/jobs"
+      - name: "Eridu"
+        url: "https://ats.rippling.com/api/v2/board/eridu-ai/jobs"
+      - name: "Flourish and Thrive Labs"
+        url: "https://ats.rippling.com/api/v2/board/flourish-and-thrive-labs/jobs"
+      - name: "Kreate"
+        url: "https://ats.rippling.com/api/v2/board/kreate/jobs"
+      - name: "Lyte"
+        url: "https://ats.rippling.com/api/v2/board/lyte/jobs"
+      - name: "Reserv"
+        url: "https://ats.rippling.com/api/v2/board/reserv/jobs"
+      - name: "Rippling"
+        url: "https://ats.rippling.com/api/v2/board/rippling/jobs"
+      - name: "Sight Machine"
+        url: "https://ats.rippling.com/api/v2/board/sightmachine/jobs"
+      - name: "Swoop"
+        url: "https://ats.rippling.com/api/v2/board/swoopishiring/jobs"
+      - name: "ThreatDown"
+        url: "https://ats.rippling.com/api/v2/board/threatdown/jobs"
+      - name: "Veracity Insurance"
+        url: "https://ats.rippling.com/api/v2/board/veracityinsurance-careers/jobs"
+      - name: "Webull"
+        url: "https://ats.rippling.com/api/v2/board/webull/jobs"
   google:
     # Scrapes the public Google Careers results page (AF_initDataCallback
     # payload; the old /api/v3/search JSON endpoint 404s). Verified working
