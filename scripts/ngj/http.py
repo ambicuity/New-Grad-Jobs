@@ -17,7 +17,7 @@ from __future__ import annotations
 
 import logging
 import threading
-from collections.abc import Callable, Iterator, Sequence
+from collections.abc import Callable, Iterator, Mapping, Sequence
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import contextmanager
 from typing import Any, TypeVar
@@ -260,8 +260,13 @@ def fetch_json_with_retry(
     parse: Callable[[Any], SourceResult | None],
     *,
     timeout: int,
+    json_body: Mapping[str, Any] | None = None,
 ) -> SourceResult:
-    """GET ``url`` once and hand the decoded JSON to ``parse``.
+    """GET ``url`` once (POST ``json_body`` when given) and hand the decoded JSON to ``parse``.
+
+    POST is for read-only search endpoints (UKG). urllib3 never retries POST
+    (:data:`RETRY_ALLOWED_METHODS`), so a 429/5xx on a POST is final here, and
+    a timeout is left to :func:`retry_transient_failures`.
 
     Transient failures (connect/read errors, 429, 5xx) are retried by the
     session's urllib3 policy (:func:`build_retry`) — this function adds no
@@ -285,7 +290,10 @@ def fetch_json_with_retry(
 
     logger.info("Fetching jobs from %s (%s)...", company, source_label)
     try:
-        response = limited_get(url, timeout=timeout)
+        if json_body is None:
+            response = limited_get(url, timeout=timeout)
+        else:
+            response = limited_post(url, json=json_body, timeout=timeout)
     except requests.exceptions.RequestException as exc:
         if is_timeout_error(exc):
             logger.error("  ❌ %s request timed out (timeout=%ss)", company, timeout)

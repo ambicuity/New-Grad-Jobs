@@ -33,6 +33,10 @@ LEVER_URL = "https://api.lever.co/v0/postings/acme"
         ("https://api.smartrecruiters.com/v1/companies/AbbVie/postings?limit=100", "smartrecruiters.com/abbvie"),
         ("https://jobs.smartrecruiters.com/AbbVie/3743990016070676", "smartrecruiters.com/abbvie"),
         ("https://ats.rippling.com/api/v2/board/Cintal/jobs?page=0", "rippling.com/cintal"),
+        # Tenants share recruiting.ultipro.com: one tenant's 403s must not pause the others.
+        ("https://recruiting.ultipro.com/AFL1002/JobBoard/d535/JobBoardView/LoadSearchResults", "ultipro.com/afl1002"),
+        ("https://recruiting2.ultipro.com/BRO1018BRACA/JobBoard/a069/OpportunityDetail?opportunityId=1",
+         "ultipro.com/bro1018braca"),
         ("https://ats.rippling.com/cintal/jobs/99650597-3def", "rippling.com/cintal"),
         ("https://egup.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?x=1",
          "egup.fa.us2.oraclecloud.com"),

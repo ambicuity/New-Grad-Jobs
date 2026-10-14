@@ -47,7 +47,7 @@ confirm the approach and nobody duplicates it. Issues are not formally assigned.
 
 ```
 config.yml ─▶ scripts/update_jobs.py (ngj package)
-               fetch (Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, Workday, JobSpy) → dedup → filter → enrich
+               fetch (Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, UKG, Workday, JobSpy) → dedup → filter → enrich
                └─▶ site/public/{jobs.json, jobs-index.json, descriptions/, feed.xml, health.json}
                     └─▶ vite build (site/) ─▶ GitHub Pages: https://jobs.riteshrana.engineer
 ```
@@ -152,6 +152,10 @@ Keep data logic in `site/src/lib/` as pure functions with tests next to them.
        companies:
          - name: "Webull"
            url: "https://ats.rippling.com/api/v2/board/webull/jobs"
+     ukg:
+       companies:
+         - name: "AFL"
+           url: "https://recruiting.ultipro.com/AFL1002/JobBoard/d535bad2-e3ea-c8c8-2fb2-63621892e293"
      workday:
        companies:
          - name: "Microsoft"

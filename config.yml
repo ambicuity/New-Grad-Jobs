@@ -1306,6 +1306,51 @@ apis:
         url: "https://ats.rippling.com/api/v2/board/veracityinsurance-careers/jobs"
       - name: "Webull"
         url: "https://ats.rippling.com/api/v2/board/webull/jobs"
+  ukg:
+    # UKG Pro Recruiting (UltiPro) public job boards (no key). Each entry is the
+    # job board; the adapter POSTs to its JobBoardView/LoadSearchResults search,
+    # newest first, capped per board. Every board below was probed live on
+    # 2026-10-14 and returned postings (#399).
+    max_jobs_per_company: 1000
+    companies:
+      - name: "Aeroflow Health"
+        url: "https://recruiting.ultipro.com/AER1003ARFL/JobBoard/8ac052e6-225b-46cd-8508-eb54bfdc4f3c"
+      - name: "AFL"
+        url: "https://recruiting.ultipro.com/AFL1002/JobBoard/d535bad2-e3ea-c8c8-2fb2-63621892e293"
+      - name: "Alliance Technical Group"
+        url: "https://recruiting2.ultipro.com/ALL1037ALNC/JobBoard/281665a5-6db2-4e7a-8885-7900fe799f07"
+      - name: "Alpha Omega"
+        url: "https://recruiting.ultipro.com/ALP1013APAO/JobBoard/4db1723d-a288-4922-9a21-754e6e1cf5c4"
+      - name: "Amada"
+        url: "https://recruiting.ultipro.com/AMA1000AMAI/JobBoard/5e5a1f03-7baa-4f11-f6e9-efaa3e3bd82e"
+      - name: "arrivia"
+        url: "https://recruiting.ultipro.com/INT1043EXCUR/JobBoard/ad5e5978-552f-4ef7-90c8-70ebb0a57994"
+      - name: "Brown and Caldwell"
+        url: "https://recruiting2.ultipro.com/BRO1018BRACA/JobBoard/a06992cf-10e7-4e24-8932-26d607a3049e"
+      - name: "Cleveland Guardians"
+        url: "https://recruiting.ultipro.com/CLE1000TRIBE/JobBoard/238e1889-8939-44ff-b2ab-ec69103cdd0d"
+      - name: "Community Health Center of Snohomish County"
+        url: "https://recruiting2.ultipro.com/com1101cmhs/JobBoard/8de41890-2fe6-4347-b1ad-f3043de88a1a"
+      - name: "Gen II"
+        url: "https://recruiting.ultipro.com/GEN1035GENFU/JobBoard/9ccf9681-5b6b-44d6-87dc-a0462f75a6e3"
+      - name: "Gray Media"
+        url: "https://recruiting.ultipro.com/GRA1017GRYT/JobBoard/ae441110-89bd-444d-8ad2-b76c7b9db7a9"
+      - name: "Hotwire Communications"
+        url: "https://recruiting.ultipro.com/HOT1009HWC/JobBoard/047e3ef0-0c1c-4be3-97ce-617f4fcbc50c"
+      - name: "John Knox Village"
+        url: "https://recruiting2.ultipro.com/joh1002jnox/JobBoard/b0448117-8792-422c-909a-d8cad08a1a2e"
+      - name: "Modern Woodmen of America"
+        url: "https://recruiting.ultipro.com/mod1003mwa/JobBoard/8990acfc-04f3-d65f-0565-a772e1a0157b"
+      - name: "PowerSecure"
+        url: "https://recruiting.ultipro.com/POW1009POWS/JobBoard/42398959-f1c7-48da-a3e2-94e525e29808"
+      - name: "Rocky Brands"
+        url: "https://recruiting.ultipro.com/ROC1011RBD/JobBoard/7e2cec98-83e5-418d-9e0e-1a03210a5c51"
+      - name: "RubinBrown LLP"
+        url: "https://recruiting.ultipro.com/rub1001rubin/JobBoard/3688e7ba-ac29-44a9-9775-cbd291bb6fa7"
+      - name: "Scripps Research"
+        url: "https://recruiting2.ultipro.com/SCR1003TSRI/JobBoard/98759e7d-7ede-4c0b-ac7b-2c6293c7b522"
+      - name: "Toshiba America"
+        url: "https://toshibausa.rec.pro.ukg.net/tos1004tshb/JobBoard/985e2423-dec5-4284-acff-4c6fcb30f1e4"
   google:
     # Scrapes the public Google Careers results page (AF_initDataCallback
     # payload; the old /api/v3/search JSON endpoint 404s). Verified working
