@@ -184,8 +184,8 @@ class TestPaging:
         assert all(parse_qs(c.split("?")[1])["pageSize"][0] == str(PAGE_SIZE) for c in list_calls)
 
     def test_cap_bounds_pages_and_postings(self):
-        many = [_item(str(i), name="Senior Developer") for i in range(PAGE_SIZE)]
-        api = _Api({i: _response(200, _list(many, total_pages=50)) for i in range(50)})
+        api = _Api({i: _response(200, _list([_item(f"{i}-{j}", name="Senior Developer") for j in range(PAGE_SIZE)],
+                                            total_pages=50)) for i in range(50)})
         result = _fetch(api, max_jobs=150)
         assert len(result.jobs) == 150
         assert len([c for c in api.calls if c.split("?")[0].endswith("/jobs")]) == 2
@@ -283,3 +283,22 @@ class TestFetchAll:
             result = fetch_all_rippling_jobs(companies, settings, filtering=FILTERING)
         assert [j["company"] for j in result.jobs] == ["Cintal"]
         assert [(e.company, e.status) for e in result.errors] == [("Broken", 404)]
+
+
+class TestOneRowPerLocation:
+    """The board list returns one row per location for the same posting (Rippling's own
+    board: 609 rows, ~400 postings). Rows are merged into one job per posting id."""
+
+    def test_rows_of_one_posting_merge_their_locations_and_fetch_the_detail_once(self):
+        sf = _item("a")
+        sf["locations"] = [{"name": "San Francisco, CA", "workplaceType": "ON_SITE"}]
+        ny = _item("a")
+        ny["locations"] = [{"name": "New York, NY", "workplaceType": "ON_SITE"},
+                           {"name": "San Francisco, CA", "workplaceType": "ON_SITE"}]
+        api = _Api({0: _response(200, _list([sf, _item("b", name="Senior Developer"), ny]))},
+                   {"a": _response(200, _detail("a"))})
+        result = _fetch(api)
+        assert [j["url"].rsplit("/", 1)[1] for j in result.jobs] == ["a", "b"]
+        assert result.jobs[0]["location"] == "San Francisco, CA; New York, NY"
+        assert [c.rsplit("/", 1)[1] for c in api.detail_calls()] == ["a"]
+        assert result.raw_count == 2
