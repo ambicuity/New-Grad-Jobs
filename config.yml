@@ -1351,6 +1351,19 @@ apis:
         url: "https://recruiting2.ultipro.com/SCR1003TSRI/JobBoard/98759e7d-7ede-4c0b-ac7b-2c6293c7b522"
       - name: "Toshiba America"
         url: "https://toshibausa.rec.pro.ukg.net/tos1004tshb/JobBoard/985e2423-dec5-4284-acff-4c6fcb30f1e4"
+  adp:
+    # ADP Workforce Now public career centers (no key). Each entry is the career
+    # center (cid = tenant); the adapter pages the same tenant's requisition list
+    # (20 rows per page, newest first). Every tenant below was probed live on
+    # 2026-10-14 and returned postings (#402). ADP MyJobs is not covered (#316).
+    max_jobs_per_company: 1000
+    companies:
+      - name: "Arcarithm"
+        url: "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=2ac19c2c-cd24-4fd1-8ab6-b1d93b864c78"
+      - name: "Moran Environmental Recovery"
+        url: "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=7c116ec3-ef0f-42e8-8bf0-491739a45ba3"
+      - name: "nou Systems"
+        url: "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=9e26f425-d064-4c19-9e7b-cc8236837a7c"
   google:
     # Scrapes the public Google Careers results page (AF_initDataCallback
     # payload; the old /api/v3/search JSON endpoint 404s). Verified working

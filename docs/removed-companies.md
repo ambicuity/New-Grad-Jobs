@@ -5,6 +5,13 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-14 — ADP Workforce Now source (3 career centers)
+
+The new ADP adapter (#402) adds the 3 ADP Workforce Now career centers linked from the 30-day
+applied-jobs export (#390): Arcarithm, Moran Environmental Recovery and nou Systems. Each `cid` was
+probed live on 2026-10-14 and returned postings. The 10 ADP MyJobs employers in the same export are
+not covered: that API requires a per-tenant `orgoid` header (#316).
+
 ## 2026-10-14 — UKG Pro Recruiting source (19 job boards)
 
 The new UKG adapter (#399) adds the 19 UKG Pro Recruiting (UltiPro) job boards linked from the

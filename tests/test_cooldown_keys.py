@@ -33,6 +33,12 @@ LEVER_URL = "https://api.lever.co/v0/postings/acme"
         ("https://api.smartrecruiters.com/v1/companies/AbbVie/postings?limit=100", "smartrecruiters.com/abbvie"),
         ("https://jobs.smartrecruiters.com/AbbVie/3743990016070676", "smartrecruiters.com/abbvie"),
         ("https://ats.rippling.com/api/v2/board/Cintal/jobs?page=0", "rippling.com/cintal"),
+        # ADP Workforce Now: every tenant shares one host; the tenant is the cid query param.
+        ("https://workforcenow.adp.com/mascsr/default/careercenter/public/events/staffing/v1/job-requisitions"
+         "?cid=7C116EC3-ef0f&$top=20", "adp.com/7c116ec3-ef0f"),
+        ("https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=7c116ec3-ef0f&jobId=1",
+         "adp.com/7c116ec3-ef0f"),
+        ("https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html", "workforcenow.adp.com"),
         # Tenants share recruiting.ultipro.com: one tenant's 403s must not pause the others.
         ("https://recruiting.ultipro.com/AFL1002/JobBoard/d535/JobBoardView/LoadSearchResults", "ultipro.com/afl1002"),
         ("https://recruiting2.ultipro.com/BRO1018BRACA/JobBoard/a069/OpportunityDetail?opportunityId=1",

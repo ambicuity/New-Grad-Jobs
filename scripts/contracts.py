@@ -35,6 +35,10 @@ JOB_ID_RE = re.compile(rf"^{JOB_ID_PREFIX}[0-9a-f]{{{JOB_ID_HEX_CHARS}}}$")
 # Query params that identify the posting itself (kept by canonical_url). UKG Pro
 # Recruiting puts its posting id only in the query (OpportunityDetail?opportunityId=).
 ID_QUERY_PARAMS = frozenset({"gh_jid", "jk", "vjk", "jobid", "job_id", "jid", "id", "currentjobid", "opportunityid"})
+# Extra id params on hosts where the posting id is only unique per tenant. ADP
+# Workforce Now's jobId is per company (cid); elsewhere cid is usually a
+# campaign id, so it is kept on that host only.
+HOST_ID_QUERY_PARAMS: dict[str, frozenset[str]] = {"workforcenow.adp.com": frozenset({"cid"})}
 
 _DEFAULT_PORTS = {"http": 80, "https": 443}
 
@@ -72,8 +76,8 @@ def canonical_url(url: Any) -> str:
     """Return a canonical form of a posting URL, or "" when it is not an http(s) URL.
 
     scheme + lowercased host (default port dropped) + path without a trailing
-    slash; the query keeps only posting-id params (:data:`ID_QUERY_PARAMS`,
-    sorted); fragment dropped. Path case is preserved (ATS ids are
+    slash; the query keeps only posting-id params (:data:`ID_QUERY_PARAMS`, plus
+    :data:`HOST_ID_QUERY_PARAMS` for the host; sorted); fragment dropped. Path case is preserved (ATS ids are
     case-sensitive).
     """
     if not isinstance(url, str) or not url.strip():
@@ -89,10 +93,11 @@ def canonical_url(url: Any) -> str:
         return ""
     netloc = host if port in (None, _DEFAULT_PORTS[scheme]) else f"{host}:{port}"
     path = re.sub(r"/{2,}", "/", parts.path).rstrip("/")
+    id_params = ID_QUERY_PARAMS | HOST_ID_QUERY_PARAMS.get(host.lower(), frozenset())
     kept = sorted(
         (key.lower(), value)
         for key, value in parse_qsl(parts.query, keep_blank_values=False)
-        if key.lower() in ID_QUERY_PARAMS
+        if key.lower() in id_params
     )
     return urlunsplit((scheme, netloc, path, urlencode(kept), ""))
 

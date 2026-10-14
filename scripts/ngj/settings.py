@@ -50,6 +50,8 @@ DEFAULT_SMARTRECRUITERS_MAX_WORKERS = 4
 DEFAULT_ORACLE_HCM_MAX_WORKERS = 4
 DEFAULT_RIPPLING_MAX_WORKERS = 6
 DEFAULT_UKG_MAX_WORKERS = 6
+# Every ADP Workforce Now tenant shares one host.
+DEFAULT_ADP_MAX_WORKERS = 4
 DEFAULT_GRAPHQL_MIN_WORKERS = 8
 DEFAULT_GRAPHQL_MAX_WORKERS = 80
 DEFAULT_JOBSPY_WORKERS = 25
@@ -82,6 +84,8 @@ DEFAULT_ORACLE_HCM_MAX_SECONDS_PER_COMPANY = 300
 DEFAULT_RIPPLING_MAX_JOBS_PER_COMPANY = 1000
 # UKG boards are newest first; the cap bounds search pages (Gray Media: ~500 postings).
 DEFAULT_UKG_MAX_JOBS_PER_COMPANY = 1000
+# ADP pages hold at most 20 rows, so the cap also bounds requests (50 pages).
+DEFAULT_ADP_MAX_JOBS_PER_COMPANY = 1000
 
 DEFAULT_GOOGLE_MAX_PAGES = 3
 DEFAULT_GRAPHQL_MAX_JOBS_PER_SOURCE = 200
@@ -120,6 +124,7 @@ class Settings:
     oracle_hcm_max_workers: int = DEFAULT_ORACLE_HCM_MAX_WORKERS
     rippling_max_workers: int = DEFAULT_RIPPLING_MAX_WORKERS
     ukg_max_workers: int = DEFAULT_UKG_MAX_WORKERS
+    adp_max_workers: int = DEFAULT_ADP_MAX_WORKERS
     graphql_min_workers: int = DEFAULT_GRAPHQL_MIN_WORKERS
     graphql_max_workers: int = DEFAULT_GRAPHQL_MAX_WORKERS
     jobspy_workers: int = DEFAULT_JOBSPY_WORKERS
@@ -144,6 +149,7 @@ class Settings:
 
     rippling_max_jobs_per_company: int = DEFAULT_RIPPLING_MAX_JOBS_PER_COMPANY
     ukg_max_jobs_per_company: int = DEFAULT_UKG_MAX_JOBS_PER_COMPANY
+    adp_max_jobs_per_company: int = DEFAULT_ADP_MAX_JOBS_PER_COMPANY
 
     google_enabled: bool = False
     google_max_pages: int = DEFAULT_GOOGLE_MAX_PAGES
@@ -212,6 +218,7 @@ def build_settings(
     oracle_hcm = _section(config, "apis", "oracle_hcm")
     rippling = _section(config, "apis", "rippling")
     ukg = _section(config, "apis", "ukg")
+    adp = _section(config, "apis", "adp")
     google = _section(config, "apis", "google")
     graphql = _section(config, "apis", "graphql")
     jobspy = _section(config, "apis", "jobspy")
@@ -237,6 +244,7 @@ def build_settings(
         oracle_hcm_max_workers=pool("oracle_hcm_max_workers", DEFAULT_ORACLE_HCM_MAX_WORKERS),
         rippling_max_workers=pool("rippling_max_workers", DEFAULT_RIPPLING_MAX_WORKERS),
         ukg_max_workers=pool("ukg_max_workers", DEFAULT_UKG_MAX_WORKERS),
+        adp_max_workers=pool("adp_max_workers", DEFAULT_ADP_MAX_WORKERS),
         graphql_min_workers=pool("graphql_min_workers", DEFAULT_GRAPHQL_MIN_WORKERS),
         graphql_max_workers=pool("graphql_max_workers", DEFAULT_GRAPHQL_MAX_WORKERS),
         jobspy_workers=pool("jobspy_workers", DEFAULT_JOBSPY_WORKERS),
@@ -277,6 +285,8 @@ def build_settings(
             "apis.rippling.max_jobs_per_company"),
         ukg_max_jobs_per_company=coerce_positive_int(
             ukg.get("max_jobs_per_company"), DEFAULT_UKG_MAX_JOBS_PER_COMPANY, "apis.ukg.max_jobs_per_company"),
+        adp_max_jobs_per_company=coerce_positive_int(
+            adp.get("max_jobs_per_company"), DEFAULT_ADP_MAX_JOBS_PER_COMPANY, "apis.adp.max_jobs_per_company"),
         # Historical default: a google section without `enabled` runs.
         google_enabled=bool(google.get("enabled", True)),
         google_max_pages=coerce_positive_int(google_pages, DEFAULT_GOOGLE_MAX_PAGES, "apis.google.max_pages"),
@@ -304,6 +314,7 @@ def describe_settings(settings: Settings) -> None:
     logger.info("     Rippling: up to %s, max_per_company=%s",
                 settings.rippling_max_workers, settings.rippling_max_jobs_per_company)
     logger.info("     UKG: up to %s, max_per_company=%s", settings.ukg_max_workers, settings.ukg_max_jobs_per_company)
+    logger.info("     ADP: up to %s, max_per_company=%s", settings.adp_max_workers, settings.adp_max_jobs_per_company)
     logger.info("     GraphQL: %s-%s", settings.graphql_min_workers, settings.graphql_max_workers)
     logger.info("     JobSpy: %s", settings.jobspy_workers)
     logger.info("     Orchestrator: %s", settings.orchestrator_workers)

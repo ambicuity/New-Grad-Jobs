@@ -53,6 +53,11 @@ def _payload(jobs):
      'https://recruiting.ultipro.com/AFL1002/JobBoard/d535/OpportunityDetail?opportunityid=9da3'),
     # Like jk / id, the rule is host-independent: any opportunityId is kept as an id.
     ('https://careers.example.com/view?opportunityId=42&src=li', 'https://careers.example.com/view?opportunityid=42'),
+    # ADP Workforce Now: jobId is only unique within a company (cid), so cid is kept there...
+    ('https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=7C11-ab&jobId=595411&lang=en_US',
+     'https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=7C11-ab&jobid=595411'),
+    # ...and only there: elsewhere cid is usually a campaign id and must not split duplicates.
+    ('https://careers.example.com/job?jobId=77&cid=email', 'https://careers.example.com/job?jobid=77'),
 ])
 def test_canonical_url_strips_tracking_and_normalizes(raw, expected):
     assert canonical_url(raw) == expected
