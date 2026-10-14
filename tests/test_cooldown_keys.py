@@ -33,6 +33,9 @@ LEVER_URL = "https://api.lever.co/v0/postings/acme"
         ("https://api.smartrecruiters.com/v1/companies/AbbVie/postings?limit=100", "smartrecruiters.com/abbvie"),
         ("https://jobs.smartrecruiters.com/AbbVie/3743990016070676", "smartrecruiters.com/abbvie"),
         ("https://ats.rippling.com/api/v2/board/Cintal/jobs?page=0", "rippling.com/cintal"),
+        # Workable: every account shares apply.workable.com; the account slug is the tenant.
+        ("https://apply.workable.com/api/v1/widget/accounts/Credence", "workable.com/credence"),
+        ("https://apply.workable.com/credence/j/053C4602C2", "workable.com/credence"),
         # ADP Workforce Now: every tenant shares one host; the tenant is the cid query param.
         ("https://workforcenow.adp.com/mascsr/default/careercenter/public/events/staffing/v1/job-requisitions"
          "?cid=7C116EC3-ef0f&$top=20", "adp.com/7c116ec3-ef0f"),

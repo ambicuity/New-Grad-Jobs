@@ -1364,6 +1364,23 @@ apis:
         url: "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=7c116ec3-ef0f-42e8-8bf0-491739a45ba3"
       - name: "nou Systems"
         url: "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=9e26f425-d064-4c19-9e7b-cc8236837a7c"
+  workable:
+    # Workable public account widgets (no key). One request per account; rows
+    # repeated per location are merged per posting. Every account below was
+    # probed live on 2026-10-14 and returned postings (#404). Direct employers
+    # only: recruiters posting for unnamed clients are left out (see
+    # docs/removed-companies.md).
+    companies:
+      - name: "Credence"
+        url: "https://apply.workable.com/api/v1/widget/accounts/credence"
+      - name: "InterImage"
+        url: "https://apply.workable.com/api/v1/widget/accounts/interimage"
+      - name: "Texas Sports Academy"
+        url: "https://apply.workable.com/api/v1/widget/accounts/texas-sports-academy-main"
+      - name: "TP-Link Systems"
+        url: "https://apply.workable.com/api/v1/widget/accounts/tp-link-usa-corp"
+      - name: "Zifo"
+        url: "https://apply.workable.com/api/v1/widget/accounts/zifo"
   google:
     # Scrapes the public Google Careers results page (AF_initDataCallback
     # payload; the old /api/v3/search JSON endpoint 404s). Verified working

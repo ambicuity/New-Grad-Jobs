@@ -64,6 +64,10 @@ _PATH_TENANT_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
     ("smartrecruiters.com", re.compile(r"^/v\d+/companies/([^/?#]+)")),
     # recruiting[N].ultipro.com/<tenant>/JobBoard/... (many tenants share the host)
     ("ultipro.com", re.compile(r"^/([^/?#]+)/JobBoard")),
+    # apply.workable.com/api/v1/widget/accounts/<slug>
+    ("workable.com", re.compile(r"^/api/v\d+/widget/accounts/([^/?#]+)")),
+    # apply.workable.com/<slug>/j/<shortcode>
+    ("workable.com", re.compile(r"^/(?!api/|j/)([^/?#]+)/j/")),
     # ats.rippling.com/api/v2/board/<slug>/jobs
     ("rippling.com", re.compile(r"^/api/v\d+/board/([^/?#]+)")),
     # ats.rippling.com/<slug>/jobs/<id>

@@ -42,7 +42,7 @@ from sync_readme_counts import apply_counts_to_readme
 logger = logging.getLogger(__name__)
 
 # Company-API sources, in README presentation order.
-BOARD_SOURCES: tuple[str, ...] = ("greenhouse", "ashby", "workday", "lever", "smartrecruiters", "oracle_hcm", "rippling", "ukg", "adp")
+BOARD_SOURCES: tuple[str, ...] = ("greenhouse", "ashby", "workday", "lever", "smartrecruiters", "oracle_hcm", "rippling", "ukg", "adp", "workable")
 SOURCE_LABELS: dict[str, str] = {
     "greenhouse": "Greenhouse",
     "ashby": "Ashby",
@@ -53,6 +53,7 @@ SOURCE_LABELS: dict[str, str] = {
     "rippling": "Rippling",
     "ukg": "UKG",
     "adp": "ADP",
+    "workable": "Workable",
 }
 
 START_MARKER = (

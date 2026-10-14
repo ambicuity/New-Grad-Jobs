@@ -114,6 +114,12 @@ def test_oracle_hcm_knobs(tmp_path):
         200, 20, 2)
 
 
+def test_workable_knobs(tmp_path):
+    assert build_settings(_config(), env={}, repo_root=tmp_path).workable_max_workers == 4
+    config = {"worker_pools": {"workable_max_workers": 2}}
+    assert build_settings(config, env={}, repo_root=tmp_path).workable_max_workers == 2
+
+
 def test_adp_knobs(tmp_path):
     defaults = build_settings(_config(), env={}, repo_root=tmp_path)
     assert (defaults.adp_max_jobs_per_company, defaults.adp_max_workers) == (1000, 4)

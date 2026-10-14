@@ -5,6 +5,18 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-14 — Workable source (5 accounts added, 3 recruiters left out)
+
+The new Workable adapter (#404) adds the direct employers among the 8 Workable accounts linked from
+the applied-jobs exports (#388, #390), each probed live on 2026-10-14: Credence (`credence`),
+InterImage (`interimage`), Texas Sports Academy (`texas-sports-academy-main`), TP-Link Systems
+(`tp-link-usa-corp`) and Zifo (`zifo`).
+
+**Not added (owner decision):** recruiters that post for unnamed client companies, which the board
+would list as the employer. Raydar (`raydar`, a talent network; 146 curated postings that day),
+Weekday AI (`weekday-1`, a hiring platform; 25) and Sapsol Technologies (`sapsol-technologies-inc-7`,
+IT staffing; 6). Re-adding them needs an owner decision, not just a working endpoint.
+
 ## 2026-10-14 — ADP Workforce Now source (3 career centers)
 
 The new ADP adapter (#402) adds the 3 ADP Workforce Now career centers linked from the 30-day

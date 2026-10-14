@@ -667,6 +667,7 @@ This repository automatically scrapes new graduate job opportunities from variou
 - **Rippling**: <!-- COUNT:boards_rippling -->16<!-- /COUNT --> configured boards (Rippling, Webull, Lyte, Eridu, …); postings that can pass the filter get their date, description and pay from the detail endpoint.
 - **UKG Pro Recruiting**: <!-- COUNT:boards_ukg -->19<!-- /COUNT --> configured job boards (AFL, Gray Media, Brown and Caldwell, Scripps Research, Toshiba America, …), searched newest first.
 - **ADP Workforce Now**: <!-- COUNT:boards_adp -->3<!-- /COUNT --> configured career centers (Moran Environmental Recovery, Arcarithm, nou Systems).
+- **Workable**: <!-- COUNT:boards_workable -->5<!-- /COUNT --> configured direct employers (Credence, TP-Link Systems, Zifo, …); recruiters posting for unnamed clients are not included.
 - **JobSpy**: aggregation layer over Indeed (LinkedIn is disabled because of rate limits), searched in the US, Canada and India.
 - **Community Submissions**: User-submitted jobs via GitHub Issues.
 
@@ -704,7 +705,7 @@ The full dataset is published at [`https://jobs.riteshrana.engineer/jobs.json`](
 | `url` | string | direct link to the posting on the source ATS |
 | `posted_at` | ISO 8601 | when the employer posted the role |
 | `first_seen` | ISO 8601 | when this board first saw the job (carried forward across runs; orders `feed.xml`) |
-| `source` | string | one of `Greenhouse`, `Ashby`, `Workday`, `Lever`, `SmartRecruiters`, `Oracle HCM`, `Rippling`, `UKG`, `ADP`, `JobSpy (Indeed)` (`GraphQL` when enabled) |
+| `source` | string | one of `Greenhouse`, `Ashby`, `Workday`, `Lever`, `SmartRecruiters`, `Oracle HCM`, `Rippling`, `UKG`, `ADP`, `Workable`, `JobSpy (Indeed)` (`GraphQL` when enabled) |
 | `category` | object | `{id, name, emoji}` — one of the 30 categories (`CATEGORY_PATTERNS` in `scripts/ngj/taxonomy.py`) |
 | `company_tier` | object | `{tier, emoji, label, sectors}` — FAANG+ / unicorn / other |
 | `flags` | object | `{no_sponsorship, us_citizenship_required}` |
@@ -723,7 +724,7 @@ The site itself loads two lighter artifacts generated alongside it:
 ### Companies Monitored
 
 <details>
-<summary>Click to expand the configured list (<!-- COUNT:boards_total -->662<!-- /COUNT --> boards)</summary>
+<summary>Click to expand the configured list (<!-- COUNT:boards_total -->667<!-- /COUNT --> boards)</summary>
 
 <!-- COMPANY-LISTINGS:START - auto-generated from config.yml by scripts/sync_readme_companies.py; do not edit by hand -->
 
@@ -744,6 +745,8 @@ The site itself loads two lighter artifacts generated alongside it:
 **UKG (19)**: Aeroflow Health, AFL, Alliance Technical Group, Alpha Omega, Amada, arrivia, Brown and Caldwell, Cleveland Guardians, Community Health Center of Snohomish County, Gen II, Gray Media, Hotwire Communications, John Knox Village, Modern Woodmen of America, PowerSecure, Rocky Brands, RubinBrown LLP, Scripps Research, Toshiba America
 
 **ADP (3)**: Arcarithm, Moran Environmental Recovery, nou Systems
+
+**Workable (5)**: Credence, InterImage, Texas Sports Academy, TP-Link Systems, Zifo
 
 <!-- COMPANY-LISTINGS:END -->
 
