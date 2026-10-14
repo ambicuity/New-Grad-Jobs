@@ -43,6 +43,9 @@ DEFAULT_GREENHOUSE_MAX_WORKERS = 300
 DEFAULT_LEVER_MIN_WORKERS = 15
 DEFAULT_LEVER_MAX_WORKERS = 200
 DEFAULT_ASHBY_MAX_WORKERS = 10
+# SmartRecruiters pages are sequential per company; a few companies at a time
+# keeps the shared API host at a polite request rate.
+DEFAULT_SMARTRECRUITERS_MAX_WORKERS = 4
 DEFAULT_GRAPHQL_MIN_WORKERS = 8
 DEFAULT_GRAPHQL_MAX_WORKERS = 80
 DEFAULT_JOBSPY_WORKERS = 25
@@ -60,6 +63,11 @@ DEFAULT_WORKDAY_KEYWORD_WORKERS = 3
 # Per-company time budget: a slow tenant (RBC: ~7s per search page) keeps the
 # pages fetched so far instead of becoming the long pole of the whole run.
 DEFAULT_WORKDAY_MAX_SECONDS_PER_COMPANY = 45
+
+# One SmartRecruiters query per target country; results are newest first, and
+# 1000 reach back about two months at AbbVie (~1.2k US postings).
+DEFAULT_SMARTRECRUITERS_COUNTRIES: tuple[str, ...] = ("us", "ca", "in")
+DEFAULT_SMARTRECRUITERS_MAX_JOBS_PER_COUNTRY = 1000
 
 DEFAULT_GOOGLE_MAX_PAGES = 3
 DEFAULT_GRAPHQL_MAX_JOBS_PER_SOURCE = 200
@@ -94,6 +102,7 @@ class Settings:
     lever_min_workers: int = DEFAULT_LEVER_MIN_WORKERS
     lever_max_workers: int = DEFAULT_LEVER_MAX_WORKERS
     ashby_max_workers: int = DEFAULT_ASHBY_MAX_WORKERS
+    smartrecruiters_max_workers: int = DEFAULT_SMARTRECRUITERS_MAX_WORKERS
     graphql_min_workers: int = DEFAULT_GRAPHQL_MIN_WORKERS
     graphql_max_workers: int = DEFAULT_GRAPHQL_MAX_WORKERS
     jobspy_workers: int = DEFAULT_JOBSPY_WORKERS
@@ -107,6 +116,9 @@ class Settings:
     workday_search_keywords: tuple[str, ...] = ()
     workday_max_jobs_per_keyword: int = DEFAULT_WORKDAY_MAX_JOBS_PER_KEYWORD
     workday_max_seconds_per_company: int = DEFAULT_WORKDAY_MAX_SECONDS_PER_COMPANY
+
+    smartrecruiters_countries: tuple[str, ...] = DEFAULT_SMARTRECRUITERS_COUNTRIES
+    smartrecruiters_max_jobs_per_country: int = DEFAULT_SMARTRECRUITERS_MAX_JOBS_PER_COUNTRY
 
     google_enabled: bool = False
     google_max_pages: int = DEFAULT_GOOGLE_MAX_PAGES
@@ -171,6 +183,7 @@ def build_settings(
     pools = _section(config, "worker_pools")
     workday = _section(config, "apis", "workday")
     workday_search = _section(config, "apis", "workday", "search_filters")
+    smartrecruiters = _section(config, "apis", "smartrecruiters")
     google = _section(config, "apis", "google")
     graphql = _section(config, "apis", "graphql")
     jobspy = _section(config, "apis", "jobspy")
@@ -192,6 +205,7 @@ def build_settings(
         lever_min_workers=pool("lever_min_workers", DEFAULT_LEVER_MIN_WORKERS),
         lever_max_workers=pool("lever_max_workers", DEFAULT_LEVER_MAX_WORKERS),
         ashby_max_workers=pool("ashby_max_workers", DEFAULT_ASHBY_MAX_WORKERS),
+        smartrecruiters_max_workers=pool("smartrecruiters_max_workers", DEFAULT_SMARTRECRUITERS_MAX_WORKERS),
         graphql_min_workers=pool("graphql_min_workers", DEFAULT_GRAPHQL_MIN_WORKERS),
         graphql_max_workers=pool("graphql_max_workers", DEFAULT_GRAPHQL_MAX_WORKERS),
         jobspy_workers=pool("jobspy_workers", DEFAULT_JOBSPY_WORKERS),
@@ -213,6 +227,11 @@ def build_settings(
         workday_max_seconds_per_company=coerce_positive_int(
             workday.get("max_seconds_per_company"), DEFAULT_WORKDAY_MAX_SECONDS_PER_COMPANY,
             "apis.workday.max_seconds_per_company"),
+        smartrecruiters_countries=tuple(c.lower() for c in _string_tuple(smartrecruiters.get("countries")))
+        or DEFAULT_SMARTRECRUITERS_COUNTRIES,
+        smartrecruiters_max_jobs_per_country=coerce_positive_int(
+            smartrecruiters.get("max_jobs_per_country"), DEFAULT_SMARTRECRUITERS_MAX_JOBS_PER_COUNTRY,
+            "apis.smartrecruiters.max_jobs_per_country"),
         # Historical default: a google section without `enabled` runs.
         google_enabled=bool(google.get("enabled", True)),
         google_max_pages=coerce_positive_int(google_pages, DEFAULT_GOOGLE_MAX_PAGES, "apis.google.max_pages"),
@@ -231,6 +250,9 @@ def describe_settings(settings: Settings) -> None:
     logger.info("     Greenhouse: %s-%s", settings.greenhouse_min_workers, settings.greenhouse_max_workers)
     logger.info("     Lever: %s-%s", settings.lever_min_workers, settings.lever_max_workers)
     logger.info("     Ashby: up to %s", settings.ashby_max_workers)
+    logger.info("     SmartRecruiters: up to %s, countries=%s, max_per_country=%s",
+                settings.smartrecruiters_max_workers, ",".join(settings.smartrecruiters_countries),
+                settings.smartrecruiters_max_jobs_per_country)
     logger.info("     GraphQL: %s-%s", settings.graphql_min_workers, settings.graphql_max_workers)
     logger.info("     JobSpy: %s", settings.jobspy_workers)
     logger.info("     Orchestrator: %s", settings.orchestrator_workers)

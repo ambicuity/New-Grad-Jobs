@@ -47,7 +47,7 @@ confirm the approach and nobody duplicates it. Issues are not formally assigned.
 
 ```
 config.yml ─▶ scripts/update_jobs.py (ngj package)
-               fetch (Greenhouse, Lever, Ashby, Workday, JobSpy) → dedup → filter → enrich
+               fetch (Greenhouse, Lever, Ashby, SmartRecruiters, Workday, JobSpy) → dedup → filter → enrich
                └─▶ site/public/{jobs.json, jobs-index.json, descriptions/, feed.xml, health.json}
                     └─▶ vite build (site/) ─▶ GitHub Pages: https://jobs.riteshrana.engineer
 ```
@@ -140,6 +140,10 @@ Keep data logic in `site/src/lib/` as pure functions with tests next to them.
        companies:
          - name: "OpenAI"
            url: "https://api.ashbyhq.com/posting-api/job-board/openai"
+     smartrecruiters:
+       companies:
+         - name: "ServiceNow"
+           url: "https://api.smartrecruiters.com/v1/companies/ServiceNow/postings"
      workday:
        companies:
          - name: "Microsoft"
@@ -147,7 +151,8 @@ Keep data logic in `site/src/lib/` as pure functions with tests next to them.
    ```
 
 3. Check that the endpoint returns jobs, for example with
-   `curl -s <url> | head -c 500`. For Workday, open the careers page in a browser.
+   `curl -s <url> | head -c 500`. For SmartRecruiters, check that `totalFound` is above 0:
+   an unknown company id still answers HTTP 200. For Workday, open the careers page in a browser.
 4. Validate the config. This checks required keys, URL shape per ATS, duplicates and
    numeric ranges:
 

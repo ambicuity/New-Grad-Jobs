@@ -8,11 +8,18 @@ from ngj.settings import load_config
 CO = [{"name": "A", "url": "https://x"}]
 
 
-def test_live_config_enables_all_five_active_sources_including_ashby():
+def test_live_config_enables_all_six_active_sources():
     registry = source_registry(load_config(Path(__file__).resolve().parents[1] / "config.yml"))
-    assert list(registry) == ["greenhouse", "lever", "ashby", "jobspy", "workday"]
+    assert list(registry) == ["greenhouse", "lever", "ashby", "smartrecruiters", "jobspy", "workday"]
     assert configured_company_apis(registry) == sum(
-        registry[name].unit_count for name in ("greenhouse", "lever", "ashby", "workday"))
+        registry[name].unit_count for name in ("greenhouse", "lever", "ashby", "smartrecruiters", "workday"))
+
+
+def test_smartrecruiters_is_a_board_source_enabled_by_default():
+    registry = source_registry({"apis": {"smartrecruiters": {"companies": CO}}})
+    assert list(registry) == ["smartrecruiters"]
+    assert registry["smartrecruiters"].company_api is True
+    assert source_registry({"apis": {"smartrecruiters": {"companies": CO, "enabled": False}}}) == {}
 
 
 def test_defaults_and_enabled_flags():

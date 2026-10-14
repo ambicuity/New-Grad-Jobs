@@ -41,6 +41,7 @@ from ngj.sources.graphql import fetch_all_graphql_jobs
 from ngj.sources.greenhouse import fetch_all_greenhouse_jobs, hydrate_greenhouse_descriptions
 from ngj.sources.jobspy import fetch_jobspy_jobs
 from ngj.sources.lever import fetch_all_lever_jobs
+from ngj.sources.smartrecruiters import fetch_all_smartrecruiters_jobs
 from ngj.sources.workday import build_title_prefilter, fetch_workday_jobs
 from ngj.util import sanitize_nan
 from url_safety import filter_safe_jobs
@@ -92,6 +93,8 @@ def plan_sources(config: Mapping[str, Any], settings: Settings) -> dict[str, Sou
             return partial(fetch_all_lever_jobs, units, settings)
         if name == 'ashby':
             return partial(fetch_all_ashby_jobs, units, settings)
+        if name == 'smartrecruiters':
+            return partial(fetch_all_smartrecruiters_jobs, units, settings)
         if name == 'google':
             return partial(fetch_google_jobs, units, max_pages=settings.google_max_pages,
                            timeout=settings.http_timeout)
