@@ -46,6 +46,7 @@ from ngj.sources.oracle_hcm import fetch_all_oracle_hcm_jobs
 from ngj.sources.paylocity import fetch_all_paylocity_jobs
 from ngj.sources.rippling import fetch_all_rippling_jobs
 from ngj.sources.smartrecruiters import fetch_all_smartrecruiters_jobs
+from ngj.sources.successfactors import fetch_all_successfactors_jobs
 from ngj.sources.ukg import fetch_all_ukg_jobs
 from ngj.sources.workable import fetch_all_workable_jobs
 from ngj.sources.workday import build_title_prefilter, fetch_workday_jobs
@@ -115,6 +116,10 @@ def plan_sources(config: Mapping[str, Any], settings: Settings) -> dict[str, Sou
             return partial(fetch_all_workable_jobs, units, settings)
         if name == 'paylocity':
             return partial(fetch_all_paylocity_jobs, units, settings)
+        if name == 'successfactors':
+            # Job-page requests only for titles that can pass the filter (see the adapter).
+            return partial(fetch_all_successfactors_jobs, units, settings,
+                           filtering=config.get('filtering') or config.get('filters') or {})
         if name == 'google':
             return partial(fetch_google_jobs, units, max_pages=settings.google_max_pages,
                            timeout=settings.http_timeout)

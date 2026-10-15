@@ -56,6 +56,8 @@ DEFAULT_ADP_MAX_WORKERS = 4
 DEFAULT_WORKABLE_MAX_WORKERS = 4
 # Paylocity rate-limits bursts (HTTP 429): one board at a time (one request each).
 DEFAULT_PAYLOCITY_MAX_WORKERS = 1
+# SuccessFactors careers sites are each on the employer's own host.
+DEFAULT_SUCCESSFACTORS_MAX_WORKERS = 6
 DEFAULT_GRAPHQL_MIN_WORKERS = 8
 DEFAULT_GRAPHQL_MAX_WORKERS = 80
 DEFAULT_JOBSPY_WORKERS = 25
@@ -90,6 +92,10 @@ DEFAULT_RIPPLING_MAX_JOBS_PER_COMPANY = 1000
 DEFAULT_UKG_MAX_JOBS_PER_COMPANY = 1000
 # ADP pages hold at most 20 rows, so the cap also bounds requests (50 pages).
 DEFAULT_ADP_MAX_JOBS_PER_COMPANY = 1000
+# SuccessFactors search pages are newest first; the cap bounds pages (10-100 rows each).
+DEFAULT_SUCCESSFACTORS_MAX_JOBS_PER_COMPANY = 1000
+# Job-page requests per site, only for postings whose title and location can pass.
+DEFAULT_SUCCESSFACTORS_MAX_DETAILS_PER_COMPANY = 100
 
 DEFAULT_GOOGLE_MAX_PAGES = 3
 DEFAULT_GRAPHQL_MAX_JOBS_PER_SOURCE = 200
@@ -131,6 +137,7 @@ class Settings:
     adp_max_workers: int = DEFAULT_ADP_MAX_WORKERS
     workable_max_workers: int = DEFAULT_WORKABLE_MAX_WORKERS
     paylocity_max_workers: int = DEFAULT_PAYLOCITY_MAX_WORKERS
+    successfactors_max_workers: int = DEFAULT_SUCCESSFACTORS_MAX_WORKERS
     graphql_min_workers: int = DEFAULT_GRAPHQL_MIN_WORKERS
     graphql_max_workers: int = DEFAULT_GRAPHQL_MAX_WORKERS
     jobspy_workers: int = DEFAULT_JOBSPY_WORKERS
@@ -156,6 +163,8 @@ class Settings:
     rippling_max_jobs_per_company: int = DEFAULT_RIPPLING_MAX_JOBS_PER_COMPANY
     ukg_max_jobs_per_company: int = DEFAULT_UKG_MAX_JOBS_PER_COMPANY
     adp_max_jobs_per_company: int = DEFAULT_ADP_MAX_JOBS_PER_COMPANY
+    successfactors_max_jobs_per_company: int = DEFAULT_SUCCESSFACTORS_MAX_JOBS_PER_COMPANY
+    successfactors_max_details_per_company: int = DEFAULT_SUCCESSFACTORS_MAX_DETAILS_PER_COMPANY
 
     google_enabled: bool = False
     google_max_pages: int = DEFAULT_GOOGLE_MAX_PAGES
@@ -225,6 +234,7 @@ def build_settings(
     rippling = _section(config, "apis", "rippling")
     ukg = _section(config, "apis", "ukg")
     adp = _section(config, "apis", "adp")
+    successfactors = _section(config, "apis", "successfactors")
     google = _section(config, "apis", "google")
     graphql = _section(config, "apis", "graphql")
     jobspy = _section(config, "apis", "jobspy")
@@ -253,6 +263,7 @@ def build_settings(
         adp_max_workers=pool("adp_max_workers", DEFAULT_ADP_MAX_WORKERS),
         workable_max_workers=pool("workable_max_workers", DEFAULT_WORKABLE_MAX_WORKERS),
         paylocity_max_workers=pool("paylocity_max_workers", DEFAULT_PAYLOCITY_MAX_WORKERS),
+        successfactors_max_workers=pool("successfactors_max_workers", DEFAULT_SUCCESSFACTORS_MAX_WORKERS),
         graphql_min_workers=pool("graphql_min_workers", DEFAULT_GRAPHQL_MIN_WORKERS),
         graphql_max_workers=pool("graphql_max_workers", DEFAULT_GRAPHQL_MAX_WORKERS),
         jobspy_workers=pool("jobspy_workers", DEFAULT_JOBSPY_WORKERS),
@@ -295,6 +306,12 @@ def build_settings(
             ukg.get("max_jobs_per_company"), DEFAULT_UKG_MAX_JOBS_PER_COMPANY, "apis.ukg.max_jobs_per_company"),
         adp_max_jobs_per_company=coerce_positive_int(
             adp.get("max_jobs_per_company"), DEFAULT_ADP_MAX_JOBS_PER_COMPANY, "apis.adp.max_jobs_per_company"),
+        successfactors_max_jobs_per_company=coerce_positive_int(
+            successfactors.get("max_jobs_per_company"), DEFAULT_SUCCESSFACTORS_MAX_JOBS_PER_COMPANY,
+            "apis.successfactors.max_jobs_per_company"),
+        successfactors_max_details_per_company=coerce_positive_int(
+            successfactors.get("max_details_per_company"), DEFAULT_SUCCESSFACTORS_MAX_DETAILS_PER_COMPANY,
+            "apis.successfactors.max_details_per_company"),
         # Historical default: a google section without `enabled` runs.
         google_enabled=bool(google.get("enabled", True)),
         google_max_pages=coerce_positive_int(google_pages, DEFAULT_GOOGLE_MAX_PAGES, "apis.google.max_pages"),
@@ -325,6 +342,9 @@ def describe_settings(settings: Settings) -> None:
     logger.info("     ADP: up to %s, max_per_company=%s", settings.adp_max_workers, settings.adp_max_jobs_per_company)
     logger.info("     Workable: up to %s", settings.workable_max_workers)
     logger.info("     Paylocity: up to %s", settings.paylocity_max_workers)
+    logger.info("     SuccessFactors: up to %s, max_per_company=%s, max_details=%s",
+                settings.successfactors_max_workers, settings.successfactors_max_jobs_per_company,
+                settings.successfactors_max_details_per_company)
     logger.info("     GraphQL: %s-%s", settings.graphql_min_workers, settings.graphql_max_workers)
     logger.info("     JobSpy: %s", settings.jobspy_workers)
     logger.info("     Orchestrator: %s", settings.orchestrator_workers)

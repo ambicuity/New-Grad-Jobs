@@ -673,6 +673,7 @@ This repository automatically scrapes new graduate job opportunities from variou
 - **ADP Workforce Now**: <!-- COUNT:boards_adp -->3<!-- /COUNT --> configured career centers (Moran Environmental Recovery, Arcarithm, nou Systems).
 - **Workable**: <!-- COUNT:boards_workable -->6<!-- /COUNT --> configured direct employers (Credence, TP-Link Systems, Zifo, …); recruiters posting for unnamed clients are not included.
 - **Paylocity**: <!-- COUNT:boards_paylocity -->11<!-- /COUNT --> configured direct employers (Interclypse, Concept Solutions, Trean, …), read from each public board page.
+- **SuccessFactors**: <!-- COUNT:boards_successfactors -->32<!-- /COUNT --> configured careers sites (Duke University, Boston Scientific, Leonardo DRS, …), read from each SAP SuccessFactors Career Site Builder search page.
 - **JobSpy**: aggregation layer over Indeed (LinkedIn is disabled because of rate limits), searched in the US, Canada and India.
 - **Community Submissions**: User-submitted jobs via GitHub Issues.
 
@@ -710,7 +711,7 @@ The full dataset is published at [`https://jobs.riteshrana.engineer/jobs.json`](
 | `url` | string | direct link to the posting on the source ATS |
 | `posted_at` | ISO 8601 | when the employer posted the role |
 | `first_seen` | ISO 8601 | when this board first saw the job (carried forward across runs; orders `feed.xml`) |
-| `source` | string | one of `Greenhouse`, `Ashby`, `Workday`, `Lever`, `SmartRecruiters`, `Oracle HCM`, `Rippling`, `UKG`, `ADP`, `Workable`, `Paylocity`, `JobSpy (Indeed)` (`GraphQL` when enabled) |
+| `source` | string | one of `Greenhouse`, `Ashby`, `Workday`, `Lever`, `SmartRecruiters`, `Oracle HCM`, `Rippling`, `UKG`, `ADP`, `Workable`, `Paylocity`, `SuccessFactors`, `JobSpy (Indeed)` (`GraphQL` when enabled) |
 | `category` | object | `{id, name, emoji}` — one of the 30 categories (`CATEGORY_PATTERNS` in `scripts/ngj/taxonomy.py`) |
 | `company_tier` | object | `{tier, emoji, label, sectors}` — FAANG+ / unicorn / other |
 | `flags` | object | `{no_sponsorship, us_citizenship_required}` |
@@ -729,7 +730,7 @@ The site itself loads two lighter artifacts generated alongside it:
 ### Companies Monitored
 
 <details>
-<summary>Click to expand the configured list (<!-- COUNT:boards_total -->814<!-- /COUNT --> boards)</summary>
+<summary>Click to expand the configured list (<!-- COUNT:boards_total -->846<!-- /COUNT --> boards)</summary>
 
 <!-- COMPANY-LISTINGS:START - auto-generated from config.yml by scripts/sync_readme_companies.py; do not edit by hand -->
 
@@ -754,6 +755,8 @@ The site itself loads two lighter artifacts generated alongside it:
 **Workable (6)**: Credence, Delaware Nation Industries, InterImage, Texas Sports Academy, TP-Link Systems, Zifo
 
 **Paylocity (11)**: Concept Solutions, CU\*Answers, E&amp;M Technologies, Five Star Bank, Forgent Power Solutions, Heartland Business Systems, Inadev, Interclypse, Oneida Professional Services, Trean, UNICO Group
+
+**SuccessFactors (32)**: Advanced Energy, ANDRITZ, AVL, Bank of Canada, Boston Scientific, Bunge, BWX Technologies, Compass Group USA, Doosan, Duke University, FlightSafety International, Hatch, Hubbell, IDEMIA, J.R. Simplot, JetBlue, Lear, Leonardo DRS, Lincoln Electric, MAPFRE, MIT Lincoln Laboratory, NextEra Energy, Oak Ridge National Laboratory, Phillips 66, Schaeffler, State of Florida, State of Illinois, Supermicro, Swiss Re, Teradyne, University of Toronto, Westinghouse
 
 <!-- COMPANY-LISTINGS:END -->
 

@@ -5,6 +5,22 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-15 — SuccessFactors source (32 careers sites added)
+
+The new SAP SuccessFactors adapter (#421) reads Career Site Builder sites on the employer's own
+domain. The careers-page audit (#419) found 51 employers on SuccessFactors; 39 run Career Site
+Builder, and each of those was probed live on 2026-10-15 through the adapter and our filters. The
+32 sites that publish at least two curated jobs were added (767 curated jobs at the time).
+
+**Not added (no curated jobs, or one):** NEC, Government of Nova Scotia, SES, Entergy and Consumers
+Energy published none; E. & J. Gallo Winery and West Pharmaceutical Services one each.
+
+**Not supported by this adapter:** 11 employers use the legacy `career4.successfactors.com/career?company=…`
+portal (Deloitte, John Deere, Dexcom, Grainger, Hearst, SMUD, ExxonMobil, SAP, Government of Alberta,
+Indra Group, Sonepar), and PG&E's careers site is a Radancy (TalentBrew) front end.
+
+**SuccessFactors (32):** Advanced Energy (`jobs.advanced-energy.com`), ANDRITZ (`careers.andritz.com`), AVL (`jobs.avl.com`), Bank of Canada (`careers.bankofcanada.ca`), Boston Scientific (`jobs.bostonscientific.com`), Bunge (`jobs.bunge.com`), BWX Technologies (`careers.bwxt.com`), Compass Group USA (`jobs.compassgroupcareers.com`), Doosan (`jobs.doosan.com`), Duke University (`careers.duke.edu`), FlightSafety International (`careers.flightsafety.com`), Hatch (`jobs.hatch.com`), Hubbell (`careers.hubbell.com`), IDEMIA (`careers.idemia.com`), J.R. Simplot (`careers.simplot.com`), JetBlue (`careers.jetblue.com`), Lear (`jobs.lear.com`), Leonardo DRS (`careers.leonardodrs.com`), Lincoln Electric (`jobs.lincolnelectric.com`), MAPFRE (`jobs.mapfre.com`), MIT Lincoln Laboratory (`careers.ll.mit.edu`), NextEra Energy (`jobs.nexteraenergy.com`), Oak Ridge National Laboratory (`jobs.ornl.gov`), Phillips 66 (`careers.phillips66.com`), Schaeffler (`jobs.schaeffler.com`), State of Florida (`jobs.myflorida.com`), State of Illinois (`illinois.jobs2web.com`), Supermicro (`jobs.supermicro.com`), Swiss Re (`careers.swissre.com`), Teradyne (`jobs.teradyne.com`), University of Toronto (`jobs.utoronto.ca`), Westinghouse (`careers.westinghousenuclear.com`)
+
 ## 2026-10-15 — Careers-page audit (84 boards added)
 
 A follow-up to the Foorilla audit (#419). Foorilla was re-read for unconfigured employers with at
