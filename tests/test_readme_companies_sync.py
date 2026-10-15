@@ -88,6 +88,7 @@ def test_board_counts_uses_marker_ids_and_a_total() -> None:
         "boards_workable": 0,
         "boards_paylocity": 0,
         "boards_successfactors": 0,
+        "boards_icims": 0,
         "boards_total": 7,
     }
 

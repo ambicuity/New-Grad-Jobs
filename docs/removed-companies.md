@@ -5,6 +5,22 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-15 — iCIMS source, career sites (6 added)
+
+The new iCIMS adapter (#423) reads iCIMS career sites (iCIMS's "Jibe" job search) on the employer's
+own domain through their public `/api/jobs` search. Every unresolved employer from the careers-page
+audit (#419) had its careers hosts probed for `/api/jobs` on 2026-10-15, and each site's `apply_url`
+was checked to be iCIMS. Added: AMD (`careers.amd.com`), Emory University (`careers.emory.edu`),
+First Citizens Bank (`jobs.firstcitizens.com`), Medpace (`careers.medpace.com`), Noblis
+(`careers.noblis.org`) and PepsiCo (`www.pepsicojobs.com`; `careers.pepsico.com` redirects there).
+
+**Not added:** S&P Global and Mount Sinai Health System run iCIMS career sites in front of Workday and
+Oracle HCM, which are already configured, so they would publish duplicates. Oregon Health & Science
+University (`jobs.ohsu.edu`) published no curated jobs.
+
+**Not covered yet:** classic iCIMS portals (`careers-<company>.icims.com`, about 30 employers in the
+audit) are a different product and follow in a separate change.
+
 ## 2026-10-15 — SuccessFactors source (32 careers sites added)
 
 The new SAP SuccessFactors adapter (#421) reads Career Site Builder sites on the employer's own

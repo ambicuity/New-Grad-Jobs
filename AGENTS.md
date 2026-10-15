@@ -8,7 +8,7 @@ Humans should read [CONTRIBUTING.md](CONTRIBUTING.md). Operators should read
 
 New Grad Jobs is an automated board of entry-level jobs in every field (software, data,
 engineering, finance, marketing, sales, healthcare, …) in the US, Canada and India.
-A Python scraper pulls public ATS APIs (Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, UKG, ADP, Workable, Paylocity, SuccessFactors, Workday) plus JobSpy
+A Python scraper pulls public ATS APIs (Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, UKG, ADP, Workable, Paylocity, SuccessFactors, iCIMS, Workday) plus JobSpy
 (Indeed) about every 30 minutes in GitHub Actions. It filters for new-grad roles and
 publishes static JSON/RSS. A Vite + React site at <https://jobs.riteshrana.engineer> is
 built from that data and deployed to GitHub Pages. There is no server and no database.
@@ -125,7 +125,7 @@ After `make run`, restore the two files that a local scrape rewrites:
 
 ### Where to add things
 
-- **A company:** add `{name, url}` under `apis.greenhouse|lever|ashby|smartrecruiters|oracle_hcm|rippling|ukg|adp|workable|paylocity|successfactors.companies`
+- **A company:** add `{name, url}` under `apis.greenhouse|lever|ashby|smartrecruiters|oracle_hcm|rippling|ukg|adp|workable|paylocity|successfactors|icims.companies`
   (`https://boards-api.greenhouse.io/v1/boards/<slug>/jobs`,
   `https://api.lever.co/v0/postings/<slug>`,
   `https://api.ashbyhq.com/posting-api/job-board/<slug>`,
@@ -137,7 +137,8 @@ After `make run`, restore the two files that a local scrape rewrites:
   center `https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=<uuid>`; Workable
   takes `https://apply.workable.com/api/v1/widget/accounts/<slug>`, direct employers only; Paylocity takes
   `https://recruiting.paylocity.com/Recruiting/Jobs/All/<guid>`, the "View All Jobs" link on a job page; SuccessFactors takes the Career Site Builder root
-  `https://<careers-host>`, whose `/search/` page lists `a.jobTitle-link` rows) or `{name, workday_url}` under
+  `https://<careers-host>`, whose `/search/` page lists `a.jobTitle-link` rows; iCIMS takes a career-site root
+  `https://<careers-host>` that answers `/api/jobs`, checking its `apply_url` is iCIMS, not another job system we read) or `{name, workday_url}` under
   `apis.workday.companies` (`https://<tenant>.wd<N>.myworkdayjobs.com/<site>`). Then run
   `validate_config.py`. Record removals in `docs/removed-companies.md`.
 - **A new ATS source:** add `scripts/ngj/sources/<name>.py` returning `SourceResult`. Then
