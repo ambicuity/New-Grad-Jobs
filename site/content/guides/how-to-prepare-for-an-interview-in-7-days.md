@@ -2,8 +2,12 @@
 title: How to prepare for an interview in 7 days
 description: A realistic schedule for a new grad interview loop, with what to skip and what to actually study.
 updated: 2026-09-30
+published: 2026-09-30
 section: Interviews
 order: 6
+format: checklist
+use_when: Read this when you have an interview in about a week and need a plan for the days you have left.
+you_get: You get a day-by-day plan covering the role, your résumé, stories, fundamentals, a mock and rest, plus what to skip.
 ---
 
 A week can help you organize and prioritize preparation; how much you can improve depends on your starting point and the confirmed interview format. Adapt this example schedule to the role.

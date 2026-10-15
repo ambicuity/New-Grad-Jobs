@@ -106,7 +106,10 @@ A Vite + React 18 single-page app ([ADR-0005](adr/0005-vite-site-and-actions-dep
   and Canada / India (`jobs/in/<slug>/`), plus `remote/`, `no-visa-restriction/`,
   `new-this-week/` and a `jobs/` hub, each with live counts and `ItemList` JSON-LD.
   `scripts/seo/guides.mjs` renders `site/content/guides/*.md` (front matter + a small
-  in-repo Markdown renderer, `markdown.mjs`) to `guides/<slug>/` with `Article` JSON-LD, and
+  in-repo Markdown renderer, `markdown.mjs`) to `guides/<slug>/` with `Article` JSON-LD, plus a
+  `guides/` index with reading paths (`guide-paths.mjs`) and section cards. The pages are complete
+  static HTML; one same-origin script (`src/lib/guides-client.js`, copied to `guides/guides.js`)
+  adds search, filters and read/saved marks kept in `localStorage`. And
   `scripts/seo/about.mjs` writes `about/` from `health.json` (sources, rules, this run). Jobs
   the scraper marked `is_closed` keep a `noindex` page with a CLOSED notice so shared links
   still explain themselves; they are left out of the sitemap, the landing pages and JSON-LD.

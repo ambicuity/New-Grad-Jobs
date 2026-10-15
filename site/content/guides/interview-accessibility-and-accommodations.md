@@ -2,8 +2,12 @@
 title: Interview accessibility and accommodations
 description: Identify an assessment barrier, request an adjustment, protect medical information and check the rules for your jurisdiction.
 updated: 2026-09-30
+published: 2026-09-30
 section: Interviews
 order: 6
+format: official, script
+use_when: Read this when an interview or assessment format creates a barrier because of a disability or medical condition.
+you_get: You get example adjustments, a request email to adapt, what to confirm before starting, and official sources by country.
 ---
 
 An interview format can create barriers unrelated to the skills a job requires. Ask what the assessment involves and explain the adjustment you need. The appropriate arrangement depends on the barrier, the job and the applicable law; a checklist cannot decide your individual entitlement.

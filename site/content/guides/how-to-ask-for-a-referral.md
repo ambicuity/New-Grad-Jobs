@@ -2,8 +2,12 @@
 title: How to ask for a referral
 description: When to ask, what to send, and the only thing you need to make it easy to say yes.
 updated: 2026-09-30
+published: 2026-09-30
 section: LinkedIn and networking
 order: 2
+format: checklist
+use_when: Read this when you want to ask someone at an employer to refer you for a specific role.
+you_get: You get how to check the referral process, who to ask, what to send them, and how to follow up.
 ---
 
 A referral can add evidence from someone who knows your work. It does not guarantee review priority or an interview.

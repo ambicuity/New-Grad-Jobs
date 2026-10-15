@@ -2,8 +2,12 @@
 title: How to diagnose your job-search funnel
 description: Where you are losing applications, where you are winning, and which move has the highest return on your time.
 updated: 2026-09-30
+published: 2026-09-30
 section: Rejections and recovery
 order: 3
+format: diagnostic, worksheet
+use_when: Read this when you are sending applications without the results you expected and want to find where they stall.
+you_get: You get four things to track per application, what each stalled stage can suggest, and how to test one change at a time.
 ---
 
 A job search is a funnel. The funnel has four stages — applications, screens, interviews, offers — and a problem at any stage looks like "I am doing everything right and nothing is happening." The fix is to find which stage is leaking and patch that one.

@@ -2,8 +2,12 @@
 title: Role-specific technical preparation for new grads
 description: How to read a posting and build a preparation plan for the exact role, rather than the role you wish it was.
 updated: 2026-09-30
+published: 2026-09-30
 section: Technical preparation
 order: 7
+format: checklist
+use_when: Read this when a technical posting could mean several kinds of role and you need to know which one to prepare for.
+you_get: You get signals for spotting the track, what frontend, mobile, embedded, security and quant loops test, and a prep plan.
 ---
 
 A posting for a "Software Engineer, New Grad" at one company is a backend role; at another it is a mobile role; at another it is a tooling or infrastructure role. Each has its own preparation. The general rule is the same as the rest of this guide: prepare for the format and role the employer actually gave you, not the one you wish they had.

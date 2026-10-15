@@ -2,8 +2,12 @@
 title: Application strategy for new grads
 description: How many applications, in what order, tracked how, and what to do when nothing comes back.
 updated: 2026-09-30
+published: 2026-09-25
 section: Résumé and applications
 order: 5
+format: diagnostic, worksheet
+use_when: Read this when you are deciding how to split effort across applications or when applications get no response.
+you_get: You get a three-tier split, a tracker layout, referral tips, and what to check when each stage of your search stalls.
 ---
 
 Applying is a numbers problem and a quality problem at once. Too few applications and variance decides the outcome; generic applications can make relevant evidence harder to see. The strategy is to split applications into tiers and spend effort where it changes the result.

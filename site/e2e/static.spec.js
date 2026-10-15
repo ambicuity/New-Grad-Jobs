@@ -75,14 +75,15 @@ test.describe('landing pages', () => {
 });
 
 test.describe('guides and about', () => {
-  test('a guide renders as an article with Article JSON-LD and no scripts', async ({ page }) => {
+  test('a guide renders as an article with Article JSON-LD and only the same-origin guides script', async ({ page }) => {
     const res = await page.goto('/guides/reading-a-new-grad-posting/');
     expect(res.status()).toBe(200);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('Reading a new grad job posting');
     const blocks = page.locator('script[type="application/ld+json"]');
     await expect(blocks).toHaveCount(1);
     expect(JSON.parse(await blocks.textContent())['@type']).toBe('Article');
-    await expect(page.locator('script:not([type="application/ld+json"])')).toHaveCount(0);
+    await expect(page.locator('script:not([type="application/ld+json"])')).toHaveCount(1);
+    await expect(page.locator('script[type="module"]')).toHaveAttribute('src', '../guides.js');
   });
 
   test('the about page reports this run from health.json', async ({ page }) => {

@@ -121,8 +121,12 @@ After `make run`, restore the two files that a local scrape rewrites:
 - **Site:** keep data logic in `site/src/lib/` as pure, unit-tested functions. Components
   use inline styles and the `useIsMobile` hook for responsiveness.
 - **Guides:** add a Markdown file to `site/content/guides/` with `title`, `description`,
-  `updated`, `section` (one of `SECTION_ORDER` in `site/scripts/seo/guides.mjs`) and `order`
-  front matter; the build renders it and groups the index by section. Use only headings, paragraphs, lists,
+  `updated`, `published`, `section` (one of `SECTION_ORDER` in `site/scripts/seo/guides.mjs`), `order`,
+  `format` (one or two of `GUIDE_FORMATS`), `use_when` ("Read this when …") and `you_get` ("You get …")
+  front matter; the build renders it and groups the index by section. The brief may not state a number
+  the body does not. Reading paths live in `site/scripts/seo/guide-paths.mjs` and must match the
+  situations in `start-here.md`. Guide pages run one same-origin script (`src/lib/guides-client.js`)
+  and must stay complete without it. Use only headings, paragraphs, lists,
   quotes, bold, italics, code and links (the renderer supports nothing else) and claim
   nothing you cannot back.
 - **Policies:** the Terms, Privacy, Copyright and Data Sources pages are `site/content/legal/*.md`. A change

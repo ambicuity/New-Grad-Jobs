@@ -2,8 +2,12 @@
 title: The new-grad job search playbook — 2026
 description: A practical sequence from defining your target to starting your job. Read top-to-bottom on your first read; later, jump to the step you are on.
 updated: 2026-09-30
+published: 2026-09-30
 section: Getting started
 order: 1
+format: checklist
+use_when: Read this when you are starting a search, or partway through one, and want to know which step comes next.
+you_get: You get the whole search in order, from defining your target to starting the job, with the guide to read at each step.
 ---
 
 This is the long-form version of the [Start Here router](../start-here/): one document, top to bottom, that takes you from "I don't know where to start" to "I have signed and I'm ready for day one." Each step links to the deeper guide that explains the work. Read it once in order to set expectations, then jump to the step you are on.

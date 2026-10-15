@@ -2,8 +2,12 @@
 title: Résumé bullet points that get read
 description: Writing clear, truthful experience and project bullets, with before-and-after examples.
 updated: 2026-09-30
+published: 2026-09-25
 section: Résumé and applications
 order: 2
+format: checklist
+use_when: Read this when your résumé bullets describe duties and you want them to show what you built and what changed.
+you_get: You get a bullet structure, before-and-after examples, verbs to use, things to cut, and a per-bullet checklist.
 ---
 
 Make a résumé easy to scan for evidence that you have done the kind of work the role involves. Bullets are where that evidence lives, and most new grad bullets fail because they describe duties instead of results.

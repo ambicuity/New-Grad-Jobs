@@ -2,8 +2,12 @@
 title: Rejection diagnosis — what you actually know vs. what you're guessing
 description: How to read a rejection without inventing the reason. The evidence you have, the evidence you do not, and why observation is not explanation.
 updated: 2026-09-30
+published: 2026-09-30
 section: Rejections and recovery
 order: 0
+format: diagnostic, checklist
+use_when: Read this when a rejection email gives no reason and you want to separate what you know from what you are guessing.
+you_get: You get lists of the evidence you have and lack, a step-by-step protocol, and how to pick one controllable change.
 ---
 
 A rejection email that says "we decided not to move forward" is honest but useless. Students regularly walk away thinking "I failed because of the ATS", "I failed because I'm international", or "I failed because I didn't do enough LeetCode" — and each of those is a guess. This guide is about replacing the guess with what you actually know, and being honest about the difference.

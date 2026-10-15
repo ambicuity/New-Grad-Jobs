@@ -2,8 +2,12 @@
 title: ML/AI interview preparation for new grads
 description: What machine-learning and AI new-grad loops actually test, and what to skip.
 updated: 2026-09-30
+published: 2026-09-30
 section: Technical preparation
 order: 4
+format: checklist
+use_when: Read this when you have a machine-learning or AI interview and need to know what the round is likely to test.
+you_get: You get the core areas tested, role-dependent topics, a preparation plan, and how to talk about your ML projects.
 ---
 
 ML and AI new-grad interviews come in several formats: classical ML theory questions, deep learning / LLM-specific questions, a take-home on a small dataset, a live coding round on data manipulation, a system design conversation about a small model service, or a domain case (recommender, search, ranking). Some loops include LeetCode-style coding; others do not. The first thing to do is read the invitation and identify the format. See [AI-assisted interviews](../ai-assisted-interviews/) for that step and [The new grad interview process](../interview-process/) for where the ML round fits in the loop.

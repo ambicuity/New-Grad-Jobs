@@ -2,8 +2,12 @@
 title: GitHub profile for new grads
 description: Pin the right repos, write a profile README, and remove the noise that costs you an interview.
 updated: 2026-09-30
+published: 2026-09-30
 section: GitHub and portfolio
 order: 1
+format: checklist
+use_when: Read this when you want recruiters who open your GitHub profile to find your best relevant work quickly.
+you_get: You get what to pin, what to put in a profile README, what to clean up, and what you do not need to worry about.
 ---
 
 Make the projects most relevant to your target role easy to find. Reviewers have different time budgets; a clear profile helps them identify your contribution quickly.

@@ -2,8 +2,12 @@
 title: Tailoring your résumé to a posting
 description: A fifteen-minute method for matching a résumé to one job posting without rewriting it, and what not to change.
 updated: 2026-09-30
+published: 2026-09-25
 section: Résumé and applications
 order: 3
+format: checklist
+use_when: Read this when you want to match your résumé to one posting you care about without rewriting it.
+you_get: You get a short per-posting pass, what never to change, signs of over-tailoring, and how to track versions.
 ---
 
 The same résumé sent to fifty postings gets the results of a résumé written for none of them. The fix is not fifty rewrites. It is one strong base résumé and a short, repeatable pass per posting, done for the roles you actually want.

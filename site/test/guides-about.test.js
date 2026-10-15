@@ -97,7 +97,7 @@ describe('guide rendering', () => {
   };
   const other = { ...guide, slug: 'visa-flags', title: 'Visa flags' };
 
-  it('page has canonical, Article JSON-LD, escaped title, sibling links and no scripts', () => {
+  it('page has canonical, Article JSON-LD, escaped title, sibling links and only the guides script', () => {
     const html = renderGuidePage(guide, { siteUrl: SITE, siblings: [guide, other] });
     expect(html).toContain(`<link rel="canonical" href="${SITE}/guides/reading-a-posting/">`);
     expect(html).toContain(escapeHtml(guide.title));
@@ -106,8 +106,9 @@ describe('guide rendering', () => {
     expect(ld).toMatchObject({ '@type': 'Article', headline: guide.title, dateModified: '2026-09-25', url: `${SITE}/guides/reading-a-posting/` });
     expect(html).toContain('href="../../guides/visa-flags/"');
     expect(html).not.toContain('href="../../guides/reading-a-posting/"');
-    expect(html.match(/<script/g)).toHaveLength(1);
-    expect(html).toContain('Updated 2026-09-25');
+    expect(html.match(/<script/g)).toHaveLength(2);
+    expect(html).toContain('<script type="module" src="../guides.js"></script>');
+    expect(html).toContain('Updated <time datetime="2026-09-25">2026-09-25</time>');
   });
 
   it('groups guides by section in SECTION_ORDER, ordered by order then title, unknown sections last', () => {
@@ -139,9 +140,9 @@ describe('guide rendering', () => {
     expect(html).toContain('href="../guides/reading-a-posting/"');
     expect(html).toContain('Levels &amp; signals');
     expect(html).toContain('href="../guides/visa-flags/"');
-    expect(html).toContain('<h2>MORE</h2>');
+    expect(html).toContain('<h2>MORE <span');
     const grouped = renderGuidesIndex([{ ...guide, section: 'Offers' }, other], { siteUrl: SITE });
-    expect(grouped.indexOf('<h2>OFFERS</h2>')).toBeLessThan(grouped.indexOf('<h2>MORE</h2>'));
+    expect(grouped.indexOf('<h2>OFFERS <span')).toBeLessThan(grouped.indexOf('<h2>MORE <span'));
   });
 });
 
@@ -263,6 +264,9 @@ describe('generateSeo writes guides, about and closed-job pages', () => {
     expect(about).toContain('<dt>open roles</dt><dd>1</dd>');
     expect(about).toContain('272');
     expect(existsSync(join(distDir, 'guides', 'index.html'))).toBe(true);
+    const script = await readFile(join(distDir, 'guides', 'guides.js'), 'utf8');
+    expect(script).toContain("from './saved.js'");
+    expect(await readFile(join(distDir, 'guides', 'saved.js'), 'utf8')).toContain('export function loadSavedIds');
     const index = await readFile(join(distDir, 'index.html'), 'utf8');
     expect(index).toContain('href="./guides/"');
     expect(index).toContain('href="./about/"');

@@ -2,8 +2,12 @@
 title: AI-assisted applications: what not to automate
 description: Where AI helps, where it hurts you, and the line between preparation and misrepresentation.
 updated: 2026-09-30
+published: 2026-09-30
 section: AI and job search
 order: 2
+format: explainer
+use_when: Read this when you want AI help with applications but are unsure which parts to keep doing yourself.
+you_get: You get the tasks AI can help draft, the ones not to hand over, and the test of whether you can defend every claim.
 ---
 
 Claims you cannot explain or verify can undermine your application. AI is fine when it speeds up something you would have done anyway; it is dangerous when it writes something you would not.

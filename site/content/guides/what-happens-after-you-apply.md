@@ -2,8 +2,12 @@
 title: What happens after you apply?
 description: How applicant tracking systems screen your résumé, who reads it, and the timeline you should expect.
 updated: 2026-09-30
+published: 2026-09-30
 section: Résumé and applications
 order: 6
+format: explainer
+use_when: Read this when you have submitted an application and want to know what happens to it next.
+you_get: You get the stages an application can pass through, how screening rules work, and when to follow up.
 ---
 
 An application can go through parsing, eligibility checks, review and interviews. The order varies by employer; an assessment may arrive before a recruiter reviews the résumé.

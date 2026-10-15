@@ -2,8 +2,12 @@
 title: Startup vs enterprise
 description: How the two kinds of employer post, interview and treat a first hire, and how to find each on this board.
 updated: 2026-09-30
+published: 2026-09-25
 section: Understanding jobs
 order: 3
+format: explainer
+use_when: Read this when you are weighing a startup role against one at a large employer for your first job.
+you_get: You get how each kind of employer posts, interviews and pays, what to ask about a first year, and how to find each here.
 ---
 
 The same title means different things at a forty-person startup and a forty-thousand-person company. Neither is better for a first job; they suit different people and different years. What matters is knowing which one you are applying to before the interview, because the questions and the trade-offs differ.

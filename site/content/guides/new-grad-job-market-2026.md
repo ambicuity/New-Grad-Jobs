@@ -2,8 +2,12 @@
 title: The new grad job market in 2026
 description: A dated view of US, Canadian and Indian labor-market evidence, what it can tell you, and how to use it in a graduate job search.
 updated: 2026-09-30
+published: 2026-09-30
 section: Job search strategy
 order: 1
+format: official, explainer
+use_when: Read this when you want to know what labor-market data says about graduate hiring in the US, Canada and India.
+you_get: You get dated figures from official sources, what each one measures and does not, and how to use them in your search.
 ---
 
 There is no single market for every new graduate. Country, occupation, location, work authorization and employer budgets affect which openings you can pursue. This snapshot uses sources checked on September 30, 2026. The periods below are the periods measured, not a forecast for the rest of the year.

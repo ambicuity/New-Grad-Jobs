@@ -2,8 +2,12 @@
 title: Visa sponsorship and citizenship flags
 description: How the board reads sponsorship and citizenship language, and what international students should check before applying.
 updated: 2026-09-30
+published: 2026-09-25
 section: International students
 order: 1
+format: official
+use_when: Read this when you need sponsorship or are not a citizen and want to check a posting before you apply.
+you_get: You get what the board's two flags mean, where to look in a posting, key visa terms by country, and official sources.
 ---
 
 This board flags configured phrases in a posting's text. The flags are search aids with false positives and false negatives, not legal conclusions.

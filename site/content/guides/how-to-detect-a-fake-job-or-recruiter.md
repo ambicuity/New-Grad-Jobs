@@ -2,8 +2,12 @@
 title: How to detect a fake job or recruiter
 description: Verify a vacancy and recruiter independently, recognize requests for money or sensitive information, and respond promptly if you have shared them.
 updated: 2026-09-30
+published: 2026-09-30
 section: Rejections and recovery
 order: 1
+format: checklist, official
+use_when: Read this when a job or recruiter message feels off, or you have already sent money or personal details.
+you_get: You get warning signs, steps to verify the vacancy and recruiter, and official places to get help and report a scam.
 ---
 
 Scammers can impersonate an employer, recruiter or hiring platform. A polished message, a familiar logo or a LinkedIn profile does not verify an opportunity. Confirm the organization and the vacancy through a channel you find independently before sending money or sensitive information.

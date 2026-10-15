@@ -2,8 +2,12 @@
 title: The recruiter screen
 description: The recruiter screen is its own round. The questions, the framework, and the 30/60/120-second answers you can rehearse.
 updated: 2026-09-30
+published: 2026-09-30
 section: Interviews
 order: 0
+format: script
+use_when: Read this when you have a recruiter screen coming up and want rehearsed answers to the usual questions.
+you_get: You get the common screen questions, short, medium and long answer templates, and what not to do on the call.
 ---
 
 The recruiter screen is the conversation most candidates underestimate. It is not a "chat". It is a fit conversation with specific signals: can the company move on you, can you move on the company, are there flags that make either answer no. Most recruiter screens have a short, predictable list of questions. Preparation is rehearsed answers, not improvisation.

@@ -2,8 +2,12 @@
 title: Coding interviews for new grads
 description: How to work a problem out loud, what interviewers are scoring, and a preparation schedule that fits a final year.
 updated: 2026-09-30
+published: 2026-09-25
 section: Interviews
 order: 3
+format: checklist
+use_when: Read this when you have a live coding interview and need to solve problems while explaining your thinking.
+you_get: You get what interviewers score, a step-by-step working method, how to take hints, and how to prepare out loud.
 ---
 
 A live coding interview is not a harder online assessment. It is a conversation in which you solve a problem, and both your solution and how you explain it can be evaluated. Many candidates who pass assessments fail interviews because they go silent and code; many who are slower pass because the interviewer could follow them.

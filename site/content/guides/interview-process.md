@@ -2,8 +2,12 @@
 title: The new grad interview process
 description: The stages most employers use for entry-level hiring, the formats each stage can take, and how to identify which one you have been given.
 updated: 2026-09-30
+published: 2026-09-25
 section: Interviews
 order: 1
+format: explainer
+use_when: Read this when you have an interview invitation and want to know which stage and format you are facing.
+you_get: You get the usual stages of entry-level hiring, the formats each can take, and what is judged at each stage.
 ---
 
 Some employers use standardized cohort hiring, while others adapt interviews by role and team. Knowing the stages lets you prepare for the right one at the right time instead of everything at once. Knowing that each stage can take several formats — human or AI, live or asynchronous, with or without permitted AI tooling — lets you match your preparation to the actual evaluation, not the one you wish the employer had given you.

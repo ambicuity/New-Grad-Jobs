@@ -2,8 +2,12 @@
 title: No interviews after 100 applications: what to change
 description: A diagnosis checklist for the silent funnel, in the order you should run it.
 updated: 2026-09-30
+published: 2026-09-30
 section: Rejections and recovery
 order: 1
+format: diagnostic, checklist
+use_when: Read this when you have sent many applications and heard nothing back.
+you_get: You get an ordered audit of your résumé, role fit, timing and match, plus what to try when the résumé is not the issue.
 ---
 
 A hundred applications with no interviews is a reason to review your search. The record can help you identify controllable improvements, but it does not by itself establish why employers did not respond.

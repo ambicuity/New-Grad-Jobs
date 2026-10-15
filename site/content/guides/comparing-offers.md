@@ -2,8 +2,12 @@
 title: Comparing offers
 description: How to put two or more new grad offers side by side without letting the biggest number decide.
 updated: 2026-09-30
+published: 2026-09-25
 section: Offers
 order: 3
+format: worksheet, checklist
+use_when: Read this when you hold two or more offers with different structures and deadlines.
+you_get: You get a table to normalize pay, factors the numbers miss, how to align deadlines, and how to decide once.
 ---
 
 Two offers feel like a luxury and behave like a problem: they arrive on different dates with different structures and different deadlines. The method is to normalize them, then compare on the things the numbers do not capture, then decide once.

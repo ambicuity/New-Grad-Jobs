@@ -2,8 +2,12 @@
 title: How to research your market salary
 description: Compare current entry-level pay evidence and separate fixed cash, variable bonuses, equity and benefits before evaluating an offer.
 updated: 2026-09-30
+published: 2026-09-30
 section: Offers
 order: 0
+format: worksheet, official
+use_when: Read this when you need a realistic pay range for a role, level and location before evaluating an offer.
+you_get: You get how to separate pay components, official wage sources, steps to build a defensible range, and an offer worksheet.
 ---
 
 Research pay for the role, level and location you could actually join. An occupation-wide median or a headline package from another country is context, not your expected offer. Keep the currency, reference period, sample size and compensation definition beside every figure.

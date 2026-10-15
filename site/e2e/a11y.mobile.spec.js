@@ -15,6 +15,15 @@ test.describe('axe (WCAG 2.2 AA), 375px', () => {
     await expectNoSeriousA11yViolations(page, testInfo);
   });
 
+  test('guides index and a guide page', async ({ page }, testInfo) => {
+    await page.goto('/guides/');
+    await expect(page.getByLabel('Search guides')).toBeVisible();
+    await expectNoSeriousA11yViolations(page, testInfo);
+    await page.goto('/guides/negotiation/');
+    await page.locator('.toc-inline summary').tap();
+    await expectNoSeriousA11yViolations(page, testInfo);
+  });
+
   test('card list', async ({ page }, testInfo) => {
     await page.goto('/');
     await expect(page.getByTestId('job-list').getByRole('listitem').first()).toBeVisible();

@@ -2,8 +2,12 @@
 title: Start here — pick the path that fits your job search
 description: A short career-path wizard: where are you in your job search right now, and the sequence of guides that fits that moment.
 updated: 2026-09-30
+published: 2026-09-30
 section: Getting started
 order: 0
+format: checklist
+use_when: Read this when you are not sure which guide to read first for where you are in your job search.
+you_get: You get situation-based paths, each an ordered list of the guides to read for that stage of the search.
 ---
 
 A new-grad job search isn't one path — it's at least nine, depending on where you start. The same advice ("just apply to more roles") helps one person and hurts another. This page is a router: pick the row that matches where you are right now and follow its sequence. Each path links to the specific guides that matter most for that stage. Choose the next read that fits your situation.

@@ -2,8 +2,12 @@
 title: Systems interview preparation for new grads
 description: What backend and platform new-grad loops actually test, the small set of fundamentals to study, and the depth that is overkill.
 updated: 2026-09-30
+published: 2026-09-30
 section: Technical preparation
 order: 3
+format: checklist
+use_when: Read this when you are preparing for a backend, platform or infrastructure new grad interview.
+you_get: You get what systems rounds test, a phased study plan, topics to confirm first, and a way to state trade-offs aloud.
 ---
 
 The scope of a new-grad systems interview depends on the team and role. The interview may be a coding round that tests systems-flavored problems (concurrency, caching, parsing), a debugging round on unfamiliar code, or a system design conversation that asks how you would build a small feature. Each format has its own prep. See [AI-assisted interviews](../ai-assisted-interviews/) for the format rules and [Debugging interview preparation](../debugging-interview-preparation/) for the debugging track.
