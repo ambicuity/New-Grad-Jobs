@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-15T04:31:36.756515+00:00",
+    "last_updated": "2026-10-15T04:47:18.953204+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-17",
@@ -4036,43 +4036,43 @@
     },
     {
       "date": "2026-10-15",
-      "total_jobs": 7823,
+      "total_jobs": 8579,
       "categories": {
-        "software_engineering": 1927,
-        "customer_support": 169,
-        "quant_finance": 20,
-        "sales": 803,
+        "software_engineering": 2019,
+        "customer_support": 175,
+        "quant_finance": 27,
+        "sales": 813,
         "frontend": 33,
-        "backend": 46,
-        "design": 47,
-        "other": 475,
-        "data_ml": 311,
-        "hardware": 192,
-        "engineering": 1035,
-        "business_analyst": 279,
-        "infrastructure_sre": 386,
-        "accounting_finance": 352,
-        "security": 210,
-        "supply_chain": 244,
-        "data_engineering": 159,
-        "legal": 64,
-        "management": 129,
-        "human_resources": 92,
-        "product_management": 23,
-        "project_management": 73,
+        "backend": 45,
+        "design": 51,
+        "other": 571,
+        "data_ml": 328,
+        "hardware": 247,
+        "engineering": 1201,
+        "business_analyst": 307,
+        "infrastructure_sre": 427,
+        "accounting_finance": 375,
+        "security": 218,
+        "supply_chain": 264,
+        "data_engineering": 161,
+        "legal": 72,
+        "management": 135,
+        "human_resources": 97,
+        "product_management": 24,
+        "project_management": 79,
         "mobile": 26,
-        "consulting": 106,
-        "marketing": 70,
+        "consulting": 132,
+        "marketing": 73,
         "arts_entertainment": 1,
-        "healthcare": 470,
-        "education": 39,
-        "data_analyst": 35,
-        "public_sector": 7
+        "healthcare": 571,
+        "education": 51,
+        "data_analyst": 36,
+        "public_sector": 20
       },
       "tiers": {
-        "other": 6040,
+        "other": 6801,
         "unicorn": 829,
-        "faang_plus": 954
+        "faang_plus": 949
       },
       "top_companies": [
         {
@@ -4100,6 +4100,10 @@
           "jobs": 138
         },
         {
+          "company": "State of Florida",
+          "jobs": 134
+        },
+        {
           "company": "SpaceX",
           "jobs": 127
         },
@@ -4110,15 +4114,11 @@
         {
           "company": "Leidos",
           "jobs": 115
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 111
         }
       ],
-      "unique_companies": 976,
-      "avg_jobs_per_company": 8.02,
-      "timestamp": "2026-10-15T04:31:36.756515+00:00"
+      "unique_companies": 998,
+      "avg_jobs_per_company": 8.6,
+      "timestamp": "2026-10-15T04:47:18.953204+00:00"
     }
   ]
 }
