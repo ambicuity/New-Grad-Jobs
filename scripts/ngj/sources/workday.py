@@ -24,7 +24,7 @@ Locations
 The listing reports a posting with several locations as ``"2 Locations"``,
 which the location gate cannot judge, so such postings used to pass even when
 every location was abroad (#427). For each one whose title passes
-``title_filter``, the job endpoint (``GET /wday/cxs/<tenant>/<site><externalPath>``)
+``location_title_filter`` (the full title rules; ``title_filter`` when unset), the job endpoint (``GET /wday/cxs/<tenant>/<site><externalPath>``)
 gives ``location`` (with its ``country``) and ``additionalLocations``; they
 replace the placeholder. Lookups are capped per company and respect the time
 budget. A failed lookup keeps the posting as listed; a 403/429 also stops the
@@ -423,6 +423,7 @@ def _fetch_workday_company(
     keyword_workers: int = DEFAULT_WORKDAY_KEYWORD_WORKERS,
     max_seconds: float | None = None,
     max_location_lookups: int = DEFAULT_WORKDAY_MAX_LOCATION_LOOKUPS,
+    location_title_filter: TitleFilter | None = None,
 ) -> SourceResult:
     """Fetch one Workday company's jobs. Never raises: failures become SourceErrors."""
     company_name = company.get('name')
@@ -470,7 +471,7 @@ def _fetch_workday_company(
         if len(listed) >= max_total_limit:
             logger.info("  ℹ️  %s: Reached safety limit of %s jobs. Truncating.", company_name, max_total_limit)
             listed = listed[:max_total_limit]
-        jobs = _resolve_locations(tenant, listed, title_filter, max_location_lookups)
+        jobs = _resolve_locations(tenant, listed, location_title_filter or title_filter, max_location_lookups)
 
         if any(q.out_of_time for q in results):
             # Slow tenant: keep what the time budget allowed rather than hold up the run.
@@ -542,6 +543,7 @@ def fetch_workday_jobs(
     keyword_workers: int | None = None,
     max_seconds_per_company: float | None = None,
     max_location_lookups: int | None = None,
+    location_title_filter: TitleFilter | None = None,
 ) -> SourceResult:
     """Fetch Workday companies in parallel.
 
@@ -578,7 +580,7 @@ def fetch_workday_jobs(
             (index, _fetch_workday_company(
                 company, page_limit, max_total_limit, max_retries, timeout,
                 keywords, max_jobs_per_keyword, title_filter, keyword_workers, max_seconds_per_company,
-                max_location_lookups,
+                max_location_lookups, location_title_filter,
             ))
             for index, company in group
         ]

@@ -18,7 +18,7 @@ from typing import Any
 
 from ngj.dedup import deduplicate_jobs
 from ngj.enrich import enrich_jobs
-from ngj.filters import partition_jobs
+from ngj.filters import partition_jobs, passes_title_rules
 from ngj.log import annotate, configure_logging
 from ngj.models import KIND_UNEXPECTED, SourceResult
 from ngj.outputs.corpus import build_corpus_index, write_corpus_index
@@ -90,6 +90,13 @@ class RunSummary:
     errors: tuple[str, ...] = ()
 
 
+def _title_rules(filtering: dict[str, Any]) -> Callable[[str], bool] | None:
+    """:func:`ngj.filters.passes_title_rules` bound to ``filtering``, or None without its signals."""
+    if not (filtering.get('new_grad_signals') and filtering.get('track_signals')):
+        return None
+    return lambda title: passes_title_rules(title, filtering)
+
+
 def plan_sources(config: Mapping[str, Any], settings: Settings) -> dict[str, SourceFetcher]:
     """Map each enabled source (see ngj.registry) to a zero-arg fetcher bound to ``settings``."""
     apis = config.get('apis') or {}
@@ -142,6 +149,8 @@ def plan_sources(config: Mapping[str, Any], settings: Settings) -> dict[str, Sou
                 max_seconds_per_company=settings.workday_max_seconds_per_company,
                 max_location_lookups=settings.workday_max_location_lookups,
                 title_filter=build_title_prefilter(config.get('filtering') or config.get('filters')),
+                # "N Locations" lookups only for titles that can be curated (the full title rules).
+                location_title_filter=_title_rules(config.get('filtering') or config.get('filters') or {}),
             )
         if name == 'graphql':
             return partial(fetch_all_graphql_jobs, units, settings)
