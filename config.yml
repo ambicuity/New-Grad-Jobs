@@ -232,6 +232,12 @@ filtering:
     - "part-time"
     - "part time"
     - "seasonal"
+    # "Associate" is a new-grad signal, but these are senior legal and
+    # academic roles (bug fix, 2026-10-15).
+    - "general counsel"
+    - "associate dean"
+    - "assistant dean"
+    - "associate professor"
 
   # Internships, co-ops, student placements and banking summer programs.
   # Never in the curated board; published as a "near miss" (reason
