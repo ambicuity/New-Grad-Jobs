@@ -43,8 +43,9 @@ test.describe('guides index', () => {
   test('saved and read marks persist and flow between a guide and the index', async ({ page }) => {
     await page.goto('/guides/negotiation/');
     await page.getByRole('button', { name: 'Mark as read' }).click();
-    await page.getByRole('button', { name: '☆ Save' }).click();
-    await expect(page.getByRole('button', { name: '✓ Read' })).toHaveAttribute('aria-pressed', 'true');
+    await page.getByRole('button', { name: 'Save', exact: true }).click();
+    await expect(page.getByRole('button', { name: 'Mark as read' })).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.getByRole('button', { name: 'Save', exact: true })).toHaveAttribute('aria-pressed', 'true');
     await page.goto('/guides/');
     await expect(page.locator('[data-count="saved"]')).toHaveText('1');
     await expect(page.locator('[data-count="read"]')).toHaveText('1');

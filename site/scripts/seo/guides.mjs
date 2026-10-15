@@ -278,7 +278,7 @@ ${guide.useWhen ? briefLine(guide.useWhen, 'Read this when') : ''}
 ${guide.youGet ? briefLine(guide.youGet, 'You get') : ''}
 </aside>`
     : '';
-  const sectionCrumb = guide.section
+  const sectionCrumb = SECTION_ORDER.includes(guide.section)
     ? ` › <a href="${root}${GUIDES_ROOT}/#${sectionId(guide.section)}">${escapeHtml(guide.section)}</a>`
     : '';
   return `<!DOCTYPE html>
@@ -293,12 +293,13 @@ ${head({ title: `${guide.title} · NGJ`, description, canonical, siteUrl, root, 
 ${guide.section ? `<p class="kicker">${escapeHtml(guide.section.toUpperCase())}</p>\n` : ''}<h1>${escapeHtml(guide.title)}</h1>
 ${guide.description ? `<p class="lede">${escapeHtml(guide.description)}</p>\n` : ''}<p class="meta">${formatTags(formats)} ${minutes(guide)}${guide.updated ? ` <span>· Updated <time datetime="${escapeHtml(guide.updated)}">${escapeHtml(guide.updated)}</time></span>` : ''}</p>
 <div class="tools" data-guide-tools data-guide="${escapeHtml(guide.slug)}" hidden>
-<button type="button" data-read aria-pressed="false">Mark as read</button>
-<button type="button" data-save aria-pressed="false">☆ Save</button>
+<button type="button" data-read aria-pressed="false"><span class="glyph" aria-hidden="true">○</span> Mark as read</button>
+<button type="button" data-save aria-pressed="false"><span class="glyph" aria-hidden="true">☆</span> Save</button>
 </div>
+<p class="storage-note" data-guides-storage role="status" hidden>Browser storage is blocked, so this mark lasts only until you leave the page.</p>
 </header>
 ${brief}
-${toc ? `<details class="toc toc-inline">\n<summary>ON THIS PAGE</summary>\n<nav aria-label="On this page, inline">\n${toc}\n</nav>\n</details>` : ''}
+${toc ? `<details class="toc toc-inline">\n<summary>ON THIS PAGE</summary>\n<nav aria-label="On this page">\n${toc}\n</nav>\n</details>` : ''}
 <div class="prose">
 ${guide.html}
 </div>
@@ -379,12 +380,10 @@ export function renderGuidesIndex(guides, { siteUrl, paths = READING_PATHS }) {
   const stats = [plural(guides.length, 'guide'), plural(groups.length, 'section'), plural(resolved.length, 'reading path'), ...(lastUpdated ? [`last updated ${lastUpdated}`] : [])].join(' · ');
   const chips = groups.map((s) => `<a href="#${sectionId(s.name)}">${escapeHtml(s.name)}<span class="n">${s.guides.length}</span></a>`).join('\n');
   const sections = groups.map((s) => `<section class="sec" id="${sectionId(s.name)}" data-section>
-<details open>
-<summary><h2>${escapeHtml(s.name.toUpperCase())} <span class="n" data-section-count>(${s.guides.length})</span></h2></summary>
+<h2>${escapeHtml(s.name.toUpperCase())} <span class="n" data-section-count>(${s.guides.length})</span></h2>
 <ul class="cards">
 ${s.guides.map((g) => card(g, root)).join('\n')}
 </ul>
-</details>
 </section>`);
   return `<!DOCTYPE html>
 <html lang="en" data-ngj-guides="index">
@@ -403,6 +402,7 @@ ${toolbar(guides)}
 ${chips}
 </nav>
 <p class="count" data-guides-count aria-live="polite" hidden></p>
+<p class="storage-note" data-guides-storage role="status" hidden>Browser storage is blocked, so saved and read marks last only until you leave the page.</p>
 <div class="empty" data-guides-empty hidden><p>No guides match these filters.</p><button type="button" class="linkish" data-reset>Clear search and filters</button></div>
 ${sections.join('\n')}
 ${footer(root)}

@@ -28,7 +28,10 @@ export function matchesGuide(card, { query, view, format }, { read, saved }) {
   return normalizeText(query).split(/\s+/).filter(Boolean).every((word) => text.includes(word));
 }
 
-/** A read/saved set backed by storage; when storage fails the set still works for this page view. */
+/**
+ * A read/saved set backed by storage; when storage fails the set still works
+ * for this page view and `toggle` returns false so the page can say so.
+ */
 function markStore(getStorage, key) {
   let ids = loadSavedIds(getStorage, key);
   return {
@@ -38,8 +41,7 @@ function markStore(getStorage, key) {
       const next = new Set(ids);
       if (next.has(slug)) next.delete(slug); else next.add(slug);
       ids = next;
-      storeSavedIds(getStorage, ids, key);
-      return ids.has(slug);
+      return storeSavedIds(getStorage, ids, key);
     },
     reload() { ids = loadSavedIds(getStorage, key); },
   };
@@ -47,6 +49,8 @@ function markStore(getStorage, key) {
 
 const isTyping = (el) => Boolean(el && (el.isContentEditable || /^(?:INPUT|TEXTAREA|SELECT)$/.test(el.tagName)));
 const reveal = (el) => { if (el) el.hidden = false; };
+/** Show the "storage is blocked" note once a write fails. */
+const noteStored = (doc, stored) => { if (!stored) reveal(doc.querySelector('[data-guides-storage]')); };
 
 /** @param {Document} doc @param {() => Storage|null|undefined} getStorage */
 export function initGuidesIndex(doc, getStorage) {
@@ -90,7 +94,6 @@ export function initGuidesIndex(doc, getStorage) {
 
   function apply() {
     const marks = { read: read.set, saved: saved.set };
-    const filtering = Boolean(filters.query.trim() || filters.view !== 'all' || filters.format);
     let shown = 0;
     for (const card of cards) {
       card.el.hidden = !matchesGuide(card, filters, marks);
@@ -102,8 +105,6 @@ export function initGuidesIndex(doc, getStorage) {
       section.hidden = n === 0;
       const label = section.querySelector('[data-section-count]');
       if (label) label.textContent = `(${n})`;
-      const details = section.querySelector('details');
-      if (filtering && n && details) details.open = true;
     }
     const readCount = cards.filter((c) => read.has(c.slug)).length;
     setCount('all', cards.length);
@@ -128,7 +129,7 @@ export function initGuidesIndex(doc, getStorage) {
   });
   formatSelect?.addEventListener('change', () => { filters.format = formatSelect.value; apply(); });
   for (const b of viewButtons) b.addEventListener('click', () => { filters.view = b.dataset.view; apply(); });
-  for (const card of cards) card.star?.addEventListener('click', () => { saved.toggle(card.slug); apply(); });
+  for (const card of cards) card.star?.addEventListener('click', () => { noteStored(doc, saved.toggle(card.slug)); apply(); });
   doc.querySelector('[data-reset]')?.addEventListener('click', reset);
   doc.addEventListener('keydown', (e) => {
     if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey || isTyping(e.target) || !q) return;
@@ -154,18 +155,19 @@ export function initGuidePage(doc, getStorage) {
   const saved = markStore(getStorage, GUIDES_SAVED_KEY);
   const readButton = tools.querySelector('[data-read]');
   const saveButton = tools.querySelector('[data-save]');
-  const paint = () => {
-    if (readButton) {
-      readButton.setAttribute('aria-pressed', String(read.has(slug)));
-      readButton.textContent = read.has(slug) ? '✓ Read' : 'Mark as read';
-    }
-    if (saveButton) {
-      saveButton.setAttribute('aria-pressed', String(saved.has(slug)));
-      saveButton.textContent = saved.has(slug) ? '★ Saved' : '☆ Save';
-    }
+  // The accessible name stays fixed; aria-pressed carries the state and only the decorative glyph changes.
+  const paintButton = (button, on, glyphs) => {
+    if (!button) return;
+    button.setAttribute('aria-pressed', String(on));
+    const glyph = button.querySelector('.glyph');
+    if (glyph) glyph.textContent = on ? glyphs[1] : glyphs[0];
   };
-  readButton?.addEventListener('click', () => { read.toggle(slug); paint(); });
-  saveButton?.addEventListener('click', () => { saved.toggle(slug); paint(); });
+  const paint = () => {
+    paintButton(readButton, read.has(slug), ['○', '✓']);
+    paintButton(saveButton, saved.has(slug), ['☆', '★']);
+  };
+  readButton?.addEventListener('click', () => { noteStored(doc, read.toggle(slug)); paint(); });
+  saveButton?.addEventListener('click', () => { noteStored(doc, saved.toggle(slug)); paint(); });
   reveal(tools);
   paint();
 }

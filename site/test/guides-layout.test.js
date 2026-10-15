@@ -190,6 +190,17 @@ describe('guide page layout', () => {
     expect(html).toContain('<a href="../../guides/#sec-understanding-jobs">Understanding jobs</a>');
   });
 
+  it('links the breadcrumb section only for sections the index has', () => {
+    const odd = renderGuidePage(guide({ section: 'Typo section' }), { siteUrl: SITE, siblings: [] });
+    expect(odd).not.toContain('#sec-typo-section');
+  });
+
+  it('section headings are real h2 elements, not inside a summary', () => {
+    const index = renderGuidesIndex([cur], { siteUrl: SITE, paths: [] });
+    expect(index).toContain('<h2>UNDERSTANDING JOBS <span class="n" data-section-count>(1)</span></h2>');
+    expect(index).not.toContain('<summary><h2>');
+  });
+
   it('shows formats, reading time and dates, and Article JSON-LD with published and modified dates', () => {
     expect(html).toContain('<span class="tag">CHECKLIST</span>');
     expect(html).toContain('4 min read');

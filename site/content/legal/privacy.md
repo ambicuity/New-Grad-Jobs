@@ -11,7 +11,7 @@ This policy explains what information is handled when you use NGJ (New Grad Jobs
 
 - NGJ has **no accounts, no sign-up, no forms, no advertising and no newsletter**. It does not ask for your name, email or résumé.
 - NGJ sets **no cookies**. Your saved and applied jobs, and the guides you save or mark as read, stay in your own browser's storage and are never sent anywhere.
-- The main job board loads **GoatCounter**, a privacy-focused page counter. GoatCounter says it does not store IP addresses or set cookies. The guides run one small script from NGJ's own domain, which searches the guide list and remembers the guides you save or mark as read, and makes no network requests. The other pages (job pages, landing pages, policies and the about page) run no scripts at all.
+- The main job board loads **GoatCounter**, a privacy-focused page counter. GoatCounter says it does not store IP addresses or set cookies. The guides run one small script from NGJ's own domain, which searches the guide list and remembers the guides you save or mark as read, and sends nothing anywhere. The other pages (job pages, landing pages, policies and the about page) run no scripts at all.
 - The site is hosted on **GitHub Pages**. GitHub logs visitors' IP addresses for security.
 - NGJ does **not sell** personal information, and does not share it for targeted advertising.
 

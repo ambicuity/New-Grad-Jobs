@@ -93,13 +93,11 @@ describe('guides index enhancement', () => {
     expect(visible()).toEqual(['ats-friendly-resume', 'opt-and-stem-opt']);
   });
 
-  it('filters by format and opens collapsed sections that have matches', () => {
-    document.querySelector('#sec-offers details').open = false;
+  it('filters by format', () => {
     const select = document.getElementById('guide-format');
     select.value = 'script';
     select.dispatchEvent(new Event('change', { bubbles: true }));
     expect(visible()).toEqual(['negotiation']);
-    expect(document.querySelector('#sec-offers details').open).toBe(true);
   });
 
   it('"/" focuses search outside text fields and Escape clears it', () => {
@@ -116,8 +114,10 @@ describe('guides index enhancement', () => {
     load(renderGuidesIndex(GUIDES, { siteUrl: SITE, paths: [] }));
     initGuidesIndex(document, () => { throw new Error('blocked'); });
     const star = document.querySelector('.star');
+    expect(document.querySelector('[data-guides-storage]').hidden).toBe(true);
     star.click();
     expect(star.getAttribute('aria-pressed')).toBe('true');
+    expect(document.querySelector('[data-guides-storage]').hidden).toBe(false);
   });
 });
 
@@ -133,12 +133,14 @@ describe('guide page enhancement', () => {
     read.click();
     save.click();
     expect(read.getAttribute('aria-pressed')).toBe('true');
-    expect(read.textContent).toBe('✓ Read');
-    expect(save.textContent).toBe('★ Saved');
+    expect(read.textContent).toBe('✓ Mark as read');
+    expect(save.textContent).toBe('★ Save');
+    expect(document.querySelector('[data-guides-storage]').hidden).toBe(true);
     expect(JSON.parse(storage.data.get(GUIDES_READ_KEY))).toEqual(['negotiation']);
     expect(JSON.parse(storage.data.get(GUIDES_SAVED_KEY))).toEqual(['negotiation']);
     read.click();
-    expect(read.textContent).toBe('Mark as read');
+    expect(read.textContent).toBe('○ Mark as read');
+    expect(read.getAttribute('aria-pressed')).toBe('false');
     expect(JSON.parse(storage.data.get(GUIDES_READ_KEY))).toEqual([]);
   });
 
