@@ -286,6 +286,17 @@ class Verdict:
 _OUT = Verdict(kept=False, reasons=())
 
 
+# Hyphen, non-breaking hyphen, figure dash, en/em dash, horizontal bar, minus.
+# Signals are written with an ASCII hyphen ("co-op", "part-time"), but Oracle
+# HCM and Workday titles often carry these ("Co\u2011Op"), so titles are
+# folded to "-" before any rule reads them.
+_UNICODE_DASHES_RE = re.compile('[\u2010-\u2015\u2212]')
+
+
+def _fold_dashes(title: Any) -> Any:
+    return _UNICODE_DASHES_RE.sub('-', title) if isinstance(title, str) else title
+
+
 def _filtering(config: dict[str, Any]) -> dict[str, Any]:
     return config.get('filtering', config.get('filters', {}))
 
@@ -300,6 +311,7 @@ def passes_title_rules(title: Any, filters: dict[str, Any]) -> bool:
     """
     if not isinstance(title, str):
         return False
+    title = _fold_dashes(title)
     exclusion_signals = filters.get('exclusion_signals', list(DEFAULT_EXCLUSION_SIGNALS))
     if is_title_excluded(title, exclusion_signals):
         return False
@@ -324,7 +336,7 @@ def classify_job(job: dict[str, Any], config: dict[str, Any], *, now: datetime |
     and ``near_miss_max_age_days`` ago. Older than that is out.
     """
     filters = _filtering(config)
-    title = job.get('title', '')
+    title = _fold_dashes(job.get('title', ''))
     if not passes_title_rules(title, filters):
         return _OUT
     internship = is_internship_title(title, filters.get('internship_signals'))

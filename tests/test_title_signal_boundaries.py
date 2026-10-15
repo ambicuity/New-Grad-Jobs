@@ -325,3 +325,50 @@ class TestPassesTitleRules:
         from ngj.filters import passes_title_rules
 
         assert passes_title_rules("Software Engineering Intern", _live_filtering()) is True
+
+
+class TestUnicodeDashesInTitles:
+    """Titles from Oracle HCM and Workday boards use Unicode dashes ("Co‑Op" with
+    U+2011). Signals are written with an ASCII hyphen, so a co-op or part-time
+    title with another dash must still be recognised (Oct 2026)."""
+
+    @pytest.mark.parametrize("dash", ["‐", "‑", "‒", "–", "—", "−"])
+    def test_coop_with_any_dash_is_not_curated(self, dash):
+        from ngj.filters import classify_job
+
+        title = f"Controls & Automation Engineering Co{dash}Op – Latham, NY - Summer 2027"
+        job = {"title": title, "location": "Latham, NY", "posted_at": POSTED_AT, "company": "Acme"}
+        verdict = classify_job(job, _live_config())
+        assert verdict.kept is False and verdict.reasons == ("intern_or_coop",)
+
+    def test_part_time_with_a_non_breaking_hyphen_is_dropped(self):
+        assert _passes("Retail Sales Associate (Part‑Time)") is False
+
+    def test_an_en_dash_separator_still_passes(self):
+        assert _passes("Associate Software Engineer – Platform") is True
+
+
+class TestSeniorAssociateTitles:
+    """"Associate" is a new-grad signal, but in law and academia "Associate General
+    Counsel", "Associate Dean" and "Associate Professor" are senior roles (Oct 2026)."""
+
+    @pytest.mark.parametrize("title", [
+        "Associate General Counsel, Product - Development",
+        "Government Contracts Associate General Counsel",
+        "Deputy General Counsel",
+        "Associate Dean Graduate & International Law Programs - Law Office of the Dean",
+        "Assistant Dean for Student Affairs",
+        "Assistant or Associate Professor - Software Engineering",
+        "Associate Professor of Data Science",
+    ])
+    def test_dropped(self, title):
+        assert _passes(title) is False
+
+    @pytest.mark.parametrize("title", [
+        "Associate Counsel, Legal",
+        "Associate Software Engineer",
+        "Associate Data Analyst - Professor Smith Lab",
+        "Dean's Office Program Associate",
+    ])
+    def test_kept(self, title):
+        assert _passes(title) is True
