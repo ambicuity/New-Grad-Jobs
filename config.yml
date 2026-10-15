@@ -233,6 +233,20 @@ filtering:
     - "part-time"
     - "part time"
     - "seasonal"
+    # Temporary, fixed-term and contract postings are not new-grad careers
+    # either (owner decision, 2026-10-15). A standalone contract tag
+    # ("(Contract)", "- Contract", "..., Contractor") and fractional-FTE titles
+    # (".3FTE", part-time) are matched in code: is_excluded_employment_type in
+    # scripts/ngj/filters.py. Titles about contracts as a subject
+    # ("Contracts Administrator", "Contractor Compliance Associate") stay.
+    - "temp"
+    - "temporary"
+    - "fixed term"
+    - "fixed-term"
+    - "contract to hire"
+    - "contract-to-hire"
+    - "month contract"
+    - "months contract"
     # "Associate" is a new-grad signal, but these are senior legal and
     # academic roles (bug fix, 2026-10-15).
     - "general counsel"
@@ -1690,8 +1704,6 @@ apis:
         url: "https://careers.noblis.org"
       - name: "PepsiCo"
         url: "https://www.pepsicojobs.com"
-      - name: "Allied Universal"
-        url: "https://securitycareers-aus.icims.com"
       - name: "Berkley"
         url: "https://careers-berkley.icims.com"
       - name: "Beyond New Horizons"

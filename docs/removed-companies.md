@@ -5,6 +5,16 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-15 — Allied Universal removed (owner decision)
+
+Allied Universal (iCIMS portal `securitycareers-aus.icims.com`, added in #426) published only
+security-officer and security-guard postings: 4 curated jobs on 2026-10-15. The owner decided these
+are not new-grad careers, so the board was removed. Do not re-add it.
+
+The same decision drops temporary, fixed-term and contract postings, and fractional-FTE (part-time)
+titles, through `filtering.exclusion_signals` and `_FRACTIONAL_FTE_RE` in `scripts/ngj/filters.py`.
+That removed 33 of 9,003 live curated jobs on 2026-10-15.
+
 ## 2026-10-15 — Workday boards behind Phenom career sites (8 added)
 
 The careers-page audit (#419) found 26 employers on Phenom career sites. Phenom is a front end:

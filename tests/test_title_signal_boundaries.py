@@ -304,6 +304,68 @@ class TestPartTimeAndSeasonalExcluded:
         assert _passes(title) is True
 
 
+class TestTemporaryContractAndFractionalFteExcluded:
+    """Temporary, fixed-term and contract postings, and fractional-FTE (part-time)
+    roles are not new-grad careers (owner decision, 2026-10-15). Titles about
+    contracts as a subject ("Contracts Administrator") are full-time roles and stay."""
+
+    @pytest.mark.parametrize("title", [
+        "Retail Sales Associate Temp",
+        "Clinical Lab Operator I-Temp",
+        "Software Engineer II Temp to Hire",
+        "Flight Software Engineer I (Temp-to-hire)",
+        "Temporary Sales Associate",
+        "Junior Accountant (12 Month Temporary Assignment)",
+        "Temporary Early Career Electrical Engineer",
+        "Associate Field Service Engineer (Fixed Term – 12-month assignment)",
+        "Business Analyst, Marketing-1 (Fixed Term)",
+        "Customer Experience Associate (3 Month Fixed-Term Contract)",
+        "Associate Operations Software Engineer - Operations ( Contract to hire )",
+        "Biotech Analyst - Level 1 (Cell Biology) - 12 Month Contract",
+        "Clinical Research Assistant II (Contract) - On Call - 6-8 weeks",
+        "Junior Recruiter (6-Month Contract)",
+        "Associate Regulatory Affairs Specialist - 18 months contract",
+        "Associate Product Designer / 6-month contract",
+        "Junior Marketing Consultant - Contract (Hybrid)",
+        "Revenue Operations Associate -Gurugram (Contractual)",
+        "Data Engineer - Flight Data (contract)",
+        "Junior Software Engineer (Contractor)",
+        "Associate Engineer, Contract",
+        "Associate Engineer | Contract",
+        "Data Analyst I (Contract Position)",
+        "Data Analyst I ( Contract )",
+        "Associate Data Analyst 0.9 FTE",
+        "Nursing Care Assistant I (CNA) General Medicine Dialysis .3FTE",
+        "Associate Data Analyst 0.5 FTE",
+    ])
+    def test_dropped(self, title):
+        assert _passes(title) is False
+
+    @pytest.mark.parametrize("title", [
+        "Contract Specialist II",
+        "Associate Contracts Administrator",
+        "Subcontracts Administrator Associate",
+        "Junior Paralegal, Contracts",
+        "Associate Business Contracts Officer",
+        "Paralegal/Contracts Associate",
+        "Leadership Development Program - Contracts (June 2027)",
+        "CAD Drafter II – Ground Support Equipment",
+        "Nursing Care Assistant I (CNA) 1.0 FTE",
+        "Software Engineer I, Temperature Systems",
+        "Associate - Contract Administrator",
+        "Data Analyst I - Contract Compliance",
+        "Contractor Compliance Associate",
+        "Contractual Compliance Associate",
+        "Contractor Management Analyst I",
+        "Software Engineer I, Temporal Platform",
+        "Software Engineer I, Template Systems",
+        "Data Analyst I (1.5 FTE)",
+        "Associate Data Analyst (Time Series)",
+    ])
+    def test_kept(self, title):
+        assert _passes(title) is True
+
+
 class TestPassesTitleRules:
     """passes_title_rules is classify_job's title-only hard gate (shared with adapters
     that must decide, before fetching details, whether a posting can be listed)."""

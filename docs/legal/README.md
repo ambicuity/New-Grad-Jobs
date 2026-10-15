@@ -24,7 +24,7 @@ V marks a fact verified from code, configuration or the live site. I marks a rea
 - V: `LICENSE` reads "Copyright (c) 2026 Ritesh Rana". The GitHub owner is `ambicuity`.
 - V: `contact@riteshrana.engineer` is already published in `SECURITY.md` and `CODE_OF_CONDUCT.md`.
 - V: the site brands itself "NGJ · New Grad Jobs" (`site/index.html`), so the policies use that name.
-- Q: is NGJ run by Ritesh Rana personally, or through a business entity? Which country and state? No postal address is published.
+- V (confirmed by the maintainer, 2026-10-15): NGJ is operated by Ritesh Rana, contact contact@riteshrana.engineer. No postal address is published.
 
 ### 2. What the site does
 
@@ -83,7 +83,7 @@ V marks a fact verified from code, configuration or the live site. I marks a rea
 
 ## Decisions for the maintainer
 
-1. Confirm the operator: an individual or an entity, the country and state, and whether to publish a postal address.
+1. ~~Confirm the operator~~: confirmed 2026-10-15, Ritesh Rana, contact@riteshrana.engineer.
 2. Choose a governing law and venue, or keep the current "none chosen" clause in Terms section 15.
 3. Register a DMCA designated agent with the US Copyright Office (<https://www.copyright.gov/dmca-directory/>) if you want the section 512 safe harbours. Agent details must also be published on the site.
 4. Decide how much description text to republish (section 7 risk): full text, a short excerpt, or metadata only.
@@ -93,7 +93,8 @@ V marks a fact verified from code, configuration or the live site. I marks a rea
 
 ## Pre-publication checklist
 
-- [ ] Decisions 1 to 3 made, and the Terms and Privacy pages updated to match
+- [x] Decision 1 (operator) confirmed
+- [ ] Decisions 2 and 3 made, and the Terms and Privacy pages updated to match
 - [ ] A lawyer has reviewed the items marked "Review"
 - [ ] The `contact@riteshrana.engineer` mailbox is monitored for the subject lines the policies list
 - [ ] The GoatCounter dashboard settings match privacy section 3.3
