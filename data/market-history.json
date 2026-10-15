@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-15T03:59:07.698993+00:00",
+    "last_updated": "2026-10-15T04:31:36.756515+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-17",
@@ -4036,43 +4036,43 @@
     },
     {
       "date": "2026-10-15",
-      "total_jobs": 7835,
+      "total_jobs": 7823,
       "categories": {
-        "software_engineering": 1932,
-        "customer_support": 165,
+        "software_engineering": 1927,
+        "customer_support": 169,
         "quant_finance": 20,
-        "sales": 802,
-        "frontend": 31,
+        "sales": 803,
+        "frontend": 33,
         "backend": 46,
         "design": 47,
-        "other": 477,
-        "data_ml": 309,
+        "other": 475,
+        "data_ml": 311,
         "hardware": 192,
-        "engineering": 1040,
-        "business_analyst": 280,
+        "engineering": 1035,
+        "business_analyst": 279,
         "infrastructure_sre": 386,
-        "accounting_finance": 355,
-        "security": 209,
+        "accounting_finance": 352,
+        "security": 210,
         "supply_chain": 244,
         "data_engineering": 159,
-        "legal": 66,
+        "legal": 64,
         "management": 129,
-        "human_resources": 96,
-        "product_management": 22,
+        "human_resources": 92,
+        "product_management": 23,
         "project_management": 73,
         "mobile": 26,
         "consulting": 106,
-        "marketing": 71,
+        "marketing": 70,
         "arts_entertainment": 1,
-        "healthcare": 469,
-        "education": 40,
+        "healthcare": 470,
+        "education": 39,
         "data_analyst": 35,
         "public_sector": 7
       },
       "tiers": {
-        "other": 6044,
+        "other": 6040,
         "unicorn": 829,
-        "faang_plus": 962
+        "faang_plus": 954
       },
       "top_companies": [
         {
@@ -4089,7 +4089,7 @@
         },
         {
           "company": "Raytheon",
-          "jobs": 162
+          "jobs": 160
         },
         {
           "company": "WSP",
@@ -4097,7 +4097,7 @@
         },
         {
           "company": "Mount Sinai Health System",
-          "jobs": 135
+          "jobs": 138
         },
         {
           "company": "SpaceX",
@@ -4116,9 +4116,9 @@
           "jobs": 111
         }
       ],
-      "unique_companies": 975,
-      "avg_jobs_per_company": 8.04,
-      "timestamp": "2026-10-15T03:59:07.698993+00:00"
+      "unique_companies": 976,
+      "avg_jobs_per_company": 8.02,
+      "timestamp": "2026-10-15T04:31:36.756515+00:00"
     }
   ]
 }
