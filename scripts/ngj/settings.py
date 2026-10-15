@@ -79,7 +79,7 @@ DEFAULT_WORKDAY_KEYWORD_WORKERS = 3
 # pages fetched so far instead of becoming the long pole of the whole run.
 DEFAULT_WORKDAY_MAX_SECONDS_PER_COMPANY = 45
 # Job-endpoint lookups per company for "N Locations" postings whose title can pass (#427).
-DEFAULT_WORKDAY_MAX_LOCATION_LOOKUPS = 50
+DEFAULT_WORKDAY_MAX_LOCATION_LOOKUPS = 100
 
 # One SmartRecruiters query per target country; results are newest first, and
 # 1000 reach back about two months at AbbVie (~1.2k US postings).
