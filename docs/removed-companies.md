@@ -5,6 +5,28 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-15 — Workday boards behind Phenom career sites (8 added)
+
+The careers-page audit (#419) found 26 employers on Phenom career sites. Phenom is a front end:
+each job's `applyUrl` in the site's embedded search results names the job system behind it. For 18
+of the 22 sites that answered, that is Workday. Freddie Mac, ICF, State Street, Toyota and the
+University of Miami (`UMCareerStaff`) were already configured, and Applied Industrial Technologies
+was measured before (#419). The other Workday boards were measured through our filters on
+2026-10-15, after the multi-location fixes (#428, #430). The 8 with at least two curated jobs were
+added (112 curated jobs at the time): Trinzic (`trinzic/Trinzic_Careers`), TJX Companies
+(`tjx/TJX_EXTERNAL`), Fortrea (`fortrea/Fortrea`), Esko (`veralto/EskoJobs`), Republic Services
+(`republic/Republic`), Southwest Airlines (`swa/external`), Sutter Health (`sutterhealth/SH`) and Hach
+(`veralto/HachJobs`).
+
+**Not added:**
+
+- **Fewer than two curated jobs:** University of Miami faculty (`umiami/UMFaculty`), ChemTreat,
+  Videojet, Linx and Trojan Technologies (all Veralto), Reinsurance Group of America, Chewy, Illinois
+  Tool Works, Blackbaud and Yale University.
+- **Not Workday:** Bechtel (legacy SuccessFactors portal), United Airlines (Taleo), DHL Supply Chain
+  (Avature and a third-party apply service) and Honda (no apply link in the search results).
+- **Search results not found:** Crowe, Duke University (read from SuccessFactors), DaVita and OMERS.
+
 ## 2026-10-15 — iCIMS classic portals (23 added)
 
 The iCIMS adapter now also reads classic portals (`https://<prefix>-<company>.icims.com`, #173): their
