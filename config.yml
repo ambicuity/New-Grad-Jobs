@@ -1662,6 +1662,25 @@ apis:
         url: "https://jobs.utoronto.ca"
       - name: "Westinghouse"
         url: "https://careers.westinghousenuclear.com"
+  icims:
+    # iCIMS career sites on the employer's own host (no key; the adapter reads
+    # the site's /api/jobs search once per country, newest first). Each site's
+    # apply_url was checked to be iCIMS, not a job system read elsewhere.
+    # Probed live on 2026-10-15 (#423).
+    max_jobs_per_country: 1000
+    companies:
+      - name: "AMD"
+        url: "https://careers.amd.com"
+      - name: "Emory University"
+        url: "https://careers.emory.edu"
+      - name: "First Citizens Bank"
+        url: "https://jobs.firstcitizens.com"
+      - name: "Medpace"
+        url: "https://careers.medpace.com"
+      - name: "Noblis"
+        url: "https://careers.noblis.org"
+      - name: "PepsiCo"
+        url: "https://www.pepsicojobs.com"
   google:
     # Scrapes the public Google Careers results page (AF_initDataCallback
     # payload; the old /api/v3/search JSON endpoint 404s). Verified working

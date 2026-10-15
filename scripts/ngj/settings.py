@@ -58,6 +58,8 @@ DEFAULT_WORKABLE_MAX_WORKERS = 4
 DEFAULT_PAYLOCITY_MAX_WORKERS = 1
 # SuccessFactors careers sites are each on the employer's own host.
 DEFAULT_SUCCESSFACTORS_MAX_WORKERS = 6
+# iCIMS career sites are each on the employer's own host; three country queries each.
+DEFAULT_ICIMS_MAX_WORKERS = 4
 DEFAULT_GRAPHQL_MIN_WORKERS = 8
 DEFAULT_GRAPHQL_MAX_WORKERS = 80
 DEFAULT_JOBSPY_WORKERS = 25
@@ -96,6 +98,9 @@ DEFAULT_ADP_MAX_JOBS_PER_COMPANY = 1000
 DEFAULT_SUCCESSFACTORS_MAX_JOBS_PER_COMPANY = 1000
 # Job-page requests per site, only for postings whose title and location can pass.
 DEFAULT_SUCCESSFACTORS_MAX_DETAILS_PER_COMPANY = 100
+# iCIMS career-site search takes country names; newest first, capped per country.
+DEFAULT_ICIMS_COUNTRIES: tuple[str, ...] = ("United States", "Canada", "India")
+DEFAULT_ICIMS_MAX_JOBS_PER_COUNTRY = 1000
 
 DEFAULT_GOOGLE_MAX_PAGES = 3
 DEFAULT_GRAPHQL_MAX_JOBS_PER_SOURCE = 200
@@ -138,6 +143,7 @@ class Settings:
     workable_max_workers: int = DEFAULT_WORKABLE_MAX_WORKERS
     paylocity_max_workers: int = DEFAULT_PAYLOCITY_MAX_WORKERS
     successfactors_max_workers: int = DEFAULT_SUCCESSFACTORS_MAX_WORKERS
+    icims_max_workers: int = DEFAULT_ICIMS_MAX_WORKERS
     graphql_min_workers: int = DEFAULT_GRAPHQL_MIN_WORKERS
     graphql_max_workers: int = DEFAULT_GRAPHQL_MAX_WORKERS
     jobspy_workers: int = DEFAULT_JOBSPY_WORKERS
@@ -165,6 +171,8 @@ class Settings:
     adp_max_jobs_per_company: int = DEFAULT_ADP_MAX_JOBS_PER_COMPANY
     successfactors_max_jobs_per_company: int = DEFAULT_SUCCESSFACTORS_MAX_JOBS_PER_COMPANY
     successfactors_max_details_per_company: int = DEFAULT_SUCCESSFACTORS_MAX_DETAILS_PER_COMPANY
+    icims_countries: tuple[str, ...] = DEFAULT_ICIMS_COUNTRIES
+    icims_max_jobs_per_country: int = DEFAULT_ICIMS_MAX_JOBS_PER_COUNTRY
 
     google_enabled: bool = False
     google_max_pages: int = DEFAULT_GOOGLE_MAX_PAGES
@@ -235,6 +243,7 @@ def build_settings(
     ukg = _section(config, "apis", "ukg")
     adp = _section(config, "apis", "adp")
     successfactors = _section(config, "apis", "successfactors")
+    icims = _section(config, "apis", "icims")
     google = _section(config, "apis", "google")
     graphql = _section(config, "apis", "graphql")
     jobspy = _section(config, "apis", "jobspy")
@@ -264,6 +273,7 @@ def build_settings(
         workable_max_workers=pool("workable_max_workers", DEFAULT_WORKABLE_MAX_WORKERS),
         paylocity_max_workers=pool("paylocity_max_workers", DEFAULT_PAYLOCITY_MAX_WORKERS),
         successfactors_max_workers=pool("successfactors_max_workers", DEFAULT_SUCCESSFACTORS_MAX_WORKERS),
+        icims_max_workers=pool("icims_max_workers", DEFAULT_ICIMS_MAX_WORKERS),
         graphql_min_workers=pool("graphql_min_workers", DEFAULT_GRAPHQL_MIN_WORKERS),
         graphql_max_workers=pool("graphql_max_workers", DEFAULT_GRAPHQL_MAX_WORKERS),
         jobspy_workers=pool("jobspy_workers", DEFAULT_JOBSPY_WORKERS),
@@ -312,6 +322,9 @@ def build_settings(
         successfactors_max_details_per_company=coerce_positive_int(
             successfactors.get("max_details_per_company"), DEFAULT_SUCCESSFACTORS_MAX_DETAILS_PER_COMPANY,
             "apis.successfactors.max_details_per_company"),
+        icims_countries=_string_tuple(icims.get("countries")) or DEFAULT_ICIMS_COUNTRIES,
+        icims_max_jobs_per_country=coerce_positive_int(
+            icims.get("max_jobs_per_country"), DEFAULT_ICIMS_MAX_JOBS_PER_COUNTRY, "apis.icims.max_jobs_per_country"),
         # Historical default: a google section without `enabled` runs.
         google_enabled=bool(google.get("enabled", True)),
         google_max_pages=coerce_positive_int(google_pages, DEFAULT_GOOGLE_MAX_PAGES, "apis.google.max_pages"),
@@ -345,6 +358,8 @@ def describe_settings(settings: Settings) -> None:
     logger.info("     SuccessFactors: up to %s, max_per_company=%s, max_details=%s",
                 settings.successfactors_max_workers, settings.successfactors_max_jobs_per_company,
                 settings.successfactors_max_details_per_company)
+    logger.info("     iCIMS: up to %s, countries=%s, max_per_country=%s", settings.icims_max_workers,
+                ",".join(settings.icims_countries), settings.icims_max_jobs_per_country)
     logger.info("     GraphQL: %s-%s", settings.graphql_min_workers, settings.graphql_max_workers)
     logger.info("     JobSpy: %s", settings.jobspy_workers)
     logger.info("     Orchestrator: %s", settings.orchestrator_workers)

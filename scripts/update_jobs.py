@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """New Grad Jobs aggregator — CLI entrypoint.
 
-Scrapes Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, UKG, ADP, Workable, Paylocity, SuccessFactors, Workday, JobSpy (and optionally Google
+Scrapes Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, UKG, ADP, Workable, Paylocity, SuccessFactors, iCIMS, Workday, JobSpy (and optionally Google
 Careers / GraphQL) and writes the public artifacts (jobs.json,
 jobs-index.json, descriptions/, feed.xml, health.json) to $NGJ_OUTPUT_DIR
 (default: site/public). The implementation lives in the ``ngj`` package;

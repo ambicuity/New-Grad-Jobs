@@ -40,6 +40,7 @@ from ngj.sources.ashby import fetch_all_ashby_jobs
 from ngj.sources.google import fetch_google_jobs
 from ngj.sources.graphql import fetch_all_graphql_jobs
 from ngj.sources.greenhouse import fetch_all_greenhouse_jobs, hydrate_greenhouse_descriptions
+from ngj.sources.icims import fetch_all_icims_jobs
 from ngj.sources.jobspy import fetch_jobspy_jobs
 from ngj.sources.lever import fetch_all_lever_jobs
 from ngj.sources.oracle_hcm import fetch_all_oracle_hcm_jobs
@@ -120,6 +121,8 @@ def plan_sources(config: Mapping[str, Any], settings: Settings) -> dict[str, Sou
             # Job-page requests only for titles that can pass the filter (see the adapter).
             return partial(fetch_all_successfactors_jobs, units, settings,
                            filtering=config.get('filtering') or config.get('filters') or {})
+        if name == 'icims':
+            return partial(fetch_all_icims_jobs, units, settings)
         if name == 'google':
             return partial(fetch_google_jobs, units, max_pages=settings.google_max_pages,
                            timeout=settings.http_timeout)
