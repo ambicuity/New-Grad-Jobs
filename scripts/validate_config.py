@@ -90,6 +90,7 @@ INT_RANGES: tuple[tuple[str, int, int], ...] = (
     ("apis.workday.max_jobs_per_company", 1, 5_000),
     ("apis.workday.timeout", 1, 120),
     ("apis.workday.max_workers", 1, 64),
+    ("apis.workday.max_location_lookups", 1, 1_000),
     ("apis.smartrecruiters.max_jobs_per_country", 1, 10_000),
     ("apis.oracle_hcm.max_jobs_per_country", 1, 10_000),
     ("apis.oracle_hcm.timeout", 1, 120),

@@ -201,6 +201,8 @@ def test_icims_takes_a_career_site_or_a_classic_portal_root():
     (lambda c: c["apis"].update(icims={"enabled": "y", "companies": []}), "apis.icims.enabled: must be true or false"),
     (lambda c: c["apis"].update(workday={"enabled": True, "page_limit": 50, "companies": []}),
      "apis.workday.page_limit"),
+    (lambda c: c["apis"].update(workday={"max_location_lookups": 0, "companies": []}),
+     "apis.workday.max_location_lookups"),
     (lambda c: c["apis"].update(workday={"companies": [{"name": "W", "workday_url": "https://evil.com/x"}]}),
      "apis.workday.companies[0].workday_url"),
     (lambda c: c["apis"].update(graphql={"enabled": True, "sources": [{"name": "g"}]}),
