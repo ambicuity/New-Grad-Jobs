@@ -5,6 +5,50 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-15 — Careers-page audit (84 boards added)
+
+A follow-up to the Foorilla audit (#419). Foorilla was re-read for unconfigured employers with at
+least 10 open jobs and 3 or more recent entry-level jobs in the US, Canada or India: 440 employers,
+after removing recruiters. Each employer's own website (the homepage, `/careers`, `/jobs`, `careers.`
+and `jobs.` subdomains, and links labelled careers or jobs) was scanned for job-system links. Workday
+tenants were confirmed through the CXS API, keeping the site with the most jobs, and other families
+through their public APIs. The 84 boards whose jobs pass our filters at least twice (1,102 curated
+jobs, measured with the #417 filter fix) were added.
+
+**Not added (wrong board):** the link pointed at a different company or region. Deloitte linked
+Deloitte Ireland (`deloitteie`), Toyota Automated Logistics linked Vanderlande, ETAP linked AVEVA,
+Argo Group linked Brookfield, Emory University linked `hhc`, and IKEA linked IKEA Bulgaria.
+
+**Not added (owner rule, direct employers only):** Diversified Services Network (Workable `dsn`)
+describes itself as providing "staffing services to Fortune 500 companies".
+
+**Not added (other):** Staples' Oracle HCM site answers `HTTP 403`. 13 boards publish only one
+curated job and 23 publish none: Ohio State University, Premier, CAE, Sun Life, Blue Cross Blue
+Shield of Arizona, Kotak Mahindra Bank, Q2, BILL, Applied Industrial Technologies, TMX, Centific,
+Trident Systems and Tech Holding publish one each.
+
+**Unsupported job systems found:** SuccessFactors (51 employers), iCIMS (37), Phenom (26), Avature
+(11), Eightfold (11), Taleo (9), Dayforce (3), BrassRing (2), Jobvite (1). 146 employers showed no
+job-system link. Demand is tracked in #316.
+
+**Workday (56):** Advocate Aurora Health (`aah/External`), AeroVironment (`avav/AVAV`), Auto-Owners Insurance (`aoins/AutoOwners`), Axos Bank (`axos/axos`), Barry-Wehmiller (`barrywehmiller/BWCareers`), BDO Canada (`bdo/bdo`), BlackBerry (`bb/BlackBerry`), bp (`bpinternational/bpCareers`), Broadridge (`broadridge/careers`), Canadian Tire (`canadiantirecorporation/Enterprise_External_Careers_Site`), Cleveland Clinic (`ccf/ClevelandClinicCareers`), ConocoPhillips (`conocophillips/External`), Copeland (`copeland/Copeland_External_Careers_Page`), Crane Company (`cranecompany/Careers`), Cushman & Wakefield (`cw/External`), ERCOT (`ercot/ercot_careers`), Fannie Mae (`fanniemae/FannieMaeCareers`), Freddie Mac (`freddiemac/External`), Genworth (`gnw/GNW`), Great American Insurance Group (`gaig/GAIG_External`), Harris Computer (`harriscomputer/1`), ICF (`icf/ICFExternal_Career_Site`), Invesco (`invesco/IVZ`), Itron (`itron/Itron`), Jefferson Health (`jeffersonhealth/ThomasJeffersonExternal`), KLA (`kla/Search`), KONE (`kone/Careers`), Light & Wonder (`lnw/LightWonderExternalCareers`), Logitech (`logitech/LOGITECH`), NCR Voyix (`ncr/ext_us`), Netsmart (`ntst/Careers`), Nordstrom (`nordstrom/nordstrom_careers`), Penn State University (`psu/PSU_Staff`), Protiviti (`roberthalf/ProtivitiNA`), Regal Rexnord (`regalrexnord/careers`), Ryder (`ryder/rydercareers`), S&P Global (`spgi/SPGI_Careers`), State Street (`statestreet/Global`), T. Rowe Price (`troweprice/TROWEPRICE`), TaskUs (`taskus/careers`), The University of Texas at Austin (`utaustin/UTstaff`), Tokio Marine HCC (`tmhcc/External`), Torch Technologies (`starfish/careers`), Toyota (`toyota/TMNA`), Trellix (`trellix/EnterpriseCareers`), TSC (`tsc/TSC-Careers`), Universities of Wisconsin (`wisconsin/UW_Comprehensives`), University of Chicago (`uchicago/External`), University of Miami (`umiami/UMCareerStaff`), University of Southern California (`usc/ExternalUSCCareers`), VIAVI Solutions (`viavisolutions/careers`), Viridien (`cgg/viridiencareers`), Washington University in St. Louis (`wustl/External`), Western Governors University (`wgu/External`), Worldwide Clinical Trials (`worldwide/External`), Xylem (`xylem/xylem-careers`)
+
+**Oracle HCM (15):** Berkshire Hathaway Energy (`fa-essf-saasfaprod1/CX_1`), Caesars Entertainment (`edmn/CX_1`), Dallas County (`fa-etvc-saasfaprod1/CX_1001`), Emerson (`hdjq/CX_1`), First Solar (`fa-esbv-saasfaprod1/CX_1`), Hearst (`eevd/CX_1`), Howmet Aerospace (`fa-exty-saasfaprod1/CX_1`), Mount Sinai Health System (`ejis/CX`), Providence (`evac/CX_1`), Sherwin-Williams (`ejhp/CX_2`), Tulane University (`tulane-ibqejb/CX_1`), UC San Francisco (`iazuqy/CX_1`), University of Tennessee (`fa-ewlq-saasfaprod1/CX_1`), Verisk (`fa-ewmy-saasfaprod1/CX_1`), Wesco (`eklm/CX`)
+
+**SmartRecruiters (4):** Avery Dennison (`AveryDennison`), EVERSANA (`EVERSANA1`), Ramboll (`Ramboll3`), SOSi (`SOSi1`)
+
+**UKG (3):** ARA (`APP1010ARAI`), HOPCo (`COR1016COREI`), Milliman (`MIL1017`)
+
+**Paylocity (2):** Heartland Business Systems (`3986a99a…`), Inadev (`82c1b00b…`)
+
+**Ashby (1):** PAR Technology (`PAR%20Technology`)
+
+**Greenhouse (1):** D2 Consulting (`d2consulting`)
+
+**Lever (1):** Global Lending Services (`glsllc`)
+
+**Workable (1):** Delaware Nation Industries (`dnigov`)
+
 ## 2026-10-14 — Foorilla audit (54 boards added)
 
 An audit of Foorilla's hiring board (#415) listed its 47,424 companies and read the page of every
