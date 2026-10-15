@@ -210,7 +210,7 @@ describe('third-party licences', () => {
 
   it('includes the full licence text of each bundled package', async () => {
     const text = await renderThirdPartyLicenses(new URL('../node_modules/', import.meta.url).pathname, quiet);
-    for (const name of BUNDLED_PACKAGES) expect(text).toMatch(new RegExp(`^${name.replace(/[/@.]/g, '\\$&')} [\\d.]+ — `, 'm'));
+    for (const name of BUNDLED_PACKAGES) expect(text.split('\n').some((line) => line.startsWith(`${name} `) && / [\d.]+ — /.test(line)), name).toBe(true);
     expect(text).toContain('Permission is hereby granted, free of charge');
     expect(text).toMatch(/SIL OPEN FONT LICENSE/i);
   });
