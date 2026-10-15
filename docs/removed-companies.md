@@ -5,6 +5,36 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-14 — Foorilla audit (54 boards added)
+
+An audit of Foorilla's hiring board (#415) listed its 47,424 companies and read the page of every
+unconfigured one with at least 5 open jobs. Companies with 3 or more recent entry-level jobs in the
+US, Canada or India were probed on Greenhouse, Lever, Ashby, Workable and SmartRecruiters. A board
+was kept only when its job titles matched the employer's Foorilla listings, and only when our own
+filters publish at least one of its jobs (317 curated jobs across the 55 that do). Display names
+come from the board.
+
+**Not added:** Vailexa (Greenhouse `vailexa`) places contractors at client sites, so the
+direct-employers rule (#404) excludes it. University Health Network (SmartRecruiters
+`universityhealthnetwork`) is left out because some of its matching jobs are "Casual" cleaner and
+aide roles, close to the part-time roles the board excludes. Pear VC (Ashby `pear-vc`) is a
+portfolio job board. CGS Federal matched too, but it is already configured (Lever `cgsfederal`).
+Ten matched boards published no curated jobs and were not added: Bierman Autism Centers, Energy
+Solutions, Connor Clark & Lunn, JFrog, Apptronik, PMG, Roboyo, Uncommon Schools, University of
+Notre Dame and Latitude.
+
+**Unresolved:** 561 companies (about 2,700 of the counted jobs) answered on none of those job
+systems. Most are large employers on Workday, such as KLA, PG&E, Walgreens, Supermicro and Sandisk.
+Foorilla does not expose their careers links.
+
+**Greenhouse (36):** AlayaCare (`alayacare`), AppDirect (`appdirect`), ARCO (`arco`), Bitwarden (`bitwarden`), CarGurus (`cargurus`), Chainguard (`chainguard`), ChargePoint (`chargepoint`), Coalition (`coalition`), Dark Wolf Solutions (`darkwolfsolutions`), DigiCert (`digicert`), Domino Data Lab (`dominodatalab`), DV Trading (`dvtrading`), ELEVI Associates (`eleviassociates`), Esri (`esri`), FanDuel (`fanduel`), Gruve (`gruve`), Inversion Space (`inversionspace`), IonQ (`ionq`), IXL Learning (`ixllearning`), Konrad (`konradgroup`), Monster Energy (`monsterenergy`), Nexla (`nexla`), North Point Technology (`northpointtechnology`), Red Ventures (`redventures`), Revolution Medicines (`revolutionmedicines`), Rhombus Power (`rhombuspower`), Roku (`roku`), RZR Global (`rzr`), Schrödinger (`schrdinger`), SMX (`smxtech`), Stratolaunch (`stratolaunch`), The New York Times (`thenewyorktimes`), TrellisWare Technologies (`trelliswaretechnologies`), Truveta (`truveta`), Ursa Major (`ursamajor`), Varda Space Industries (`vardaspace`)
+
+**Lever (9):** Agile Defense (`agile-defense`), Field AI (`field-ai`), Hevo Data (`hevodata`), Kitware (`kitware`), Loft Orbital (`loftorbital`), Match Group (`matchgroup`), Redhorse (`redhorsecorp`), Safe Security (`safe`), Waabi (`waabi`)
+
+**Ashby (7):** Benchling (`benchling`), Blissway (`blissway`), EliseAI (`eliseai`), Fuse (`fuse`), Handshake (`handshake`), NETGEAR (`netgear`), Radiant Industries (`radiant-industries`)
+
+**SmartRecruiters (2):** City of Philadelphia (`CityofPhiladelphia`), Harvard University (`HarvardUniversity`)
+
 ## 2026-10-14 — Paylocity source (9 boards added, 1 left out, 5 unresolved)
 
 The new Paylocity adapter (#413) adds the boards of 9 direct employers linked from the 30-day
