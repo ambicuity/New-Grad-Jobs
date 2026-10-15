@@ -58,8 +58,9 @@ DEFAULT_WORKABLE_MAX_WORKERS = 4
 DEFAULT_PAYLOCITY_MAX_WORKERS = 1
 # SuccessFactors careers sites are each on the employer's own host.
 DEFAULT_SUCCESSFACTORS_MAX_WORKERS = 6
-# iCIMS career sites are each on the employer's own host; three country queries each.
-DEFAULT_ICIMS_MAX_WORKERS = 4
+# iCIMS career sites are each on the employer's own host (three country queries each);
+# classic portals are each their own *.icims.com host (search pages, then job pages).
+DEFAULT_ICIMS_MAX_WORKERS = 6
 DEFAULT_GRAPHQL_MIN_WORKERS = 8
 DEFAULT_GRAPHQL_MAX_WORKERS = 80
 DEFAULT_JOBSPY_WORKERS = 25
@@ -101,6 +102,10 @@ DEFAULT_SUCCESSFACTORS_MAX_DETAILS_PER_COMPANY = 100
 # iCIMS career-site search takes country names; newest first, capped per country.
 DEFAULT_ICIMS_COUNTRIES: tuple[str, ...] = ("United States", "Canada", "India")
 DEFAULT_ICIMS_MAX_JOBS_PER_COUNTRY = 1000
+# Classic portals list 10-50 postings a page, newest first; the cap bounds pages.
+DEFAULT_ICIMS_MAX_JOBS_PER_PORTAL = 1000
+# Job-page requests per portal, only for postings whose title and location can pass.
+DEFAULT_ICIMS_MAX_DETAILS_PER_PORTAL = 100
 
 DEFAULT_GOOGLE_MAX_PAGES = 3
 DEFAULT_GRAPHQL_MAX_JOBS_PER_SOURCE = 200
@@ -173,6 +178,8 @@ class Settings:
     successfactors_max_details_per_company: int = DEFAULT_SUCCESSFACTORS_MAX_DETAILS_PER_COMPANY
     icims_countries: tuple[str, ...] = DEFAULT_ICIMS_COUNTRIES
     icims_max_jobs_per_country: int = DEFAULT_ICIMS_MAX_JOBS_PER_COUNTRY
+    icims_max_jobs_per_portal: int = DEFAULT_ICIMS_MAX_JOBS_PER_PORTAL
+    icims_max_details_per_portal: int = DEFAULT_ICIMS_MAX_DETAILS_PER_PORTAL
 
     google_enabled: bool = False
     google_max_pages: int = DEFAULT_GOOGLE_MAX_PAGES
@@ -325,6 +332,11 @@ def build_settings(
         icims_countries=_string_tuple(icims.get("countries")) or DEFAULT_ICIMS_COUNTRIES,
         icims_max_jobs_per_country=coerce_positive_int(
             icims.get("max_jobs_per_country"), DEFAULT_ICIMS_MAX_JOBS_PER_COUNTRY, "apis.icims.max_jobs_per_country"),
+        icims_max_jobs_per_portal=coerce_positive_int(
+            icims.get("max_jobs_per_portal"), DEFAULT_ICIMS_MAX_JOBS_PER_PORTAL, "apis.icims.max_jobs_per_portal"),
+        icims_max_details_per_portal=coerce_positive_int(
+            icims.get("max_details_per_portal"), DEFAULT_ICIMS_MAX_DETAILS_PER_PORTAL,
+            "apis.icims.max_details_per_portal"),
         # Historical default: a google section without `enabled` runs.
         google_enabled=bool(google.get("enabled", True)),
         google_max_pages=coerce_positive_int(google_pages, DEFAULT_GOOGLE_MAX_PAGES, "apis.google.max_pages"),
@@ -358,8 +370,9 @@ def describe_settings(settings: Settings) -> None:
     logger.info("     SuccessFactors: up to %s, max_per_company=%s, max_details=%s",
                 settings.successfactors_max_workers, settings.successfactors_max_jobs_per_company,
                 settings.successfactors_max_details_per_company)
-    logger.info("     iCIMS: up to %s, countries=%s, max_per_country=%s", settings.icims_max_workers,
-                ",".join(settings.icims_countries), settings.icims_max_jobs_per_country)
+    logger.info("     iCIMS: up to %s, countries=%s, max_per_country=%s, max_per_portal=%s, max_details=%s",
+                settings.icims_max_workers, ",".join(settings.icims_countries), settings.icims_max_jobs_per_country,
+                settings.icims_max_jobs_per_portal, settings.icims_max_details_per_portal)
     logger.info("     GraphQL: %s-%s", settings.graphql_min_workers, settings.graphql_max_workers)
     logger.info("     JobSpy: %s", settings.jobspy_workers)
     logger.info("     Orchestrator: %s", settings.orchestrator_workers)

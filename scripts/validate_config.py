@@ -66,8 +66,11 @@ ATS_URL_PATTERNS: dict[str, re.Pattern[str]] = {
         r"[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}/?$"),
     # The Career Site Builder root on the employer's own host; the adapter adds /search/.
     "successfactors": re.compile(r"^https://([a-z0-9-]+\.)+[a-z]{2,}/?$"),
-    # An iCIMS career site on the employer's own host (not an *.icims.com portal).
-    "icims": re.compile(r"^https://(?![^/]*\.icims\.com/?$)([a-z0-9-]+\.)+[a-z]{2,}/?$"),
+    # An iCIMS career site on the employer's own host, or a public classic portal root
+    # (https://<prefix>-<company>.icims.com; employee-only "internal" portals are rejected).
+    "icims": re.compile(
+        r"^https://(?:(?![^/]*\.icims\.com/?$)([a-z0-9-]+\.)+[a-z]{2,}"
+        r"|(?![^/]*internal)[a-z0-9]+(?:-[a-z0-9]+)+\.icims\.com)/?$"),
 }
 WORKDAY_URL_PATTERN = re.compile(r"^https://[A-Za-z0-9-]+\.wd\d+\.myworkdayjobs\.com/\S+$")
 HTTPS_URL_PATTERN = re.compile(r"^https://[^\s/]+(/\S*)?$")
@@ -97,6 +100,8 @@ INT_RANGES: tuple[tuple[str, int, int], ...] = (
     ("apis.successfactors.max_jobs_per_company", 1, 10_000),
     ("apis.successfactors.max_details_per_company", 1, 1_000),
     ("apis.icims.max_jobs_per_country", 1, 10_000),
+    ("apis.icims.max_jobs_per_portal", 1, 10_000),
+    ("apis.icims.max_details_per_portal", 1, 1_000),
     ("apis.google.max_pages", 1, 50),
     ("apis.graphql.timeout", 1, 120),
     ("apis.graphql.max_jobs_per_source", 1, 10_000),

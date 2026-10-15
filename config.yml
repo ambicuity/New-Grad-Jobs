@@ -1667,7 +1667,16 @@ apis:
     # the site's /api/jobs search once per country, newest first). Each site's
     # apply_url was checked to be iCIMS, not a job system read elsewhere.
     # Probed live on 2026-10-15 (#423).
+    #
+    # Classic portals (https://<prefix>-<company>.icims.com) have no API: the
+    # adapter reads their search pages, then job pages for postings that can
+    # pass (capped per portal). Portals behind a career site above, employee-only
+    # portals, portals of future (not yet open) roles and portals whose job pages
+    # hide the posted date were left out.
+    # Each kept portal published 2+ curated jobs when measured on 2026-10-15.
     max_jobs_per_country: 1000
+    max_jobs_per_portal: 1000
+    max_details_per_portal: 100
     companies:
       - name: "AMD"
         url: "https://careers.amd.com"
@@ -1681,6 +1690,52 @@ apis:
         url: "https://careers.noblis.org"
       - name: "PepsiCo"
         url: "https://www.pepsicojobs.com"
+      - name: "Allied Universal"
+        url: "https://securitycareers-aus.icims.com"
+      - name: "Berkley"
+        url: "https://careers-berkley.icims.com"
+      - name: "Beyond New Horizons"
+        url: "https://careers-bnh.icims.com"
+      - name: "Bowhead"
+        url: "https://bowheadcareers-uicalaska.icims.com"
+      - name: "Cotiviti"
+        url: "https://careers-cotiviti.icims.com"
+      - name: "Daifuku"
+        url: "https://careers-daifuku-america.icims.com"
+      - name: "Everwatch"
+        url: "https://everwatch-everwatchsolutions.icims.com"
+      - name: "Exponent"
+        url: "https://careers-exponent.icims.com"
+      - name: "ISYS Technologies"
+        url: "https://careers-i2xisys.icims.com"
+      - name: "Kimley-Horn"
+        url: "https://careers-kimley-horn.icims.com"
+      - name: "Markon"
+        url: "https://careers-markon.icims.com"
+      - name: "New York University"
+        url: "https://careers-nyu.icims.com"
+      - name: "PeopleTec"
+        url: "https://careers-peopletec.icims.com"
+      - name: "Persistent Systems"
+        url: "https://careers-persistentsystems.icims.com"
+      - name: "PowerSchool"
+        url: "https://careers-powerschool.icims.com"
+      - name: "RoviSys"
+        url: "https://careers-rovisys.icims.com"
+      - name: "RoviSys Building Technologies"
+        url: "https://careers-rovisysbuildingtechnologies.icims.com"
+      - name: "SimVentions"
+        url: "https://careers-simventions.icims.com"
+      - name: "Snap-on"
+        url: "https://careers-snapon.icims.com"
+      - name: "Soft Tech Consulting"
+        url: "https://careers-softtechconsulting.icims.com"
+      - name: "Steampunk"
+        url: "https://careers-steampunk.icims.com"
+      - name: "TekSynap"
+        url: "https://hotjobs-teksynap.icims.com"
+      - name: "The Tatitlek Corporation"
+        url: "https://careers-tatitlek.icims.com"
   google:
     # Scrapes the public Google Careers results page (AF_initDataCallback
     # payload; the old /api/v3/search JSON endpoint 404s). Verified working

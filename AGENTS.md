@@ -138,7 +138,9 @@ After `make run`, restore the two files that a local scrape rewrites:
   takes `https://apply.workable.com/api/v1/widget/accounts/<slug>`, direct employers only; Paylocity takes
   `https://recruiting.paylocity.com/Recruiting/Jobs/All/<guid>`, the "View All Jobs" link on a job page; SuccessFactors takes the Career Site Builder root
   `https://<careers-host>`, whose `/search/` page lists `a.jobTitle-link` rows; iCIMS takes a career-site root
-  `https://<careers-host>` that answers `/api/jobs`, checking its `apply_url` is iCIMS, not another job system we read) or `{name, workday_url}` under
+  `https://<careers-host>` that answers `/api/jobs`, checking its `apply_url` is iCIMS, not another job system we read,
+  or a classic portal root `https://<prefix>-<company>.icims.com` that is public, not behind a configured career site,
+  and whose job pages show real posted dates) or `{name, workday_url}` under
   `apis.workday.companies` (`https://<tenant>.wd<N>.myworkdayjobs.com/<site>`). Then run
   `validate_config.py`. Record removals in `docs/removed-companies.md`.
 - **A new ATS source:** add `scripts/ngj/sources/<name>.py` returning `SourceResult`. Then
