@@ -10,6 +10,7 @@ import requests
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
 from ngj import http as ngj_http  # noqa: E402
+from ngj.filters import passes_title_rules  # noqa: E402
 from ngj.locations import is_valid_location  # noqa: E402
 from ngj.sources.workday import (  # noqa: E402
     _resolve_locations,
@@ -210,3 +211,32 @@ class TestLookups:
             (resolved,) = _resolve_locations(tenant, (("/job/1", job),), TITLE_FILTER, 5)
         assert job == {"title": "Junior Engineer", "location": "2 Locations", "url": "u"}
         assert resolved is not job and resolved["location"].startswith("Durham")
+
+
+class TestLookupSelection:
+    def test_lookups_follow_the_full_title_rules_not_the_paging_prefilter(self):
+        # "Specialist II" fails the paging pre-filter (no new-grad keyword) but passes the
+        # full title rules through the level signal "II", so it can be curated.
+        filtering = {**FILTERING, "level_signals": ["I", "II"], "track_signals": ["specialist", "engineer"]}
+        tenant = FakeTenant([_item("/job/1", title="Specialist II"), _item("/job/2", title="Senior Engineer")])
+        _fetch(tenant, title_filter=build_title_prefilter(filtering),
+               location_title_filter=lambda title: passes_title_rules(title, filtering))
+        assert tenant.gets == [f"{DETAIL_BASE}/job/1"]
+
+    def test_the_pipeline_picks_lookups_with_the_full_title_rules(self):
+        from ngj.pipeline import plan_sources
+        from ngj.settings import build_settings
+
+        config = {"filtering": {**FILTERING, "level_signals": ["II"], "track_signals": ["specialist"]},
+                  "apis": {"workday": {"enabled": True, "companies": [COMPANY]}}}
+        fetch = plan_sources(config, build_settings(config, env={}))["workday"]
+        assert fetch.keywords["location_title_filter"]("Specialist II") is True
+        assert fetch.keywords["location_title_filter"]("Senior Specialist") is False
+
+    def test_without_title_signals_lookups_fall_back_to_the_paging_prefilter(self):
+        from ngj.pipeline import plan_sources
+        from ngj.settings import build_settings
+
+        config = {"filtering": {"new_grad_signals": ["junior"]}, "apis": {"workday": {"enabled": True,
+                                                                                      "companies": [COMPANY]}}}
+        assert plan_sources(config, build_settings(config, env={}))["workday"].keywords["location_title_filter"] is None
