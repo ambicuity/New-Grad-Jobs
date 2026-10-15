@@ -2,6 +2,8 @@
 
 import os
 import sys
+import threading
+import time
 from unittest.mock import MagicMock, patch
 
 import pytest
@@ -148,7 +150,7 @@ class TestLookups:
     @pytest.mark.parametrize("status", [403, 429])
     def test_a_blocked_lookup_stops_the_remaining_lookups(self, status):
         tenant = FakeTenant([_item(f"/job/{n}") for n in range(3)], {"/job/0": _resp(status)})
-        result = _fetch(tenant)
+        result = _fetch(tenant, keyword_workers=1)
         assert len(tenant.gets) == 1 and [j["location"] for j in result.jobs] == ["2 Locations"] * 3
         assert result.errors == ()
 
@@ -240,3 +242,34 @@ class TestLookupSelection:
         config = {"filtering": {"new_grad_signals": ["junior"]}, "apis": {"workday": {"enabled": True,
                                                                                       "companies": [COMPANY]}}}
         assert plan_sources(config, build_settings(config, env={}))["workday"].keywords["location_title_filter"] is None
+
+
+class TestConcurrentLookups:
+    def test_lookups_run_a_few_at_a_time_and_keep_listing_order(self):
+        barrier = threading.Barrier(3, timeout=5)
+        tenant = FakeTenant([_item(f"/job/{n}") for n in range(6)])
+        get = tenant.get
+
+        def concurrent_get(url, **kwargs):
+            if url.endswith(("/job/0", "/job/1", "/job/2")):
+                barrier.wait()  # only returns once three lookups are in flight together
+            return get(url, **kwargs)
+
+        tenant.get = concurrent_get
+        result = _fetch(tenant, keyword_workers=3)
+        assert sorted(tenant.gets) == sorted(f"{DETAIL_BASE}/job/{n}" for n in range(6))
+        assert [j["url"].rsplit("/", 1)[1] for j in result.jobs] == [str(n) for n in range(6)]
+        assert all(j["location"].startswith("Durham") for j in result.jobs)
+
+    def test_a_block_stops_concurrent_lookups_early(self):
+        tenant = FakeTenant([_item(f"/job/{n}") for n in range(30)], {"/job/0": _resp(403)})
+        get = tenant.get
+
+        def timed_get(url, **kwargs):
+            if not url.endswith("/job/0"):
+                time.sleep(0.02)  # a real lookup takes a while; the block answers at once
+            return get(url, **kwargs)
+
+        tenant.get = timed_get
+        result = _fetch(tenant, keyword_workers=3)
+        assert len(tenant.gets) < 30 and result.errors == ()

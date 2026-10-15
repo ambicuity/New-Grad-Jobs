@@ -27,7 +27,7 @@ every location was abroad (#427). For each one whose title passes
 ``location_title_filter`` (the full title rules; ``title_filter`` when unset), the job endpoint (``GET /wday/cxs/<tenant>/<site><externalPath>``)
 gives ``location`` (with its ``country``) and ``additionalLocations``; they
 replace the placeholder. Lookups are capped per company and respect the time
-budget. A failed lookup keeps the posting as listed; a 403/429 also stops the
+budget, a few at a time (``keyword_workers``). A failed lookup keeps the posting as listed; a 403/429 also stops the
 company's remaining lookups (a 403 counts toward the tenant cooldown). Additional
 locations carry no country; next to a foreign primary they are read as written
 ("Melbourne", "Remote Germany"). Across all 625 lookups of a full run, every
@@ -39,6 +39,7 @@ from __future__ import annotations
 import json
 import logging
 import re
+import threading
 import time
 from collections.abc import Callable, Sequence
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -243,38 +244,53 @@ def _lookup_location(tenant: _Tenant, url: str) -> tuple[str, bool]:
         return "", False
 
 
+def _wants_lookup(path: str, job: dict[str, Any], title_filter: TitleFilter | None) -> bool:
+    return bool(
+        LOCATION_COUNT_RE.fullmatch(job['location'])
+        and _EXTERNAL_PATH_RE.fullmatch(path)
+        and (title_filter is None or title_filter(job['title']))
+    )
+
+
 def _resolve_locations(
     tenant: _Tenant,
     jobs: Sequence[tuple[str, dict[str, Any]]],
     title_filter: TitleFilter | None,
     max_lookups: int,
+    workers: int = 1,
 ) -> list[dict[str, Any]]:
-    """Replace "N Locations" with the real locations for plausible postings (new dicts; input untouched)."""
+    """Replace "N Locations" with the real locations for plausible postings (new dicts; input untouched).
+
+    Up to ``workers`` lookups run at once, like the keyword searches, so a
+    company's lookups fit its time budget. A 403/429 stops the ones not started.
+    """
     detail_base = tenant.api_url.removesuffix('/jobs')
-    lookups = found = left = 0
-    blocked = False
-    resolved: list[dict[str, Any]] = []
-    for path, job in jobs:
-        wanted = bool(
-            LOCATION_COUNT_RE.fullmatch(job['location'])
-            and _EXTERNAL_PATH_RE.fullmatch(path)
-            and (title_filter is None or title_filter(job['title']))
-        )
-        if (not wanted or blocked or lookups >= max_lookups or tenant.out_of_time()
-                or ngj_http.SOURCE_COOLDOWN.is_tripped(tenant.api_url)):
-            left += wanted
-            resolved.append(job)
-            continue
-        lookups += 1
-        location, blocked = _lookup_location(tenant, f"{detail_base}{path}")
-        found += bool(location)
-        left += not location
-        resolved.append({**job, 'location': location} if location else job)
-    if lookups:
-        log = logger.warning if blocked else logger.info
+    wanted = [path for path, job in jobs if _wants_lookup(path, job, title_filter)]
+    blocked = threading.Event()
+
+    def lookup(path: str) -> tuple[str, str, bool]:
+        """(path, location or "", whether a request was made)."""
+        if blocked.is_set() or tenant.out_of_time() or ngj_http.SOURCE_COOLDOWN.is_tripped(tenant.api_url):
+            return path, "", False
+        location, was_blocked = _lookup_location(tenant, f"{detail_base}{path}")
+        if was_blocked:
+            blocked.set()
+        return path, location, True
+
+    chosen = wanted[:max_lookups]
+    if workers <= 1 or len(chosen) <= 1:
+        outcomes = [lookup(path) for path in chosen]
+    else:
+        with ThreadPoolExecutor(max_workers=min(workers, len(chosen))) as executor:
+            outcomes = list(executor.map(lookup, chosen))
+    found = {path: location for path, location, _ in outcomes if location}
+    requested = sum(made for _, _, made in outcomes)
+    if requested:
+        log = logger.warning if blocked.is_set() else logger.info
         log("  📍 %s: %s of %s multi-location postings resolved; %s keep \"N Locations\"%s",
-            tenant.company_name, found, lookups, left, " (lookups blocked)" if blocked else "")
-    return resolved
+            tenant.company_name, len(found), requested, len(wanted) - len(found),
+            " (lookups blocked)" if blocked.is_set() else "")
+    return [{**job, 'location': found[path]} if path in found else job for path, job in jobs]
 
 
 def _to_job(company_name: str, site_url: str, item: dict[str, Any]) -> dict[str, Any]:
@@ -471,7 +487,8 @@ def _fetch_workday_company(
         if len(listed) >= max_total_limit:
             logger.info("  ℹ️  %s: Reached safety limit of %s jobs. Truncating.", company_name, max_total_limit)
             listed = listed[:max_total_limit]
-        jobs = _resolve_locations(tenant, listed, location_title_filter or title_filter, max_location_lookups)
+        jobs = _resolve_locations(tenant, listed, location_title_filter or title_filter, max_location_lookups,
+                                  keyword_workers)
 
         if any(q.out_of_time for q in results):
             # Slow tenant: keep what the time budget allowed rather than hold up the run.
