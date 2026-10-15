@@ -31,3 +31,11 @@ test.describe('axe (WCAG 2.2 AA), 375px', () => {
     await expectNoSeriousA11yViolations(page, testInfo);
   });
 });
+
+test('policy pages fit a 375px screen without sideways scrolling', async ({ page }) => {
+  for (const slug of ['terms', 'privacy', 'copyright', 'data-sources']) {
+    await page.goto(`/${slug}/`);
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(overflow, slug).toBeLessThanOrEqual(0);
+  }
+});

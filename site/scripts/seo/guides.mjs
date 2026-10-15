@@ -6,8 +6,8 @@
 
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
-import { parseFrontMatter, renderMarkdown } from './markdown.mjs';
-import { JOB_PAGE_CSP, JOB_PAGE_CSS, REPO_URL } from './render.mjs';
+import { parseFrontMatter, portableMarkdown, renderMarkdown } from './markdown.mjs';
+import { JOB_PAGE_CSP, JOB_PAGE_CSS, REPO_URL, legalLinksHtml } from './render.mjs';
 import { escapeHtml, jsonForScript, truncate } from './text.mjs';
 
 export const GUIDES_ROOT = 'guides';
@@ -111,15 +111,23 @@ export async function loadGuides(contentDir, log = console) {
       order: /^\d+$/.test(meta.order || '') ? Number(meta.order) : DEFAULT_ORDER,
       html,
       headings,
+      markdown: body.trim(),
     });
   }
   return guides;
 }
 
 export const guidePath = (slug) => `${GUIDES_ROOT}/${slug}/`;
+
+/** The Markdown companion served at /guides/<slug>/index.md. */
+export function guideMarkdown(guide) {
+  const lead = [`# ${guide.title}`, guide.description ? `> ${guide.description}` : '', guide.updated ? `Updated: ${guide.updated}` : '']
+    .filter(Boolean).join('\n\n');
+  return `${lead}\n\n${portableMarkdown(guide.markdown || '')}\n`;
+}
 export const guideUrl = (siteUrl, slug) => `${siteUrl}/${guidePath(slug)}`;
 
-function head({ title, description, canonical, siteUrl, root, jsonLd }) {
+function head({ title, description, canonical, siteUrl, root, jsonLd, markdown = false }) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,7 +137,7 @@ function head({ title, description, canonical, siteUrl, root, jsonLd }) {
 <title>${escapeHtml(title)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 <link rel="canonical" href="${escapeHtml(canonical)}">
-<link rel="icon" type="image/svg+xml" href="${root}favicon.svg">
+${markdown ? '<link rel="alternate" type="text/markdown" href="index.md">\n' : ''}<link rel="icon" type="image/svg+xml" href="${root}favicon.svg">
 <link rel="alternate" type="application/rss+xml" title="New Grad Jobs RSS Feed" href="${root}feed.xml">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="NGJ · New Grad Jobs">
@@ -144,6 +152,7 @@ ${jsonLd ? `<script type="application/ld+json">${jsonForScript(jsonLd)}</script>
 
 const footer = (root) => `<footer>
 <a href="${root}">← all new grad jobs</a> · <a href="${root}guides/">guides</a> · <a href="${root}jobs/">browse</a> · <a href="${root}feed.xml">RSS</a> · <a href="${REPO_URL}">GitHub</a>
+${legalLinksHtml(root)}
 </footer>`;
 
 /** One guide page. `siblings` are the other guides, for the "more guides" list. */
@@ -167,7 +176,7 @@ export function renderGuidePage(guide, { siteUrl, siblings = [] }) {
   // Auto-append the legal disclaimer for guides in sections whose content
   // (immigration, employment authorisation) carries legal consequences.
   const legalFooter = LEGAL_DISCLAIMER_SECTIONS.has(guide.section) ? legalDisclaimerHtml() : '';
-  return `${head({ title: `${guide.title} · NGJ`, description, canonical, siteUrl, root, jsonLd })}
+  return `${head({ title: `${guide.title} · NGJ`, description, canonical, siteUrl, root, jsonLd, markdown: true })}
 <body>
 <main>
 <nav class="crumb" aria-label="Breadcrumb"><a class="brand" href="${root}" aria-label="NGJ, New Grad Jobs, home">NGJ</a> › <a href="${root}guides/">guides</a> › ${escapeHtml(guide.title)}</nav>

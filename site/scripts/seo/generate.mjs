@@ -5,6 +5,9 @@
 //                               country, remote, visa, new-this-week + hub (landing.mjs)
 //   - guides/<slug>/index.html  evergreen guides from site/content/guides/*.md (guides.mjs)
 //   - about/index.html          sources, rules and this run's numbers from health.json (about.mjs)
+//   - terms/ privacy/ copyright/ data-sources/  policy pages from site/content/legal/*.md (legal.mjs)
+//   - guides/<slug>/index.md, <policy>/index.md  plain Markdown companions
+//   - llms.txt                  map of the site for language models (llms.mjs)
 //   - index.html                crawlable list of the newest jobs inside #root
 //   - sitemap.xml, robots.txt
 // Missing or malformed data never fails the build: generation is skipped with
@@ -13,7 +16,9 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { ABOUT_PATH, aboutFacts, renderAboutPage } from './about.mjs';
-import { GUIDES_ROOT, guidePath, loadGuides, renderGuidePage, renderGuidesIndex } from './guides.mjs';
+import { GUIDES_ROOT, groupGuides, guideMarkdown, guidePath, loadGuides, renderGuidePage, renderGuidesIndex } from './guides.mjs';
+import { legalMarkdown, legalPath, loadLegalPages, renderLegalPage } from './legal.mjs';
+import { renderLlmsTxt } from './llms.mjs';
 import { descriptionShard, lookupDescription } from '../../src/lib/descriptions.js';
 import { buildJobPosting, isSafeJobId, parsePostedAt } from './jobposting.mjs';
 import { buildLandingPages, landingPageUrl, renderLandingHub, renderLandingPage } from './landing.mjs';
@@ -87,6 +92,9 @@ async function writeInBatches(tasks) {
   }
 }
 
+/** Guides in the same section order as the /guides/ index. */
+const llmsGuideOrder = (guides) => groupGuides(guides).flatMap((s) => s.guides);
+
 const newestFirst = (a, b) => (b.posted ? b.posted.getTime() : 0) - (a.posted ? a.posted.getTime() : 0);
 
 async function writeGuides(distDir, guides, site) {
@@ -97,8 +105,20 @@ async function writeGuides(distDir, guides, site) {
     const dir = join(distDir, guidePath(guide.slug));
     await mkdir(dir, { recursive: true });
     await writeFile(join(dir, 'index.html'), renderGuidePage(guide, { siteUrl: site, siblings: guides }));
+    await writeFile(join(dir, 'index.md'), guideMarkdown(guide));
   }));
   return [`${GUIDES_ROOT}/`, ...guides.map((g) => guidePath(g.slug))];
+}
+
+/** Policy pages + their Markdown copies; returns sitemap entries (lastmod = the page's `updated` date). */
+async function writeLegalPages(distDir, pages, site) {
+  await writeInBatches(pages.map((page) => async () => {
+    const dir = join(distDir, legalPath(page.slug));
+    await mkdir(dir, { recursive: true });
+    await writeFile(join(dir, 'index.html'), renderLegalPage(page, { siteUrl: site, siblings: pages }));
+    await writeFile(join(dir, 'index.md'), legalMarkdown(page));
+  }));
+  return pages.map((p) => ({ loc: `${site}/${legalPath(p.slug)}`, lastmod: new Date(`${p.updated}T00:00:00Z`) }));
 }
 
 /**
@@ -106,11 +126,12 @@ async function writeGuides(distDir, guides, site) {
  */
 export async function generateSeo({
   publicDir, distDir, siteUrl = DEFAULT_SITE_URL, prerenderLimit = DEFAULT_PRERENDER_LIMIT,
-  guidesDir = resolve(publicDir, '..', 'content', 'guides'), log = console,
+  guidesDir = resolve(publicDir, '..', 'content', 'guides'), legalDir = resolve(publicDir, '..', 'content', 'legal'),
+  log = console,
 }) {
   const site = siteUrl.replace(/\/+$/, '');
   const stats = {
-    jobPages: 0, closedPages: 0, jsonLd: 0, jsonLdSkipped: {}, landingPages: 0, guidePages: 0, aboutPage: false,
+    jobPages: 0, closedPages: 0, jsonLd: 0, jsonLdSkipped: {}, landingPages: 0, guidePages: 0, legalPages: 0, aboutPage: false,
     sitemapUrls: 1, prerendered: 0, source: null,
   };
   await mkdir(distDir, { recursive: true });
@@ -120,13 +141,18 @@ export async function generateSeo({
   const indexPath = join(distDir, 'index.html');
   const indexHtml = await readFile(indexPath, 'utf8').catch(() => null);
   const guides = await loadGuides(guidesDir, log);
+  const legal = await loadLegalPages(legalDir, log);
+  const legalUrls = await writeLegalPages(distDir, legal, site);
+  stats.legalPages = legal.length;
 
   if (!data || !data.jobs.length) {
     log.warn('[seo] no job data in public/ (jobs.json / jobs-index.json) — skipping job pages and prerender');
     const guidePaths = await writeGuides(distDir, guides, site);
     stats.guidePages = guides.length;
-    await writeFile(join(distDir, 'sitemap.xml'), renderSitemap(site, null, [], guidePaths.map((p) => ({ loc: `${site}/${p}`, lastmod: null }))));
-    stats.sitemapUrls = 1 + guidePaths.length;
+    const extra = [...legalUrls, ...guidePaths.map((p) => ({ loc: `${site}/${p}`, lastmod: null }))];
+    await writeFile(join(distDir, 'sitemap.xml'), renderSitemap(site, null, [], extra));
+    stats.sitemapUrls = 1 + extra.length;
+    await writeFile(join(distDir, 'llms.txt'), renderLlmsTxt({ siteUrl: site, generatedAt: null, totalJobs: null, guides: llmsGuideOrder(guides), legal, categories: [] }));
     if (indexHtml) await writeFile(indexPath, injectPrerender(indexHtml, '').html);
     return stats;
   }
@@ -186,10 +212,16 @@ export async function generateSeo({
   const extraUrls = [
     ...landing.map((page) => ({ loc: landingPageUrl(site, page.path), lastmod: generatedAt })),
     { loc: `${site}/${ABOUT_PATH}`, lastmod: generatedAt },
+    ...legalUrls,
     ...guidePaths.map((p) => ({ loc: `${site}/${p}`, lastmod: null })),
   ];
   await writeFile(join(distDir, 'sitemap.xml'), renderSitemap(site, generatedAt, entries, extraUrls));
   stats.sitemapUrls = 1 + extraUrls.length + entries.length;
+  const categories = pages
+    .filter((p) => p.kind === 'category')
+    .map((p) => ({ path: p.path, name: p.name, count: p.entries.length }))
+    .sort((a, b) => b.count - a.count);
+  await writeFile(join(distDir, 'llms.txt'), renderLlmsTxt({ siteUrl: site, generatedAt, totalJobs: entries.length, guides: llmsGuideOrder(guides), legal, categories }));
 
   if (indexHtml) {
     const top = entries.slice(0, prerenderLimit);

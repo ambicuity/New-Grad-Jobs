@@ -123,3 +123,59 @@ test.describe('security policy and analytics', () => {
     await expect(jobList(page)).toBeVisible();
   });
 });
+
+test.describe('policy pages, llms.txt and licences', () => {
+  for (const [slug, heading] of [
+    ['terms', 'Terms of Service'],
+    ['privacy', 'Privacy Policy'],
+    ['copyright', 'Copyright, Attribution and Third-Party Content Policy'],
+    ['data-sources', 'Data Sources'],
+  ]) {
+    test(`/${slug}/ is a script-free page with dates, contents and a Markdown copy`, async ({ page, request }) => {
+      const res = await page.goto(`/${slug}/`);
+      expect(res.status()).toBe(200);
+      await expect(page.getByRole('heading', { level: 1 })).toHaveText(heading);
+      await expect(page.locator('time').first()).toHaveAttribute('datetime', /^\d{4}-\d{2}-\d{2}$/);
+      await expect(page.getByRole('navigation', { name: 'On this page' }).getByRole('link').first()).toBeVisible();
+      await expect(page.locator('script')).toHaveCount(0);
+      await expect(page.locator('meta[http-equiv="Content-Security-Policy"]')).toHaveAttribute('content', /default-src 'none'/);
+      const md = await request.get(`/${slug}/index.md`);
+      expect(md.status()).toBe(200);
+      expect(await md.text()).toMatch(new RegExp(`^# ${heading}\\n`));
+    });
+  }
+
+  test('a contents link jumps to its section', async ({ page }) => {
+    await page.goto('/privacy/');
+    await page.getByRole('navigation', { name: 'On this page' }).getByRole('link', { name: '7. How long information is kept' }).click();
+    await expect(page).toHaveURL(/#7-how-long-information-is-kept$/);
+    await expect(page.getByRole('heading', { level: 2, name: '7. How long information is kept' })).toBeInViewport();
+  });
+
+  test('the board footer links every policy page', async ({ page }) => {
+    await openBoard(page);
+    const legal = page.getByRole('navigation', { name: 'Legal' });
+    for (const name of ['Terms', 'Privacy', 'Copyright', 'Data sources']) await expect(legal.getByRole('link', { name })).toBeVisible();
+    await legal.getByRole('link', { name: 'Privacy' }).click();
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Privacy Policy');
+  });
+
+  test('static page footers link the policies and llms.txt', async ({ page }) => {
+    await page.goto(`/job/${FIXTURE.first}/`);
+    const legal = page.getByRole('navigation', { name: 'Legal' });
+    await legal.getByRole('link', { name: 'llms.txt' }).click();
+    await expect(page).toHaveURL(/\/llms\.txt$/);
+  });
+
+  test('llms.txt and third-party-licenses.txt are served', async ({ request }) => {
+    const llms = await request.get('/llms.txt');
+    expect(llms.status()).toBe(200);
+    const text = await llms.text();
+    expect(text.split('\n')[0]).toBe('# NGJ · New Grad Jobs');
+    expect(text).toMatch(/\n## Optional\n/);
+    expect(text).toMatch(/\d open roles? as of /);
+    const lic = await request.get('/third-party-licenses.txt');
+    expect(lic.status()).toBe(200);
+    expect(await lic.text()).toMatch(/SIL OPEN FONT LICENSE/i);
+  });
+});

@@ -66,7 +66,34 @@ export const JOB_PAGE_CSS = [
   '.legal-notice strong{color:#e8e8e8}',
   'code{background:#0a0a0a;border:1px solid #2a2a2a;padding:0 4px}',
   'footer{margin-top:32px;font-size:12px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:12px}',
+  // Policy pages (legal.mjs) and the policy links in every static footer.
+  'footer .legal{margin-top:6px}',
+  '.toc{font-size:12px;margin:12px 0 18px;padding:10px 14px;border:1px solid #2a2a2a;background:#0a0a0a}',
+  '.toc ul{margin:6px 0 0;padding:0;list-style:none}',
+  '.toc li{margin:0}',
+  // 24px line box: WCAG 2.2 minimum target size (2.5.8) for the short contents links.
+  '.toc a{display:inline-block;min-height:24px;line-height:24px}',
+  '.related a[aria-current]{color:#e8e8e8;text-decoration:none}',
+  // Narrow screens: Markdown tables (policies, guides) wrap to the viewport instead of overflowing it.
+  '@media (max-width:600px){.desc table{table-layout:fixed}.desc th,.desc td{overflow-wrap:anywhere;padding:6px 4px}}',
 ].join('');
+
+/** The policy pages, in the order they are listed everywhere (legal.mjs renders them). */
+export const LEGAL_LINKS = Object.freeze([
+  { slug: 'terms', label: 'terms' },
+  { slug: 'privacy', label: 'privacy' },
+  { slug: 'copyright', label: 'copyright' },
+  { slug: 'data-sources', label: 'data sources' },
+]);
+
+/** Policy links (plus llms.txt) for a static page footer; `root` is the relative path to the site root. */
+export function legalLinksHtml(root) {
+  const links = [
+    ...LEGAL_LINKS.map(({ slug, label }) => `<a href="${root}${slug}/">${label}</a>`),
+    `<a href="${root}llms.txt">llms.txt</a>`,
+  ];
+  return `<nav class="legal" aria-label="Legal">${links.join(' · ')}</nav>`;
+}
 
 const cspHash = (text) => `'sha256-${createHash('sha256').update(text, 'utf8').digest('base64')}'`;
 
@@ -165,6 +192,7 @@ ${bodyHtml}
 </div>
 <footer>
 <a href="../../">← all new grad jobs</a> · <a href="../../feed.xml">RSS</a> · <a href="${REPO_URL}">GitHub</a>
+${legalLinksHtml('../../')}
 </footer>
 </main>
 </body>

@@ -39,8 +39,11 @@ tests/                     pytest; network blocked by tests/conftest.py
 site/                      Vite + React 18 app (src/components, src/lib, src/hooks, src/data); tabs: hiring,
                            contributors, explore (every posting the run saw, viewer-defined signals over corpus-index.json)
 site/scripts/seo/          Vite plugin: CSP, /job/<job_id>/ pages with JobPosting JSON-LD, /jobs/… landing pages (landing.mjs),
-                           /guides/ from site/content/guides/*.md (guides.mjs), /about/ from health.json (about.mjs), sitemap, robots, prerender
+                           /guides/ from site/content/guides/*.md (guides.mjs), /about/ from health.json (about.mjs),
+                           /terms/ /privacy/ /copyright/ /data-sources/ (legal.mjs), llms.txt (llms.mjs),
+                           third-party-licenses.txt (licenses.mjs), sitemap, robots, prerender
 site/content/guides/       evergreen guides (Markdown with front matter: title, description, updated)
+site/content/legal/        policy pages (front matter: title, description, effective, updated); see docs/legal/README.md
 data/market-history.json   daily snapshots (committed by CI, 90-day retention)
 docs/                      architecture.md, operations.md, adr/, removed-companies.md
 ```
@@ -122,6 +125,10 @@ After `make run`, restore the two files that a local scrape rewrites:
   front matter; the build renders it and groups the index by section. Use only headings, paragraphs, lists,
   quotes, bold, italics, code and links (the renderer supports nothing else) and claim
   nothing you cannot back.
+- **Policies:** the Terms, Privacy, Copyright and Data Sources pages are `site/content/legal/*.md`. A change
+  to what the site collects or loads (a new script, request, storage key or source) must update
+  `privacy.md` or `data-sources.md` in the same PR. A new runtime npm dependency must be added to
+  `BUNDLED_PACKAGES` in `site/scripts/seo/licenses.mjs` and to `THIRD_PARTY_NOTICES.md`.
 
 ### Where to add things
 
