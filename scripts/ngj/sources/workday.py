@@ -518,6 +518,7 @@ def build_title_prefilter(filtering: dict[str, Any] | None) -> TitleFilter | Non
         DEFAULT_EXCLUSION_SIGNALS,
         DEFAULT_INTERNSHIP_SIGNALS,
         has_new_grad_signal,
+        is_excluded_employment_type,
         is_title_excluded,
     )
 
@@ -534,7 +535,11 @@ def build_title_prefilter(filtering: dict[str, Any] | None) -> TitleFilter | Non
     )
 
     def passes(title: str) -> bool:
-        return not is_title_excluded(title, exclusions) and has_new_grad_signal(title, signals)
+        return (
+            not is_title_excluded(title, exclusions)
+            and not is_excluded_employment_type(title)
+            and has_new_grad_signal(title, signals)
+        )
 
     return passes
 

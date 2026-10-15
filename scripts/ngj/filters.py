@@ -37,6 +37,7 @@ __all__ = [
     'has_new_grad_signal',
     'has_strong_new_grad_signal',
     'has_track_signal',
+    'is_excluded_employment_type',
     'is_title_excluded',
     'is_valid_location',
 ]
@@ -204,6 +205,17 @@ def has_excluded_level(title: str) -> bool:
 # Exclusion signals whose inflections must also exclude. Word-boundary matching
 # means "intern" alone no longer covers "internship"/"interns".
 _EXCLUSION_SUFFIXES: dict[str, str] = {'intern': r'(?:s|ships?)?'}
+# A fractional FTE (".3FTE", "0.5 FTE") is a part-time role; "1.0 FTE" and "1.5 FTE" are not matched.
+_FRACTIONAL_FTE_RE = re.compile(r'(?<![\d.])0?\.[1-9]\d*\s*fte(?![a-z0-9])', re.IGNORECASE)
+# "Contract" as a standalone employment tag: in brackets ("(Contract)", "(Contractual)",
+# "(Contract Position)"), or after a dash, comma or pipe at the end of the title or before a
+# bracket ("- Contract (Hybrid)", ", Contractor"). Contracts as the job's subject
+# ("Contract Specialist", "- Contract Administrator", "Contractor Compliance") never match.
+_CONTRACT_TAG_RE = re.compile(
+    r'[(\[]\s*contract(?:or|ual)?(?:\s+(?:position|role|basis))?\s*[)\]]'
+    r'|[-,|/]\s*contract(?:or|ual)?(?:\s+(?:position|role|basis))?\s*(?:$|[(\[])',
+    re.IGNORECASE,
+)
 # Entry-level titles that contain an exclusion word but are not senior roles.
 # Removed from the title before exclusion signals are checked, so a real
 # seniority marker elsewhere ("Senior Associate Product Manager") still excludes.
@@ -248,6 +260,13 @@ def is_title_excluded(title: str, exclusion_signals: list[str]) -> bool:
     if pattern is None:
         return False
     return bool(pattern.search(_EXCLUSION_EXCEPTIONS_RE.sub(' ', title)))
+
+
+def is_excluded_employment_type(title: str) -> bool:
+    """True for a fractional-FTE (part-time) title or one tagged as a contract role (owner decision, 2026-10-15)."""
+    if not isinstance(title, str) or not title:
+        return False
+    return bool(_FRACTIONAL_FTE_RE.search(title) or _CONTRACT_TAG_RE.search(title))
 
 
 def has_track_signal(title: str, signals: list[str]) -> bool:
@@ -313,7 +332,7 @@ def passes_title_rules(title: Any, filters: dict[str, Any]) -> bool:
         return False
     title = _fold_dashes(title)
     exclusion_signals = filters.get('exclusion_signals', list(DEFAULT_EXCLUSION_SIGNALS))
-    if is_title_excluded(title, exclusion_signals):
+    if is_title_excluded(title, exclusion_signals) or is_excluded_employment_type(title):
         return False
     internship = is_internship_title(title, filters.get('internship_signals'))
     new_grad_signals = list(filters['new_grad_signals']) + list(filters.get('level_signals', DEFAULT_LEVEL_SIGNALS))
