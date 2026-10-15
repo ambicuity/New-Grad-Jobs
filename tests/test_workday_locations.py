@@ -91,18 +91,17 @@ class TestLocationFromDetail:
         # A foreign primary with qualified additional locations: the gate can judge every place.
         (_info("London", ("Plano, TX",), "United Kingdom"), "London, United Kingdom; Plano, TX"),
         (_info("Sydney", ("Melbourne, Australia",), "Australia"), "Sydney, Australia; Melbourne, Australia"),
+        # Bare additional places are read as written (seen live: always the primary's country or abroad).
+        (_info("Melbourne", ("Sydney", "Remote Australia"), "Australia"), "Melbourne, Australia; Sydney; Remote Australia"),
+        (_info("Munich", ("Remote Germany",), "Germany"), "Munich, Germany; Remote Germany"),
+        (_info("SGP-Singapore-1 Raffles Quay", ("IND-Mumbai-One World Center",), "Singapore"),
+         "SGP-Singapore-1 Raffles Quay, Singapore; IND-Mumbai-One World Center"),
     ])
     def test_primary_location_gets_its_country_and_others_follow(self, payload, expected):
         assert location_from_detail(payload) == expected
 
-    @pytest.mark.parametrize("payload", [
-        None, [], {}, {"jobPostingInfo": "x"}, {"jobPostingInfo": {}},
-        # Ambiguous: a foreign primary, and bare additional cities whose country is unknown
-        # ("Plano" may be in the US). The posting keeps its listed text rather than be dropped.
-        _info("London", ("Plano", "Jersey City"), "United Kingdom"),
-        _info("Sydney", ("Melbourne", "Adelaide"), "Australia"),
-    ])
-    def test_unusable_or_ambiguous_payloads_give_nothing(self, payload):
+    @pytest.mark.parametrize("payload", [None, [], {}, {"jobPostingInfo": "x"}, {"jobPostingInfo": {}}])
+    def test_unusable_payloads_give_nothing(self, payload):
         assert location_from_detail(payload) == ""
 
 
@@ -170,6 +169,15 @@ class TestLookups:
         tenant = FakeTenant([_item(path)])
         _fetch(tenant)
         assert tenant.gets == []
+
+    @pytest.mark.parametrize("payload, in_scope", [
+        (_info("Melbourne", ("Sydney", "Remote Australia"), "Australia"), False),
+        (_info("Tokyo", ("Osaka",), "Japan"), False),
+        (_info("SGP-Singapore-1 Raffles Quay", ("IND-Mumbai-One World Center",), "Singapore"), True),
+        (_info("London", ("Remote United States",), "United Kingdom"), True),
+    ])
+    def test_the_gate_judges_every_listed_place(self, payload, in_scope):
+        assert is_valid_location(location_from_detail(payload)) is in_scope
 
     def test_a_foreign_only_posting_now_fails_the_location_gate(self):
         tenant = FakeTenant([_item("/job/1"), _item("/job/2")],

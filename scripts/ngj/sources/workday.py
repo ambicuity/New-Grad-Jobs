@@ -28,9 +28,10 @@ every location was abroad (#427). For each one whose title passes
 gives ``location`` (with its ``country``) and ``additionalLocations``; they
 replace the placeholder. Lookups are capped per company and respect the time
 budget. A failed lookup keeps the posting as listed; a 403/429 also stops the
-company's remaining lookups (a 403 counts toward the tenant cooldown). A
-foreign primary location with bare additional cities ("Plano") is ambiguous,
-so such a posting keeps its listed text rather than be dropped.
+company's remaining lookups (a 403 counts toward the tenant cooldown). Additional
+locations carry no country; next to a foreign primary they are read as written
+("Melbourne", "Remote Germany"). Across all 625 lookups of a full run, every
+such posting was foreign-only (#429), so none is kept as "N Locations".
 """
 
 from __future__ import annotations
@@ -48,7 +49,7 @@ from urllib.parse import urlparse
 import requests
 
 from ngj import http as ngj_http
-from ngj.locations import LOCATION_COUNT_RE, is_valid_location
+from ngj.locations import LOCATION_COUNT_RE
 from ngj.models import (
     KIND_CONFIG,
     KIND_HTTP,
@@ -217,14 +218,7 @@ def location_from_detail(payload: Any) -> str:
     additional = info.get('additionalLocations')
     others = [str(place).strip() for place in (additional if isinstance(additional, list) else [])]
     others = [place for place in others if place]
-    if descriptor and not is_valid_location(descriptor) and any(_is_bare_place(place) for place in others):
-        return ""  # ambiguous: "Plano" next to a London primary may well be in the US
     return "; ".join(dict.fromkeys(place for place in (primary, *others) if place))
-
-
-def _is_bare_place(place: str) -> bool:
-    """A city without a region or country that the location gate cannot place ("Plano")."""
-    return ',' not in place and not is_valid_location(place)
 
 
 def _lookup_location(tenant: _Tenant, url: str) -> tuple[str, bool]:
