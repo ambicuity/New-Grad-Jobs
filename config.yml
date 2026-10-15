@@ -2458,6 +2458,24 @@ apis:
         workday_url: "https://worldwide.wd1.myworkdayjobs.com/External"
       - name: "Xylem"
         workday_url: "https://xylem.wd5.myworkdayjobs.com/xylem-careers"
+      # Workday boards behind Phenom career sites (each site's applyUrl), measured
+      # on 2026-10-15 with 2+ curated jobs. Esko and Hach are Veralto companies.
+      - name: "Esko"
+        workday_url: "https://veralto.wd1.myworkdayjobs.com/EskoJobs"
+      - name: "Fortrea"
+        workday_url: "https://fortrea.wd1.myworkdayjobs.com/Fortrea"
+      - name: "Hach"
+        workday_url: "https://veralto.wd1.myworkdayjobs.com/HachJobs"
+      - name: "Republic Services"
+        workday_url: "https://republic.wd5.myworkdayjobs.com/Republic"
+      - name: "Southwest Airlines"
+        workday_url: "https://swa.wd1.myworkdayjobs.com/external"
+      - name: "Sutter Health"
+        workday_url: "https://sutterhealth.wd1.myworkdayjobs.com/SH"
+      - name: "TJX Companies"
+        workday_url: "https://tjx.wd1.myworkdayjobs.com/TJX_EXTERNAL"
+      - name: "Trinzic"
+        workday_url: "https://trinzic.wd115.myworkdayjobs.com/Trinzic_Careers"
 
     # One Workday searchText query per keyword, merged by job path. Replaces
     # the unfiltered listing, which was capped at 200 jobs per company and so
