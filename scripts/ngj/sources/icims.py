@@ -17,8 +17,11 @@ copied.
 
 A career site can sit in front of another job system (S&P Global's applies
 on Workday): check ``apply_url`` before adding one, so a board already read
-from its own source is not published twice. Classic portals on
-``*.icims.com`` are a different product and are rejected here.
+from its own source is not published twice. Its ``apply_url`` hosts are the
+employer's classic portals, so do not configure those as well.
+
+Classic portals on ``*.icims.com`` have no such API; :func:`fetch_all_icims_jobs`
+sends them to :mod:`ngj.sources.icims_portal`, which reads their pages.
 """
 
 from __future__ import annotations
@@ -31,6 +34,7 @@ from urllib.parse import urlencode
 from ngj import http as ngj_http
 from ngj.models import KIND_CONFIG, SourceError, SourceResult
 from ngj.settings import DEFAULT_HTTP_TIMEOUT, Settings
+from ngj.sources.icims_portal import fetch_icims_portal_jobs, portal_base
 
 SOURCE = "icims"
 SOURCE_LABEL = "iCIMS"
@@ -155,10 +159,20 @@ def fetch_icims_jobs(
     return SourceResult(jobs=tuple(ordered), errors=errors, raw_count=sum(r.raw_count for r in results))
 
 
-def fetch_all_icims_jobs(companies: Sequence[dict[str, Any]], settings: Settings) -> SourceResult:
-    """Fetch every configured career site, a few at a time (each site is its own host)."""
+def fetch_all_icims_jobs(
+    companies: Sequence[dict[str, Any]],
+    settings: Settings,
+    *,
+    filtering: Mapping[str, Any] | None = None,
+) -> SourceResult:
+    """Fetch every configured career site and classic portal, a few at a time (each is its own host)."""
 
     def fetch(company: dict[str, Any], timeout: int) -> SourceResult:
+        if portal_base(company["url"]) is not None:
+            return fetch_icims_portal_jobs(
+                company["name"], company["url"], filtering=filtering,
+                max_jobs=settings.icims_max_jobs_per_portal, max_details=settings.icims_max_details_per_portal,
+                timeout=timeout)
         return fetch_icims_jobs(company["name"], company["url"], countries=settings.icims_countries,
                                 max_jobs_per_country=settings.icims_max_jobs_per_country, timeout=timeout)
 

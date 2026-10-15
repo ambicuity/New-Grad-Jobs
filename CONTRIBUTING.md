@@ -176,6 +176,8 @@ Keep data logic in `site/src/lib/` as pure functions with tests next to them.
        companies:
          - name: "AMD"
            url: "https://careers.amd.com"
+         - name: "RoviSys"
+           url: "https://careers-rovisys.icims.com"
      workday:
        companies:
          - name: "Microsoft"

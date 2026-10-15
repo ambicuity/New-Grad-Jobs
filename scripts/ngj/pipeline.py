@@ -122,7 +122,9 @@ def plan_sources(config: Mapping[str, Any], settings: Settings) -> dict[str, Sou
             return partial(fetch_all_successfactors_jobs, units, settings,
                            filtering=config.get('filtering') or config.get('filters') or {})
         if name == 'icims':
-            return partial(fetch_all_icims_jobs, units, settings)
+            # Classic portals: job-page requests only for titles that can pass the filter (see the adapter).
+            return partial(fetch_all_icims_jobs, units, settings,
+                           filtering=config.get('filtering') or config.get('filters') or {})
         if name == 'google':
             return partial(fetch_google_jobs, units, max_pages=settings.google_max_pages,
                            timeout=settings.http_timeout)

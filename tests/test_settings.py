@@ -116,13 +116,16 @@ def test_oracle_hcm_knobs(tmp_path):
 
 def test_icims_knobs(tmp_path):
     defaults = build_settings(_config(), env={}, repo_root=tmp_path)
-    assert defaults.icims_max_workers == 4 and defaults.icims_max_jobs_per_country == 1000
+    assert defaults.icims_max_workers == 6 and defaults.icims_max_jobs_per_country == 1000
     assert defaults.icims_countries == ("United States", "Canada", "India")
+    assert (defaults.icims_max_jobs_per_portal, defaults.icims_max_details_per_portal) == (1000, 100)
     config = {"worker_pools": {"icims_max_workers": 2},
-              "apis": {"icims": {"countries": ["Canada"], "max_jobs_per_country": 200}}}
+              "apis": {"icims": {"countries": ["Canada"], "max_jobs_per_country": 200, "max_jobs_per_portal": 300,
+                                 "max_details_per_portal": 40}}}
     custom = build_settings(config, env={}, repo_root=tmp_path)
     assert (custom.icims_max_workers, custom.icims_countries, custom.icims_max_jobs_per_country) == (
         2, ("Canada",), 200)
+    assert (custom.icims_max_jobs_per_portal, custom.icims_max_details_per_portal) == (300, 40)
 
 
 def test_successfactors_knobs(tmp_path):

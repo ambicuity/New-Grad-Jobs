@@ -116,6 +116,13 @@ def test_minimal_valid_config_has_no_errors():
     assert check_config(_valid()).errors == []
 
 
+def test_icims_takes_a_career_site_or_a_classic_portal_root():
+    config = _valid()
+    config["apis"]["icims"] = {"companies": [{"name": "AMD", "url": "https://careers.amd.com"},
+                                             {"name": "RoviSys", "url": "https://careers-rovisys.icims.com"}]}
+    assert check_config(config).errors == []
+
+
 @pytest.mark.parametrize("mutate, message", [
     (lambda c: c["filtering"].pop("max_age_days"), "filtering.max_age_days: required"),
     (lambda c: c["filtering"].update(max_age_days=0), "filtering.max_age_days: must be an integer in [1, 365]"),
@@ -180,8 +187,13 @@ def test_minimal_valid_config_has_no_errors():
      "apis.successfactors.max_details_per_company"),
     (lambda c: c["apis"].update(successfactors={"enabled": "y", "companies": []}),
      "apis.successfactors.enabled: must be true or false"),
-    (lambda c: c["apis"].update(icims={"companies": [{"name": "I", "url": "https://careers-rovisys.icims.com"}]}),
+    (lambda c: c["apis"].update(icims={"companies": [{"name": "I", "url": "https://internal-rovisys.icims.com"}]}),
      "apis.icims.companies[0].url"),
+    (lambda c: c["apis"].update(icims={"companies": [{"name": "I", "url": "https://careers-rovisys.icims.com/jobs/search"}]}),
+     "apis.icims.companies[0].url"),
+    (lambda c: c["apis"].update(icims={"max_jobs_per_portal": 0, "companies": []}), "apis.icims.max_jobs_per_portal"),
+    (lambda c: c["apis"].update(icims={"max_details_per_portal": 5000, "companies": []}),
+     "apis.icims.max_details_per_portal"),
     (lambda c: c["apis"].update(icims={"companies": [{"name": "I", "url": "https://careers.amd.com/api/jobs"}]}),
      "apis.icims.companies[0].url"),
     (lambda c: c["apis"].update(icims={"max_jobs_per_country": 0, "companies": []}), "apis.icims.max_jobs_per_country"),

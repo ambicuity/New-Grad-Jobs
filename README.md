@@ -680,7 +680,7 @@ This repository automatically scrapes new graduate job opportunities from variou
 - **Workable**: <!-- COUNT:boards_workable -->6<!-- /COUNT --> configured direct employers (Credence, TP-Link Systems, Zifo, …); recruiters posting for unnamed clients are not included.
 - **Paylocity**: <!-- COUNT:boards_paylocity -->11<!-- /COUNT --> configured direct employers (Interclypse, Concept Solutions, Trean, …), read from each public board page.
 - **SuccessFactors**: <!-- COUNT:boards_successfactors -->32<!-- /COUNT --> configured careers sites (Duke University, Boston Scientific, Leonardo DRS, …), read from each SAP SuccessFactors Career Site Builder search page.
-- **iCIMS**: <!-- COUNT:boards_icims -->6<!-- /COUNT --> configured career sites (AMD, Emory University, PepsiCo, …), read from each site's public job search API.
+- **iCIMS**: <!-- COUNT:boards_icims -->29<!-- /COUNT --> configured career sites and portals (AMD, PepsiCo, RoviSys, Kimley-Horn, …), read from each career site's public job search API or each classic portal's search pages.
 - **JobSpy**: aggregation layer over Indeed (LinkedIn is disabled because of rate limits), searched in the US, Canada and India.
 - **Community Submissions**: User-submitted jobs via GitHub Issues.
 
@@ -737,7 +737,7 @@ The site itself loads two lighter artifacts generated alongside it:
 ### Companies Monitored
 
 <details>
-<summary>Click to expand the configured list (<!-- COUNT:boards_total -->852<!-- /COUNT --> boards)</summary>
+<summary>Click to expand the configured list (<!-- COUNT:boards_total -->875<!-- /COUNT --> boards)</summary>
 
 <!-- COMPANY-LISTINGS:START - auto-generated from config.yml by scripts/sync_readme_companies.py; do not edit by hand -->
 
@@ -765,7 +765,7 @@ The site itself loads two lighter artifacts generated alongside it:
 
 **SuccessFactors (32)**: Advanced Energy, ANDRITZ, AVL, Bank of Canada, Boston Scientific, Bunge, BWX Technologies, Compass Group USA, Doosan, Duke University, FlightSafety International, Hatch, Hubbell, IDEMIA, J.R. Simplot, JetBlue, Lear, Leonardo DRS, Lincoln Electric, MAPFRE, MIT Lincoln Laboratory, NextEra Energy, Oak Ridge National Laboratory, Phillips 66, Schaeffler, State of Florida, State of Illinois, Supermicro, Swiss Re, Teradyne, University of Toronto, Westinghouse
 
-**iCIMS (6)**: AMD, Emory University, First Citizens Bank, Medpace, Noblis, PepsiCo
+**iCIMS (29)**: Allied Universal, AMD, Berkley, Beyond New Horizons, Bowhead, Cotiviti, Daifuku, Emory University, Everwatch, Exponent, First Citizens Bank, ISYS Technologies, Kimley-Horn, Markon, Medpace, New York University, Noblis, PeopleTec, PepsiCo, Persistent Systems, PowerSchool, RoviSys, RoviSys Building Technologies, SimVentions, Snap-on, Soft Tech Consulting, Steampunk, TekSynap, The Tatitlek Corporation
 
 <!-- COMPANY-LISTINGS:END -->
 

@@ -215,6 +215,37 @@ class TestFetchAll:
         assert {(e.company, e.status) for e in result.errors} == {("Broken", 404)}
 
 
+class TestPortals:
+    def test_classic_portals_are_read_from_their_pages_and_career_sites_from_the_api(self):
+        portal_page = (
+            "<script>$('.iCIMS_JobsTable')</script><ul class=\"iCIMS_JobsTable\">"
+            '<li class="iCIMS_JobCardItem"><a class="iCIMS_Anchor" '
+            'href="https://careers-rovisys.icims.com/jobs/7/senior-engineer/job?in_iframe=1"><h3>Senior Engineer</h3>'
+            "</a></li></ul>")
+
+        def get(url, **_kwargs):
+            if urlparse(url).netloc == "careers-rovisys.icims.com":
+                response = _response(200)
+                response.text = portal_page
+                response.json.side_effect = ValueError("not json")
+                return response
+            query = parse_qs(urlparse(url).query)
+            return _response(200, _payload([_job("1")] if query["country"][0] == "United States" else []))
+
+        settings = MagicMock(icims_max_workers=2, icims_countries=COUNTRIES, icims_max_jobs_per_country=100,
+                             icims_max_jobs_per_portal=100, icims_max_details_per_portal=10, http_timeout=5)
+        companies = [{"name": "AMD", "url": BASE}, {"name": "RoviSys", "url": "https://careers-rovisys.icims.com"}]
+        with (
+            patch("ngj.http.limited_get", side_effect=get),
+            patch.object(ngj_http, "SOURCE_COOLDOWN", SourceCooldownTracker(threshold=5)),
+        ):
+            result = fetch_all_icims_jobs(companies, settings, filtering={"new_grad_signals": ["junior"],
+                                                                          "track_signals": ["engineer"]})
+        assert sorted(j["url"] for j in result.jobs) == [
+            "https://careers-rovisys.icims.com/jobs/7/job", "https://careers.amd.com/jobs/1"]
+        assert result.errors == ()
+
+
 class TestReviewHardening:
     @pytest.mark.parametrize("value", ["false", "False", 0])
     def test_non_boolean_false_searchable_is_skipped(self, value):

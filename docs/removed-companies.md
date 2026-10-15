@@ -5,6 +5,39 @@ contributors don't unknowingly re-add a dead endpoint. Each removal cites the
 source (`HTTP 404`, moved ATS, defunct) and the date. Additions that came out of a
 board audit are logged here too, so the reasoning survives.
 
+## 2026-10-15 — iCIMS classic portals (23 added)
+
+The iCIMS adapter now also reads classic portals (`https://<prefix>-<company>.icims.com`, #173): their
+search pages, then the job pages of postings that can pass. All 61 public portal hosts found by the
+careers-page audit (#419) were probed on 2026-10-15, and the 43 that list jobs were measured through the
+adapter and our filters. The 23 that publish at least two curated jobs were added (211 curated jobs at
+the time): Allied Universal (`securitycareers-aus`), Berkley (`careers-berkley`), Beyond New Horizons
+(`careers-bnh`), Bowhead (`bowheadcareers-uicalaska`), Cotiviti (`careers-cotiviti`), Daifuku
+(`careers-daifuku-america`), Everwatch (`everwatch-everwatchsolutions`), Exponent (`careers-exponent`),
+ISYS Technologies (`careers-i2xisys`), Kimley-Horn (`careers-kimley-horn`), Markon (`careers-markon`),
+New York University (`careers-nyu`), PeopleTec (`careers-peopletec`), Persistent Systems
+(`careers-persistentsystems`), PowerSchool (`careers-powerschool`), RoviSys (`careers-rovisys`), RoviSys
+Building Technologies (`careers-rovisysbuildingtechnologies`), SimVentions (`careers-simventions`),
+Snap-on (`careers-snapon`), Soft Tech Consulting (`careers-softtechconsulting`), Steampunk
+(`careers-steampunk`), TekSynap (`hotjobs-teksynap`) and The Tatitlek Corporation (`careers-tatitlek`).
+
+**Not added:**
+
+- **Already read through a career site:** the portals behind the AMD, Emory, First Citizens, Medpace,
+  Noblis and PepsiCo career sites above (their `apply_url` hosts), and IDEMIA, read from SuccessFactors.
+- **Duplicates:** `jobs-kimley-horn` lists the same jobs as `careers-kimley-horn`. `hotjobs-teksynap`
+  is a subset of `careers-teksynap`, but only it shows real dates.
+- **Posted dates hidden:** a portal that hides its dates makes one up on each job page (the request
+  time two years back), so its jobs can never be recent. These are Edgewater Federal Solutions, Emory
+  Healthcare (`ehccareers-emory`), MAG Aerospace, Oregon Health & Science University (three portals),
+  RoviSys Europe, TekSynap (`careers-teksynap`) and Western & Southern (`careers-westernsouthern`).
+- **Future roles:** `futurecareers-peopletec` lists roles for upcoming projects, not open positions.
+- **Fewer than two curated jobs:** Allied Universal Canada, Berkley APAC and Spain, Cotiviti global,
+  Lynker, Ryder (driver and technician portals; Ryder's Workday board is configured), and Western &
+  Southern management and operations portals.
+- **Employee-only or empty:** `internal*` portals, portals that redirect to a sign-in page, and portals
+  with no listings.
+
 ## 2026-10-15 — iCIMS source, career sites (6 added)
 
 The new iCIMS adapter (#423) reads iCIMS career sites (iCIMS's "Jibe" job search) on the employer's
@@ -19,7 +52,7 @@ Oracle HCM, which are already configured, so they would publish duplicates. Oreg
 University (`jobs.ohsu.edu`) published no curated jobs.
 
 **Not covered yet:** classic iCIMS portals (`careers-<company>.icims.com`, about 30 employers in the
-audit) are a different product and follow in a separate change.
+audit) are a different product and follow in a separate change (added below).
 
 ## 2026-10-15 — SuccessFactors source (32 careers sites added)
 
