@@ -53,6 +53,14 @@ test.describe('axe (WCAG 2.2 AA)', () => {
     await expectNoSeriousA11yViolations(page, testInfo);
   });
 
+  test('policy pages', async ({ page }, testInfo) => {
+    for (const slug of ['terms', 'privacy', 'copyright', 'data-sources']) {
+      await page.goto(`/${slug}/`);
+      await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+      await expectNoSeriousA11yViolations(page, testInfo);
+    }
+  });
+
   test('landing page and hub', async ({ page }, testInfo) => {
     await page.goto('/jobs/software-engineering/');
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();

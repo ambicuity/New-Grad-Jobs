@@ -812,6 +812,14 @@ Found a job we're missing? Want to report a closed position?
 
 ---
 
+## License and Policies
+
+The code, guides and documentation in this repository are [MIT licensed](LICENSE). The licence covers this project's own work only. Job postings, descriptions and employer names belong to the employers and platforms that published them, and the MIT licence does not cover them. Third-party software keeps its own licence ([THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)).
+
+The site's [Terms of Service](https://jobs.riteshrana.engineer/terms/), [Privacy Policy](https://jobs.riteshrana.engineer/privacy/), [Copyright and Attribution Policy](https://jobs.riteshrana.engineer/copyright/) and [Data Sources](https://jobs.riteshrana.engineer/data-sources/) pages are built from [`site/content/legal/`](site/content/legal/). To ask for a correction, a removal or a copyright review, email contact@riteshrana.engineer.
+
+---
+
 **Star this repository** to stay updated with the latest new grad opportunities.
 
 *Last updated: 2026-10-15 16:01:09 UTC*

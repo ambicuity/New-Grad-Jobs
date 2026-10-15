@@ -16,7 +16,7 @@ import { CATEGORY_TYPE } from '../../src/lib/taxonomy.js';
 import { deriveRmt } from '../../src/lib/jobs.js';
 import { parsePostedAt } from './jobposting.mjs';
 import { COUNTRY_NAME, metroOf, parseLocation } from './location.mjs';
-import { JOB_PAGE_CSP, JOB_PAGE_CSS, REPO_URL, jobPageUrl, jobPath } from './render.mjs';
+import { JOB_PAGE_CSP, JOB_PAGE_CSS, REPO_URL, jobPageUrl, jobPath, legalLinksHtml } from './render.mjs';
 import { MAIN_FEED, categoryFeedPath, feedlyUrl } from '../../src/lib/feeds.js';
 import { escapeHtml, jsonForScript, truncate } from './text.mjs';
 
@@ -354,6 +354,7 @@ ${jobListItems(shown, root)}
 </div>
 <footer>
 <a href="${root}">← all new grad jobs</a> · <a href="${root}feed.xml">RSS</a> · <a href="${REPO_URL}">GitHub</a>
+${legalLinksHtml(root)}
 </footer>
 </main>
 </body>
@@ -404,6 +405,7 @@ ${guideLinks}
 <p><a href="${root}about/">Sources, filter rules and this run's numbers</a>.</p>
 <footer>
 <a href="${root}">← all new grad jobs</a> · <a href="${root}feed.xml">RSS</a> · <a href="${REPO_URL}">GitHub</a>
+${legalLinksHtml(root)}
 </footer>
 </main>
 </body>

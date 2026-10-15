@@ -47,6 +47,35 @@ export function renderInline(text) {
   return out;
 }
 
+/** A heading slug the build, the index, and the in-page fragments all agree on. */
+export function slugifyHeading(text) {
+  const ascii = String(text ?? '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+  return ascii.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
+/**
+ * Plain-Markdown form of a body for the /…/index.md companions: each
+ * `::: evidence <level>` block becomes a blockquote led by its badge label,
+ * so readers without this renderer see standard Markdown.
+ */
+export function portableMarkdown(body) {
+  const out = [];
+  let inEvidence = false;
+  for (const line of String(body ?? '').replace(/\r\n/g, '\n').split('\n')) {
+    const open = EVIDENCE_BLOCK_RE.exec(line.trim());
+    if (open) {
+      const level = EVIDENCE_LEVELS.find((l) => l.id === open[1]);
+      out.push(`> **${level ? level.label : open[1].toUpperCase()}**`, '>');
+      inEvidence = true;
+    } else if (inEvidence && line.trim() === ':::') {
+      inEvidence = false;
+    } else {
+      out.push(inEvidence ? (line.trim() ? `> ${line}` : '>') : line);
+    }
+  }
+  return out.join('\n');
+}
+
 /** Evidence levels for cited claims. Order matches the badge colour ramp (best evidence first). */
 export const EVIDENCE_LEVELS = Object.freeze([
   { id: 'official', label: 'OFFICIAL', swatch: '#5fd28a', description: 'USCIS / DHS / FTC / BLS / employer policy' },
@@ -95,11 +124,6 @@ export function renderMarkdown(body) {
   };
   const flushAll = () => { flushPara(); flushList(); flushQuote(); };
 
-  /** A heading slug the build, the index, and the in-page fragments all agree on. */
-  const slugifyHeading = (text) => {
-    const ascii = text.normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
-    return ascii.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-  };
 
   for (let i = 0; i < lines.length; i += 1) {
     const raw = lines[i];

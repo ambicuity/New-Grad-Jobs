@@ -12,6 +12,13 @@ const LINKS = [
   { href: './feed.xml', label: 'RSS', ext: false },
   { href: `${REPO_URL}/actions/workflows/update-jobs.yml`, label: 'Status', ext: true, title: 'Scraper workflow runs' },
 ];
+// Policy pages, built from site/content/legal/*.md (scripts/seo/legal.mjs).
+const LEGAL = [
+  { href: './terms/', label: 'Terms', ext: false, title: 'Terms of Service' },
+  { href: './privacy/', label: 'Privacy', ext: false, title: 'Privacy Policy' },
+  { href: './copyright/', label: 'Copyright', ext: false, title: 'Copyright, attribution and third-party content' },
+  { href: './data-sources/', label: 'Data sources', ext: false, title: 'Where every listing comes from' },
+];
 const SOCIALS = [
   { href: 'https://github.com/ambicuity', label: 'GH', title: 'Ritesh Rana on GitHub' },
   { href: 'https://buymeacoffee.com/ritesh.rana', label: 'BMC', title: 'Buy Me a Coffee' },
@@ -31,6 +38,7 @@ export function SiteFooter() {
       fontSize: 11, color: BBG.dim, letterSpacing: 0.3, flexWrap: 'wrap', alignItems: 'center',
     }}>
       <FooterRow items={LINKS} />
+      <FooterRow items={LEGAL} label="Legal" />
       <FooterRow items={SOCIALS} />
       <span>
         <span title="Continuously deployed from main">rolling · main</span>
@@ -44,9 +52,10 @@ export function SiteFooter() {
   );
 }
 
-function FooterRow({ items }) {
+function FooterRow({ items, label }) {
+  const Row = label ? 'nav' : 'span';
   return (
-    <span>
+    <Row aria-label={label} style={label ? { display: 'inline' } : undefined}>
       {items.map((it, i) => (
         <span key={it.label}>
           <a
@@ -63,6 +72,6 @@ function FooterRow({ items }) {
           {i < items.length - 1 ? ' · ' : ''}
         </span>
       ))}
-    </span>
+    </Row>
   );
 }

@@ -2,7 +2,7 @@
 // deliberately does not do. Every number is read from health.json and the
 // jobs data at build time; nothing is typed in by hand.
 
-import { JOB_PAGE_CSP, JOB_PAGE_CSS, REPO_URL } from './render.mjs';
+import { JOB_PAGE_CSP, JOB_PAGE_CSS, REPO_URL, legalLinksHtml } from './render.mjs';
 import { escapeHtml } from './text.mjs';
 
 export const ABOUT_PATH = 'about/';
@@ -117,7 +117,7 @@ ${rows.join('\n')}
 <li>No invented, estimated or placeholder numbers, anywhere. Every count on this site is computed from the published data.</li>
 <li>No scraping of LinkedIn, and no reselling of your clicks: APPLY goes to the employer's own page.</li>
 <li>No guessing whether a role sponsors visas. We only report what the posting states, so "no restriction stated" means exactly that.</li>
-<li>No accounts, tracking pixels or third-party scripts beyond a privacy-preserving page counter.</li>
+<li>No accounts, tracking pixels or third-party scripts beyond a privacy-preserving page counter on the board itself. The <a href="${root}privacy/">privacy policy</a> lists exactly what it sends.</li>
 </ul>
 
 <h2>USE THE DATA</h2>
@@ -125,10 +125,12 @@ ${rows.join('\n')}
 <li><a href="${root}jobs.json">jobs.json</a> — every open role, with a documented schema in the <a href="${REPO_URL}#readme" rel="noopener noreferrer">README</a>.</li>
 <li><a href="${root}feed.xml">feed.xml</a> — RSS of newly discovered roles, plus per-category, remote and no-visa-restriction slices under <code>feeds/</code>.</li>
 <li><a href="${root}health.json">health.json</a> — the run telemetry this page is built from.</li>
-<li><a href="${REPO_URL}" rel="noopener noreferrer">Source code</a> — MIT licensed; add a company by opening a pull request.</li>
+<li><a href="${REPO_URL}" rel="noopener noreferrer">Source code</a> — MIT licensed; add a company by opening a pull request. The licence covers NGJ's code, not the employers' postings: see <a href="${root}copyright/">copyright and attribution</a> and <a href="${root}data-sources/">data sources</a>.</li>
+<li><a href="${root}llms.txt">llms.txt</a> — a map of this site and its data for language models and agents.</li>
 </ul>
 <footer>
 <a href="${root}">← all new grad jobs</a> · <a href="${root}jobs/">browse</a> · <a href="${root}guides/">guides</a> · <a href="${root}feed.xml">RSS</a> · <a href="${REPO_URL}">GitHub</a>
+${legalLinksHtml(root)}
 </footer>
 </main>
 </body>

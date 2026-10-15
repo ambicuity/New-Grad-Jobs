@@ -1,14 +1,17 @@
 // Vite plugin (build only) that
 //   1. injects the Content-Security-Policy <meta> into index.html — build only,
 //      because the dev server needs inline scripts for React Fast Refresh;
-//   2. after the bundle is written, runs the SEO generator over dist/.
+//   2. after the bundle is written, runs the SEO generator over dist/ and
+//      writes third-party-licenses.txt for the bundled packages.
 // Set NGJ_SITE_URL to build for another origin (canonicals, sitemap, og:image)
 // and NGJ_SEO_DATA_DIR to read job data from somewhere other than public/
 // (build:fixtures points it at test/fixtures).
 
-import { resolve } from 'node:path';
+import { writeFile } from 'node:fs/promises';
+import { join, resolve } from 'node:path';
 import { DEFAULT_SITE_URL, generateSeo } from './generate.mjs';
 import { writeBrotliSiblings } from './compress.mjs';
+import { renderThirdPartyLicenses } from './licenses.mjs';
 
 /**
  * App CSP. Scripts: only our own bundle + GoatCounter's loader. Inline styles
@@ -66,13 +69,15 @@ export function ngjSeo({
         siteUrl,
         // Guides live with the site source, not with the (swappable) data directory.
         guidesDir: resolve(config.root, 'content', 'guides'),
+        legalDir: resolve(config.root, 'content', 'legal'),
         log,
       });
+      await writeFile(join(distDir, 'third-party-licenses.txt'), await renderThirdPartyLicenses(resolve(config.root, 'node_modules'), log));
       await writeBrotliSiblings(distDir, undefined, log);
       const skipped = Object.entries(stats.jsonLdSkipped).map(([k, v]) => `${k}: ${v}`).join(', ');
       logger.info(
         `[seo] ${stats.jobPages} job pages (${stats.jsonLd} with JobPosting JSON-LD${skipped ? `; skipped — ${skipped}` : ''}), `
-        + `${stats.closedPages} closed-job pages, ${stats.landingPages} landing pages, ${stats.guidePages} guides, `
+        + `${stats.closedPages} closed-job pages, ${stats.landingPages} landing pages, ${stats.guidePages} guides, ${stats.legalPages} policy pages, `
         + `${stats.sitemapUrls} sitemap URLs, ${stats.prerendered} jobs prerendered into index.html`,
       );
     },
