@@ -41,6 +41,7 @@ SOURCE_CONTRACT = {
     'adp': ('url', 'https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid='),
     'workable': ('url', 'https://apply.workable.com/api/v1/widget/accounts/'),
     'paylocity': ('url', 'https://recruiting.paylocity.com/Recruiting/Jobs/All/'),
+    'successfactors': ('url', 'https://'),
 }
 
 
@@ -58,7 +59,7 @@ def _endpoint(source: str, entry: dict[str, str]) -> str:
     return entry[key]
 
 
-ALL_SOURCES = ['greenhouse', 'lever', 'ashby', 'smartrecruiters', 'oracle_hcm', 'rippling', 'ukg', 'adp', 'workable', 'paylocity', 'workday']
+ALL_SOURCES = ['greenhouse', 'lever', 'ashby', 'smartrecruiters', 'oracle_hcm', 'rippling', 'ukg', 'adp', 'workable', 'paylocity', 'successfactors', 'workday']
 
 
 @pytest.mark.parametrize('source', ALL_SOURCES)

@@ -47,7 +47,7 @@ confirm the approach and nobody duplicates it. Issues are not formally assigned.
 
 ```
 config.yml ─▶ scripts/update_jobs.py (ngj package)
-               fetch (Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, UKG, ADP, Workable, Paylocity, Workday, JobSpy) → dedup → filter → enrich
+               fetch (Greenhouse, Lever, Ashby, SmartRecruiters, Oracle HCM, Rippling, UKG, ADP, Workable, Paylocity, SuccessFactors, Workday, JobSpy) → dedup → filter → enrich
                └─▶ site/public/{jobs.json, jobs-index.json, descriptions/, feed.xml, health.json}
                     └─▶ vite build (site/) ─▶ GitHub Pages: https://jobs.riteshrana.engineer
 ```
@@ -168,6 +168,10 @@ Keep data logic in `site/src/lib/` as pure functions with tests next to them.
        companies:
          - name: "Trean"
            url: "https://recruiting.paylocity.com/Recruiting/Jobs/All/d5c62503-946e-4b1c-a16e-500b823a4eea"
+     successfactors:
+       companies:
+         - name: "Duke University"
+           url: "https://careers.duke.edu"
      workday:
        companies:
          - name: "Microsoft"

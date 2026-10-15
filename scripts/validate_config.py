@@ -8,7 +8,7 @@ config path it is about:
 - ``filtering``: ``max_age_days`` (1-365) and non-empty string lists
   ``new_grad_signals`` / ``track_signals``; optional ``exclusion_signals``
   (string list) and ``min_expected_companies`` (>= 0);
-- ``apis.greenhouse|lever|ashby|smartrecruiters|oracle_hcm|rippling|ukg|adp|workable|paylocity``: ``companies`` entries are ``{name, url}``
+- ``apis.greenhouse|lever|ashby|smartrecruiters|oracle_hcm|rippling|ukg|adp|workable|paylocity|successfactors``: ``companies`` entries are ``{name, url}``
   with the URL shape of that ATS's public API, names and URLs unique per ATS;
 - ``apis.workday``: ``{name, workday_url}`` entries on *.myworkdayjobs.com,
   unique; numeric knobs within range;
@@ -64,6 +64,8 @@ ATS_URL_PATTERNS: dict[str, re.Pattern[str]] = {
     "paylocity": re.compile(
         r"^https://recruiting\.paylocity\.com/Recruiting/Jobs/All/"
         r"[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}/?$"),
+    # The Career Site Builder root on the employer's own host; the adapter adds /search/.
+    "successfactors": re.compile(r"^https://([a-z0-9-]+\.)+[a-z]{2,}/?$"),
 }
 WORKDAY_URL_PATTERN = re.compile(r"^https://[A-Za-z0-9-]+\.wd\d+\.myworkdayjobs\.com/\S+$")
 HTTPS_URL_PATTERN = re.compile(r"^https://[^\s/]+(/\S*)?$")
@@ -90,6 +92,8 @@ INT_RANGES: tuple[tuple[str, int, int], ...] = (
     ("apis.rippling.max_jobs_per_company", 1, 10_000),
     ("apis.ukg.max_jobs_per_company", 1, 10_000),
     ("apis.adp.max_jobs_per_company", 1, 10_000),
+    ("apis.successfactors.max_jobs_per_company", 1, 10_000),
+    ("apis.successfactors.max_details_per_company", 1, 1_000),
     ("apis.google.max_pages", 1, 50),
     ("apis.graphql.timeout", 1, 120),
     ("apis.graphql.max_jobs_per_source", 1, 10_000),
@@ -99,8 +103,8 @@ INT_RANGES: tuple[tuple[str, int, int], ...] = (
 WORKER_POOL_RANGE = (1, 1_000)
 REQUIRED_FILTERING_LISTS = ("new_grad_signals", "track_signals")
 OPTIONAL_FILTERING_LISTS = ("exclusion_signals", "strong_new_grad_signals", "level_signals", "internship_signals")
-SOURCE_NAMES = {"smartrecruiters": "SmartRecruiters", "oracle_hcm": "Oracle HCM", "rippling": "Rippling", "ukg": "UKG", "adp": "ADP", "workable": "Workable", "paylocity": "Paylocity"}
-ENABLED_FLAG_SECTIONS = ("greenhouse", "lever", "ashby", "smartrecruiters", "oracle_hcm", "rippling", "ukg", "adp", "workable", "paylocity", "google", "jobspy", "workday", "graphql")
+SOURCE_NAMES = {"smartrecruiters": "SmartRecruiters", "oracle_hcm": "Oracle HCM", "rippling": "Rippling", "ukg": "UKG", "adp": "ADP", "workable": "Workable", "paylocity": "Paylocity", "successfactors": "SuccessFactors"}
+ENABLED_FLAG_SECTIONS = ("greenhouse", "lever", "ashby", "smartrecruiters", "oracle_hcm", "rippling", "ukg", "adp", "workable", "paylocity", "successfactors", "google", "jobspy", "workday", "graphql")
 
 
 @dataclass

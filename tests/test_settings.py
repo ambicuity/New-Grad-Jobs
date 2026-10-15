@@ -114,6 +114,17 @@ def test_oracle_hcm_knobs(tmp_path):
         200, 20, 2)
 
 
+def test_successfactors_knobs(tmp_path):
+    defaults = build_settings(_config(), env={}, repo_root=tmp_path)
+    assert (defaults.successfactors_max_workers, defaults.successfactors_max_jobs_per_company,
+            defaults.successfactors_max_details_per_company) == (6, 1000, 100)
+    config = {"worker_pools": {"successfactors_max_workers": 2},
+              "apis": {"successfactors": {"max_jobs_per_company": 300, "max_details_per_company": 40}}}
+    custom = build_settings(config, env={}, repo_root=tmp_path)
+    assert (custom.successfactors_max_workers, custom.successfactors_max_jobs_per_company,
+            custom.successfactors_max_details_per_company) == (2, 300, 40)
+
+
 def test_paylocity_knobs(tmp_path):
     assert build_settings(_config(), env={}, repo_root=tmp_path).paylocity_max_workers == 1
     config = {"worker_pools": {"paylocity_max_workers": 1}}

@@ -8,12 +8,18 @@ from ngj.settings import load_config
 CO = [{"name": "A", "url": "https://x"}]
 
 
-def test_live_config_enables_all_twelve_active_sources():
+def test_live_config_enables_all_thirteen_active_sources():
     registry = source_registry(load_config(Path(__file__).resolve().parents[1] / "config.yml"))
     boards = ("greenhouse", "lever", "ashby", "smartrecruiters", "oracle_hcm", "rippling", "ukg", "adp", "workable",
-              "paylocity")
+              "paylocity", "successfactors")
     assert list(registry) == [*boards, "jobspy", "workday"]
     assert configured_company_apis(registry) == sum(registry[name].unit_count for name in (*boards, "workday"))
+
+
+def test_successfactors_is_a_board_source_enabled_by_default():
+    registry = source_registry({"apis": {"successfactors": {"companies": CO}}})
+    assert list(registry) == ["successfactors"] and registry["successfactors"].company_api is True
+    assert source_registry({"apis": {"successfactors": {"companies": CO, "enabled": False}}}) == {}
 
 
 def test_paylocity_is_a_board_source_enabled_by_default():

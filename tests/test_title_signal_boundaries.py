@@ -372,3 +372,20 @@ class TestSeniorAssociateTitles:
     ])
     def test_kept(self, title):
         assert _passes(title) is True
+
+
+class TestSpacedCoopAndManagerAbbreviation:
+    """Seen on SuccessFactors boards (Oct 2026): "Co - Op" with spaced hyphen is a
+    co-op, and "Mgr" is a manager."""
+
+    def test_spaced_coop_is_a_near_miss_not_curated(self):
+        from ngj.filters import classify_job
+
+        job = {"title": "Co - Op Fall 2026 - Cheraw 2", "location": "Cheraw, SC", "posted_at": POSTED_AT,
+               "company": "Acme"}
+        assert classify_job(job, _live_config()).reasons == ("intern_or_coop",)
+
+    @pytest.mark.parametrize("title", ["MGR, OPERATIONS II", "Associate; Treasury Product Sales Mgr",
+                                       "Engineering Mgr. I"])
+    def test_mgr_is_excluded(self, title):
+        assert _passes(title) is False
