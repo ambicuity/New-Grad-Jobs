@@ -78,6 +78,8 @@ DEFAULT_WORKDAY_KEYWORD_WORKERS = 3
 # Per-company time budget: a slow tenant (RBC: ~7s per search page) keeps the
 # pages fetched so far instead of becoming the long pole of the whole run.
 DEFAULT_WORKDAY_MAX_SECONDS_PER_COMPANY = 45
+# Job-endpoint lookups per company for "N Locations" postings whose title can pass (#427).
+DEFAULT_WORKDAY_MAX_LOCATION_LOOKUPS = 50
 
 # One SmartRecruiters query per target country; results are newest first, and
 # 1000 reach back about two months at AbbVie (~1.2k US postings).
@@ -162,6 +164,7 @@ class Settings:
     workday_search_keywords: tuple[str, ...] = ()
     workday_max_jobs_per_keyword: int = DEFAULT_WORKDAY_MAX_JOBS_PER_KEYWORD
     workday_max_seconds_per_company: int = DEFAULT_WORKDAY_MAX_SECONDS_PER_COMPANY
+    workday_max_location_lookups: int = DEFAULT_WORKDAY_MAX_LOCATION_LOOKUPS
 
     smartrecruiters_countries: tuple[str, ...] = DEFAULT_SMARTRECRUITERS_COUNTRIES
     smartrecruiters_max_jobs_per_country: int = DEFAULT_SMARTRECRUITERS_MAX_JOBS_PER_COUNTRY
@@ -302,6 +305,9 @@ def build_settings(
         workday_max_seconds_per_company=coerce_positive_int(
             workday.get("max_seconds_per_company"), DEFAULT_WORKDAY_MAX_SECONDS_PER_COMPANY,
             "apis.workday.max_seconds_per_company"),
+        workday_max_location_lookups=coerce_positive_int(
+            workday.get("max_location_lookups"), DEFAULT_WORKDAY_MAX_LOCATION_LOOKUPS,
+            "apis.workday.max_location_lookups"),
         smartrecruiters_countries=tuple(c.lower() for c in _string_tuple(smartrecruiters.get("countries")))
         or DEFAULT_SMARTRECRUITERS_COUNTRIES,
         smartrecruiters_max_jobs_per_country=coerce_positive_int(
@@ -377,9 +383,9 @@ def describe_settings(settings: Settings) -> None:
     logger.info("     JobSpy: %s", settings.jobspy_workers)
     logger.info("     Orchestrator: %s", settings.orchestrator_workers)
     logger.info(
-        "     Workday: page_limit=%s, max_total=%s, timeout=%ss, max_workers=%s",
+        "     Workday: page_limit=%s, max_total=%s, timeout=%ss, max_workers=%s, max_location_lookups=%s",
         settings.workday_page_limit, settings.workday_max_jobs_per_company,
-        settings.workday_timeout, settings.workday_max_workers,
+        settings.workday_timeout, settings.workday_max_workers, settings.workday_max_location_lookups,
     )
     logger.info(
         "     Workday search: %s keyword(s), max %s jobs per keyword",

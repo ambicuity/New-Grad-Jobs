@@ -311,3 +311,9 @@ def test_settings_paths_are_paths(tmp_path):
     settings = build_settings(_config(), env={}, repo_root=str(tmp_path))
     assert isinstance(settings.repo_root, Path)
     assert isinstance(settings.output_dir, Path)
+
+
+def test_workday_location_lookups_knob(tmp_path):
+    assert build_settings(_config(), env={}, repo_root=tmp_path).workday_max_location_lookups == 50
+    config = {"apis": {"workday": {"max_location_lookups": 10}}}
+    assert build_settings(config, env={}, repo_root=tmp_path).workday_max_location_lookups == 10

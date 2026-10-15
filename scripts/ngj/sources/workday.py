@@ -18,6 +18,19 @@ HTTP 422 with an empty message means the tenant/site in ``workday_url`` does
 not exist on that ``wdN`` data centre (it is not a CSRF problem: the CXS API
 answers without a token). It is reported as a config error so the entry gets
 fixed rather than retried.
+
+Locations
+---------
+The listing reports a posting with several locations as ``"2 Locations"``,
+which the location gate cannot judge, so such postings used to pass even when
+every location was abroad (#427). For each one whose title passes
+``title_filter``, the job endpoint (``GET /wday/cxs/<tenant>/<site><externalPath>``)
+gives ``location`` (with its ``country``) and ``additionalLocations``; they
+replace the placeholder. Lookups are capped per company and respect the time
+budget. A failed lookup keeps the posting as listed; a 403/429 also stops the
+company's remaining lookups (a 403 counts toward the tenant cooldown). A
+foreign primary location with bare additional cities ("Plano") is ambiguous,
+so such a posting keeps its listed text rather than be dropped.
 """
 
 from __future__ import annotations
@@ -35,6 +48,7 @@ from urllib.parse import urlparse
 import requests
 
 from ngj import http as ngj_http
+from ngj.locations import LOCATION_COUNT_RE, is_valid_location
 from ngj.models import (
     KIND_CONFIG,
     KIND_HTTP,
@@ -50,6 +64,7 @@ from ngj.settings import (
     DEFAULT_WORKDAY_KEYWORD_WORKERS,
     DEFAULT_WORKDAY_MAX_JOBS_PER_COMPANY,
     DEFAULT_WORKDAY_MAX_JOBS_PER_KEYWORD,
+    DEFAULT_WORKDAY_MAX_LOCATION_LOOKUPS,
     DEFAULT_WORKDAY_MAX_WORKERS,
     DEFAULT_WORKDAY_PAGE_LIMIT,
     DEFAULT_WORKDAY_TIMEOUT,
@@ -73,6 +88,13 @@ DEFAULT_POST_RETRIES = 1
 WORKDAY_MAX_PAGE_LIMIT = 20
 
 TitleFilter = Callable[[str], bool]
+
+# An externalPath served by the tenant's own job endpoint (no "..", encoded dots, query or fragment).
+_EXTERNAL_PATH_RE = re.compile(r"/job/(?!.*(?:\.\.|%2e))[^?#\s\\]+", re.IGNORECASE)
+_BLOCKED_STATUSES = frozenset({403, 429})
+_COUNTRY_CODE_RE = re.compile(r"^[A-Z]{2,3}$")
+# Other ways a primary location already names Workday's country descriptor.
+_COUNTRY_ALIASES = {"united states of america": ("united states", "usa", "u.s.", "u.s.a.")}
 
 
 def build_workday_api_url(host: str, site_path: str) -> str:
@@ -178,6 +200,87 @@ def _post_page(
         time.sleep(_SERVER_ERROR_BACKOFF * (2 ** attempt))
         response = ngj_http.limited_post(api_url, json=payload, headers=headers, timeout=timeout)
     return response
+
+
+def location_from_detail(payload: Any) -> str:
+    """``"<location>, <country>; <additional>; ..."`` from a job endpoint payload, or "" when it has none."""
+    info = payload.get('jobPostingInfo') if isinstance(payload, dict) else None
+    if not isinstance(info, dict):
+        return ""
+    primary = str(info.get('location') or '').strip()
+    country = info.get('country')
+    descriptor = str(country.get('descriptor') or '').strip() if isinstance(country, dict) else ''
+    last_part = primary.rsplit(',', 1)[-1].strip()
+    names = {descriptor.lower(), *_COUNTRY_ALIASES.get(descriptor.lower(), ())}
+    if primary and descriptor and last_part.lower() not in names and not _COUNTRY_CODE_RE.match(last_part):
+        primary = f"{primary}, {descriptor}"
+    additional = info.get('additionalLocations')
+    others = [str(place).strip() for place in (additional if isinstance(additional, list) else [])]
+    others = [place for place in others if place]
+    if descriptor and not is_valid_location(descriptor) and any(_is_bare_place(place) for place in others):
+        return ""  # ambiguous: "Plano" next to a London primary may well be in the US
+    return "; ".join(dict.fromkeys(place for place in (primary, *others) if place))
+
+
+def _is_bare_place(place: str) -> bool:
+    """A city without a region or country that the location gate cannot place ("Plano")."""
+    return ',' not in place and not is_valid_location(place)
+
+
+def _lookup_location(tenant: _Tenant, url: str) -> tuple[str, bool]:
+    """(real locations or "" on any failure, whether the tenant is blocking us).
+
+    A posting whose lookup fails keeps its listed text; no SourceError is
+    raised, since the posting itself was fetched fine. A 403 counts toward the
+    tenant cooldown like a search 403.
+    """
+    try:
+        response = ngj_http.limited_get(url, headers={'Accept': 'application/json'}, timeout=tenant.timeout)
+        if response.status_code in _BLOCKED_STATUSES:
+            if response.status_code == 403:
+                ngj_http.record_forbidden(tenant.company_name, SOURCE, tenant.api_url, label="Workday ")
+            return "", True
+        if not response.ok:
+            logger.debug("  Workday location lookup for %s: HTTP %s", tenant.company_name, response.status_code)
+            return "", False
+        return location_from_detail(response.json()), False
+    except (requests.exceptions.RequestException, ValueError) as exc:
+        logger.debug("  Workday location lookup for %s failed: %s", tenant.company_name, exc)
+        return "", False
+
+
+def _resolve_locations(
+    tenant: _Tenant,
+    jobs: Sequence[tuple[str, dict[str, Any]]],
+    title_filter: TitleFilter | None,
+    max_lookups: int,
+) -> list[dict[str, Any]]:
+    """Replace "N Locations" with the real locations for plausible postings (new dicts; input untouched)."""
+    detail_base = tenant.api_url.removesuffix('/jobs')
+    lookups = found = left = 0
+    blocked = False
+    resolved: list[dict[str, Any]] = []
+    for path, job in jobs:
+        wanted = bool(
+            LOCATION_COUNT_RE.fullmatch(job['location'])
+            and _EXTERNAL_PATH_RE.fullmatch(path)
+            and (title_filter is None or title_filter(job['title']))
+        )
+        if (not wanted or blocked or lookups >= max_lookups or tenant.out_of_time()
+                or ngj_http.SOURCE_COOLDOWN.is_tripped(tenant.api_url)):
+            left += wanted
+            resolved.append(job)
+            continue
+        lookups += 1
+        location, blocked = _lookup_location(tenant, f"{detail_base}{path}")
+        found += bool(location)
+        left += not location
+        resolved.append({**job, 'location': location} if location else job)
+    if lookups:
+        log = logger.warning if blocked else logger.info
+        log("  📍 %s: %s of %s multi-location postings resolved; %s keep \"N Locations\"%s",
+            tenant.company_name, found, lookups, left, " (lookups blocked)" if blocked else "")
+    return resolved
 
 
 def _to_job(company_name: str, site_url: str, item: dict[str, Any]) -> dict[str, Any]:
@@ -325,6 +428,7 @@ def _fetch_workday_company(
     title_filter: TitleFilter | None = None,
     keyword_workers: int = DEFAULT_WORKDAY_KEYWORD_WORKERS,
     max_seconds: float | None = None,
+    max_location_lookups: int = DEFAULT_WORKDAY_MAX_LOCATION_LOOKUPS,
 ) -> SourceResult:
     """Fetch one Workday company's jobs. Never raises: failures become SourceErrors."""
     company_name = company.get('name')
@@ -368,10 +472,11 @@ def _fetch_workday_company(
         for query in results:
             for key, job in query.jobs.items():
                 merged.setdefault(key, job)
-        jobs = list(merged.values())
-        if len(jobs) >= max_total_limit:
+        listed = list(merged.items())
+        if len(listed) >= max_total_limit:
             logger.info("  ℹ️  %s: Reached safety limit of %s jobs. Truncating.", company_name, max_total_limit)
-            jobs = jobs[:max_total_limit]
+            listed = listed[:max_total_limit]
+        jobs = _resolve_locations(tenant, listed, title_filter, max_location_lookups)
 
         if any(q.out_of_time for q in results):
             # Slow tenant: keep what the time budget allowed rather than hold up the run.
@@ -442,6 +547,7 @@ def fetch_workday_jobs(
     title_filter: TitleFilter | None = None,
     keyword_workers: int | None = None,
     max_seconds_per_company: float | None = None,
+    max_location_lookups: int | None = None,
 ) -> SourceResult:
     """Fetch Workday companies in parallel.
 
@@ -464,6 +570,8 @@ def fetch_workday_jobs(
     max_jobs_per_keyword = coerce_positive_int(
         max_jobs_per_keyword, DEFAULT_WORKDAY_MAX_JOBS_PER_KEYWORD, "max_jobs_per_keyword")
     keyword_workers = coerce_positive_int(keyword_workers, DEFAULT_WORKDAY_KEYWORD_WORKERS, "keyword_workers")
+    max_location_lookups = coerce_positive_int(
+        max_location_lookups, DEFAULT_WORKDAY_MAX_LOCATION_LOOKUPS, "max_location_lookups")
     keywords = tuple(dict.fromkeys(k.strip() for k in search_keywords if isinstance(k, str) and k.strip()))
 
     # host -> [(config index, company)], preserving config order within a host.
@@ -476,6 +584,7 @@ def fetch_workday_jobs(
             (index, _fetch_workday_company(
                 company, page_limit, max_total_limit, max_retries, timeout,
                 keywords, max_jobs_per_keyword, title_filter, keyword_workers, max_seconds_per_company,
+                max_location_lookups,
             ))
             for index, company in group
         ]

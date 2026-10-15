@@ -152,8 +152,9 @@ STATE_CODE_PATTERN = re.compile(
 
 _SEGMENT_SPLIT_RE = re.compile(r'\s*(?:;|\||•|\n|(?<!,)\s+or\s+)\s*', re.IGNORECASE)
 _WORD_RE = re.compile(r'[^\W_]+')
-# Workday's locationsText for a posting listed in several places.
-_LOCATION_COUNT_RE = re.compile(r'\d+\s+locations?', re.IGNORECASE)
+# Workday's locationsText for a posting listed in several places ("2 Locations").
+LOCATION_COUNT_RE = re.compile(r'\d+\s+locations?', re.IGNORECASE)
+_LOCATION_COUNT_RE = LOCATION_COUNT_RE
 
 
 def _is_work_mode_only(segment: str) -> bool:
