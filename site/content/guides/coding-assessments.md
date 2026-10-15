@@ -2,8 +2,12 @@
 title: Online coding assessments
 description: What automated assessments test, how they are scored, and a preparation plan that fits around coursework.
 updated: 2026-09-30
+published: 2026-09-25
 section: Interviews
 order: 2
+format: checklist
+use_when: Read this when an employer sends you a timed online coding assessment before any interview.
+you_get: You get the usual format and scoring, the topics to drill, a preparation plan, and tactics for the timed window.
 ---
 
 Many large employers send new grad applicants a timed online assessment before anyone has spoken to them. Format practice can help you work under the platform's constraints, alongside learning the required content.

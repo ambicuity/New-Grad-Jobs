@@ -7,6 +7,7 @@
 //   - about/index.html          sources, rules and this run's numbers from health.json (about.mjs)
 //   - terms/ privacy/ copyright/ data-sources/  policy pages from site/content/legal/*.md (legal.mjs)
 //   - guides/<slug>/index.md, <policy>/index.md  plain Markdown companions
+//   - guides/guides.js + guides/saved.js  the guides' enhancement script (src/lib)
 //   - llms.txt                  map of the site for language models (llms.mjs)
 //   - index.html                crawlable list of the newest jobs inside #root
 //   - sitemap.xml, robots.txt
@@ -16,7 +17,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { ABOUT_PATH, aboutFacts, renderAboutPage } from './about.mjs';
-import { GUIDES_ROOT, groupGuides, guideMarkdown, guidePath, loadGuides, renderGuidePage, renderGuidesIndex } from './guides.mjs';
+import { GUIDES_ROOT, GUIDES_SCRIPT, groupGuides, guideMarkdown, guidePath, loadGuides, renderGuidePage, renderGuidesIndex } from './guides.mjs';
 import { legalMarkdown, legalPath, loadLegalPages, renderLegalPage } from './legal.mjs';
 import { renderLlmsTxt } from './llms.mjs';
 import { descriptionShard, lookupDescription } from '../../src/lib/descriptions.js';
@@ -95,12 +96,19 @@ async function writeInBatches(tasks) {
 /** Guides in the same section order as the /guides/ index. */
 const llmsGuideOrder = (guides) => groupGuides(guides).flatMap((s) => s.guides);
 
+/** src/lib files copied verbatim beside the guides: the script and the one module it imports. */
+const GUIDE_CLIENT_FILES = [
+  [GUIDES_SCRIPT, new URL('../../src/lib/guides-client.js', import.meta.url)],
+  ['saved.js', new URL('../../src/lib/saved.js', import.meta.url)],
+];
+
 const newestFirst = (a, b) => (b.posted ? b.posted.getTime() : 0) - (a.posted ? a.posted.getTime() : 0);
 
 async function writeGuides(distDir, guides, site) {
   if (!guides.length) return [];
   await mkdir(join(distDir, GUIDES_ROOT), { recursive: true });
   await writeFile(join(distDir, GUIDES_ROOT, 'index.html'), renderGuidesIndex(guides, { siteUrl: site }));
+  for (const [name, src] of GUIDE_CLIENT_FILES) await writeFile(join(distDir, GUIDES_ROOT, name), await readFile(src, 'utf8'));
   await writeInBatches(guides.map((guide) => async () => {
     const dir = join(distDir, guidePath(guide.slug));
     await mkdir(dir, { recursive: true });

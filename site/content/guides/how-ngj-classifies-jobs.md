@@ -2,8 +2,12 @@
 title: How NGJ classifies jobs
 description: The rules that decide whether a posting is a new grad job, which category it lands in, and which flags it gets, in the order they run.
 updated: 2026-09-30
+published: 2026-09-25
 section: NGJ data
 order: 2
+format: explainer
+use_when: Read this when you want to know why a posting is on the board, in the near-miss tier, or missing.
+you_get: You get the hard and soft rules in the order they run, plus how categories, company tiers and flags are assigned.
 ---
 
 Every posting goes through the same fixed sequence of rules, written in the scraper's configuration and source. There is no model guessing and no hand editing, which means the rules can be wrong in predictable ways and can be corrected by anyone who reads them. This page walks the sequence.

@@ -2,8 +2,12 @@
 title: What makes a GitHub repository impressive?
 description: A practical checklist for explaining, running, and verifying the work in your repository.
 updated: 2026-09-30
+published: 2026-09-30
 section: GitHub and portfolio
 order: 2
+format: checklist
+use_when: Read this when you are about to pin a repository and want a reviewer to understand, run and verify it.
+you_get: You get a checklist covering the README, a clean-run check, showing your own work, tests, and what not to overrate.
 ---
 
 Make it easy for a reviewer to understand your work, run it, and verify its behavior. The checklist below is a presentation strategy; review order and time vary by employer.

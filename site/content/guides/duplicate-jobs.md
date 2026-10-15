@@ -2,8 +2,12 @@
 title: Duplicate jobs
 description: Why the same role appears on several sites, how the board decides two postings are one, and why a few duplicates remain.
 updated: 2026-09-30
+published: 2026-09-25
 section: NGJ data
 order: 3
+format: explainer
+use_when: Read this when the same role shows up more than once on the board or you wonder how repeats are removed.
+you_get: You get the two deduplication passes, which repeats still slip through, which version to apply through, and how to report one.
 ---
 
 The same job is often published in several places: on the employer's Greenhouse board, on Indeed, and sometimes on a second career site after a migration. Left alone, a board built from many sources would list one opening three times and its counts would be wrong. Two passes remove most of the repetition without merging distinct jobs.

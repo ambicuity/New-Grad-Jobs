@@ -2,8 +2,12 @@
 title: Negotiating a new grad offer
 description: How to ask about entry-level compensation, start dates and relocation while understanding employer constraints and uncertainty.
 updated: 2026-09-30
+published: 2026-09-25
 section: Offers
 order: 4
+format: script, checklist
+use_when: Read this when you have a written offer and want to ask for better terms without inventing leverage.
+you_get: You get what is and is not usually negotiable, what you need first, an email script, and what to do if they say no.
 ---
 
 New grad offers are more negotiable than most graduates assume and less negotiable than the internet suggests. The bands are narrow, the levers are few, and the way you ask matters more than how much. This guide is about asking well.

@@ -2,8 +2,12 @@
 title: International student job search center
 description: A US F-1 job-search checklist for authorization, employer participation and deadlines, with current rules and case-specific verification.
 updated: 2026-09-30
+published: 2026-09-30
 section: International students
 order: 1
+format: official, checklist
+use_when: Read this when you are a US F-1 student job searching around OPT, STEM OPT, CPT or H-1B rules.
+you_get: You get an authorization calendar to build, questions to ask employers, and current official sources to confirm with your DSO.
 ---
 
 This guide concerns US F-1 students. It is educational information, not a determination of your eligibility. Use it to prepare questions for your Designated School Official (DSO) and, when needed, a qualified immigration attorney. For Canada or India, start with the country-specific sources in [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/).

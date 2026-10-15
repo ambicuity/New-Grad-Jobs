@@ -2,8 +2,12 @@
 title: AI coding assessments for new grads
 description: How AI is used in take-home and live coding assessments, what employers allow, and how to prepare without misrepresenting how you code.
 updated: 2026-09-30
+published: 2026-09-30
 section: AI and job search
 order: 3
+format: checklist
+use_when: Read this when you have a coding assessment and need to know whether AI tools are allowed and how to prepare.
+you_get: You get where AI appears in coding assessments, how to check the rules, and what to do when AI is allowed, banned or unclear.
 ---
 
 Some employers now allow AI tools in their coding assessments and some prohibit them, and the rules change by role, by team, and by year. This guide explains what to expect and how to find out what your specific assessment allows.

@@ -2,8 +2,12 @@
 title: What counts as a new grad job?
 description: The definition this board uses, why it is stricter than "junior", and the kinds of roles it deliberately leaves out.
 updated: 2026-09-30
+published: 2026-09-25
 section: Getting started
 order: 2
+format: explainer
+use_when: Read this when you want to know why a role does or does not appear on the board as a new grad job.
+you_get: You get the board's rules for a new grad posting, what they deliberately exclude, and what they cannot judge.
 ---
 
 "New grad job" is not a term employers agree on. Some label roles for a graduating class, some post "Engineer I", and many post a plain "Software Engineer" and decide the level in interviews. This board needs one working definition, and it is written down as rules in the scraper's configuration, so here it is in plain language.

@@ -2,8 +2,12 @@
 title: What to do after accepting a new grad offer
 description: A flexible checklist for screening, work authorization, payroll, relocation and preparation between accepting an offer and starting.
 updated: 2026-09-30
+published: 2026-09-30
 section: Starting your job
 order: 2
+format: checklist
+use_when: Read this when you have accepted an offer and need to know what to finish before your start date.
+you_get: You get a checklist for closing your search, paperwork, work authorization, benefits, relocation and your first week.
 ---
 
 After accepting, confirm the start date and every remaining condition in writing. The sequence below is a checklist, not a four-week timetable: screening, graduation, relocation and immigration can take different amounts of time.

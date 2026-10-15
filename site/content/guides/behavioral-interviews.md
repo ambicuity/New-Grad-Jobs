@@ -2,8 +2,12 @@
 title: Behavioral interviews
 description: What "tell me about a time" questions are really asking, how to prepare six stories, and how to answer without a job history.
 updated: 2026-09-30
+published: 2026-09-25
 section: Interviews
 order: 4
+format: explainer
+use_when: Read this when a behavioral round is coming and you need examples from coursework, projects, internships or jobs.
+you_get: You get the common question families, a STAR structure with reflection, answering tips, and mistakes to avoid.
 ---
 
 Behavioral interviews ask for past examples on the theory that past behavior predicts future behavior. For a new graduate the past is coursework, projects, internships, clubs and jobs of any kind, and all of that is fair material. The interview is not testing whether you have an impressive past; it is testing whether you can reflect on it honestly.

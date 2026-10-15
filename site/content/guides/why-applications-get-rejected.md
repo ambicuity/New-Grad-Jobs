@@ -2,8 +2,12 @@
 title: Why applications get rejected
 description: Possible reasons, what each one looks like from the employer's side, and what to fix.
 updated: 2026-09-30
+published: 2026-09-30
 section: Résumé and applications
 order: 7
+format: diagnostic
+use_when: Read this when you keep getting rejections and want to check the possible causes before changing everything.
+you_get: You get possible rejection causes, what each looks like from the employer's side, and a fix for each.
 ---
 
 A rejection email that says "we decided not to move forward" is usually honest but useless. These are possible explanations and useful checks. A generic rejection does not identify the cause, and the list is not a ranking by frequency.

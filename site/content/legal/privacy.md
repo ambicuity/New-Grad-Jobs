@@ -10,8 +10,8 @@ This policy explains what information is handled when you use NGJ (New Grad Jobs
 ## 1. Summary
 
 - NGJ has **no accounts, no sign-up, no forms, no advertising and no newsletter**. It does not ask for your name, email or résumé.
-- NGJ sets **no cookies**. Your saved and applied jobs stay in your own browser's storage and are never sent anywhere.
-- The main job board loads **GoatCounter**, a privacy-focused page counter. GoatCounter says it does not store IP addresses or set cookies. The other pages (job pages, guides, policies and the about page) run no scripts at all.
+- NGJ sets **no cookies**. Your saved and applied jobs, and the guides you save or mark as read, stay in your own browser's storage and are never sent anywhere.
+- The main job board loads **GoatCounter**, a privacy-focused page counter. GoatCounter says it does not store IP addresses or set cookies. The guides run one small script from NGJ's own domain, which searches the guide list and remembers the guides you save or mark as read, and sends nothing anywhere. The other pages (job pages, landing pages, policies and the about page) run no scripts at all.
 - The site is hosted on **GitHub Pages**. GitHub logs visitors' IP addresses for security.
 - NGJ does **not sell** personal information, and does not share it for targeted advertising.
 
@@ -45,7 +45,7 @@ The interactive job board (the home page) loads GoatCounter's script from `gc.zg
 
 According to [GoatCounter's privacy policy](https://www.goatcounter.com/help/privacy), GoatCounter does not store IP addresses. It works out your country from the IP address and your browser and operating system from the user-agent, and it stores those as aggregate counts. It keeps a mapping of site, IP address and user-agent in memory for up to eight hours, so that repeat views can be counted as one visit, and stores only a random ID for it. GoatCounter states that it does not store anything in your browser, so it uses no cookies or local storage. The maintainer sees only GoatCounter's aggregate dashboard and has no way to identify you from it.
 
-The job pages, guides, landing pages, policies and the about page do not load GoatCounter. Their security policy forbids all scripts.
+The job pages, guides, landing pages, policies and the about page do not load GoatCounter. The guides' security policy allows only scripts from NGJ's own domain; the other pages' policy forbids all scripts.
 
 ### 3.4 Storage in your browser
 
@@ -55,6 +55,8 @@ NGJ uses your browser's `localStorage` for features you choose to use. The data 
 | --- | --- | --- |
 | `ngj:saved-jobs:v1` | the IDs of jobs you starred | when you save a job |
 | `ngj:applied-jobs:v1` | the IDs of jobs you marked as applied | when you mark a job applied |
+| `ngj:guides-read:v1` | the names of guides you marked as read | when you mark a guide read |
+| `ngj:guides-saved:v1` | the names of guides you saved | when you save a guide |
 | `ng-terminal:gh-v2` | a copy of public repository statistics from GitHub | when you open the CONTRIBUTORS tab; refreshed after an hour |
 | `ng-terminal:gh-commits-v1:<username>` | a copy of a contributor's recent public commits from GitHub | when you open that contributor in the CONTRIBUTORS tab; refreshed after an hour |
 

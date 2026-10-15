@@ -2,8 +2,12 @@
 title: OPT and STEM OPT for new graduates
 description: The basics of Optional Practical Training and the STEM extension as they affect a US job search, what to ask an employer, and where to find authoritative sources.
 updated: 2026-09-30
+published: 2026-09-25
 section: International students
 order: 2
+format: official
+use_when: Read this when you are an F-1 student planning a US job search on OPT or the STEM extension.
+you_get: You get the basics of OPT and STEM OPT, questions to ask employers, and links to official DHS and USCIS sources.
 ---
 
 This is orientation, not legal advice. Immigration rules change and your situation is specific. The information chain for immigration questions should be:

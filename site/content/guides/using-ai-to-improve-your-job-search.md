@@ -2,8 +2,12 @@
 title: Using AI to improve your job search
 description: The tasks where AI genuinely saves new-grad job-seekers time, and how to use it without losing accuracy.
 updated: 2026-09-30
+published: 2026-09-30
 section: AI and job search
 order: 1
+format: explainer
+use_when: Read this when you want to use AI for résumé, research or interview practice without sending claims you cannot defend.
+you_get: You get tasks where AI can help, rules for checking its output, and decisions that need evidence beyond the model.
 ---
 
 AI can help draft and review job-search material. Used badly, it is a résumé full of words you cannot defend in an interview. The line between the two is the line between preparation and misrepresentation.

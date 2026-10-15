@@ -2,8 +2,12 @@
 title: Finding hidden new grad roles
 description: Using WIDEN SCOPE and the EXPLORE tab to see the postings the strict rules leave out, with your own signals.
 updated: 2026-09-30
+published: 2026-09-25
 section: Understanding jobs
 order: 4
+format: explainer
+use_when: Read this when you think the board's rules are hiding roles you would apply to, such as unlevelled titles or co-ops.
+you_get: You get how the WIDEN SCOPE toggles and the EXPLORE tab work, and when to use each to look past the strict rules.
 ---
 
 The board's title-based rules can miss an unlevelled role without a configured signal or move a still-open posting to the near-miss tier because it is 70 days old. Two features let you look past those rules and check the employer's actual requirements.

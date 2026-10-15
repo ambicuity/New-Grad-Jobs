@@ -2,8 +2,12 @@
 title: Debugging interview preparation for new grads
 description: How debugging rounds work, how to talk through unfamiliar code out loud, and how to practice without a real codebase.
 updated: 2026-09-30
+published: 2026-09-30
 section: Technical preparation
 order: 6
+format: checklist
+use_when: Read this when your interview loop includes a debugging round where you find a bug in unfamiliar code out loud.
+you_get: You get what debugging rounds score, a hypothesis-driven working method, and ways to practice without a real codebase.
 ---
 
 Debugging rounds are common at backend, platform, infrastructure, and ML-platform companies. The interviewer hands you a small program that does not work — a bug in production, a flaky test, an output that is wrong by a row — and watches you find the bug out loud. The format may be live, AI-mediated, or asynchronous with a recorded walk-through. See [AI-assisted interviews](../ai-assisted-interviews/) for the platform rules.

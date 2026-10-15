@@ -2,8 +2,12 @@
 title: New grad projects that count
 description: What a hiring team actually looks for in a project, how to present one, and the kinds that do not help.
 updated: 2026-09-30
+published: 2026-09-25
 section: Résumé and applications
 order: 4
+format: explainer
+use_when: Read this when you lack work experience and want to choose and present projects as evidence for a role.
+you_get: You get the kinds of projects that help and rarely help, and how to present one on a résumé, in a repo and in an interview.
 ---
 
 Without work experience, projects are the evidence. But not every project is evidence of the same thing, and the projects that impress classmates are often not the ones that persuade a hiring team. This guide is about choosing and presenting them.

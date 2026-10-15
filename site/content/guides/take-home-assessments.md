@@ -2,8 +2,12 @@
 title: Take-home and work-sample assessments for new grads
 description: How to read the brief, what employers actually score, and how to deliver a submission you can defend in the follow-up.
 updated: 2026-09-30
+published: 2026-09-30
 section: Technical preparation
 order: 8
+format: checklist
+use_when: Read this when an employer sends you a take-home or work-sample brief to complete.
+you_get: You get what to check in the brief, how to deliver a defensible submission, and questions to prepare for the follow-up.
 ---
 
 Take-home and work-sample assessments ask you to build something small at home over hours or days. The brief usually states the time budget, the deliverables, and the rules around tools (including AI). Read it twice before you start. For the rules around AI in particular, see [AI coding assessments](../ai-coding-assessments/) and [Interview tool policies](../interview-tool-policies/).

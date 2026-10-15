@@ -2,8 +2,12 @@
 title: The résumé evidence test
 description: A repeatable test for every line on your résumé: can you prove the claim, can you explain the mechanism, can you reproduce the result? The same test catches AI-inflated metrics.
 updated: 2026-09-30
+published: 2026-09-30
 section: Résumé and applications
 order: 5
+format: worksheet, checklist
+use_when: Read this when you want every claim and metric on your résumé to hold up when an interviewer asks how you know.
+you_get: You get three questions to run on each bullet, a worksheet table, and common failing patterns to rewrite or remove.
 ---
 
 A résumé metric needs an explanation of how it was measured. The claim "reduced latency by 40%" looks impressive on paper and turns into a liability the moment the interviewer asks how it was measured. This guide is that test, in three questions, with a worksheet you can run on every bullet.

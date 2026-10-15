@@ -2,8 +2,12 @@
 title: The AI Job Search Framework
 description: When and how to use AI across the new-grad job search, what it can do well, where it hurts you, and the line between honest use and misrepresentation.
 updated: 2026-09-30
+published: 2026-09-30
 section: AI and job search
 order: 0
+format: explainer
+use_when: Read this when you want to use AI across discovery, résumés, applications and interview prep without misrepresenting yourself.
+you_get: You get where AI helps at each stage, what to verify, a table of AI rules by interview situation, and how to protect private data.
 ---
 
 AI is now a layer across the entire job search, not a single product or interview tool. Used honestly, it saves time on the parts of the search that are not you — keyword matching, drafting, planning. Used badly, it produces a résumé full of words you cannot defend in an interview, and an interview answer that looks like a model wrote it. This guide is the framework for telling the two apart.

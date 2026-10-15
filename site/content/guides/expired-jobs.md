@@ -2,8 +2,12 @@
 title: Expired and closed jobs
 description: How the board notices a job has closed, why some closed jobs linger for a run, and what the closed marker means.
 updated: 2026-09-30
+published: 2026-09-25
 section: NGJ data
 order: 4
+format: explainer
+use_when: Read this when a job on the board turns out to be closed or you see a CLOSED tag on a posting.
+you_get: You get how closed jobs are dropped or marked, the 60-day freshness rule, what happens when a source fails, and what to do.
 ---
 
 A job board is only as useful as its closed jobs are rare. This board handles closure in two ways: it drops postings that disappear from their source, and it marks postings that say they are closed while still being published. Neither is perfect, and the imperfections are described here.

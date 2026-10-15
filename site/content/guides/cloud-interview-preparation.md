@@ -2,8 +2,12 @@
 title: Cloud interview preparation for new grads
 description: What cloud / platform / DevOps new-grad loops test, the small set of services to know, and the depth that is overkill.
 updated: 2026-09-30
+published: 2026-09-30
 section: Technical preparation
 order: 5
+format: explainer
+use_when: Read this when you have a cloud interview loop and need to know what depth is expected at new grad level.
+you_get: You get what new grad cloud rounds test, how to prepare on one provider, and a pattern for answering trade-off questions.
 ---
 
 Cloud new-grad loops usually combine a coding round (LeetCode-style or take-home), a systems round, and a cloud-specific round that tests your familiarity with the platform the company uses. Some loops swap one of those for a take-home on a Terraform or YAML exercise. Read the invitation to confirm the format before you start preparing. See [AI-assisted interviews](../ai-assisted-interviews/) for the rules of the platform and [The new grad interview process](../interview-process/) for where this fits.

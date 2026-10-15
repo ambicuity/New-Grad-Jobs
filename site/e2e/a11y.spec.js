@@ -43,6 +43,13 @@ test.describe('axe (WCAG 2.2 AA)', () => {
     await expectNoSeriousA11yViolations(page, testInfo);
   });
 
+  test('guides index, with a reading path open', async ({ page }, testInfo) => {
+    await page.goto('/guides/');
+    await page.locator('#path-have-offer summary').click();
+    await expect(page.locator('#path-have-offer li').first()).toBeVisible();
+    await expectNoSeriousA11yViolations(page, testInfo);
+  });
+
   test('guide and about pages', async ({ page }, testInfo) => {
     await page.goto('/guides/how-to-use-this-board/');
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();

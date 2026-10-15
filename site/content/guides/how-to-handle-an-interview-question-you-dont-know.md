@@ -2,8 +2,12 @@
 title: How to handle an interview question you don't know
 description: The four moves that recover an interview, and the ones that finish it.
 updated: 2026-09-30
+published: 2026-09-30
 section: Interviews
 order: 7
+format: script
+use_when: Read this when you worry about freezing on an interview question you cannot answer.
+you_get: You get four moves to recover, wording for when you really do not know, and what not to do, including with AI interviewers.
 ---
 
 Every interviewer has watched a candidate say "I don't know" in a way that hurt them, and a different candidate say "I don't know" in a way that ended well. The difference is the words that come after.

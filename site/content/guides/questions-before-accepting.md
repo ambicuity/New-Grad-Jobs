@@ -2,8 +2,12 @@
 title: Questions to ask before accepting
 description: Twenty questions for the recruiter and hiring manager whose answers change whether a new grad offer is a good one.
 updated: 2026-09-30
+published: 2026-09-25
 section: Offers
 order: 5
+format: script
+use_when: Read this when you hold an offer and want answers that help you decide whether to accept it.
+you_get: You get questions for the recruiter and hiring manager about the work, team, growth, pay and logistics.
 ---
 
 Once an offer is on the table you have more leverage to ask questions than at any other point, and the answers help you understand the written terms and remaining uncertainties before accepting. Ask them. Employers expect it, and a hesitant answer is itself information.

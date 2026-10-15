@@ -2,8 +2,12 @@
 title: How to message recruiters as a new grad
 description: Short messages that give a recruiter a reason to open your profile, not a reason to ignore it.
 updated: 2026-09-30
+published: 2026-09-30
 section: LinkedIn and networking
 order: 4
+format: script
+use_when: Read this when you have applied for a role and want to message the recruiter responsible for it.
+you_get: You get who to contact, a short message to copy, what to avoid, and how to reply when they answer.
 ---
 
 Recruiters triage dozens of inboxes a day. The message that gets read is short, specific, and tells them which role and which person you are.

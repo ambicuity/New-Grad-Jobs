@@ -2,8 +2,12 @@
 title: How job data is collected
 description: Where every posting on this board comes from, how often the scraper runs, and what happens when a source fails.
 updated: 2026-09-30
+published: 2026-09-25
 section: NGJ data
 order: 1
+format: explainer
+use_when: Read this when you want to know where the board's postings come from and how fresh they are.
+you_get: You get the sources, the run schedule, what happens when a source fails, and which public files are published.
 ---
 
 Jobs on this board are fetched by a program from configured company career sites and Indeed. The published data can become stale if a run fails; check the run timestamp on the [about page](../../about/) rather than assuming every posting was fetched within the last few hours. The site serves static published files, with no application server or database. The pipeline is open source on [GitHub](https://github.com/ambicuity/New-Grad-Jobs).

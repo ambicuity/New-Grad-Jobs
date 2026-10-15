@@ -2,8 +2,12 @@
 title: How to prepare for a multi-round interview loop
 description: How new grad loops are structured, how to pace yourself across rounds, and how to recover between them.
 updated: 2026-09-30
+published: 2026-09-30
 section: Interviews
 order: 8
+format: explainer
+use_when: Read this when you have a multi-round interview loop scheduled and want to pace yourself across it.
+you_get: You get an example loop structure, how to pace and recover between rounds, and how to prepare for each interviewer.
 ---
 
 A loop may include several rounds over one or more days. Confirm the actual schedule and prepare for each round while allowing time to rest between them.

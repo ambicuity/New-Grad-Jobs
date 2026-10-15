@@ -2,8 +2,12 @@
 title: After-rejection email templates
 description: Reusable, short emails for the moments after a rejection, an interview, or an offer — thank-yous, follow-ups, feedback requests and re-engagement.
 updated: 2026-09-30
+published: 2026-09-30
 section: Rejections and recovery
 order: 5
+format: script
+use_when: Read this when you need a thank-you, follow-up, feedback request or re-engagement email during your search.
+you_get: You get short fill-in-the-blank emails for each of those moments, what to add to them, and what never to write.
 ---
 
 The templates below are starting points. Replace the brackets with your specifics; cut what does not apply. Short emails are read; long emails are skimmed. Aim for five sentences or fewer unless the situation calls for more.

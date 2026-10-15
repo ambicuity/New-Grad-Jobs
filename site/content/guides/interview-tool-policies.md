@@ -2,8 +2,12 @@
 title: Interview tool policies for new grads
 description: How to read the AI, browser, and device rules in an interview invitation, and how to ask the recruiter when they are not clear.
 updated: 2026-09-30
+published: 2026-09-30
 section: AI and job search
 order: 4
+format: checklist, script
+use_when: Read this when an interview invitation does not make clear which AI tools, websites or devices you may use.
+you_get: You get where tool rules are published, the questions to answer before you start, and an email to ask the recruiter.
 ---
 
 Every employer and assessment platform sets its own rules about what tools you can use during an interview. This guide is about how to read those rules, where to find them, and how to ask when they are missing.

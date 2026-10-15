@@ -2,8 +2,12 @@
 title: How to build a target-company list for new grads
 description: Pick 30–60 employers worth applying to, with criteria that survive a real search.
 updated: 2026-09-30
+published: 2026-09-30
 section: Job search strategy
 order: 1
+format: worksheet
+use_when: Read this when the board shows more roles than you can track and you need to decide which employers to focus on.
+you_get: You get a target list size, three tiers, criteria you can verify, and how to use and refresh the list monthly.
 ---
 
 A target list is what turns the scraper's thousands of rows into a few hundred worth opening. Build it once, refresh it monthly, and let it decide where your tailoring effort goes.

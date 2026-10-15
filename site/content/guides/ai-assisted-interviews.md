@@ -2,8 +2,12 @@
 title: AI-assisted interviews and modern hiring assessments
 description: How the new-grad interview is changing, how to identify the format you have been given, how to prepare for that format, and how to learn from every attempt.
 updated: 2026-09-30
+published: 2026-09-30
 section: Interviews
 order: 9
+format: checklist, worksheet
+use_when: Read this when an invitation mentions a video, AI-led or AI-enabled assessment and you are unsure how to prepare.
+you_get: You get questions to identify the format, a preparation loop for each format, and a record to learn from every attempt.
 ---
 
 The new-grad hiring process is changing.

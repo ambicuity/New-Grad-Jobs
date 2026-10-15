@@ -2,8 +2,12 @@
 title: How to network as a new grad
 description: A system that does not depend on being outgoing and that works alongside this site.
 updated: 2026-09-30
+published: 2026-09-30
 section: LinkedIn and networking
 order: 1
+format: checklist
+use_when: Read this when you want to build professional contacts without being outgoing or posting online.
+you_get: You get a weekly outreach routine, what to put in a short message, and what to review if it is not producing results.
 ---
 
 Networking for new grads is not a personality trait; it is a small weekly system. Conversations can help you understand roles and build professional relationships alongside direct applications. There is no universal share of new-grad hires attributable to networking.

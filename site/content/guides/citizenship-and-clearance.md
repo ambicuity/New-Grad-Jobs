@@ -2,8 +2,12 @@
 title: Citizenship and security clearance
 description: Why so many entry-level engineering roles require citizenship, what a clearance is, and how to read "ability to obtain".
 updated: 2026-09-30
+published: 2026-09-25
 section: International students
 order: 4
+format: official, explainer
+use_when: Read this when a U.S. posting mentions citizenship, security clearance, U.S.-person status or export controls.
+you_get: You get why the requirement exists, what clearance phrases mean, how the board flags them, and when to ask for clarification.
 ---
 
 This guide concerns U.S. roles. Defense, aerospace and government postings may include citizenship, clearance or export-control requirements. Those requirements differ; read the exact condition before ruling yourself out. Canadian and Indian requirements must be checked under their own rules.

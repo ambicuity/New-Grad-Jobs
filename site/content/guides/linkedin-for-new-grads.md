@@ -2,8 +2,12 @@
 title: LinkedIn for new grad job seekers
 description: Profile, headline, About section, Open to Work, and recruiter discoverability without becoming a content creator.
 updated: 2026-09-30
+published: 2026-09-30
 section: LinkedIn and networking
 order: 3
+format: checklist
+use_when: Read this when you want a LinkedIn profile recruiters can find without posting or building a personal brand.
+you_get: You get what to put in your headline, About and projects, how to set Open to Work, and how to send connection requests.
 ---
 
 LinkedIn is a profile and a search engine before it is a social network. Set it up as if a recruiter were going to read it for thirty seconds — because one will.

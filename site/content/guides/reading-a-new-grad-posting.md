@@ -2,8 +2,12 @@
 title: Reading a new grad job posting
 description: What "Engineer I", "L3", "associate", "early career" and "5+ years" actually mean, and the signals worth trusting.
 updated: 2026-09-30
+published: 2026-09-25
 section: Understanding jobs
 order: 1
+format: explainer
+use_when: Read this when a posting's title or level marker leaves you unsure whether it is really an entry-level role.
+you_get: You get what level markers, cohort phrases and experience floors mean, and which titles look junior but are not.
 ---
 
 Titles are the first filter both you and this board apply, so it pays to know the conventions. These are the patterns the scraper's own rules are built on.

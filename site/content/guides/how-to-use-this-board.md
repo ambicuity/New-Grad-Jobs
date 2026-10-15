@@ -2,8 +2,12 @@
 title: How to use this board
 description: Filters, alerts, saved and applied lists, keyboard shortcuts and the data behind every count.
 updated: 2026-09-30
+published: 2026-09-25
 section: Getting started
 order: 1
+format: explainer
+use_when: Read this when you are new to the board and want to know what the filters, lists and shortcuts do.
+you_get: You get a tour of the filters, RSS alerts, saved and applied lists, keyboard shortcuts and the published data files.
 ---
 
 NGJ lists new grad and entry-level postings collected from configured company career sites and Indeed. Scrapes are scheduled about every 30 minutes; failures can delay publication, so check the LIVE stamp and the [about page](../../about/) for currency. Board counts come from the published data. This guide is the two-minute tour.

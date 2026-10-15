@@ -2,8 +2,12 @@
 title: How to search for new grad jobs
 description: A repeatable weekly routine built on this board's filters, landing pages, feeds and the EXPLORE tab.
 updated: 2026-09-30
+published: 2026-09-25
 section: Getting started
 order: 3
+format: checklist
+use_when: Read this when you want a repeatable routine for finding and applying to roles on the board.
+you_get: You get one-time setup steps, then daily, twice-weekly and weekly habits using filters, feeds, saved lists and EXPLORE.
 ---
 
 The most common mistake in a new grad search is treating it as one big session. Postings appear continuously and many close early, so a short routine repeated often beats a long one done once. This is a routine that uses what the board already gives you.

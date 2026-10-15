@@ -2,8 +2,12 @@
 title: Are you qualified?
 description: How to read requirements as a new graduate, which ones are firm, and when to apply anyway.
 updated: 2026-09-30
+published: 2026-09-25
 section: Understanding jobs
 order: 2
+format: explainer
+use_when: Read this when a posting lists requirements you only partly meet and you are deciding whether to apply.
+you_get: You get which requirements are usually firm, which are soft, and a practical test for when to apply anyway.
 ---
 
 Requirements sections are written by many hands. A hiring manager lists what the ideal candidate has, a recruiter adds what the last hire had, and legal adds what must be true. The result reads as a wall of conditions, and new graduates, who tend to take instructions literally, rule themselves out of roles they could have had. Here is how to read the wall.

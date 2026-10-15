@@ -2,8 +2,12 @@
 title: LeetCode roadmap for new grads
 description: The patterns to learn, in the order to learn them, and the ones that are not worth your time.
 updated: 2026-09-30
+published: 2026-09-30
 section: Technical preparation
 order: 1
+format: checklist
+use_when: Read this when your interview tests algorithmic problem solving and you need an order in which to learn the patterns.
+you_get: You get coding patterns grouped into phases, what to deprioritize, and a study method built on spaced repetition.
 ---
 
 LeetCode-style practice is the right preparation for interviews that test algorithmic problem solving under time pressure, and it is one of several preparation paths. Some loops use it; others use take-homes, domain cases, work samples, or system design conversations instead. Follow the format the employer gave you. See [AI-assisted interviews](../ai-assisted-interviews/) for how to read the invitation and identify the actual evaluation, and [The new grad interview process](../interview-process/) for where this fits in the loop.

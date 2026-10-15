@@ -2,8 +2,12 @@
 title: Sponsorship language in job postings
 description: The exact phrases that mean "no sponsorship", the ones that only sound like it, and how the board reads each.
 updated: 2026-09-30
+published: 2026-09-25
 section: International students
 order: 3
+format: explainer
+use_when: Read this when a posting mentions work authorization, sponsorship or clearance and you are unsure what it rules out.
+you_get: You get which phrases mean no sponsorship, which only sound like it, and how the board flags each one.
 ---
 
 Postings talk about work authorization in a small number of stock phrases, and the phrases are not all equivalent. Knowing them saves you from applying to roles you cannot take and from skipping roles you could.

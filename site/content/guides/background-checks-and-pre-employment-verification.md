@@ -2,8 +2,12 @@
 title: Background checks and pre-employment verification
 description: What most pre-employment screenings cover, how the steps interact with work authorization, and where to find authoritative guidance.
 updated: 2026-09-30
+published: 2026-09-30
 section: Starting your job
 order: 1
+format: official, checklist
+use_when: Read this when your offer depends on a background check or work-authorization verification before you start.
+you_get: You get what screenings usually cover, what affects timing, your U.S. rights, and official sources for authorization questions.
 ---
 
 Most new-grad offers are contingent on a pre-employment screening that includes identity, education, and employment verification, sometimes a criminal background check, and employment-eligibility verification. In the United States, Form I-9 generally applies to all new employees, including citizens. The exact scope and timing vary by employer, screening vendor, role, and jurisdiction, so treat the specifics here as orientation rather than a universal timeline.

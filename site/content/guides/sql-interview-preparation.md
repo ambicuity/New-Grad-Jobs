@@ -2,8 +2,12 @@
 title: SQL interview preparation for new grads
 description: What data and analytics loops test, the patterns to learn, and the ones that come up most often.
 updated: 2026-09-30
+published: 2026-09-30
 section: Technical preparation
 order: 2
+format: checklist
+use_when: Read this when you have a data, analytics, backend or ML interview loop that includes a SQL round.
+you_get: You get what SQL rounds test, the query patterns that come up most, and a way to practise against a sample database.
 ---
 
 SQL comes up in most data, analytics, backend, and ML new-grad loops. The interview format varies: it may be a live SQL pad, a take-home with a database, a HackerRank-style timed set, or a written question as part of a larger case. The format and role can change the emphasis: query writing, data interpretation, schema design, or performance. Confirm the SQL dialect and whether execution is available. Read [AI-assisted interviews](../ai-assisted-interviews/) for those rules before you sit down.

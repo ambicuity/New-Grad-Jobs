@@ -2,8 +2,12 @@
 title: System design for new grads
 description: What a system design conversation at entry level actually covers, and the small set of concepts worth knowing.
 updated: 2026-09-30
+published: 2026-09-25
 section: Interviews
 order: 5
+format: checklist
+use_when: Read this when your interview loop includes a system design round at entry level.
+you_get: You get a step-by-step method for the conversation, the concepts worth knowing, and free courses to practise with.
 ---
 
 System-design expectations vary by employer and role. Confirm whether your loop includes a design round and how deep it goes. This guide provides a starting method for an entry-level conversation.

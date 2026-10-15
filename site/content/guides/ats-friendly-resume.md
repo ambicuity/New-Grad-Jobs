@@ -2,8 +2,12 @@
 title: An ATS-friendly résumé for new grad applications
 description: How to make résumé text easy to parse and review, and check application fields before submitting.
 updated: 2026-09-30
+published: 2026-09-25
 section: Résumé and applications
 order: 1
+format: checklist
+use_when: Read this when you are formatting a résumé for online applications and want the text to parse cleanly.
+you_get: You get formatting that parses, how to mirror posting wording honestly, and checks to run before you submit.
 ---
 
 Employers use applicant tracking systems to store applications and may parse résumés into searchable fields. Parsing, screening rules and human review are different steps. A parsing error does not automatically mean rejection: [Greenhouse documents that the résumé remains attached](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse). Aim for clear text and readable formatting, then check the application fields.

@@ -2,8 +2,12 @@
 title: How to learn from every interview
 description: A copyable postmortem template for after every interview, plus the connection to your wider funnel and what to do with what you learn.
 updated: 2026-09-30
+published: 2026-09-30
 section: Interviews
 order: 10
+format: worksheet, diagnostic
+use_when: Read this when you have just finished an interview or assessment and want to learn from it, whether you passed or not.
+you_get: You get a copyable postmortem template and a way to spot patterns across interviews and in your wider funnel.
 ---
 
 A rejection does not automatically tell you why you failed. A pass does not automatically tell you why you passed. The fastest way to improve is to record what happened, identify the controllable part, and change one or two things before the next attempt.

@@ -2,8 +2,12 @@
 title: Build a behavioral story bank
 description: A worksheet for preparing truthful examples, mapping them to relevant question families and practicing answers without memorizing scripts.
 updated: 2026-09-30
+published: 2026-09-30
 section: Interviews
 order: 5
+format: worksheet
+use_when: Read this when you want a reusable set of true stories that covers many behavioral questions without memorizing scripts.
+you_get: You get a story bank table, a five-part template with examples, question mappings, and ways to reframe one story.
 ---
 
 The standard advice — "prepare six STAR stories" — leaves out the multiplier. A well-prepared story may fit several question families, but no fixed number of stories covers every interview. Memorising fifty answers covers it less well, because the answers drift from each other and the interviewer can tell.

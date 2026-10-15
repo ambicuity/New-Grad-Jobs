@@ -2,8 +2,12 @@
 title: Evaluating an offer
 description: A structured way to judge a single new grad offer on money, learning, people and risk, before comparing it with anything.
 updated: 2026-09-30
+published: 2026-09-25
 section: Offers
 order: 2
+format: checklist
+use_when: Read this when you have your first offer in hand and nothing to compare it with yet.
+you_get: You get four questions on money, learning, people and risk, how to weigh them, and red flags to ask about before signing.
 ---
 
 The first offer is the hardest to judge because there is nothing to hold it against, and relief makes everything look good. Judge it on its own terms first. If a second offer arrives, [Comparing offers](../comparing-offers/) builds on this.

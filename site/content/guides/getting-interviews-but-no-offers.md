@@ -2,8 +2,12 @@
 title: Getting interviews but no offers
 description: How to tell whether the bottleneck is the recruiter, the technical round, the behavioral round, or the loop as a whole.
 updated: 2026-09-30
+published: 2026-09-30
 section: Rejections and recovery
 order: 2
+format: diagnostic
+use_when: Read this when you keep reaching interviews but none of them turn into an offer.
+you_get: You get a way to map which round ends each loop, likely gaps behind each pattern, and what to practice or change next.
 ---
 
 Use feedback and your own observations to identify preparation gaps. Rejection alone rarely reveals the cause, and headcount, eligibility, or another candidate's fit may affect the outcome.

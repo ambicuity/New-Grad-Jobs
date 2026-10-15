@@ -2,8 +2,12 @@
 title: Job freshness
 description: What "posted", "first seen" and the LIVE stamp mean, how new roles are marked, and how to tell whether the board itself is current.
 updated: 2026-09-30
+published: 2026-09-25
 section: NGJ data
 order: 5
+format: explainer
+use_when: Read this when you want to know how new a posting is or whether the board itself is up to date.
+you_get: You get what the posted date, first seen and the LIVE, STALE and OFFLINE stamp mean, and why the board can lag.
 ---
 
 Freshness is two different questions: how new is this job, and how current is the board showing it. The board answers both with data it actually has, and this page says what each figure means.

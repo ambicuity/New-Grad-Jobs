@@ -2,8 +2,12 @@
 title: Understanding new grad compensation
 description: The parts of an offer (base, bonus, equity, benefits), what each is worth, and how to read a posted salary range.
 updated: 2026-09-30
+published: 2026-09-25
 section: Offers
 order: 1
+format: explainer
+use_when: Read this when you have a new grad offer or a posted salary range and want to know what each part is worth.
+you_get: You get how base, bonuses, equity and benefits behave, how to read a posted range, and what to ask about each.
 ---
 
 A new grad offer is several numbers dressed as one. Employers present "total compensation" because it is the largest figure, but the parts behave differently, and the differences matter more at the start of a career than at any other time. This guide names the parts; [Evaluating an offer](../evaluating-an-offer/) covers deciding.
