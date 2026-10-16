@@ -105,7 +105,7 @@ export function JobDetail({ job, jobs, saved, onSave, applied = false, onApplied
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', borderBottom: `1px solid ${BBG.rule2}` }}>
         <Metric
           label="COMP"
-          value={hasComp ? fmtComp(job.comp) : '—'}
+          value={hasComp ? fmtComp(job.comp, job.compCur || undefined) : '—'}
           color={hasComp ? BBG.acc : BBG.dim}
           size={hasComp ? 18 : 14}
           sub={hasComp ? 'range in posting' : 'not posted'}
@@ -165,7 +165,7 @@ export function JobDetail({ job, jobs, saved, onSave, applied = false, onApplied
                 <span style={{ color: BBG.ink, minWidth: 0, ...ellipsis }}>
                   {x.co} · <span style={{ color: BBG.dim }}>{x.role} · {x.loc}</span>
                 </span>
-                <span style={{ color: x.comp[0] != null ? BBG.acc : BBG.dim, flexShrink: 0 }}>{fmtComp(x.comp)}</span>
+                <span style={{ color: x.comp[0] != null ? BBG.acc : BBG.dim, flexShrink: 0 }}>{fmtComp(x.comp, x.compCur || undefined)}</span>
               </button>
             </li>
           ))}

@@ -11,7 +11,7 @@ const COUNTRIES = [
   ['GB', 'United Kingdom', 'united kingdom', 'uk', 'england', 'scotland', 'wales', 'great britain'],
   ['IE', 'Ireland', 'ireland'], ['ES', 'Spain', 'spain'], ['CO', 'Colombia', 'colombia'],
   ['PL', 'Poland', 'poland'], ['MX', 'Mexico', 'mexico'], ['SG', 'Singapore', 'singapore'],
-  ['BR', 'Brazil', 'brazil'], ['IN', 'India', 'india'], ['AU', 'Australia', 'australia'],
+  ['BR', 'Brazil', 'brazil'], ['IN', 'India', 'india', 'ind'], ['AU', 'Australia', 'australia'],
   ['IL', 'Israel', 'israel'], ['DE', 'Germany', 'germany'], ['FR', 'France', 'france'],
   ['NL', 'Netherlands', 'netherlands'], ['JP', 'Japan', 'japan'], ['CN', 'China', 'china'],
   ['KR', 'South Korea', 'south korea', 'korea'], ['TW', 'Taiwan', 'taiwan'],
@@ -67,10 +67,23 @@ export function regionCode(region) {
   if (upper.length === 2 && (US_STATES[upper] || CA_PROVINCES[upper])) return upper;
   return REGION_CODE_BY_NAME.get(region.trim().toLowerCase()) || null;
 }
+// Indian states and union territories, and the cities employers name most. A
+// segment naming one is in India, and an "IN" beside it is India, not Indiana,
+// unless the segment also names a US state or Canadian province ("Delhi, NY").
+const INDIA_PLACES = [
+  'andhra pradesh', 'assam', 'bihar', 'chandigarh', 'delhi', 'goa', 'gujarat', 'haryana', 'karnataka', 'kerala',
+  'madhya pradesh', 'maharashtra', 'odisha', 'punjab', 'rajasthan', 'tamil nadu', 'telangana', 'uttar pradesh',
+  'uttarakhand', 'west bengal', 'ahmedabad', 'bangalore', 'bengaluru', 'bhubaneswar', 'chennai', 'coimbatore',
+  'gurgaon', 'gurugram', 'hyderabad', 'indore', 'jaipur', 'kochi', 'kolkata', 'mumbai', 'mysore', 'mysuru',
+  'nagpur', 'navi mumbai', 'new delhi', 'noida', 'pune', 'thane', 'thiruvananthapuram', 'vadodara', 'visakhapatnam',
+];
+
 const WORK_MODE_WORDS = /\b(remote|hybrid|on-?site|in[- ]office|flexible|friendly|hq|preferred|select locations|amer|apac|emea|latam)\b/gi;
 
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const aliasRe = new Map(COUNTRY_ALIASES.map(({ alias }) => [alias, new RegExp(`(^|[^a-z])${escapeRe(alias)}($|[^a-z])`, 'i')]));
+
+const INDIA_PLACE_RE = new RegExp(`(^|[^a-z])(${INDIA_PLACES.map(escapeRe).join('|')})($|[^a-z])`, 'i');
 
 export const isRemoteText = (text) => /\bremote\b/i.test(text || '') && !/\bremote[- ]friendly\b/i.test(text || '');
 
@@ -116,13 +129,21 @@ export function parseSegment(segment) {
   const codes = tokens.filter((t) => t.length === 2 && t === t.toUpperCase() && /^[A-Z]{2}$/.test(t));
   const trailingIndia = codes.length > 1 && codes[codes.length - 1] === 'IN'
     && codes.slice(0, -1).some((c) => !US_STATES[c] && !CA_PROVINCES[c]);
-  if (trailingIndia) country = 'IN';
+  // "IN - Chennai", "Hyderabad, Telangana, IN", "Gurgaon": an Indian place with no other US/CA region.
+  const namesOtherRegion = tokens.some((t) => {
+    const up = t.toUpperCase();
+    const low = t.toLowerCase();
+    return (t.length === 2 && t === up && up !== 'IN' && (US_STATES[up] || CA_PROVINCES[up]))
+      || (low !== 'indiana' && (US_STATE_NAMES.has(low) || CA_PROVINCE_NAMES.has(low)));
+  });
+  const india = trailingIndia || (INDIA_PLACE_RE.test(segment) && !namesOtherRegion);
+  if (india) country = 'IN';
   for (const tok of tokens) {
     const lower = tok.toLowerCase();
     const upper = tok.toUpperCase();
     const isCountry = COUNTRY_ALIASES.some(({ alias }) => alias === lower) || lower === 'united states of america';
     if (isCountry) continue;
-    if (trailingIndia && upper === 'IN') continue;
+    if (india && upper === 'IN') continue;
     if (!region && tok.length === 2 && tok === upper && (US_STATES[upper] || CA_PROVINCES[upper])) {
       // "CA" is California unless a Canadian province was already seen.
       region = upper;

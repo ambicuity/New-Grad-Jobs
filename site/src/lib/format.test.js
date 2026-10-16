@@ -4,6 +4,16 @@ import { fmtComp, fmtK, pct, rowNumber } from './format.js';
 describe('fmtComp', () => {
   it('formats a $k range', () => {
     expect(fmtComp([120, 180])).toBe('$120–180k');
+    expect(fmtComp([120, 180], 'USD')).toBe('$120–180k');
+  });
+
+  it('labels every other currency instead of showing a dollar sign', () => {
+    expect(fmtComp([62, 75], 'CAD')).toBe('CA$62–75k');
+    expect(fmtComp([30, 40], 'GBP')).toBe('£30–40k');
+    expect(fmtComp([45, 55], 'EUR')).toBe('€45–55k');
+    expect(fmtComp([1200, 1800], 'INR')).toBe('₹12–18L');
+    expect(fmtComp([350, 525], 'INR')).toBe('₹3.5–5.3L');
+    expect(fmtComp([90, 110], 'AUD')).toBe('AUD 90–110k');
   });
 
   it.each([[[null, null]], [[120, null]], [null], [undefined], ['120']])('returns — for %j', (c) => {

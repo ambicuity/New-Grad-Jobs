@@ -43,7 +43,8 @@ import { nearMissReasons } from './near-miss.js';
  *                                    (the feed can't tell whether a role actually sponsors).
  * @property {'citizenship'|'no-sponsorship'|null} visaNote  Which restriction the posting states.
  * @property {'faang_plus'|'unicorn'|'other'} tier  company_tier.tier as published.
- * @property {[number|null, number|null]} comp  Posted salary range in $k.
+ * @property {[number|null, number|null]} comp  Posted salary range in thousands of `compCur`.
+ * @property {string|null} compCur   ISO currency of `comp` (USD, CAD, GBP, EUR, INR, …), or null when none is posted.
  * @property {string} type            Short category code (SWE, ML, …).
  * @property {string} posted          Display age ("3h", "2d").
  * @property {number} postedTs        Epoch ms of posted_at (0 when unknown).
@@ -79,10 +80,21 @@ export function deriveRmt(j) {
   return 'onsite';
 }
 
-/** `comp` {min,max} in dollars → [low, high] in thousands, or [null, null]. */
+/**
+ * ISO currency of a job's posted range, upper-cased, or null. A range with no
+ * known currency (a bare "$" outside the US and Canada) counts as no range,
+ * as on the static job pages: its figure cannot be compared or labelled.
+ */
+export function compCurrency(j) {
+  const c = j && j.comp;
+  if (!c || c.min == null || c.max == null) return null;
+  return typeof c.currency === 'string' && c.currency.trim() ? c.currency.trim().toUpperCase() : null;
+}
+
+/** `comp` {min,max} in its currency's units → [low, high] in thousands, or [null, null] (also when the currency is unknown). */
 export function compTuple(j) {
   const c = j && j.comp;
-  if (!c || c.min == null || c.max == null) return [null, null];
+  if (!c || c.min == null || c.max == null || !compCurrency(j)) return [null, null];
   return [Math.round(c.min / 1000), Math.round(c.max / 1000)];
 }
 
@@ -123,6 +135,7 @@ export function mapJob(j, now = Date.now()) {
     visaNote,
     tier: TIER_ORDER.includes(tier) ? tier : 'other',
     comp: compTuple(raw),
+    compCur: compCurrency(raw),
     type: deriveType(raw),
     posted: ageString(raw.posted_at, now),
     postedTs: Number.isNaN(ts) ? 0 : ts,

@@ -23,7 +23,8 @@ export function median(values) {
   return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
 }
 
-const compMidpoint = (j) => (j.comp && j.comp[0] != null && j.comp[1] != null
+// US-dollar ranges only: amounts in different currencies are never averaged together.
+const compMidpoint = (j) => (j.comp && j.comp[0] != null && j.comp[1] != null && (j.compCur || 'USD') === 'USD'
   ? (j.comp[0] + j.comp[1]) / 2
   : null);
 
@@ -34,7 +35,7 @@ const compMidpoint = (j) => (j.comp && j.comp[0] != null && j.comp[1] != null
  * @property {number} closed
  * @property {number} newToday   Open jobs posted in the last 24h.
  * @property {number} companies  Distinct companies with an open job.
- * @property {{median: number|null, n: number}} comp  Median midpoint of the disclosed pay ranges ($k), and how many open jobs disclose one.
+ * @property {{median: number|null, n: number}} comp  Median midpoint of the US-dollar pay ranges ($k), and how many open jobs post one.
  * @property {{n: number, pct: string}} visaClear     Open jobs whose posting states no visa/citizenship restriction.
  */
 

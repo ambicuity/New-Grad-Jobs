@@ -5,10 +5,10 @@ import {
 } from './sort.js';
 
 const JOBS = [
-  { id: 'a', co: 'beta', comp: [100, 150], postedTs: 3 },
-  { id: 'b', co: 'Alpha', comp: [null, null], postedTs: 9 },
-  { id: 'c', co: 'gamma', comp: [120, 200], postedTs: 0 },
-  { id: 'd', co: 'beta', comp: [90, 150], postedTs: 3 },
+  { id: 'a', co: 'beta', comp: [100, 150], compCur: 'USD', postedTs: 3 },
+  { id: 'b', co: 'Alpha', comp: [null, null], compCur: null, postedTs: 9 },
+  { id: 'c', co: 'gamma', comp: [120, 200], compCur: 'USD', postedTs: 0 },
+  { id: 'd', co: 'beta', comp: [90, 150], compCur: 'USD', postedTs: 3 },
 ];
 const ids = (list) => list.map((j) => j.id);
 
@@ -21,6 +21,19 @@ describe('sortJobs (dir 1 = ascending, -1 = descending)', () => {
   it('comp: by top of range; undisclosed pay always last, whatever the direction', () => {
     expect(ids(sortJobs(JOBS, 'comp', -1))).toEqual(['c', 'a', 'd', 'b']);
     expect(ids(sortJobs(JOBS, 'comp', 1))).toEqual(['a', 'd', 'c', 'b']);
+  });
+
+  it('comp: compares pay only within one currency — US dollars first, then each other currency, then undisclosed', () => {
+    const mixed = [
+      { id: 'u1', comp: [100, 150], compCur: 'USD' },
+      { id: 'c1', comp: [200, 300], compCur: 'CAD' },
+      { id: 'i1', comp: [1200, 1800], compCur: 'INR' },
+      { id: 'u2', comp: [120, 200], compCur: 'USD' },
+      { id: 'c2', comp: [60, 70], compCur: 'CAD' },
+      { id: 'n', comp: [null, null], compCur: null },
+    ];
+    expect(ids(sortJobs(mixed, 'comp', -1))).toEqual(['u2', 'u1', 'c1', 'c2', 'i1', 'n']);
+    expect(ids(sortJobs(mixed, 'comp', 1))).toEqual(['u1', 'u2', 'c2', 'c1', 'i1', 'n']);
   });
 
   it('co: locale-aware, case-insensitive A→Z ascending', () => {

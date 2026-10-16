@@ -31,7 +31,7 @@ export function StatsStrip({ stats, isMobile }) {
       <Stat
         label="MED COMP"
         value={comp.median === null ? '—' : `$${comp.median}k`}
-        delta={comp.n ? `midpoint of ${comp.n} posted ranges` : 'no ranges posted'}
+        delta={comp.n ? `midpoint of ${comp.n} US-dollar ranges` : 'no US-dollar ranges posted'}
       />
       <Stat label="VISA" value={stats.visaClear.pct} delta="no restriction stated" />
       {!isMobile && <div style={{ marginLeft: 'auto', color: BBG.dim, fontSize: 11 }}>HIRING · live job feed</div>}

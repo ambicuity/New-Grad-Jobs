@@ -4,7 +4,7 @@ import { DAY_MS, computeStats, isNewToday, median } from './stats.js';
 const NOW = Date.parse('2026-09-24T16:00:00Z');
 const HOUR = 3600000;
 const job = (over) => ({
-  id: 'x', co: 'Acme', postedTs: NOW - 2 * DAY_MS, comp: [null, null], visa: true, closed: false, ...over,
+  id: 'x', co: 'Acme', postedTs: NOW - 2 * DAY_MS, comp: [null, null], compCur: 'USD', visa: true, closed: false, ...over,
 });
 
 describe('isNewToday', () => {
@@ -58,6 +58,15 @@ describe('computeStats', () => {
       comp: { median: 120, n: 3 },
       visaClear: { n: 3, pct: '75%' },
     });
+  });
+
+  it('takes the median over US-dollar ranges only, never mixing currencies', () => {
+    const s = computeStats([
+      job({ id: 'a', comp: [100, 140] }), // USD, mid 120
+      job({ id: 'b', comp: [1200, 1800], compCur: 'INR' }),
+      job({ id: 'c', comp: [200, 300], compCur: 'CAD' }),
+    ], NOW);
+    expect(s.comp).toEqual({ median: 120, n: 1 });
   });
 
   it('reports no median when no open job discloses pay', () => {

@@ -22,7 +22,7 @@ const sep = <span style={{ color: BBG.rule2, margin: '0 6px' }} aria-hidden="tru
 export function jobLabel(j, isSaved, isApplied = false) {
   return [
     j.co, j.role, j.loc,
-    j.comp[0] != null ? fmtComp(j.comp) : null,
+    j.comp[0] != null ? fmtComp(j.comp, j.compCur || undefined) : null,
     j.posted !== '—' ? `posted ${j.posted} ago` : null,
     j.visaNote ? VISA_SHORT[j.visaNote] : null,
     j.closed ? 'closed' : null,
@@ -127,7 +127,7 @@ export const JobRow = memo(function JobRow({
         <div style={{ color: BBG.dim, fontSize: 11, ...ellipsis }}><MetaLine j={j} /></div>
       </div>
       <span title={j.loc} style={{ color: BBG.ink, fontSize: 11.5, ...ellipsis }}>{j.loc}</span>
-      <span style={{ color: j.comp[0] != null ? BBG.acc : BBG.dim, fontSize: 11.5 }}>{fmtComp(j.comp)}</span>
+      <span style={{ color: j.comp[0] != null ? BBG.acc : BBG.dim, fontSize: 11.5 }}>{fmtComp(j.comp, j.compCur || undefined)}</span>
       <span style={{ color: BBG.dim, fontSize: 11 }}>{j.posted}</span>
       <RowStar isSaved={isSaved} onToggle={() => onToggleSave(j.id)} />
     </div>
@@ -161,7 +161,7 @@ export const JobCard = memo(function JobCard({ job: j, index, isSaved, onOpen, o
         </span>
         <span style={{ color: BBG.dim, fontSize: 11, display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '2px 0' }}>
           <span>{j.loc}</span>{sep}
-          <span style={{ color: j.comp[0] != null ? BBG.acc : BBG.dim }}>{fmtComp(j.comp)}</span>{sep}
+          <span style={{ color: j.comp[0] != null ? BBG.acc : BBG.dim }}>{fmtComp(j.comp, j.compCur || undefined)}</span>{sep}
           <span>{j.posted}</span>
           {j.visaNote && <>{sep}<span style={{ color: BBG.warn }}>{VISA_SHORT[j.visaNote]}</span></>}
         </span>
