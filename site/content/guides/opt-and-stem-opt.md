@@ -1,7 +1,7 @@
 ---
 title: OPT and STEM OPT for new graduates
 description: The basics of Optional Practical Training and the STEM extension as they affect a US job search, what to ask an employer, and where to find authoritative sources.
-updated: 2026-09-30
+updated: 2026-10-15
 published: 2026-09-25
 section: International students
 order: 2
@@ -33,7 +33,7 @@ Graduates of degrees on the government's STEM designated degree list can apply f
 
 ## What "sponsorship" means in this context
 
-Initial OPT generally does not require an employer visa petition, but STEM OPT requires employer participation in E-Verify and Form I-983. Longer-term employment may require a different immigration route, such as an employer H-1B petition. Cap-subject H-1B cases have registration and selection requirements; some qualifying employers or cases are cap-exempt. Check the current [USCIS H-1B guidance](https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations) with the employer’s immigration team. A "no sponsorship now or in the future" policy may also exclude candidates working temporarily on OPT. Ask whether the employer accepts your current authorization and future needs before applying. The board flags stated restrictions; [Sponsorship language](../sponsorship-language/) explains the phrases.
+Initial OPT generally does not require an employer visa petition, but STEM OPT requires employer participation in E-Verify and Form I-983. Longer-term employment may require a different immigration route, such as an employer H-1B petition. Cap-subject H-1B cases have registration and selection requirements; some qualifying employers or cases are cap-exempt. Check the current [USCIS H-1B guidance](https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations) with the employer’s immigration team. A "no sponsorship now or in the future" policy may also exclude candidates working temporarily on OPT. Ask whether the employer accepts your current authorization and future needs before applying. The board flags stated restrictions; [Sponsorship language](../sponsorship-language/) explains the phrases.
 
 ## Questions to ask an employer
 

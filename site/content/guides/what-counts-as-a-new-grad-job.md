@@ -1,7 +1,7 @@
 ---
 title: What counts as a new grad job?
 description: The definition this board uses, why it is stricter than "junior", and the kinds of roles it deliberately leaves out.
-updated: 2026-09-30
+updated: 2026-10-15
 published: 2026-09-25
 section: Getting started
 order: 2
@@ -29,7 +29,9 @@ The details, including the exact word lists, are in [How NGJ classifies jobs](..
 
 - **Level III and above.** "Engineer III" is usually two promotions past entry level.
 - **Titles with excluded experience phrases**, such as configured "5+ years" signals. The filter does not extract every experience requirement from descriptions, so some included postings can still ask for more experience than you have.
-- **Titles without a configured entry-level signal**, even when the description would suit a graduate. Contract and staffing-agency roles are not categorically excluded; verify the actual employer and employment terms yourself.
+- **Titles without a configured entry-level signal**, even when the description would suit a graduate.
+- **Part-time, seasonal, temporary, fixed-term and contract roles.** Titles that say so, such as "Temporary", "Fixed-Term", "Contract-to-Hire", "12-month contract", a standalone "(Contract)" tag or a fractional FTE like ".5 FTE", are left out. A posting that mentions its terms only in the description can still appear, so check the employment terms yourself. [Staffing agencies and contract roles](../staffing-agencies-and-contract-roles/) explains how to spot them.
+- **Staffing agencies and recruiters.** The career sites NGJ reads are chosen from direct employers. Results from Indeed are not filtered by employer type, so check who the employer is before you apply.
 - **Roles that only mention a degree.** "Bachelor's degree required" is true of most jobs and says nothing about level.
 
 ## What it does not judge

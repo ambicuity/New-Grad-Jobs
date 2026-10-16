@@ -1,7 +1,7 @@
 ---
 title: International student job search center
 description: A US F-1 job-search checklist for authorization, employer participation and deadlines, with current rules and case-specific verification.
-updated: 2026-09-30
+updated: 2026-10-15
 published: 2026-09-30
 section: International students
 order: 1
@@ -71,5 +71,5 @@ The board flags stated sponsorship and citizenship-related phrases. No restricti
 - [USCIS STEM OPT guidance](https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-extension-for-stem-students-stem-opt)
 - [Current student regulations](https://www.ecfr.gov/current/title-8/chapter-I/subchapter-B/part-214/subpart-A/section-214.2)
 - [DHS Study in the States](https://studyinthestates.dhs.gov/)
-- [USCIS H-1B guidance](https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations)
+- [USCIS H-1B guidance](https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations)
 - [USCIS H-1B Employer Data Hub](https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub) for historical petition decisions, not current sponsorship promises.
