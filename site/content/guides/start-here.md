@@ -1,7 +1,7 @@
 ---
 title: Start here — pick the path that fits your job search
 description: A short career-path wizard: where are you in your job search right now, and the sequence of guides that fits that moment.
-updated: 2026-09-30
+updated: 2026-10-15
 published: 2026-09-30
 section: Getting started
 order: 0
@@ -23,6 +23,7 @@ If nothing below fits, jump straight to the [full 2026 playbook](../job-search-p
 - [Preparing for technical interviews](#preparing-for-technical-interviews)
 - [Preparing for AI interviews and assessments](#preparing-for-ai-interviews-and-assessments)
 - [I'm an international student on F-1/STEM OPT](#i-m-an-international-student-on-f-1-stem-opt)
+- [I already graduated](#i-already-graduated)
 - [I'm switching careers into tech](#i-m-switching-careers-into-tech)
 - [I already have an offer](#i-already-have-an-offer)
 
@@ -103,16 +104,29 @@ Your search has an extra axis the board tracks separately: authorization. Read t
 4. [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/) — how the board flags postings.
 5. [Citizenship and clearance](../citizenship-and-clearance/) — when citizenship is genuinely required.
 6. [Background checks and pre-employment verification](../background-checks-and-pre-employment-verification/).
+7. [OPT unemployment days](../opt-unemployment-days/) — what counts as employment and what to report.
+8. [Cap-exempt H-1B and other visas](../cap-exempt-h1b-and-other-visas/) — routes besides the H-1B lottery, as USCIS describes them.
+
+## I already graduated
+
+Graduating without a job lined up is not unusual, and some employers and programs set eligibility windows that run past graduation. Keep a routine, widen where you look, and explain the gap plainly.
+
+1. [Searching after graduation](../searching-after-graduation/) — momentum, the gap, and which roles still count as new grad.
+2. [Searching without an internship](../job-search-without-an-internship/) — the evidence that replaces it.
+3. [Finding hidden new grad roles](../finding-hidden-new-grad-roles/) — WIDEN SCOPE and EXPLORE.
+4. [Rotational and development programs](../rotational-and-development-programs/) — structured first roles in many fields.
+5. [Location strategy](../location-strategy/) — where to search and what relocation involves.
 
 ## I'm switching careers into tech
 
 You are not a new grad in the strict sense, but you are new to the field. The framing that helps: your past work is a transferable record, not a liability.
 
-1. [Are you qualified?](../are-you-qualified/) — define the gap honestly.
-2. [Build a target-company list](../build-a-target-company-list/) — pick employers that hire career switchers.
-3. [New grad projects](../new-grad-projects/) — what counts as portfolio evidence when you don't have internship experience.
-4. [What makes a GitHub repo impressive](../what-makes-a-github-repo-impressive/).
-5. [Startup vs enterprise](../startup-vs-enterprise/) — different employers tolerate different gaps.
+1. [Career switchers, other majors and bootcamp graduates](../career-switchers-and-non-cs-majors/) — the whole route in one place.
+2. [Are you qualified?](../are-you-qualified/) — define the gap honestly.
+3. [Build a target-company list](../build-a-target-company-list/) — pick employers that hire career switchers.
+4. [New grad projects](../new-grad-projects/) — what counts as portfolio evidence when you don't have internship experience.
+5. [What makes a GitHub repo impressive](../what-makes-a-github-repo-impressive/).
+6. [Startup vs enterprise](../startup-vs-enterprise/) — different employers tolerate different gaps.
 
 ## I already have an offer
 
@@ -124,8 +138,10 @@ Congratulations. The job is not done — the offer is the start of a different, 
 4. [Comparing offers](../comparing-offers/).
 5. [Negotiation](../negotiation/) — the script, the timing, the leverage.
 6. [Questions before accepting](../questions-before-accepting/).
-7. [After accepting a new-grad offer](../after-accepting-a-new-grad-offer/) — what to do in the gap before day one.
-8. [Background checks and pre-employment verification](../background-checks-and-pre-employment-verification/).
+7. [Reading your employment agreement](../reading-your-employment-agreement/) — the clauses to check before you sign.
+8. [After accepting a new-grad offer](../after-accepting-a-new-grad-offer/) — what to do in the gap before day one.
+9. [Background checks and pre-employment verification](../background-checks-and-pre-employment-verification/).
+10. [Your first 90 days](../first-90-days/) — paperwork, expectations and feedback once you start.
 
 ## If nothing above fits
 

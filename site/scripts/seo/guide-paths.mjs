@@ -44,18 +44,24 @@ export const READING_PATHS = Object.freeze([
     id: 'international',
     label: 'F-1, OPT or STEM OPT',
     explain: 'Your search has an extra axis: work authorisation. Read the basics, then confirm with official sources and your DSO.',
-    steps: ['international-student-job-search-center', 'opt-and-stem-opt', 'sponsorship-language', 'visa-sponsorship-and-citizenship', 'citizenship-and-clearance', 'background-checks-and-pre-employment-verification'],
+    steps: ['international-student-job-search-center', 'opt-and-stem-opt', 'sponsorship-language', 'visa-sponsorship-and-citizenship', 'citizenship-and-clearance', 'background-checks-and-pre-employment-verification', 'opt-unemployment-days', 'cap-exempt-h1b-and-other-visas'],
+  },
+  {
+    id: 'graduated',
+    label: 'Already graduated',
+    explain: 'Keep a routine, widen where you look, and explain the gap plainly.',
+    steps: ['searching-after-graduation', 'job-search-without-an-internship', 'finding-hidden-new-grad-roles', 'rotational-and-development-programs', 'location-strategy'],
   },
   {
     id: 'career-switch',
     label: 'Switching careers',
     explain: 'Your past work is a transferable record, not a liability.',
-    steps: ['are-you-qualified', 'build-a-target-company-list', 'new-grad-projects', 'what-makes-a-github-repo-impressive', 'startup-vs-enterprise'],
+    steps: ['career-switchers-and-non-cs-majors', 'are-you-qualified', 'build-a-target-company-list', 'new-grad-projects', 'what-makes-a-github-repo-impressive', 'startup-vs-enterprise'],
   },
   {
     id: 'have-offer',
     label: 'I have an offer',
     explain: 'Understand the package, check the market, then decide and prepare to start.',
-    steps: ['evaluating-an-offer', 'understanding-compensation', 'compensation-research', 'comparing-offers', 'negotiation', 'questions-before-accepting', 'after-accepting-a-new-grad-offer', 'background-checks-and-pre-employment-verification'],
+    steps: ['evaluating-an-offer', 'understanding-compensation', 'compensation-research', 'comparing-offers', 'negotiation', 'questions-before-accepting', 'reading-your-employment-agreement', 'after-accepting-a-new-grad-offer', 'background-checks-and-pre-employment-verification', 'first-90-days'],
   },
 ].map((p) => Object.freeze({ ...p, steps: Object.freeze([...p.steps]) })));

@@ -1,7 +1,7 @@
 ---
 title: Visa sponsorship and citizenship flags
 description: How the board reads sponsorship and citizenship language, and what international students should check before applying.
-updated: 2026-09-30
+updated: 2026-10-15
 published: 2026-09-25
 section: International students
 order: 1
@@ -28,7 +28,7 @@ Use the [USCIS H-1B Employer Data Hub](https://www.uscis.gov/tools/reports-and-s
 ## Terms worth knowing
 
 - **OPT** can authorize eligible F-1 students to work in their field of study, generally for up to twelve months; eligible STEM graduates can apply for a further twenty-four months subject to additional requirements. A "no sponsorship" policy may exclude OPT candidates. Ask whether the employer accepts your current authorization and future sponsorship needs. See [OPT and STEM OPT](../opt-and-stem-opt/) for requirements and official sources.
-- **H-1B** is a U.S. employer-petition route for qualifying specialty occupations. Cap-subject cases involve registration and selection; some cases are cap-exempt. Confirm current [USCIS requirements](https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations) and employer policy.
+- **H-1B** is a U.S. employer-petition route for qualifying specialty occupations. Cap-subject cases involve registration and selection; some cases are cap-exempt. Confirm current [USCIS requirements](https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations) and employer policy.
 - **TN status** is available to Canadian and Mexican citizens for a fixed list of professions and does not need a lottery.
 - **U.S. personnel security clearance** requires U.S. citizenship. Rare limited-access authorizations are distinct from a clearance. See [DCSA guidance](https://www.dcsa.mil/Industrial-Security/International-Programs/Security-Assurances-for-Personnel-Facilities/clearenceis/).
 
