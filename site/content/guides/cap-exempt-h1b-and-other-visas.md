@@ -29,12 +29,12 @@ The same regulation defines the research categories by what the organization doe
 Three further rules in that paragraph matter for job seekers:
 
 - **Working at a qualifying employer you are not employed by.** You can still qualify if you spend at least half your work time doing duties at the qualifying institution, and those duties directly further its higher education, nonprofit research or government research mission. USCIS says it "will focus on the job duties to be performed, rather than where the duties are physically performed."
-- **Leaving cap-exempt work.** If the cap-exempt employment ends and you have no new cap-exempt petition, you become subject to the cap if you were not previously counted.
-- **A second job.** Concurrent H-1B employment in a cap-subject position does not subject you to the cap while the cap-exempt job continues, according to the regulation. If the cap-exempt employment ends, you become subject to the cap unless you were previously counted.
+- **Leaving cap-exempt work.** If the cap-exempt employment ends and you have no new cap-exempt petition, you become subject to the cap unless you were previously counted against it within that six-year period of H-1B admission.
+- **A second job.** Concurrent H-1B employment in a cap-subject position does not subject you to the cap while the cap-exempt job continues, according to the regulation. If the cap-exempt employment ends, you become subject to the cap unless you were previously counted against it within that six-year period.
 
 Whether a specific employer qualifies is a legal question about that employer. A university hospital, a research institute or a city agency may or may not meet the definitions. Ask the employer's immigration team, not a forum.
 
-USCIS's [H-1B page](https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations) also describes a $100,000 payment for certain new petitions under a September 2025 Proclamation, and the court orders affecting it. Ask the employer's attorney whether it applies to you.
+USCIS's [H-1B page](https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations) also describes a $100,000 payment for certain new petitions under a September 2025 Proclamation. USCIS says a federal court vacated its guidance implementing that payment and that DHS is complying while it appeals, but plans to collect the payment if the order is lifted. Check the page for the current status and ask the employer's attorney whether it applies to you.
 
 ## Other routes, as USCIS describes them
 
