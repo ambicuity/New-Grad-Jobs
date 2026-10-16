@@ -31,20 +31,20 @@ Graduating in Canada does not authorize you to work. IRCC describes two broad ki
 Many graduates look at the Post-Graduation Work Permit (PGWP).
 
 ::: evidence official
-IRCC says graduating from a designated learning institution [does not automatically make you eligible for a PGWP](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html), and you can get only one PGWP. Its [eligibility page](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html) says you must apply within 180 days of confirmation that you completed your program, and you must meet a language requirement, with limited exceptions. Some college and non-degree programs must also be in an eligible field of study; bachelor's, master's and doctoral degrees are exempt from that rule.
+IRCC says graduating from a designated learning institution [does not automatically make you eligible for a PGWP](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html), and you can get only one PGWP. Its [eligibility page](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html) says you must apply within 180 days of confirmation that you completed your program, and you must meet a language requirement, with limited exceptions. Graduates of programs other than a bachelor's, master's or doctoral degree whose study permit application was submitted on or after November 1, 2024 must also have studied in an eligible field.
 :::
 
 The permit's length depends on your program and is limited by your passport's validity. Before you accept a start date, read IRCC's [application page](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/apply.html) on when you can and cannot work while an application is processed. Do not assume you can start. Confirm your own case with IRCC's pages, your school's international student advisors and, where needed, a licensed immigration consultant or lawyer. [Visa sponsorship and citizenship flags](../visa-sponsorship-and-citizenship/) explains what the board's visa chips can and cannot tell you.
 
 ## How graduate hiring works in India
 
-At many Indian institutes, the placement cell runs campus placement. Employers register, students apply through the cell, and the cell sets the rules. These rules differ by institute. For example, IIT (BHU) Varanasi's [student placement policy](https://placement.iitbhu.ac.in/policies/students) describes a One-Student-One-Job policy, with exceptions. It counts an accepted pre-placement offer (PPO) as a job and bars a student who accepts one from further campus placement. Read your own institute's policy before you accept an offer.
+At many Indian institutes, the placement cell runs campus placement. Employers register, students apply through the cell, and the cell sets the rules. These rules differ by institute. For example, IIT (BHU) Varanasi's [student placement policy](https://placement.iitbhu.ac.in/policies/students) describes a One-Student-One-Job policy, with exceptions. It counts an accepted pre-placement offer (PPO) as a job and bars a student who accepts one from further campus placement, except under its listed exceptions. It also counts a PPO as accepted unless the student rejects it within two working days of the cell's notice. Read your own institute's policy before you accept an offer.
 
 Off-campus hiring runs alongside campus placement:
 
 - **Employer career sites.** Many employers post graduate and "freshers" roles on their own sites, and the board reads those sites.
 - **Off-campus or pool drives.** Some employers run one hiring event for students from several colleges. Confirm a drive through the employer's own careers page or your placement cell before you share documents.
-- **Government job services.** The [National Career Service](https://www.ncs.gov.in/), run by the Ministry of Labour & Employment, lists vacancies and job fairs. It says its services are free and that jobseekers should not pay fees to employers.
+- **Government job services.** The [National Career Service](https://www.ncs.gov.in/), an initiative of the Ministry of Labour & Employment, lists vacancies and job fairs. It says its services are free and that jobseekers should not pay fees to employers.
 
 If someone asks you to pay for a drive, a test or an offer letter, stop and read [How to detect a fake job or recruiter](../how-to-detect-a-fake-job-or-recruiter/).
 
