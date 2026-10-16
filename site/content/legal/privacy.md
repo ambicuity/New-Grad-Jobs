@@ -12,7 +12,7 @@ This policy explains what information is handled when you use NGJ (New Grad Jobs
 - NGJ has **no accounts, no sign-up, no forms, no advertising and no newsletter**. It does not ask for your name, email or résumé.
 - NGJ sets **no cookies**. Your saved and applied jobs, and the guides you save or mark as read, stay in your own browser's storage and are never sent anywhere.
 - The main job board loads **GoatCounter**, a privacy-focused page counter. GoatCounter says it does not store IP addresses or set cookies. The guides run one small script from NGJ's own domain, which searches the guide list and remembers the guides you save or mark as read, and sends nothing anywhere. The other pages (job pages, landing pages, policies and the about page) run no scripts at all.
-- The site is hosted on **GitHub Pages**. GitHub logs visitors' IP addresses for security.
+- The site is hosted on **GitHub Pages** and reaches you through **Cloudflare**, which passes requests on and caches pages. Both receive visitors' IP addresses, and GitHub logs them for security. Cloudflare sets no cookies, and its Web Analytics script is blocked on every page.
 - NGJ does **not sell** personal information, and does not share it for targeted advertising.
 
 ## 2. Who is responsible
@@ -30,9 +30,15 @@ The site has no forms, so it collects nothing from you directly. You may choose 
 - **By email.** We receive your email address, name (if you include it) and whatever you write.
 - **On GitHub.** Issues, pull requests, comments and commits in the repository are public. GitHub handles them under its own terms and [privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Please do not post private information in an issue.
 
-### 3.2 Hosting: GitHub Pages
+### 3.2 Hosting: Cloudflare and GitHub Pages
 
-Every request to the site goes to GitHub Pages. As with any website, your browser sends your IP address, your browser's user-agent string, the page requested and, in many cases, the page you came from. GitHub's documentation says that when a Pages site is visited, "the visitor's IP address is logged and stored for security purposes". GitHub decides how long it keeps those logs. GitHub Pages does not give site owners access to visitor logs, and the maintainer does not receive them.
+Every request to the site first reaches **Cloudflare**, which answers the domain's DNS, serves a cached copy of the page when it has one, and otherwise passes the request to GitHub Pages. [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/) says it processes visitors' interactions with its customers' sites, including IP addresses and traffic routing data, and that it acts as a data processor of these "Customer Logs". The site's responses set no cookies, through Cloudflare or otherwise.
+
+Cloudflare also asks your browser, through a `Report-To` / `NEL` response header, to report failed connections to `a.nel.cloudflare.com` ([Network Error Logging](https://developers.cloudflare.com/network-error-logging/)). According to Cloudflare, a report describes the failure (the page address, the referring page, the server address and the type of error), and Cloudflare uses your IP address only to work out your network and approximate location before discarding it.
+
+Cloudflare can add its own Web Analytics script to pages it serves ([automatic setup](https://developers.cloudflare.com/web-analytics/get-started/)). Every NGJ page's Content Security Policy blocks that script, so it does not load or run. The maintainer can see Cloudflare's aggregate traffic statistics for the domain.
+
+Each request that is not served from Cloudflare's cache then goes to GitHub Pages. As with any website, your browser sends your IP address, your browser's user-agent string, the page requested and, in many cases, the page you came from. GitHub's documentation says that when a Pages site is visited, "the visitor's IP address is logged and stored for security purposes". GitHub decides how long it keeps those logs. GitHub Pages does not give site owners access to visitor logs, and the maintainer does not receive them.
 
 ### 3.3 Page counter: GoatCounter
 
@@ -83,7 +89,7 @@ Where the EU or UK General Data Protection Regulation (GDPR) applies, these are 
 
 | Purpose | Information | Legal basis (GDPR / UK GDPR) |
 | --- | --- | --- |
-| Delivering the site and keeping it secure | request data held by GitHub Pages | legitimate interests in running a secure website (Art. 6(1)(f)) |
+| Delivering the site and keeping it secure | request data handled by Cloudflare and GitHub Pages | legitimate interests in running a secure website (Art. 6(1)(f)) |
 | Counting visits in aggregate to see how the board is used | the GoatCounter data in section 3.3 | legitimate interests in understanding use of a free service with minimal data (Art. 6(1)(f)) |
 | Saved and applied lists, contributor statistics | browser storage in section 3.4 | stored only on your device, at your request, to provide the feature you use |
 | Publishing job listings that may contain names | names or work contact details in public postings | legitimate interests in helping job seekers find openings that employers chose to advertise publicly (Art. 6(1)(f)) |
@@ -95,20 +101,20 @@ You may object to processing based on legitimate interests (section 8).
 
 NGJ does not sell personal information, rent it, or share it for cross-context behavioural or targeted advertising. There are no advertising scripts or tracking pixels on the site. Information reaches others only in these ways:
 
-- **Service providers**: GitHub (hosting, the GitHub API) and GoatCounter (page counts), as described above. Each runs its own service under its own policy, and NGJ does not claim that they act only on its instructions.
+- **Service providers**: Cloudflare (DNS, delivery and caching), GitHub (hosting, the GitHub API) and GoatCounter (page counts), as described above. Each runs its own service under its own policy, and NGJ does not claim that they act only on its instructions.
 - **Employers and other sites** you choose to visit.
 - **Legal requirements**: if the law requires it, or to protect the rights, safety or security of users, the public or NGJ.
 - **A successor**: if the project is transferred to a new maintainer, this policy (or a notice of any change to it) would go with it.
 
 ## 6. International transfers
 
-GitHub processes data in the United States and other countries. GoatCounter processes data under its own policy. If you visit from another country, your request data is handled in those countries. NGJ itself stores no visitor data on any server.
+Cloudflare handles requests in the data centre nearest you, which may be in another country. GitHub processes data in the United States and other countries. GoatCounter processes data under its own policy. If you visit from another country, your request data is handled in those countries. NGJ itself stores no visitor data on any server.
 
 ## 7. How long information is kept
 
 - **Browser storage**: until you clear it. The contributor statistics are replaced after an hour.
 - **GoatCounter**: aggregate counts stay in the maintainer's GoatCounter account until the maintainer deletes them. They contain no IP addresses.
-- **GitHub Pages logs**: kept by GitHub according to its policies.
+- **Cloudflare and GitHub Pages request data**: kept by Cloudflare and GitHub according to their policies.
 - **Email**: kept only as long as needed to handle your message, and to keep a record of any legal request and how it was handled.
 - **Job data**: each published file is replaced on every run (about every 30 minutes). The repository's `README.md` job tables are committed after each run, so earlier listings remain visible in the public git history. Daily aggregate market snapshots (counts only, no listing text) are kept for 90 days.
 
@@ -148,7 +154,7 @@ NGJ is a job board for students and graduates and is not directed at children un
 
 ## 10. Security
 
-The site is static: no server and no database are run by NGJ, and it holds no visitor accounts or passwords. GitHub Pages serves the site over HTTPS and redirects plain-HTTP requests. Every page has a restrictive Content Security Policy that limits which scripts and connections it may use. Every link to a job is checked at publication so that only public `http(s)` addresses are published. Dependencies are hash-locked, the build pipeline's actions are pinned to exact versions, and the code is scanned with GitHub CodeQL. No method of transmission over the internet is completely secure, and NGJ cannot guarantee the security of GitHub's or GoatCounter's systems. Please report vulnerabilities through the [security policy](https://github.com/ambicuity/New-Grad-Jobs/security/policy).
+The site is static: no server and no database are run by NGJ, and it holds no visitor accounts or passwords. The site is served over HTTPS through Cloudflare and GitHub Pages, and plain-HTTP requests are redirected. Every page has a restrictive Content Security Policy that limits which scripts and connections it may use. Every link to a job is checked at publication so that only public `http(s)` addresses are published. Dependencies are hash-locked, the build pipeline's actions are pinned to exact versions, and the code is scanned with GitHub CodeQL. No method of transmission over the internet is completely secure, and NGJ cannot guarantee the security of Cloudflare's, GitHub's or GoatCounter's systems. Please report vulnerabilities through the [security policy](https://github.com/ambicuity/New-Grad-Jobs/security/policy).
 
 ## 11. Changes to this policy
 

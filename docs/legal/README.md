@@ -51,6 +51,7 @@ V marks a fact verified from code, configuration or the live site. I marks a rea
 
 ### 5. Hosting and processors
 
+- V: Cloudflare proxies the domain in front of GitHub Pages (`server: cloudflare`, `cf-ray` and `cf-cache-status` headers; DNS resolves to Cloudflare addresses; checked with curl on 2026-10-15). No `Set-Cookie` header is sent. Responses carry Cloudflare's `Report-To` / `NEL` headers (Network Error Logging to `a.nel.cloudflare.com`). Cloudflare Web Analytics auto-injects `static.cloudflareinsights.com/beacon.min.js`, which every page's CSP blocks (seen as a CSP violation in the browser console). Recommended: turn off Web Analytics automatic setup in the Cloudflare dashboard.
 - V: GitHub (Pages, Actions, API) and GoatCounter. Fonts are self-hosted (`@fontsource/jetbrains-mono`, CSP `font-src 'self'`). HTTP redirects to HTTPS (checked with curl, 301).
 
 ### 6. Job sources

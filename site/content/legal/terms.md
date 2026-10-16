@@ -76,7 +76,7 @@ To report an inaccurate, expired, misleading, fraudulent or improperly attribute
 
 ## 11. Availability and changes to the service
 
-NGJ runs on free infrastructure (GitHub Actions and GitHub Pages) and depends on many third-party sources. Scrapes fail, sources change, and listings can be delayed, missing or duplicated. The maintainer tries to keep the site running and accurate, and reports each run's status on the [about page](../about/), but does not guarantee that NGJ will be available, current or error-free. The maintainer may change, pause or discontinue any part of NGJ at any time.
+NGJ runs on third-party infrastructure (GitHub Actions, GitHub Pages and Cloudflare) and depends on many third-party sources. Scrapes fail, sources change, and listings can be delayed, missing or duplicated. The maintainer tries to keep the site running and accurate, and reports each run's status on the [about page](../about/), but does not guarantee that NGJ will be available, current or error-free. The maintainer may change, pause or discontinue any part of NGJ at any time.
 
 ## 12. Disclaimers
 
