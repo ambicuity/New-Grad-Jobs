@@ -14,6 +14,10 @@ describe('countryOf: Indian locations as employers write them', () => {
     'Chennai, Tamil Nadu',
     'Hyderabad, Telangana, IN',
     'Noida, Uttar Pradesh',
+    'Chennai, TN, IN',
+    'Goa, GA, India',
+    'Lucknow',
+    'Secunderabad, Telangana',
   ])('%s → India', (loc) => {
     expect(countryOf(loc)).toBe('IN');
   });
@@ -24,6 +28,12 @@ describe('countryOf: Indian locations as employers write them', () => {
     ['Delhi, NY', 'US'],
     ['Remote Indiana', 'US'],
     ['Toronto, ON, CA', 'CA'],
+    ['Pune, Maharashtra, USA', 'US'],
+    ['Hyderabad, Telangana, United States', 'US'],
+    ['Hyderabad, Pakistan', ''],
+    ['Lahore, Punjab', ''],
+    ['Kochi, Japan', ''],
+    ['Indianapolis (IND)', ''],
   ])('%s stays %s', (loc, code) => {
     expect(countryOf(loc)).toBe(code);
   });

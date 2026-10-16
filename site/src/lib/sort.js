@@ -15,11 +15,15 @@ const currencyRank = (code) => {
   return i < 0 ? CURRENCY_ORDER.length : i;
 };
 
-// Value extractors; null means "unknown" and always sorts last. A [group, amount]
-// pair sorts by group (always ascending), then by amount in the chosen direction.
+// Value extractors; null means "unknown" and always sorts last. A [rank, code, amount]
+// triple sorts by currency (always ascending), then by amount in the chosen direction.
 const VALUE = {
   posted: (j) => (j.postedTs > 0 ? j.postedTs : null),
-  comp: (j) => (j.comp && j.comp[1] != null ? [currencyRank(j.compCur || 'USD'), j.comp[1]] : null),
+  comp: (j) => {
+    if (!j.comp || j.comp[1] == null) return null;
+    const code = j.compCur || 'USD';
+    return [currencyRank(code), code, j.comp[1]];
+  },
   co: (j) => j.co,
 };
 
@@ -44,7 +48,10 @@ export function sortJobs(jobs, key, dir) {
       if (a.v !== b.v) return a.v === null ? 1 : -1;
       return compareIds(a.j, b.j);
     }
-    if (Array.isArray(a.v)) return (a.v[0] - b.v[0]) || dir * (a.v[1] - b.v[1]) || compareIds(a.j, b.j);
+    if (Array.isArray(a.v)) {
+      return (a.v[0] - b.v[0]) || (a.v[1] < b.v[1] ? -1 : a.v[1] > b.v[1] ? 1 : 0)
+        || dir * (a.v[2] - b.v[2]) || compareIds(a.j, b.j);
+    }
     return dir * compareValues(a.v, b.v) || compareIds(a.j, b.j);
   });
   return keyed.map(({ j }) => j);

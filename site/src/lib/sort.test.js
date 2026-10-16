@@ -36,6 +36,15 @@ describe('sortJobs (dir 1 = ascending, -1 = descending)', () => {
     expect(ids(sortJobs(mixed, 'comp', 1))).toEqual(['u1', 'u2', 'c2', 'c1', 'i1', 'n']);
   });
 
+  it('comp: never interleaves two currencies outside the main list', () => {
+    const other = [
+      { id: 'j1', comp: [5000, 8000], compCur: 'JPY' },
+      { id: 'a1', comp: [90, 110], compCur: 'AUD' },
+      { id: 'a2', comp: [100, 120], compCur: 'AUD' },
+    ];
+    expect(ids(sortJobs(other, 'comp', -1))).toEqual(['a2', 'a1', 'j1']);
+  });
+
   it('co: locale-aware, case-insensitive A→Z ascending', () => {
     expect(ids(sortJobs(JOBS, 'co', 1))).toEqual(['b', 'a', 'd', 'c']);
     expect(ids(sortJobs(JOBS, 'co', -1))).toEqual(['c', 'a', 'd', 'b']);

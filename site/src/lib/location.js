@@ -11,7 +11,7 @@ const COUNTRIES = [
   ['GB', 'United Kingdom', 'united kingdom', 'uk', 'england', 'scotland', 'wales', 'great britain'],
   ['IE', 'Ireland', 'ireland'], ['ES', 'Spain', 'spain'], ['CO', 'Colombia', 'colombia'],
   ['PL', 'Poland', 'poland'], ['MX', 'Mexico', 'mexico'], ['SG', 'Singapore', 'singapore'],
-  ['BR', 'Brazil', 'brazil'], ['IN', 'India', 'india', 'ind'], ['AU', 'Australia', 'australia'],
+  ['BR', 'Brazil', 'brazil'], ['IN', 'India', 'india'], ['AU', 'Australia', 'australia'],
   ['IL', 'Israel', 'israel'], ['DE', 'Germany', 'germany'], ['FR', 'France', 'france'],
   ['NL', 'Netherlands', 'netherlands'], ['JP', 'Japan', 'japan'], ['CN', 'China', 'china'],
   ['KR', 'South Korea', 'south korea', 'korea'], ['TW', 'Taiwan', 'taiwan'],
@@ -25,6 +25,7 @@ const COUNTRIES = [
   ['TH', 'Thailand', 'thailand'], ['EG', 'Egypt', 'egypt'], ['NG', 'Nigeria', 'nigeria'],
   ['KE', 'Kenya', 'kenya'], ['ZA', 'South Africa', 'south africa'], ['CL', 'Chile', 'chile'],
   ['PE', 'Peru', 'peru'], ['UA', 'Ukraine', 'ukraine'], ['GR', 'Greece', 'greece'],
+  ['PK', 'Pakistan', 'pakistan'], ['BD', 'Bangladesh', 'bangladesh'], ['LK', 'Sri Lanka', 'sri lanka'], ['NP', 'Nepal', 'nepal'],
   ['HU', 'Hungary', 'hungary'], ['EE', 'Estonia', 'estonia'], ['LT', 'Lithuania', 'lithuania'],
 ];
 
@@ -69,13 +70,17 @@ export function regionCode(region) {
 }
 // Indian states and union territories, and the cities employers name most. A
 // segment naming one is in India, and an "IN" beside it is India, not Indiana,
-// unless the segment also names a US state or Canadian province ("Delhi, NY").
+// unless the segment names another country ("Hyderabad, Pakistan") or, with
+// no explicit IN / India, a US state or Canadian province ("Delhi, NY").
+// Punjab is left out: Pakistan has one too.
 const INDIA_PLACES = [
   'andhra pradesh', 'assam', 'bihar', 'chandigarh', 'delhi', 'goa', 'gujarat', 'haryana', 'karnataka', 'kerala',
-  'madhya pradesh', 'maharashtra', 'odisha', 'punjab', 'rajasthan', 'tamil nadu', 'telangana', 'uttar pradesh',
-  'uttarakhand', 'west bengal', 'ahmedabad', 'bangalore', 'bengaluru', 'bhubaneswar', 'chennai', 'coimbatore',
-  'gurgaon', 'gurugram', 'hyderabad', 'indore', 'jaipur', 'kochi', 'kolkata', 'mumbai', 'mysore', 'mysuru',
-  'nagpur', 'navi mumbai', 'new delhi', 'noida', 'pune', 'thane', 'thiruvananthapuram', 'vadodara', 'visakhapatnam',
+  'madhya pradesh', 'maharashtra', 'odisha', 'orissa', 'rajasthan', 'tamil nadu', 'telangana', 'uttar pradesh',
+  'uttarakhand', 'west bengal', 'ahmedabad', 'bangalore', 'bengaluru', 'bhopal', 'bhubaneswar', 'calcutta',
+  'chennai', 'coimbatore', 'faridabad', 'gandhinagar', 'ghaziabad', 'greater noida', 'gurgaon', 'gurugram',
+  'hyderabad', 'indore', 'jaipur', 'kochi', 'kolkata', 'lucknow', 'madras', 'mangalore', 'mohali', 'mumbai',
+  'mysore', 'mysuru', 'nagpur', 'nashik', 'navi mumbai', 'new delhi', 'noida', 'pondicherry', 'puducherry', 'pune',
+  'secunderabad', 'surat', 'thane', 'thiruvananthapuram', 'trivandrum', 'vadodara', 'visakhapatnam', 'vizag',
 ];
 
 const WORK_MODE_WORDS = /\b(remote|hybrid|on-?site|in[- ]office|flexible|friendly|hq|preferred|select locations|amer|apac|emea|latam)\b/gi;
@@ -136,14 +141,17 @@ export function parseSegment(segment) {
     return (t.length === 2 && t === up && up !== 'IN' && (US_STATES[up] || CA_PROVINCES[up]))
       || (low !== 'indiana' && (US_STATE_NAMES.has(low) || CA_PROVINCE_NAMES.has(low)));
   });
-  const india = trailingIndia || (INDIA_PLACE_RE.test(segment) && !namesOtherRegion);
+  const markedIndia = country === 'IN' || /(^|[^A-Za-z])IN($|[^A-Za-z])/.test(segment);
+  const india = trailingIndia
+    || (INDIA_PLACE_RE.test(segment) && (!country || country === 'IN') && (markedIndia || !namesOtherRegion));
   if (india) country = 'IN';
   for (const tok of tokens) {
     const lower = tok.toLowerCase();
     const upper = tok.toUpperCase();
     const isCountry = COUNTRY_ALIASES.some(({ alias }) => alias === lower) || lower === 'united states of america';
     if (isCountry) continue;
-    if (india && upper === 'IN') continue;
+    // In India, "IN" is the country and a two-letter token is an Indian state code ("TN", "GA"), not a US region.
+    if (india && tok.length === 2 && tok === upper) continue;
     if (!region && tok.length === 2 && tok === upper && (US_STATES[upper] || CA_PROVINCES[upper])) {
       // "CA" is California unless a Canadian province was already seen.
       region = upper;
