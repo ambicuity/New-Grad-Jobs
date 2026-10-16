@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
-  compTuple, dedupeIds, deriveRmt, deriveType, mapJob, normalizeJobsPayload, searchHaystack,
+  compCurrency, compTuple, dedupeIds, deriveRmt, deriveType, mapJob, normalizeJobsPayload, searchHaystack,
 } from './jobs.js';
 import { CATEGORY_TYPE, TYPE_LABEL, TYPE_ORDER } from './taxonomy.js';
 
@@ -63,6 +63,20 @@ describe('compTuple', () => {
   it.each([{ comp: null }, { comp: { min: 1 } }, { comp: { max: 1 } }, {}])('is [null, null] for %j', (j) => {
     expect(compTuple(j)).toEqual([null, null]);
   });
+
+  it('hides a range whose currency is unknown, as the job pages do', () => {
+    expect(compTuple({ comp: { min: 90000, max: 110000, currency: null } })).toEqual([null, null]);
+    expect(compTuple({ comp: { min: 90000, max: 110000 } })).toEqual([null, null]);
+  });
+});
+
+describe('compCurrency', () => {
+  it('is the upper-cased ISO code of a usable range, else null', () => {
+    expect(compCurrency({ comp: { min: 1, max: 2, currency: 'cad' } })).toBe('CAD');
+    expect(compCurrency({ comp: { min: 1, max: 2, currency: null } })).toBe(null);
+    expect(compCurrency({ comp: null })).toBe(null);
+    expect(mapJob({ ...RAW }).compCur).toBe('USD');
+  });
 });
 
 describe('mapJob', () => {
@@ -80,6 +94,7 @@ describe('mapJob', () => {
       visaNote: null,
       tier: 'unicorn',
       comp: [120, 180],
+      compCur: 'USD',
       type: 'SWE',
       posted: '1h',
       postedTs: Date.UTC(2026, 8, 24, 14, 50, 21),
@@ -102,7 +117,7 @@ describe('mapJob', () => {
     const j = mapJob({}, NOW);
     expect(j).toMatchObject({
       id: '', co: '—', role: '—', loc: '—', url: '', rmt: 'onsite', visa: true, visaNote: null, tier: 'other',
-      comp: [null, null], type: 'OTHER', posted: '—', postedTs: 0, jobId: '', desc: '', closed: false,
+      comp: [null, null], compCur: null, type: 'OTHER', posted: '—', postedTs: 0, jobId: '', desc: '', closed: false,
     });
     expect(mapJob(undefined, NOW).co).toBe('—');
   });
