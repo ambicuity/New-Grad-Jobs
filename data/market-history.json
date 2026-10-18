@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-18T13:14:50.249543+00:00",
+    "last_updated": "2026-10-18T16:54:33.058236+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-20",
@@ -4090,42 +4090,42 @@
     },
     {
       "date": "2026-10-18",
-      "total_jobs": 8826,
+      "total_jobs": 8828,
       "categories": {
         "software_engineering": 2119,
-        "data_ml": 335,
-        "customer_support": 162,
-        "quant_finance": 27,
-        "sales": 825,
+        "data_ml": 336,
+        "customer_support": 163,
+        "quant_finance": 26,
+        "sales": 821,
         "frontend": 28,
         "backend": 47,
         "design": 48,
         "hardware": 244,
-        "engineering": 1207,
-        "business_analyst": 306,
+        "engineering": 1203,
+        "business_analyst": 308,
         "infrastructure_sre": 458,
         "accounting_finance": 379,
-        "security": 235,
+        "security": 234,
         "supply_chain": 277,
         "data_engineering": 174,
-        "legal": 67,
+        "legal": 65,
         "management": 131,
         "human_resources": 99,
         "product_management": 19,
-        "project_management": 80,
-        "other": 609,
-        "mobile": 22,
-        "marketing": 70,
+        "project_management": 79,
+        "other": 611,
+        "mobile": 23,
+        "marketing": 72,
         "arts_entertainment": 2,
         "public_sector": 18,
-        "consulting": 138,
-        "healthcare": 621,
+        "consulting": 139,
+        "healthcare": 625,
         "education": 41,
-        "data_analyst": 38
+        "data_analyst": 39
       },
       "tiers": {
-        "other": 7097,
-        "unicorn": 813,
+        "other": 7105,
+        "unicorn": 807,
         "faang_plus": 916
       },
       "top_companies": [
@@ -4159,7 +4159,7 @@
         },
         {
           "company": "SpaceX",
-          "jobs": 120
+          "jobs": 118
         },
         {
           "company": "Leidos",
@@ -4170,9 +4170,9 @@
           "jobs": 107
         }
       ],
-      "unique_companies": 967,
-      "avg_jobs_per_company": 9.13,
-      "timestamp": "2026-10-18T13:14:50.249543+00:00"
+      "unique_companies": 975,
+      "avg_jobs_per_company": 9.05,
+      "timestamp": "2026-10-18T16:54:33.058236+00:00"
     }
   ]
 }
