@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-18T16:54:33.058236+00:00",
+    "last_updated": "2026-10-18T19:28:19.799684+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-20",
@@ -4090,48 +4090,48 @@
     },
     {
       "date": "2026-10-18",
-      "total_jobs": 8828,
+      "total_jobs": 8796,
       "categories": {
-        "software_engineering": 2119,
-        "data_ml": 336,
-        "customer_support": 163,
-        "quant_finance": 26,
-        "sales": 821,
+        "software_engineering": 2104,
+        "data_ml": 333,
+        "customer_support": 165,
+        "quant_finance": 27,
+        "sales": 825,
         "frontend": 28,
         "backend": 47,
         "design": 48,
-        "hardware": 244,
+        "hardware": 243,
         "engineering": 1203,
-        "business_analyst": 308,
-        "infrastructure_sre": 458,
+        "business_analyst": 303,
+        "infrastructure_sre": 454,
         "accounting_finance": 379,
         "security": 234,
-        "supply_chain": 277,
-        "data_engineering": 174,
-        "legal": 65,
-        "management": 131,
-        "human_resources": 99,
-        "product_management": 19,
+        "supply_chain": 276,
+        "data_engineering": 171,
+        "legal": 64,
+        "management": 132,
+        "human_resources": 100,
+        "product_management": 20,
         "project_management": 79,
-        "other": 611,
-        "mobile": 23,
-        "marketing": 72,
+        "other": 609,
+        "mobile": 22,
+        "marketing": 70,
         "arts_entertainment": 2,
-        "public_sector": 18,
+        "public_sector": 17,
         "consulting": 139,
-        "healthcare": 625,
+        "healthcare": 623,
         "education": 41,
-        "data_analyst": 39
+        "data_analyst": 38
       },
       "tiers": {
-        "other": 7105,
-        "unicorn": 807,
-        "faang_plus": 916
+        "other": 7081,
+        "unicorn": 805,
+        "faang_plus": 910
       },
       "top_companies": [
         {
           "company": "Accenture",
-          "jobs": 444
+          "jobs": 442
         },
         {
           "company": "Verizon",
@@ -4159,7 +4159,7 @@
         },
         {
           "company": "SpaceX",
-          "jobs": 118
+          "jobs": 115
         },
         {
           "company": "Leidos",
@@ -4170,9 +4170,9 @@
           "jobs": 107
         }
       ],
-      "unique_companies": 975,
-      "avg_jobs_per_company": 9.05,
-      "timestamp": "2026-10-18T16:54:33.058236+00:00"
+      "unique_companies": 959,
+      "avg_jobs_per_company": 9.17,
+      "timestamp": "2026-10-18T19:28:19.799684+00:00"
     }
   ]
 }
