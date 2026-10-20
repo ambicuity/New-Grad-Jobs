@@ -1,81 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-10-19T22:22:23.659562+00:00",
+    "last_updated": "2026-10-20T01:18:34.795958+00:00",
     "total_snapshots": 55,
     "date_range": {
-      "start": "2026-07-21",
-      "end": "2026-10-19"
+      "start": "2026-07-22",
+      "end": "2026-10-20"
     }
   },
   "snapshots": [
-    {
-      "date": "2026-07-21",
-      "total_jobs": 1400,
-      "categories": {
-        "software_engineering": 830,
-        "security": 74,
-        "data_ml": 141,
-        "infrastructure_sre": 117,
-        "frontend": 10,
-        "data_engineering": 34,
-        "product_management": 4,
-        "backend": 30,
-        "other": 125,
-        "hardware": 18,
-        "mobile": 12,
-        "quant_finance": 5
-      },
-      "tiers": {
-        "other": 580,
-        "faang_plus": 142,
-        "unicorn": 678
-      },
-      "top_companies": [
-        {
-          "company": "SpaceX",
-          "jobs": 231
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 194
-        },
-        {
-          "company": "Waymo",
-          "jobs": 42
-        },
-        {
-          "company": "OpenAI",
-          "jobs": 36
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 23
-        },
-        {
-          "company": "xAI",
-          "jobs": 23
-        },
-        {
-          "company": "Stripe",
-          "jobs": 22
-        },
-        {
-          "company": "Leidos",
-          "jobs": 22
-        },
-        {
-          "company": "Scale AI",
-          "jobs": 21
-        },
-        {
-          "company": "Figma",
-          "jobs": 21
-        }
-      ],
-      "unique_companies": 243,
-      "avg_jobs_per_company": 5.76,
-      "timestamp": "2026-07-21T23:12:39.784498+00:00"
-    },
     {
       "date": "2026-07-22",
       "total_jobs": 1420,
@@ -4191,6 +4123,92 @@
       "unique_companies": 974,
       "avg_jobs_per_company": 8.9,
       "timestamp": "2026-10-19T22:22:23.659562+00:00"
+    },
+    {
+      "date": "2026-10-20",
+      "total_jobs": 8720,
+      "categories": {
+        "software_engineering": 2091,
+        "data_ml": 330,
+        "customer_support": 159,
+        "quant_finance": 26,
+        "sales": 961,
+        "frontend": 29,
+        "backend": 50,
+        "design": 50,
+        "hardware": 240,
+        "engineering": 1169,
+        "supply_chain": 260,
+        "business_analyst": 302,
+        "infrastructure_sre": 446,
+        "accounting_finance": 350,
+        "security": 232,
+        "data_engineering": 174,
+        "legal": 59,
+        "management": 132,
+        "human_resources": 98,
+        "product_management": 15,
+        "project_management": 81,
+        "other": 629,
+        "mobile": 22,
+        "marketing": 64,
+        "arts_entertainment": 2,
+        "public_sector": 20,
+        "consulting": 133,
+        "healthcare": 525,
+        "education": 38,
+        "data_analyst": 33
+      },
+      "tiers": {
+        "other": 7046,
+        "unicorn": 801,
+        "faang_plus": 873
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 441
+        },
+        {
+          "company": "Verizon",
+          "jobs": 212
+        },
+        {
+          "company": "T-Mobile",
+          "jobs": 192
+        },
+        {
+          "company": "WSP",
+          "jobs": 152
+        },
+        {
+          "company": "Raytheon",
+          "jobs": 136
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 132
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 121
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 111
+        },
+        {
+          "company": "Leidos",
+          "jobs": 111
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 110
+        }
+      ],
+      "unique_companies": 977,
+      "avg_jobs_per_company": 8.93,
+      "timestamp": "2026-10-20T01:18:34.795958+00:00"
     }
   ]
 }
