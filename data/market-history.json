@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-20T05:04:03.339082+00:00",
+    "last_updated": "2026-10-20T06:36:34.652541+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-22",
@@ -4126,43 +4126,43 @@
     },
     {
       "date": "2026-10-20",
-      "total_jobs": 8276,
+      "total_jobs": 8249,
       "categories": {
-        "software_engineering": 2024,
-        "data_ml": 328,
+        "software_engineering": 2007,
+        "data_ml": 324,
         "customer_support": 149,
         "quant_finance": 25,
-        "sales": 783,
+        "sales": 779,
         "frontend": 24,
-        "backend": 50,
+        "backend": 48,
         "design": 49,
-        "hardware": 233,
-        "engineering": 1150,
+        "hardware": 231,
+        "engineering": 1159,
         "supply_chain": 232,
-        "business_analyst": 295,
-        "infrastructure_sre": 436,
-        "accounting_finance": 317,
+        "business_analyst": 302,
+        "infrastructure_sre": 434,
+        "accounting_finance": 318,
         "security": 232,
-        "data_engineering": 172,
+        "data_engineering": 173,
         "legal": 56,
-        "management": 121,
-        "human_resources": 91,
+        "management": 120,
+        "human_resources": 89,
         "product_management": 16,
-        "project_management": 78,
-        "other": 609,
+        "project_management": 74,
+        "other": 601,
         "mobile": 22,
-        "marketing": 65,
+        "marketing": 66,
         "arts_entertainment": 2,
         "public_sector": 21,
         "consulting": 101,
-        "healthcare": 523,
-        "education": 40,
+        "healthcare": 524,
+        "education": 39,
         "data_analyst": 32
       },
       "tiers": {
-        "other": 6635,
-        "unicorn": 800,
-        "faang_plus": 841
+        "other": 6622,
+        "unicorn": 801,
+        "faang_plus": 826
       },
       "top_companies": [
         {
@@ -4175,7 +4175,7 @@
         },
         {
           "company": "WSP",
-          "jobs": 152
+          "jobs": 151
         },
         {
           "company": "Mount Sinai Health System",
@@ -4186,29 +4186,29 @@
           "jobs": 119
         },
         {
+          "company": "Leidos",
+          "jobs": 112
+        },
+        {
           "company": "SpaceX",
           "jobs": 111
         },
         {
-          "company": "Leidos",
-          "jobs": 111
-        },
-        {
           "company": "Anduril Industries",
-          "jobs": 110
+          "jobs": 109
         },
         {
           "company": "Northrop Grumman",
-          "jobs": 104
+          "jobs": 102
         },
         {
           "company": "Raytheon",
-          "jobs": 100
+          "jobs": 99
         }
       ],
-      "unique_companies": 978,
-      "avg_jobs_per_company": 8.46,
-      "timestamp": "2026-10-20T05:04:03.339082+00:00"
+      "unique_companies": 990,
+      "avg_jobs_per_company": 8.33,
+      "timestamp": "2026-10-20T06:36:34.652541+00:00"
     }
   ]
 }
