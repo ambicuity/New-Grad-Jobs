@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-22T05:02:56.538226+00:00",
+    "last_updated": "2026-10-22T05:24:37.261921+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-24",
@@ -4162,43 +4162,43 @@
     },
     {
       "date": "2026-10-22",
-      "total_jobs": 8427,
+      "total_jobs": 8336,
       "categories": {
-        "software_engineering": 2050,
+        "software_engineering": 2060,
         "infrastructure_sre": 444,
-        "data_ml": 338,
-        "customer_support": 173,
+        "data_ml": 332,
+        "customer_support": 170,
         "quant_finance": 26,
-        "sales": 770,
-        "frontend": 25,
-        "backend": 49,
-        "design": 46,
-        "business_analyst": 312,
-        "hardware": 241,
-        "engineering": 1157,
-        "supply_chain": 252,
-        "accounting_finance": 322,
+        "sales": 774,
+        "frontend": 24,
+        "backend": 50,
+        "design": 45,
+        "business_analyst": 313,
+        "hardware": 242,
+        "engineering": 1153,
+        "supply_chain": 225,
+        "accounting_finance": 307,
         "security": 226,
-        "data_engineering": 184,
-        "legal": 51,
-        "management": 126,
-        "human_resources": 69,
+        "data_engineering": 191,
+        "legal": 50,
+        "management": 125,
+        "human_resources": 96,
         "project_management": 76,
-        "other": 583,
+        "other": 589,
         "marketing": 71,
         "mobile": 23,
         "arts_entertainment": 3,
         "public_sector": 22,
         "product_management": 15,
-        "consulting": 100,
-        "healthcare": 600,
-        "education": 40,
-        "data_analyst": 33
+        "consulting": 95,
+        "healthcare": 515,
+        "education": 39,
+        "data_analyst": 35
       },
       "tiers": {
-        "other": 6706,
+        "other": 6621,
         "unicorn": 817,
-        "faang_plus": 904
+        "faang_plus": 898
       },
       "top_companies": [
         {
@@ -4208,10 +4208,6 @@
         {
           "company": "T-Mobile",
           "jobs": 190
-        },
-        {
-          "company": "Accenture",
-          "jobs": 157
         },
         {
           "company": "WSP",
@@ -4240,11 +4236,15 @@
         {
           "company": "SpaceX",
           "jobs": 108
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 104
         }
       ],
-      "unique_companies": 975,
-      "avg_jobs_per_company": 8.64,
-      "timestamp": "2026-10-22T05:02:56.538226+00:00"
+      "unique_companies": 957,
+      "avg_jobs_per_company": 8.71,
+      "timestamp": "2026-10-22T05:24:37.261921+00:00"
     }
   ]
 }
