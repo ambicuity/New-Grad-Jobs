@@ -1,81 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-10-21T22:01:57.138175+00:00",
+    "last_updated": "2026-10-22T00:41:29.184183+00:00",
     "total_snapshots": 55,
     "date_range": {
-      "start": "2026-07-23",
-      "end": "2026-10-21"
+      "start": "2026-07-24",
+      "end": "2026-10-22"
     }
   },
   "snapshots": [
-    {
-      "date": "2026-07-23",
-      "total_jobs": 1477,
-      "categories": {
-        "software_engineering": 885,
-        "infrastructure_sre": 118,
-        "security": 75,
-        "data_ml": 141,
-        "data_engineering": 34,
-        "frontend": 9,
-        "other": 153,
-        "mobile": 10,
-        "quant_finance": 6,
-        "hardware": 14,
-        "backend": 29,
-        "product_management": 3
-      },
-      "tiers": {
-        "unicorn": 687,
-        "other": 622,
-        "faang_plus": 168
-      },
-      "top_companies": [
-        {
-          "company": "SpaceX",
-          "jobs": 232
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 194
-        },
-        {
-          "company": "Waymo",
-          "jobs": 40
-        },
-        {
-          "company": "OpenAI",
-          "jobs": 38
-        },
-        {
-          "company": "Accenture",
-          "jobs": 32
-        },
-        {
-          "company": "Boeing",
-          "jobs": 32
-        },
-        {
-          "company": "xAI",
-          "jobs": 26
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 24
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 23
-        },
-        {
-          "company": "Stripe",
-          "jobs": 22
-        }
-      ],
-      "unique_companies": 239,
-      "avg_jobs_per_company": 6.18,
-      "timestamp": "2026-07-23T23:18:16.380174+00:00"
-    },
     {
       "date": "2026-07-24",
       "total_jobs": 1436,
@@ -4227,6 +4159,92 @@
       "unique_companies": 954,
       "avg_jobs_per_company": 8.77,
       "timestamp": "2026-10-21T22:01:57.138175+00:00"
+    },
+    {
+      "date": "2026-10-22",
+      "total_jobs": 8202,
+      "categories": {
+        "software_engineering": 2048,
+        "infrastructure_sre": 443,
+        "data_ml": 330,
+        "customer_support": 169,
+        "quant_finance": 26,
+        "sales": 643,
+        "frontend": 26,
+        "backend": 50,
+        "design": 45,
+        "business_analyst": 306,
+        "hardware": 246,
+        "engineering": 1153,
+        "supply_chain": 227,
+        "accounting_finance": 305,
+        "security": 227,
+        "data_engineering": 187,
+        "legal": 51,
+        "management": 127,
+        "human_resources": 72,
+        "project_management": 78,
+        "other": 606,
+        "marketing": 67,
+        "mobile": 23,
+        "arts_entertainment": 3,
+        "public_sector": 23,
+        "product_management": 15,
+        "consulting": 105,
+        "healthcare": 524,
+        "education": 43,
+        "data_analyst": 34
+      },
+      "tiers": {
+        "other": 6480,
+        "unicorn": 812,
+        "faang_plus": 910
+      },
+      "top_companies": [
+        {
+          "company": "Verizon",
+          "jobs": 215
+        },
+        {
+          "company": "WSP",
+          "jobs": 149
+        },
+        {
+          "company": "Raytheon",
+          "jobs": 137
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 136
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 131
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 115
+        },
+        {
+          "company": "Leidos",
+          "jobs": 114
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 108
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 107
+        },
+        {
+          "company": "Duke University",
+          "jobs": 92
+        }
+      ],
+      "unique_companies": 959,
+      "avg_jobs_per_company": 8.55,
+      "timestamp": "2026-10-22T00:41:29.184183+00:00"
     }
   ]
 }
