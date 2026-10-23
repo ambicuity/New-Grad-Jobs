@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-23T06:31:02.759610+00:00",
+    "last_updated": "2026-10-23T12:06:11.174432+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-07-25",
@@ -4180,42 +4180,42 @@
     },
     {
       "date": "2026-10-23",
-      "total_jobs": 8315,
+      "total_jobs": 8380,
       "categories": {
-        "software_engineering": 2033,
-        "infrastructure_sre": 432,
-        "data_ml": 326,
+        "software_engineering": 2060,
+        "infrastructure_sre": 439,
+        "data_ml": 327,
         "customer_support": 155,
         "quant_finance": 30,
-        "sales": 781,
-        "frontend": 24,
+        "sales": 778,
+        "frontend": 23,
         "backend": 46,
         "design": 49,
-        "business_analyst": 312,
-        "hardware": 241,
-        "engineering": 1159,
-        "supply_chain": 226,
-        "accounting_finance": 314,
-        "security": 229,
-        "data_engineering": 198,
-        "legal": 49,
-        "management": 124,
-        "human_resources": 68,
+        "business_analyst": 314,
+        "hardware": 240,
+        "engineering": 1165,
+        "supply_chain": 229,
+        "accounting_finance": 315,
+        "security": 232,
+        "data_engineering": 193,
+        "management": 126,
+        "human_resources": 97,
         "project_management": 82,
-        "other": 609,
-        "marketing": 73,
-        "mobile": 24,
+        "other": 606,
+        "marketing": 75,
+        "mobile": 23,
         "arts_entertainment": 3,
-        "public_sector": 29,
+        "public_sector": 28,
+        "legal": 48,
         "product_management": 16,
-        "consulting": 96,
-        "healthcare": 509,
-        "education": 41,
-        "data_analyst": 37
+        "consulting": 100,
+        "healthcare": 505,
+        "education": 40,
+        "data_analyst": 36
       },
       "tiers": {
-        "other": 6604,
-        "unicorn": 841,
+        "other": 6668,
+        "unicorn": 842,
         "faang_plus": 870
       },
       "top_companies": [
@@ -4233,7 +4233,7 @@
         },
         {
           "company": "State of Florida",
-          "jobs": 135
+          "jobs": 136
         },
         {
           "company": "Mount Sinai Health System",
@@ -4241,15 +4241,15 @@
         },
         {
           "company": "Raytheon",
-          "jobs": 133
+          "jobs": 125
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 120
         },
         {
           "company": "SpaceX",
           "jobs": 116
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 114
         },
         {
           "company": "Leidos",
@@ -4260,9 +4260,9 @@
           "jobs": 107
         }
       ],
-      "unique_companies": 980,
-      "avg_jobs_per_company": 8.48,
-      "timestamp": "2026-10-23T06:31:02.759610+00:00"
+      "unique_companies": 958,
+      "avg_jobs_per_company": 8.75,
+      "timestamp": "2026-10-23T12:06:11.174432+00:00"
     }
   ]
 }
