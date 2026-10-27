@@ -57,36 +57,36 @@ Experience an advanced career journey with us! 🚀
 ---
 
 <!-- COUNTS:START - counts below are auto-synced from the scraper output jobs.json by scripts/sync_readme_counts.py -->
-## Browse <!-- COUNT:total -->8419<!-- /COUNT --> Jobs by Category
+## Browse <!-- COUNT:total -->8428<!-- /COUNT --> Jobs by Category
 
 | Category | Open Roles |
 |----------|-----------:|
-| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->2048<!-- /COUNT --> |
+| [Software Engineering](#software-engineering) | <!-- COUNT:software_engineering -->2055<!-- /COUNT --> |
 | [Frontend Engineering](#frontend-engineering) | <!-- COUNT:frontend -->29<!-- /COUNT --> |
 | [Backend Engineering](#backend-engineering) | <!-- COUNT:backend -->44<!-- /COUNT --> |
-| [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->22<!-- /COUNT --> |
-| [Security Engineering](#security-engineering) | <!-- COUNT:security -->224<!-- /COUNT --> |
-| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->343<!-- /COUNT --> |
-| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->198<!-- /COUNT --> |
-| [Data Analyst](#data-analyst) | <!-- COUNT:data_analyst -->37<!-- /COUNT --> |
-| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->443<!-- /COUNT --> |
-| [Product Management](#product-management) | <!-- COUNT:product_management -->24<!-- /COUNT --> |
-| [Project Management](#project-management) | <!-- COUNT:project_management -->79<!-- /COUNT --> |
-| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->28<!-- /COUNT --> |
-| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->228<!-- /COUNT --> |
-| [Engineering and Development](#engineering-and-development) | <!-- COUNT:engineering -->1108<!-- /COUNT --> |
-| [Creatives and Design](#creatives-and-design) | <!-- COUNT:design -->42<!-- /COUNT --> |
+| [Mobile Engineering](#mobile-engineering) | <!-- COUNT:mobile -->21<!-- /COUNT --> |
+| [Security Engineering](#security-engineering) | <!-- COUNT:security -->223<!-- /COUNT --> |
+| [Data Science & ML](#data-science--ml) | <!-- COUNT:data_ml -->342<!-- /COUNT --> |
+| [Data Engineering](#data-engineering) | <!-- COUNT:data_engineering -->200<!-- /COUNT --> |
+| [Data Analyst](#data-analyst) | <!-- COUNT:data_analyst -->38<!-- /COUNT --> |
+| [Infrastructure & SRE](#infrastructure--sre) | <!-- COUNT:infrastructure_sre -->442<!-- /COUNT --> |
+| [Product Management](#product-management) | <!-- COUNT:product_management -->23<!-- /COUNT --> |
+| [Project Management](#project-management) | <!-- COUNT:project_management -->82<!-- /COUNT --> |
+| [Quantitative Finance](#quantitative-finance) | <!-- COUNT:quant_finance -->27<!-- /COUNT --> |
+| [Hardware Engineering](#hardware-engineering) | <!-- COUNT:hardware -->229<!-- /COUNT --> |
+| [Engineering and Development](#engineering-and-development) | <!-- COUNT:engineering -->1110<!-- /COUNT --> |
+| [Creatives and Design](#creatives-and-design) | <!-- COUNT:design -->44<!-- /COUNT --> |
 | [Business Analyst](#business-analyst) | <!-- COUNT:business_analyst -->334<!-- /COUNT --> |
-| [Marketing](#marketing) | <!-- COUNT:marketing -->80<!-- /COUNT --> |
+| [Marketing](#marketing) | <!-- COUNT:marketing -->79<!-- /COUNT --> |
 | [Sales](#sales) | <!-- COUNT:sales -->765<!-- /COUNT --> |
-| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->316<!-- /COUNT --> |
-| [Consulting](#consulting) | <!-- COUNT:consulting -->135<!-- /COUNT --> |
-| [Human Resources](#human-resources) | <!-- COUNT:human_resources -->79<!-- /COUNT --> |
+| [Accounting and Finance](#accounting-and-finance) | <!-- COUNT:accounting_finance -->317<!-- /COUNT --> |
+| [Consulting](#consulting) | <!-- COUNT:consulting -->136<!-- /COUNT --> |
+| [Human Resources](#human-resources) | <!-- COUNT:human_resources -->75<!-- /COUNT --> |
 | [Legal and Compliance](#legal-and-compliance) | <!-- COUNT:legal -->47<!-- /COUNT --> |
-| [Customer Service and Support](#customer-service-and-support) | <!-- COUNT:customer_support -->145<!-- /COUNT --> |
+| [Customer Service and Support](#customer-service-and-support) | <!-- COUNT:customer_support -->147<!-- /COUNT --> |
 | [Supply Chain](#supply-chain) | <!-- COUNT:supply_chain -->245<!-- /COUNT --> |
-| [Healthcare](#healthcare) | <!-- COUNT:healthcare -->571<!-- /COUNT --> |
-| [Education and Training](#education-and-training) | <!-- COUNT:education -->42<!-- /COUNT --> |
+| [Healthcare](#healthcare) | <!-- COUNT:healthcare -->568<!-- /COUNT --> |
+| [Education and Training](#education-and-training) | <!-- COUNT:education -->43<!-- /COUNT --> |
 | [Public Sector and Government](#public-sector-and-government) | <!-- COUNT:public_sector -->27<!-- /COUNT --> |
 | [Arts and Entertainment](#arts-and-entertainment) | <!-- COUNT:arts_entertainment -->4<!-- /COUNT --> |
 | [Management and Executive](#management-and-executive) | <!-- COUNT:management -->130<!-- /COUNT --> |
@@ -97,7 +97,7 @@ Experience an advanced career journey with us! 🚀
 
 <!-- CATEGORY-LISTINGS:START - auto-generated from the scraper output jobs.json by scripts/sync_readme_jobs.py; do not edit by hand -->
 
-> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **8,419** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
+> **Live listings** — the 10 most recently posted roles per category, refreshed about every 30 minutes. Browse and filter all **8,428** live roles on the **[live job board](https://jobs.riteshrana.engineer/)**.
 
 ## Software Engineering
 
@@ -113,10 +113,10 @@ Experience an advanced career journey with us! 🚀
 | Mastercard | Software Engineer II | Pune, India | Today | [Apply](<https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Pune-India/Software-Engineer-II_R-289618>) |
 | Cisco | Software Engineer - C/C++ programmer, Linux, Python Scripting - 5 to 8 years - Bangalore | Bangalore, India | Today | [Apply](<https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Bangalore-India/Software-Engineer---C-C---programmer--Linux--Python-Scripting---5-to-8-years---Bangalore_2026814-1>) |
 | Cisco | Software Engineer, Silicon One Software | Bangalore, India | Today | [Apply](<https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Bangalore-India/Software-Engineer--Silicon-One-Software_2015833>) |
+| Unknown | GCP Systems Engineer \(Infrastructure &amp; Operations\) | MH, IN | Today | [Apply](<https://in.indeed.com/viewjob?jk=186accd038140fcc>) |
 | Lowe's | Associate Software Engineer | Bengaluru | Today | [Apply](<https://lowes.wd5.myworkdayjobs.com/LWS_External_CS/job/Bengaluru/Associate-Software-Engineer_JR-02622622>) |
-| Baseten | Software Engineer, Compute and Isolation | San Francisco, California, United States | Today | [Apply](<https://jobs.ashbyhq.com/baseten/7c0ba27d-2f09-42f2-9277-1b756076b00b>) |
 
-**[View all 2,048 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 2,055 Software Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Frontend Engineering
 
@@ -167,13 +167,13 @@ Experience an advanced career journey with us! 🚀
 | BJAK | Android Software Engineer - AI Neobank App | India, India, India | 3 days ago | [Apply](<https://jobs.ashbyhq.com/bjakcareer/82349fdc-fc80-4da1-a39e-1f70dee09ba5>) |
 | BJAK | Android Software Engineer - AI Neobank App | United States, United States, United States | 3 days ago | [Apply](<https://jobs.ashbyhq.com/bjakcareer/6cd46335-dae2-40e1-807a-b8f2dc18f618>) |
 | Uber | Software Engineer II, iOS- Maps Mobile Platform | San Francisco, CA, United States | 2026-10-20 | [Apply](<https://iaziqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/UberCareers/job/303601>) |
-| Benjamin Moore | Mobile Software Engineer | Montvale, NJ, US | 2026-10-16 | [Apply](<https://www.indeed.com/viewjob?jk=2f1db2913e0a57c8>) |
 | DoorDash | Software Engineer, iOS | Sunnyvale, CA; San Francisco, CA; Seattle, WA; New York, NY | 2026-10-13 | [Apply](<https://job-boards.greenhouse.io/doordashusa/jobs/8141072>) |
 | Uber | Software Engineer II - Android | Seattle, WA, United States | 2026-10-10 | [Apply](<https://iaziqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/UberCareers/job/302639>) |
 | Motorola Solutions | Android Software Engineer | Plantation, FL | 2026-10-06 | [Apply](<https://motorolasolutions.wd5.myworkdayjobs.com/Careers/job/Plantation-FL/Android-Software-Engineer_R62561>) |
 | Match Group | Software Engineer, Android | Los Angeles, California | 2026-10-02 | [Apply](<https://jobs.lever.co/matchgroup/32b18f00-af1a-4067-ad7d-9cba43711d2e>) |
+| Notion | Software Engineer, Mobile Core \(Android\) | San Francisco, California, United States | 2026-10-01 | [Apply](<https://jobs.ashbyhq.com/notion/d82a0b31-59b8-4699-ae8d-6fb3fe47518c>) |
 
-**[View all 22 Mobile Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 21 Mobile Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Security Engineering
 
@@ -192,7 +192,7 @@ Experience an advanced career journey with us! 🚀
 | GE Vernova | Cyber Security Engineer | Noida, India; Bengaluru; Pallavaram | 1 day ago | [Apply](<https://gevernova.wd5.myworkdayjobs.com/Vernova_ExternalSite/job/Noida/Cyber-Security-Engineer_R5052993-2>) |
 | Cisco | Software Security Engineer | Bangalore, India | 1 day ago | [Apply](<https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Bangalore-India/Software-Security-Engineer_2026767-1>) |
 
-**[View all 224 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 223 Security Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Science & ML
 
@@ -211,7 +211,7 @@ Experience an advanced career journey with us! 🚀
 | BJAK | Applied Machine Learning Engineer | United States, United States, United States | Today | [Apply](<https://jobs.ashbyhq.com/bjakcareer/2fddb7f2-3231-4c6f-b21c-3d69c3f353a7>) |
 | Domino's | Data Scientist | Ann Arbor, MI, United States | 1 day ago | [Apply](<https://jobs.smartrecruiters.com/Dominos/744000157690372>) |
 
-**[View all 343 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 342 Data Science & ML roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Engineering
 
@@ -226,11 +226,11 @@ Experience an advanced career journey with us! 🚀
 | Bristol Myers Squibb | Analytics Engineer I, Commercialization | Hyderabad - TS - IN | 1 day ago | [Apply](<https://bristolmyerssquibb.wd5.myworkdayjobs.com/BMS/job/Hyderabad---TS---IN/Analytics-Engineer-I--Commercialization_R1607232>) |
 | RBC | Data Engineer, RBC Amplify 2027, Toronto | TORONTO, Ontario, Canada | 1 day ago | [Apply](<https://rbc.wd3.myworkdayjobs.com/RBCGLOBAL1/job/TORONTO-Ontario-Canada/Data-Engineer--RBC-Amplify-2027--Toronto_R-0000191192>) |
 | Amgen | Associate Data Engineer | India - Hyderabad | 1 day ago | [Apply](<https://amgen.wd1.myworkdayjobs.com/Careers/job/India---Hyderabad/Associate-Data-Engineer_R-256205>) |
+| Black &amp; Veatch | Associate Civil Site Development Engineer - Data Centers | Overland Park, KS, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=0bb432efcec5a3b2>) |
 | TransUnion | Associate Data Engineer | Pune | 1 day ago | [Apply](<https://transunion.wd5.myworkdayjobs.com/transunion/job/Pune/Associate-Data-Engineer_19043015>) |
 | Duke Health | Developer - ETL Cloud Data Engineer - Level 2 | NC, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=7f3464f850d51192>) |
-| RBC | Data Engineer, RBC Amplify 2027, Calgary | CALGARY, Alberta, Canada | 1 day ago | [Apply](<https://rbc.wd3.myworkdayjobs.com/RBCGLOBAL1/job/CALGARY-Alberta-Canada/Data-Engineer--RBC-Amplify-2027--Calgary_R-0000191201-2>) |
 
-**[View all 198 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 200 Data Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Data Analyst
 
@@ -249,7 +249,7 @@ Experience an advanced career journey with us! 🚀
 | UC San Francisco | Research Data Analyst I | San Francisco, CA, United States | 2026-10-20 | [Apply](<https://iazuqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/10078>) |
 | Mount Sinai Health System | Data Analyst II - Maternal Health Policy and Equity | United States | 2026-10-20 | [Apply](<https://ejis.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/3042413>) |
 
-**[View all 37 Data Analyst roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 38 Data Analyst roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Infrastructure & SRE
 
@@ -268,7 +268,7 @@ Experience an advanced career journey with us! 🚀
 | Emory University | Cloud Infrastructure Engineer | Atlanta, Georgia | Today | [Apply](<https://careers.emory.edu/jobs/172282>) |
 | Samsara | \(New Grad\) Account Development Representative II - Atlanta | Atlanta, Georgia, United States | Today | [Apply](<https://www.samsara.com/company/careers/roles/8325360?gh_jid=8325360>) |
 
-**[View all 443 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 442 Infrastructure & SRE roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Product Management
 
@@ -282,12 +282,12 @@ Experience an advanced career journey with us! 🚀
 | Toast | Associate Product Manager, Data Governance | Remote, US | 3 days ago | [Apply](<https://careers.toasttab.com/jobs?gh_jid=8305972>) |
 | Accenture | Business Owner / Product Owner Junior – Digital Quality - Aéronautique - F/H - Toulouse | — | 4 days ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Blagnac/Business-Owner---Product-Owner-Junior---Digital-Quality---Aronautique---F-H---Toulouse_R00366337>) |
 | Copart | Associate Product Manager | San Francisco, CA | 5 days ago | [Apply](<https://copart.wd12.myworkdayjobs.com/Copart/job/San-Francisco-CA/Associate-Product-Manager_JR112367>) |
-| Fastener Distribution Holdings | Associate Product Manager | Oklahoma City, OK, US | 5 days ago | [Apply](<https://www.indeed.com/viewjob?jk=e346532dc2dc566a>) |
 | Avery Dennison | Associate Product Manager, Media Solutions | Remote, Little Rock, AR, United States | 5 days ago | [Apply](<https://jobs.smartrecruiters.com/AveryDennison/744000156897969>) |
 | Supermicro | Associate Product Manager - Key Components | San Jose, Cali, Un | 2026-10-17 | [Apply](<https://jobs.supermicro.com/job/San-Jose-Associate-Product-Manager-Key-Components-Cali/1351011900/>) |
 | Hive | Associate Product Manager, Deploy Models | San Francisco | 2026-10-15 | [Apply](<https://jobs.lever.co/hive/d5b22ed0-fdd2-4be1-8e6c-b6d734c17986>) |
+| Caesars Entertainment | Product Owner II | Remote, Las Vegas, NV, United States | 2026-10-14 | [Apply](<https://edmn.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/90674>) |
 
-**[View all 24 Product Management roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 23 Product Management roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Project Management
 
@@ -296,17 +296,17 @@ Experience an advanced career journey with us! 🚀
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
 | Harvard University | Undergraduate Program Coordinator II | Cambridge, MA, United States | Today | [Apply](<https://jobs.smartrecruiters.com/HarvardUniversity/3743990016400377>) |
+| US Farm Service Agency | County Program Analyst/Trainee | Breckenridge, MN, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=1f75221f72944cc4>) |
 | Northrop Grumman | Project Management \(Level 2 or Level 3\) | United States-California-San Diego | 1 day ago | [Apply](<https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-California-San-Diego/Project-Management--Level-2-or-Level-3-_R10256915>) |
 | Cre8 Design Plus, LLC | Project Coordinator \(Entry Level\) | Corona, CA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=98db8d90680297ae>) |
 | Stingray Group Inc | Project Coordinator \(Entry-Level\) | Montréal, QC, CA | 3 days ago | [Apply](<https://ca.indeed.com/viewjob?jk=b6d93cd204f6912b>) |
 | Harvard University | Coordinator I \(Project Coordinator\) | Boston, MA, United States | 3 days ago | [Apply](<https://jobs.smartrecruiters.com/HarvardUniversity/3743990016365566>) |
+| Tekvana Inc | Health Care Scrum Master / Business Analyst | Minneapolis, MN, US | 4 days ago | [Apply](<https://www.indeed.com/viewjob?jk=ccec6ceca62869f5>) |
 | Queen's University | Program Coordinator II | Kingston, ON, CA | 4 days ago | [Apply](<https://ca.indeed.com/viewjob?jk=541879cda9fc1d9b>) |
 | Light &amp; Wonder | Associate Project Manager | USA-NC-Raleigh-1 Glenwood Ave Ste 600 | 4 days ago | [Apply](<https://lnw.wd5.myworkdayjobs.com/LightWonderExternalCareers/job/USA-NC-Raleigh-1-Glenwood-Ave-Ste-600/Associate-Project-Manager_R322993>) |
-| Southern Company | PMO Business Analyst- Any SNC Site | Birmingham, AL, United States | 4 days ago | [Apply](<https://emje.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/SouthernCompanyJobs/job/22391>) |
-| Northrop Grumman | Project Management Level 2 or Level 3 | United States-Florida-Melbourne | 5 days ago | [Apply](<https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Florida-Melbourne/Project-Management-Level-2-or-Level-3_R10257303-1>) |
-| Texas A&amp;M University System | Program Coordinator I | College Station, TX | 5 days ago | [Apply](<https://tamus.wd1.myworkdayjobs.com/system-wide_external/job/College-Station-TX/Program-Coordinator-I_R-098063>) |
+| Dokainish &amp; Company | Project Management – Associate Consultant - Toronto, On | Toronto, ON, CA | 4 days ago | [Apply](<https://ca.indeed.com/viewjob?jk=3e87a1c3420dbb41>) |
 
-**[View all 79 Project Management roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 82 Project Management roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Quantitative Finance
 
@@ -322,10 +322,10 @@ Experience an advanced career journey with us! 🚀
 | Palantir Technologies | Deployment Strategist, New Grad - Warp Speed | New York, NY, US | 5 days ago | [Apply](<https://www.indeed.com/viewjob?jk=78874ce10009b448>) |
 | Ontario Teachers' Pension Plan | Investment Associate, Capital Markets - Quantitative Strategies &amp; Research | Toronto, ON, CA | 5 days ago | [Apply](<https://ca.indeed.com/viewjob?jk=77e4168a57d1a396>) |
 | Augur Consulting | Entry-Level Analyst | Arlington, VA, US | 6 days ago | [Apply](<https://www.indeed.com/viewjob?jk=17741ac5fbed886d>) |
-| HNI Corporation | Development Program - Channel Performance - 2027 | Muscatine, IA, US | 6 days ago | [Apply](<https://www.indeed.com/viewjob?jk=adcf3f32a7f5fd31>) |
 | Mastercard | Creative Data Strategist \(Associate Managing Consultant\(-1 | Gurgaon, India | 2026-10-19 | [Apply](<https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Gurgaon-India/Creative-Data-Strategist--Associate-Managing-Consultant--1_R-294084>) |
+| BMO | Associate, Quantitative Modeling | Toronto, ON, CAN | 2026-10-13 | [Apply](<https://bmo.wd3.myworkdayjobs.com/External/job/Toronto-ON-CAN/Associate--Quantitative-Modeling_R260028769>) |
 
-**[View all 28 Quantitative Finance roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 27 Quantitative Finance roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Hardware Engineering
 
@@ -335,6 +335,7 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | State of Florida | STATE ATTORNEY'S OFFICE, 4TH CIRCUIT- PARALEGAL SPECIALIST I - 21000575 | JACKSONVILLE, FL, United States | Today | [Apply](<https://jobs.myflorida.com/job/JACKSONVILLE-STATE-ATTORNEY&apos;S-OFFICE%2C-4TH-CIRCUIT-PARALEGAL-SPECIALIST-I-21000575-FL-32202/1434390200/>) |
 | Westinghouse | Electrical Engineer II | Cranberry Township, NC, United States | Today | [Apply](<https://careers.westinghousenuclear.com/job/Cranberry-Township-Electrical-Engineer-II-NC/1326340800/>) |
+| Bosch | ASIC Verification EEJ 2026 | bengaluru, , India | Today | [Apply](<https://jobs.smartrecruiters.com/BoschGroup/744000157958048>) |
 | Northrop Grumman | 2027 Associate Electrical Engineer - Baltimore MD | United States-Maryland-Baltimore | 1 day ago | [Apply](<https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Maryland-Baltimore/XMLNAME-2027-Associate-Electrical-Engineer---Baltimore-MD_R10257561>) |
 | WSP | Early Career Electrical Engineer \(Transmission Line Design\) | Fort Worth, TX, United States | 1 day ago | [Apply](<https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/98305>) |
 | Westinghouse | I&amp;C Engineer I | New Stanton, PA, United States | 1 day ago | [Apply](<https://careers.westinghousenuclear.com/job/New-Stanton-I&C-Engineer-I-PA-15672/1443672100/>) |
@@ -342,9 +343,8 @@ Experience an advanced career journey with us! 🚀
 | Westinghouse | Electrical Engineer II | Cranberry Township, NC, United States | 2 days ago | [Apply](<https://careers.westinghousenuclear.com/job/Cranberry-Township-Electrical-Engineer-II-NC/1348885000/>) |
 | Lincoln Electric | Electrical Engineering Development Program 2027 \(Mason, OH\) | Mason, OH, United States | 2 days ago | [Apply](<https://jobs.lincolnelectric.com/job/Mason-Electrical-Engineering-Development-Program-2027-%28Mason%2C-OH%29-OH-45040/1431650533/>) |
 | Northrop Grumman | 2027 Associate Electrical Engineer / Electrical Engineer - Roy UT | United States-Utah-Roy | 2 days ago | [Apply](<https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Utah-Roy/XMLNAME-2027-Associate-Electrical-Engineer---Electrical-Engineer---Roy-UT_R10257538>) |
-| Leonardo DRS | Electrical Engineer II - Firmware Verification | Danbury, CT, United States | 3 days ago | [Apply](<https://careers.leonardodrs.com/job/Danbury-Electrical-Engineer-II-Firmware-Verification-CT-06810-8147/1362495600/>) |
 
-**[View all 228 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 229 Hardware Engineering roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Engineering and Development
 
@@ -358,12 +358,12 @@ Experience an advanced career journey with us! 🚀
 | State of Illinois | CIVIL ENGINEER TRAINEE - DISTRICT 1 | Schaumburg, IL, United States | Today | [Apply](<https://illinois.jobs2web.com/job/Schaumburg-CIVIL-ENGINEER-TRAINEE-DISTRICT-1-IL-60196/1434652100/>) |
 | Schaeffler | Associate Product Design Engineer | Wooster, OH, OH, United States | Today | [Apply](<https://jobs.schaeffler.com/job/Wooster%2C-OH-Associate-Product-Design-Engineer-OH-44691/1442072033/>) |
 | Accenture | Junior Test Engineer \(AI-Augmented\) | — | Today | [Apply](<https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Ebene/Junior-Test-Engineer--AI-Augmented-_R00351193-1>) |
+| Emerson | Application Engineer II | CHENNAI, TAMIL NADU, India | Today | [Apply](<https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26000253>) |
 | Raytheon | Associate Engineer-Mechanical Design | IN-TS-HYDERABAD-012 ~ Plot No 12 ~ SARVOTHAM BLDG | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/IN-TS-HYDERABAD-012--Plot-No-12--SARVOTHAM-BLDG/Associate-Engineer-Mechanical-Design_01881826>) |
 | Raytheon | Associate Engineer-Mechanical Design \(Hybrid\) | IN-TS-HYDERABAD-012 ~ Plot No 12 ~ SARVOTHAM BLDG | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/IN-TS-HYDERABAD-012--Plot-No-12--SARVOTHAM-BLDG/Associate-Engineer-Mechanical-Design--Hybrid-_01877878>) |
 | Raytheon | Associate Engineer-Mechanical Design \(Hybrid\) | IN-TS-HYDERABAD-012 ~ Plot No 12 ~ SARVOTHAM BLDG | Today | [Apply](<https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/IN-TS-HYDERABAD-012--Plot-No-12--SARVOTHAM-BLDG/Associate-Engineer-Mechanical-Design--Hybrid-_01877877>) |
-| Harbinger Motors | Associate Design Engineer, LV Devices | Garden Grove, CA | Today | [Apply](<https://job-boards.greenhouse.io/harbingermotors/jobs/5275723007>) |
 
-**[View all 1,108 Engineering and Development roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 1,110 Engineering and Development roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Creatives and Design
 
@@ -373,16 +373,16 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | SimpliSafe | Industrial Designer II | Boston, MA | Today | [Apply](<https://job-boards.greenhouse.io/simplisafe/jobs/8318279>) |
 | Konrad | Associate UI/UX Designer | New York | Today | [Apply](<https://www.konrad.com/careers/job/8044446003?gh_jid=8044446003>) |
+| Whoop | Product Designer II, Design Systems | Boston, MA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=ed0090615cfd367c>) |
 | Grambling State University | Jr. UI/UX Designer \(IT Statewide Associate Analyst 1-4, ASP 50699943 &amp; 50699944\) | Baton Rouge, LA, US | 3 days ago | [Apply](<https://www.indeed.com/viewjob?jk=295d3b49f3819dc2>) |
-| Martino Contractors Ltd. | Associate Designer \(Vaughan\) | Concord, ON, CA | 4 days ago | [Apply](<https://ca.indeed.com/viewjob?jk=3dfc224a240fc657>) |
 | Uber | Product Designer II - Uber Eats, Ads Consumer Experiences | San Francisco, CA, United States | 5 days ago | [Apply](<https://iaziqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/UberCareers/job/304039>) |
 | Caesars Entertainment | UX Designer II | Remote, Las Vegas, NV, United States | 5 days ago | [Apply](<https://edmn.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/91071>) |
 | Accenture | Junior Content Designer | — | 5 days ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/London/Junior-Content-Designer_R00348802>) |
+| Unknown | Junior UX Designer \[ONSITE-BERWYN, PA\] | Berwyn, PA, US | 6 days ago | [Apply](<https://www.indeed.com/viewjob?jk=f120c8e756aa0ba2>) |
 | Trinzic | Associate Instructional Systems Designer / Learning &amp; Development Specialist | Chantilly, Virginia | 6 days ago | [Apply](<https://trinzic.wd115.myworkdayjobs.com/Trinzic_Careers/job/Chantilly-Virginia/Associate-Instructional-Systems-Designer---Learning---Development-Specialist_R2129474>) |
 | Smartsheet | Content Designer II \(Remote Eligible - Costa Rica\) | San Jose, CR | 2026-10-19 | [Apply](<https://job-boards.greenhouse.io/smartsheet/jobs/8273999>) |
-| HNTB | Landscape/Urban Designer II | Dallas, TX | 2026-10-16 | [Apply](<https://hntb.wd5.myworkdayjobs.com/HNTB_Careers/job/Dallas-TX/Landscape-Urban-Designer-II_R-32025>) |
 
-**[View all 42 Creatives and Design roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 44 Creatives and Design roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Business Analyst
 
@@ -390,7 +390,6 @@ Experience an advanced career journey with us! 🚀
 
 | Company | Role | Location | Posted | Apply |
 |---------|------|----------|--------|-------|
-| Alberta Investment Management Corporation \(AIMCo\) | Business Analyst, Front Office Technology &amp; Business Delivery | Edmonton, AB, CA | Today | [Apply](<https://ca.indeed.com/viewjob?jk=27cb296b31a11f52>) |
 | Jerry.ai | Associate, Business Operations &amp; Analytics | New York, New York, United States | Today | [Apply](<https://jobs.ashbyhq.com/jerry.ai/283cd5ff-a8ac-4b16-9088-bad48e5fe472>) |
 | First Citizens Bank | Business Systems Analyst II - CAB | Phoenix, Arizona; North Carolina, United States; Florida, United States; Austin, Texas | Today | [Apply](<https://jobs.firstcitizens.com/jobs/36153>) |
 | First Citizens Bank | Default Analyst I - Foreclosure | Raleigh, North Carolina | Today | [Apply](<https://jobs.firstcitizens.com/jobs/35180>) |
@@ -400,6 +399,7 @@ Experience an advanced career journey with us! 🚀
 | Inadev | Business Analyst/Quality Assurance | Reston, VA, USA | Today | [Apply](<https://recruiting.paylocity.com/Recruiting/Jobs/Details/4614362>) |
 | SGS | Biotech Analyst - Level 2 - Bioseparations | Mississauga, ON, Canada | Today | [Apply](<https://jobs.smartrecruiters.com/SGS/744000157836369>) |
 | SMX | Oracle Fusion Customer Support Desk Business Analyst \(5772\) | United States | Today | [Apply](<https://www.smxtech.com/careers/?gh_jid=8043344003>) |
+| BJAK | Business Operations Associate | United States, United States, United States | Today | [Apply](<https://jobs.ashbyhq.com/bjakcareer/05f3ab94-5aeb-4ab9-bed5-cd9135d8f56b>) |
 
 **[View all 334 Business Analyst roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -411,16 +411,16 @@ Experience an advanced career journey with us! 🚀
 |---------|------|----------|--------|-------|
 | Proconex | Lifecycle Services Engineer I | Royersford, Pennsylvania, United States | Today | [Apply](<https://job-boards.greenhouse.io/proconex/jobs/6235009004>) |
 | Washington University in St. Louis | Associate Vice Chancellor of Enterprise Communications \(Hybrid\) - University Marketing and Communications | Washington University Medical Campus | 1 day ago | [Apply](<https://wustl.wd1.myworkdayjobs.com/External/job/Washington-University-Medical-Campus/Associate-Vice-Chancellor-of-Enterprise-Communications--Hybrid----University-Marketing-and-Communications_JR96896>) |
-| Unknown | Jr. Digital Marketing Executive | MH, IN | 1 day ago | [Apply](<https://in.indeed.com/viewjob?jk=082e1fc05034e118>) |
 | Cisco | Technical Marketing Engineer I \(Full Time\) - United States | San Jose, California, US; Milpitas, California, US | 1 day ago | [Apply](<https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/San-Jose-California-US/Technical-Marketing-Engineer-I--Full-Time----United-States_2026465>) |
 | Webespire Consulting | AEO/GEO, Technical SEO &amp; Digital Marketing Trainee | Remote, IN | 1 day ago | [Apply](<https://in.indeed.com/viewjob?jk=f47b8969a5d6a321>) |
 | Transdigital Technology Services | Digital Marketing &amp; Demand Generation Trainee | MH, IN | 2 days ago | [Apply](<https://in.indeed.com/viewjob?jk=522c06c63732000b>) |
+| Autistic &amp; Loved | Marketing Associate | Davenport, IA, US | 2 days ago | [Apply](<https://www.indeed.com/viewjob?jk=0bacf581197565e6>) |
 | Tennessee Pass Cookhouse | Social Media &amp; Marketing Associate | Leadville, CO, US | 3 days ago | [Apply](<https://www.indeed.com/viewjob?jk=614eab95a5e1af9d>) |
 | IXL Learning | Marketing Associate, Rosetta Stone Consumer | San Mateo, CA | 3 days ago | [Apply](<https://www.ixl.com/company/jobs?gh_jid=8911612002>) |
 | University of Regina | Sessional Lecturer BUS 414 001 \(Promotional Marketing Strategy\) - Winter 2027 | Regina, SK, CA | 4 days ago | [Apply](<https://ca.indeed.com/viewjob?jk=392db9441b816eba>) |
 | edifice technologies | Marketing and Sales Trainee | MH, IN | 4 days ago | [Apply](<https://in.indeed.com/viewjob?jk=7ff1556c57a813da>) |
 
-**[View all 80 Marketing roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 79 Marketing roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Sales
 
@@ -458,7 +458,7 @@ Experience an advanced career journey with us! 🚀
 | Travelers | Investment Analyst Development Program | MN - St. Paul | 1 day ago | [Apply](<https://travelers.wd5.myworkdayjobs.com/External/job/MN---St-Paul/Investment-Analyst-Development-Program_R-52105>) |
 | BMO | Personal Banking Associate | Toronto, ON, CAN | 1 day ago | [Apply](<https://bmo.wd3.myworkdayjobs.com/External/job/Toronto-ON-CAN/Personal-Banking-Associate_R260029729>) |
 
-**[View all 316 Accounting and Finance roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 317 Accounting and Finance roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Consulting
 
@@ -470,14 +470,14 @@ Experience an advanced career journey with us! 🚀
 | iCapital | Business Solutions Consultant II - Associate | Salt Lake City, Utah, United States | Today | [Apply](<https://job-boards.greenhouse.io/icapitalnetwork/jobs/8917667002>) |
 | iCapital | Business Solutions Consultant II - Associate | Colorado Springs, Colorado, United States | Today | [Apply](<https://job-boards.greenhouse.io/icapitalnetwork/jobs/8917663002>) |
 | Konrad | Associate Consultant | New York | Today | [Apply](<https://www.konrad.com/careers/job/8044443003?gh_jid=8044443003>) |
-| Solar Energy Partners LLC | Energy Consultant I | Atlanta, GA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=eaaf1c61e3da5182>) |
 | Accenture | Junior procurement Analyst with French/ Consulting Hub | — | 1 day ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Cluj-Napoca/Procurement-Analyst---Consulting-Hub_R00313779>) |
 | State of Florida | GOVERNMENT OPERATIONS CONSULTANT II - 37001403 | TALLAHASSEE, FL, United States | 1 day ago | [Apply](<https://jobs.myflorida.com/job/TALLAHASSEE-GOVERNMENT-OPERATIONS-CONSULTANT-II-37001403-FL-32399/1443747800/>) |
 | State of Florida | GOVERNMENT OPERATIONS CONSULTANT I - 42005978 1 | SOUTHPORT, FL, United States | 1 day ago | [Apply](<https://jobs.myflorida.com/job/SOUTHPORT-GOVERNMENT-OPERATIONS-CONSULTANT-I-42005978-1-FL-32409/1443723500/>) |
+| MetLife | Client Services Consultant II | Atlanta, GA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=5635874cdea137ad>) |
 | WSP | Associate Consultant, Electrical Engineering | Baltimore, MD, United States | 1 day ago | [Apply](<https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/98062>) |
 | Accenture | Junior Consultant für AI-Powered Enterprise-Netzwerke \(all genders\) | — | 1 day ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Kronberg/Junior-Consultant-fr-AI-Powered-Enterprise-Netzwerke--all-genders-_R00353632>) |
 
-**[View all 135 Consulting roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 136 Consulting roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Human Resources
 
@@ -491,12 +491,12 @@ Experience an advanced career journey with us! 🚀
 | Simpson Thacher &amp; Bartlett LLP | Assistant, Legal Recruiting &amp; Associate Life | Washington, DC | 1 day ago | [Apply](<https://stblaw.wd1.myworkdayjobs.com/careers/job/Washington-DC/Assistant--Legal-Recruiting---Associate-Life_R-2026-1084>) |
 | Washington University in St. Louis | I-9 Associate \(Hybrid\) - HR Operations | St. Louis, MO | 1 day ago | [Apply](<https://wustl.wd1.myworkdayjobs.com/External/job/St-Louis-MO/I-9-Associate--Hybrid----HR-Operations_JR98294>) |
 | Texas A&amp;M University System | Human Resources Generalist II | College Station, TX | 1 day ago | [Apply](<https://tamus.wd1.myworkdayjobs.com/system-wide_external/job/College-Station-TX/Human-Resources-Generalist-II_R-098304>) |
-| Thomas Jefferson University &amp; Jefferson Health | Human Resources Contact Center Associate - Jefferson Health | Philadelphia, PA, US | 1 day ago | [Apply](<https://www.indeed.com/viewjob?jk=c1976c26868d96ef>) |
 | Rubrik | Payroll Industrial Trainee | KA, IN | 1 day ago | [Apply](<https://in.indeed.com/viewjob?jk=5944f25854a31777>) |
 | Guidehouse | Junior Officer HR - Talent Acquisition | IN - Hyderabad | 1 day ago | [Apply](<https://guidehouse.wd1.myworkdayjobs.com/External/job/IN---Hyderabad/Junior-Officer-HR---Talent-Acquisition_44661>) |
 | Jefferson Health | Human Resources Contact Center Associate - Jefferson Health | Philadelphia, PA | 1 day ago | [Apply](<https://jeffersonhealth.wd5.myworkdayjobs.com/ThomasJeffersonExternal/job/Philadelphia-PA/Human-Resources-Contact-Center-Associate---Jefferson-Health_REQ-0039665>) |
+| Accenture | Recruiter Development Program – Recruiting Analyst | — | 1 day ago | [Apply](<https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Charlotte-1120-S-Tryon-St-Corp/Recruiter-Development-Program---Recruiting-Analyst_R00365969>) |
 
-**[View all 79 Human Resources roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 75 Human Resources roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Legal and Compliance
 
@@ -528,13 +528,13 @@ Experience an advanced career journey with us! 🚀
 | Amada | Customer Service Representative II - Machinery Parts | High Point, NC, United States | Today | [Apply](<https://recruiting.ultipro.com/AMA1000AMAI/JobBoard/5e5a1f03-7baa-4f11-f6e9-efaa3e3bd82e/OpportunityDetail?opportunityId=6ab36e97-c12a-4234-91ae-ec3acc312d3f>) |
 | UNICO Group | Client Services Specialist I | Lincoln, NE, USA | Today | [Apply](<https://recruiting.paylocity.com/Recruiting/Jobs/Details/4323616>) |
 | First Citizens Bank | Business Support Specialist I | Phoenix, Arizona | Today | [Apply](<https://jobs.firstcitizens.com/jobs/35986>) |
+| Intelerad | System Support Analyst I \(Shift hours: Mon-Fri 2pm-1030pm Eastern time\) | Remote, UNITED STATES, United States | Today | [Apply](<https://jobs.smartrecruiters.com/Intelerad/744000157855019>) |
 | Affirm | Implementation Specialist I | Remote US | Today | [Apply](<https://job-boards.greenhouse.io/affirm/jobs/8040794003>) |
 | Westinghouse | Electrical Technician II - Field Service &amp; Customer Support | Windsor, CT, United States | 1 day ago | [Apply](<https://careers.westinghousenuclear.com/job/Windsor-Electrical-Technician-II-Field-Service-&-Customer-Support-CT-06095/1405477800/>) |
 | Sherwin-Williams | Customer Service Associate - Automotive Finishes | Peoria, IL, United States | 1 day ago | [Apply](<https://ejhp.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/job/2621405>) |
 | Estes | Representative I \(Remote; 11am - 8pm EST\), Customer Care | Richmond, VA, United States | 1 day ago | [Apply](<https://ecwr.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/work4estes/job/16510>) |
-| Lowe's | Customer Service Associate | Abilene, TX \(N Abilene\) 2719 | 1 day ago | [Apply](<https://lowes.wd5.myworkdayjobs.com/LWS_External_CS/job/Abilene-TX-N-Abilene-2719/Customer-Service-Associate_JR-02645028>) |
 
-**[View all 145 Customer Service and Support roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 147 Customer Service and Support roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Supply Chain
 
@@ -572,7 +572,7 @@ Experience an advanced career journey with us! 🚀
 | Emory University | RN, Chemotherapy Infusion, Winship Clifton Campus, 7:30am-6pm | Atlanta, Georgia | Today | [Apply](<https://careers.emory.edu/jobs/174711>) |
 | Emory University | LPN, Hematology / Medical Oncology, Emory Winship Clifton Campus, 7:30am-4pm | Atlanta, Georgia | Today | [Apply](<https://careers.emory.edu/jobs/175062>) |
 
-**[View all 571 Healthcare roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 568 Healthcare roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Education and Training
 
@@ -589,9 +589,9 @@ Experience an advanced career journey with us! 🚀
 | University of Toronto | Sessional Lecturer - ENGB26H3 - Inferno - Winter 2027 | Toronto, ON, Canada | 4 days ago | [Apply](<https://jobs.utoronto.ca/job/Toronto-Sessional-Lecturer-ENGB26H3-Inferno-Winter-2027-ON/607306117/>) |
 | Toronto Metropolitan University | Contract Lecturer - Unit 1 - CPS831/CP8202 - Software Engineering II | Toronto, ON, CA | 4 days ago | [Apply](<https://ca.indeed.com/viewjob?jk=5a446fe555c5f32d>) |
 | University of Regina | Sessional Lecturer BUS 384 001 \(Introduction to Taxation\) - Winter 2027 | Regina, SK, CA | 4 days ago | [Apply](<https://ca.indeed.com/viewjob?jk=bec73bd7342f5afa>) |
-| University of Regina | Sessional Lecturer BUS 303 001 \(Small Business Start-Up and Management\) - Winter 2027 | Regina, SK, CA | 4 days ago | [Apply](<https://ca.indeed.com/viewjob?jk=30370696d2bc2fd4>) |
+| University of Regina | Sessional Lecturer BUS 307 003 \(Business Law\) - Winter 2027 | Regina, SK, CA | 4 days ago | [Apply](<https://ca.indeed.com/viewjob?jk=e755e22d35034247>) |
 
-**[View all 42 Education and Training roles on the live board](https://jobs.riteshrana.engineer/)**
+**[View all 43 Education and Training roles on the live board](https://jobs.riteshrana.engineer/)**
 
 ## Public Sector and Government
 
@@ -657,7 +657,7 @@ Experience an advanced career journey with us! 🚀
 | Coeur Mining, Inc. | MAPTS Program Trainee | Juneau, AK, US | Today | [Apply](<https://www.indeed.com/viewjob?jk=15f2c36edb40e5a2>) |
 | Accenture | Trust &amp; Safety New Associate – Malaysian Arabic Support / Fresh Grads Welcome | — | Today | [Apply](<https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Kuala-Lumpur/Trust---Safety-New-Associate---Malaysian-Arabic-Support---Fresh-Grads-Welcome_R00365776>) |
 | AbbVie | Scientist II, Biologics Drug Product Development | Irvine, CA, United States | Today | [Apply](<https://jobs.smartrecruiters.com/AbbVie/3743990016417906>) |
-| Inadev | Junior Database Administrator | Reston, VA, USA | Today | [Apply](<https://recruiting.paylocity.com/Recruiting/Jobs/Details/4614004>) |
+| Wynn Resorts | Coordinator II - Banquet Setup \(Steady Extra\) | Las Vegas, NV, United States | Today | [Apply](<https://jobs.smartrecruiters.com/WynnResorts/744000157875599>) |
 
 **[View all 602 Other roles on the live board](https://jobs.riteshrana.engineer/)**
 
@@ -824,4 +824,4 @@ The site's [Terms of Service](https://jobs.riteshrana.engineer/terms/), [Privacy
 
 **Star this repository** to stay updated with the latest new grad opportunities.
 
-*Last updated: 2026-10-27 08:03:55 UTC*
+*Last updated: 2026-10-27 08:24:50 UTC*
