@@ -1,81 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-10-27T23:47:55.576902+00:00",
+    "last_updated": "2026-10-28T05:31:15.116744+00:00",
     "total_snapshots": 55,
     "date_range": {
-      "start": "2026-07-29",
-      "end": "2026-10-27"
+      "start": "2026-07-30",
+      "end": "2026-10-28"
     }
   },
   "snapshots": [
-    {
-      "date": "2026-07-29",
-      "total_jobs": 1470,
-      "categories": {
-        "data_ml": 139,
-        "software_engineering": 891,
-        "infrastructure_sre": 133,
-        "security": 74,
-        "data_engineering": 28,
-        "product_management": 4,
-        "frontend": 11,
-        "other": 131,
-        "backend": 29,
-        "mobile": 9,
-        "hardware": 16,
-        "quant_finance": 5
-      },
-      "tiers": {
-        "other": 628,
-        "unicorn": 692,
-        "faang_plus": 150
-      },
-      "top_companies": [
-        {
-          "company": "SpaceX",
-          "jobs": 237
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 212
-        },
-        {
-          "company": "OpenAI",
-          "jobs": 40
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 39
-        },
-        {
-          "company": "Waymo",
-          "jobs": 38
-        },
-        {
-          "company": "Boeing",
-          "jobs": 34
-        },
-        {
-          "company": "Stripe",
-          "jobs": 24
-        },
-        {
-          "company": "xAI",
-          "jobs": 23
-        },
-        {
-          "company": "Leidos",
-          "jobs": 23
-        },
-        {
-          "company": "Scale AI",
-          "jobs": 23
-        }
-      ],
-      "unique_companies": 234,
-      "avg_jobs_per_company": 6.28,
-      "timestamp": "2026-07-29T23:21:44.988843+00:00"
-    },
     {
       "date": "2026-07-30",
       "total_jobs": 1454,
@@ -4335,6 +4267,92 @@
       "unique_companies": 963,
       "avg_jobs_per_company": 9.01,
       "timestamp": "2026-10-27T23:47:55.576902+00:00"
+    },
+    {
+      "date": "2026-10-28",
+      "total_jobs": 8729,
+      "categories": {
+        "software_engineering": 2066,
+        "infrastructure_sre": 453,
+        "customer_support": 174,
+        "data_ml": 330,
+        "security": 230,
+        "sales": 823,
+        "frontend": 32,
+        "backend": 44,
+        "design": 47,
+        "business_analyst": 337,
+        "hardware": 240,
+        "engineering": 1115,
+        "supply_chain": 289,
+        "accounting_finance": 362,
+        "data_engineering": 203,
+        "management": 137,
+        "human_resources": 80,
+        "project_management": 82,
+        "other": 582,
+        "marketing": 80,
+        "healthcare": 641,
+        "arts_entertainment": 4,
+        "public_sector": 25,
+        "product_management": 25,
+        "legal": 54,
+        "consulting": 147,
+        "quant_finance": 26,
+        "education": 43,
+        "mobile": 20,
+        "data_analyst": 38
+      },
+      "tiers": {
+        "other": 6992,
+        "unicorn": 818,
+        "faang_plus": 919
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 482
+        },
+        {
+          "company": "Verizon",
+          "jobs": 214
+        },
+        {
+          "company": "T-Mobile",
+          "jobs": 191
+        },
+        {
+          "company": "Raytheon",
+          "jobs": 149
+        },
+        {
+          "company": "WSP",
+          "jobs": 137
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 134
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 123
+        },
+        {
+          "company": "Leidos",
+          "jobs": 117
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 114
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 107
+        }
+      ],
+      "unique_companies": 961,
+      "avg_jobs_per_company": 9.08,
+      "timestamp": "2026-10-28T05:31:15.116744+00:00"
     }
   ]
 }
