@@ -1,81 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-10-28T21:59:08.626375+00:00",
+    "last_updated": "2026-10-29T01:49:57.255560+00:00",
     "total_snapshots": 55,
     "date_range": {
-      "start": "2026-07-30",
-      "end": "2026-10-28"
+      "start": "2026-07-31",
+      "end": "2026-10-29"
     }
   },
   "snapshots": [
-    {
-      "date": "2026-07-30",
-      "total_jobs": 1454,
-      "categories": {
-        "software_engineering": 894,
-        "data_engineering": 33,
-        "other": 113,
-        "infrastructure_sre": 124,
-        "data_ml": 141,
-        "security": 78,
-        "frontend": 10,
-        "hardware": 15,
-        "backend": 30,
-        "product_management": 3,
-        "quant_finance": 5,
-        "mobile": 8
-      },
-      "tiers": {
-        "unicorn": 700,
-        "other": 627,
-        "faang_plus": 127
-      },
-      "top_companies": [
-        {
-          "company": "SpaceX",
-          "jobs": 235
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 212
-        },
-        {
-          "company": "OpenAI",
-          "jobs": 45
-        },
-        {
-          "company": "Waymo",
-          "jobs": 37
-        },
-        {
-          "company": "Boeing",
-          "jobs": 34
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 28
-        },
-        {
-          "company": "xAI",
-          "jobs": 24
-        },
-        {
-          "company": "Stripe",
-          "jobs": 24
-        },
-        {
-          "company": "Scale AI",
-          "jobs": 23
-        },
-        {
-          "company": "Affirm",
-          "jobs": 22
-        }
-      ],
-      "unique_companies": 226,
-      "avg_jobs_per_company": 6.43,
-      "timestamp": "2026-07-30T23:41:28.861607+00:00"
-    },
     {
       "date": "2026-07-31",
       "total_jobs": 1495,
@@ -4353,6 +4285,92 @@
       "unique_companies": 1025,
       "avg_jobs_per_company": 8.66,
       "timestamp": "2026-10-28T21:59:08.626375+00:00"
+    },
+    {
+      "date": "2026-10-29",
+      "total_jobs": 8878,
+      "categories": {
+        "software_engineering": 2096,
+        "infrastructure_sre": 456,
+        "customer_support": 171,
+        "data_ml": 346,
+        "security": 241,
+        "sales": 788,
+        "frontend": 32,
+        "backend": 43,
+        "design": 53,
+        "business_analyst": 339,
+        "hardware": 240,
+        "engineering": 1151,
+        "supply_chain": 294,
+        "accounting_finance": 365,
+        "data_engineering": 208,
+        "management": 137,
+        "human_resources": 115,
+        "project_management": 76,
+        "other": 593,
+        "marketing": 90,
+        "healthcare": 647,
+        "arts_entertainment": 5,
+        "public_sector": 24,
+        "product_management": 25,
+        "legal": 53,
+        "consulting": 151,
+        "quant_finance": 26,
+        "education": 47,
+        "mobile": 22,
+        "data_analyst": 44
+      },
+      "tiers": {
+        "other": 7080,
+        "unicorn": 845,
+        "faang_plus": 953
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 483
+        },
+        {
+          "company": "Verizon",
+          "jobs": 214
+        },
+        {
+          "company": "T-Mobile",
+          "jobs": 191
+        },
+        {
+          "company": "Raytheon",
+          "jobs": 141
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 137
+        },
+        {
+          "company": "WSP",
+          "jobs": 129
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 120
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 117
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 111
+        },
+        {
+          "company": "Leidos",
+          "jobs": 108
+        }
+      ],
+      "unique_companies": 1013,
+      "avg_jobs_per_company": 8.76,
+      "timestamp": "2026-10-29T01:49:57.255560+00:00"
     }
   ]
 }
