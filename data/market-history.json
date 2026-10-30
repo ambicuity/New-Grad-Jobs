@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-10-30T00:04:51.948529+00:00",
+    "last_updated": "2026-10-30T00:19:16.042223+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-08-01",
@@ -4306,43 +4306,43 @@
     },
     {
       "date": "2026-10-30",
-      "total_jobs": 8638,
+      "total_jobs": 8628,
       "categories": {
-        "software_engineering": 2066,
-        "infrastructure_sre": 457,
+        "software_engineering": 2054,
+        "infrastructure_sre": 454,
         "customer_support": 181,
-        "data_ml": 334,
-        "security": 235,
-        "sales": 615,
+        "data_ml": 336,
+        "security": 236,
+        "sales": 609,
         "frontend": 33,
-        "backend": 41,
-        "design": 51,
-        "business_analyst": 324,
+        "backend": 42,
+        "design": 52,
+        "business_analyst": 328,
         "hardware": 242,
         "engineering": 1150,
-        "supply_chain": 298,
-        "accounting_finance": 372,
+        "supply_chain": 300,
+        "accounting_finance": 369,
         "data_engineering": 203,
-        "management": 131,
+        "management": 130,
         "human_resources": 120,
-        "project_management": 74,
+        "project_management": 78,
         "other": 592,
-        "marketing": 82,
-        "healthcare": 652,
+        "marketing": 88,
+        "healthcare": 649,
         "public_sector": 22,
-        "product_management": 27,
-        "legal": 53,
-        "consulting": 144,
+        "product_management": 26,
+        "legal": 55,
+        "consulting": 143,
         "quant_finance": 24,
-        "education": 48,
+        "education": 46,
         "mobile": 21,
-        "data_analyst": 41,
+        "data_analyst": 40,
         "arts_entertainment": 5
       },
       "tiers": {
-        "other": 6885,
+        "other": 6877,
         "unicorn": 851,
-        "faang_plus": 902
+        "faang_plus": 900
       },
       "top_companies": [
         {
@@ -4382,13 +4382,13 @@
           "jobs": 111
         },
         {
-          "company": "SpaceX",
-          "jobs": 106
+          "company": "Boeing",
+          "jobs": 107
         }
       ],
-      "unique_companies": 973,
-      "avg_jobs_per_company": 8.88,
-      "timestamp": "2026-10-30T00:04:51.948529+00:00"
+      "unique_companies": 986,
+      "avg_jobs_per_company": 8.75,
+      "timestamp": "2026-10-30T00:19:16.042223+00:00"
     }
   ]
 }
