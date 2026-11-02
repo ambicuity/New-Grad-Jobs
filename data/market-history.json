@@ -1,81 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-11-01T20:50:56.269224+00:00",
+    "last_updated": "2026-11-02T00:40:15.090556+00:00",
     "total_snapshots": 55,
     "date_range": {
-      "start": "2026-08-03",
-      "end": "2026-11-01"
+      "start": "2026-08-04",
+      "end": "2026-11-02"
     }
   },
   "snapshots": [
-    {
-      "date": "2026-08-03",
-      "total_jobs": 1491,
-      "categories": {
-        "infrastructure_sre": 132,
-        "software_engineering": 907,
-        "data_engineering": 26,
-        "security": 79,
-        "product_management": 3,
-        "data_ml": 144,
-        "other": 118,
-        "mobile": 8,
-        "backend": 37,
-        "hardware": 21,
-        "quant_finance": 5,
-        "frontend": 11
-      },
-      "tiers": {
-        "other": 641,
-        "unicorn": 711,
-        "faang_plus": 139
-      },
-      "top_companies": [
-        {
-          "company": "SpaceX",
-          "jobs": 244
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 213
-        },
-        {
-          "company": "OpenAI",
-          "jobs": 45
-        },
-        {
-          "company": "Waymo",
-          "jobs": 34
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 30
-        },
-        {
-          "company": "xAI",
-          "jobs": 26
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 24
-        },
-        {
-          "company": "Leidos",
-          "jobs": 24
-        },
-        {
-          "company": "Scale AI",
-          "jobs": 24
-        },
-        {
-          "company": "Stripe",
-          "jobs": 22
-        }
-      ],
-      "unique_companies": 229,
-      "avg_jobs_per_company": 6.51,
-      "timestamp": "2026-08-03T23:57:32.200235+00:00"
-    },
     {
       "date": "2026-08-04",
       "total_jobs": 1545,
@@ -4425,6 +4357,92 @@
       "unique_companies": 967,
       "avg_jobs_per_company": 8.68,
       "timestamp": "2026-11-01T20:50:56.269224+00:00"
+    },
+    {
+      "date": "2026-11-02",
+      "total_jobs": 8352,
+      "categories": {
+        "software_engineering": 1986,
+        "sales": 610,
+        "infrastructure_sre": 441,
+        "management": 121,
+        "customer_support": 169,
+        "data_ml": 314,
+        "security": 217,
+        "frontend": 32,
+        "backend": 43,
+        "design": 46,
+        "business_analyst": 324,
+        "hardware": 225,
+        "engineering": 1079,
+        "supply_chain": 285,
+        "accounting_finance": 349,
+        "data_engineering": 191,
+        "human_resources": 133,
+        "project_management": 64,
+        "other": 589,
+        "marketing": 79,
+        "data_analyst": 41,
+        "healthcare": 665,
+        "public_sector": 22,
+        "legal": 49,
+        "quant_finance": 24,
+        "consulting": 150,
+        "education": 53,
+        "mobile": 22,
+        "product_management": 25,
+        "arts_entertainment": 4
+      },
+      "tiers": {
+        "other": 6698,
+        "unicorn": 830,
+        "faang_plus": 824
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 481
+        },
+        {
+          "company": "Verizon",
+          "jobs": 208
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 144
+        },
+        {
+          "company": "Raytheon",
+          "jobs": 124
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 118
+        },
+        {
+          "company": "WSP",
+          "jobs": 118
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 115
+        },
+        {
+          "company": "Leidos",
+          "jobs": 113
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 107
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 102
+        }
+      ],
+      "unique_companies": 954,
+      "avg_jobs_per_company": 8.75,
+      "timestamp": "2026-11-02T00:40:15.090556+00:00"
     }
   ]
 }
