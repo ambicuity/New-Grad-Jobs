@@ -1,81 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-11-05T23:46:51.108608+00:00",
+    "last_updated": "2026-11-06T03:41:46.921283+00:00",
     "total_snapshots": 55,
     "date_range": {
-      "start": "2026-08-07",
-      "end": "2026-11-05"
+      "start": "2026-08-08",
+      "end": "2026-11-06"
     }
   },
   "snapshots": [
-    {
-      "date": "2026-08-07",
-      "total_jobs": 1516,
-      "categories": {
-        "software_engineering": 928,
-        "infrastructure_sre": 141,
-        "security": 75,
-        "data_ml": 153,
-        "other": 127,
-        "frontend": 7,
-        "data_engineering": 21,
-        "hardware": 13,
-        "quant_finance": 6,
-        "mobile": 9,
-        "backend": 34,
-        "product_management": 2
-      },
-      "tiers": {
-        "unicorn": 703,
-        "other": 637,
-        "faang_plus": 176
-      },
-      "top_companies": [
-        {
-          "company": "SpaceX",
-          "jobs": 239
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 211
-        },
-        {
-          "company": "OpenAI",
-          "jobs": 47
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 39
-        },
-        {
-          "company": "Waymo",
-          "jobs": 36
-        },
-        {
-          "company": "Boeing",
-          "jobs": 32
-        },
-        {
-          "company": "xAI",
-          "jobs": 29
-        },
-        {
-          "company": "Stripe",
-          "jobs": 25
-        },
-        {
-          "company": "Twilio",
-          "jobs": 24
-        },
-        {
-          "company": "Affirm",
-          "jobs": 24
-        }
-      ],
-      "unique_companies": 233,
-      "avg_jobs_per_company": 6.51,
-      "timestamp": "2026-08-07T23:50:32.949753+00:00"
-    },
     {
       "date": "2026-08-08",
       "total_jobs": 1493,
@@ -4497,6 +4429,92 @@
       "unique_companies": 985,
       "avg_jobs_per_company": 7.95,
       "timestamp": "2026-11-05T23:46:51.108608+00:00"
+    },
+    {
+      "date": "2026-11-06",
+      "total_jobs": 8338,
+      "categories": {
+        "software_engineering": 1936,
+        "sales": 723,
+        "infrastructure_sre": 444,
+        "customer_support": 176,
+        "data_ml": 304,
+        "security": 212,
+        "frontend": 28,
+        "backend": 41,
+        "design": 47,
+        "business_analyst": 323,
+        "hardware": 236,
+        "engineering": 1128,
+        "supply_chain": 257,
+        "accounting_finance": 323,
+        "data_engineering": 194,
+        "human_resources": 132,
+        "legal": 58,
+        "project_management": 62,
+        "other": 540,
+        "marketing": 74,
+        "management": 124,
+        "healthcare": 653,
+        "data_analyst": 36,
+        "public_sector": 26,
+        "quant_finance": 21,
+        "consulting": 144,
+        "education": 52,
+        "mobile": 23,
+        "product_management": 19,
+        "arts_entertainment": 2
+      },
+      "tiers": {
+        "other": 6650,
+        "unicorn": 827,
+        "faang_plus": 861
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 483
+        },
+        {
+          "company": "Verizon",
+          "jobs": 211
+        },
+        {
+          "company": "T-Mobile",
+          "jobs": 188
+        },
+        {
+          "company": "Raytheon",
+          "jobs": 149
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 141
+        },
+        {
+          "company": "Boeing",
+          "jobs": 133
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 128
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 123
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 121
+        },
+        {
+          "company": "WSP",
+          "jobs": 120
+        }
+      ],
+      "unique_companies": 987,
+      "avg_jobs_per_company": 8.45,
+      "timestamp": "2026-11-06T03:41:46.921283+00:00"
     }
   ]
 }
