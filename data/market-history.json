@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-07T12:55:37.916061+00:00",
+    "last_updated": "2026-11-07T16:35:06.251527+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-08-09",
@@ -4450,43 +4450,43 @@
     },
     {
       "date": "2026-11-07",
-      "total_jobs": 8763,
+      "total_jobs": 8717,
       "categories": {
-        "software_engineering": 2011,
-        "sales": 789,
-        "infrastructure_sre": 445,
+        "software_engineering": 2010,
+        "sales": 792,
+        "infrastructure_sre": 451,
         "customer_support": 184,
-        "data_ml": 317,
-        "security": 222,
-        "frontend": 28,
-        "backend": 43,
-        "design": 51,
-        "business_analyst": 324,
-        "hardware": 238,
-        "engineering": 1153,
+        "data_ml": 320,
+        "security": 221,
+        "backend": 42,
+        "frontend": 27,
+        "design": 52,
+        "business_analyst": 326,
+        "hardware": 237,
+        "engineering": 1156,
         "supply_chain": 271,
-        "accounting_finance": 381,
-        "marketing": 91,
-        "data_engineering": 215,
-        "human_resources": 144,
-        "legal": 63,
-        "project_management": 69,
-        "other": 562,
-        "management": 134,
-        "healthcare": 692,
-        "data_analyst": 35,
-        "public_sector": 25,
-        "quant_finance": 23,
+        "accounting_finance": 384,
+        "marketing": 74,
+        "data_engineering": 214,
+        "human_resources": 136,
+        "legal": 71,
+        "project_management": 70,
+        "other": 561,
+        "management": 131,
+        "healthcare": 658,
+        "data_analyst": 39,
+        "public_sector": 24,
+        "quant_finance": 21,
         "consulting": 150,
-        "education": 58,
+        "education": 50,
         "mobile": 23,
         "product_management": 20,
         "arts_entertainment": 2
       },
       "tiers": {
-        "other": 7010,
-        "unicorn": 855,
-        "faang_plus": 898
+        "other": 6973,
+        "unicorn": 853,
+        "faang_plus": 891
       },
       "top_companies": [
         {
@@ -4503,7 +4503,7 @@
         },
         {
           "company": "State of Florida",
-          "jobs": 151
+          "jobs": 152
         },
         {
           "company": "Raytheon",
@@ -4526,13 +4526,13 @@
           "jobs": 121
         },
         {
-          "company": "Leidos",
-          "jobs": 119
+          "company": "WSP",
+          "jobs": 118
         }
       ],
-      "unique_companies": 1005,
-      "avg_jobs_per_company": 8.72,
-      "timestamp": "2026-11-07T12:55:37.916061+00:00"
+      "unique_companies": 990,
+      "avg_jobs_per_company": 8.81,
+      "timestamp": "2026-11-07T16:35:06.251527+00:00"
     }
   ]
 }
