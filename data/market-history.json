@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-10T03:30:05.683065+00:00",
+    "last_updated": "2026-11-10T04:15:44.042667+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-08-12",
@@ -4504,43 +4504,43 @@
     },
     {
       "date": "2026-11-10",
-      "total_jobs": 8693,
+      "total_jobs": 8708,
       "categories": {
-        "software_engineering": 1990,
-        "sales": 785,
-        "infrastructure_sre": 447,
-        "customer_support": 189,
-        "data_ml": 298,
+        "software_engineering": 1992,
+        "sales": 788,
+        "infrastructure_sre": 446,
+        "customer_support": 188,
+        "data_ml": 301,
         "security": 218,
         "backend": 57,
         "frontend": 26,
-        "design": 45,
-        "business_analyst": 315,
-        "hardware": 244,
-        "engineering": 1142,
-        "supply_chain": 256,
-        "accounting_finance": 392,
-        "marketing": 84,
-        "data_engineering": 216,
+        "design": 46,
+        "business_analyst": 316,
+        "hardware": 245,
+        "engineering": 1143,
+        "supply_chain": 258,
+        "accounting_finance": 391,
+        "marketing": 86,
+        "data_engineering": 214,
         "human_resources": 147,
-        "legal": 79,
+        "legal": 80,
         "project_management": 69,
-        "other": 568,
+        "other": 569,
         "management": 136,
         "healthcare": 664,
-        "data_analyst": 32,
-        "quant_finance": 20,
+        "data_analyst": 31,
+        "quant_finance": 21,
         "consulting": 154,
-        "education": 46,
+        "education": 47,
         "public_sector": 25,
         "mobile": 23,
-        "product_management": 23,
+        "product_management": 24,
         "arts_entertainment": 3
       },
       "tiers": {
-        "other": 6943,
+        "other": 6948,
         "unicorn": 835,
-        "faang_plus": 915
+        "faang_plus": 925
       },
       "top_companies": [
         {
@@ -4553,7 +4553,7 @@
         },
         {
           "company": "T-Mobile",
-          "jobs": 182
+          "jobs": 181
         },
         {
           "company": "State of Florida",
@@ -4565,7 +4565,7 @@
         },
         {
           "company": "Boeing",
-          "jobs": 126
+          "jobs": 127
         },
         {
           "company": "Mount Sinai Health System",
@@ -4584,9 +4584,9 @@
           "jobs": 118
         }
       ],
-      "unique_companies": 1014,
-      "avg_jobs_per_company": 8.57,
-      "timestamp": "2026-11-10T03:30:05.683065+00:00"
+      "unique_companies": 1019,
+      "avg_jobs_per_company": 8.55,
+      "timestamp": "2026-11-10T04:15:44.042667+00:00"
     }
   ]
 }
