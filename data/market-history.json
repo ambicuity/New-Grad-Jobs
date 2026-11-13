@@ -1,81 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-11-12T23:48:16.194762+00:00",
+    "last_updated": "2026-11-13T00:14:16.234313+00:00",
     "total_snapshots": 55,
     "date_range": {
-      "start": "2026-08-14",
-      "end": "2026-11-12"
+      "start": "2026-08-15",
+      "end": "2026-11-13"
     }
   },
   "snapshots": [
-    {
-      "date": "2026-08-14",
-      "total_jobs": 1767,
-      "categories": {
-        "software_engineering": 1009,
-        "data_ml": 183,
-        "other": 199,
-        "security": 74,
-        "infrastructure_sre": 153,
-        "frontend": 10,
-        "backend": 33,
-        "hardware": 36,
-        "data_engineering": 42,
-        "product_management": 3,
-        "quant_finance": 7,
-        "mobile": 18
-      },
-      "tiers": {
-        "unicorn": 694,
-        "other": 880,
-        "faang_plus": 193
-      },
-      "top_companies": [
-        {
-          "company": "SpaceX",
-          "jobs": 240
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 206
-        },
-        {
-          "company": "OpenAI",
-          "jobs": 44
-        },
-        {
-          "company": "Waymo",
-          "jobs": 33
-        },
-        {
-          "company": "Point72",
-          "jobs": 33
-        },
-        {
-          "company": "xAI",
-          "jobs": 31
-        },
-        {
-          "company": "Leidos",
-          "jobs": 28
-        },
-        {
-          "company": "Affirm",
-          "jobs": 24
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 24
-        },
-        {
-          "company": "DRW",
-          "jobs": 24
-        }
-      ],
-      "unique_companies": 288,
-      "avg_jobs_per_company": 6.14,
-      "timestamp": "2026-08-14T23:36:24.967460+00:00"
-    },
     {
       "date": "2026-08-15",
       "total_jobs": 1772,
@@ -4623,6 +4555,92 @@
       "unique_companies": 1013,
       "avg_jobs_per_company": 8.42,
       "timestamp": "2026-11-12T23:48:16.194762+00:00"
+    },
+    {
+      "date": "2026-11-13",
+      "total_jobs": 8483,
+      "categories": {
+        "software_engineering": 1995,
+        "sales": 630,
+        "infrastructure_sre": 439,
+        "customer_support": 195,
+        "data_ml": 292,
+        "security": 221,
+        "backend": 57,
+        "frontend": 39,
+        "design": 46,
+        "data_engineering": 219,
+        "accounting_finance": 385,
+        "human_resources": 131,
+        "legal": 73,
+        "marketing": 80,
+        "project_management": 79,
+        "other": 583,
+        "supply_chain": 260,
+        "management": 140,
+        "healthcare": 625,
+        "data_analyst": 37,
+        "hardware": 238,
+        "engineering": 1114,
+        "quant_finance": 17,
+        "business_analyst": 326,
+        "consulting": 146,
+        "education": 44,
+        "public_sector": 26,
+        "mobile": 20,
+        "product_management": 24,
+        "arts_entertainment": 2
+      },
+      "tiers": {
+        "other": 6747,
+        "unicorn": 839,
+        "faang_plus": 897
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 462
+        },
+        {
+          "company": "Verizon",
+          "jobs": 205
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 146
+        },
+        {
+          "company": "Boeing",
+          "jobs": 143
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 134
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 122
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 122
+        },
+        {
+          "company": "Leidos",
+          "jobs": 120
+        },
+        {
+          "company": "Raytheon",
+          "jobs": 115
+        },
+        {
+          "company": "WSP",
+          "jobs": 102
+        }
+      ],
+      "unique_companies": 1010,
+      "avg_jobs_per_company": 8.4,
+      "timestamp": "2026-11-13T00:14:16.234313+00:00"
     }
   ]
 }
