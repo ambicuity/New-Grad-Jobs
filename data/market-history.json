@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-14T15:13:25.809406+00:00",
+    "last_updated": "2026-11-14T16:07:06.743482+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-08-16",
@@ -4576,43 +4576,43 @@
     },
     {
       "date": "2026-11-14",
-      "total_jobs": 6604,
+      "total_jobs": 7173,
       "categories": {
-        "software_engineering": 1582,
-        "sales": 472,
-        "infrastructure_sre": 360,
-        "customer_support": 157,
-        "data_ml": 247,
-        "security": 197,
-        "backend": 50,
+        "software_engineering": 1688,
+        "sales": 544,
+        "infrastructure_sre": 390,
+        "customer_support": 164,
+        "data_ml": 262,
+        "security": 213,
+        "backend": 49,
         "design": 40,
         "mobile": 20,
-        "business_analyst": 246,
-        "accounting_finance": 277,
-        "hardware": 156,
-        "engineering": 785,
-        "supply_chain": 193,
-        "marketing": 69,
-        "data_engineering": 186,
-        "human_resources": 124,
-        "legal": 55,
-        "project_management": 52,
-        "other": 439,
-        "management": 114,
-        "healthcare": 531,
-        "data_analyst": 35,
-        "frontend": 26,
-        "quant_finance": 14,
-        "consulting": 108,
-        "education": 29,
-        "public_sector": 24,
-        "product_management": 14,
+        "business_analyst": 303,
+        "accounting_finance": 341,
+        "hardware": 167,
+        "engineering": 814,
+        "supply_chain": 207,
+        "marketing": 68,
+        "data_engineering": 192,
+        "human_resources": 126,
+        "legal": 60,
+        "project_management": 73,
+        "other": 467,
+        "management": 125,
+        "healthcare": 567,
+        "data_analyst": 37,
+        "frontend": 32,
+        "quant_finance": 15,
+        "consulting": 120,
+        "education": 46,
+        "public_sector": 25,
+        "product_management": 16,
         "arts_entertainment": 2
       },
       "tiers": {
-        "other": 5495,
-        "unicorn": 783,
-        "faang_plus": 326
+        "other": 6016,
+        "unicorn": 731,
+        "faang_plus": 426
       },
       "top_companies": [
         {
@@ -4648,17 +4648,17 @@
           "jobs": 96
         },
         {
-          "company": "Duke University",
-          "jobs": 90
+          "company": "Northrop Grumman",
+          "jobs": 94
         },
         {
-          "company": "Trinzic",
-          "jobs": 75
+          "company": "Duke University",
+          "jobs": 90
         }
       ],
-      "unique_companies": 934,
-      "avg_jobs_per_company": 7.07,
-      "timestamp": "2026-11-14T15:13:25.809406+00:00"
+      "unique_companies": 959,
+      "avg_jobs_per_company": 7.48,
+      "timestamp": "2026-11-14T16:07:06.743482+00:00"
     }
   ]
 }
