@@ -1,81 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-11-13T22:02:14.721263+00:00",
+    "last_updated": "2026-11-14T02:17:18.020660+00:00",
     "total_snapshots": 55,
     "date_range": {
-      "start": "2026-08-15",
-      "end": "2026-11-13"
+      "start": "2026-08-16",
+      "end": "2026-11-14"
     }
   },
   "snapshots": [
-    {
-      "date": "2026-08-15",
-      "total_jobs": 1772,
-      "categories": {
-        "software_engineering": 1014,
-        "data_ml": 192,
-        "frontend": 10,
-        "infrastructure_sre": 159,
-        "security": 73,
-        "mobile": 19,
-        "other": 187,
-        "quant_finance": 11,
-        "hardware": 28,
-        "backend": 33,
-        "data_engineering": 43,
-        "product_management": 3
-      },
-      "tiers": {
-        "other": 889,
-        "unicorn": 690,
-        "faang_plus": 193
-      },
-      "top_companies": [
-        {
-          "company": "SpaceX",
-          "jobs": 237
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 206
-        },
-        {
-          "company": "OpenAI",
-          "jobs": 44
-        },
-        {
-          "company": "Waymo",
-          "jobs": 33
-        },
-        {
-          "company": "Point72",
-          "jobs": 33
-        },
-        {
-          "company": "xAI",
-          "jobs": 31
-        },
-        {
-          "company": "Leidos",
-          "jobs": 27
-        },
-        {
-          "company": "Affirm",
-          "jobs": 24
-        },
-        {
-          "company": "DRW",
-          "jobs": 24
-        },
-        {
-          "company": "Twilio",
-          "jobs": 23
-        }
-      ],
-      "unique_companies": 289,
-      "avg_jobs_per_company": 6.13,
-      "timestamp": "2026-08-15T23:49:12.467060+00:00"
-    },
     {
       "date": "2026-08-16",
       "total_jobs": 1775,
@@ -4641,6 +4573,92 @@
       "unique_companies": 1006,
       "avg_jobs_per_company": 8.45,
       "timestamp": "2026-11-13T22:02:14.721263+00:00"
+    },
+    {
+      "date": "2026-11-14",
+      "total_jobs": 5843,
+      "categories": {
+        "software_engineering": 1372,
+        "sales": 450,
+        "infrastructure_sre": 317,
+        "customer_support": 148,
+        "data_ml": 218,
+        "security": 175,
+        "backend": 46,
+        "design": 32,
+        "mobile": 19,
+        "business_analyst": 204,
+        "accounting_finance": 234,
+        "hardware": 140,
+        "engineering": 633,
+        "supply_chain": 172,
+        "marketing": 69,
+        "data_engineering": 173,
+        "human_resources": 112,
+        "legal": 54,
+        "project_management": 52,
+        "other": 372,
+        "management": 103,
+        "healthcare": 507,
+        "data_analyst": 30,
+        "frontend": 26,
+        "quant_finance": 14,
+        "consulting": 104,
+        "education": 26,
+        "public_sector": 25,
+        "product_management": 14,
+        "arts_entertainment": 2
+      },
+      "tiers": {
+        "other": 4961,
+        "unicorn": 728,
+        "faang_plus": 154
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 468
+        },
+        {
+          "company": "Verizon",
+          "jobs": 205
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 131
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 130
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 119
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 97
+        },
+        {
+          "company": "WSP",
+          "jobs": 96
+        },
+        {
+          "company": "Duke University",
+          "jobs": 89
+        },
+        {
+          "company": "Trinzic",
+          "jobs": 75
+        },
+        {
+          "company": "Relativity Space",
+          "jobs": 74
+        }
+      ],
+      "unique_companies": 869,
+      "avg_jobs_per_company": 6.72,
+      "timestamp": "2026-11-14T02:17:18.020660+00:00"
     }
   ]
 }
