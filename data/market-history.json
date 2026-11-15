@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-15T15:40:41.289038+00:00",
+    "last_updated": "2026-11-15T20:37:00.713303+00:00",
     "total_snapshots": 55,
     "date_range": {
       "start": "2026-08-17",
@@ -4594,43 +4594,43 @@
     },
     {
       "date": "2026-11-15",
-      "total_jobs": 8415,
+      "total_jobs": 8394,
       "categories": {
-        "software_engineering": 1915,
+        "software_engineering": 1913,
         "sales": 825,
-        "infrastructure_sre": 431,
+        "infrastructure_sre": 421,
         "customer_support": 179,
-        "data_ml": 301,
+        "data_ml": 303,
         "security": 223,
         "backend": 53,
-        "design": 46,
+        "design": 45,
         "mobile": 21,
-        "business_analyst": 329,
-        "accounting_finance": 372,
+        "business_analyst": 326,
+        "accounting_finance": 371,
         "hardware": 218,
-        "engineering": 1051,
-        "supply_chain": 251,
+        "engineering": 1047,
+        "supply_chain": 250,
         "marketing": 79,
         "data_engineering": 209,
         "human_resources": 131,
-        "legal": 67,
-        "project_management": 75,
-        "other": 563,
-        "management": 144,
-        "healthcare": 617,
-        "data_analyst": 41,
+        "legal": 68,
+        "project_management": 76,
+        "other": 562,
+        "management": 142,
+        "healthcare": 613,
+        "data_analyst": 42,
         "frontend": 35,
         "quant_finance": 17,
-        "consulting": 129,
+        "consulting": 131,
         "education": 44,
         "public_sector": 25,
-        "product_management": 22,
+        "product_management": 23,
         "arts_entertainment": 2
       },
       "tiers": {
-        "other": 6764,
-        "unicorn": 783,
-        "faang_plus": 868
+        "other": 6758,
+        "unicorn": 773,
+        "faang_plus": 863
       },
       "top_companies": [
         {
@@ -4659,7 +4659,7 @@
         },
         {
           "company": "SpaceX",
-          "jobs": 119
+          "jobs": 117
         },
         {
           "company": "Leidos",
@@ -4667,16 +4667,16 @@
         },
         {
           "company": "State of Florida",
-          "jobs": 115
+          "jobs": 114
         },
         {
           "company": "Northrop Grumman",
           "jobs": 97
         }
       ],
-      "unique_companies": 996,
+      "unique_companies": 993,
       "avg_jobs_per_company": 8.45,
-      "timestamp": "2026-11-15T15:40:41.289038+00:00"
+      "timestamp": "2026-11-15T20:37:00.713303+00:00"
     }
   ]
 }
