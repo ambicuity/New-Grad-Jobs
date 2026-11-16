@@ -1,81 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-11-15T20:37:00.713303+00:00",
+    "last_updated": "2026-11-16T00:23:20.914905+00:00",
     "total_snapshots": 55,
     "date_range": {
-      "start": "2026-08-17",
-      "end": "2026-11-15"
+      "start": "2026-08-18",
+      "end": "2026-11-16"
     }
   },
   "snapshots": [
-    {
-      "date": "2026-08-17",
-      "total_jobs": 1781,
-      "categories": {
-        "frontend": 10,
-        "infrastructure_sre": 149,
-        "software_engineering": 994,
-        "data_ml": 202,
-        "data_engineering": 44,
-        "other": 218,
-        "security": 78,
-        "hardware": 25,
-        "product_management": 4,
-        "quant_finance": 10,
-        "backend": 29,
-        "mobile": 18
-      },
-      "tiers": {
-        "other": 913,
-        "unicorn": 679,
-        "faang_plus": 189
-      },
-      "top_companies": [
-        {
-          "company": "SpaceX",
-          "jobs": 229
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 203
-        },
-        {
-          "company": "OpenAI",
-          "jobs": 42
-        },
-        {
-          "company": "Waymo",
-          "jobs": 33
-        },
-        {
-          "company": "Point72",
-          "jobs": 33
-        },
-        {
-          "company": "xAI",
-          "jobs": 32
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 28
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 26
-        },
-        {
-          "company": "Leidos",
-          "jobs": 25
-        },
-        {
-          "company": "Affirm",
-          "jobs": 24
-        }
-      ],
-      "unique_companies": 289,
-      "avg_jobs_per_company": 6.16,
-      "timestamp": "2026-08-17T23:45:59.686004+00:00"
-    },
     {
       "date": "2026-08-18",
       "total_jobs": 1772,
@@ -4677,6 +4609,92 @@
       "unique_companies": 993,
       "avg_jobs_per_company": 8.45,
       "timestamp": "2026-11-15T20:37:00.713303+00:00"
+    },
+    {
+      "date": "2026-11-16",
+      "total_jobs": 7001,
+      "categories": {
+        "software_engineering": 1679,
+        "sales": 537,
+        "infrastructure_sre": 372,
+        "customer_support": 153,
+        "data_ml": 271,
+        "security": 210,
+        "backend": 49,
+        "design": 34,
+        "mobile": 20,
+        "business_analyst": 303,
+        "accounting_finance": 302,
+        "hardware": 196,
+        "engineering": 894,
+        "supply_chain": 189,
+        "marketing": 79,
+        "data_engineering": 182,
+        "human_resources": 66,
+        "legal": 62,
+        "project_management": 72,
+        "other": 488,
+        "management": 130,
+        "healthcare": 457,
+        "data_analyst": 39,
+        "frontend": 27,
+        "quant_finance": 17,
+        "consulting": 90,
+        "education": 43,
+        "public_sector": 24,
+        "product_management": 14,
+        "arts_entertainment": 2
+      },
+      "tiers": {
+        "other": 5574,
+        "unicorn": 738,
+        "faang_plus": 689
+      },
+      "top_companies": [
+        {
+          "company": "T-Mobile",
+          "jobs": 187
+        },
+        {
+          "company": "Boeing",
+          "jobs": 144
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 128
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 117
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 114
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 97
+        },
+        {
+          "company": "WSP",
+          "jobs": 92
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 91
+        },
+        {
+          "company": "Duke University",
+          "jobs": 87
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 83
+        }
+      ],
+      "unique_companies": 975,
+      "avg_jobs_per_company": 7.18,
+      "timestamp": "2026-11-16T00:23:20.914905+00:00"
     }
   ]
 }
