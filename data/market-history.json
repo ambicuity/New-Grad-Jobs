@@ -1,81 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-11-16T17:26:13.275581+00:00",
+    "last_updated": "2026-11-17T01:05:45.444046+00:00",
     "total_snapshots": 55,
     "date_range": {
-      "start": "2026-08-18",
-      "end": "2026-11-16"
+      "start": "2026-09-24",
+      "end": "2026-11-17"
     }
   },
   "snapshots": [
-    {
-      "date": "2026-08-18",
-      "total_jobs": 1772,
-      "categories": {
-        "software_engineering": 984,
-        "security": 78,
-        "data_ml": 201,
-        "other": 212,
-        "infrastructure_sre": 150,
-        "data_engineering": 50,
-        "frontend": 9,
-        "hardware": 26,
-        "quant_finance": 10,
-        "product_management": 5,
-        "backend": 29,
-        "mobile": 18
-      },
-      "tiers": {
-        "unicorn": 675,
-        "other": 904,
-        "faang_plus": 193
-      },
-      "top_companies": [
-        {
-          "company": "SpaceX",
-          "jobs": 227
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 203
-        },
-        {
-          "company": "OpenAI",
-          "jobs": 41
-        },
-        {
-          "company": "Waymo",
-          "jobs": 33
-        },
-        {
-          "company": "Point72",
-          "jobs": 33
-        },
-        {
-          "company": "xAI",
-          "jobs": 32
-        },
-        {
-          "company": "Leidos",
-          "jobs": 28
-        },
-        {
-          "company": "Northrop Grumman",
-          "jobs": 28
-        },
-        {
-          "company": "Doane Grant Thornton LLP",
-          "jobs": 26
-        },
-        {
-          "company": "Booz Allen Hamilton",
-          "jobs": 26
-        }
-      ],
-      "unique_companies": 273,
-      "avg_jobs_per_company": 6.49,
-      "timestamp": "2026-08-18T09:50:25.107110+00:00"
-    },
     {
       "date": "2026-09-24",
       "total_jobs": 2082,
@@ -4695,6 +4627,92 @@
       "unique_companies": 793,
       "avg_jobs_per_company": 6.9,
       "timestamp": "2026-11-16T17:26:13.275581+00:00"
+    },
+    {
+      "date": "2026-11-17",
+      "total_jobs": 4909,
+      "categories": {
+        "software_engineering": 1245,
+        "sales": 211,
+        "infrastructure_sre": 301,
+        "customer_support": 131,
+        "data_ml": 197,
+        "backend": 48,
+        "design": 26,
+        "business_analyst": 194,
+        "accounting_finance": 150,
+        "hardware": 139,
+        "engineering": 632,
+        "supply_chain": 135,
+        "security": 171,
+        "marketing": 64,
+        "data_engineering": 154,
+        "human_resources": 52,
+        "legal": 44,
+        "project_management": 47,
+        "other": 307,
+        "management": 86,
+        "healthcare": 378,
+        "data_analyst": 26,
+        "frontend": 19,
+        "quant_finance": 15,
+        "consulting": 56,
+        "education": 27,
+        "public_sector": 24,
+        "mobile": 18,
+        "product_management": 10,
+        "arts_entertainment": 2
+      },
+      "tiers": {
+        "other": 4064,
+        "unicorn": 710,
+        "faang_plus": 135
+      },
+      "top_companies": [
+        {
+          "company": "SpaceX",
+          "jobs": 126
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 121
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 105
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 92
+        },
+        {
+          "company": "WSP",
+          "jobs": 92
+        },
+        {
+          "company": "Duke University",
+          "jobs": 89
+        },
+        {
+          "company": "Relativity Space",
+          "jobs": 74
+        },
+        {
+          "company": "Emory University",
+          "jobs": 74
+        },
+        {
+          "company": "Sherwin-Williams",
+          "jobs": 69
+        },
+        {
+          "company": "First Solar",
+          "jobs": 67
+        }
+      ],
+      "unique_companies": 835,
+      "avg_jobs_per_company": 5.88,
+      "timestamp": "2026-11-17T01:05:45.444046+00:00"
     }
   ]
 }
