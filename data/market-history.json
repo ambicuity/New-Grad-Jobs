@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-19T07:54:11.879220+00:00",
+    "last_updated": "2026-11-19T17:23:35.388670+00:00",
     "total_snapshots": 57,
     "date_range": {
       "start": "2026-09-24",
@@ -4802,43 +4802,43 @@
     },
     {
       "date": "2026-11-19",
-      "total_jobs": 4991,
+      "total_jobs": 5474,
       "categories": {
-        "software_engineering": 1275,
-        "sales": 215,
-        "infrastructure_sre": 313,
-        "customer_support": 140,
-        "data_ml": 215,
+        "software_engineering": 1372,
+        "sales": 246,
+        "infrastructure_sre": 337,
+        "customer_support": 139,
+        "data_ml": 221,
         "backend": 48,
-        "design": 32,
-        "business_analyst": 204,
-        "accounting_finance": 139,
-        "hardware": 132,
-        "engineering": 604,
-        "supply_chain": 121,
-        "security": 175,
-        "marketing": 75,
-        "data_engineering": 159,
+        "design": 33,
+        "data_engineering": 162,
+        "security": 180,
+        "accounting_finance": 182,
         "mobile": 14,
-        "human_resources": 52,
-        "legal": 49,
-        "project_management": 54,
-        "other": 336,
-        "management": 83,
-        "healthcare": 368,
+        "human_resources": 60,
+        "legal": 48,
+        "marketing": 81,
+        "project_management": 62,
+        "other": 367,
+        "supply_chain": 141,
+        "management": 102,
+        "healthcare": 365,
         "data_analyst": 25,
-        "frontend": 19,
-        "quant_finance": 17,
-        "consulting": 66,
+        "frontend": 23,
+        "hardware": 149,
+        "engineering": 746,
+        "quant_finance": 20,
+        "business_analyst": 221,
+        "consulting": 65,
         "education": 31,
-        "public_sector": 17,
+        "public_sector": 19,
         "arts_entertainment": 3,
-        "product_management": 10
+        "product_management": 12
       },
       "tiers": {
-        "other": 4095,
-        "unicorn": 742,
-        "faang_plus": 154
+        "other": 4508,
+        "unicorn": 758,
+        "faang_plus": 208
       },
       "top_companies": [
         {
@@ -4847,23 +4847,23 @@
         },
         {
           "company": "Mount Sinai Health System",
-          "jobs": 128
-        },
-        {
-          "company": "WSP",
-          "jobs": 99
+          "jobs": 126
         },
         {
           "company": "Anduril Industries",
+          "jobs": 98
+        },
+        {
+          "company": "WSP",
           "jobs": 97
         },
         {
           "company": "State of Florida",
-          "jobs": 87
+          "jobs": 94
         },
         {
           "company": "Duke University",
-          "jobs": 86
+          "jobs": 85
         },
         {
           "company": "Relativity Space",
@@ -4871,20 +4871,20 @@
         },
         {
           "company": "First Solar",
-          "jobs": 72
+          "jobs": 73
         },
         {
           "company": "Boston Scientific",
           "jobs": 71
         },
         {
-          "company": "Sherwin-Williams",
-          "jobs": 69
+          "company": "Trinzic",
+          "jobs": 71
         }
       ],
-      "unique_companies": 880,
-      "avg_jobs_per_company": 5.67,
-      "timestamp": "2026-11-19T07:54:11.879220+00:00"
+      "unique_companies": 944,
+      "avg_jobs_per_company": 5.8,
+      "timestamp": "2026-11-19T17:23:35.388670+00:00"
     }
   ]
 }
