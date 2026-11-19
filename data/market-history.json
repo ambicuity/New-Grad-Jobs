@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-11-18T18:00:53.978357+00:00",
-    "total_snapshots": 56,
+    "last_updated": "2026-11-19T00:18:53.770107+00:00",
+    "total_snapshots": 57,
     "date_range": {
       "start": "2026-09-24",
-      "end": "2026-11-18"
+      "end": "2026-11-19"
     }
   },
   "snapshots": [
@@ -4799,6 +4799,92 @@
       "unique_companies": 818,
       "avg_jobs_per_company": 6.38,
       "timestamp": "2026-11-18T18:00:53.978357+00:00"
+    },
+    {
+      "date": "2026-11-19",
+      "total_jobs": 5145,
+      "categories": {
+        "software_engineering": 1277,
+        "sales": 463,
+        "infrastructure_sre": 303,
+        "customer_support": 135,
+        "data_ml": 206,
+        "backend": 45,
+        "design": 34,
+        "business_analyst": 198,
+        "accounting_finance": 142,
+        "hardware": 131,
+        "engineering": 589,
+        "supply_chain": 121,
+        "security": 173,
+        "marketing": 82,
+        "data_engineering": 155,
+        "mobile": 14,
+        "human_resources": 54,
+        "legal": 46,
+        "project_management": 49,
+        "other": 306,
+        "management": 81,
+        "healthcare": 356,
+        "data_analyst": 31,
+        "frontend": 18,
+        "quant_finance": 17,
+        "consulting": 58,
+        "education": 32,
+        "public_sector": 18,
+        "arts_entertainment": 2,
+        "product_management": 9
+      },
+      "tiers": {
+        "other": 4269,
+        "unicorn": 739,
+        "faang_plus": 137
+      },
+      "top_companies": [
+        {
+          "company": "Verizon",
+          "jobs": 211
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 133
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 128
+        },
+        {
+          "company": "WSP",
+          "jobs": 99
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 95
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 90
+        },
+        {
+          "company": "Duke University",
+          "jobs": 85
+        },
+        {
+          "company": "Relativity Space",
+          "jobs": 76
+        },
+        {
+          "company": "Trinzic",
+          "jobs": 72
+        },
+        {
+          "company": "First Solar",
+          "jobs": 71
+        }
+      ],
+      "unique_companies": 866,
+      "avg_jobs_per_company": 5.94,
+      "timestamp": "2026-11-19T00:18:53.770107+00:00"
     }
   ]
 }
