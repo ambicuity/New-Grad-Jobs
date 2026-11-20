@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-11-19T23:49:40.902719+00:00",
-    "total_snapshots": 57,
+    "last_updated": "2026-11-20T03:30:40.937471+00:00",
+    "total_snapshots": 58,
     "date_range": {
       "start": "2026-09-24",
-      "end": "2026-11-19"
+      "end": "2026-11-20"
     }
   },
   "snapshots": [
@@ -4885,6 +4885,92 @@
       "unique_companies": 974,
       "avg_jobs_per_company": 6.47,
       "timestamp": "2026-11-19T23:49:40.902719+00:00"
+    },
+    {
+      "date": "2026-11-20",
+      "total_jobs": 6650,
+      "categories": {
+        "software_engineering": 1567,
+        "accounting_finance": 266,
+        "sales": 335,
+        "infrastructure_sre": 365,
+        "customer_support": 172,
+        "data_ml": 257,
+        "backend": 51,
+        "design": 41,
+        "business_analyst": 278,
+        "hardware": 168,
+        "engineering": 847,
+        "supply_chain": 198,
+        "security": 191,
+        "marketing": 87,
+        "data_engineering": 193,
+        "mobile": 15,
+        "human_resources": 115,
+        "legal": 57,
+        "project_management": 73,
+        "other": 444,
+        "management": 111,
+        "healthcare": 550,
+        "data_analyst": 25,
+        "frontend": 30,
+        "quant_finance": 19,
+        "consulting": 106,
+        "education": 50,
+        "public_sector": 22,
+        "arts_entertainment": 3,
+        "product_management": 14
+      },
+      "tiers": {
+        "other": 5511,
+        "unicorn": 797,
+        "faang_plus": 342
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 431
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 133
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 127
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 99
+        },
+        {
+          "company": "WSP",
+          "jobs": 96
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 92
+        },
+        {
+          "company": "Duke University",
+          "jobs": 85
+        },
+        {
+          "company": "CACI",
+          "jobs": 82
+        },
+        {
+          "company": "Texas A&M University System",
+          "jobs": 77
+        },
+        {
+          "company": "Relativity Space",
+          "jobs": 75
+        }
+      ],
+      "unique_companies": 991,
+      "avg_jobs_per_company": 6.71,
+      "timestamp": "2026-11-20T03:30:40.937471+00:00"
     }
   ]
 }
