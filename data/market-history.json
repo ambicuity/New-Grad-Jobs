@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-11-20T22:42:11.092328+00:00",
-    "total_snapshots": 58,
+    "last_updated": "2026-11-21T03:20:00.298503+00:00",
+    "total_snapshots": 59,
     "date_range": {
       "start": "2026-09-24",
-      "end": "2026-11-20"
+      "end": "2026-11-21"
     }
   },
   "snapshots": [
@@ -4971,6 +4971,92 @@
       "unique_companies": 947,
       "avg_jobs_per_company": 6.94,
       "timestamp": "2026-11-20T22:42:11.092328+00:00"
+    },
+    {
+      "date": "2026-11-21",
+      "total_jobs": 5240,
+      "categories": {
+        "software_engineering": 1415,
+        "sales": 247,
+        "infrastructure_sre": 346,
+        "customer_support": 127,
+        "data_ml": 204,
+        "backend": 51,
+        "design": 32,
+        "data_engineering": 166,
+        "business_analyst": 207,
+        "hardware": 124,
+        "engineering": 631,
+        "supply_chain": 141,
+        "security": 178,
+        "accounting_finance": 192,
+        "legal": 57,
+        "mobile": 15,
+        "human_resources": 55,
+        "marketing": 74,
+        "project_management": 56,
+        "other": 331,
+        "management": 78,
+        "healthcare": 315,
+        "data_analyst": 21,
+        "frontend": 25,
+        "education": 35,
+        "quant_finance": 18,
+        "consulting": 65,
+        "public_sector": 22,
+        "arts_entertainment": 3,
+        "product_management": 9
+      },
+      "tiers": {
+        "other": 4093,
+        "unicorn": 776,
+        "faang_plus": 371
+      },
+      "top_companies": [
+        {
+          "company": "SpaceX",
+          "jobs": 133
+        },
+        {
+          "company": "Boeing",
+          "jobs": 131
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 118
+        },
+        {
+          "company": "Leidos",
+          "jobs": 115
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 104
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 100
+        },
+        {
+          "company": "Duke University",
+          "jobs": 79
+        },
+        {
+          "company": "Boston Scientific",
+          "jobs": 74
+        },
+        {
+          "company": "CACI",
+          "jobs": 74
+        },
+        {
+          "company": "Relativity Space",
+          "jobs": 73
+        }
+      ],
+      "unique_companies": 929,
+      "avg_jobs_per_company": 5.64,
+      "timestamp": "2026-11-21T03:20:00.298503+00:00"
     }
   ]
 }
