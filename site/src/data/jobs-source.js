@@ -67,15 +67,15 @@ export async function fetchJsonPreferBrotli(url, fetchImpl = fetch, brotli = bro
  */
 export async function loadJobs(fetchImpl = fetch, brotli = brotliStreamSupported()) {
   try {
-    let payload;
-    let encoding = 'gzip';
+    let loaded;
     try {
-      ({ data: payload, encoding } = await fetchJsonPreferBrotli(JOBS_INDEX_URL, fetchImpl, brotli));
+      const { data, encoding } = await fetchJsonPreferBrotli(JOBS_INDEX_URL, fetchImpl, brotli);
+      loaded = { ...normalizeJobsPayload(data), encoding };
     } catch (err) {
-      console.warn('[terminal] jobs-index.json unavailable, falling back to jobs.json:', err);
-      payload = await fetchJson(JOBS_FULL_URL, fetchImpl);
+      console.warn('[terminal] jobs-index.json unusable, falling back to jobs.json:', err);
+      loaded = { ...normalizeJobsPayload(await fetchJson(JOBS_FULL_URL, fetchImpl)), encoding: 'gzip' };
     }
-    const { jobs, meta } = normalizeJobsPayload(payload);
+    const { jobs, meta, encoding } = loaded;
     return { jobs, meta, error: null, encoding };
   } catch (err) {
     console.error('[terminal] failed to load jobs.json:', err);
