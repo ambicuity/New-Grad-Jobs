@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-11-21T23:49:51.074399+00:00",
-    "total_snapshots": 59,
+    "last_updated": "2026-11-22T06:37:43.871578+00:00",
+    "total_snapshots": 60,
     "date_range": {
       "start": "2026-09-24",
-      "end": "2026-11-21"
+      "end": "2026-11-22"
     }
   },
   "snapshots": [
@@ -5057,6 +5057,92 @@
       "unique_companies": 942,
       "avg_jobs_per_company": 6.18,
       "timestamp": "2026-11-21T23:49:51.074399+00:00"
+    },
+    {
+      "date": "2026-11-22",
+      "total_jobs": 8088,
+      "categories": {
+        "software_engineering": 1877,
+        "sales": 670,
+        "infrastructure_sre": 418,
+        "customer_support": 177,
+        "data_ml": 290,
+        "backend": 55,
+        "design": 48,
+        "data_engineering": 216,
+        "business_analyst": 305,
+        "engineering": 1053,
+        "supply_chain": 246,
+        "security": 213,
+        "accounting_finance": 365,
+        "legal": 73,
+        "mobile": 17,
+        "human_resources": 122,
+        "marketing": 86,
+        "project_management": 93,
+        "other": 524,
+        "management": 129,
+        "healthcare": 606,
+        "data_analyst": 26,
+        "frontend": 36,
+        "hardware": 198,
+        "education": 50,
+        "quant_finance": 19,
+        "consulting": 130,
+        "public_sector": 21,
+        "arts_entertainment": 4,
+        "product_management": 21
+      },
+      "tiers": {
+        "other": 6436,
+        "unicorn": 817,
+        "faang_plus": 835
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 450
+        },
+        {
+          "company": "Verizon",
+          "jobs": 207
+        },
+        {
+          "company": "Boeing",
+          "jobs": 142
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 136
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 123
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 120
+        },
+        {
+          "company": "Leidos",
+          "jobs": 114
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 102
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 96
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 95
+        }
+      ],
+      "unique_companies": 1012,
+      "avg_jobs_per_company": 7.99,
+      "timestamp": "2026-11-22T06:37:43.871578+00:00"
     }
   ]
 }
