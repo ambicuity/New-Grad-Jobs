@@ -45,10 +45,40 @@ describe('loadJobs', () => {
     expect(out).toEqual({ jobs: [], meta: {}, error: 'jobs.json: HTTP 404', encoding: null });
   });
 
-  it('reports a malformed payload', async () => {
+  it('reports a malformed payload when no fallback is healthy', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
     vi.spyOn(console, 'error').mockImplementation(() => {});
-    const out = await loadJobs(routeFetch({ 'jobs-index.json': () => ok({ nope: 1 }) }), false);
-    expect(out.error).toMatch(/no "jobs" array/);
+    const out = await loadJobs(routeFetch({ 'jobs-index.json': () => ok({ nope: 1 }), 'jobs.json': () => ok({ nope: 2 }) }), false);
+    expect(out).toEqual({ jobs: [], meta: {}, error: expect.stringMatching(/no "jobs" array/), encoding: null });
+  });
+
+  it('falls back to jobs.json when the index has an invalid schema', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const f = vi.fn((url) => ok(url.endsWith('jobs-index.json') ? { nope: 1 } : { jobs: [{ job_id: 'job_valid' }] }));
+    const out = await loadJobs(f, false);
+    expect(out.error).toBeNull();
+    expect(out.jobs.map((j) => j.id)).toEqual(['job_valid']);
+    expect(f).toHaveBeenCalledWith('./jobs.json', { cache: 'no-cache' });
+  });
+
+  it('keeps a valid empty index without falling back', async () => {
+    const f = routeFetch({ 'jobs-index.json': () => ok({ jobs: [] }) });
+    const out = await loadJobs(f, false);
+    expect(out.error).toBeNull();
+    expect(out.jobs).toEqual([]);
+    expect(f).toHaveBeenCalledTimes(1);
+  });
+
+  it('falls back to jobs.json when a Brotli index has an invalid schema', async () => {
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const bad = brotliCompressSync(Buffer.from(JSON.stringify({ nope: 1 })));
+    const f = vi.fn((url) => (url.endsWith('.br')
+      ? Promise.resolve({ ok: true, status: 200, body: new Response(bad).body })
+      : ok({ jobs: [{ job_id: 'job_full' }] })));
+    const out = await loadJobs(f, true);
+    expect(out.error).toBeNull();
+    expect(out.encoding).toBe('gzip');
+    expect(out.jobs.map((j) => j.id)).toEqual(['job_full']);
   });
 });
 

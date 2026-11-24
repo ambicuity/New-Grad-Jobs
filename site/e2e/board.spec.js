@@ -192,6 +192,39 @@ test.describe('WIDEN SCOPE (near misses)', () => {
     await page.keyboard.press('Escape');
     await expectResults(page, FIXTURE.total);
   });
+
+  // #448: near misses have no static /job/<id>/ page, so the copied link must reopen the board.
+  test('a copied near-miss link opens the board with that posting selected in a fresh view', async ({ page, context }) => {
+    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+    await openBoard(page);
+    await chip(page, 'WIDEN SCOPE', 'internships & co-ops').click();
+    await chip(page, 'WIDEN SCOPE', 'outside US / CA / IN (1)').click();
+    const coop = 'job_e003ffffffffffffffff';
+    await page.locator(`[role="option"][data-job-id="${coop}"]`).click();
+    await expectSelected(page, coop);
+
+    await page.getByRole('button', { name: 'Copy link to this job' }).click();
+    const copied = await page.evaluate(() => navigator.clipboard.readText());
+    const url = new URL(copied);
+    expect(url.pathname).toBe('/');
+    expect(url.searchParams.get('job')).toBe(coop);
+    expect(url.searchParams.getAll('include')).toEqual(['intern_or_coop', 'outside_target_countries']);
+
+    const fresh = await context.newPage();
+    await fresh.goto(copied);
+    await expect(jobList(fresh)).toBeVisible();
+    await expectSelected(fresh, coop);
+    await expect(fresh.getByTestId('job-detail')).toContainText('Marketing Co-op 2027');
+    await fresh.close();
+  });
+
+  test('a curated job still copies its static page link', async ({ page, context }) => {
+    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+    await openBoard(page);
+    await page.getByRole('button', { name: 'Copy link to this job' }).click();
+    const copied = await page.evaluate(() => navigator.clipboard.readText());
+    expect(new URL(copied).pathname).toBe(`/job/${FIXTURE.first}/`);
+  });
 });
 
 test.describe('applied tracking and alerts', () => {

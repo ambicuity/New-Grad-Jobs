@@ -4,6 +4,7 @@ import os
 import sys
 import threading
 import time
+from datetime import UTC, datetime, timedelta
 from unittest.mock import MagicMock, patch
 
 import pytest
@@ -12,14 +13,16 @@ import requests
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
 from ngj import http as ngj_http  # noqa: E402
-from ngj.filters import passes_title_rules  # noqa: E402
+from ngj.filters import partition_jobs, passes_title_rules  # noqa: E402
 from ngj.locations import is_valid_location  # noqa: E402
 from ngj.sources.workday import (  # noqa: E402
     _resolve_locations,
     _Tenant,
+    _to_job,
     build_title_prefilter,
     fetch_workday_jobs,
     location_from_detail,
+    location_from_path,
 )
 from source_cooldown import SourceCooldownTracker  # noqa: E402
 
@@ -273,3 +276,82 @@ class TestConcurrentLookups:
         tenant.get = timed_get
         result = _fetch(tenant, keyword_workers=3)
         assert len(tenant.gets) < 30 and result.errors == ()
+
+
+class TestLocationFromPath:
+    """Tenants that null locationsText still name the place in externalPath."""
+
+    def test_uses_listed_text_when_present(self):
+        item = _item("/job/Durham/Dev_R1", locations="Durham, NC")
+        assert location_from_path(item) == "Durham, NC"
+
+    def test_falls_back_to_path_segment(self):
+        item = _item("/job/Singapore/Software-Engineering-New-Associate_R00144534", locations=None)
+        assert location_from_path(item) == "Singapore"
+
+    def test_multi_word_segment_becomes_spaced(self):
+        item = _item("/job/New-York-NY/Analyst_R1", locations=None)
+        assert location_from_path(item) == "New York NY"
+
+    def test_a_slug_only_path_is_not_read_as_a_location(self):
+        # Markel publishes "/job/<title>_<req>" with no location segment at all.
+        item = _item("/job/Markel-Early-Careers-Talent-Network---Post-Graduate_R0021253", locations=None)
+        assert location_from_path(item) == ""
+
+    @pytest.mark.parametrize(
+        ("segment", "expected"),
+        [
+            ("IL---Chicago", "IL, Chicago"),
+            ("New-York-New-York---United-States", "New York New York, United States"),
+            ("Denver-Colorado---United-States", "Denver Colorado, United States"),
+        ],
+    )
+    def test_triple_dash_separator_becomes_a_comma(self, segment, expected):
+        item = _item(f"/job/{segment}/Analyst_R1", locations=None)
+        assert location_from_path(item) == expected
+        assert is_valid_location(expected)
+
+    def test_path_without_leading_slash(self):
+        assert location_from_path(_item("job/Warsaw/Dev_R1", locations=None)) == "Warsaw"
+
+    def test_full_url_external_path(self):
+        item = _item("https://acme.wd5.myworkdayjobs.com/Careers/job/Pune/Dev_R1", locations=None)
+        assert location_from_path(item) == "Pune"
+
+    def test_no_location_anywhere(self):
+        assert location_from_path({"externalPath": "/other/thing"}) == ""
+        assert location_from_path({}) == ""
+        assert location_from_path(_item("", locations=None)) == ""
+
+    def test_null_locations_text_job_fails_the_location_gate(self):
+        job = _to_job("Acme", "https://acme.wd5.myworkdayjobs.com/Careers", _item(
+            "/job/Warsaw-Sienna-39/Software-Engineer-New-Grad_R9", locations=None))
+        assert job["location"] == "Warsaw Sienna 39"
+        assert not is_valid_location(job["location"])
+
+    def test_null_locations_text_us_job_still_passes_the_gate(self):
+        job = _to_job("Acme", "https://acme.wd5.myworkdayjobs.com/Careers", _item(
+            "/job/Austin-TX/Software-Engineer-New-Grad_R9", locations=None))
+        assert is_valid_location(job["location"])
+
+
+class TestNullLocationsTextThroughTheFilter:
+    """#383: a posting whose path names a non-target country never reaches the curated set."""
+
+    NOW = datetime(2026, 11, 24, 12, 0, tzinfo=UTC)
+
+    def _config(self):
+        return {"filtering": {
+            "max_age_days": 60, "near_miss_max_age_days": 120,
+            "new_grad_signals": ["new grad"], "strong_new_grad_signals": ["new grad"],
+            "exclusion_signals": ["senior"], "track_signals": ["software", "engineer"],
+        }}
+
+    def _job(self, segment):
+        job = _to_job("Accenture", "https://accenture.wd103.myworkdayjobs.com/AccentureCareers", _item(
+            f"/job/{segment}/Software-Engineer-New-Grad_R1", locations=None))
+        return {**job, "posted_at": (self.NOW - timedelta(days=1)).isoformat()}
+
+    def test_out_of_region_is_dropped_and_in_region_is_curated(self):
+        curated, _ = partition_jobs([self._job("Warsaw"), self._job("Chennai")], self._config(), now=self.NOW)
+        assert [j["location"] for j in curated] == ["Chennai"]
