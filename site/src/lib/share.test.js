@@ -19,6 +19,17 @@ describe('jobShareUrl', () => {
       .toBe('https://user.github.io/New-Grad-Jobs/?job=x');
   });
 
+  it('links near misses to the board with every include reason, not a missing static page', () => {
+    const job = { id: 'job_e001', jobId: 'job_e001', nearMiss: ['intern_or_coop', 'level_iii_plus'] };
+    expect(jobShareUrl(job, loc)).toBe('https://jobs.example.test/?job=job_e001&include=intern_or_coop&include=level_iii_plus');
+    const sub = { origin: 'https://user.github.io', pathname: '/New-Grad-Jobs/index.html' };
+    expect(jobShareUrl(job, sub)).toBe('https://user.github.io/New-Grad-Jobs/?job=job_e001&include=intern_or_coop&include=level_iii_plus');
+  });
+
+  it('keeps the static page for curated jobs with an empty nearMiss list', () => {
+    expect(jobShareUrl({ id: 'a', jobId: 'job_a', nearMiss: [] }, loc)).toBe('https://jobs.example.test/job/job_a/');
+  });
+
   it('never trusts an unsafe id in the path', () => {
     expect(jobShareUrl({ id: 'x', jobId: '../evil' }, loc)).toBe('https://jobs.example.test/?job=x');
     expect(jobShareUrl(null, {})).toBe('/?job=');
