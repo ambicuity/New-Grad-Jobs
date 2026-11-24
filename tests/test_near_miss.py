@@ -121,7 +121,13 @@ class TestPartitionJobs:
         assert json.dumps(jobs, sort_keys=True) == snapshot
 
     def test_filter_jobs_is_the_curated_half(self):
-        jobs = [_job("Software Engineer, New Grad"), _job("Software Engineering Intern 2027")]
+        # filter_jobs takes no `now`, so date the postings from the real clock:
+        # a fixed NOW-based date goes stale once the wall clock passes max_age_days.
+        posted_at = (datetime.now(UTC) - timedelta(days=1)).isoformat()
+        jobs = [
+            {**_job("Software Engineer, New Grad"), "posted_at": posted_at},
+            {**_job("Software Engineering Intern 2027"), "posted_at": posted_at},
+        ]
         assert [j["title"] for j in filter_jobs(jobs, _config())] == ["Software Engineer, New Grad"]
 
     def test_near_misses_are_capped_newest_first(self):
