@@ -174,9 +174,8 @@ After `make run`, restore the two files that a local scrape rewrites:
 3. **README:** edit only outside `<!-- COUNT:* -->…<!-- /COUNT -->` and the
    `<!-- CATEGORY-LISTINGS:START … -->`…`<!-- CATEGORY-LISTINGS:END -->` and
    `<!-- COMPANY-LISTINGS:START … -->`…`<!-- COMPANY-LISTINGS:END -->` blocks, which the
-   scraper owns (the latter, and the `boards_*` counts, come from `config.yml`). Do not touch the sponsor blocks: the Zapply CTA copy is verbatim-locked,
-   and the root-level `apply-faster-banner.png` and `get-started-button.png` must stay
-   where they are. Leave the Tailr block as is too.
+   scraper owns (the latter, and the `boards_*` counts, come from `config.yml`). Do not touch the sponsor blocks: the Proxy-Seller copy is the advertiser's approved text,
+   and the root-level `proxy-seller-banner.png` must stay where it is. Leave the Tailr block as is too.
 4. **Dependencies:** ranges live in `pyproject.toml`, and exact hash-locked versions in
    `requirements*.txt`. After changing dependencies, run `make lock` (needs `uv`) and
    commit both files. Keep the ruff pin in step with `.pre-commit-config.yaml`. For the
