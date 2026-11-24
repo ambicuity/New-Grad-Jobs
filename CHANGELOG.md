@@ -6,6 +6,63 @@ This changelog is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-11-24
+
+The scraper reads nine more applicant-tracking systems and many more direct employers,
+Workday postings keep their real locations, and the site gains policy pages, a reworked
+guides section and sturdier loading and sharing. `jobs.json` stays at schema **1.1**.
+
+### Scraper and data
+
+- **New sources:** SmartRecruiters ([#393](https://github.com/ambicuity/New-Grad-Jobs/pull/393)), Oracle HCM ([#395](https://github.com/ambicuity/New-Grad-Jobs/pull/395)), Rippling
+  ([#398](https://github.com/ambicuity/New-Grad-Jobs/pull/398), one posting per listing since [#400](https://github.com/ambicuity/New-Grad-Jobs/pull/400)), UKG Pro Recruiting ([#401](https://github.com/ambicuity/New-Grad-Jobs/pull/401)), ADP
+  Workforce Now ([#403](https://github.com/ambicuity/New-Grad-Jobs/pull/403)), Workable ([#405](https://github.com/ambicuity/New-Grad-Jobs/pull/405)), Paylocity ([#414](https://github.com/ambicuity/New-Grad-Jobs/pull/414)), SAP SuccessFactors
+  Career Site Builder ([#422](https://github.com/ambicuity/New-Grad-Jobs/pull/422)) and iCIMS career sites and classic portals ([#424](https://github.com/ambicuity/New-Grad-Jobs/pull/424),
+  [#426](https://github.com/ambicuity/New-Grad-Jobs/pull/426)).
+- **More employers:** boards added from the applied-jobs export, employers' own careers
+  pages, a Foorilla audit and Phenom-hosted Workday sites ([#389](https://github.com/ambicuity/New-Grad-Jobs/pull/389), [#391](https://github.com/ambicuity/New-Grad-Jobs/pull/391), [#416](https://github.com/ambicuity/New-Grad-Jobs/pull/416),
+  [#420](https://github.com/ambicuity/New-Grad-Jobs/pull/420), [#431](https://github.com/ambicuity/New-Grad-Jobs/pull/431)); Amplitude moved from a dead Greenhouse board to Ashby ([#412](https://github.com/ambicuity/New-Grad-Jobs/pull/412)).
+- **Workday locations:** "N Locations" postings are resolved so the location filter can
+  judge them, every place of a foreign multi-location posting is checked, and lookups run
+  a few at a time ([#428](https://github.com/ambicuity/New-Grad-Jobs/pull/428), [#430](https://github.com/ambicuity/New-Grad-Jobs/pull/430), [#432](https://github.com/ambicuity/New-Grad-Jobs/pull/432), [#433](https://github.com/ambicuity/New-Grad-Jobs/pull/433)). Tenants that return
+  `locationsText: null` now take the location from the `/job/<Location>/` segment of the
+  posting path, so out-of-region postings fail the location gate and the rest regain
+  their JobPosting structured data ([#473](https://github.com/ambicuity/New-Grad-Jobs/pull/473), #383). Apply links include the careers
+  site ([#375](https://github.com/ambicuity/New-Grad-Jobs/pull/375)).
+- **Filters:** temporary, contract and fractional-FTE roles are excluded ([#437](https://github.com/ambicuity/New-Grad-Jobs/pull/437));
+  Unicode dashes in titles are folded and senior "Associate" legal and academic titles
+  are excluded ([#418](https://github.com/ambicuity/New-Grad-Jobs/pull/418)).
+
+### Website
+
+- **Policy pages:** Terms, Privacy, Copyright and Data Sources, plus `llms.txt` and
+  third-party licence notices ([#435](https://github.com/ambicuity/New-Grad-Jobs/pull/435)); the privacy policy discloses Cloudflare
+  ([#446](https://github.com/ambicuity/New-Grad-Jobs/pull/446)).
+- **Guides:** reading paths, cards, 30-second briefs and on-page contents ([#439](https://github.com/ambicuity/New-Grad-Jobs/pull/439)), with
+  new sourced guides and an "Already graduated" path ([#372](https://github.com/ambicuity/New-Grad-Jobs/pull/372), [#374](https://github.com/ambicuity/New-Grad-Jobs/pull/374), [#441](https://github.com/ambicuity/New-Grad-Jobs/pull/441),
+  [#442](https://github.com/ambicuity/New-Grad-Jobs/pull/442)).
+- **Salaries** show in their own currency, and Indian locations are tagged as India
+  ([#444](https://github.com/ambicuity/New-Grad-Jobs/pull/444)).
+- **Readable cells:** truncated cells stay readable, and a skills fallback appears when a
+  description has no requirements list ([#408](https://github.com/ambicuity/New-Grad-Jobs/pull/408)).
+- **Loading:** a `jobs-index.json` that parses but fails schema validation now falls back
+  to `jobs.json` instead of showing an empty board ([#469](https://github.com/ambicuity/New-Grad-Jobs/pull/469), #449).
+- **Sharing:** "Copy link" on a near-miss posting copies a board link with its `include`
+  reasons, since near misses have no static `/job/<id>/` page ([#470](https://github.com/ambicuity/New-Grad-Jobs/pull/470), #448).
+
+### CI and tooling
+
+- The scraper watchdog reports per-source health, not just staleness ([#409](https://github.com/ambicuity/New-Grad-Jobs/pull/409)).
+- Queued scrape runs build on the latest `main` so the persist step cannot conflict
+  ([#396](https://github.com/ambicuity/New-Grad-Jobs/pull/396)).
+- The e2e fixtures ship all 16 description shards, as production does, and cover opening
+  a copied near-miss link in a fresh view.
+
+### Contributors
+
+Thanks to [@harshvardhan60792](https://github.com/harshvardhan60792) ([#469](https://github.com/ambicuity/New-Grad-Jobs/pull/469), [#470](https://github.com/ambicuity/New-Grad-Jobs/pull/470),
+[#473](https://github.com/ambicuity/New-Grad-Jobs/pull/473)) and [@vkav271996](https://github.com/vkav271996) ([#385](https://github.com/ambicuity/New-Grad-Jobs/pull/385)).
+
 ## [1.0.2] - 2026-09-26
 
 The board now covers every profession, not only tech, and publishes everything it
@@ -299,6 +356,7 @@ longer bloats git, and every stage is tested. The public `jobs.json` schema move
 * **wiki:** init local project wiki structure (home, roadmap, sidebar) ([f08fbf2](https://github.com/ambicuity/New-Grad-Jobs/commit/f08fbf25116ba0dae837a72be745b1d46364b4df))
 * **wiki:** upgrade to gold-standard solo-maintainer framework ([756e758](https://github.com/ambicuity/New-Grad-Jobs/commit/756e758fe201f5398f6ad6d3c3a88424124fef5a))
 
-[Unreleased]: https://github.com/ambicuity/New-Grad-Jobs/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/ambicuity/New-Grad-Jobs/compare/v1.0.3...HEAD
+[1.0.3]: https://github.com/ambicuity/New-Grad-Jobs/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/ambicuity/New-Grad-Jobs/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/ambicuity/New-Grad-Jobs/compare/v1.0.0...v1.0.1
