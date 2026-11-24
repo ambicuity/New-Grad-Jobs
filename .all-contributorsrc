@@ -293,6 +293,16 @@
         "code",
         "security"
       ]
+    },
+    {
+      "login": "harshvardhan60792",
+      "name": "Harshvardhan Agrawal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/180005726?v=4",
+      "profile": "https://github.com/harshvardhan60792",
+      "contributions": [
+        "code",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
