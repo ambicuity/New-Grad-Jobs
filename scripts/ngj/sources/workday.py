@@ -94,7 +94,10 @@ TitleFilter = Callable[[str], bool]
 # An externalPath served by the tenant's own job endpoint (no "..", encoded dots, query or fragment).
 _EXTERNAL_PATH_RE = re.compile(r"/job/(?!.*(?:\.\.|%2e))[^?#\s\\]+", re.IGNORECASE)
 # The "<Location>" segment of "/job/<Location>/<slug>", for tenants that null locationsText.
-_PATH_LOCATION_RE = re.compile(r"^/?job/([^/]+)(?:/|$)", re.IGNORECASE)
+# The trailing slash is required: "/job/<slug>" (no location segment) names the posting, not a place.
+_PATH_LOCATION_RE = re.compile(r"(?:^|/)job/([^/]+)/[^/]", re.IGNORECASE)
+# Workday writes " - " inside a path segment as "---" ("IL---Chicago" is "IL - Chicago").
+_PATH_SEPARATOR = "---"
 _BLOCKED_STATUSES = frozenset({403, 429})
 _COUNTRY_CODE_RE = re.compile(r"^[A-Z]{2,3}$")
 # Other ways a primary location already names Workday's country descriptor.
@@ -305,10 +308,11 @@ def location_from_path(item: dict[str, Any]) -> str:
     listed = item.get('locationsText')
     if isinstance(listed, str) and listed.strip():
         return listed
-    match = _PATH_LOCATION_RE.match(urlparse(str(item.get('externalPath') or '')).path)
+    match = _PATH_LOCATION_RE.search(urlparse(str(item.get('externalPath') or '')).path)
     if not match:
         return ""
-    return unquote(match.group(1)).replace('-', ' ').strip()
+    parts = (' '.join(part.replace('-', ' ').split()) for part in unquote(match.group(1)).split(_PATH_SEPARATOR))
+    return ', '.join(part for part in parts if part)
 
 
 def _to_job(company_name: str, site_url: str, item: dict[str, Any]) -> dict[str, Any]:
