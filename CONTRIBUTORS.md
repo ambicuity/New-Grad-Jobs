@@ -45,6 +45,7 @@ Thanks to these wonderful people who have contributed to New Grad Jobs ([emoji k
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/harshvardhan60792"><img src="https://avatars.githubusercontent.com/u/180005726?v=4?s=100" width="100px;" alt="Harshvardhan Agrawal"/><br /><sub><b>Harshvardhan Agrawal</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=harshvardhan60792" title="Code">💻</a> <a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=harshvardhan60792" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/vkav271996"><img src="https://avatars.githubusercontent.com/u/46929865?v=4?s=100" width="100px;" alt="vkav271996"/><br /><sub><b>vkav271996</b></sub></a><br /><a href="https://github.com/ambicuity/New-Grad-Jobs/commits?author=vkav271996" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
