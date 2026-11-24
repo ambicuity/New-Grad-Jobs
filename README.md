@@ -24,25 +24,13 @@ Unlike manually curated lists, this repository pulls directly from configured co
 
 ---
 
-## **Website & Autofill Extension**
+## Proxy-Seller
 
-[![Apply to jobs in seconds with Zapply.](apply-faster-banner.png)](https://app.zapply.jobs/onboarding/?ref=github-cta-ambicuity)
+[![Proxy-Seller: 220+ GEOs, residential and ISP proxy IPs, IPv4/IPv6, 24/7 support](proxy-seller-banner.png)](https://proxy-seller.com/)
 
-Explore Zapply’s website and check out:
-- Our Chrome extension, which autofills job applications in seconds.
-- A dedicated job board featuring the latest openings across various roles.
-- User accounts with multiple profiles for different resume types and roles.
-- Job application tracking with streaks and commitment awards.
+Proxy-Seller gives you reliable proxy infrastructure for any workflow: private residential, mobile (4G/5G/LTE), ISP, and datacenter IPv4/IPv6 proxies, all with HTTP(S) and SOCKS5 support. Tap into 47M+ residential IPs across 220+ locations, target exactly the country, city, or ISP you need, and count on 99.7% uptime backed by 24/7 support. Get 15% off with promo code **NEWJOBS**.
 
-Experience an advanced career journey with us! 🚀
-
-<p align="center">
-<a href="https://app.zapply.jobs/onboarding/?ref=github-cta-ambicuity">
-<img src="get-started-button.png" alt="Visit Zapply" width="500">
-</a>
-</p>
-
-<p align="right"><sub>Sponsored by Zapply</sub></p>
+<p align="right"><sub>Sponsored by Proxy-Seller</sub></p>
 
 ---
 
@@ -795,7 +783,7 @@ This project is **free and solo-maintained**. If it helps your job search, here'
 - **Star this repository** and share it with other new grads
 - **[Contribute](CONTRIBUTING.md)** a missing job or a fix
 
-Our sponsors **[Tailr](https://www.tailr.uk)** and **[Zapply](https://app.zapply.jobs/onboarding/?ref=github-cta-ambicuity)** help cover the running costs.
+Our sponsors **[Proxy-Seller](https://proxy-seller.com/)** and **[Tailr](https://www.tailr.uk)** help cover the running costs.
 
 Want your product in front of new grads? Open a [sponsorship / CTA placement proposal](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=sponsor_placement.yml) — we publish what we do and don't accept up front.
 
