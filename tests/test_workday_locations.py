@@ -17,9 +17,11 @@ from ngj.locations import is_valid_location  # noqa: E402
 from ngj.sources.workday import (  # noqa: E402
     _resolve_locations,
     _Tenant,
+    _to_job,
     build_title_prefilter,
     fetch_workday_jobs,
     location_from_detail,
+    location_from_path,
 )
 from source_cooldown import SourceCooldownTracker  # noqa: E402
 
@@ -273,3 +275,41 @@ class TestConcurrentLookups:
         tenant.get = timed_get
         result = _fetch(tenant, keyword_workers=3)
         assert len(tenant.gets) < 30 and result.errors == ()
+
+
+class TestLocationFromPath:
+    """Tenants that null locationsText still name the place in externalPath."""
+
+    def test_uses_listed_text_when_present(self):
+        item = _item("/job/Durham/Dev_R1", locations="Durham, NC")
+        assert location_from_path(item) == "Durham, NC"
+
+    def test_falls_back_to_path_segment(self):
+        item = _item("/job/Singapore/Software-Engineering-New-Associate_R00144534", locations=None)
+        assert location_from_path(item) == "Singapore"
+
+    def test_multi_word_segment_becomes_spaced(self):
+        item = _item("/job/New-York-NY/Analyst_R1", locations=None)
+        assert location_from_path(item) == "New York NY"
+
+    def test_segment_without_trailing_slash(self):
+        assert location_from_path(_item("/job/Singapore", locations=None)) == "Singapore"
+
+    def test_path_without_leading_slash(self):
+        assert location_from_path(_item("job/Warsaw/Dev_R1", locations=None)) == "Warsaw"
+
+    def test_no_location_anywhere(self):
+        assert location_from_path({"externalPath": "/other/thing"}) == ""
+        assert location_from_path({}) == ""
+        assert location_from_path(_item("", locations=None)) == ""
+
+    def test_null_locations_text_job_fails_the_location_gate(self):
+        job = _to_job("Acme", "https://acme.wd5.myworkdayjobs.com/Careers", _item(
+            "/job/Warsaw-Sienna-39/Software-Engineer-New-Grad_R9", locations=None))
+        assert job["location"] == "Warsaw Sienna 39"
+        assert not is_valid_location(job["location"])
+
+    def test_null_locations_text_us_job_still_passes_the_gate(self):
+        job = _to_job("Acme", "https://acme.wd5.myworkdayjobs.com/Careers", _item(
+            "/job/Austin-TX/Software-Engineer-New-Grad_R9", locations=None))
+        assert is_valid_location(job["location"])

@@ -45,7 +45,7 @@ from collections.abc import Callable, Sequence
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from typing import Any
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 import requests
 
@@ -93,6 +93,8 @@ TitleFilter = Callable[[str], bool]
 
 # An externalPath served by the tenant's own job endpoint (no "..", encoded dots, query or fragment).
 _EXTERNAL_PATH_RE = re.compile(r"/job/(?!.*(?:\.\.|%2e))[^?#\s\\]+", re.IGNORECASE)
+# The "<Location>" segment of "/job/<Location>/<slug>", for tenants that null locationsText.
+_PATH_LOCATION_RE = re.compile(r"^/?job/([^/]+)(?:/|$)", re.IGNORECASE)
 _BLOCKED_STATUSES = frozenset({403, 429})
 _COUNTRY_CODE_RE = re.compile(r"^[A-Z]{2,3}$")
 # Other ways a primary location already names Workday's country descriptor.
@@ -293,13 +295,29 @@ def _resolve_locations(
     return [{**job, 'location': found[path]} if path in found else job for path, job in jobs]
 
 
+def location_from_path(item: dict[str, Any]) -> str:
+    """The listed location, else the ``/job/<Location>/`` segment of ``externalPath``, else "".
+
+    Some tenants return ``locationsText: null`` and ``postedLocations: null`` but still
+    encode the place in the posting path. Reading it keeps the location gate from
+    treating those postings as "unknown location" and letting them through.
+    """
+    listed = item.get('locationsText')
+    if isinstance(listed, str) and listed.strip():
+        return listed
+    match = _PATH_LOCATION_RE.match(urlparse(str(item.get('externalPath') or '')).path)
+    if not match:
+        return ""
+    return unquote(match.group(1)).replace('-', ' ').strip()
+
+
 def _to_job(company_name: str, site_url: str, item: dict[str, Any]) -> dict[str, Any]:
     # externalPath ("/job/<loc>/<slug>") is relative to the careers *site*, not the host:
     # https://<host>/job/... answers 404, https://<host>/<site>/job/... is the posting.
     return {
         'company': company_name,
         'title': item.get('title') or '',
-        'location': item.get('locationsText') or '',
+        'location': location_from_path(item),
         'url': f"{site_url}{item.get('externalPath', '')}",
         'posted_at': item.get('postedOn', ''),
         'source': 'Workday',
