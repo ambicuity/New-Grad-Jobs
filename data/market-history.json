@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-11-20T07:03:54.445426+00:00",
-    "total_snapshots": 58,
+    "last_updated": "2026-11-24T05:59:43.586940+00:00",
+    "total_snapshots": 62,
     "date_range": {
       "start": "2026-09-24",
-      "end": "2026-11-20"
+      "end": "2026-11-24"
     }
   },
   "snapshots": [
@@ -4888,89 +4888,433 @@
     },
     {
       "date": "2026-11-20",
-      "total_jobs": 5565,
+      "total_jobs": 6575,
       "categories": {
-        "software_engineering": 1398,
-        "accounting_finance": 169,
-        "sales": 421,
-        "infrastructure_sre": 337,
-        "customer_support": 142,
-        "data_ml": 225,
-        "backend": 48,
-        "design": 34,
-        "business_analyst": 197,
-        "hardware": 153,
-        "engineering": 731,
-        "supply_chain": 128,
-        "security": 177,
-        "marketing": 82,
-        "data_engineering": 165,
-        "mobile": 14,
-        "human_resources": 58,
-        "legal": 48,
-        "project_management": 50,
-        "other": 340,
-        "management": 86,
-        "healthcare": 355,
-        "data_analyst": 23,
+        "software_engineering": 1536,
+        "sales": 347,
+        "infrastructure_sre": 357,
+        "customer_support": 169,
+        "data_ml": 262,
+        "backend": 50,
+        "design": 43,
+        "data_engineering": 193,
+        "business_analyst": 238,
+        "hardware": 167,
+        "engineering": 855,
+        "supply_chain": 202,
+        "security": 190,
+        "accounting_finance": 247,
+        "mobile": 16,
+        "human_resources": 125,
+        "legal": 59,
+        "marketing": 80,
+        "project_management": 85,
+        "other": 431,
+        "management": 119,
+        "healthcare": 535,
+        "data_analyst": 27,
         "frontend": 23,
-        "quant_finance": 17,
-        "consulting": 70,
-        "education": 40,
-        "public_sector": 19,
+        "education": 50,
+        "quant_finance": 18,
+        "consulting": 109,
+        "public_sector": 24,
         "arts_entertainment": 3,
-        "product_management": 12
+        "product_management": 15
       },
       "tiers": {
-        "other": 4446,
-        "unicorn": 769,
-        "faang_plus": 350
+        "other": 5363,
+        "unicorn": 780,
+        "faang_plus": 432
       },
       "top_companies": [
         {
-          "company": "Verizon",
-          "jobs": 208
+          "company": "Accenture",
+          "jobs": 429
+        },
+        {
+          "company": "Boeing",
+          "jobs": 149
         },
         {
           "company": "SpaceX",
-          "jobs": 133
+          "jobs": 136
         },
         {
           "company": "Mount Sinai Health System",
-          "jobs": 128
+          "jobs": 121
         },
         {
-          "company": "Raytheon",
-          "jobs": 106
-        },
-        {
-          "company": "Anduril Industries",
-          "jobs": 99
-        },
-        {
-          "company": "WSP",
-          "jobs": 97
+          "company": "Leidos",
+          "jobs": 115
         },
         {
           "company": "State of Florida",
+          "jobs": 104
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 96
+        },
+        {
+          "company": "WSP",
+          "jobs": 96
+        },
+        {
+          "company": "Duke University",
+          "jobs": 79
+        },
+        {
+          "company": "First Solar",
+          "jobs": 74
+        }
+      ],
+      "unique_companies": 947,
+      "avg_jobs_per_company": 6.94,
+      "timestamp": "2026-11-20T22:42:11.092328+00:00"
+    },
+    {
+      "date": "2026-11-21",
+      "total_jobs": 5825,
+      "categories": {
+        "software_engineering": 1438,
+        "sales": 265,
+        "infrastructure_sre": 348,
+        "customer_support": 144,
+        "data_ml": 241,
+        "backend": 53,
+        "design": 32,
+        "data_engineering": 173,
+        "business_analyst": 230,
+        "engineering": 749,
+        "supply_chain": 153,
+        "security": 178,
+        "accounting_finance": 206,
+        "legal": 66,
+        "mobile": 16,
+        "human_resources": 68,
+        "marketing": 80,
+        "project_management": 68,
+        "other": 392,
+        "management": 104,
+        "healthcare": 434,
+        "data_analyst": 25,
+        "frontend": 26,
+        "hardware": 154,
+        "education": 43,
+        "quant_finance": 20,
+        "consulting": 80,
+        "public_sector": 21,
+        "arts_entertainment": 4,
+        "product_management": 14
+      },
+      "tiers": {
+        "other": 4559,
+        "unicorn": 759,
+        "faang_plus": 507
+      },
+      "top_companies": [
+        {
+          "company": "Boeing",
+          "jobs": 144
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 136
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 121
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 101
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 96
+        },
+        {
+          "company": "WSP",
           "jobs": 92
         },
         {
           "company": "Duke University",
-          "jobs": 85
+          "jobs": 76
         },
         {
-          "company": "Relativity Space",
-          "jobs": 75
+          "company": "CACI",
+          "jobs": 74
         },
         {
           "company": "Trinzic",
+          "jobs": 74
+        },
+        {
+          "company": "First Solar",
           "jobs": 73
         }
       ],
-      "unique_companies": 888,
-      "avg_jobs_per_company": 6.27,
-      "timestamp": "2026-11-20T07:03:54.445426+00:00"
+      "unique_companies": 942,
+      "avg_jobs_per_company": 6.18,
+      "timestamp": "2026-11-21T23:49:51.074399+00:00"
+    },
+    {
+      "date": "2026-11-22",
+      "total_jobs": 8096,
+      "categories": {
+        "software_engineering": 1861,
+        "sales": 661,
+        "infrastructure_sre": 422,
+        "customer_support": 174,
+        "data_ml": 287,
+        "backend": 55,
+        "design": 47,
+        "data_engineering": 218,
+        "business_analyst": 321,
+        "engineering": 1046,
+        "supply_chain": 247,
+        "security": 211,
+        "accounting_finance": 366,
+        "legal": 77,
+        "mobile": 17,
+        "human_resources": 126,
+        "marketing": 86,
+        "project_management": 86,
+        "other": 535,
+        "management": 124,
+        "healthcare": 612,
+        "data_analyst": 30,
+        "frontend": 36,
+        "hardware": 203,
+        "education": 53,
+        "quant_finance": 20,
+        "consulting": 129,
+        "public_sector": 22,
+        "arts_entertainment": 3,
+        "product_management": 21
+      },
+      "tiers": {
+        "other": 6456,
+        "unicorn": 800,
+        "faang_plus": 840
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 450
+        },
+        {
+          "company": "Verizon",
+          "jobs": 207
+        },
+        {
+          "company": "Boeing",
+          "jobs": 142
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 134
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 122
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 120
+        },
+        {
+          "company": "Leidos",
+          "jobs": 115
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 101
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 97
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 94
+        }
+      ],
+      "unique_companies": 1011,
+      "avg_jobs_per_company": 8.01,
+      "timestamp": "2026-11-22T21:06:07.925415+00:00"
+    },
+    {
+      "date": "2026-11-23",
+      "total_jobs": 7773,
+      "categories": {
+        "software_engineering": 1816,
+        "sales": 627,
+        "infrastructure_sre": 402,
+        "customer_support": 173,
+        "data_ml": 279,
+        "backend": 51,
+        "design": 44,
+        "data_engineering": 210,
+        "business_analyst": 287,
+        "engineering": 1004,
+        "supply_chain": 247,
+        "security": 210,
+        "accounting_finance": 333,
+        "legal": 79,
+        "mobile": 16,
+        "human_resources": 120,
+        "marketing": 83,
+        "project_management": 80,
+        "other": 523,
+        "management": 119,
+        "healthcare": 566,
+        "data_analyst": 32,
+        "frontend": 32,
+        "hardware": 191,
+        "education": 51,
+        "public_sector": 25,
+        "quant_finance": 21,
+        "consulting": 129,
+        "arts_entertainment": 3,
+        "product_management": 20
+      },
+      "tiers": {
+        "other": 6208,
+        "unicorn": 782,
+        "faang_plus": 783
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 438
+        },
+        {
+          "company": "Verizon",
+          "jobs": 206
+        },
+        {
+          "company": "Boeing",
+          "jobs": 140
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 132
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 123
+        },
+        {
+          "company": "Leidos",
+          "jobs": 119
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 115
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 108
+        },
+        {
+          "company": "WSP",
+          "jobs": 90
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 87
+        }
+      ],
+      "unique_companies": 983,
+      "avg_jobs_per_company": 7.91,
+      "timestamp": "2026-11-23T22:06:13.945246+00:00"
+    },
+    {
+      "date": "2026-11-24",
+      "total_jobs": 6162,
+      "categories": {
+        "software_engineering": 1461,
+        "accounting_finance": 198,
+        "sales": 520,
+        "infrastructure_sre": 339,
+        "customer_support": 143,
+        "data_ml": 220,
+        "backend": 49,
+        "design": 39,
+        "data_engineering": 190,
+        "business_analyst": 214,
+        "engineering": 757,
+        "supply_chain": 187,
+        "security": 181,
+        "legal": 53,
+        "mobile": 15,
+        "human_resources": 112,
+        "marketing": 75,
+        "project_management": 57,
+        "other": 392,
+        "management": 95,
+        "healthcare": 484,
+        "data_analyst": 27,
+        "frontend": 24,
+        "hardware": 146,
+        "education": 31,
+        "public_sector": 21,
+        "quant_finance": 18,
+        "consulting": 101,
+        "arts_entertainment": 3,
+        "product_management": 10
+      },
+      "tiers": {
+        "other": 5138,
+        "unicorn": 740,
+        "faang_plus": 284
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 438
+        },
+        {
+          "company": "Verizon",
+          "jobs": 205
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 131
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 112
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 108
+        },
+        {
+          "company": "Leidos",
+          "jobs": 104
+        },
+        {
+          "company": "WSP",
+          "jobs": 92
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 86
+        },
+        {
+          "company": "Duke University",
+          "jobs": 80
+        },
+        {
+          "company": "Boston Scientific",
+          "jobs": 74
+        }
+      ],
+      "unique_companies": 925,
+      "avg_jobs_per_company": 6.66,
+      "timestamp": "2026-11-24T05:59:43.586940+00:00"
     }
   ]
 }
