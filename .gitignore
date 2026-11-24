@@ -115,8 +115,7 @@ junit.xml
 # Ad-hoc screenshots in the repo root. The README's sponsor assets are
 # tracked and must stay that way — re-included explicitly.
 /*.png
-!/apply-faster-banner.png
-!/get-started-button.png
+!/proxy-seller-banner.png
 
 # ============================================================
 # Site (Vite app under site/)
