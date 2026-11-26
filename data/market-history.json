@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-11-25T20:14:35.186834+00:00",
-    "total_snapshots": 63,
+    "last_updated": "2026-11-26T00:36:23.724415+00:00",
+    "total_snapshots": 64,
     "date_range": {
       "start": "2026-09-24",
-      "end": "2026-11-25"
+      "end": "2026-11-26"
     }
   },
   "snapshots": [
@@ -5401,6 +5401,92 @@
       "unique_companies": 1001,
       "avg_jobs_per_company": 7.89,
       "timestamp": "2026-11-25T20:14:35.186834+00:00"
+    },
+    {
+      "date": "2026-11-26",
+      "total_jobs": 7638,
+      "categories": {
+        "software_engineering": 1724,
+        "accounting_finance": 346,
+        "human_resources": 131,
+        "sales": 663,
+        "infrastructure_sre": 393,
+        "customer_support": 163,
+        "data_ml": 275,
+        "backend": 55,
+        "design": 49,
+        "business_analyst": 289,
+        "engineering": 983,
+        "supply_chain": 241,
+        "security": 205,
+        "legal": 73,
+        "data_engineering": 187,
+        "mobile": 19,
+        "marketing": 82,
+        "project_management": 75,
+        "other": 525,
+        "management": 121,
+        "healthcare": 575,
+        "data_analyst": 33,
+        "frontend": 31,
+        "hardware": 174,
+        "education": 48,
+        "public_sector": 24,
+        "quant_finance": 23,
+        "consulting": 107,
+        "arts_entertainment": 3,
+        "product_management": 21
+      },
+      "tiers": {
+        "other": 6173,
+        "unicorn": 810,
+        "faang_plus": 655
+      },
+      "top_companies": [
+        {
+          "company": "Accenture",
+          "jobs": 348
+        },
+        {
+          "company": "Verizon",
+          "jobs": 207
+        },
+        {
+          "company": "SpaceX",
+          "jobs": 145
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 122
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 122
+        },
+        {
+          "company": "Leidos",
+          "jobs": 118
+        },
+        {
+          "company": "Northrop Grumman",
+          "jobs": 112
+        },
+        {
+          "company": "WSP",
+          "jobs": 92
+        },
+        {
+          "company": "Sherwin-Williams",
+          "jobs": 91
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 89
+        }
+      ],
+      "unique_companies": 970,
+      "avg_jobs_per_company": 7.87,
+      "timestamp": "2026-11-26T00:36:23.724415+00:00"
     }
   ]
 }
