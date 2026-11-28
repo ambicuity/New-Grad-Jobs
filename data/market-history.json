@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-11-27T22:42:30.060404+00:00",
-    "total_snapshots": 65,
+    "last_updated": "2026-11-28T04:45:32.057830+00:00",
+    "total_snapshots": 66,
     "date_range": {
       "start": "2026-09-24",
-      "end": "2026-11-27"
+      "end": "2026-11-28"
     }
   },
   "snapshots": [
@@ -5573,6 +5573,92 @@
       "unique_companies": 883,
       "avg_jobs_per_company": 6.24,
       "timestamp": "2026-11-27T22:42:30.060404+00:00"
+    },
+    {
+      "date": "2026-11-28",
+      "total_jobs": 5468,
+      "categories": {
+        "software_engineering": 1287,
+        "accounting_finance": 218,
+        "human_resources": 68,
+        "sales": 414,
+        "infrastructure_sre": 316,
+        "customer_support": 124,
+        "data_ml": 205,
+        "backend": 58,
+        "design": 37,
+        "business_analyst": 204,
+        "engineering": 723,
+        "supply_chain": 153,
+        "security": 168,
+        "legal": 50,
+        "data_engineering": 152,
+        "mobile": 15,
+        "marketing": 66,
+        "management": 74,
+        "project_management": 52,
+        "other": 390,
+        "healthcare": 358,
+        "data_analyst": 26,
+        "frontend": 26,
+        "hardware": 122,
+        "education": 33,
+        "public_sector": 20,
+        "quant_finance": 25,
+        "consulting": 64,
+        "arts_entertainment": 2,
+        "product_management": 18
+      },
+      "tiers": {
+        "other": 4432,
+        "unicorn": 749,
+        "faang_plus": 287
+      },
+      "top_companies": [
+        {
+          "company": "SpaceX",
+          "jobs": 143
+        },
+        {
+          "company": "Verizon",
+          "jobs": 136
+        },
+        {
+          "company": "Mount Sinai Health System",
+          "jobs": 116
+        },
+        {
+          "company": "State of Florida",
+          "jobs": 114
+        },
+        {
+          "company": "Booz Allen Hamilton",
+          "jobs": 91
+        },
+        {
+          "company": "Sherwin-Williams",
+          "jobs": 89
+        },
+        {
+          "company": "WSP",
+          "jobs": 88
+        },
+        {
+          "company": "Anduril Industries",
+          "jobs": 87
+        },
+        {
+          "company": "Duke University",
+          "jobs": 84
+        },
+        {
+          "company": "Relativity Space",
+          "jobs": 77
+        }
+      ],
+      "unique_companies": 840,
+      "avg_jobs_per_company": 6.51,
+      "timestamp": "2026-11-28T04:45:32.057830+00:00"
     }
   ]
 }
